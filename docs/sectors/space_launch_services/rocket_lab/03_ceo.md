@@ -24,6 +24,7 @@
 | 2013년 | 본사 미국 이전 | 캘리포니아 헌팅턴비치(이후 2020년 롱비치로 재이전) |
 | 2017년 | Electron 첫 궤도 발사 시도 | 이후 상업 발사 서비스 본격화 |
 | 2021년 8월 | 나스닥 상장 | Vector Acquisition Corp과의 SPAC 합병을 통해 RKLB로 상장 |
+| 2026년 6월 | Iridium Communications 인수 계약 발표 | 80억 달러(EV) 규모 현금+주식 인수. 완료 시 발사·위성 제조·위성통신을 아우르는 구조로 확장(`01_overview.md` 참고) |
 
 영국 왕실로부터 기사 작위(Knight Bachelor)를 받아 "Sir Peter Beck"으로 불림.
 
@@ -43,6 +44,7 @@
 - **논란 / 리스크**:
   - **Neutron 개발 지연·기술적 난관**: 중형 재사용 로켓 Neutron 시험 과정에서 연료탱크 파열 사고가 발생하는 등 개발 일정 지연 우려가 제기됨.
   - **현금 소진(cash burn) 우려**: 공매도 리서치 기관 Bleecker Street Research 등은 "Rocket Lab의 현금 소진이 수년간 멈추지 않을 것"이라며 Neutron 상업화 이전 추가 자금 조달이 필요할 수 있다는 비판적 분석을 제기 — 이는 공매도 진영의 견해로 별도 검증 필요.
+  - **최근 대규모 내부자 매도**: 2026년 7월 6~8일 Beck 관련 가족신탁(Equatorial Trust)이 사전 예정된 10b5-1 매매 계획에 따라 주당 $81.59~$101.57 가격으로 약 327.6만 주(약 2.864억 달러 상당)를 매도했고, Iridium 인수 발표 직후에는 추가로 약 500만 주(약 4.65억 달러 상당) 매도 계획을 신고했다. 10b5-1 계획에 따른 사전 예정 매도라 재량적 매도보다는 덜 부정적으로 해석될 여지가 있으나, §4의 2025년 자진 보상 삭감·RSU 반납 행보와는 대조적인 최근 행보라 함께 짚어둘 필요가 있음.
 
 ---
 
@@ -62,9 +64,28 @@
 
 ---
 
+## 6. 지분 구조 / 거버넌스
+
+| 항목 | 값 | 기준일 |
+|------|-----|--------|
+| 기관 투자자 지분율 (%) | 약 35~72% (출처별 편차 큼 — fintel/Business Quant/TipRanks 등 집계 방식 차이로 추정, 확인 필요) | 2026년 상반기 기준, 출처마다 조회 시점 상이 |
+| 내부자(임원·이사) 지분율 (%) (§4의 CEO 개인 지분 포함 합계) | 약 0.88% | 2026년 상반기 기준(집계 사이트) |
+| 주요 대주주 (5% 이상 보유) | 확인 필요 (기관 지분이 여러 자산운용사에 분산돼 있어 단독 5% 이상 보유자는 별도 확인 필요) | — |
+| 차등의결권 구조 (dual-class) | 없음으로 파악됨 — 단일 클래스 보통주(1주 1표) 체제로 보이며, SpaceX(`../spacex/`)와 달리 별도 차등의결권 공시는 확인되지 않음. 다만 10-K 원문 대조는 하지 못해 확인 필요로 남김 | — |
+
+---
+
 ## 관련 문서
 
+같은 폴더 내 다른 문서로 이동:
+
 - [개요](./01_overview.md)
+- [역사 / 주요 이벤트](./02_history.md)
+- [재무 / 실적](./04_financials.md)
+- [핵심 지표](./05_metrics.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
+- [투자 판단](./07_investment.md)
+- [최근 뉴스 / 이슈](./08_news.md)
 
 ---
 
@@ -77,7 +98,9 @@
 - [Peter Beck salary at Rocket Lab Corp (Salary.com)](https://www.salary.com/research/executive-compensation/peter-beck-executive-member-of-rocket-lab-usa-inc)
 - [Rocket Lab (RKLB): We Think It's Gonna Be a Long, Long Time (Bleecker Street Research)](https://www.bleeckerstreetresearch.com/research/rklb)
 - [Rocket Lab Stock Forecast & Analyst Price Targets (StockAnalysis)](https://stockanalysis.com/stocks/rklb/forecast/)
+- [Rocket Lab trust sells 3,275,779 shares (StockTitan Form 4)](https://www.stocktitan.net/sec-filings/RKLB/form-4-rocket-lab-corp-insider-trading-activity-88b792454463.html)
+- [RKLB Stock Slips Overnight: CEO Peter Beck Eyes Trimming Stake By $465M After Iridium Deal (Yahoo Finance)](https://finance.yahoo.com/markets/stocks/articles/rklb-stock-slips-overnight-ceo-042842410.html)
 
 ---
 
-*작성일: 2026-08-08*
+*작성일: 2026-08-08 (최종 수정: 2026-08-14)*
