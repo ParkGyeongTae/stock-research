@@ -111,7 +111,6 @@ cp docs/meta/.template/sector/01_comparison.md docs/<sector>/01_comparison.md
 
 ## 🗂 알려진 예외 (정리 대기)
 
-- `automated_test_equipment/`·`space_launch_services/`·`unmanned_aerial_systems/` 아래 회사 폴더는 번호 없는 파일명(`overview.md`·`history.md`·`ceo.md`)을 씀 — 템플릿 도입 이전에 만든 것으로, 리네이밍 전까지는 다른 문서에서 링크할 때 실제 파일명을 확인할 것.
 - `electronic_design_automation/`은 3개사를 커버하지만 아직 `01_comparison.md`가 없음.
 
 ---
