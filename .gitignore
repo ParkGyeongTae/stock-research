@@ -1,1 +1,4 @@
 site/
+
+# Claude Code 로컬 설정
+.claude/settings.local.json
