@@ -1,0 +1,69 @@
+# Robinhood Markets — 역사 / 주요 이벤트
+
+> 수수료 무료 거래로 리테일 투자 진입장벽을 낮추며 급성장했지만, 2021년 GameStop 사태로 신뢰 위기와 최대 규모 규제 제재를 동시에 겪었다. 이후 옵션·크립토·예측시장으로 수익원을 다변화하고 2025~2026년에는 Bitstamp 인수·Robinhood Chain 출시로 암호화폐·토큰화 인프라 사업까지 넓히는 중이다.
+
+> ⚠️ 모든 항목은 웹검색으로 확인한 사실만 기록. 추측이나 출처 불명 내용은 작성 금지.
+>
+> ⚠️ 이 문서는 **회사 관점의 사건**만 다룬다. Vlad Tenev 개인의 커리어는 [`03_ceo.md`](./03_ceo.md)에 별도로 기록했다.
+
+---
+
+## 연혁
+
+| 연도 | 내용 |
+|------|------|
+| 2013.04.18 | Vladimir Tenev와 Baiju Bhatt가 캘리포니아 멘로파크에서 Robinhood Markets 설립 — 두 사람은 이전에 고빈도매매 회사 Celeris, 저지연 트레이딩 소프트웨어 회사 Chronos Research를 함께 창업한 이력이 있음 |
+| 2014.12 | iOS 앱 출시 |
+| 2015.03 | 수수료 무료(commission-free) 주식·ETF 거래 서비스 정식 개시 |
+| 2016.09 | 유료 구독 서비스 **Robinhood Gold** 출시 |
+| 2018.02 | **Robinhood Crypto** 출시 — 암호화폐 매매 서비스 개시 |
+| 2018.10 | 자체 청산업 **Clearing by Robinhood** 출시 |
+| 2019.12 | 소수점 단위 주식 거래(fractional shares) 지원 시작 |
+| 2020 | SEC와 주문흐름대가(PFOF) 공시 미흡 관련 **6,500만 달러 합의금** 지급 |
+| 2020 (하반기) | 공동창업자 Baiju Bhatt가 공동CEO직에서 물러나 Chief Creative Officer(최고창의책임자)로 전환 |
+| 2021.01 | **GameStop(GME) 등 밈주식 폭등 사태** — 청산기관(NSCC)의 담보금 요구 증가를 이유로 GME·AMC 등 주요 밈주식에 대해 "매도만 가능"(포지션 종료 전용) 거래 제한을 걸어 대중의 반발과 의회 조사를 촉발. 회사 신뢰도에 큰 타격을 입은 동시에 신규 계좌 유입은 오히려 급증 |
+| 2021.02.18 | 미국 하원 금융서비스위원회 청문회에 Vlad Tenev 출석, 거래 제한 결정의 배경(청산기관의 담보금 요구) 증언 |
+| 2021.06.30 | FINRA로부터 **역대 최대 규모(5,700만 달러 벌금 + 1,260만 달러 배상금, 총 7,000만 달러)** 제재 — 2018~2021년 시스템 장애 반복, 부적절한 옵션거래 승인, 고객 대상 오해 소지 정보 제공 등이 사유 |
+| 2021.07.29 | **나스닥 상장(IPO)** — 공모가 주당 $38, 기업가치 약 320억 달러로 평가 |
+| 2023.02 | Tenev·Bhatt가 2021년 IPO 전 부여받은 시가총액 연동 RSU 3,550만 주(미베스팅분)를 **자진 취소**(2021 Founders Award Cancellation) — FY2023에 약 4.85억 달러의 일회성 주식보상비용 인식 |
+| 2023 (상반기) | 파산한 FTX 관련 법인 Emergent Fidelity Technologies가 보유하던 Robinhood 지분(약 5,500만 주, 약 6.057억 달러)을 이사회 승인으로 되사들임 |
+| 2024.01 | 매사추세츠주 금융감독관(Secretary of the Commonwealth, William Galvin)과 "게임화(gamification)" 관련 소송을 **750만 달러에 합의** — 디지털 참여 유도(engagement) 관행을 대대적으로 개편 |
+| 2024.03 | 공동창업자 Baiju Bhatt, Chief Creative Officer직에서 사임(이사회에는 잔류) |
+| 2025.01.13 | SEC와 신고·기록보존·사이버보안 관련 위반으로 **4,500만 달러 합의금** 지급 |
+| 2025.06.03 | 기관 전용 암호화폐 거래소 **Bitstamp를 2억 달러에 인수 완료** — 리테일(자체 앱) + 기관(Bitstamp) 양쪽에 걸친 크립토 사업 구조 확보 |
+| 2026.01 | 이사회가 **15억 달러 규모 신규 자사주매입 프로그램** 승인(약 3개년에 걸쳐 집행 예정) |
+| 2026.06.02 | 2026년 정기 주주총회 개최 — Tenev·Bhatt 포함 이사 10명 재선임 |
+| 2026.06.22 | **0.00% 무이표 전환사채 20억 달러(추가매입옵션 포함 총 22억 달러) 발행** 완료(2029년 10월 만기) — 회사 설립 이래 처음으로 이자부 차입금 발생, 조달액 일부(약 2.9억 달러)를 자사주매입 재원으로 사용 |
+| 2026.07.01 | 자체 이더리움 레이어2 블록체인 **Robinhood Chain**(Arbitrum Orbit 기반) 메인넷 출시 — 미국 주식(Nvidia·Apple·Tesla 등)을 토큰화한 "Stock Tokens"의 24시간 거래 지원 시작. 다만 이 토큰은 기초자산 1:1 보유가 아니라 파생상품(채무증서) 구조로 설계됨 |
+
+---
+
+## 관련 문서
+
+같은 폴더 내 다른 문서로 이동:
+
+- [개요](./01_overview.md)
+- [CEO / 경영진](./03_ceo.md)
+- [핵심 지표](./05_metrics.md)
+- [투자 판단](./07_investment.md)
+- [최근 뉴스 / 이슈](./08_news.md)
+
+---
+
+## 참고 자료
+
+- [Robinhood 공식 홈페이지](https://robinhood.com)
+- [Robinhood Markets — Wikipedia](https://en.wikipedia.org/wiki/Robinhood_Markets)
+- [Robinhood slapped with biggest-ever penalty by Wall Street regulator — CNN (2021-06-30)](https://amp.cnn.com/cnn/2021/06/30/investing/robinhood-trading-fine-finra)
+- [FINRA Fines Robinhood A Record $70M — Benzinga](https://www.benzinga.com/government/21/06/21793858/finra-fines-robinhood-a-record-70m)
+- [Robinhood settles 'gamification' case with Massachusetts — Cointelegraph](https://cointelegraph.com/news/robinhood-settles-massachusetts-regulator)
+- [Robinhood to Pay $45 Million to Settle SEC Claims — Bloomberg (2025-01-13)](https://www.bloomberg.com/news/articles/2025-01-13/robinhood-to-pay-45-million-to-settle-sec-claims)
+- [Robinhood Completes $200 Million Acquisition of Crypto Exchange Bitstamp — CoinDesk (2025-06-03)](https://www.coindesk.com/business/2025/06/03/robinhood-completes-200m-acquisition-of-crypto-exchange-bitstamp)
+- [Robinhood Authorizes $1.5 Billion Share Buyback — The Globe and Mail (2026-01)](https://www.theglobeandmail.com/investing/markets/stocks/HOOD/pressreleases/936003/robinhood-authorizes-15-billion-share-buyback-amid-2026-stock-decline/)
+- [Robinhood Prices $2.0 Billion Convertible Senior Notes Offering (2026-06)](https://www.quiverquant.com/news/Robinhood+Prices+$2.0+Billion+Convertible+Senior+Notes+Offering,+Plans+Concurrent+Share+Repurchases)
+- [Robinhood Launches Its Own Blockchain, New Stock Tokens And DeFi Products — Forbes (2026-07-01)](https://www.forbes.com/sites/ninabambysheva/2026/07/01/robinhood-launches-its-own-blockchain-new-stock-tokens-and-defi-products/)
+- [Co-Founder Baiju Bhatt Steps Down as Robinhood's Chief Creative Officer — Finance Magnates](https://www.financemagnates.com/executives/co-founder-baiju-bhatt-steps-down-as-robinhoods-chief-creative-officer/)
+
+---
+
+*작성일: 2026-08-15*
