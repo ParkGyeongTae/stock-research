@@ -17,7 +17,7 @@
 ## 1. 한 줄 요약
 
 Kratos는 무인 표적기(target drone) 개발로 시작해, 현재는 저비용 소모성 전투 무인기(XQ-58 Valkyrie 등), 초음속 비행체, 위성·통신, 마이크로파 전자부품 등을 아우르는 방산 기술기업이다.
-미 국방부의 "저비용 대량 생산" 무인체계 전략(Low-Cost Attritable Aircraft, LCAA)의 핵심 수혜 기업으로 꼽힌다.
+미 국방부의 "저비용 대량생산(affordable mass)" 무인체계 전략에서 수혜가 기대되는 기업으로 꼽히지만, 미 공군의 대표 프로그램인 CCA(Collaborative Combat Aircraft) Increment 1 1차 선정(2024년 4월)에서는 General Atomics·Anduril에 밀려 제외됐다 — 대신 해병대·Drone Dominance 등 대체 경로로 입지를 넓히는 중이다(`07_investment.md` §2·§3 참고).
 
 ---
 
@@ -36,9 +36,23 @@ Kratos Government Solutions(KGS)와 Unmanned Systems(USS) 두 사업부로 구�
 
 ## 3. 산업 / 시장 내 위치
 
-- **저비용 소모성 무인기(attritable UAS) 선도**: 미 공군의 CCA(Collaborative Combat Aircraft) 프로그램 등 유인기와 함께 운용되는 저비용 무인 전투기 수요 확대의 핵심 수혜주.
+- **저비용 소모성 무인기(attritable UAS) 원조 기술 보유, 다만 공군 주력 프로그램에서는 탈락**: XQ-58 Valkyrie 등 자체 무인전투기 포트폴리오를 갖췄지만, 유인기와 함께 운용되는 무인 전투기 수요의 핵심 프로그램인 미 공군 CCA Increment 1 1차 선정(2024년 4월)에서는 General Atomics·Anduril이 선정되고 Kratos는 제외됐다. 대신 미 해병대의 XQ-58 기반 무인 윙맨 프로그램(2026년 1월, Northrop Grumman과 컨소시엄)과 미 전쟁부 Drone Dominance 프로그램 1단계 Gauntlet(2026년 2월 선정)에서 대체 입지를 확보하고 있다(`02_history.md`, `07_investment.md` 참고).
 - **무인 표적기 원조 기업**: 미군 훈련용 표적 드론 시장에서 오랜 업력을 바탕으로 높은 점유율 보유.
 - **경쟁 구도**: AeroVironment(소형 정찰·자폭 드론), Anduril(비상장, AI 자율 무인기) 등과 무인체계 시장에서 경쟁하며, General Atomics·Northrop Grumman 등 대형 방산업체와도 일부 영역에서 경쟁·협력.
+
+---
+
+## 관련 문서
+
+같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
+
+- [역사 / 주요 이벤트](./02_history.md)
+- [CEO / 경영진](./03_ceo.md)
+- [재무 / 실적](./04_financials.md)
+- [핵심 지표](./05_metrics.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
+- [투자 판단](./07_investment.md)
+- [최근 뉴스 / 이슈](./08_news.md)
 
 ---
 
@@ -51,4 +65,4 @@ Kratos Government Solutions(KGS)와 Unmanned Systems(USS) 두 사업부로 구�
 
 ---
 
-*작성일: 2026-08-08*
+*작성일: 2026-08-08 (최종 수정: 2026-08-15 — CCA Increment 1 미선정 사실을 반영해 §1·§3 CCA 관련 서술 정정)*
