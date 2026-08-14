@@ -59,6 +59,20 @@ IEEE Fellow, 미국 공학한림원(National Academy of Engineering) 회원이�
 
 ---
 
+## 6. 지분 구조 / 거버넌스
+
+| 항목 | 값 | 기준일 |
+|------|-----|--------|
+| 기관 투자자 지분율 (%) | 약 87~88% | 2026년 초 기준(출처별 소폭 편차) |
+| 내부자(임원·이사) 지분율 (%) | 1% 미만 | 2026년 초 기준 |
+| 주요 대주주 (5% 이상 보유) | The Vanguard Group 약 9.84% (2026-01-05 기준). 다른 출처는 BlackRock을 최대주주(약 11%)로, Vanguard를 2위(약 9.4%)로 보도 — 순위·비율에 출처 간 편차 있음(아래 참고) | 2026-01~08 |
+| 차등의결권 구조 (dual-class) | 없음 — 단일 클래스 보통주(CDNS) 확인. 별도 차등의결권 공시를 찾지 못함 | 2026-08 확인 |
+
+- 기관 지분율이 87~88%로 매우 높고 내부자 지분은 1% 미만이어서, 개인·창업자 지배력에 따른 의결권 집중 리스크는 낮은 편. Synopsys와 유사하게 CEO·경영진의 지분 기반 이해관계 일치도는 낮은 편(§4의 회사 지분율 미확인치도 이와 일관).
+- 대주주 순위·비율은 출처마다 소폭 다르게 보도됨 — TIKR(2026-01-05 기준)은 Vanguard 9.84%·BlackRock 5.78%·State Street 4.58%·Fidelity 3.30%·Jennison 3.21% 순으로, 반면 Yahoo Finance/iTiger 요약본은 BlackRock을 약 11%로 최대주주, 2위를 약 9.4%(Vanguard로 추정)로 보도. 어느 쪽이든 5% 이상 대주주가 다수 분산돼 있고 "상위 22개 기관이 지분의 51%를 보유, 단일 주주의 과반 지배는 없음"이라는 결론은 공통적으로 확인됨(TIKR).
+
+---
+
 ## 관련 문서
 
 - [개요](./01_overview.md)
@@ -79,7 +93,8 @@ IEEE Fellow, 미국 공학한림원(National Academy of Engineering) 회원이�
 - [Anirudh Devgan 보상 내역 (Salary.com)](https://www.salary.com/research/executive-compensation/anirudh-devgan-executive-member-of-cadence-design-systems-inc)
 - [Cadence Maps Its Future Beyond EDA With Agentic AI and Simulation (HPCwire)](https://www.hpcwire.com/2026/04/20/cadence-maps-its-future-beyond-eda-with-agentic-ai-and-simulation/)
 - [Lam Research Appoints Cadence CEO Anirudh Devgan to Board of Directors](https://newsroom.lamresearch.com/2026-02-03-Lam-Research-Appoints-Cadence-CEO-Anirudh-Devgan-to-Board-of-Directors)
+- [TIKR — Who Owns Cadence Design Systems? Top Shareholders](https://www.tikr.com/blog/who-owns-cadence-design-systems-top-shareholders-and-recent-insider-trades) (2026-01-05 기준 대주주 명단)
 
 ---
 
-*작성일: 2026-08-08*
+*작성일: 2026-08-08 (최종 수정: 2026-08-14 — §6 지분 구조/거버넌스 추가)*
