@@ -24,6 +24,8 @@
 | 2004년 | Tesla Motors 합류 | 초기 투자자로 참여 후 CEO 겸직 |
 | 2022년 | X(구 Twitter) 인수 | 소셜미디어 플랫폼 인수, CEO 겸직(현재는 Linda Yaccarino 등에 일부 위임) |
 | 2023년 | xAI 창업 | 인공지능 스타트업, SpaceX와 데이터센터·컴퓨팅 인프라 연계 |
+| 2026-02 | xAI를 SpaceX에 올스톡 합병 | 결합 밸류에이션 약 1.25조 달러(SpaceX 1조 달러 + xAI 2,500억 달러). "궤도 데이터센터" 구상을 명분으로 xAI를 SpaceX 산하로 편입 |
+| 2026-06 | SpaceX 나스닥 상장(SPCX) | 공모가 $135, 사상 최대 규모 IPO |
 
 ---
 
@@ -40,7 +42,7 @@
 - **성과**: Falcon 9 재사용 기술 상용화로 발사 비용을 획기적으로 낮추고 전 세계 궤도 발사의 대부분을 담당하는 지위 확보. Starlink를 세계 최대 위성 인터넷 서비스로 성장시켜 SpaceX의 주요 현금 창출원으로 만듦.
 - **논란 / 리스크**:
   - **겸직에 따른 집중도 우려**: Tesla·X·xAI·정치 활동 등으로 관심이 분산되어 SpaceX 경영에 대한 "CEO 산만함(distraction)" 리스크가 IPO를 앞두고 투자자들 사이에서 반복적으로 제기됨. SpaceX 직원들이 머스크의 겸직·정치 활동을 공개적으로 비판하는 서한을 낸 사례도 있음.
-  - **지배구조 리스크**: 2026년 IPO 서류(S-1/A) 기준 머스크의 지분율은 약 42%이나, 차등의결권 구조(Class B 주식 1주당 10표)로 실질 의결권은 약 82.4%에 달해 일부 연기금·기관투자자가 "재앙적 지배구조(catastrophic governance structure)"라며 투자 blacklist 대상으로 거론.
+  - **지배구조 리스크**: 2026년 IPO 서류(S-1/A) 기준 머스크의 경제적 지분율은 약 42%이나, 차등의결권 구조(Class B 주식 1주당 10표)로 실질 의결권은 약 79~85% 수준에 달해(출처별 79%/82.4%/85.1%로 편차 — 기준일 차이로 추정, 확인 필요) 일부 연기금·기관투자자가 "재앙적 지배구조(catastrophic governance structure)"라며 투자 blacklist 대상으로 거론. 2026-06 상장 이후 SpaceX는 나스닥의 "지배기업(controlled company)" 예외를 적용받아 이사회 과반 독립성 요건 등 일반 상장사 지배구조 규정을 면제받고 있으며, 의결권 구조에 만료(sunset) 조항이 없어 머스크가 원하는 한 영구적으로 유지되는 구조.
   - **정치적 노출**: 트럼프 행정부·MAGA 진영과의 밀접한 관계가 향후 정권 교체 시 FAA 등 규제기관과의 관계에 부담이 될 수 있다는 지적.
 
 ---
@@ -49,9 +51,9 @@
 
 | 항목 | 값 | 기준연도 |
 |------|-----|----------|
-| 총보상 (Total Compensation) | 비상장 기업으로 공식 보상 내역 비공개 (Tesla CEO 보상과는 별개) | — |
+| 총보상 (Total Compensation) | 상장 후 첫 위임장(proxy statement)이 아직 공시되지 않아 확인 불가(2026-08 기준). Tesla CEO 보상과는 별개 항목 | — |
 | 회사 지분율 (경제적 지분) | 약 42% | 2026-06 IPO S-1/A 공시 기준 |
-| 의결권 비중 | 약 82.4% (Class B 주식의 93.6% 보유, 1주당 10표) | 2026-06 IPO S-1/A 공시 기준 |
+| 의결권 비중 | 약 79~85% (Class B 주식 다수 보유, 1주당 10표 — 정확한 수치는 출처별 편차, 위 §3 참고) | 2026-06 IPO S-1/A 공시 기준 |
 
 ---
 
@@ -63,7 +65,15 @@
 
 ## 관련 문서
 
+같은 폴더 내 다른 문서로 이동:
+
 - [개요](./01_overview.md)
+- [역사 / 주요 이벤트](./02_history.md)
+- [재무 / 실적](./04_financials.md)
+- [핵심 지표](./05_metrics.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
+- [투자 판단](./07_investment.md)
+- [최근 뉴스 / 이슈](./08_news.md)
 
 ---
 
@@ -75,7 +85,9 @@
 - [Jefferies analyst calls out 'simple-minded' criticism of SpaceX's governance (Fortune)](https://fortune.com/2026/08/02/spacex-corporate-governance-elon-musk-ceo-chairman-voting-shares/)
 - [SpaceX employees denounce CEO Musk as 'distraction': letter (AOL/Reuters)](https://www.aol.com/finance/spacex-employees-denounce-ceo-musk-170623252-203719283.html)
 - [3 Reasons SpaceX May Be a Risky Investment (The Motley Fool)](https://www.fool.com/investing/2026/04/02/3-reasons-spacex-may-be-a-risky-investment/)
+- [Top IPO, Weak Governance (Harvard Law School Forum on Corporate Governance)](https://corpgov.law.harvard.edu/2026/05/19/top-ipo-weak-governance/)
+- [Musk's xAI, SpaceX combo is the biggest merger of all time, valued at $1.25 trillion (CNBC)](https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html)
 
 ---
 
-*작성일: 2026-08-08*
+*작성일: 2026-08-08 (최종 수정: 2026-08-14)*
