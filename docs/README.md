@@ -35,8 +35,7 @@ docs/
     ├── electronic_design_automation/   # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스
     │   ├── 01_comparison.md # (선택) 섹터 내 회사 비교 — 2개사 이상일 때만
     │   ├── synopsys/
-    │   ├── cadence_design_systems/
-    │   └── siemens/
+    │   └── cadence_design_systems/
     └── <sector>/
         ├── 01_comparison.md
         └── <company-name>/
@@ -116,7 +115,7 @@ cp docs/meta/.template/sector/01_comparison.md docs/sectors/<sector>/01_comparis
 
 ## 🗂 알려진 예외 (정리 대기)
 
-- `sectors/electronic_design_automation/`은 3개사를 커버하지만 아직 `01_comparison.md`가 없음.
+- (현재 없음)
 
 ---
 
