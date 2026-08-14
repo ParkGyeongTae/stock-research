@@ -57,6 +57,21 @@
 
 ---
 
+## 6. 지분 구조 / 거버넌스
+
+> ⚠️ 아래 수치는 2025-08-13 제출 위임장(DEF 14A, 2025 정기주주총회용, 지분 기준일 2025-08-07 · 발행주식수 49,932,233주) 기준 최신 확정 공시다. 2026 정기주주총회용 위임장은 이 문서 작성일(2026-08-14) 기준 아직 제출되지 않아 반영하지 못했다 — 향후 새 위임장이 나오면 갱신 필요.
+
+| 항목 | 값 | 기준일 |
+|------|-----|--------|
+| 기관 투자자 지분율 (%) | BlackRock, Inc. 8.74%(4,363,697주) + The Vanguard Group 7.0%(3,478,114주) = 합산 15.74% — 5% 이상 공시된 자산운용사만 집계, 5% 미만 기관은 다수 존재하나 개별 공시 없음 | BlackRock 2025-05-31 / Vanguard 2025-06-30 (각 13G/A 보고 기준일) |
+| 내부자(임원·이사) 지분율 (%) (§4의 CEO 개인 지분 포함 합계) | 0.81%(406,412주, 현직 이사·임원 17인 그룹 합계 — CEO Wahid Nawabi 개인 122,233주·0.24%가 그중 최대) | 2025-08-07 |
+| 주요 대주주 (5% 이상 보유) | **Arlington Capital Partners 계열(ACP V + ACP VI) 24.10%(12,035,890주) — 최대주주**; BlackRock, Inc. 8.74%; The Vanguard Group 7.0% | 2025-08-07 (Arlington), 2025-05-31 (BlackRock), 2025-06-30 (Vanguard) |
+| 차등의결권 구조 (dual-class) | 없음 — 보통주 단일 클래스, 1주당 1의결권. 위임장에 "당사는 그 외 의결권 있는 증권을 보유하고 있지 않다"고 명시 | 2025-08-13 위임장 |
+
+**Arlington Capital Partners는 BlueHalo의 사모펀드(PE) 스폰서였고, 2025년 5월 BlueHalo 인수(전액 주식교환) 대가로 AeroVironment 보통주를 취득해 단숨에 최대주주(24.10%)가 됐다.** 이는 이익 누적이나 시장 매수가 아니라 M&A 대가 지급의 결과라는 점에서 일반적인 기관 지분과 성격이 다르다 — 임원·이사 전체 지분(0.81%)의 약 30배에 달하는 규모로, 소액주주 대비 지분·의결권이 매우 집중돼 있다. 차등의결권 구조는 없어 지분율만큼의 의결권을 가지므로 법적으로 지배주주는 아니지만, 향후 Arlington Capital 측의 지분 매각(락업 해제 후 대량 매도)이나 이사회 영향력 행사 여부는 지켜볼 거버넌스 변수다 — 상세 리스크 평가는 [`07_investment.md`](./07_investment.md) 참고.
+
+---
+
 ## 관련 문서
 
 같은 폴더 내 다른 문서로 이동:
@@ -77,6 +92,7 @@
 - [AeroVironment and BlueHalo Complete Transaction (공식 보도자료)](https://www.avinc.com/2025/05/01/aerovironment-and-bluehalo-complete-transaction-creating-a-global-defense-technology/)
 - [AeroVironment's Wahid Nawabi Earns First Wash100 Award](https://www.wash100.com/winners/2026/wahid-nawabi/)
 - [Wahid Nawabi 보상 내역 (Salary.com)](https://www1.salary.com/Wahid-Nawabi-Salary-Bonus-Stock-Options-for-AEROVIRONMENT-INC.html)
+- [DEF 14A — 2025년 정기주주총회 위임장, 지분 구조(SHARE OWNERSHIP) 섹션 (SEC EDGAR, 2025-08-13 제출)](https://www.sec.gov/Archives/edgar/data/1368622/000110465925077059/tm2522088-1_def14a.htm)
 
 ---
 
