@@ -1,0 +1,40 @@
+site_name: Stock Research
+site_description: 미국 상장 기업/섹터 투자 리서치 정리
+repo_url: https://github.com/ParkGyeongTae/stock-research
+repo_name: stock-research
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드로 전환
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+
+plugins:
+  - search
+  - awesome-pages
+
+markdown_extensions:
+  - tables
+  - footnotes
+  - admonition
+  - toc:
+      permalink: true
