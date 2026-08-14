@@ -1,0 +1,78 @@
+# Circle Internet Group
+
+> USDC 스테이블코인 발행사. 매출의 약 95%가 USDC 준비자산(주로 미국 단기국채)에서 나오는 이자수익이라, 회사 실적이 사실상 금리 수준과 USDC 유통량에 연동되는 구조다.
+
+- **회사명**: Circle Internet Group, Inc. (2013년 설립 당시 Circle Internet Financial Ltd. → 2025년 IPO 전 현재 사명으로 재편)
+- **티커 / 상장 시장**: CRCL (Class A 보통주) / NYSE, 2025-06-05 IPO (공모가 $31)
+- **설립 / 본사**: 2013년 8월 (창업자 Jeremy Allaire, Sean Neville) / 미국 뉴욕 One World Trade Center (설립 당시 본사는 보스턴)
+- **CEO**: Jeremy Allaire (공동창업자 겸 회장 겸 CEO)
+- **홈페이지**: https://www.circle.com
+- **섹터 / 산업**: 금융(Financials) / 자본시장(Capital Markets) — 스테이블코인·디지털자산 인프라
+- **시가총액**: 약 191.4억 달러 (2026-08-13 종가 $75.38 기준, stockanalysis.com)
+
+> ⚠️ 시가총액 출처 간 편차 주의: stockanalysis.com은 2026-08-13 기준 $19.14B로 집계(발행주식수 약 2.539억 주 — Class A 약 2.347억 주(2026-07-30 기준) + Class B 약 1,920만 주(2026-06-30 기준) 합산과 정합적). 반면 macrotrends.net은 동일 시점 부근에서 $15.7~16.1B로 더 낮은 값을 보여 편차가 있음(직접 페이지 접근이 403으로 막혀 원인 확인 불가 — 계산 기준일/발행주식수 차이로 추정). 발행주식수 기반 계산과 일치하는 stockanalysis.com 값을 본문에 채택하되, 확정 수치가 필요하면 최신 10-Q 표지의 발행주식수로 재계산 권장.
+
+---
+
+## 1. 한 줄 요약
+
+Circle Internet Group은 달러 연동 스테이블코인 USDC의 발행사로, USDC 보유자가 예치한 자금(준비자산)을 미국 단기국채·현금성 자산으로 운용해 얻는 이자수익이 매출의 절대 비중을 차지한다.
+Coinbase와의 수익 배분 계약에 따라 준비자산 이자수익의 상당 부분을 배분금(distribution cost)으로 지급하는 구조이며, 2025년 GENIUS Act(미국 최초의 연방 스테이블코인 규제법) 통과 이후 USDC가 규제 정합성 측면에서 부각되고 있다.
+
+---
+
+## 2. 사업 모델 — 어떻게 돈을 버는가
+
+핵심은 USDC 준비자산 운용에서 나오는 **이자수익(Reserve Income)**이다. USDC 1개는 항상 1달러 상당의 현금·미 단기국채로 뒷받침되며, Circle은 이 준비자산을 운용해 얻는 이자(주로 단기 국채 금리)를 수취한다. USDC 보유자 본인에게는 이자를 지급하지 않는다(GENIUS Act가 스테이블코인 발행사의 이자 지급을 금지).
+
+USDC 유통량의 상당 부분이 Coinbase 플랫폼(및 Coinbase 생태계)에 예치되어 있어, Circle은 Coinbase와의 계약에 따라 온플랫폼 USDC 잔고 비중 등을 기준으로 준비자산 이자수익의 일부를 Coinbase에 배분금(distribution cost)으로 지급한다. 2026년 1분기 기준 Coinbase向 배분비용은 약 3.306억 달러였다.
+
+> ⚠️ 매출 비중은 추정하지 말고 웹검색으로 최신 실적 자료(10-K, 10-Q, IR 자료 등)를 찾아 정확한 %로 작성. 출처와 기준 회계연도/분기를 함께 표기할 것.
+
+| 사업 부문 | 설명 | 매출 비중 |
+|-----------|------|-----------|
+| 준비자산 이자수익(Reserve Income) | USDC(및 EURC) 준비자산(주로 미국 단기국채·현금성자산)을 운용해 얻는 이자수익. USDC 평균 유통량과 정책금리 수준에 연동 | 약 95% (FY2026 2분기 기준, 6.68억 달러 / 총매출 7.01억 달러)[^1] |
+| 구독·서비스 매출(Subscription & Services) | 기업·개발자 대상 Circle Mint, API, Arc(레이어1 블록체인) 관련 서비스 등 | 약 5% (FY2026 2분기 기준, 0.34억 달러) |
+| EURC(유로 스테이블코인) | 유로화 연동 스테이블코인. USDC와 동일한 준비자산 이자수익 모델이나 비중은 USDC 대비 미미(구체 비중 별도 공시 없음 — 확인 필요) | 별도 공시 없음(Reserve Income에 합산 추정) |
+
+[^1]: Circle이 실적발표에서 사용하는 지표는 "Total revenue and reserve income"으로, GAAP 매출과 준비자산 이자수익을 합산한 자체 지표다. 순수 GAAP 매출 항목 구분(예: 10-Q상 revenue vs reserve income 별도 라인)은 원문 재무제표 확인 필요.
+
+이 구조에서 Circle의 실적을 좌우하는 두 축은 **① 미국 기준금리 수준**(reserve return rate)과 **② USDC 평균 유통량**이다. 2026년 2분기 기준 준비자산 이자수익은 USDC 유통량이 전년 대비 25% 증가했음에도 기준금리(Reserve Return Rate) 하락(-66bp)의 영향을 일부 상쇄해 전년 대비 5% 증가에 그쳤다 — 즉 금리 하락기에는 유통량 증가가 이자수익 증가를 완전히 상쇄하지 못할 수 있는 구조다.
+
+---
+
+## 3. 산업 / 시장 내 위치
+
+- **스테이블코인 시장 2위 사업자**: 시가총액(발행잔액) 기준으로는 Tether(USDT)가 약 1,870억 달러(전체 스테이블코인 시장의 약 59%)로 1위, Circle의 USDC는 약 733~753억 달러(약 24%)로 2위다(2026년 상반기 기준). 다만 온체인 거래량(transaction volume) 기준으로는 2026년 상반기 USDC가 조정 거래량의 약 70%를 차지하며 USDT(약 25%)를 앞선 것으로 보도됨 — 발행잔액 점유율과 거래량 점유율이 다른 방향을 가리키므로 어느 지표를 보느냐에 따라 결론이 달라질 수 있다.
+- **규제 환경 변화**: 2025년 7월 18일 미국에서 GENIUS Act(스테이블코인 관련 최초의 연방 법률)가 발효되어, 발행사는 Permitted Payment Stablecoin Issuer로 등록하고 1:1 달러·단기국채 준비자산을 유지해야 하며 보유자에 대한 이자 지급이 금지됐다. USDC는 기존부터 준비자산 공시·감사 관행이 이 요건에 가까웠던 것으로 평가되며, Circle은 이를 자사의 규제 정합성 우위로 내세우고 있다.
+- **경쟁 구도**: Tether(USDT) 외에 PayPal(PYUSD), 은행 컨소시엄 발행 스테이블코인(USD1 등), 그 외 신규 진입자들이 있다. Circle은 Coinbase와의 유통 파트너십, 15개 이상 블록체인 네트워크 지원, 자체 레이어1 블록체인 **Arc**(2025년 10월 테스트넷 공개, 2026년 여름 메인넷 출시 목표 — USDC를 네이티브 가스 토큰으로 사용) 등으로 인프라 수직계열화를 추진 중이다.
+- **금리 민감도라는 구조적 리스크**: 매출의 절대 비중이 준비자산 이자수익이라, 미 연준 기준금리가 하락하면 USDC 유통량이 늘어도 매출이 정체·감소할 수 있는 구조적 리스크를 안고 있다.
+
+---
+
+## 관련 문서
+
+같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
+
+- [핵심 지표](./05_metrics.md)
+
+---
+
+## 참고 자료
+
+- [Circle 공식 홈페이지](https://www.circle.com)
+- [Circle Internet Group — Wikipedia](https://en.wikipedia.org/wiki/Circle_Internet_Group)
+- [Circle Reports First Quarter 2026 Results (Circle IR)](https://www.circle.com/pressroom/circle-reports-first-quarter-2026-results)
+- [Circle Q2 2026 실적 보도자료 (Circle IR)](https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results)
+- [Circle Internet Group, Inc. — Form 10-Q, FY2026 Q1 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000150/crcl-20260331.htm)
+- [Circle Internet Group, Inc. — Form 10-Q, FY2026 Q2 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000248/crcl-20260630.htm)
+- [Circle Internet Group (CRCL) — 기업 개요·시가총액 (stockanalysis.com)](https://stockanalysis.com/stocks/crcl/)
+- [Circle (CRCL) Founder Jeremy Allaire Is a Billionaire as Shares Surge After IPO — Bloomberg](https://www.bloomberg.com/news/articles/2025-06-05/circle-founder-is-a-billionaire-as-crypto-firm-jumps-after-ipo)
+- [USDT, USDC, USD1: The Stablecoin Market Share War — Forbes](https://www.forbes.com/sites/boazsobrado/2026/03/12/usdt-usdc-usd1-the-stablecoin-market-share-war/)
+- [Circle's USDC Pulls Ahead of Tether as Stablecoin Volume Hits Record $1.79T — Yahoo Finance / CoinDesk](https://finance.yahoo.com/markets/crypto/articles/circle-usdc-pulls-ahead-tether-192600167.html)
+- [GENIUS Act: U.S. Stablecoin Law | Circle & USDC Compliance (Circle)](https://www.circle.com/genius-act)
+- [Introducing Arc: An L1 Blockchain for Stablecoin Finance (Circle)](https://www.circle.com/blog/introducing-arc-an-open-layer-1-blockchain-purpose-built-for-stablecoin-finance)
+
+---
+
+*작성일: 2026-08-14*

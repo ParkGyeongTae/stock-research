@@ -1,0 +1,80 @@
+# Robinhood Markets
+
+> 수수료 무료 주식·옵션 거래로 성장한 리테일 증권 브로커리지. 본업은 여전히 주식·옵션 중개이지만, 암호화폐 거래(자체 앱 + 2025년 인수한 기관용 거래소 Bitstamp)와 자체 레이어2 블록체인(Robinhood Chain) 기반 토큰화 주식 사업을 적극 확장하면서 크립토 테마 관련주로도 분류되는 종목.
+
+> ⚠️ 시가총액은 2026-08-13(수) 종가 $99.37 기준. 집계 사이트마다 조회 시점(장중/전일 종가 등)이 달라 소폭(수억~수십억 달러) 차이가 날 수 있음 — 갱신 시 항상 기준일을 함께 명시할 것.
+
+- **회사명**: Robinhood Markets, Inc.
+- **티커 / 상장 시장**: HOOD / NASDAQ
+- **설립 / 본사**: 2013년 4월 18일 (Vladimir "Vlad" Tenev, Baiju Bhatt 공동창업) / 미국 캘리포니아 멘로파크(Menlo Park)
+- **CEO**: Vladimir Tenev (공동창업자, 회장 겸 CEO)
+- **홈페이지**: https://robinhood.com
+- **섹터 / 산업**: 금융(Financials) / 자본시장(Capital Markets) — 리테일 증권 브로커리지(핀테크). 암호화폐 거래소업을 겸영
+- **시가총액**: 약 893.4억 달러 (2026-08-13 종가 $99.37 기준, stockanalysis.com)
+
+---
+
+## 1. 한 줄 요약
+
+Robinhood는 2013년 수수료 무료(commission-free) 모바일 주식 거래로 리테일 투자 시장의 진입장벽을 낮춘 증권 브로커리지다.
+주식·옵션 중개가 여전히 핵심 사업이지만, 암호화폐 매매(자체 앱 + 2025년 인수한 기관용 거래소 Bitstamp), 예측시장(event contracts), 2026년 출시한 자체 레이어2 블록체인 Robinhood Chain(토큰화 주식 거래) 등으로 사업을 빠르게 확장하고 있다.
+
+---
+
+## 2. 사업 모델 — 어떻게 돈을 버는가
+
+Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue, 옵션·주식·암호화폐·이벤트계약 등 매매 시 발생하는 수수료 및 PFOF), ② 순이자수익(Net interest revenue, 마진대출·고객 예치금 재투자·증권대여 등), ③ 기타 수익(Robinhood Gold 구독료 등)으로 구성된다.
+
+> ⚠️ 아래는 가장 최근 공시된 완결 분기인 **2026년 2분기(2026-06-30 마감)** 실적 기준. 전체 매출 1,308백만 달러 중 항목별 비중이며, 세부 항목 합계는 반올림으로 총계와 소수점 차이가 있을 수 있음.
+
+| 사업 부문 | 설명 | 매출 비중 |
+|-----------|------|-----------|
+| 거래 기반 수익 — 옵션(Options) | 옵션 계약 매매 수수료(PFOF 포함) | 26.2% ($342M, 전년 동기 대비 +29%) |
+| 거래 기반 수익 — 이벤트 계약(Event Contracts / 예측시장) | 스포츠·경제지표 등에 연동된 예측시장 거래 수수료 | 11.9% ($156M, 전년 동기 대비 10배 이상 증가) |
+| 거래 기반 수익 — 주식(Equities) | 주식 매매 수수료(PFOF 포함) | 9.9% ($129M) |
+| 거래 기반 수익 — **암호화폐(Cryptocurrencies)** | 비트코인 등 암호화폐 매매 수수료. 자체 앱 거래(분기 거래대금 $18.3B, 전년 동기 대비 -35%) + 2025년 인수한 기관 전용 거래소 Bitstamp(분기 거래대금 $22.1B) 합산 | 7.6% ($100M, 전년 동기 대비 **-38%**) |
+| 거래 기반 수익 — 기타 | 선물 등 기타 자산 거래 수수료로 추정(옵션·주식·암호화폐·이벤트계약 합산 후 잔차) | 약 3.7%(약 $49M, 추정치 — 공시 원문의 정확한 항목명·금액 확인 필요) |
+| 순이자수익 (Net Interest Revenue) | 마진대출 이자, 고객 예치금 재투자, 증권대여(securities lending) 등 | 29.7% ($389M, 전년 동기 대비 +9%) |
+| 기타 수익 (Other Revenue) | Robinhood Gold 구독료, Trump Account 서비스 수수료, 위임장(proxy) 수익 등 | 10.9% ($143M, 전년 동기 대비 +54%) |
+
+**암호화폐 매출 추세**: 분기별로 변동성이 크다. 2026년 1분기 크립토 매출은 $134M(전년 동기 대비 -47%), 2분기는 $100M(전년 동기 대비 -38%)로 2개 분기 연속 큰 폭의 전년 대비 감소세를 보였다. 같은 기간 이벤트 계약(예측시장) 매출이 급성장(2분기 $156M)하며 크립토 매출을 처음으로 앞질렀다 — 즉, 거래 기반 수익 내에서 크립토 의존도는 오히려 낮아지는 추세다. 다만 이는 매매 회전율·변동성 하락에 따른 거래대금 감소가 주된 원인이며, 회사의 크립토 사업 자체(Bitstamp 인수, Robinhood Chain 등)는 확장 국면에 있다.
+
+---
+
+## 3. 산업 / 시장 내 위치
+
+- **리테일 브로커리지**: Fidelity·Charles Schwab 등 전통 대형 증권사 대비 운용자산(AUC) 규모는 작지만, 모바일 네이티브 UX와 낮은 진입장벽으로 젊은 개인 투자자층을 빠르게 확보하며 성장했다. 2025년 전체 매출은 44.7억 달러(전년 대비 +51.6%, `05_metrics.md` 기준)로 사상 최대를 기록하며 옵션·이벤트 계약·크립토 등으로 수익원을 다변화하는 중이다.
+- **암호화폐 거래**: 미국 크립토 현물 거래량 기준 시장 점유율은 Coinbase가 약 45%로 압도적 1위를 유지하고 있으며(2026년 3월 기준 추정), Robinhood의 최근 12개월 크립토 거래대금(약 $232B)은 Coinbase의 2025년 연간 거래대금($5.2T)에 비해 절대 규모는 크게 작다. 다만 Robinhood는 2025년 6월 기관 전용 거래소 Bitstamp를 2억 달러에 인수하며 리테일(자체 앱) + 기관(Bitstamp) 양쪽에 걸친 크립토 사업 구조를 갖췄고, Coinbase가 자체 매칭엔진 기반 수수료 모델을 쓰는 것과 달리 Robinhood는 PFOF(주문흐름대가) 기반 크립토 매매 모델을 유지한다는 점에서 수익 구조가 다르다.
+- **토큰화·블록체인**: 2026년 7월 자체 이더리움 레이어2 블록체인 **Robinhood Chain**(Arbitrum 기반)의 메인넷을 출시해 미국 주식(Nvidia, Apple, Tesla 등)을 토큰화한 "Stock Tokens"의 24시간 거래를 지원하기 시작했다. 이는 기존 리테일 브로커리지 중 자체 체인을 보유한 사례가 드물다는 점에서 차별화 포인트이며, 이 저장소가 Robinhood를 "가상화폐 관련주" 섹터에 포함시킨 핵심 근거이기도 하다.
+- **경쟁 구도 변화**: 그동안 크립토 거래를 취급하지 않던 Charles Schwab이 2026년 상반기 중 비트코인·이더리움 현물 거래 서비스를 출시할 계획을 발표하는 등, 전통 대형 브로커리지들도 크립토 시장에 진입하며 Robinhood·Coinbase·Webull이 선점해온 리테일 크립토 거래 시장의 경쟁이 심화되는 추세다.
+
+---
+
+## 관련 문서
+
+같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
+
+- [핵심 지표](./05_metrics.md)
+
+---
+
+## 참고 자료
+
+- [Robinhood 공식 홈페이지](https://robinhood.com)
+- [Robinhood Markets, Inc. Investor Relations](https://investors.robinhood.com)
+- [Robinhood (HOOD) Market Cap & Net Worth — stockanalysis.com](https://stockanalysis.com/stocks/hood/market-cap/)
+- [Robinhood Reports Second Quarter 2026 Results (GlobeNewswire, 2026-07-29)](https://www.globenewswire.com/news-release/2026/07/29/3335576/0/en/robinhood-reports-second-quarter-2026-results.html)
+- [Robinhood Q2 2026 Revenue $1.308B, EPS $0.62 — 10-Q Summary (TradingView)](https://www.tradingview.com/news/tradingview:e9d8e3b1fa206:0-robinhood-markets-inc-q2-2026-revenue-1-308b-eps-0-62-10-q-summary/)
+- [Robinhood Q2 Revenue Hits Record $1.31B as Crypto Revenue Falls 38% to $100M (CryptoTimes)](https://www.cryptotimes.io/2026/07/30/robinhood-q2-revenue-hits-record-1-31-billion-crypto-earnings-fall-38/)
+- [Robinhood Q1 2026 earnings: revenue up 15%, crypto down 47% (Yahoo Finance)](https://finance.yahoo.com/markets/stocks/articles/robinhood-q1-2026-earnings-revenue-203244837.html)
+- [Robinhood Reports Fourth Quarter and Full Year 2025 Results (Investor Relations, 2026-02-10)](https://investors.robinhood.com/static-files/b2f8b742-6b7f-430d-9a42-3b06d5040bda)
+- [Robinhood Completes $200 Million Acquisition of Crypto Exchange Bitstamp (CoinDesk, 2025-06-03)](https://www.coindesk.com/business/2025/06/03/robinhood-completes-200m-acquisition-of-crypto-exchange-bitstamp)
+- [Robinhood vs Coinbase Statistics 2026 (coinlaw.io)](https://coinlaw.io/robinhood-vs-coinbase-statistics/)
+- [Robinhood Accelerates Global Expansion with Robinhood Chain Mainnet, Stock Tokens (Robinhood Newsroom)](https://robinhood.com/us/en/newsroom/robinhood-accelerates-global-expansion-robinhood-chain-mainnet-stock-tokens-agentic-trading/)
+- [Schwab plans spot crypto trading launch in first half of 2026 (CoinDesk, 2026-04-03)](https://www.coindesk.com/business/2026/04/03/schwab-plans-spot-bitcoin-ether-trading-launch-in-first-half-of-2026)
+- [Robinhood Markets — Wikipedia](https://en.wikipedia.org/wiki/Robinhood_Markets)
+- [Vlad Tenev | Management — Robinhood Investor Relations](https://investors.robinhood.com/management/vlad-tenev)
+
+---
+
+*작성일: 2026-08-14 (최종 수정: 2026-08-14 — `05_metrics.md` 작성 중 확인된 FY2025 매출 수치(44.7억 달러, 기존 45.2억 달러에서 수정) 반영)*
