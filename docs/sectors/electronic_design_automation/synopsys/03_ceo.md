@@ -57,6 +57,21 @@ Ansys 인수 발표 이후 KeyBanc(목표주가 660달러, Overweight), Piper Sa
 
 ---
 
+## 6. 지분 구조 / 거버넌스
+
+| 항목 | 값 | 기준일 |
+|------|-----|--------|
+| 기관 투자자 지분율 (%) | 약 87.4% (출처 간 87.4~88.5%로 소폭 편차) | 2026-08 기준 |
+| 내부자(임원·이사) 지분율 (%) (§4의 CEO 개인 지분 0.039% 포함 합계) | 약 0.78% | 2026-08 기준 |
+| 주요 대주주 (5% 이상 보유) | BlackRock Inc 약 8.29%, Vanguard(Group/Capital Management) 약 6.5~9.6%(출처별 편차, 아래 참고) | 2026-08 기준 |
+| 차등의결권 구조 (dual-class) | 없음 — 단일 클래스 보통주(SNPS) 확인. 별도 차등의결권 공시를 찾지 못함 | 2026-08 확인 |
+
+- 기관 지분율이 87~88%로 매우 높고 내부자 지분은 1% 미만이어서, 개인·창업자 지배력에 따른 의결권 집중 리스크는 낮은 편으로 판단됨. 다만 이는 반대로 CEO·경영진의 지분 기반 이해관계 일치도가 낮다는 의미이기도 함(§4 참고).
+- Vanguard 관련 수치는 출처마다 소폭 다르게 보도됨(WallStreetZen 상세 테이블 기준 "Vanguard Capital Management LLC" 6.50% vs 동일 출처 요약본 기준 "Vanguard Group Inc" 9.64%) — 실제 SEC 13F/13G 원문 대조는 하지 못했으며, 어느 쪽이든 5% 이상 대주주라는 결론은 바뀌지 않음.
+- 흥미로운 점으로 **Nvidia Corp이 약 2.52%(약 $1.99B 상당)를 보유**한 것으로 파악됨 — AI 반도체 밸류체인 내 전략적 지분 보유로 해석될 여지가 있으나, 5% 미만이라 공시 대주주 요건에는 해당하지 않음.
+
+---
+
 ## 관련 문서
 
 - [개요](./01_overview.md)
@@ -77,7 +92,8 @@ Ansys 인수 발표 이후 KeyBanc(목표주가 660달러, Overweight), Piper Sa
 - [Synopsys CEO Pay Jumps 172% to $27.4 Million on Promotion (Panabee)](https://www.panabee.com/news/synopsys-ceo-pay-jumps-172-to-27-4-million-on-promotion)
 - [SNPS: CEO Ghazi's Tech and Integrity Gaps May Undermine IP and Credibility Needs (Paragon Intel)](https://paragonintel.com/sassine-ghazi-ceo-analysis-snps/)
 - [Sassine Ghazi - Net Worth and Insider Trading (GuruFocus)](https://www.gurufocus.com/insider/4980/sassine-ghazi)
+- [WallStreetZen — Synopsys Stock Ownership](https://www.wallstreetzen.com/stocks/us/nasdaq/snps/ownership) (기관/내부자 지분율, 5% 이상 대주주)
 
 ---
 
-*작성일: 2026-08-08*
+*작성일: 2026-08-08 (최종 수정: 2026-08-14 — §6 지분 구조/거버넌스 추가)*
