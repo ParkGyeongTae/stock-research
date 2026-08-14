@@ -11,7 +11,7 @@
 
 ## 📁 폴더 구조
 
-**산업/섹터 폴더** 아래에 회사 폴더를 둡니다.
+**`sectors/` 아래에 산업/섹터 폴더**, 그 아래에 회사 폴더를 둡니다. 리서치 콘텐츠는 전부 `sectors/` 한 곳에 모여 있고, `meta/`는 콘텐츠에 종속되지 않는 참고 문서로 별도 depth에 둡니다.
 
 ```
 docs/
@@ -31,23 +31,24 @@ docs/
 │       │   └── 08_news.md
 │       └── sector/           # 섹터 폴더에 복사하는 템플릿
 │           └── 01_comparison.md
-├── electronic_design_automation/   # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스
-│   ├── 01_comparison.md # (선택) 섹터 내 회사 비교 — 2개사 이상일 때만
-│   ├── synopsys/
-│   ├── cadence_design_systems/
-│   └── siemens/
-└── <sector>/
-    ├── 01_comparison.md
-    └── <company-name>/
-        └── ...
+└── sectors/               # 모든 섹터/회사 리서치 콘텐츠가 이 아래에 모임
+    ├── electronic_design_automation/   # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스
+    │   ├── 01_comparison.md # (선택) 섹터 내 회사 비교 — 2개사 이상일 때만
+    │   ├── synopsys/
+    │   ├── cadence_design_systems/
+    │   └── siemens/
+    └── <sector>/
+        ├── 01_comparison.md
+        └── <company-name>/
+            └── ...
 ```
 
-- 최상위는 **`README.md` + `meta/`(참고 문서) + 섹터 폴더들**로만 구성 — 리서치 콘텐츠(섹터)와 참고 문서(meta)를 같은 depth에 섞지 않는다
+- 최상위(`docs/`)는 **`README.md` + `meta/`(참고 문서) + `sectors/`(리서치 콘텐츠)**로만 구성 — 리서치 콘텐츠와 참고 문서를 같은 depth에 섞지 않는다
 - 섹터 폴더명: **풀어 쓴 소문자 스네이크케이스** (예: `electronic_design_automation`, `semiconductor`, `cloud_infrastructure`) — 약어보다 명확한 전체 표기 우선
 - 회사 폴더명: **회사명 소문자 스네이크케이스** (예: `synopsys`, `nvidia`, `apple`)
-- 복합기업은 "관심 이유"가 되는 사업 기준 섹터에 배치 (예: Siemens → `electronic_design_automation/`)
+- 복합기업은 "관심 이유"가 되는 사업 기준 섹터에 배치 (예: Siemens → `sectors/electronic_design_automation/`)
 - 처음엔 `01_overview.md`만 있어도 됨. 분석이 깊어지면 아래 표대로 분리.
-- `meta/.template/` 안의 상대 링크(`../../meta/glossary.md` 등)는 **복사된 위치**(`docs/<sector>/<company>/`) 기준으로 적혀 있음 — 템플릿 폴더에서 직접 열면 깨져 보이는 게 정상이며, 복사 후에는 맞는다. (`.template`은 앞에 점이 붙어 있어 MkDocs 빌드에서도 제외됨)
+- `meta/.template/` 안의 상대 링크(`../../../meta/glossary.md` 등)는 **복사된 위치**(`docs/sectors/<sector>/<company>/`) 기준으로 적혀 있음 — 템플릿 폴더에서 직접 열면 깨져 보이는 게 정상이며, 복사 후에는 맞는다. (`.template`은 앞에 점이 붙어 있어 MkDocs 빌드에서도 제외됨)
 
 ---
 
@@ -102,20 +103,20 @@ docs/
 
 ```bash
 # 1. 템플릿 복사
-cp -r docs/meta/.template/company docs/<sector>/<company-name>
+cp -r docs/meta/.template/company docs/sectors/<sector>/<company-name>
 
 # 2. 파일 내용 채우기
 # 3. 필요 없는 파일은 삭제 (01_overview.md는 유지 권장)
 
 # 4. 같은 섹터에 회사가 2개 이상이면 비교 문서도 추가
-cp docs/meta/.template/sector/01_comparison.md docs/<sector>/01_comparison.md
+cp docs/meta/.template/sector/01_comparison.md docs/sectors/<sector>/01_comparison.md
 ```
 
 ---
 
 ## 🗂 알려진 예외 (정리 대기)
 
-- `electronic_design_automation/`은 3개사를 커버하지만 아직 `01_comparison.md`가 없음.
+- `sectors/electronic_design_automation/`은 3개사를 커버하지만 아직 `01_comparison.md`가 없음.
 
 ---
 
