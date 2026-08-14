@@ -14,7 +14,7 @@
 **산업/섹터 폴더** 아래에 회사 폴더를 둡니다.
 
 ```
-company_research/
+docs/
 ├── README.md              # (이 파일) 공통 규칙 — 사이트 첫 페이지
 ├── meta/                  # 특정 회사·섹터에 종속되지 않는 참고 문서 모음
 │   ├── glossary.md         # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
@@ -47,6 +47,7 @@ company_research/
 - 회사 폴더명: **회사명 소문자 스네이크케이스** (예: `synopsys`, `nvidia`, `apple`)
 - 복합기업은 "관심 이유"가 되는 사업 기준 섹터에 배치 (예: Siemens → `electronic_design_automation/`)
 - 처음엔 `01_overview.md`만 있어도 됨. 분석이 깊어지면 아래 표대로 분리.
+- `meta/.template/` 안의 상대 링크(`../../meta/glossary.md` 등)는 **복사된 위치**(`docs/<sector>/<company>/`) 기준으로 적혀 있음 — 템플릿 폴더에서 직접 열면 깨져 보이는 게 정상이며, 복사 후에는 맞는다. (`.template`은 앞에 점이 붙어 있어 MkDocs 빌드에서도 제외됨)
 
 ---
 
@@ -58,7 +59,7 @@ company_research/
 | `02_history.md` | 창업부터 현재까지의 연혁·주요 이벤트 | 선택 |
 | `03_ceo.md` | CEO/경영진 이력, 경영 스타일, 보상·지분, 시장 평가 | 선택 |
 | `04_financials.md` | 성장성·수익성·재무건전성·주주환원에 대한 **서술형 해석**. 숫자는 `05_metrics.md`를 인용만 하고 여기서 새로 표를 만들지 않는다 | 선택 |
-| `05_metrics.md` | 최근 3개년+올해(연간) / 최근 6개 분기의 매출·영업이익·PER·PBR·유동비율·부채비율·FCF·배당(DPS) 등 **원자료 수치표** (평균·중앙값 비교용). 회사 관련 모든 문서가 참조하는 단일 출처(source of truth) | 선택 |
+| `05_metrics.md` | 최근 3개년+올해(연간) / 최근 6개 분기의 매출·영업이익·PER·PBR·순부채·EV·유동비율·부채비율·FCF·SBC·배당(DPS) 등 **원자료 수치표** (평균·중앙값 비교용). 회사 관련 모든 문서가 참조하는 단일 출처(source of truth) | 선택 |
 | `06_valuation.md` | PER/PBR/DCF/DDM 등 방법론별 적정주가 산정과 근거·가정·민감도. EPS·BPS·DPS 등은 `05_metrics.md`를 인용 | 선택 |
 | `07_investment.md` | 투자 포인트(강점)·리스크·경쟁 해자·**투자 결론**. 밸류에이션 숫자는 `06_valuation.md`를 요약 인용만 한다 | 선택 |
 | `08_news.md` | 최근 뉴스·이슈·실적 발표 등 시점성 메모(발생 순 로그). 결론은 내리지 않고, 판단에 영향을 주면 `06_valuation.md`·`07_investment.md`를 직접 갱신 | 선택 |
@@ -79,7 +80,17 @@ company_research/
 - 사실 정보(실적·인수·인물)는 **출처 링크**를 문서 하단 "참고 자료"에 남기기
 - 주관적 판단(투자 결론)과 객관적 사실(재무 수치)을 **섞지 말고 구분**해서 적기
 - 회계연도(FY)처럼 헷갈리는 개념은 각주로 설명
-- 문서 맨 아래에 `*작성일: YYYY-MM-DD*` 표기
+- 문서 맨 아래에 `*작성일: YYYY-MM-DD*` 표기 — 기존 문서를 고쳤으면 `(최종 수정: YYYY-MM-DD)`를 덧붙이고, 인용된 수치를 갱신했으면 그 값을 인용하는 다른 문서(`04_financials.md`·`06_valuation.md`·섹터 `01_comparison.md`)도 함께 확인
+
+### 숫자를 다룰 때 반드시 지키는 것
+
+문서 간에 숫자가 어긋나는 사고는 대부분 아래 다섯 가지에서 납니다. 정의는 [`glossary.md`](./meta/glossary.md), 예시 풀이는 [`concepts/`](./meta/concepts/financial-metrics.md)에 있습니다.
+
+1. **할인율과 현금흐름의 짝** — `05_metrics.md`의 FCF(`CFO − CapEx`)는 지급이자가 이미 빠진 **FCFE**다. DCF에서 이 값을 할인할 땐 **자기자본비용(Ke)**을 쓰고 순부채를 따로 빼지 않는다. WACC를 쓰려면 현금흐름을 FCFF로 바꾸고 마지막에 순부채를 차감해야 한다 — **섞으면 결과가 틀린다.**
+2. **GAAP / Non-GAAP 구분** — 행마다 어느 기준인지 표기. 둘의 차이가 무엇으로 채워져 있는지(SBC / 인수 무형자산 상각 / 일회성)를 각주로 분해할 것. 반복되는 SBC를 "일회성 제거"로 읽지 않는다.
+3. **부채총계 vs 이자부 차입금** — 부채비율은 부채총계(총자산−자기자본) 기준, 순부채·EV는 이자부 차입금 기준. 두 값을 섞지 않는다.
+4. **평균·중앙값에 추정치(E)를 섞지 않는다** — 확정치만으로 계산하고, 몇 개년 기준인지 각주에 남긴다.
+5. **주식분할 소급조정** — 표 기간 내 분할·병합이 있었으면 과거 전 구간(주가·EPS·BPS·DPS·주식수)을 조정 후 기준으로 맞춘다.
 
 ---
 
@@ -95,6 +106,13 @@ cp -r docs/meta/.template/company docs/<sector>/<company-name>
 # 4. 같은 섹터에 회사가 2개 이상이면 비교 문서도 추가
 cp docs/meta/.template/sector/01_comparison.md docs/<sector>/01_comparison.md
 ```
+
+---
+
+## 🗂 알려진 예외 (정리 대기)
+
+- `automated_test_equipment/`·`space_launch_services/`·`unmanned_aerial_systems/` 아래 회사 폴더는 번호 없는 파일명(`overview.md`·`history.md`·`ceo.md`)을 씀 — 템플릿 도입 이전에 만든 것으로, 리네이밍 전까지는 다른 문서에서 링크할 때 실제 파일명을 확인할 것.
+- `electronic_design_automation/`은 3개사를 커버하지만 아직 `01_comparison.md`가 없음.
 
 ---
 
