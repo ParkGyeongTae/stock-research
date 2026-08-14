@@ -1,6 +1,6 @@
 # Company Research — 용어집
 
-`.template/company/`·`.template/sector/`의 문서들이 설명 없이 바로 쓰는 용어를 한 곳에 모은 참고 문서입니다. 특정 회사·섹터에 종속되지 않는 내용이라 `.template/` 밖, `README.md`와 같은 레벨에 둡니다.
+`.template/company/`·`.template/sector/`의 문서들이 설명 없이 바로 쓰는 용어를 한 곳에 모은 참고 문서입니다. 특정 회사·섹터에 종속되지 않는 내용이라 `docs/meta/`에 `.template/`·`concepts/`와 함께 둡니다.
 
 > ⚠️ 이 문서는 **일반적인 정의**만 다룬다. 특정 회사 문서(`valuation.md` 등)에 그 회사만의 가정·근거가 각주로 따로 적혀 있다면 그쪽이 우선한다 — 여기서 개념을 확인하고, 실제 계산 방식은 항상 해당 회사 문서에서 확인할 것.
 >
@@ -84,7 +84,7 @@
 
 ## 관련 문서
 
-- [README (공통 규칙)](./README.md)
+- [README (공통 규칙)](../README.md)
 - 개념을 예시로 풀어 쓴 학습용 문서: [`concepts/valuation.md`](./concepts/valuation.md) · [`concepts/financial-metrics.md`](./concepts/financial-metrics.md) · [`concepts/notation.md`](./concepts/notation.md) · [`concepts/investment-terms.md`](./concepts/investment-terms.md)
 
 ---

@@ -15,21 +15,22 @@
 
 ```
 company_research/
-├── README.md            # (이 파일) 공통 규칙
-├── glossary.md           # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
-├── concepts/              # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
-├── .template/            # 새 회사/섹터 추가 시 복사해서 쓰는 템플릿 모음
-│   ├── company/          # 회사 폴더에 복사하는 템플릿 (숫자 접두사 = 읽는 순서)
-│   │   ├── 01_overview.md
-│   │   ├── 02_history.md
-│   │   ├── 03_ceo.md
-│   │   ├── 04_financials.md
-│   │   ├── 05_metrics.md
-│   │   ├── 06_valuation.md
-│   │   ├── 07_investment.md
-│   │   └── 08_news.md
-│   └── sector/           # 섹터 폴더에 복사하는 템플릿
-│       └── 01_comparison.md
+├── README.md              # (이 파일) 공통 규칙 — 사이트 첫 페이지
+├── meta/                  # 특정 회사·섹터에 종속되지 않는 참고 문서 모음
+│   ├── glossary.md         # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
+│   ├── concepts/            # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
+│   └── .template/           # 새 회사/섹터 추가 시 복사해서 쓰는 템플릿 모음
+│       ├── company/          # 회사 폴더에 복사하는 템플릿 (숫자 접두사 = 읽는 순서)
+│       │   ├── 01_overview.md
+│       │   ├── 02_history.md
+│       │   ├── 03_ceo.md
+│       │   ├── 04_financials.md
+│       │   ├── 05_metrics.md
+│       │   ├── 06_valuation.md
+│       │   ├── 07_investment.md
+│       │   └── 08_news.md
+│       └── sector/           # 섹터 폴더에 복사하는 템플릿
+│           └── 01_comparison.md
 ├── electronic_design_automation/   # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스
 │   ├── 01_comparison.md # (선택) 섹터 내 회사 비교 — 2개사 이상일 때만
 │   ├── synopsys/
@@ -41,6 +42,7 @@ company_research/
         └── ...
 ```
 
+- 최상위는 **`README.md` + `meta/`(참고 문서) + 섹터 폴더들**로만 구성 — 리서치 콘텐츠(섹터)와 참고 문서(meta)를 같은 depth에 섞지 않는다
 - 섹터 폴더명: **풀어 쓴 소문자 스네이크케이스** (예: `electronic_design_automation`, `semiconductor`, `cloud_infrastructure`) — 약어보다 명확한 전체 표기 우선
 - 회사 폴더명: **회사명 소문자 스네이크케이스** (예: `synopsys`, `nvidia`, `apple`)
 - 복합기업은 "관심 이유"가 되는 사업 기준 섹터에 배치 (예: Siemens → `electronic_design_automation/`)
@@ -60,13 +62,13 @@ company_research/
 | `06_valuation.md` | PER/PBR/DCF/DDM 등 방법론별 적정주가 산정과 근거·가정·민감도. EPS·BPS·DPS 등은 `05_metrics.md`를 인용 | 선택 |
 | `07_investment.md` | 투자 포인트(강점)·리스크·경쟁 해자·**투자 결론**. 밸류에이션 숫자는 `06_valuation.md`를 요약 인용만 한다 | 선택 |
 | `08_news.md` | 최근 뉴스·이슈·실적 발표 등 시점성 메모(발생 순 로그). 결론은 내리지 않고, 판단에 영향을 주면 `06_valuation.md`·`07_investment.md`를 직접 갱신 | 선택 |
-| `<sector>/01_comparison.md` | 같은 섹터 내 커버리지 기업 간 사업 포지셔닝·밸류에이션 비교와 종합 순위. `.template/sector/01_comparison.md`를 복사해서 씀 | 선택 (섹터 내 2개사 이상일 때 권장) |
+| `<sector>/01_comparison.md` | 같은 섹터 내 커버리지 기업 간 사업 포지셔닝·밸류에이션 비교와 종합 순위. `meta/.template/sector/01_comparison.md`를 복사해서 씀 | 선택 (섹터 내 2개사 이상일 때 권장) |
 
-> 파일명 앞 숫자(01~08)는 **읽는 순서**(개요→역사→경영진→해석→원자료→밸류에이션→결론→뉴스로그)를 그대로 나타냅니다. 새 회사 폴더는 `.template/company/`를 복사해서 만들기 때문에 숫자도 그대로 따라옵니다 — 기존에 이미 만들어둔 회사 폴더(번호 없는 파일명)까지 소급 적용하려면 별도로 리네이밍이 필요합니다. `08_news.md`는 핵심 분석 흐름(01~07) 완성 후에 붙는 로그라 순서상 가장 뒤에 둡니다.
+> 파일명 앞 숫자(01~08)는 **읽는 순서**(개요→역사→경영진→해석→원자료→밸류에이션→결론→뉴스로그)를 그대로 나타냅니다. 새 회사 폴더는 `meta/.template/company/`를 복사해서 만들기 때문에 숫자도 그대로 따라옵니다 — 기존에 이미 만들어둔 회사 폴더(번호 없는 파일명)까지 소급 적용하려면 별도로 리네이밍이 필요합니다. `08_news.md`는 핵심 분석 흐름(01~07) 완성 후에 붙는 로그라 순서상 가장 뒤에 둡니다.
 > 회사마다 파일을 **똑같은 이름**으로 유지하면, 나중에 회사 간 비교가 쉬워집니다.
 > `05_metrics.md`가 원자료의 유일한 출처입니다. `04_financials.md`·`06_valuation.md`·`07_investment.md`는 숫자를 다시 채우지 말고 `05_metrics.md` 값을 인용해 해석만 쓰세요. `06_valuation.md`에서 미래 추정치(E)처럼 `05_metrics.md`에 아직 없는 값을 쓸 때만 그 문서에 직접 근거를 남기고, 확정치는 항상 `05_metrics.md`로 되돌아가 채우세요.
 > 같은 폴더의 다른 문서들은 서로 전부 링크하는 것(풀 메시)이 기본값입니다 — 없는 문서만 링크에서 빼세요.
-> PER·PBR·DCF·WACC·%p 등 용어가 낯설면 [`glossary.md`](./glossary.md)를 먼저 보세요.
+> PER·PBR·DCF·WACC·%p 등 용어가 낯설면 [`glossary.md`](./meta/glossary.md)를 먼저 보세요.
 
 ---
 
@@ -85,15 +87,15 @@ company_research/
 
 ```bash
 # 1. 템플릿 복사
-cp -r docs/.template/company docs/<sector>/<company-name>
+cp -r docs/meta/.template/company docs/<sector>/<company-name>
 
 # 2. 파일 내용 채우기
 # 3. 필요 없는 파일은 삭제 (01_overview.md는 유지 권장)
 
 # 4. 같은 섹터에 회사가 2개 이상이면 비교 문서도 추가
-cp docs/.template/sector/01_comparison.md docs/<sector>/01_comparison.md
+cp docs/meta/.template/sector/01_comparison.md docs/<sector>/01_comparison.md
 ```
 
 ---
 
-*작성일: 2026-08-01*
+*작성일: 2026-08-01 (최종 수정: 2026-08-14)*
