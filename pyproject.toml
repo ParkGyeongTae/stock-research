@@ -1,0 +1,9 @@
+[project]
+name = "stock-research"
+version = "0.1.0"
+description = "미국 상장 기업/섹터 투자 리서치 정리"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-awesome-pages-plugin>=2.10.1",
+    "mkdocs-material>=9.7.7",
+]
