@@ -16,7 +16,8 @@
 ```
 company_research/
 ├── README.md            # (이 파일) 공통 규칙
-├── glossary.md           # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리
+├── glossary.md           # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
+├── concepts/              # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
 ├── .template/            # 새 회사/섹터 추가 시 복사해서 쓰는 템플릿 모음
 │   ├── company/          # 회사 폴더에 복사하는 템플릿 (숫자 접두사 = 읽는 순서)
 │   │   ├── 01_overview.md

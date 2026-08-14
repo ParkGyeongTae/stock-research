@@ -3,10 +3,14 @@
 `.template/company/`·`.template/sector/`의 문서들이 설명 없이 바로 쓰는 용어를 한 곳에 모은 참고 문서입니다. 특정 회사·섹터에 종속되지 않는 내용이라 `.template/` 밖, `README.md`와 같은 레벨에 둡니다.
 
 > ⚠️ 이 문서는 **일반적인 정의**만 다룬다. 특정 회사 문서(`valuation.md` 등)에 그 회사만의 가정·근거가 각주로 따로 적혀 있다면 그쪽이 우선한다 — 여기서 개념을 확인하고, 실제 계산 방식은 항상 해당 회사 문서에서 확인할 것.
+>
+> 여기 표는 **빠르게 찾아보는 용도**라 정의가 1~2문장으로 압축돼 있다. 공식이 왜 그렇게 생겼는지, 실제 숫자로 계산하면 어떻게 되는지 제대로 이해하고 싶다면 각 절 제목 아래 링크된 [`concepts/`](./concepts/valuation.md) 학습용 문서를 참고할 것.
 
 ---
 
-## 1. 밸류에이션 방법론
+## 1. 밸류에이션 방법론 { #valuation }
+
+> 📖 예시로 풀어 쓴 설명: [`concepts/valuation.md`](./concepts/valuation.md)
 
 | 용어 | 뜻 |
 |------|-----|
@@ -24,7 +28,9 @@
 
 ---
 
-## 2. 재무 지표
+## 2. 재무 지표 { #financial-metrics }
+
+> 📖 예시로 풀어 쓴 설명: [`concepts/financial-metrics.md`](./concepts/financial-metrics.md)
 
 | 용어 | 뜻 |
 |------|-----|
@@ -46,7 +52,9 @@
 
 ---
 
-## 3. 표기 규칙
+## 3. 표기 규칙 { #notation }
+
+> 📖 예시로 풀어 쓴 설명: [`concepts/notation.md`](./concepts/notation.md)
 
 | 용어 | 뜻 |
 |------|-----|
@@ -59,7 +67,9 @@
 
 ---
 
-## 4. 투자 판단 / 거버넌스 용어
+## 4. 투자 판단 / 거버넌스 용어 { #investment-terms }
+
+> 📖 예시로 풀어 쓴 설명: [`concepts/investment-terms.md`](./concepts/investment-terms.md)
 
 | 용어 | 뜻 |
 |------|-----|
@@ -75,6 +85,7 @@
 ## 관련 문서
 
 - [README (공통 규칙)](./README.md)
+- 개념을 예시로 풀어 쓴 학습용 문서: [`concepts/valuation.md`](./concepts/valuation.md) · [`concepts/financial-metrics.md`](./concepts/financial-metrics.md) · [`concepts/notation.md`](./concepts/notation.md) · [`concepts/investment-terms.md`](./concepts/investment-terms.md)
 
 ---
 
