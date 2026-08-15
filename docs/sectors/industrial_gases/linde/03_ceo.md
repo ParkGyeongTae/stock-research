@@ -1,0 +1,104 @@
+# Linde plc — CEO / 경영진
+
+> Sanjiv Lamba는 BOC 인수(2006)로 Linde에 합류해 20년 가까이 내부에서 성장한 정통 산업가스맨으로, 2026년부터 CEO와 이사회 의장을 겸임하며 권한이 한층 커졌다 — 성과 자체는 시장·동종업계 대비 아웃퍼폼이지만 겸임 구조는 거버넌스 관점에서 지켜볼 지점이다.
+
+> ⚠️ 모든 항목은 웹검색으로 확인한 사실만 기록. 추측이나 출처 불명 내용은 작성 금지.
+>
+> ⚠️ 이 문서는 인물 관점의 이력만 다룬다. 회사 전체 연혁은 [`02_history.md`](./02_history.md) 참고.
+
+- **이름**: Sanjiv Lamba
+- **직책**: Chairman & CEO (2026-01-31부로 의장 겸임)
+- **취임일**: CEO 2022-03 (재임 4년차) / Chairman 2026-01-31 (재임 1년차 미만)
+- **출생년도 / 국적**: 출생년도 확인 안 됨(2026년 기준 약 61세로 추정) / 인도(India)
+- **학력**: 인도 콜카타 St. Xavier's College 상경학사(1987), 1989년 공인회계사(Chartered Accountant) 자격 취득
+- **전임 CEO**: Stephen F. Angel — 승계 계획에 따른 정상적 이양(스캔들·실적 부진 등 비자발적 교체 정황 없음). Angel은 CEO 퇴임(2022) 후 이사회 의장으로 재직하다 2026-01-31 완전 은퇴
+
+---
+
+## 1. 커리어 이력
+
+| 기간 | 직책 / 회사 | 내용 |
+|------|-------------|------|
+| 1989~2006 | BOC India | Finance팀으로 커리어 시작 → Director of Finance → 2001년 BOC India Managing Director |
+| 2006 | Linde의 BOC Group 인수로 합류 | Process Gas Solutions, South/Southeast Asia 담당 |
+| 2006~2011 | Linde South & East Asia | 지역사업본부장, 11개국 총괄 |
+| 2011-03~ | Linde Executive Board | 이사회 멤버로 승진 |
+| 2020-10~2022-03 | Linde COO | 최고운영책임자 |
+| 2022-03~현재 | Linde CEO | Steve Angel 뒤를 이어 CEO 취임 |
+| 2026-01-31~현재 | Linde Chairman & CEO | 이사회 의장 겸임 시작 |
+| 2026-01~ | Amphenol Corporation 이사회 | 사외이사로 신규 선임 |
+
+Linde/BOC 재직 기간은 통산 약 29년이며, 그 이전 경력을 포함해 산업가스 사업 외 다른 업종 경험은 확인되지 않았다 — 커리어 전체가 산업가스 한 업종에 집중된 내부 승진형 CEO다.
+
+---
+
+## 2. 경영 스타일 / 전략 방향
+
+Hydrogen Council 공동의장을 역임하는 등 청정수소 전환을 전략 우선순위로 강조해왔고, 재임 중 반도체 초고순도 가스·청정수소·헬륨 등 구조적 성장 산업 대상 대형 장기계약(삼성전자, OCI, 2026년 반도체 대만/미국 투자 등)을 적극적으로 체결해왔다. 2026-07-31 실적콜에서는 미국 Lincare(홈케어) 사업부의 마진 부진에 대해 "만족하지 못한다"며 매각을 포함한 전략적 옵션을 검토 중이라고 밝혀, 저수익 사업 정리에도 적극적인 태도를 보였다.
+
+---
+
+## 3. 주요 성과 / 논란
+
+- **성과**: 재임 기간(2022-03~) 5년 누적 총주주수익률(TSR) 기준 Linde $211 vs S&P500 $197 vs S&P Materials $152로 시장·동종업계 대비 아웃퍼폼(2024년 proxy 자료 기준, $100 투자 가정). FY2024 매출 $33.0B, 조정 EPS $15.51(+9% YoY), 조정영업이익률 29.5%(+190bp YoY), Non-GAAP 세후 ROC 25.9%. FY2025에도 매출·EPS 증가세 유지(조정 EPS $16.46, +6% YoY)
+- **논란 / 리스크**: 2026-01-31부로 CEO·의장을 겸임하게 되면서 이사회 견제 기능이 약화될 수 있다는 거버넌스 리스크가 구조적으로 존재 — 다만 이번 조사에서 시장·주주단체의 명시적 반대 표명은 확인되지 않음. 2026-07-31 실적 발표에서는 매출·EPS가 컨센서스를 상회했음에도 Lincare 마진 부진으로 주가가 당일 약 5%대 급락한 사례가 있어, 미국 홈케어 사업의 수익성 관리가 최근의 실행 리스크로 부각됨
+
+---
+
+## 4. 보상 / 지분
+
+<2024 회계연도(2025년 초 공시 proxy statement) 기준 — 2025 회계연도(2026년 공시) 최신 수치는 확인하지 못했다>
+
+| 항목 | 값 | 기준연도 |
+|------|-----|----------|
+| 총보상 (Total Compensation) | $20,696,088 (급여 $1,475,000 · 주식보상 $11,473,602 · 스톡옵션 $4,677,524 · 비지분 인센티브 $2,698,070 · 연금가치변동 $221,748 · 기타 $150,144) | FY2024 |
+| 회사 지분율 (%) | 약 0.02% 수준 (직접보유 약 90,794주 + 옵션 286,846주, 발행주식 약 4.61억주 대비) — 대형 산업재 기업의 전형적인 소액 경영진 지분 패턴, 지배주주 아님 | 2026-08 기준 |
+
+> 임원 목표 총직접보상(target total direct compensation)의 72~79%가 변동/성과연동형(장기 성과주(PSU)·스톡옵션, ROC(자본수익률)·상대 TSR 등 다년 지표 연동)으로 구성돼 있어 고정급 비중은 낮다.
+
+---
+
+## 5. 시장 / 투자자 평가
+
+애널리스트 컨센서스는 "Strong Buy"(24명 기준, 2026년 중반)이며 목표주가는 대략 $500~$600 범위(UBS $500·Buy, Bernstein $516·Outperform, Citi $585·Buy 등)에 분포한다. 다만 2026-07-31 실적 발표 이후 Lincare 마진 악화를 이유로 BMO 등 일부가 목표주가를 하향 조정했다 — 실적 자체보다 마진 추세에 대한 시장의 민감도가 높아진 것으로 읽힌다.
+
+---
+
+## 6. 지분 구조 / 거버넌스
+
+| 항목 | 값 | 기준일 |
+|------|-----|--------|
+| 기관 투자자 지분율 (%) | 약 82~85% (소스마다 82.67%/84%/85%로 편차 — 정확한 단일 수치는 확인 필요) | 2026-08 기준 |
+| 내부자(임원·이사) 지분율 (%) | 정확한 합산치 확인 안 됨 (CEO 개인 지분은 §4 참고, 약 0.02% 수준) | 2026-08 기준 |
+| 주요 대주주 (5% 이상 보유) | Vanguard Group(약 9.4~9.5%), Capital Research and Management(약 6.5%), State Street(약 4.1%), BlackRock(4.8~7.6%, 소스 간 편차·집계 기준 상이 — 확인 필요). 상위 23대 주주 합산 약 51%, 단일 지배주주 없음 | 2026-08 기준 |
+| 차등의결권 구조 (dual-class) | 검색 범위 내 발견되지 않음(보통주 1주 1의결권으로 추정) — **정관 원문 직접 대조는 못 해 확인 필요** | — |
+
+---
+
+## 관련 문서
+
+같은 폴더 내 다른 문서로 이동:
+
+- [개요](./01_overview.md)
+- [역사 / 주요 이벤트](./02_history.md)
+- [재무 / 실적](./04_financials.md)
+- [핵심 지표](./05_metrics.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
+- [투자 판단](./07_investment.md)
+- [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 (차트)](./09_technical.md)
+
+---
+
+## 참고 자료
+
+- [Linde 공식 경영진 소개 페이지](https://www.linde.com/about-us/leadership/sanjiv-lamba)
+- [MarketScreener — 경영진/이사회 변경 보도](https://www.marketscreener.com/news/linde-plc-announces-executive-and-board-changes-ce7d5bdcd88ff324)
+- [panabee.com — 2024년 CEO 보상 (proxy 인용)](https://www.panabee.com/news/linde-ceo-compensation-nears-21-million-in-2024-strongly-tied-to-performance)
+- [GuruFocus — CEO 내부자 지분](https://www.gurufocus.com/insider/21379/sanjiv-lamba)
+- [fintel.io — 기관 지분](https://fintel.io/so/us/lin)
+- [Investing.com — 2Q26 실적콜 트랜스크립트](https://www.investing.com/news/transcripts/earnings-call-transcript-linde-beats-q2-2026-estimates-but-shares-fall-52-93CH-4828679)
+
+---
+
+*작성일: 2026-08-15*
