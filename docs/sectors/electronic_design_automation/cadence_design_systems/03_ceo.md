@@ -82,6 +82,7 @@ IEEE Fellow, 미국 공학한림원(National Academy of Engineering) 회원이�
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 (차트)](./09_technical.md)
 
 ---
 
@@ -97,4 +98,4 @@ IEEE Fellow, 미국 공학한림원(National Academy of Engineering) 회원이�
 
 ---
 
-*작성일: 2026-08-08 (최종 수정: 2026-08-14 — §6 지분 구조/거버넌스 추가)*
+*작성일: 2026-08-08 (최종 수정: 2026-08-15)*
