@@ -8,40 +8,29 @@
 
 <!--
 ────────────────────────────────────────────────────────────────────────
-차트 생성 절차 (작성이 끝나면 이 주석 블록은 통째로 삭제할 것)
+차트 생성 (작성이 끝나면 이 주석 블록은 통째로 삭제할 것)
 
-1) 데이터 수집 — 일봉 OHLCV, 최근 1년(약 250 거래일).
-   예: https://query1.finance.yahoo.com/v8/finance/chart/<TICKER>?range=1y&interval=1d
-   수집한 원자료는 저장소에 커밋하지 않는다(스크래치 디렉터리에서 처리).
-   수정주가(adjusted)인지 원주가인지 확인하고 §4 "데이터"에 명시한다.
+아래 §1 SVG·§2 표·§4 수치는 **손으로 만들지 말고 스크립트로 생성한다.**
+좌표 매핑·스윙 탐지(전후 5거래일)·클러스터링(±2.5%) 파라미터가 그 스크립트에
+상수로 고정돼 있어, 회사마다 다시 구현하면 값이 조용히 달라져 회사 간 차트
+비교가 깨진다.
 
-2) 좌표 매핑 — viewBox "0 0 1200 680", 플롯 영역 x:60~1052, y:56~626.
-   p_min = 기간 최저가 − (최고−최저)×0.05,  p_max = 기간 최고가 + (최고−최저)×0.05
-   scale = (626 − 56) / (p_max − p_min)                     [px per USD]
-   y(p)  = 626 − (p − p_min) × scale
-   step  = (1052 − 60 − 4) / (N − 1)                        [N = 거래일 수]
-   x(i)  = 62 + i × step
-   body_w = clamp(step × 0.62, 1.6, 6)
-   캔들 = 심지 <line x1=x(i) y1=y(high) x2=x(i) y2=y(low)> + 몸통 <rect
-   x=x(i)−body_w/2, y=y(max(open,close)), height=max(|y(open)−y(close)|, 1.0)>
-   색: 종가 ≥ 시가면 var(--up), 아니면 var(--down).
-   가로 그리드는 눈금이 5~8개 나오는 라운드 단위(10/25/50/100 등)로.
-   x축 눈금·라벨은 각 월의 첫 거래일 위치에 "YY-MM" 형식으로.
+    uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명>
 
-3) 스윙 포인트 — 고가/저가가 전후 5거래일(총 11거래일 창) 내 최고/최저와 같으면
-   스윙 고점/저점. 창 크기를 바꿨으면 §4에 바꾼 값을 적는다.
+주요 옵션 (`--help`로 전체 확인):
+  --emit chart|table|facts|all  §1 SVG / §2 표 / §4 수치를 따로 뽑기
+  --event 2025-09-10:"실적발표 갭다운"   §3에서 다루는 날에 수직선
+  --ref-line 626.24:"52주 최고"          현재 레짐과 단절된 참고선
+  --force-level '366:(52주 최저)'        터치 2회 미만이어도 표시할 레벨
+  --close-on 2026-08-13                  다른 문서와 대조할 종가 조회
+  --levels N / --min-touches N           표시 개수·최소 터치 조정
 
-4) 클러스터링 — 스윙 포인트를 가격 오름차순 정렬 후, 기존 클러스터 중심과
-   ±2.5% 이내면 합치고 중심 재계산. 터치 2회 이상인 클러스터만 선으로 그린다
-   (터치 1회라도 52주 최고/최저처럼 의미가 뚜렷하면 예외로 표시하고 비고에 사유).
-   현재가 위쪽은 저항(R1,R2,…), 아래쪽은 지지(S1,S2,…)로 현재가에서 가까운 순 번호.
-
-5) 라벨 겹침 — 우측 라벨(x=1058)은 12px 이상 벌린다. 두 레벨이 가까워 겹치면
-   한쪽 라벨을 위/아래로 옮기고, 클러스터 자체를 합치지는 말 것.
-
-6) 클래스명 — 아래 `.<ticker>-chart`의 `<ticker>`를 소문자 티커로 치환(예: snps-chart).
-   다크 모드는 `prefers-color-scheme`와 `[data-md-color-scheme="slate"]`(MkDocs Material
-   테마 토글) 양쪽을 모두 정의해야 한다 — 한쪽만 두면 토글 시 글자가 안 보인다.
+출력을 문서에 옮긴 뒤 사람이 할 일:
+  - §2 표의 `<...>` 비고(어느 시기의 스윙대인지)와 §3 서술 채우기
+  - 기본값(--levels 3)이 이 회사에 안 맞으면 조정하고 그 사유를 §4에 남기기
+  - `--close-on`으로 뽑은 종가를 05_metrics.md/06_valuation.md 값과 대조하고
+    문서 상단 ⚠️ 블록에 결과 적기 (어긋나면 수정주가 여부부터 확인)
+  - 파라미터를 기본값에서 바꿨다면 §4 방법론 문장을 실제 쓴 값으로 고치기
 ────────────────────────────────────────────────────────────────────────
 -->
 
@@ -49,75 +38,11 @@
 
 ## 1. 차트 — 최근 1년 일봉 (<YYYY-MM-DD> ~ <YYYY-MM-DD>)
 
-<div class="<ticker>-chart">
-<style>
-.<ticker>-chart {
-  --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
-  --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
-}
-@media (prefers-color-scheme: dark) {
-  .<ticker>-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
-}
-[data-md-color-scheme="slate"] .<ticker>-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
-.<ticker>-chart svg { width:100%; height:auto; display:block; }
-.<ticker>-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
-.<ticker>-chart .title { fill: var(--ink); font-weight:600; }
-.<ticker>-chart .grid { stroke: var(--grid); stroke-width:1; }
-.<ticker>-chart .axis { stroke: var(--axis); stroke-width:1; }
-</style>
-<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="<회사명>(<TICKER>) 최근 1년 일봉 캔들차트, 지지선과 저항선 포함">
-<rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
-<text x="60" y="26" class="title" font-size="18"><회사명> (<TICKER>) — 최근 1년 일봉</text>
-<text x="60" y="44" font-size="12.5" fill="var(--ink2)"><YYYY-MM-DD> ~ <YYYY-MM-DD> · 마지막 종가 $<X> (<YYYY-MM-DD>) · 단위 USD</text>
-
-<!-- (a) 가격 그리드 — 라운드 단위마다 반복 -->
-<line x1="60" y1="<y(price)>" x2="1052" y2="<y(price)>" class="grid"/>
-<text x="52" y="<y(price)+4>" font-size="11" text-anchor="end" fill="var(--muted)"><price></text>
-
-<!-- (b) x축 월 눈금 — 각 월 첫 거래일마다 반복 -->
-<line x1="<x(i)>" y1="626.0" x2="<x(i)>" y2="631.0" class="axis"/>
-<text x="<x(i)>" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)"><YY-MM></text>
-
-<!-- (c) 축선 -->
-<line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
-<line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
-
-<!-- (d) 참고선 — 52주 최고/최저 등, 현재 레짐과 단절돼 지지/저항으로 보기 어려운 수준 (없으면 삭제) -->
-<line x1="60" y1="<y(ref)>" x2="1052" y2="<y(ref)>" stroke="var(--ref)" stroke-width="1" stroke-dasharray="2,3" opacity="0.7"/>
-<text x="1058" y="<y(ref)+3>" font-size="10.5" fill="var(--muted)">$<X> 52주 최고</text>
-
-<!-- (e) 이벤트 수직선 — 실적발표 갭 등 §3에서 다루는 날짜만 (없으면 삭제) -->
-<line x1="<x(i)>" y1="56.0" x2="<x(i)>" y2="626.0" stroke="var(--down)" stroke-width="1" stroke-dasharray="1,3" opacity="0.55"/>
-<text x="<x(i)+6>" y="68.0" font-size="10.5" fill="var(--down)"><YYYY-MM-DD> <이벤트 요약></text>
-
-<!-- (f) 캔들 — 거래일 수만큼 반복 (양봉 예시 / 음봉은 var(--down)) -->
-<line x1="<x(i)>" y1="<y(high)>" x2="<x(i)>" y2="<y(low)>" stroke="var(--up)" class="wick"/>
-<rect x="<x(i)-body_w/2>" y="<y(max(open,close))>" width="<body_w>" height="<몸통 높이>" fill="var(--up)"/>
-
-<!-- (g) 저항선 — R1부터 위로 반복. 라벨은 선 위쪽(y-6) 또는 아래쪽(y+3.5)에 배치 -->
-<line x1="60" y1="<y(R)>" x2="1052" y2="<y(R)>" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="<y(R)+3.5>" font-size="11.5" fill="var(--resistance)" font-weight="600">$<X> R1</text>
-<text x="1058" y="<y(R)+15.5>" font-size="9.5" fill="var(--muted)">터치 <n>회</text>
-
-<!-- (h) 지지선 — S1부터 아래로 반복 -->
-<line x1="60" y1="<y(S)>" x2="1052" y2="<y(S)>" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="<y(S)-6>" font-size="11.5" fill="var(--support)" font-weight="600">$<X> S1</text>
-<text x="1058" y="<y(S)+6>" font-size="9.5" fill="var(--muted)">터치 <n>회</text>
-
-<!-- (i) 마지막 종가 마커 -->
-<circle cx="1052.0" cy="<y(마지막 종가)>" r="3" fill="var(--ink)"/>
-
-<!-- (j) 범례 -->
-<rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
-<text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
-<rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
-<text x="164" y="660" font-size="11" fill="var(--ink2)">하락(음봉)</text>
-<line x1="240" y1="656" x2="258" y2="656" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="264" y="660" font-size="11" fill="var(--ink2)">지지선(Support)</text>
-<line x1="390" y1="656" x2="408" y2="656" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="414" y="660" font-size="11" fill="var(--ink2)">저항선(Resistance)</text>
-</svg>
-</div>
+<!-- ↓ 아래 한 줄을 지우고 `--emit chart` 출력(<div class="<ticker>-chart">…</div>)을 그대로 붙여넣을 것.
+     클래스명·다크모드 CSS·범례가 모두 포함돼 있으므로 손댈 필요 없다.
+     다크 모드는 prefers-color-scheme와 [data-md-color-scheme="slate"](MkDocs Material
+     테마 토글) 양쪽이 정의돼 있어야 하며, 스크립트 출력에 이미 들어 있다. -->
+<차트 SVG 블록 — scripts/gen_technical_chart.py 출력>
 
 ---
 
@@ -125,6 +50,7 @@
 
 각 레벨은 "전후 <n>거래일 내 최고/최저인 스윙 포인트"를 가격 기준 ±<n>% 이내로 묶은 클러스터다. 터치 횟수는 그 클러스터에 포함된 스윙 포인트 개수(강도 근사치)를 뜻하며, 미래 지지/저항을 보장하지 않는다(§4 한계 참고).
 
+<!-- `--emit table` 출력을 붙여넣고, 비고 열의 `<...>`만 직접 채울 것 -->
 | 레벨 | 가격 | 터치 횟수 | 비고 |
 |------|------|-----------|------|
 | R3 | $ |  | <어느 시기의 스윙 고점대인지> |
@@ -136,7 +62,7 @@
 | S3 | $ |  |  |
 | 참고선 | $ | — | <52주 최고/최저 등 — 왜 근시일 지지/저항으로 보지 않는지> |
 
-> 레벨 개수는 3개로 고정하지 말 것 — 유효한 클러스터가 2개면 2개만 쓰고, 억지로 채우지 않는다. 반대로 5개 이상 잡히면 터치 횟수가 많은 것부터 남기고 나머지는 생략한 사유를 각주로 남긴다.
+> 레벨 개수는 3개(스크립트 기본값)로 고정하지 말 것 — 유효한 클러스터가 2개면 2개만 쓰고, 억지로 채우지 않는다. `--levels`로 늘리거나 줄였으면 그 사유를 §4에 남긴다. 터치 2회 미만인데도 의미가 뚜렷해 `--force-level`로 넣은 레벨은 비고에 사유를 반드시 적을 것(예: 52주 최저).
 
 ---
 
@@ -152,9 +78,11 @@
 
 ## 4. 방법론 · 한계
 
+<!-- 아래 3줄은 `--emit facts` 출력을 그대로 붙여넣을 것 (파라미터를 바꿨다면 그 값이 반영돼 나온다) -->
 - **데이터**: <출처> 일봉 OHLCV(Open/High/Low/Close/Volume), <N>개 거래일, <YYYY-MM-DD>~<YYYY-MM-DD>. 수집 시점: <YYYY-MM-DD>. <수정주가(배당·분할 반영) 여부 명시>
 - **스윙 포인트 탐지**: 각 거래일의 고가/저가가 전후 <n>거래일(총 <2n+1>거래일 창) 내 최고/최저값과 같으면 스윙 고점/저점으로 분류.
 - **클러스터링**: 스윙 포인트를 가격 오름차순으로 정렬한 뒤, 이미 만든 클러스터 중심과 ±<n>% 이내면 같은 클러스터로 합산하고 중심을 재계산.
+- **생성**: `scripts/gen_technical_chart.py` (<사용한 옵션 그대로 기록 — 재현용>). 파라미터는 회사 간 비교가 가능하도록 스크립트에 고정돼 있다.
 - **한계**:
     - 후행적(과거 데이터 기반) 지표다. 특정 가격이 지지·저항으로 "작동할 것"을 보장하지 않는다.
     - 거래량 프로파일, 이동평균, 추세선, 옵션 미결제약정 등 다른 기술적 지표는 포함하지 않았다 — 스윙 고점/저점 빈도만 반영한 단순 모델이다.
