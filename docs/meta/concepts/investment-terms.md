@@ -66,7 +66,11 @@
 ## 관련 문서
 
 - [glossary.md — 4. 투자 판단 / 거버넌스 용어](../glossary.md#investment-terms)
+- [리스크 · 회계 품질 개념 정리](./risk-and-quality.md) — Bear Case를 구체적으로 쓰기 위한 재료
+- [사업 모델 · 성장 지표 개념 정리](./business-metrics.md) — 해자가 숫자로 드러나는 자리(NRR·전환비용)
+- [시장 구조 · 거래 개념 정리](./market-structure.md) — 차등의결권·락업·희석
+- [밸류에이션 개념 정리](./valuation.md)
 
 ---
 
-*작성일: 2026-08-14*
+*작성일: 2026-08-14 (최종 수정: 2026-08-15 — 관련 문서에 신설된 개념 정리 링크 추가)*

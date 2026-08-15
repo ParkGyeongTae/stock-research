@@ -171,8 +171,13 @@ PER·PBR·DCF·DDM 네 방법론을 다 적용했다고 가정해봅시다.
 ## 관련 문서
 
 - [glossary.md — 1. 밸류에이션 방법론](../glossary.md#valuation)
+- [재무제표 기초 개념 정리](./financial-statements.md) — 밸류에이션의 재료가 되는 세 개의 표 (입문)
 - [재무 지표 개념 정리](./financial-metrics.md)
+- [사업 모델 · 성장 지표 개념 정리](./business-metrics.md)
+- [거시경제 개념 정리](./macroeconomics.md) — 무위험이자율·할인율이 결정되는 배경
+- [시장 구조 · 거래 개념 정리](./market-structure.md)
+- [리스크 · 회계 품질 개념 정리](./risk-and-quality.md)
 
 ---
 
-*작성일: 2026-08-14*
+*작성일: 2026-08-14 (최종 수정: 2026-08-15 — 관련 문서에 신설된 개념 정리 링크 추가)*

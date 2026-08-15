@@ -73,8 +73,11 @@ QoQ만 보면 "역성장"으로 오해하지만, YoY까지 같이 보면 계절�
 ## 관련 문서
 
 - [glossary.md — 3. 표기 규칙](../glossary.md#notation)
+- [재무제표 기초 개념 정리](./financial-statements.md)
 - [재무 지표 개념 정리](./financial-metrics.md)
+- [시장 구조 · 거래 개념 정리](./market-structure.md) — 주식분할·배당락 등 표기에 영향을 주는 이벤트
+- [거시경제 개념 정리](./macroeconomics.md) — 상수통화 기준이 필요해지는 이유
 
 ---
 
-*작성일: 2026-08-14*
+*작성일: 2026-08-14 (최종 수정: 2026-08-15 — 관련 문서에 신설된 개념 정리 링크 추가)*
