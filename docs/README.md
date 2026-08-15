@@ -180,7 +180,8 @@ uv run mkdocs build   # 배포와 동일하게 빌드 — 경고 메시지를 �
 - **기존 회사들의 `05_metrics.md`에 C절(사업 고유 지표)이 없음** (2026-08-15 규칙 신설). 템플릿은 `C. 사업 고유 지표` → `D. 판단 메모`이지만, 기존 문서는 아직 `C. 판단 메모`입니다. 소급 적용하지 않고 **그 회사를 다음에 갱신할 때 함께 채우는 것**으로 둡니다. 채울 때는 그 섹터의 다른 회사와 지표를 맞출 것:
     - `unmanned_aerial_systems` — Kratos는 이미 backlog·book-to-bill을 **B절 분기표 안에** 행으로 갖고 있어 C절로 옮기면 되고, AeroVironment는 아직 없어 새로 조사가 필요합니다. **제거 조건**: 두 회사 모두 C절 정착 + `01_comparison.md §2-1`에서 지표가 대응되면 이 하위 줄만 삭제.
     - `space_launch_services` — Rocket Lab은 백로그가 각주 서술로만 있고 표가 없습니다. **제거 조건**: Rocket Lab C절에 백로그 표가 들어가면 삭제(섹터가 1사이면 `01_comparison.md`는 필요 없음).
-    - `electronic_design_automation` · `digital_asset_finance` — 양쪽 다 고유 지표 표가 없습니다. **제거 조건**: 그 섹터의 모든 회사가 C절 정착 + 섹터 `01_comparison.md §2-1`이 그 지표를 반영하면 그 섹터 이름을 이 줄에서 지움.
+    - `electronic_design_automation` — 고유 지표 표가 없습니다. **제거 조건**: 그 섹터의 모든 회사가 C절 정착 + 섹터 `01_comparison.md §2-1`이 그 지표를 반영하면 이 줄에서 지움.
+    - `digital_asset_finance` — Coinbase는 C절(총 거래대금·시장점유율·고객 예치자산)을 갖췄으나(2026-08-15), Circle·Robinhood는 아직입니다. **제거 조건**: Circle·Robinhood도 C절을 채우고(Coinbase 지표를 그대로 따르거나 자사 사업 구조에 맞게 조정) 섹터 `01_comparison.md §2-1`이 반영하면 이 줄에서 지움.
     - 전체 항목 **제거 조건**: 위 하위 줄이 모두 지워지면 이 상위 항목 자체를 삭제.
 
 ---
