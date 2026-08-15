@@ -36,8 +36,8 @@
 <text x="52" y="334.8" font-size="11" text-anchor="end" fill="var(--muted)">500</text>
 <line x1="60" y1="229.0" x2="1052" y2="229.0" class="grid"/>
 <text x="52" y="233.0" font-size="11" text-anchor="end" fill="var(--muted)">550</text>
-<line x1="60" y1="127.2" x2="1052" y2="127.2" class="grid"/>
-<text x="52" y="131.2" font-size="11" text-anchor="end" fill="var(--muted)">600</text>
+<line x1="60" y1="127.3" x2="1052" y2="127.3" class="grid"/>
+<text x="52" y="131.3" font-size="11" text-anchor="end" fill="var(--muted)">600</text>
 <line x1="62.0" y1="626.0" x2="62.0" y2="631.0" class="axis"/>
 <text x="62.0" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">25-08</text>
 <line x1="105.5" y1="626.0" x2="105.5" y2="631.0" class="axis"/>
@@ -570,23 +570,23 @@
 <rect x="1040.89" y="506.4" width="2.45" height="2.9" fill="var(--down)"/>
 <line x1="1046.1" y1="500.0" x2="1046.1" y2="526.8" stroke="var(--down)" class="wick"/>
 <rect x="1044.85" y="509.3" width="2.45" height="1.2" fill="var(--down)"/>
-<line x1="1050.0" y1="485.6" x2="1050.0" y2="515.1" stroke="var(--up)" class="wick"/>
+<line x1="1050.0" y1="485.6" x2="1050.0" y2="515.3" stroke="var(--up)" class="wick"/>
 <rect x="1048.80" y="490.6" width="2.45" height="15.0" fill="var(--up)"/>
-<line x1="60" y1="433.8" x2="1052" y2="433.8" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="437.3" font-size="11.5" fill="var(--resistance)" font-weight="600">$449 R1</text>
-<text x="1058" y="449.3" font-size="9.5" fill="var(--muted)">터치 4회</text>
-<line x1="60" y1="373.2" x2="1052" y2="373.2" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="376.7" font-size="11.5" fill="var(--resistance)" font-weight="600">$479 R2</text>
-<text x="1058" y="388.7" font-size="9.5" fill="var(--muted)">터치 3회</text>
-<line x1="60" y1="254.9" x2="1052" y2="254.9" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="258.4" font-size="11.5" fill="var(--resistance)" font-weight="600">$537 R3</text>
-<text x="1058" y="270.4" font-size="9.5" fill="var(--muted)">터치 2회</text>
-<line x1="60" y1="517.7" x2="1052" y2="517.7" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="511.7" font-size="11.5" fill="var(--support)" font-weight="600">$408 S1</text>
-<text x="1058" y="523.7" font-size="9.5" fill="var(--muted)">터치 4회</text>
-<line x1="60" y1="572.7" x2="1052" y2="572.7" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="566.7" font-size="11.5" fill="var(--support)" font-weight="600">$381 S2</text>
-<text x="1058" y="578.7" font-size="9.5" fill="var(--muted)">터치 4회</text>
+<line x1="60" y1="433.9" x2="1052" y2="433.9" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
+<text x="1058" y="437.4" font-size="11.5" fill="var(--resistance)" font-weight="600">$449 R1</text>
+<text x="1058" y="449.4" font-size="9.5" fill="var(--muted)">터치 4회</text>
+<line x1="60" y1="373.3" x2="1052" y2="373.3" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
+<text x="1058" y="376.8" font-size="11.5" fill="var(--resistance)" font-weight="600">$479 R2</text>
+<text x="1058" y="388.8" font-size="9.5" fill="var(--muted)">터치 3회</text>
+<line x1="60" y1="332.9" x2="1052" y2="332.9" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
+<text x="1058" y="336.4" font-size="11.5" fill="var(--resistance)" font-weight="600">$499 R3</text>
+<text x="1058" y="348.4" font-size="9.5" fill="var(--muted)">터치 2회</text>
+<line x1="60" y1="517.8" x2="1052" y2="517.8" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
+<text x="1058" y="511.8" font-size="11.5" fill="var(--support)" font-weight="600">$408 S1</text>
+<text x="1058" y="523.8" font-size="9.5" fill="var(--muted)">터치 4회</text>
+<line x1="60" y1="572.8" x2="1052" y2="572.8" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
+<text x="1058" y="566.8" font-size="11.5" fill="var(--support)" font-weight="600">$381 S2</text>
+<text x="1058" y="578.8" font-size="9.5" fill="var(--muted)">터치 4회</text>
 <line x1="60" y1="603.6" x2="1052" y2="603.6" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
 <text x="1058" y="597.6" font-size="11.5" fill="var(--support)" font-weight="600">$366 S3 (52주 최저)</text>
 <text x="1058" y="609.6" font-size="9.5" fill="var(--muted)">터치 1회</text>
@@ -610,7 +610,7 @@
 
 | 레벨 | 가격 | 터치 횟수 | 비고 |
 |------|------|-----------|------|
-| R3 | $537 | 2 | 2026-01·2026-05 상단 스윙 고점대 |
+| R3 | $499 | 2 | 2025-10·2026-04 스윙 고점대 |
 | R2 | $479 | 3 | 2025-10·2025-12·2026-06 반복 저항 |
 | R1 | $449 | 4 | 2026-02~2026-07 구간에서 가장 자주 되돌림 |
 | **현재가** | **$421.50** (2026-08-14 종가) | — | R1과 S1 사이 |
@@ -618,6 +618,8 @@
 | S2 | $381 | 4 | 2025-11·2026-03~04 저점대 |
 | S3 | $366 | 1 | 52주 최저(2026-07-17), 이후 반등 기점 |
 | 참고선 | $626 | — | 52주 최고(2025-09-08) — 아래 §3 갭다운 이전 레짐, 현재 가격대와 단절되어 있어 근시일 저항으로 보지 않음 |
+
+> 표시 기준은 "현재가에서 가까운 순으로 각 방향 3개"다(§4 생성 스크립트 기본값). R3 위로도 터치 2회 클러스터가 $518(2025-09·2026-05), $537(2026-01·2026-05) 두 개 더 있으나 현재가에서 20% 이상 떨어져 있어 표시하지 않았다 — 필요하면 `--levels`로 늘려 재생성할 수 있다. S3($366)는 터치 1회로 기준에 못 미치지만 52주 최저이자 반등 기점이라 예외로 포함했다.
 
 ---
 
@@ -633,7 +635,8 @@
 
 - **데이터**: Yahoo Finance 일봉 OHLCV(Open/High/Low/Close/Volume), 251개 거래일, 2025-08-15~2026-08-14. 수집 시점: 2026-08-15.
 - **스윙 포인트 탐지**: 각 거래일의 고가/저가가 전후 5거래일(총 11거래일 창) 내 최고/최저값과 같으면 스윙 고점/저점으로 분류.
-- **클러스터링**: 스윙 포인트를 가격 오름차순으로 정렬한 뒤, 이미 만든 클러스터 중심과 ±2.5% 이내면 같은 클러스터로 합산하고 중심을 재계산.
+- **클러스터링**: 스윙 포인트를 가격 오름차순으로 정렬한 뒤, 이미 만든 클러스터 중심과 ±2.5% 이내면 같은 클러스터로 합산하고 중심을 재계산. 터치 2회 이상만 표시(예외는 §2 각주).
+- **생성**: `scripts/gen_technical_chart.py SNPS --name Synopsys --event 2025-09-10:"실적발표 갭다운 (시가 -29%, 종가 -35.8%)" --ref-line 626.24:"52주 최고" --force-level '366:(52주 최저)'`. 파라미터는 회사 간 비교가 가능하도록 스크립트에 고정돼 있다.
 - **한계**:
     - 후행적(과거 데이터 기반) 지표다. 특정 가격이 지지·저항으로 "작동할 것"을 보장하지 않는다.
     - 거래량 프로파일, 이동평균, 추세선, 옵션 미결제약정 등 다른 기술적 지표는 포함하지 않았다 — 스윙 고점/저점 빈도만 반영한 단순 모델이다.
@@ -664,4 +667,4 @@
 
 ---
 
-*작성일: 2026-08-15*
+*작성일: 2026-08-15 (최종 수정: 2026-08-15 — 차트·레벨을 `scripts/gen_technical_chart.py`로 재생성. 표시 기준을 "현재가에서 가까운 순 3개"로 명문화하면서 R3를 $537 → $499로 교체하고, 표시하지 않은 상단 클러스터를 §2 각주에 남김)*
