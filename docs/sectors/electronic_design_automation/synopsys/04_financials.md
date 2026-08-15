@@ -51,6 +51,7 @@ Synopsys는 배당을 지급하지 않는다(DPS $0, 배당성향·배당수익�
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 (차트)](./09_technical.md)
 
 ---
 

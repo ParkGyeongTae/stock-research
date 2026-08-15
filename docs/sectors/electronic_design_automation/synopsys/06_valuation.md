@@ -143,6 +143,7 @@ FY2026(E)은 회사가 직접 제시한 지표(Non-GAAP EPS·FCF 가이던스)�
 - [핵심 지표](./05_metrics.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 (차트)](./09_technical.md)
 
 ---
 
