@@ -2,13 +2,16 @@
 
 > 반도체 테스트 장비(ATE) 분야의 글로벌 Big Two 중 하나. AI 반도체 테스트 수요 급증과 협동로봇·자율이동로봇(Robotics) 사업을 함께 보유한 이중 성장 스토리 기업.
 
+> ⚠️ 시가총액은 항상 작성 시점(오늘 날짜) 기준 최신 값으로 기록. 통화 단위(USD)와 기준일을 반드시 함께 명시하고, 문서를 갱신할 때마다 시가총액과 기준일도 최신 날짜로 함께 업데이트할 것.
+
 - **회사명**: Teradyne, Inc.
-- **티커 / 상장 시장**: TER (NASDAQ)
+- **티커 / 상장 시장**: TER (NASDAQ, 2018-11-27 NYSE에서 이전)
 - **설립 / 본사**: 1960년 (Alexander V. d'Arbeloff, Nicholas DeWolf 공동 창업) / 미국 매사추세츠 노스 레딩(North Reading)
-- **CEO**: Greg Smith
+- **CEO**: Greg Smith (2023-02-01 취임)
 - **홈페이지**: https://www.teradyne.com
-- **섹터 / 산업**: 테크 / 반도체 테스트 장비 (ATE, Automated Test Equipment)
-- **시가총액**: 약 $575.6억 달러 (2026년 8월 기준)
+- **섹터 / 산업**: Automated Test Equipment (반도체 테스트 장비, ATE)
+- **시가총액**: 약 $654.7억 (2026-08-14 종가 $418.79, 발행주식수 약 156.34M주 기준 — 출처: stockanalysis.com)
+- **회계연도(FY) 마감월**: 12월 말(캘린더 연도와 동일) — 다른 문서에서 FY를 언급할 땐 이 값을 그대로 인용할 것
 
 ---
 
@@ -23,13 +26,15 @@ Teradyne은 Advantest와 함께 반도체 테스트 장비(ATE) 시장을 양분
 
 ## 2. 사업 모델 — 어떻게 돈을 버는가
 
-테스트 시스템·로봇 제품을 판매하며, 반도체 업사이클(특히 AI 컴퓨트 수요)에 매출이 크게 연동된다.
+테스트 시스템·로봇 제품을 판매하며, 반도체 업사이클(특히 AI 컴퓨트 수요)에 매출이 크게 연동된다. 2024년 4분기부터 보고 세그먼트를 4개(Semiconductor Test·System Test·Wireless Test·Robotics)에서 3개(Semiconductor Test·Product Test·Robotics)로 재편했다 — System Test·Wireless Test가 Semiconductor Test 또는 신설된 Product Test로 흡수됐다.
 
-| 사업 부문 | 설명 | 매출 비중 (2026 Q1 기준) |
-|-----------|------|-----------|
-| Semiconductor Test | SoC, 메모리, 시스템 레벨 테스트 제품·서비스 | 약 87% |
-| Robotics | 협동로봇(Universal Robots), 자율이동로봇(AMR, MiR) | 약 7% |
-| Product Test | 국방/항공우주 테스트, 회로기판 테스트, 무선 테스트, 실리콘 포토닉스 테스트 등 | 약 6% |
+| 사업 부문 | 설명 | 매출 비중 | 기준 시점 |
+|-----------|------|-----------|-----------|
+| Semiconductor Test | SoC·메모리·시스템 레벨 반도체 테스트 장비·소프트웨어·서비스 | 84.4% | 2026 Q2 |
+| Product Test | 국방/항공우주 테스트, 회로기판 테스트, 무선 테스트, 실리콘 포토닉스(PIC) 테스트 등 | 8.1% | 2026 Q2 |
+| Robotics | 협동로봇(Universal Robots), 자율이동로봇(AMR, MiR) | 7.5% | 2026 Q2 |
+
+> 위 비중은 2026 Q2(2026-06-28 종료) 분기 매출 $1,329M 기준(Semiconductor Test $1,122M, Product Test $107M, Robotics $100M) — 출처: [Teradyne 2026 Q2 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/445/teradyne-reports-second-quarter-2026-results). 참고로 FY2025 연간 기준 비중은 Semiconductor Test 79%·Product Test 11%·Robotics 10%(10-K)로, AI 컴퓨트 수요가 몰린 최근 분기일수록 Semiconductor Test 비중이 더 높게 나타난다.
 
 ---
 
@@ -45,14 +50,30 @@ ATE(반도체 테스트 장비) 시장은 **Teradyne과 Advantest 두 회사가 
 
 ---
 
+## 관련 문서
+
+같은 폴더 내 다른 문서로 이동:
+
+- [역사 / 주요 이벤트](./02_history.md)
+- [CEO / 경영진](./03_ceo.md)
+- [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
+- [투자 판단](./07_investment.md)
+- [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+
+---
+
 ## 참고 자료
 
 - [Teradyne 공식 홈페이지](https://www.teradyne.com)
 - [Teradyne Investor Relations](https://investors.teradyne.com/)
-- [Teradyne Wikipedia](https://en.wikipedia.org/wiki/Teradyne)
-- [Teradyne Reports First Quarter 2026 Results](https://investors.teradyne.com/news-events/press-releases/detail/440/teradyne-reports-first-quarter-2026-results)
-- [TER Q2 2026 Earnings Call — Record Quarter as AI Demand Fuels Growth](https://finance.biggo.com/news/US_TER_2026-07-29)
+- [Teradyne 2026 Q2 실적발표 (세그먼트 매출)](https://investors.teradyne.com/news-events/press-releases/detail/445/teradyne-reports-second-quarter-2026-results)
+- [Teradyne FY2025 10-K (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/97210/000119312526059002/ter-20251231.htm)
+- [stockanalysis.com — Teradyne 주가·시가총액](https://stockanalysis.com/stocks/TER/)
 
 ---
 
-*작성일: 2026-08-03*
+*작성일: 2026-08-03 (최종 수정일: 2026-08-16)*

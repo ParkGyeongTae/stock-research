@@ -1,0 +1,106 @@
+# Teradyne (테라다인) — CEO / 경영진
+
+> 2006년 제품마케팅 매니저로 입사해 반도체 테스트 사업부장·로보틱스(Industrial Automation) 사업부장을 거쳐 2023년 CEO에 오른 내부 승진 케이스 — 창업자 계열이 아닌 순수 내부 육성 경영진이며, AI 반도체 수요 급증기를 이끌고 있는 동시에 로보틱스 사업 구조조정이라는 어려운 결정도 함께 하고 있다.
+
+> ⚠️ 모든 항목은 웹검색으로 확인한 사실만 기록. 추측이나 출처 불명 내용은 작성 금지 — 출처(공식 프로필, SEC 공시, 언론 인터뷰 등)를 반드시 함께 표기.
+
+- **이름**: Gregory S. Smith (그레고리 스미스)
+- **직책**: President & Chief Executive Officer (Chairman은 겸임하지 않음 — Mark J. Templeton이 이사회 의장으로 별도 재직)
+- **취임일**: 2023-02-01 (2026-08 기준 재임 약 3년 6개월). President는 2022-07-01부터 겸임
+- **출생년도 / 국적**: 확인 안 됨 — 확인 필요(미국 국적으로 추정)
+- **학력**: 펜실베이니아 대학교(University of Pennsylvania) 전기공학 학사(BSEE)
+- **전임 CEO**: Mark E. Jagiela
+
+---
+
+## 1. 커리어 이력
+
+| 기간 | 직책 / 회사 | 내용 |
+|------|-------------|------|
+| 2006년 이전 | Raytheon, LTX | 테스트 장비 개발 조직에서 엔지니어링·마케팅·리더십 직책 수행(정확한 재직 연도 구간 확인 안 됨 — 확인 필요) |
+| 2006년 | Teradyne 입사 | Semiconductor Test 사업부 Product Marketing Manager |
+| 2006~2016 | Teradyne | 여러 마케팅 직책 수행 |
+| 2016년 | Teradyne | Semiconductor Test 사업부(회사 최대 사업부) President 취임 |
+| 2020년 | Teradyne | 신설된 Industrial Automation Group(협동로봇·자율이동로봇) President 취임 |
+| 2022-07-01 | Teradyne | President 취임 |
+| 2023-02-01~현재 | Teradyne | CEO 취임(Mark E. Jagiela 후임), 이사회 합류 |
+
+> Raytheon·LTX 재직 시기·기간은 이번 조사에서 정확한 연도를 확보하지 못함 — 확인 필요.
+
+---
+
+## 2. 경영 스타일 / 전략 방향
+
+- **AI 반도체 수요를 정면으로 흡수하는 확장 전략**: 2025~2026년 AI 컴퓨트(가속기·CPU·네트워킹) 테스트 수요 급증에 맞춰 Semiconductor Test 사업을 집중 확장 — 2026년 상반기 컴퓨트향 SoC 매출이 전년 대비 약 600% 성장([`02_history.md`](./02_history.md) 참고)했고, 첫 머천트 GPU 수주·2번째 하이퍼스케일러 correlation 완료 등 신규 고객 확보에도 속도를 내고 있다.
+- **인접 테스트 기술로의 볼트온(bolt-on) M&A**: Infineon AET(2025-01), Quantifi Photonics(2025-05, 실리콘 포토닉스 테스트), MultiLane JV(2026-04, AI 데이터센터 고속 인터커넥트 테스트)까지, 핵심 반도체 테스트 역량을 데이터센터·포토닉스 영역으로 확장하는 인수를 잇달아 실행([`02_history.md`](./02_history.md) 참고) — 대형 M&A보다는 특정 기술 역량을 사들이는 볼트온 방식이 특징.
+- **로보틱스 사업의 수익성 재조정**: 2024~2025년 두 차례에 걸쳐 Robotics 부문 중심 인원을 감축(2024년 87명, 2025년 약 150명)하며 구조조정을 단행 — 반도체 테스트만큼 빠르게 성장하지 못한 로보틱스 사업의 비용구조를 손보는 중이다. 자신이 2020년부터 이 사업을 직접 이끌었던 인물이 그 사업의 구조조정을 주도하고 있다는 점도 특기할 만하다.
+- **자사주매입 중심 자본배분**: 배당은 유지하되(분기 $0.13 수준) 이익 성장의 대부분을 자사주매입으로 환원하는 기조(FY2025 자사주매입 $702.1M vs 배당 $76.3M, 약 9배) — 상세는 [`05_financials.md`](./05_financials.md) §4 참고.
+
+---
+
+## 3. 주요 성과 / 논란
+
+- **성과**: 취임 이후(FY2023→FY2025) 매출은 $2,676M → $3,190M로 성장했고, AI 반도체 사이클에 힘입어 FY2026 상반기(H1)에만 이미 FY2025 전체 매출의 약 82%에 해당하는 실적을 기록하는 등 재임 중 최대 성장 국면을 이끌고 있다. 주가도 취임 시점(2023-02) 대비 2026-08 현재 큰 폭으로 상승했다([`09_technical_daily.md`](./09_technical_daily.md) 참고).
+- **논란 / 리스크**: 뚜렷한 개인 스캔들·소송은 확인되지 않는다. 다만 CEO 개인이 사전공시 매매계획(Rule 10b5-1)에 따라 정기적으로 소량의 자사주를 매도해온 내역이 있다(2025-02-04 계획 채택 이후 수 차례 매도, 각 수천 주 단위) — 이는 미국 대형 상장사 임원의 일반적 관행으로 특이 신호는 아니나, 참고로 기록한다. Robotics 구조조정이 반복되고 있다는 점은 이 사업 부문의 전략적 방향성에 대한 시장의 의문으로 이어질 수 있다([`07_investment.md`](./07_investment.md) 리스크 참고).
+
+---
+
+## 4. 보상 / 지분
+
+| 항목 | 값 | 기준연도 |
+|------|-----|----------|
+| 총보상 (Total Compensation) | $11,760,656 (급여 $925,000 + 보너스 $1,409,830 + 스톡옵션 $925,013 + 주식보상 $8,487,013 + 기타 $13,800) | FY2024 (2025 위임장 기준, 집계 사이트(salary.com) 인용 — 원문 DEF 14A 직접 대조는 하지 않음, 확인 필요) |
+| 회사 지분율 (%) | 약 0.07%(116,495주, 2026-07-15 Form 4 기준) | 2026-07 |
+
+> FY2025 보상 내역이 담긴 2026년 위임장(DEF 14A, 2026-03-25 제출)은 이번 조사에서 세부 항목을 직접 확인하지 못함 — 확인 필요.
+
+---
+
+## 5. 시장 / 투자자 평가
+
+AI 반도체 테스트 수요 급증의 최대 수혜 기업 중 하나로 부상하면서 시장의 평가는 최근 크게 개선됐다 — 애널리스트 컨센서스가 "매수(Buy)" 우위이고([`06_valuation.md`](./06_valuation.md) 참고), 52주 주가 변동률도 매우 큰 폭의 상승을 기록했다([`09_technical_daily.md`](./09_technical_daily.md) 참고). 다만 내부 승진으로 오랜 기간 회사 전략에 관여해온 인물이라 "새로운 비전 제시자"보다는 "AI 사이클이라는 외부 순풍을 잘 실행한 관리자"에 가깝다는 평가가 나올 수 있고, 로보틱스 사업의 반복된 구조조정이 이 사업축의 장기 방향성에 대한 시장의 신뢰를 다소 흔드는 요인으로 지적될 수 있다 — 상세 애널리스트 코멘트는 이번 조사에서 확보하지 못함(확인 필요).
+
+---
+
+## 6. 지분 구조 / 거버넌스
+
+> ⚠️ Teradyne은 단일 클래스 보통주 구조다(차등의결권 없음, 2025-02-14 기준 발행주식수 161,718,766주 — 10-K 표지 기준). 아래 기관 지분율은 출처마다 편차가 있어(예: 전체 기관 지분을 35% 수준으로 낮게 집계하는 곳도 있고, Vanguard·BlackRock 단독으로 24%를 넘는 점을 감안하면 실제로는 훨씬 높을 가능성) 개별 대주주(13G 공시)는 신뢰도 높게, 합산 기관 지분율은 참고용으로만 기록한다.
+
+| 항목 | 값 | 기준일 |
+|------|-----|--------|
+| 기관 투자자 지분율 (%) | 확인 필요 — 집계 사이트 간 편차 큼(35%~80%대까지 추정 범위, 1차 공시 합산 대조는 하지 않음) | 2026-08 시점 |
+| 내부자(임원·이사) 지분율 (%) (§4의 CEO 개인 지분 포함 합계) | 확인 필요(3자 집계 사이트는 약 1.15%로 보고하나 1차 공시 대조 안 함) | 2026-08 시점 |
+| 주요 대주주 (5% 이상 보유) | The Vanguard Group 13.4%(20,972,755주), BlackRock, Inc. 11.1%(17,452,401주) | Vanguard 시점 확인 필요, BlackRock 2026-06-30(13G/A 기준) |
+| 차등의결권 구조 (dual-class) | 없음 — 단일 클래스 보통주, 1주 1표 | 2025 10-K 기준 |
+
+> 이사회 의장(Chairman)은 CEO Greg Smith가 아니라 **Mark J. Templeton**(전 Benchmark Electronics CEO)이 맡고 있다 — CEO·의장 분리 구조. 2025-07-01부로 Drew Henry(Arm Holdings EVP)·Dr. Necip Sayiner(전 Intersil CEO)가 이사로 신규 합류해 반도체·AI 생태계 전문성을 보강했다.
+
+---
+
+## 관련 문서
+
+같은 폴더 내 다른 문서로 이동:
+
+- [개요](./01_overview.md)
+- [역사 / 주요 이벤트](./02_history.md)
+- [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
+- [투자 판단](./07_investment.md)
+- [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+
+---
+
+## 참고 자료
+
+- [Greg Smith Named Teradyne President (2022 보도자료)](https://investors.teradyne.com/news-events/press-releases/detail/63/greg-smith-named-teradyne-president)
+- [Teradyne Executive Team](https://investors.teradyne.com/company-information/executive-team)
+- [Teradyne Board of Directors](https://investors.teradyne.com/governance/board-of-directors)
+- [Gregory S. Smith 보상 내역 (salary.com)](https://www.salary.com/research/executive-compensation/gregory-s-smith-executive-member-of-teradyne-inc)
+- [Gregory Smith Form 4 내역 (GuruFocus)](https://www.gurufocus.com/insider/18092/gregory-stephen-smith)
+
+---
+
+*작성일: 2026-08-16*
