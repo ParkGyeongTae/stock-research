@@ -76,9 +76,12 @@ Tenev의 낮은 명목 지분율(약 6%)에도 불구하고 실질 지배력이 
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 

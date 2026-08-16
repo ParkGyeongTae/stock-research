@@ -10,8 +10,8 @@
 
 ## 연혁
 
-| 연도 | 내용 |
-|------|------|
+| 시점 (연도.월) | 내용 |
+|----------------|------|
 | 2013.04.18 | Vladimir Tenev와 Baiju Bhatt가 캘리포니아 멘로파크에서 Robinhood Markets 설립 — 두 사람은 이전에 고빈도매매 회사 Celeris, 저지연 트레이딩 소프트웨어 회사 Chronos Research를 함께 창업한 이력이 있음 |
 | 2014.12 | iOS 앱 출시 |
 | 2015.03 | 수수료 무료(commission-free) 주식·ETF 거래 서비스 정식 개시 |
@@ -45,9 +45,12 @@
 - [개요](./01_overview.md)
 - [CEO / 경영진](./03_ceo.md)
 - [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 

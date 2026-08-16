@@ -11,6 +11,7 @@
 - **홈페이지**: https://robinhood.com
 - **섹터 / 산업**: 금융(Financials) / 자본시장(Capital Markets) — 리테일 증권 브로커리지(핀테크). 암호화폐 거래소업을 겸영
 - **시가총액**: 약 893.4억 달러 (2026-08-13 종가 $99.37 기준, stockanalysis.com)
+- **회계연도(FY) 마감월**: 12월 말(캘린더 연도와 동일)
 
 ---
 
@@ -63,7 +64,8 @@ Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -87,3 +89,4 @@ Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue
 ---
 
 *작성일: 2026-08-14 (최종 수정일: 2026-08-16)*
+
