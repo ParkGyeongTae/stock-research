@@ -1,0 +1,95 @@
+# Palo Alto Networks — CEO / 경영진
+
+> Google·SoftBank에서 대규모 조직을 키운 세일즈·전략통 경영자. 취임 후 공격적 M&A로 매출을 4배 이상 키웠지만, 그만큼 공격적인 보상 구조 때문에 주주총회 자문사 반대 권고와 표결 부결이 반복되는 CEO다.
+
+> ⚠️ 항목별 출처는 하단 "참고 자료" 참고.
+
+- **이름**: Nikesh Arora
+- **직책**: Chairman and Chief Executive Officer (이사회 의장 겸 CEO)
+- **취임일**: 2018-06 (2026-08 기준 8년째)
+- **출생년도 / 국적**: 1968년생 / 인도 출신, 미국 시민권자
+- **학력**: Banaras Hindu University 공과대학 학사, Boston College 이학 석사, Northeastern University MBA
+- **전임 CEO**: Mark McLaughlin (2011~2018 재임 — Arora 취임 후 이사회 의장으로 자리를 옮겼다가 이후 이사회에서 물러남)
+
+---
+
+## 1. 커리어 이력
+
+| 기간 | 직책 / 회사 | 내용 |
+|------|-------------|------|
+| 초기 커리어 | Deutsche Telekom | 마케팅 부문에서 커리어 시작 |
+| ~2004–2014 | Google | SVP 겸 Chief Business Officer, Global Sales Operations 및 사업개발 총괄, EMEA 총괄 등 역임. 재임 중 Google 검색 매출을 $2B에서 $60B 이상으로 성장시킨 것으로 평가받음 |
+| 2014.10–2016.06 | President, SoftBank Group | 손정의 회장의 "후계자"로 지목됐던 인물 — 2년 만에 SoftBank를 떠남 |
+| 2018.06~현재 | Chairman & CEO, Palo Alto Networks | 현직 |
+
+---
+
+## 2. 경영 스타일 / 전략 방향
+
+취임 후 일관되게 **"플랫폼화(platformization)"**를 핵심 전략으로 내세워왔다 — 개별 포인트 솔루션을 따로 파는 대신, 고객이 하나의 벤더(Palo Alto)로 네트워크·클라우드·SOC·(2026년부터) 아이덴티티 보안까지 통합하도록 유도하는 전략이다. 이를 위해 대규모 M&A를 반복적으로 활용해왔다([`02_history.md`](./02_history.md) — 2018년 이후 17건, 누계 $5.5B+, 2026년 CyberArk $25B로 정점). R&D 자체 개발보다 **인수를 통한 제품 포트폴리오 확장**에 뚜렷하게 무게를 둔 경영 스타일로 평가된다.
+
+---
+
+## 3. 주요 성과 / 논란
+
+- **성과**: 2018년 취임 이후 연매출이 4배 이상($2.2B → $9.2B, FY2018→FY2025) 성장했고, 주가는 취임 이후 누적 약 800% 상승. Next-Gen Security ARR·RPO 등 선행 지표도 GAAP 매출보다 빠르게 성장 중([`04_metrics.md`](./04_metrics.md) C절).
+- **논란 / 리스크**: **보상 규모를 둘러싼 주주 반발이 반복적**이다 — Palo Alto Networks 주주들은 2015년 이후 S&P500 기업 중 가장 많은 횟수(7차례)로 CEO 보상안(Say-on-Pay)에 반대표를 던졌다. FY2025 총보상($99.74M)도 이 흐름 위에 있다(§4 참고). 대형 M&A(특히 CyberArk $25B)에 대해서는 통합 실행 리스크·희석(112M 신주 발행)에 대한 우려가 시장에 있다([`07_investment.md`](./07_investment.md) Bear Case 참고).
+
+---
+
+## 4. 보상 / 지분
+
+| 항목 | 값 | 기준연도 |
+|------|-----|----------|
+| 총보상 (Total Compensation) | $99.74M (급여 $1.0M + 상여 $1.2M + 주식보상 $94.86M + 기타 $2.68M) | FY2025 |
+| 회사 지분율 (%) | 개인 보유 지분 가치 약 $194M(2025년 기준 보도) — 전체 발행주식 대비 지분율(%)은 이번 조사에서 정밀 확인 못 함, 확인 필요 | FY2025 |
+
+> Say-on-Pay(보상안 주주 표결) 부결이 2015년 이후 7차례 반복됐다는 점은 위 총보상 규모의 적정성에 대한 시장(주주)의 반복적 이견을 보여주는 정황 — 실제 부결이 보상 지급 자체를 막지는 못하지만(자문적 표결), 거버넌스 리스크 신호로 참고.
+
+---
+
+## 5. 시장 / 투자자 평가
+
+Google·SoftBank에서의 대규모 조직 운영 경험과 공격적 사업 확장 트랙레코드 덕에 "성장을 만들어내는 경영자"로 평가받는 동시에, **보상 규모와 M&A 의존도가 높은 성장 전략**에 대해서는 지속적인 논쟁이 있다. CyberArk 인수 발표 이후 시장은 아이덴티티 보안이라는 새 성장축 확보를 긍정적으로 평가하는 분위기가 있었으나, 대형 인수 특유의 통합 실행 리스크·단기 GAAP 손익 왜곡(Q3 FY2026 GAAP 영업손실 등)에 대한 우려도 함께 제기된다.
+
+---
+
+## 6. 지분 구조 / 거버넌스
+
+| 항목 | 값 | 기준일 |
+|------|-----|--------|
+| 기관 투자자 지분율 (%) | 약 79.8% | 2026년 집계 사이트 기준(fintel.io 등) |
+| 내부자(임원·이사) 지분율 (%) | 약 0.7~0.8% | 2026년 집계 사이트 기준 |
+| 주요 대주주 (5% 이상 보유) | The Vanguard Group(약 9.6~10.0%), BlackRock(약 7.8~10.4%, 집계처마다 자회사 합산 방식이 달라 편차 있음), State Street(약 4.3~4.4%) | 2026년 집계 사이트 기준 |
+| 차등의결권 구조 (dual-class) | 없음 — 단일 종류 보통주, 창업자(Nir Zuk)를 포함해 별도 초의결권 클래스 없음(확인된 위임장 기준) | — |
+
+> 위 지분율은 집계 사이트(fintel.io, bullfincher.io 등) 기준으로, 정확한 %는 최신 DEF 14A(위임장)·13F 공시로 재확인 필요 — 특히 BlackRock 관련 수치는 자회사별 합산 여부에 따라 자료마다 갈렸다.
+
+---
+
+## 관련 문서
+
+같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
+
+- [개요](./01_overview.md)
+- [역사 / 주요 이벤트](./02_history.md)
+- [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
+- [투자 판단](./07_investment.md)
+- [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+
+---
+
+## 참고 자료
+
+- [회사 공식 경영진 소개 페이지](https://www.paloaltonetworks.com/company/leadership)
+- [Nikesh Arora — Wikipedia](https://en.wikipedia.org/wiki/Nikesh_Arora)
+- [Palo Alto Networks shareholders have rejected executive pay seven times — TheNextWeb](https://thenextweb.com/news/palo-alto-networks-arora-100m-pay-shareholders-reject)
+- [Nikesh Arora Salary — salary.com](https://www1.salary.com/Nikesh-Arora-Salary-Bonus-Stock-Options-for-PALO-ALTO-NETWORKS-INC.html)
+
+---
+
+*작성일: 2026-08-16*
