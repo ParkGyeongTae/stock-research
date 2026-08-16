@@ -71,7 +71,7 @@
 
 - FY2024 GAAP EPS($9.25)는 continuing operations(Software Integrity 매각 후 계속영업) 기준. 일부 데이터 제공처(stockanalysis.com 등)는 매각 관련 일회성 이익을 포함한 EPS($29.37)로 PER을 낮게(17.65배) 표시하기도 하는데, 이는 일회성 항목이라 본 표에서는 계속영업 기준 EPS로 통일해 계산함.
 - "올해(현재)" PER은 회계연도가 아직 끝나지 않아, 최근 4개 분기 합산(TTM) EPS 기준으로 계산. 참고로 FY2026 Non-GAAP EPS 가이던스 중간값($14.76) 기준 forward PER은 약 28.6배.
-- 시가총액(올해/현재)은 `09_technical.md`·`10_technical_weekly.md`와 동일한 2026-08-14 실제 종가(가장 최근 확인된 거래일 종가, Yahoo Finance 일봉 API 기준) × 희석주식수(FY2026 Q2 공시 기준 추정치)로 계산 — 종가는 실측이나 희석주식수는 여전히 근사치임에 유의.
+- 시가총액(올해/현재)은 `09_technical_daily.md`·`10_technical_weekly.md`와 동일한 2026-08-14 실제 종가(가장 최근 확인된 거래일 종가, Yahoo Finance 일봉 API 기준) × 희석주식수(FY2026 Q2 공시 기준 추정치)로 계산 — 종가는 실측이나 희석주식수는 여전히 근사치임에 유의.
 - BPS·PBR은 A.3의 자기자본·A.1의 희석주식수를 인용해 계산(직접 새 수치를 만들지 않음). `06_valuation.md`는 이 행을 그대로 인용할 것.
 - (주7) "올해(현재)" EV/매출·EV/EBITDA는 stockanalysis.com 통계 페이지(2026-08-14 접속 기준, EV $87.2B·EV/Sales 10.05·EV/EBITDA 38.11) 원자료를 인용. EV 행 자체는 본 표의 시가총액(약 81,054, 2026-08-14 종가 기준)+순부채(8,360) 기준 자체 계산치(약 89,414)로 대체 표기함 — stockanalysis.com의 EV($87.2B)는 자체 발행주식수 추정치를 사용해 소폭 차이가 있음(같은 날짜 기준이라 이전 버전보다 격차는 줄어듦). EV/매출·EV/EBITDA 배수는 stockanalysis.com 값을 그대로 인용.
 
@@ -157,7 +157,7 @@
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---

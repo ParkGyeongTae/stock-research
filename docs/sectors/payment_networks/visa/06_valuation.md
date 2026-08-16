@@ -130,7 +130,7 @@
 - [재무 / 실적](./05_financials.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical.md)
+- [기술적 분석 (차트)](./09_technical_daily.md)
 
 ---
 

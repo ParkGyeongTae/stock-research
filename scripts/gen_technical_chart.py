@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""09_technical.md(일봉·1년)·10_technical_weekly.md(주봉·5년) 용
+"""09_technical_daily.md(일봉·1년)·10_technical_weekly.md(주봉·5년) 용
 캔들차트(SVG)·지지/저항 레벨 생성기.
 
-`docs/meta/.template/company/09_technical.md`·`10_technical_weekly.md`가
+`docs/meta/.template/company/09_technical_daily.md`·`10_technical_weekly.md`가
 요구하는 기계적 산출물(캔들 SVG 블록, §2 레벨 표, §4 방법론 수치)을 만든다.
 서술·판단은 만들지 않는다.
 
@@ -14,7 +14,7 @@
 왜 스크립트로 두는가: 좌표 매핑·스윙 탐지·클러스터링 파라미터를 회사마다 다시
 구현하면 값이 조용히 달라져 회사 간 차트 비교가 깨진다. 아래 INTERVAL_PARAMS·
 CLUSTER_TOL이 그 단일 출처이며, **바꾸면 이미 만든 문서와 어긋나므로** 바꿀 땐
-기존 09_technical.md·10_technical_weekly.md를 전부 재생성하고 각 문서의 §4에
+기존 09_technical_daily.md·10_technical_weekly.md를 전부 재생성하고 각 문서의 §4에
 변경된 파라미터를 남길 것. 일봉/주봉은 같은 렌더링 로직을 공유하고
 INTERVAL_PARAMS로만 갈라지므로, 두 문서 간 비교 가능성도 이 딕셔너리가 보장한다.
 
@@ -37,7 +37,7 @@ CLUSTER_TOL = 0.025  # 스윙 포인트를 묶는 가격 허용오차 (±2.5%, �
 PAD_RATIO = 0.03  # y축 위아래 여백 = (고가−저가) × 이 비율
 MAX_GRIDLINES = 8  # 가로 그리드 최대 개수
 
-# 09_technical.md(일봉·1년) vs 10_technical_weekly.md(주봉·5년)를 가르는
+# 09_technical_daily.md(일봉·1년) vs 10_technical_weekly.md(주봉·5년)를 가르는
 # 유일한 파라미터 집합. 봉 하나가 나타내는 기간이 다르므로 스윙 탐지 창(bar
 # 개수)·최소 표본·축 눈금 단위까지 여기서 함께 정한다. CLUSTER_TOL은 상대(%)
 # 값이라 두 인터벌에 공통으로 쓴다.
@@ -475,7 +475,7 @@ def main() -> None:
     ap.add_argument("ticker")
     ap.add_argument("--name", help="차트 제목에 쓸 회사명 (기본: Yahoo longName)")
     ap.add_argument("--interval", choices=["1d", "1wk"], default="1d",
-                    help="1d=일봉·1년(09_technical.md 기본값), 1wk=주봉·5년(10_technical_weekly.md 기본값)")
+                    help="1d=일봉·1년(09_technical_daily.md 기본값), 1wk=주봉·5년(10_technical_weekly.md 기본값)")
     ap.add_argument("--range", default=None,
                     help="수집 기간 (기본: interval별 INTERVAL_PARAMS 값 — 1d=1y, 1wk=5y)")
     ap.add_argument("--emit", choices=["all", "chart", "table", "facts"], default="all")

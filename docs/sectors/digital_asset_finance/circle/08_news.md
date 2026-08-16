@@ -36,7 +36,7 @@
 - [재무 / 실적](./05_financials.md)
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
-- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·상장 이후](./10_technical_weekly.md)
 
 ---

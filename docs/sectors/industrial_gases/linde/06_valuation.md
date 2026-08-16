@@ -147,7 +147,7 @@ DCF·DDM은 같은 회사·같은 기간에 대해 시장가보다 30~45% 낮은
 - [재무 / 실적](./05_financials.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---

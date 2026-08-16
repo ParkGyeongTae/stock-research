@@ -61,7 +61,7 @@ Visa는 여전히 결제 네트워크 업계에서 가장 강력한 해자를 �
 - [재무 / 실적](./05_financials.md)
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical.md)
+- [기술적 분석 (차트)](./09_technical_daily.md)
 
 ---
 

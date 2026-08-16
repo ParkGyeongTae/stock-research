@@ -66,7 +66,7 @@ Coinbase는 개인·기관 투자자를 대상으로 가상자산 거래 플랫�
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---

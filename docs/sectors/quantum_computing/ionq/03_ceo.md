@@ -93,7 +93,7 @@ de Masi는 SPAC·M&A 전문 경영자 출신이라는 이력 자체가 시장에
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical.md)
+- [기술적 분석 (차트)](./09_technical_daily.md)
 
 ---
 
