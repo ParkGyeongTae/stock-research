@@ -149,7 +149,30 @@
 
 ---
 
-## C. 판단 메모
+## C. 사업 고유 지표
+
+> 표준 재무 지표(A·B)만으로는 Circle의 실질 동력(USDC 유통 규모·활용도·수익 동인)이 안 잡힌다. `01_comparison.md`에서 Coinbase가 먼저 정의한 섹터 표준 지표(총 거래대금·크립토 거래대금 시장점유율·고객 예치자산)를, Circle은 거래소가 아니라 발행사이므로 그 사업 구조에 맞게 대응시켜 채운다(`docs/README.md` "알려진 예외" 항목, `../01_comparison.md` §1의 제안에 따름) — "고객 예치자산" 대신 **USDC 유통잔액**, "총 거래대금" 대신 **USDC 온체인 거래량**, "크립토 거래대금 시장점유율" 대신 **스테이블코인 시장점유율**을 쓴다. 여기에 Circle 고유의 매출 동력인 **준비자산 운용수익률(Reserve Return Rate)**을 추가했다 — `01_overview.md` §2가 밝힌 "금리 × 유통량" 구조를 숫자로 추적하기 위한 지표다.
+
+**대응 지표**: USDC 유통잔액(↔Coinbase 고객 예치자산), USDC 온체인 거래량(↔Coinbase 총 거래대금), 스테이블코인 시장점유율(↔Coinbase 크립토 거래대금 시장점유율), 준비자산 운용수익률(Circle 고유 추가)
+
+| 지표 | 정의 (회사 공시 기준) | 유형 | FY2023 | FY2024 | FY2025 | 최근분기(2026 Q2) | 출처 |
+|------|----------------------|------|--------|--------|--------|---------------------|------|
+| USDC 유통잔액 (USDC in Circulation, 기말) | 기말 시점 USDC 유통량의 달러 가치 | 잔고 | 확인 필요 (주1) | $43.9B | $75.3B | $73.3B | Circle 4Q25·2Q26 Earnings Release |
+| USDC 온체인 거래량 (Onchain Transaction Volume) | 온체인에서 발생한 USDC 이체 총량, 분기 집계(Circle 공식 지표) | 유량 | 확인 필요 (주2) | 확인 필요 (주2) | 확인 필요 (주2) | $14.8T (2026 Q2, YoY +151%) | Circle 4Q25·2Q26 Earnings Release |
+| 스테이블코인 시장점유율 (Stablecoin Market Share, 기말) | USDC 유통잔액 ÷ 유통잔액 $1억 이상·정기적 공개 attestation을 발표하는 미국 달러 연동 스테이블코인 전체 유통잔액(CoinMarketCap 기준) | 잔고(비율) | 확인 필요 (주1) | 23.7% (주3) | 28% | 27% | Circle 4Q25·2Q26 Earnings Release |
+| 준비자산 운용수익률 (Reserve Return Rate) | 준비자산(주로 미 단기국채·현금성자산) 운용 이자수익 ÷ 평균 준비자산, 연율 환산 | 유량 | 확인 필요 (주1) | 5.0% (주3) | 4.1% | 3.5% | Circle 4Q25·2Q26 Earnings Release |
+
+- (주1) FY2023 값은 Circle의 S-1(2025-04, FY2023 비교 재무제표 포함)에 원자료가 있을 가능성이 높으나, SEC EDGAR 원문 접근이 이번 조사에서 403으로 막혀 확인하지 못했다. 2차 소스(뉴스 기사)에서는 2023년 말 USDC 유통잔액 추정치가 $24B~$33B로 매체마다 기준일이 달라 크게 갈려, 하나의 값으로 단정하지 않고 "확인 필요"로 남긴다.
+- (주2) Circle은 분기별 온체인 거래량은 공시하지만(2025 Q4 $11.9T·YoY +247%, 2026 Q2 $14.8T·YoY +151%) 연간(FY) 합계를 명시적으로 공시한 자료는 확인하지 못했다 — 4개 분기 단순 합산은 이중계산·비교 왜곡 우려가 있어 자체 추정도 하지 않았다.
+- (주3) FY2024 값은 FY2025 공시값에서 Circle이 밝힌 YoY 변화폭을 역산한 자체 계산치다(시장점유율: 28% − YoY +426bps = 23.7%, 준비자산 운용수익률: 4.1% − YoY −90bps = 5.0%) — Circle이 FY2024 절대값을 별도 재확인하지 않아 오차가 있을 수 있다.
+- **정의 차이 주의**: `01_overview.md` §3은 Forbes 기사를 인용해 USDC의 발행잔액 기준 시장점유율을 "약 24%(2026년 상반기, Tether 약 59%)"로 서술했는데, 이는 위 표의 Circle 자체 공시 수치(27%, 2026 Q2)와 다르다 — Circle의 정의는 "유통잔액 $1억 이상·정기적 공개 attestation 발표" 요건을 충족하는 스테이블코인만 모집단으로 삼아 Forbes가 쓴 전체 스테이블코인 시가총액 기준과 모집단이 다르기 때문으로 추정되나, Tether가 이 모집단에서 정확히 어떻게 처리되는지는 확인하지 못했다. 두 수치를 같은 지표로 섞어 쓰지 말 것.
+- 잔고형 지표(USDC 유통잔액·시장점유율)는 규칙에 따라 평균·중앙값을 내지 않는다.
+- USDC 유통잔액은 FY2024 $43.9B → FY2025 $75.3B(+72%)로 급증했으나 최근분기(2026 Q2, 기말 $73.3B)는 FY2025 말 대비 오히려 소폭 감소했다 — 같은 분기 평균 유통잔액(주내 최고치 $76.5B)은 오히려 늘었으므로, 기말 시점의 일시적 상환(redemption) 타이밍 영향일 가능성이 있으나 정확한 원인은 확인하지 못했다.
+- 출처: Circle Reports Fourth Quarter and Full Fiscal Year 2025 Financial Results(Circle IR, 2026-02-25), Circle Reports Second Quarter 2026 Results(Circle IR, 2026-08-05) — 각 보도자료의 "Key Financial Results and Operating Indicators" 표.
+
+---
+
+## D. 판단 메모
 
 - 상장 이후 확정 데이터가 5개 분기, 완전한 회계연도가 1개(FY2025, 그마저 상장 전후가 섞인 해)뿐이라 **PER·PBR·EV 배수를 "역사적 평균 대비 싸다/비싸다"로 판단할 근거 자체가 아직 얇다.** 표본이 FY2025·현재 2개 지점뿐인 평균·중앙값(A.2)은 추세 판단용으로 쓰기엔 무리가 있음을 감안해야 한다.
 - 현재(2026-08-13) GAAP PER(TTM, 약 51.6배)·PBR(약 5.45배)은 FY2025 말(PER 해당없음·PBR 5.77배) 대비 PBR은 소폭 하락했다. 다만 FY2025 GAAP 순이익이 일회성 IPO 관련 비용으로 적자였던 탓에 FY2025 PER 자체가 존재하지 않아, "PER이 비싸졌는지 싸졌는지"는 이번 자료만으로 비교할 수 없다.
@@ -157,6 +180,7 @@
 - 순부채는 FY2023부터 현재까지 전 구간 순현금(가장 최근 기준 약 -$2,619M)이고 이자부 차입금은 2026-06-30 기준 $0(전환사채 완전 상환·전환 완료)이다 — 부채총계·부채비율 숫자만 보면 극단적으로 나쁜 회사처럼 보이지만, A.3 각주에서 설명한 대로 그 대부분(약 99%)이 USDC 예치부채(고객자금 성격, 준비자산과 대응)이며 실질 레버리지 리스크는 낮다.
 - 매출 증가율이 FY2024 15.6% → FY2025 63.9%로 크게 뛰었다가, 2026년 상반기 단순 연환산 기준으로는 FY2026(E) 성장률이 약 1.6%로 급격히 둔화되는 모습이다(자체 추정이라 신뢰도는 낮지만, 01_overview.md에 정리된 "기준금리 하락이 USDC 유통량 증가분을 상쇄하는 구조"와 방향이 일치한다). 금리 인하 국면에서 매출 성장이 정체될 수 있다는 구조적 리스크가 실제 수치로도 나타나기 시작했을 가능성을 열어두고 다음 분기 실적으로 확인이 필요하다.
 - SBC/매출 비율은 FY2023 7.45% → FY2024 2.99% → FY2025 20.62%(IPO 일회성 급증) → FY2026(E) 자체추정 7.56%로, IPO 충격이 빠지면 다시 FY2023 수준 근처로 수렴하는 모습이다. FY2025의 20.6%를 "정상 수준의 보상비용"으로 오독하지 않도록 주의.
+- **C절 사업 고유 지표는 위 매출 둔화 우려를 실제 숫자로 뒷받침한다.** 준비자산 운용수익률이 FY2024 5.0% → FY2025 4.1% → 최근분기(2026 Q2) 3.5%로 세 시점 연속 낮아지는 동안, USDC 유통잔액은 FY2025까지는 급증(+72%)했지만 최근분기(2026 Q2, $73.3B)엔 오히려 FY2025 말($75.3B) 대비 소폭 줄었다 — 금리 하락이 유통량 증가효과를 상쇄하다 못해 유통 규모 자체가 정체·역행하기 시작했을 가능성을 시사하는 첫 신호로 볼 수 있다. 다만 같은 분기 평균 유통잔액은 사상 최고치였다는 점(C절 참고)에서 아직은 "추세 반전"이라 단정하기보다 다음 1~2개 분기로 확인이 필요하다.
 
 ---
 
@@ -183,6 +207,8 @@
 - [Circle Reports Fourth Quarter and Full Year 2025 Results (8-K 첨부, 2026-02-25)](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000032/final_circlereportsfourt.htm)
 - [Circle Reports First Quarter 2026 Results (8-K 첨부, 2026-05-11)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000148/final_05x11q1epr30.htm)
 - [Circle Reports Second Quarter 2026 Results (8-K 첨부, 2026-08-05)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000246/augustepr-circle_q22026f.htm)
+- [Circle Reports Fourth Quarter and Full Fiscal Year 2025 Financial Results — Key Operating Indicators 표 (Circle IR, 2026-02-25)](https://www.circle.com/pressroom/circle-reports-fourth-quarter-and-full-fiscal-year-2025-financial-results)
+- [Circle Reports Second Quarter 2026 Results — Key Operating Indicators 표 (Circle IR, 2026-08-05)](https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results)
 - [stockanalysis.com — CRCL Financials](https://stockanalysis.com/stocks/crcl/financials/)
 - [stockanalysis.com — CRCL Balance Sheet](https://stockanalysis.com/stocks/crcl/financials/balance-sheet/)
 - [stockanalysis.com — CRCL Cash Flow Statement](https://stockanalysis.com/stocks/crcl/financials/cash-flow-statement/)
