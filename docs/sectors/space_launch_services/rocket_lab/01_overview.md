@@ -40,6 +40,8 @@ Rocket Lab은 소형 위성 전용 발사체 **Electron**으로 사업을 시작
 
 ## 3. 산업 / 시장 내 위치
 
+> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [`../00_overview.md`](../00_overview.md) 참고.
+
 - **소형 발사체 시장 선두**: Electron은 SpaceX Falcon 9에 이어 미국에서 두 번째로 발사 빈도가 높은 로켓으로, 소형 위성 전용 발사 시장에서 독보적 지위를 보유.
 - **Neutron으로 중형 시장 진출**: 재사용 가능한 중형급 로켓 Neutron이 2026년 하반기 첫 발사를 앞두고 있으며, 미 우주군 NSSL(National Security Space Launch) Phase 3 Lane 1 프로그램(최대 56억 달러 규모)에 온램프(on-ramp)되어 SpaceX Falcon 9와 직접 경쟁하는 체급·고객군으로 확장을 추진 중.
 - **수직계열화 전략**: Sinclair·SolAero·Geost·Mynaric 등 연이은 인수로 위성 부품·페이로드·레이저 통신까지 자체 밸류체인을 확장했고, 2026-06 발표한 Iridium 인수가 완료되면 위성통신 네트워크·주파수 자산까지 보유하게 된다.

@@ -1,0 +1,94 @@
+# Payment Networks (카드 결제 네트워크)
+
+> 카드 발급은행과 가맹점 매입은행 사이에서 거래를 중개·정산하는 "레일(rail)" 사업자 산업으로, 현금·수표에서 전자결제로의 장기 구조적 전환의 직접 수혜를 받아왔지만 실시간 계좌이체·스테이블코인 등 대안 레일의 부상이라는 새로운 경쟁 변수를 마주하고 있다.
+
+> ⚠️ 이 문서는 **산업 전체를 설명하는 맥락용 문서**다. 특정 회사의 재무 수치·투자 판단은 담지 않는다 — 회사별 사실·투자 판단은 각 회사 문서(`04_metrics.md`·`07_investment.md`)를 따른다. 이 문서와 회사 문서 내용이 겹치면 이 문서 쪽을 줄인다.
+>
+> ⚠️ 시장 규모(TAM)·CAGR 같은 숫자는 리서치 기관·정의(포함 범위)마다 다르다. 출처를 반드시 병기하고, 출처마다 값이 갈리면 하나로 단정하지 말고 범위로 남길 것.
+>
+> ⚠️ `concepts/`는 시점에 무관한 영구 참고용이라 "현재" 서술을 넣지 않지만, 이 문서는 **특정 시점의 산업 스냅샷**이라 시점 서술이 들어갈 수 있는 문서다. 그만큼 내용이 시간이 지나면 낡으므로 갱신할 때 `*작성일*`을 놓치지 말 것.
+
+- **섹터명**: Payment Networks (카드 결제 네트워크)
+- **밸류체인 위치**: 미드스트림 — 카드 발급은행(업스트림)과 가맹점 매입은행·가맹점(다운스트림) 사이에서 거래 승인·정산을 중개하는 "개방형(open-loop) 네트워크" 계층
+- **커버리지 기업**: (각 회사 폴더로 링크)
+  - [Visa](./visa/01_overview.md)
+- **인접 섹터**: `digital_asset_finance`(디지털 자산 금융 — 스테이블코인이 장기적으로 결제 레일을 일부 대체·보완할 가능성이 있어 경쟁·보완 관계) — 이 저장소에서 은행·결제 프로세서(발급은행·매입은행·PSP) 섹터는 아직 별도로 커버하지 않음
+
+---
+
+## 1. 한 줄 요약
+
+카드 결제 네트워크는 소비자가 카드로 결제할 때 발급은행과 가맹점 매입은행 사이의 승인·청산·정산을 처리하는 인프라 사업이다. Visa·Mastercard 양강 구도가 굳건하며, 현금 결제 비중이 줄어드는 구조적 전환의 수혜를 오랫동안 누려왔다.
+
+---
+
+## 2. 산업 구조 — 돈이 어떻게 도는가
+
+전통적인 "4자 모델(four-party model)"로 작동한다.
+
+| 밸류체인 단계 | 하는 일 | 대표 플레이어 유형 | 이 단계의 진입장벽 |
+|----------------|---------|----------------------|----------------------|
+| 카드 발급은행 (업스트림) | 소비자에게 카드 발급, 신용 제공 | 시중은행(Chase·BofA 등) | 은행업 라이선스, 소비자 신뢰 |
+| **결제 네트워크 (이 섹터)** | 거래 승인·청산·정산 레일 제공 (발급사·가맹점 은행 사이 중개) | Visa·Mastercard(개방형), Amex·Discover(폐쇄형) | 양면 네트워크 효과(가맹점 수용도 ↔ 카드 보유자 수), 글로벌 정산 인프라 구축 비용 |
+| 가맹점 매입은행/PSP (다운스트림) | 가맹점의 카드 결제 수납 처리 | 매입은행, Stripe 등 결제서비스제공사(PSP) | 가맹점 영업망 |
+| 가맹점/최종 소비자 | 실제 결제 발생 지점 | 소매·온라인 가맹점, 카드 소지자 | — |
+
+Visa·Mastercard 같은 개방형(open-loop) 네트워크는 발급·매입 업무를 직접 하지 않고 레일만 제공하는 반면, American Express·Discover는 발급·매입까지 겸업하는 폐쇄형(closed-loop) 모델이라 경쟁 구도가 다르다. 최근에는 실시간 계좌이체(FedNow 등 A2A 결제), 스테이블코인 기반 정산처럼 카드 네트워크를 우회할 수 있는 대안 레일이 부상하고 있다.
+
+> 개별 회사의 진입장벽이 구체적으로 무엇인지는 각 회사 `07_investment.md`에서 다룬다. 여기서는 산업 단계별 장벽의 일반적 성격만 서술.
+
+---
+
+## 3. 시장 규모 / 성장 동력
+
+- **거래 규모(정의에 유의)**: 카드 결제 총 거래대금(transaction value) 기준으로는 2026년 약 $15.36T(신용카드만) 수준이며 2031년까지 CAGR 3.77%로 완만하게 성장할 것으로 추정(Mordor Intelligence). 이는 네트워크사의 매출이 아니라 결제 시스템을 통과하는 총 금액이라는 점에 유의 — 네트워크 매출은 이 거래대금의 일부(수수료)에서 나온다.
+- **결제 관련 소프트웨어/처리 시장(TAM)**: "Cards and Payment Market" 기준 $108.5B(2026)~CAGR 13.2%(2035까지, Business Research Insights), "Payment Processor and Gateway" 시장 기준 $98.47B(2026)~CAGR 8.3%(2030까지). 이런 수치는 카드 발급·프로세싱·게이트웨이 등을 폭넓게 포함해 네트워크사만의 매출과는 정의가 다르므로, 특정 회사 매출과 직접 비교하지 않는다.
+- **Visa·Mastercard 시장 지위**: 두 회사의 시가총액 합산이 미국 3대 카드 네트워크(Visa·Mastercard·Amex) 전체 가치의 약 83%를 차지(Visa 45.3%, Mastercard 38.0%). Visa·Mastercard·UnionPay 세 네트워크가 전 세계 카드 거래량의 약 80%를 처리.
+- **핵심 성장 동력**:
+  1. **현금·수표 → 전자결제 전환** — 신흥국을 중심으로 여전히 진행 중인 장기 구조적 전환.
+  2. **국경간 전자상거래 확대** — 해외직구 등 크로스보더 결제는 국내 결제보다 네트워크사 수수료율이 높아 수익성에 유리.
+  3. **부가가치 서비스 확장** — 사기 방지·데이터 분석 등 네트워크사가 카드 거래 처리를 넘어 제공하는 부가 서비스 매출 비중 확대.
+
+Sources: [Credit Card Market Size & Industry Analysis — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/global-credit-cards-market) · [Cards and Payment Market — Business Research Insights](https://www.businessresearchinsights.com/market-reports/cards-and-payment-market-100132) · [Payment Processor Market — The Business Research Company](https://www.thebusinessresearchcompany.com/report/payment-processor-global-market-report) · [Credit Card Market Share — Capital One Shopping Research](https://capitaloneshopping.com/research/credit-card-market-share-statistics/)
+
+---
+
+## 4. 구조적 리스크 / 경기 민감도
+
+| 리스크 유형 | 내용 | 관찰 가능한 신호 |
+|--------------|------|----------------------|
+| 대안 결제 레일의 부상 | 실시간 계좌이체(FedNow 등 A2A), 스테이블코인 기반 정산 등 카드 네트워크를 우회하는 대안이 늘고 있음 — 장기적으로 네트워크사의 중개 수수료 기반 사업모델을 잠식할 수 있는 구조적 위협 | FedNow 등 A2A 결제 채택률, 스테이블코인 결제 인프라 도입 사례 |
+| 규제(수수료 상한 등) | 각국 정부·규제당국이 인터체인지 수수료(interchange fee) 상한을 규제하는 사례가 있음(미국 Durbin Amendment, EU 수수료 상한 등) — 수익성에 직접 영향 | 각국 규제당국의 카드 수수료 관련 입법·소송 동향 |
+| 소비 경기 민감도 | 카드 거래대금은 소비자 지출과 직결되므로 경기 침체기에는 거래량·거래대금이 함께 둔화 | 소비자 지출·소매판매 통계 |
+| 지정학·자국 결제망 육성 | 일부 국가가 자국 결제망(중국 UnionPay, 인도 RuPay 등)을 육성하며 개방형 국제 네트워크의 점유율을 제한하는 경우가 있음 | 각국의 자국 결제망 육성 정책, 시장 접근 제한 조치 |
+
+> 개별 회사의 Bull/Bear Case는 각 회사 `07_investment.md`에서 다룬다. 여기서는 섹터 전체가 함께 노출되는 리스크만 남긴다.
+
+---
+
+## 5. 이 섹터를 볼 때 체크하는 지표 / 신호
+
+- **소비자 지출·소매판매 통계** — 카드 거래대금의 직접적 선행지표
+- **국경간(cross-border) 여행·전자상거래 동향** — 네트워크사 수익성이 높은 부문의 성장세
+- **FedNow 등 실시간 계좌이체(A2A) 채택률** — 대안 레일이 카드 결제를 얼마나 잠식하는지의 신호
+- **스테이블코인 결제·정산 인프라 도입 사례** — 장기적 경쟁 구도 변화 신호
+- **각국 인터체인지 수수료 규제 동향** — 수익성에 직접 영향을 미치는 규제 리스크
+
+---
+
+## 관련 문서
+
+- [Visa 개요](./visa/01_overview.md)
+
+---
+
+## 참고 자료
+
+- [Credit Card Market Size, Share & Industry Analysis 2031 — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/global-credit-cards-market)
+- [Cards and Payment Market 2026-2035 — Business Research Insights](https://www.businessresearchinsights.com/market-reports/cards-and-payment-market-100132)
+- [Payment Processor Market Trends Analysis Report 2026-2030 — The Business Research Company](https://www.thebusinessresearchcompany.com/report/payment-processor-global-market-report)
+- [Credit Card Market Share (2026): Visa vs Mastercard vs Others — Capital One Shopping Research](https://capitaloneshopping.com/research/credit-card-market-share-statistics/)
+
+---
+
+*작성일: 2026-08-16*

@@ -40,13 +40,9 @@ IonQ는 2026년 기준 스스로를 4개 사업 축(양자컴퓨팅·양자네�
 
 ## 3. 산업 / 시장 내 위치
 
-양자컴퓨팅 시장 자체가 아직 상용화 초기 단계다. 시장 규모 추정치는 출처마다 크게 갈린다 — 2030년 약 $20.2B(MarketsandMarkets), 2035년 약 $14~46B(Precedence Research, Vantage Market Research 등, 방법론에 따라 3배 이상 차이) 수준의 전망이 나오지만, 초기 산업 특성상 이런 TAM 추정치는 신뢰 구간이 매우 넓다는 점을 감안해야 한다.
+> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [`../00_overview.md`](../00_overview.md) 참고.
 
-경쟁 구도는 기술 방식에 따라 갈린다:
-
-- **초전도 회로 방식**: IBM, Google — 대형 기술기업이 자체 자금으로 개발, 상장된 순수 플레이는 아님.
-- **트랩드 이온 방식**: IonQ, Quantinuum(비상장, Honeywell·Cambridge Quantum 합작), Oxford Ionics(2025년 IonQ에 인수돼 편입).
-- **초전도/애널로그 방식 상장 소형주**: Rigetti Computing(초전도), D-Wave Quantum(애널로그/양자어닐링) — 매출 규모는 IonQ보다 훨씬 작음(예: Rigetti 분기 매출이 수백만 달러 수준).
+IonQ는 트랩드 이온(trapped-ion) 방식을 채택하고 있으며, 같은 방식의 주요 경쟁자로 Quantinuum(비상장, Honeywell·Cambridge Quantum 합작)·Oxford Ionics(2025년 IonQ에 인수돼 편입)가 있다. 초전도 방식(IBM·Google — 대형 기술기업이 자체 자금으로 개발, 상장된 순수 플레이는 아님)과 초전도/애널로그 방식의 상장 소형주(Rigetti Computing, D-Wave Quantum — 매출 규모는 IonQ보다 훨씬 작음, 예: Rigetti 분기 매출이 수백만 달러 수준)도 경쟁 구도에 있다.
 
 IonQ는 2025년 기준 매출 규모(연 $130M)로 순수 양자컴퓨팅 상장기업 중 가장 크고, 2큐비트 게이트 정확도(fidelity) 지표에서 업계 최상위권(99.99% 수준, Quantinuum과 경쟁)을 주장한다. 다만 "매출 1위"가 "기술 1위"를 뜻하지는 않으며, 대형 기술기업(IBM·Google·Microsoft·Amazon)이 자체 양자컴퓨팅 개발과 클라우드 유통(Braket·Azure Quantum)을 동시에 쥐고 있어 IonQ가 이들의 유통 채널에 상당 부분 의존한다는 구조적 리스크가 있다.
 

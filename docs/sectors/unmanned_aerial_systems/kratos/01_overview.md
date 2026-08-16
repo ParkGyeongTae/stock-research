@@ -36,6 +36,8 @@ Kratos Government Solutions(KGS)와 Unmanned Systems(USS) 두 사업부로 구�
 
 ## 3. 산업 / 시장 내 위치
 
+> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [`../00_overview.md`](../00_overview.md) 참고.
+
 - **저비용 소모성 무인기(attritable UAS) 원조 기술 보유, 다만 공군 주력 프로그램에서는 탈락**: XQ-58 Valkyrie 등 자체 무인전투기 포트폴리오를 갖췄지만, 유인기와 함께 운용되는 무인 전투기 수요의 핵심 프로그램인 미 공군 CCA Increment 1 1차 선정(2024년 4월)에서는 General Atomics·Anduril이 선정되고 Kratos는 제외됐다. 대신 미 해병대의 XQ-58 기반 무인 윙맨 프로그램(2026년 1월, Northrop Grumman과 컨소시엄)과 미 전쟁부 Drone Dominance 프로그램 1단계 Gauntlet(2026년 2월 선정)에서 대체 입지를 확보하고 있다(`02_history.md`, `07_investment.md` 참고).
 - **무인 표적기 원조 기업**: 미군 훈련용 표적 드론 시장에서 오랜 업력을 바탕으로 높은 점유율 보유.
 - **경쟁 구도**: AeroVironment(소형 정찰·자폭 드론), Anduril(비상장, AI 자율 무인기) 등과 무인체계 시장에서 경쟁하며, General Atomics·Northrop Grumman 등 대형 방산업체와도 일부 영역에서 경쟁·협력.
