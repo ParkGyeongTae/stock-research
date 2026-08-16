@@ -414,7 +414,7 @@ def render_facts(bars: list[Bar], g: Geom, meta: dict, min_touches: int, closes:
         out.append(f"<!-- ⚠️ 기간 내 배당 {len(meta['_divs'])}회 — 원주가라 배당 미반영임을 §4에 명시 -->")
     if closes:
         by_date = {b.d.isoformat(): b for b in bars}
-        out.append("<!-- 05_metrics.md/06_valuation.md 대조용 종가 -->")
+        out.append("<!-- 04_metrics.md/06_valuation.md 대조용 종가 -->")
         for ds in closes:
             b = by_date.get(ds)
             out.append(f"<!-- {ds} 종가 " + (f"${b.c:,.2f} -->" if b else "— 거래일 아님 -->"))

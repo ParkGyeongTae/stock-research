@@ -33,7 +33,7 @@ AeroVironment는 미군을 주요 고객으로 하는 소형 무인항공기(UAS
 | Uncrewed Systems (UxS) | 휴대용 정찰·감시 무인기. Puma, Raven 등 | 약 45~50% (FY2025 기준) |
 | MacCready Works (MW) | 신기술 연구개발·시제품 사업부 | 약 7~9% (FY2025 기준, 약 2,400만 달러) |
 
-> ⚠️ 2025년 5월 BlueHalo 인수 완료 이후 사업부를 **Autonomous Systems(AxS)**와 **Space, Cyber and Directed Energy(SCDE)** 2개 부문으로 재편. 위 표는 인수 이전 FY2025 기준 3개 부문 체계다. 재편 후 FY2026(2026-04-30 종료) 전체 실적 기준 신규 세그먼트 매출은 AxS $1,358.1M(68.7%), SCDE $618.8M(31.3%), 합계 $1,976.8M — 상세 근거는 [`05_metrics.md`](./05_metrics.md) 참고.
+> ⚠️ 2025년 5월 BlueHalo 인수 완료 이후 사업부를 **Autonomous Systems(AxS)**와 **Space, Cyber and Directed Energy(SCDE)** 2개 부문으로 재편. 위 표는 인수 이전 FY2025 기준 3개 부문 체계다. 재편 후 FY2026(2026-04-30 종료) 전체 실적 기준 신규 세그먼트 매출은 AxS $1,358.1M(68.7%), SCDE $618.8M(31.3%), 합계 $1,976.8M — 상세 근거는 [`04_metrics.md`](./04_metrics.md) 참고.
 
 ---
 
@@ -51,8 +51,8 @@ AeroVironment는 미군을 주요 고객으로 하는 소형 무인항공기(UAS
 
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./04_financials.md)
-- [핵심 지표](./05_metrics.md)
+- [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)

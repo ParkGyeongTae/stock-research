@@ -2,7 +2,7 @@
 
 > Synopsys·Cadence 모두 자체 밸류에이션 기준으로 소폭 저평가를 시사하지만(괴리율 −7~−10%대), 재무 프로필은 대조적이다 — Cadence는 5개년 내내 순현금·안정적 20%대 후반 영업이익률을 유지한 반면, Synopsys는 Ansys 인수로 순부채 전환·GAAP 마진 급락이라는 전환기 리스크를 안고 있다. "누가 더 싼가"보다 "어떤 리스크를 얼마나 감수할 의향이 있는가"에 가까운 비교다.
 
-> ⚠️ 이 문서는 **스냅샷**이다. 아래 표는 각 회사의 `05_metrics.md`·`06_valuation.md`(둘 다 2026-08-14 최종 수정)를 인용한 것으로, 두 문서가 이후 갱신되면 이 표는 자동으로 따라오지 않는다. 새로 계산하지 말고 각 회사 문서 값을 그대로 가져올 것.
+> ⚠️ 이 문서는 **스냅샷**이다. 아래 표는 각 회사의 `04_metrics.md`·`06_valuation.md`(둘 다 2026-08-14 최종 수정)를 인용한 것으로, 두 문서가 이후 갱신되면 이 표는 자동으로 따라오지 않는다. 새로 계산하지 말고 각 회사 문서 값을 그대로 가져올 것.
 >
 > ⚠️ 시가총액은 USD로 통일(두 회사 모두 미국 상장, ADR 아님).
 >
@@ -56,7 +56,7 @@
 
 - **밸류에이션 배수**: Non-GAAP PER 기준으로는 Synopsys(35.15배)가 Cadence(39.85배)보다 낮지만, GAAP PER은 정반대로 Synopsys(56.24배)가 Cadence(70.07배)보다 낮다 — 다만 Synopsys의 GAAP EPS는 Ansys 인수 관련 상각비로 눌려 있어 분모 왜곡 가능성이 크므로, 이 GAAP 역전을 "Synopsys가 싸다"는 신호로 곧이곧대로 읽기 어렵다. EV/EBITDA는 Synopsys(54.84배)가 Cadence(49.10배)보다 높아, 인수 비용으로 눌린 EBITDA를 감안해도 상대적으로 비싸 보인다.
 - **PBR 격차(2.65배 vs 14.20배)는 밸류에이션 차이가 아니라 회계적 착시에 가깝다** — Synopsys의 낮은 PBR은 저평가가 아니라 Ansys 인수로 분모(BPS)가 급증한 결과이고, 두 회사 모두 자체 문서에서 이 배수를 참고용 이하로 낮춰 다루고 있다(Synopsys는 종합에서 완전 제외, Cadence는 20%로 축소).
-- **수익성·재무건전성은 Cadence가 뚜렷이 앞선다**: GAAP 영업이익률(28.17% vs 12.97%), 순부채(순현금 vs 순부채 $113억) 모두 Cadence가 우위. 다만 Synopsys의 낮은 영업이익률은 Ansys 인수 관련 일회성·비현금성 비용이 크게 반영된 결과라 구조적 마진 훼손과는 구분해서 봐야 한다(`synopsys/04_financials.md` §2).
+- **수익성·재무건전성은 Cadence가 뚜렷이 앞선다**: GAAP 영업이익률(28.17% vs 12.97%), 순부채(순현금 vs 순부채 $113억) 모두 Cadence가 우위. 다만 Synopsys의 낮은 영업이익률은 Ansys 인수 관련 일회성·비현금성 비용이 크게 반영된 결과라 구조적 마진 훼손과는 구분해서 봐야 한다(`synopsys/05_financials.md` §2).
 - **괴리율(−7.4% vs −9.5%)은 방법론 구성이 달라 직접 비교의 의미가 제한적**이다. 다만 두 회사 모두 PER에 60~70%의 가장 큰 가중치를 두고 있다는 공통점이 있어, PER 단독 기준 저평가 폭(Synopsys 약 −26%, Cadence 약 −14%)으로 보면 오히려 Synopsys가 더 크게 저평가된 것으로 나타난다 — 단, 이는 Ansys 통합·수출규제 리스크가 아직 가격에 얼마나 반영됐는지에 대한 판단이 빠진 순수 배수 비교임에 유의.
 
 ---
@@ -65,7 +65,7 @@
 
 지금 시점(2026-08-14)에서 두 회사는 "안정성"과 "재평가 잠재력"이라는 서로 다른 축에서 매력을 갖는다 — 단순 서열화보다는 리스크 성향에 따른 구분이 더 정확하다.
 
-- **재무 안정성·예측가능성 기준**: **Cadence 우위**. 5개년 내내 순현금을 유지했고(2026년 들어서야 소폭 순부채 전환), GAAP 영업이익률도 20%대 후반에서 꾸준하다. SBC 차감 후 FCF도 5개년간 37% 증가해 실질 현금창출력이 개선되는 추세다(`cadence_design_systems/05_metrics.md` C). Ansys급 단일 통합 리스크가 없다는 점도 강점.
+- **재무 안정성·예측가능성 기준**: **Cadence 우위**. 5개년 내내 순현금을 유지했고(2026년 들어서야 소폭 순부채 전환), GAAP 영업이익률도 20%대 후반에서 꾸준하다. SBC 차감 후 FCF도 5개년간 37% 증가해 실질 현금창출력이 개선되는 추세다(`cadence_design_systems/04_metrics.md` C). Ansys급 단일 통합 리스크가 없다는 점도 강점.
 - **재평가(re-rating) 잠재력 기준**: **Synopsys 쪽이 변동성·상방 모두 큼**. PER 단독 기준 저평가 폭이 더 크고(§2 참고), Ansys 통합이 계획대로(3개년 비용 시너지 $400M) 진행되면 GAAP 마진이 정상화되며 밸류에이션 재평가 여지가 있다. 반대로 통합이 지연되거나 수출규제가 재도입되면 부채 부담(부채비율 FY2025 70.2%)과 맞물려 하방 리스크도 더 크다.
 - **공통 리스크**: 대중국 EDA 수출규제 재도입 가능성은 두 회사 모두에 동일하게 걸려 있다(§1). 두 회사 모두 무배당(자사주매입 중심 주주환원)이라 배당 투자자에게는 매력이 낮다는 점도 공통.
 
@@ -85,8 +85,8 @@
 
 ## 참고 자료
 
-- 본 섹터 [`synopsys/05_metrics.md`](./synopsys/05_metrics.md) · [`synopsys/06_valuation.md`](./synopsys/06_valuation.md)
-- 본 섹터 [`cadence_design_systems/05_metrics.md`](./cadence_design_systems/05_metrics.md) · [`cadence_design_systems/06_valuation.md`](./cadence_design_systems/06_valuation.md)
+- 본 섹터 [`synopsys/04_metrics.md`](./synopsys/04_metrics.md) · [`synopsys/06_valuation.md`](./synopsys/06_valuation.md)
+- 본 섹터 [`cadence_design_systems/04_metrics.md`](./cadence_design_systems/04_metrics.md) · [`cadence_design_systems/06_valuation.md`](./cadence_design_systems/06_valuation.md)
 
 ---
 

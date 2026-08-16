@@ -2,13 +2,13 @@
 
 > SpaceX가 발사·위성 인터넷·(최근 xAI 합병으로) AI 인프라까지 아우르는 압도적 1위라면, Rocket Lab은 위성 제조(Space Systems)로 먼저 몸집을 키운 뒤 Neutron·Iridium 인수로 SpaceX의 영역에 정면으로 다가서려는 도전자다. 두 회사 모두 이 시점엔 표준 밸류에이션 방법론이 구조적으로 맞지 않아 자체 종합 적정주가를 내지 않았다는 점에서도 닮아 있다.
 
-> ⚠️ 이 문서는 **스냅샷**이다. 아래 표는 각 회사의 `05_metrics.md`·`06_valuation.md`(둘 다 2026-08-14 작성)를 인용한 것으로, 두 문서가 이후 갱신되면 이 표는 자동으로 따라오지 않는다. 새로 계산하지 말고 각 회사 문서 값을 그대로 가져올 것.
+> ⚠️ 이 문서는 **스냅샷**이다. 아래 표는 각 회사의 `04_metrics.md`·`06_valuation.md`(둘 다 2026-08-14 작성)를 인용한 것으로, 두 문서가 이후 갱신되면 이 표는 자동으로 따라오지 않는다. 새로 계산하지 말고 각 회사 문서 값을 그대로 가져올 것.
 >
 > ⚠️ 시가총액은 USD로 통일(두 회사 모두 미국 상장, ADR 아님).
 >
 > ⚠️ **두 회사 모두 최근 몇 개월 사이 회사의 사업 범위 자체를 바꾸는 대형 M&A를 겪었거나 겪는 중이다** — SpaceX는 2026-02 xAI를 이미 합병 완료했고(`spacex/01_overview.md`), Rocket Lab은 2026-06-29 발표한 Iridium 인수가 아직 종결 전이다(`rocket_lab/01_overview.md`). 두 회사의 "재무 지표"가 서로 다른 종류의 불확실성(하나는 이미 반영된 결합 효과, 하나는 아직 반영 안 된 예정된 변화)을 안고 있다는 점을 감안해서 비교할 것.
 >
-> ⚠️ **매출 성장률(YoY, TTM)을 그대로 비교하면 안 된다.** SpaceX의 TTM +121.9%는 xAI 결합으로 사업 범위 자체가 커진 효과가 커서 유기적 성장률이 아니다(`spacex/05_metrics.md` A.1 각주). Rocket Lab의 +52.5%는 같은 사업 범위 내 유기적 성장에 가깝다 — 두 수치는 "같은 방식으로 계산됐지만 다른 것을 가리키는" 값이다.
+> ⚠️ **매출 성장률(YoY, TTM)을 그대로 비교하면 안 된다.** SpaceX의 TTM +121.9%는 xAI 결합으로 사업 범위 자체가 커진 효과가 커서 유기적 성장률이 아니다(`spacex/04_metrics.md` A.1 각주). Rocket Lab의 +52.5%는 같은 사업 범위 내 유기적 성장에 가깝다 — 두 수치는 "같은 방식으로 계산됐지만 다른 것을 가리키는" 값이다.
 >
 > ⚠️ PER은 두 회사 모두 GAAP 기준으로 TTM 적자라 정의되지 않는다(N/A). PBR·EV/Revenue는 두 회사 모두 각자 문서에서 "참고용"으로만 다뤘다는 공통점이 있다 — 상세 사유는 §2 참고.
 >
@@ -44,7 +44,7 @@
 | Rocket Lab | TTM(2026-06-30) / 2026-08-14 | 약 489.5억 달러 | -19.95억 달러(순현금) | 약 469.5억 달러 | +52.5% | -29.1% | N/A(적자) | 음수(해석력 없음)[^ebitda] | 14.0배(참고용) | 해당없음[^noprice] |
 
 [^growth]: 아래 각주와 상단 경고 참고 — 두 회사의 성장률은 서로 다른 의미를 갖는다.
-[^spacexgrowth]: xAI 결합 효과 포함(유기적 성장률 아님). 유기적 성장에 가까운 값은 FY2025 연간 매출 성장률 +33.2%(`spacex/05_metrics.md` A.1).
+[^spacexgrowth]: xAI 결합 효과 포함(유기적 성장률 아님). 유기적 성장에 가까운 값은 FY2025 연간 매출 성장률 +33.2%(`spacex/04_metrics.md` A.1).
 [^ebitda]: 두 회사 모두 TTM 조정 EBITDA를 신뢰성 있게 산정하지 못했다(SpaceX는 분기별 데이터 부족, Rocket Lab은 영업적자 지속으로 배수 자체가 해석력 없음) — 각자 `06_valuation.md` §1 참고.
 [^noprice]: 두 회사 모두 표준 4대 방법론이 구조적으로 맞지 않는다고 판단해 자체 종합 적정주가를 산출하지 않았다(아래 "방법론 조합" 표 참고). 참고용 외부 컨센서스 목표주가는 SpaceX 평균 $231~232(범위 $62~$800, 매우 넓음), Rocket Lab 평균 $112.76(현재가 대비 +37.8%)로, Rocket Lab 쪽이 시장 내 견해차가 훨씬 작다.
 
@@ -59,7 +59,7 @@
 
 - **두 회사가 밸류에이션 방법론을 거의 동일한 이유로 포기했다는 점이 가장 눈에 띄는 공통점이다.** 둘 다 적자·불안정한 FCF·대형 M&A(하나는 완료, 하나는 진행 중)를 이유로 PER·DCF를 배제했다 — 이는 개별 회사의 특이 사례라기보다, 지금 이 섹터(하이퍼그로스 우주 인프라) 자체가 표준 밸류에이션 툴킷으로 다루기 어려운 국면에 있다는 신호로 읽는 게 맞다.
 - **EV/Revenue 배수는 SpaceX(76.2배)와 Rocket Lab(61.1배)이 비슷한 구간**(각 회사 `06_valuation.md` §2)에 있다 — 두 회사 모두 "현재 매출"이 아니라 "미래 성장 잠재력"으로 가격이 매겨지고 있다는 뜻이다.
-- **영업이익률은 Rocket Lab이 더 나쁘지만(-29.1% vs -16.2%) 추세는 Rocket Lab이 더 뚜렷하게 개선 중**이다 — Rocket Lab은 FY2023 -72.7%에서 꾸준히 좁혀온 반면(`rocket_lab/05_metrics.md` A.1), SpaceX는 FY2024 흑자(+3.3%) 이후 FY2025부터 xAI 결합·AI CapEx로 다시 적자가 커지는 반대 방향 추세다(`spacex/05_metrics.md` A.1). 즉 절대 수준은 SpaceX가 낫지만 방향성은 Rocket Lab이 낫다.
+- **영업이익률은 Rocket Lab이 더 나쁘지만(-29.1% vs -16.2%) 추세는 Rocket Lab이 더 뚜렷하게 개선 중**이다 — Rocket Lab은 FY2023 -72.7%에서 꾸준히 좁혀온 반면(`rocket_lab/04_metrics.md` A.1), SpaceX는 FY2024 흑자(+3.3%) 이후 FY2025부터 xAI 결합·AI CapEx로 다시 적자가 커지는 반대 방향 추세다(`spacex/04_metrics.md` A.1). 즉 절대 수준은 SpaceX가 낫지만 방향성은 Rocket Lab이 낫다.
 - **외부 컨센서스 목표주가의 스프레드 차이(SpaceX $62~$800 vs Rocket Lab $112.76 평균, 상대적으로 좁음)**는 두 회사에 대한 시장의 확신 수준이 다르다는 걸 보여준다 — Rocket Lab은 5년 넘게 공개 실적을 쌓아온 반면 SpaceX는 상장 두 달 남짓이라는 트랙레코드 차이가 근본 원인으로 보인다.
 
 ---
@@ -88,8 +88,8 @@
 
 ## 참고 자료
 
-- 본 섹터 [`spacex/05_metrics.md`](./spacex/05_metrics.md) · [`spacex/06_valuation.md`](./spacex/06_valuation.md)
-- 본 섹터 [`rocket_lab/05_metrics.md`](./rocket_lab/05_metrics.md) · [`rocket_lab/06_valuation.md`](./rocket_lab/06_valuation.md)
+- 본 섹터 [`spacex/04_metrics.md`](./spacex/04_metrics.md) · [`spacex/06_valuation.md`](./spacex/06_valuation.md)
+- 본 섹터 [`rocket_lab/04_metrics.md`](./rocket_lab/04_metrics.md) · [`rocket_lab/06_valuation.md`](./rocket_lab/06_valuation.md)
 
 ---
 

@@ -43,7 +43,7 @@
 
 - [개요](./01_overview.md)
 - [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./05_metrics.md)
+- [핵심 지표](./04_metrics.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
 

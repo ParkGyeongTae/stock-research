@@ -2,7 +2,7 @@
 
 > 최근 1년 일봉 가격 흐름을 지지선·저항선과 함께 정리한 기술적(가격 패턴) 참고 자료. **이 문서는 과거 가격 패턴에 대한 객관적 서술이며, 매수/매도 신호나 목표가 예측이 아니다** — 펀더멘털 기반 적정주가 판단은 [`06_valuation.md`](./06_valuation.md), 투자 결론은 [`07_investment.md`](./07_investment.md)를 따로 참고할 것.
 
-> ⚠️ 이 문서의 가격 데이터는 `05_metrics.md`의 원자료 표와는 별도로, 이 차트 작성을 위해 Yahoo Finance 일봉 API에서 직접 수집했다(1년 일봉은 `05_metrics.md`가 다루는 범위 밖). 두 문서의 특정 시점 종가가 겹치면 서로 검증용으로 대조할 수 있다 — 예: 2026-08-13 종가 $411.75는 [`06_valuation.md`](./06_valuation.md)에 인용된 stockanalysis.com 값과 일치.
+> ⚠️ 이 문서의 가격 데이터는 `04_metrics.md`의 원자료 표와는 별도로, 이 차트 작성을 위해 Yahoo Finance 일봉 API에서 직접 수집했다(1년 일봉은 `04_metrics.md`가 다루는 범위 밖). 두 문서의 특정 시점 종가가 겹치면 서로 검증용으로 대조할 수 있다 — 예: 2026-08-13 종가 $411.75는 [`06_valuation.md`](./06_valuation.md)에 인용된 stockanalysis.com 값과 일치.
 
 ---
 
@@ -652,8 +652,8 @@
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./04_financials.md)
-- [핵심 지표](./05_metrics.md)
+- [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)

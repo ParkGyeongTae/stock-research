@@ -81,8 +81,8 @@ Hydrogen Council 공동의장을 역임하는 등 청정수소 전환을 전략 
 
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
-- [재무 / 실적](./04_financials.md)
-- [핵심 지표](./05_metrics.md)
+- [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)

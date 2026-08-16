@@ -6,7 +6,7 @@
 >
 > ⚠️ 미래 추정치(FY2026E·FY2027E)는 애널리스트 컨센서스이며 출처와 범위를 함께 표기했다.
 >
-> ⚠️ 이 문서에서 EPS·BPS 등은 새로 계산하지 않고 [`05_metrics.md`](./05_metrics.md)의 값을 그대로 인용한다.
+> ⚠️ 이 문서에서 EPS·BPS 등은 새로 계산하지 않고 [`04_metrics.md`](./04_metrics.md)의 값을 그대로 인용한다.
 
 ---
 
@@ -14,9 +14,9 @@
 
 **적용 여부 판단 기준**:
 
-- [ ] **PER 방식 — 미적용.** TTM 기준 GAAP 순손실(-82.18억 달러, EPS -2.27~-2.52달러, `05_metrics.md` A.1)이라 PER 자체가 정의되지 않는다. Forward P/E는 58.69배로 계산되나(stockanalysis.com, 컨센서스 EPS 추정 기준) 이는 아직 흑자 전환도 하지 않은 회사에 대한 시장의 낙관적 기대를 반영한 숫자일 뿐 신뢰도 있는 적정주가 산정 근거로 쓰기엔 이르다고 판단해 참고만 한다.
-- [x] **PBR 방식 — 참고용으로만 적용.** 현재 PBR은 14.2배(BPS $9.65, `05_metrics.md` A.2)다. 다만 2026년 6월 IPO로 자기자본이 FY2025 말 대비 3배 넘게 급증한 직후라(`05_metrics.md` A.3) 과거 평균 배수 자체가 없고, 이 급변 이전과 비교할 "정상 수준의 PBR"이 존재하지 않는다 — 단일 시점 참고값 이상의 의미를 두지 않는다.
-- [ ] **DCF — 미적용.** 이유: ① 공개된 완결 회계연도가 3개(FY2023~FY2025)뿐이고 그중 하나(FY2024)만 흑자로 추세가 일관되지 않는다. ② FCFE(`CFO−CapEx`, `05_metrics.md` A.4)가 FY2023 +1.0억 → FY2025 -139.0억 → 2026년 1분기 한 분기 만에 -91.0억으로, 마이너스 폭이 매 기간 커지는 중이며 언제 저점을 찍고 반전할지 판단할 근거가 없다. ③ CapEx의 AI 비중이 FY2025 61%→2분기 86%로 계속 오르고 있어(`05_metrics.md` A.4) 향후 몇 년의 CapEx·마진 궤적을 가정하는 일 자체가 사실상 추측이다. 이 세 가지가 겹치면 어떤 할인율·성장률을 넣어도 "그럴듯해 보이는 숫자"만 나올 뿐 근거 있는 값이 아니라고 판단해 DCF는 시도하지 않았다. Starship 상업화·AI 인프라 CapEx 정점 시점이 가시화되면 재시도.
+- [ ] **PER 방식 — 미적용.** TTM 기준 GAAP 순손실(-82.18억 달러, EPS -2.27~-2.52달러, `04_metrics.md` A.1)이라 PER 자체가 정의되지 않는다. Forward P/E는 58.69배로 계산되나(stockanalysis.com, 컨센서스 EPS 추정 기준) 이는 아직 흑자 전환도 하지 않은 회사에 대한 시장의 낙관적 기대를 반영한 숫자일 뿐 신뢰도 있는 적정주가 산정 근거로 쓰기엔 이르다고 판단해 참고만 한다.
+- [x] **PBR 방식 — 참고용으로만 적용.** 현재 PBR은 14.2배(BPS $9.65, `04_metrics.md` A.2)다. 다만 2026년 6월 IPO로 자기자본이 FY2025 말 대비 3배 넘게 급증한 직후라(`04_metrics.md` A.3) 과거 평균 배수 자체가 없고, 이 급변 이전과 비교할 "정상 수준의 PBR"이 존재하지 않는다 — 단일 시점 참고값 이상의 의미를 두지 않는다.
+- [ ] **DCF — 미적용.** 이유: ① 공개된 완결 회계연도가 3개(FY2023~FY2025)뿐이고 그중 하나(FY2024)만 흑자로 추세가 일관되지 않는다. ② FCFE(`CFO−CapEx`, `04_metrics.md` A.4)가 FY2023 +1.0억 → FY2025 -139.0억 → 2026년 1분기 한 분기 만에 -91.0억으로, 마이너스 폭이 매 기간 커지는 중이며 언제 저점을 찍고 반전할지 판단할 근거가 없다. ③ CapEx의 AI 비중이 FY2025 61%→2분기 86%로 계속 오르고 있어(`04_metrics.md` A.4) 향후 몇 년의 CapEx·마진 궤적을 가정하는 일 자체가 사실상 추측이다. 이 세 가지가 겹치면 어떤 할인율·성장률을 넣어도 "그럴듯해 보이는 숫자"만 나올 뿐 근거 있는 값이 아니라고 판단해 DCF는 시도하지 않았다. Starship 상업화·AI 인프라 CapEx 정점 시점이 가시화되면 재시도.
 - [ ] **DDM — 무배당으로 해당 없음.**
 
 **핵심 가정 및 신뢰도**
@@ -24,15 +24,15 @@
 | 가정 항목 | 값 | 근거 | 신뢰도 |
 |-----------|-----|------|--------|
 | 목표 PBR | 미설정 | 참고용 배수라 목표치를 별도로 정하지 않음 | — |
-| EV/Revenue(TTM) | 76.2배 | `05_metrics.md` A.2 | High(실측) |
-| EV/EBITDA | 산정 보류 | TTM 조정 EBITDA 미확보(`05_metrics.md` A.1 각주) | — |
+| EV/Revenue(TTM) | 76.2배 | `04_metrics.md` A.2 | High(실측) |
+| EV/EBITDA | 산정 보류 | TTM 조정 EBITDA 미확보(`04_metrics.md` A.1 각주) | — |
 | **방법론별 가중치 (종합 시)** | 종합 가중평균 없음 | 신뢰할 방법론이 사실상 없어 §5·§6에서 단일 적정주가를 제시하지 않고 상대가치 범위·컨센서스만 병기 | — |
 
 ---
 
 ## 2. 상대가치 분석 (실측)
 
-> 표준 템플릿의 "최근 3개년 실제주가 vs 적정주가" 표는 SpaceX가 2026-06-12 상장 전까지 공개 시장 가격이 없어 채울 수 없다(`05_metrics.md` 상단 각주). 대신 상장 후 유일하게 확보한 현재 시점 실측 배수를 동종업계와 비교한다.
+> 표준 템플릿의 "최근 3개년 실제주가 vs 적정주가" 표는 SpaceX가 2026-06-12 상장 전까지 공개 시장 가격이 없어 채울 수 없다(`04_metrics.md` 상단 각주). 대신 상장 후 유일하게 확보한 현재 시점 실측 배수를 동종업계와 비교한다.
 
 | 항목 | SpaceX (SPCX, 2026-08-14) | Rocket Lab (RKLB, 참고)[^rklb] |
 |------|------|------|
@@ -41,7 +41,7 @@
 | PBR | 14.2배(참고용) | — |
 | 순이익 상태 | TTM 적자 | 적자 |
 
-[^rklb]: Rocket Lab 배수는 2026년 6~7월 시점 gurufocus.com·복수 소스 인용, 편차가 있어 범위로 기록. Rocket Lab 자체 문서는 [`../rocket_lab/05_metrics.md`](../rocket_lab/05_metrics.md) 참고.
+[^rklb]: Rocket Lab 배수는 2026년 6~7월 시점 gurufocus.com·복수 소스 인용, 편차가 있어 범위로 기록. Rocket Lab 자체 문서는 [`../rocket_lab/04_metrics.md`](../rocket_lab/04_metrics.md) 참고.
 
 두 회사 모두 세 자릿수에 가까운 EV/Revenue 배수와 EBITDA 적자를 동시에 안고 있다는 점에서, SpaceX의 높은 배수가 SpaceX만의 특이 현상이 아니라 **"발사·우주 인프라 하이퍼그로스 기업"이라는 섹터 전체가 시장에서 받는 밸류에이션 방식**에 가깝다는 정황이다. 다만 이것이 "그러니 정당하다"는 뜻은 아니다 — 섹터 전체가 미래 성장을 극도로 낙관적으로 선반영하고 있을 가능성도 동일하게 열려 있다.
 
@@ -94,8 +94,8 @@
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./04_financials.md)
-- [핵심 지표](./05_metrics.md)
+- [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
 
@@ -103,7 +103,7 @@
 
 ## 참고 자료
 
-- [`05_metrics.md`](./05_metrics.md) 참고 자료 목록과 동일
+- [`04_metrics.md`](./04_metrics.md) 참고 자료 목록과 동일
 - [SpaceX (SPCX) Stock Forecast & Price Targets (stockanalysis.com)](https://stockanalysis.com/stocks/spcx/forecast/)
 - [Wall Street Analysts Are Predicting a Huge Move in SpaceX Stock by Mid-2027 (Yahoo Finance)](https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-predicting-huge-105000118.html)
 - [SpaceX stock falls below its IPO price despite a wall of bullish analyst price targets (Fortune, 2026-07-18)](https://fortune.com/2026/07/18/wall-street-analysts-spacex-outlook-stock-predictions/)

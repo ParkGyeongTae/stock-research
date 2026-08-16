@@ -12,9 +12,9 @@
 |------|------|------|-----------|------|
 | 2026-08-05 | 2026 Q2 실적 발표 | 매출 $80.1M(YoY +287%), 5분기 연속 기록 경신. GAAP 순손실 $1.87B(워런트 평가손실 $1.65B 반영) → 07§4에 반영 | [`06_valuation.md`](./06_valuation.md), [`07_investment.md`](./07_investment.md) | [IonQ IR](https://investors.ionq.com/news/news-details/2026/IonQ-Announces-Record-Second-Quarter-2026-Revenues-Growing-287-YoY/default.aspx) |
 | 2026-07-31 | SkyWater Technology 인수 종결 | 약 $1.8B 규모, 미국 내 반도체 설계·제조·패키징 역량 확보 → 02§연혁에 반영 | [`02_history.md`](./02_history.md), [`01_overview.md`](./01_overview.md) | [Converge Digest](https://convergedigest.com/ionq-completes-acquisition-of-skywater-technology/) |
-| 2026-05-06 | 2026 Q1 실적 발표 | 매출 $64.7M(YoY +755%), GAAP 순이익 $805.4M(워런트 평가이익 $1.06B, 비영업 요인) — 05§B 표에 반영 완료 | [`05_metrics.md`](./05_metrics.md) | [IonQ IR](https://investors.ionq.com/news/news-details/2026/IonQ-Announces-First-Quarter-2026-Financial-Results/default.aspx) |
+| 2026-05-06 | 2026 Q1 실적 발표 | 매출 $64.7M(YoY +755%), GAAP 순이익 $805.4M(워런트 평가이익 $1.06B, 비영업 요인) — 05§B 표에 반영 완료 | [`04_metrics.md`](./04_metrics.md) | [IonQ IR](https://investors.ionq.com/news/news-details/2026/IonQ-Announces-First-Quarter-2026-Financial-Results/default.aspx) |
 | 2026-01-26 | SkyWater Technology 인수 발표 | 주당 $35(현금+주식), 총 지분가치 약 $1.8B — 07월 종결 | [`02_history.md`](./02_history.md) | [Quantum Computing Report](https://quantumcomputingreport.com/) |
-| 2026-02-25 | 2025 Q4·전체 실적 발표 | FY2025 매출 $130.0M(+202%), GAAP 순이익 $753.7M(워런트 평가이익, 비영업), FY2026 최초 가이던스 $225~245M 제시(이후 8월까지 2회 상향) | [`05_metrics.md`](./05_metrics.md) | [IonQ IR](https://investors.ionq.com/news/news-details/2026/IonQ-Announces-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx) |
+| 2026-02-25 | 2025 Q4·전체 실적 발표 | FY2025 매출 $130.0M(+202%), GAAP 순이익 $753.7M(워런트 평가이익, 비영업), FY2026 최초 가이던스 $225~245M 제시(이후 8월까지 2회 상향) | [`04_metrics.md`](./04_metrics.md) | [IonQ IR](https://investors.ionq.com/news/news-details/2026/IonQ-Announces-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx) |
 | 2025-09-16 | Oxford Ionics 인수 종결 | 영국 트랩드 이온 기업, 대가 약 $1.6B → 02§연혁에 반영 | [`02_history.md`](./02_history.md) | [IDTechEx](https://www.idtechex.com/en/research-article/ionq-acquires-oxford-ionics-in-a-billion-dollar-deal-for-quantum/33334) |
 | 2025-09 | Vector Atomic 인수 | 양자 센싱(PNT 응용) 스타트업 인수 | [`02_history.md`](./02_history.md) | [Entangled Future Deal Tracker](https://entangledfuture.com/acquisitions/) |
 | 2025-08 | de Masi, 이사회 의장 겸임 | CEO 겸 Chairman 체제로 전환. Peter Chapman은 이후 이사회에서도 퇴진 | [`03_ceo.md`](./03_ceo.md) | [The Quantum Insider](https://thequantuminsider.com/2025/08/06/ionq-posts-strong-q2-2025-results-names-ceo-niccolo-de-masi-chairman/) |
@@ -32,7 +32,7 @@
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./05_metrics.md)
+- [핵심 지표](./04_metrics.md)
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [기술적 분석 (차트)](./09_technical.md)
