@@ -8,8 +8,8 @@
 
 ## 연혁
 
-| 연도 | 내용 |
-|------|------|
+| 시점 (연도.월) | 내용 |
+|----------------|------|
 | 1988 | CAD 소프트웨어 기업 SDA Systems와 ECAD가 합병하여 Cadence Design Systems 설립. Joseph Costello가 초대 CEO 겸 사장으로 취임 |
 | 1989 | Gateway Design Automation 인수 — 시뮬레이션 소프트웨어 Verilog 확보 (이듬해 Verilog를 퍼블릭 도메인으로 공개, 업계 표준 HDL로 자리잡음) |
 | 1990 | Automated Systems Inc. 인수 — PCB(인쇄회로기판) 설계 소프트웨어 확보 |
@@ -33,7 +33,8 @@
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -47,4 +48,4 @@
 
 ---
 
-*작성일: 2026-08-01 (최종 수정일: 2026-08-15)*
+*작성일: 2026-08-01 (최종 수정일: 2026-08-16)*
