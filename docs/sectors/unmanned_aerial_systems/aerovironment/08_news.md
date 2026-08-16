@@ -13,7 +13,7 @@
 | 2026-08-07 | 이사회 변경 | 전 ManTech CFO Michael D. Ruppert를 이사로 신규 선임(2026-08-05부로 발효). Charles Thomas Burbage(2013년부터 재임) 이사는 차기 주주총회에서 재선임에 나서지 않고 퇴임 예정 발표 | [`07_investment.md`](./07_investment.md) §1 | [8-K Ex-99.1](https://www.sec.gov/Archives/edgar/data/1368622/000110465926092413/tm2622497d1_ex99-1.htm) |
 | 2026-07-29 | 이사회 변경 | Stephen F. Page 이사(13년 재임)가 차기 주주총회에서 재선임에 나서지 않고 퇴임 예정 발표 | [`07_investment.md`](./07_investment.md) §1 | [8-K Ex-99.1](https://www.sec.gov/Archives/edgar/data/1368622/000110465926087871/tm2621437d1_ex99-1.htm) |
 | 2026-07-27 | 소송 | 증권집단소송 리드 플레인티프(lead plaintiff) 신청 마감일 — 2025-06-25~2026-03-10 공시 관련 다수의 로펌이 소송 참여 홍보 | [`07_investment.md`](./07_investment.md) §3 | [Rosen Law — AVAV 소송 페이지](https://www.rosenlegal.com/cases/aerovironment-inc) |
-| 2026-06-29 | 실적발표 | FY2026 4분기·연간 실적 발표. 연간 매출 $1,976.8M(YoY +141%), 4분기 매출 $641.6M(YoY +133%). 연간 GAAP 순손실 $(265.1)M(EPS $(5.40), 재작성 반영 확정치), 4분기는 순이익 $63.2M(EPS $1.25) 흑자. Non-GAAP EPS 연간 $3.31, 4분기 $1.84. 펀디드 백로그 $1.2B(전년 $726.6M). FY2027 가이던스: 매출 $2,125~2,225M, 순이익 $8~24M, Non-GAAP EPS $3.02~3.34 | [`04_metrics.md`](./04_metrics.md) A.1·B, [`06_valuation.md`](./06_valuation.md) §3 | [8-K Ex-99.1 (2026-06-29)](https://www.sec.gov/Archives/edgar/data/1368622/000110465926078824/avav-20260629xex99d1.htm) |
+| 2026-06-29 | 실적발표 | FY2026 4분기·연간 실적 발표. 연간 매출 $1,976.8M(YoY +141%), 4분기 매출 $641.6M(YoY +133%). 연간 GAAP 순손실 $(265.1)M(EPS $(5.40), 재작성 반영 확정치), 4분기는 순이익 $63.2M(EPS $1.25) 흑자. Non-GAAP EPS 연간 $3.31, 4분기 $1.84. 펀디드 백로그 $1.2B(전년 $726.6M). FY2027 가이던스: 매출 $2,125~2,225M, 순이익 $8~24M, Non-GAAP EPS $3.02~3.34 | [`04_metrics.md`](./04_metrics.md) A.1·C, [`06_valuation.md`](./06_valuation.md) §3 | [8-K Ex-99.1 (2026-06-29)](https://www.sec.gov/Archives/edgar/data/1368622/000110465926078824/avav-20260629xex99d1.htm) |
 | 2026-06-22 | 재무 재작성 | FY2026 3분기(2026-01-31 종료) 10-Q/A 제출 — Space 보고단위 영업권 손상 계산에서 인수 이연법인세 자산·부채 배분 누락 오류 발견, 손상액 $89.4M 추가(누적 $240.7M)로 정정. 3분기 순손실 $(156.6)M → $(243.8)M(EPS $(3.15)→$(4.90))으로 확대. 회사는 이를 내부통제 중요한 취약점(material weakness)으로 공시 | [`04_metrics.md`](./04_metrics.md) B 각주, [`07_investment.md`](./07_investment.md) §3 | [10-Q/A (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1368622/000110465926076141/avav-20260131x10qa.htm) |
 | 2026-06 (초) | 소송 | 재무 재작성 발표 이후 다수 로펌이 증권사기 집단소송 조사·모집 공고 게시 시작 | [`07_investment.md`](./07_investment.md) §3 | [Businesswire — Frank R. Cruz 법률사무소 공고 (2026-06-02)](https://www.businesswire.com/news/home/20260602641325/en/Law-Offices-of-Frank-R.-Cruz-Encourages-AeroVironment-Inc.-AVAV-Shareholders-To-Inquire-About-Securities-Fraud-Class-Action) |
 | 2026-03-16 | M&A | Empirical Systems Aerospace(ESAero) 인수 완료(약 $200M) — 항공 엔지니어링·제조 서비스 역량 추가 | [`02_history.md`](./02_history.md) | [AeroVironment 8-K (2026-03-16)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001368622) |
@@ -37,6 +37,8 @@
 - [재무 / 실적](./05_financials.md)
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -47,4 +49,4 @@
 
 ---
 
-*작성일: 2026-08-14*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-16)*
