@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
-"""09_technical.md 용 일봉 캔들차트(SVG)·지지/저항 레벨 생성기.
+"""09_technical.md(일봉·1년)·10_technical_weekly.md(주봉·5년) 용
+캔들차트(SVG)·지지/저항 레벨 생성기.
 
-`docs/meta/.template/company/09_technical.md`가 요구하는 기계적 산출물
-(캔들 SVG 블록, §2 레벨 표, §4 방법론 수치)을 만든다. 서술·판단은 만들지 않는다.
+`docs/meta/.template/company/09_technical.md`·`10_technical_weekly.md`가
+요구하는 기계적 산출물(캔들 SVG 블록, §2 레벨 표, §4 방법론 수치)을 만든다.
+서술·판단은 만들지 않는다.
 
-    uv run python scripts/gen_technical_chart.py SNPS
+    uv run python scripts/gen_technical_chart.py SNPS                       # 일봉·1년 (기본)
+    uv run python scripts/gen_technical_chart.py SNPS --interval 1wk        # 주봉·5년
     uv run python scripts/gen_technical_chart.py SNPS --event 2025-09-10:"실적발표 갭다운" \
         --ref-line 626.24:"52주 최고" --force-level 366 --close-on 2026-08-13
 
 왜 스크립트로 두는가: 좌표 매핑·스윙 탐지·클러스터링 파라미터를 회사마다 다시
-구현하면 값이 조용히 달라져 회사 간 차트 비교가 깨진다. 아래 상수가 그 단일
-출처이며, **바꾸면 이미 만든 문서와 어긋나므로** 바꿀 땐 기존 09_technical.md를
-전부 재생성하고 각 문서의 §4에 변경된 파라미터를 남길 것.
+구현하면 값이 조용히 달라져 회사 간 차트 비교가 깨진다. 아래 INTERVAL_PARAMS·
+CLUSTER_TOL이 그 단일 출처이며, **바꾸면 이미 만든 문서와 어긋나므로** 바꿀 땐
+기존 09_technical.md·10_technical_weekly.md를 전부 재생성하고 각 문서의 §4에
+변경된 파라미터를 남길 것. 일봉/주봉은 같은 렌더링 로직을 공유하고
+INTERVAL_PARAMS로만 갈라지므로, 두 문서 간 비교 가능성도 이 딕셔너리가 보장한다.
 
 의존성 없음(표준 라이브러리만). 원자료는 저장소에 커밋하지 않는다.
 """
@@ -28,12 +33,40 @@ from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 
 # ── 파라미터: 모든 회사가 공유하는 단일 출처 (임의 변경 금지) ──────────────
-SWING_WINDOW = 5  # 전후 N거래일 (총 2N+1 창) 내 최고/최저면 스윙 포인트
-CLUSTER_TOL = 0.025  # 스윙 포인트를 묶는 가격 허용오차 (±2.5%)
-MIN_TOUCHES = 2  # 선으로 그릴 최소 터치 횟수
-LEVELS_PER_SIDE = 3  # 현재가 위/아래로 각각 최대 몇 개까지 표시할지
+CLUSTER_TOL = 0.025  # 스윙 포인트를 묶는 가격 허용오차 (±2.5%, 두 인터벌 공통)
 PAD_RATIO = 0.03  # y축 위아래 여백 = (고가−저가) × 이 비율
 MAX_GRIDLINES = 8  # 가로 그리드 최대 개수
+
+# 09_technical.md(일봉·1년) vs 10_technical_weekly.md(주봉·5년)를 가르는
+# 유일한 파라미터 집합. 봉 하나가 나타내는 기간이 다르므로 스윙 탐지 창(bar
+# 개수)·최소 표본·축 눈금 단위까지 여기서 함께 정한다. CLUSTER_TOL은 상대(%)
+# 값이라 두 인터벌에 공통으로 쓴다.
+INTERVAL_PARAMS = {
+    "1d": {
+        "range": "1y",
+        "swing_window": 5,  # 전후 5거래일(총 11거래일 창) 내 최고/최저
+        "min_touches": 2,
+        "levels_per_side": 3,
+        "min_bars": 60,
+        "unit": "거래일",
+        "bar_desc": "일봉",
+        "period_label": "최근 1년",
+        "tick_mode": "month",  # x축 눈금: 월 단위
+        "data_desc": "일봉 OHLCV(Open/High/Low/Close/Volume)",
+    },
+    "1wk": {
+        "range": "5y",
+        "swing_window": 4,  # 전후 4주(총 9주 창) 내 최고/최저 — 다년 구조적 레벨용
+        "min_touches": 2,
+        "levels_per_side": 3,
+        "min_bars": 60,
+        "unit": "주",
+        "bar_desc": "주봉",
+        "period_label": "최근 5년",
+        "tick_mode": "year",  # x축 눈금: 연 단위 (월 단위면 5년치가 빽빽해짐)
+        "data_desc": "주봉 OHLCV(주간 시가/고가/저가/종가/거래량, 주 마지막 거래일 기준)",
+    },
+}
 
 # ── 캔버스 좌표계 (viewBox 0 0 1200 680) ────────────────────────────────
 VB_W, VB_H = 1200, 680
@@ -67,10 +100,10 @@ class Level:
 
 
 # ── 데이터 수집 ──────────────────────────────────────────────────────────
-def fetch_daily(ticker: str, rng: str = "1y") -> tuple[list[Bar], dict]:
+def fetch_bars(ticker: str, rng: str, interval: str, min_bars: int) -> tuple[list[Bar], dict]:
     url = (
         f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
-        f"?range={rng}&interval=1d&events=div,split"
+        f"?range={rng}&interval={interval}&events=div,split"
     )
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     try:
@@ -102,10 +135,10 @@ def fetch_daily(ticker: str, rng: str = "1y") -> tuple[list[Bar], dict]:
                 v=q["volume"][i] or 0,
             )
         )
-    if len(bars) < 60:
+    if len(bars) < min_bars:
         sys.exit(
-            f"[에러] 거래일이 {len(bars)}개뿐 — 표본이 부족해 스윙 클러스터가 "
-            "무의미하다. 템플릿 상단 경고 참고."
+            f"[에러] 봉이 {len(bars)}개뿐(최소 {min_bars}개 필요) — 표본이 부족해 "
+            "스윙 클러스터가 무의미하다. 템플릿 상단 경고 참고."
         )
 
     events = res.get("events", {})
@@ -115,8 +148,8 @@ def fetch_daily(ticker: str, rng: str = "1y") -> tuple[list[Bar], dict]:
 
 
 # ── 스윙 포인트 · 클러스터링 ─────────────────────────────────────────────
-def find_swings(bars: list[Bar], w: int = SWING_WINDOW) -> tuple[list[float], list[float]]:
-    """고가/저가가 전후 w거래일 창 내 최고/최저와 같은 지점."""
+def find_swings(bars: list[Bar], w: int) -> tuple[list[float], list[float]]:
+    """고가/저가가 전후 w개 봉(거래일 또는 거래주) 창 내 최고/최저와 같은 지점."""
     highs, lows = [], []
     for i in range(w, len(bars) - w):
         win = bars[i - w : i + w + 1]
@@ -143,11 +176,12 @@ def pick_levels(
     forced: list[tuple[float, str]],
     min_touches: int,
     per_side: int,
+    swing_window: int,
 ) -> list[Level]:
     """현재가에서 가까운 순으로 각 방향 per_side개까지. 터치 수가 모자라도
     forced에 지정한 가격과 ±CLUSTER_TOL 안에 드는 클러스터는 개수 제한 없이 포함."""
     last = bars[-1].c
-    hi_sw, lo_sw = find_swings(bars)
+    hi_sw, lo_sw = find_swings(bars, swing_window)
     res = [(c, n) for c, n in cluster(hi_sw) if c > last]
     sup = [(c, n) for c, n in cluster(lo_sw) if c < last]
 
@@ -239,8 +273,10 @@ def render_svg(
     name: str,
     events: list[tuple[str, str]],
     refs: list[tuple[float, str]],
+    params: dict,
 ) -> str:
     cls = f"{ticker.lower()}-chart"
+    period_label, bar_desc, tick_mode = params["period_label"], params["bar_desc"], params["tick_mode"]
     first, lastbar = bars[0], bars[-1]
     L: list[str] = []
     a = L.append
@@ -269,10 +305,10 @@ def render_svg(
     a("</style>")
     a(
         f'<svg viewBox="0 0 {VB_W} {VB_H}" xmlns="http://www.w3.org/2000/svg" role="img" '
-        f'aria-label="{name}({ticker}) 최근 1년 일봉 캔들차트, 지지선과 저항선 포함">'
+        f'aria-label="{name}({ticker}) {period_label} {bar_desc} 캔들차트, 지지선과 저항선 포함">'
     )
     a(f'<rect x="0" y="0" width="{VB_W}" height="{VB_H}" fill="var(--bg)"/>')
-    a(f'<text x="60" y="26" class="title" font-size="18">{name} ({ticker}) — 최근 1년 일봉</text>')
+    a(f'<text x="60" y="26" class="title" font-size="18">{name} ({ticker}) — {period_label} {bar_desc}</text>')
     a(
         f'<text x="60" y="44" font-size="12.5" fill="var(--ink2)">{first.d} ~ {lastbar.d} · '
         f"마지막 종가 ${lastbar.c:,.2f} ({lastbar.d}) · 단위 USD</text>"
@@ -286,9 +322,12 @@ def render_svg(
             f'fill="var(--muted)">{money(p)}</text>'
         )
 
-    seen: set[tuple[int, int]] = set()
-    for i, b in enumerate(bars):  # 각 월 첫 거래일에 눈금
-        key = (b.d.year, b.d.month)
+    seen: set[tuple[int, ...]] = set()
+    for i, b in enumerate(bars):  # tick_mode에 따라 매 월/연 첫 봉에 눈금
+        if tick_mode == "year":
+            key, label = (b.d.year,), b.d.strftime("%Y")
+        else:
+            key, label = (b.d.year, b.d.month), b.d.strftime("%y-%m")
         if key in seen:
             continue
         seen.add(key)
@@ -296,7 +335,7 @@ def render_svg(
         a(f'<line x1="{fmt(x)}" y1="{fmt(Y_BOTTOM)}" x2="{fmt(x)}" y2="{fmt(Y_BOTTOM + 5)}" class="axis"/>')
         a(
             f'<text x="{fmt(x)}" y="{fmt(Y_BOTTOM + 18)}" font-size="10.5" '
-            f'text-anchor="middle" fill="var(--muted)">{b.d.strftime("%y-%m")}</text>'
+            f'text-anchor="middle" fill="var(--muted)">{label}</text>'
         )
 
     a(f'<line x1="{X_LEFT:.0f}" y1="{fmt(Y_BOTTOM)}" x2="{X_RIGHT:.0f}" y2="{fmt(Y_BOTTOM)}" class="axis"/>')
@@ -391,22 +430,26 @@ def render_table(bars: list[Bar], levels: list[Level], refs: list[tuple[float, s
     return "\n".join(rows)
 
 
-def render_facts(bars: list[Bar], g: Geom, meta: dict, min_touches: int, closes: list[str]) -> str:
+def render_facts(
+    bars: list[Bar], g: Geom, meta: dict, min_touches: int, closes: list[str], params: dict
+) -> str:
     first, last = bars[0], bars[-1]
     today = date.today().isoformat()
     adj = "원주가(과거 분할은 소급 반영, 배당은 미반영)"
+    unit, sw = params["unit"], params["swing_window"]
     out = [
-        f"- **데이터**: Yahoo Finance 일봉 OHLCV(Open/High/Low/Close/Volume), {len(bars)}개 거래일, "
+        f"- **데이터**: Yahoo Finance {params['data_desc']}, {len(bars)}개 {unit}, "
         f"{first.d}~{last.d}. 수집 시점: {today}. {adj}",
-        f"- **스윙 포인트 탐지**: 각 거래일의 고가/저가가 전후 {SWING_WINDOW}거래일"
-        f"(총 {2 * SWING_WINDOW + 1}거래일 창) 내 최고/최저값과 같으면 스윙 고점/저점으로 분류.",
+        f"- **스윙 포인트 탐지**: 각 {unit}의 고가/저가가 전후 {sw}{unit}"
+        f"(총 {2 * sw + 1}{unit} 창) 내 최고/최저값과 같으면 스윙 고점/저점으로 분류.",
         f"- **클러스터링**: 스윙 포인트를 가격 오름차순으로 정렬한 뒤, 이미 만든 클러스터 중심과 "
         f"±{CLUSTER_TOL:.1%} 이내면 같은 클러스터로 합산하고 중심을 재계산. "
         f"터치 {min_touches}회 이상만 표시(예외는 §2 비고).",
         "",
         "<!-- 참고용 수치 (문서에는 필요한 것만 옮길 것) -->",
-        f"<!-- 52주 최고 {g.hi:,.2f} / 최저 {g.lo:,.2f} / y축 {g.p_min:,.2f}~{g.p_max:,.2f}"
-        f" / 일평균 거래량 {sum(b.v for b in bars) / len(bars):,.0f}주 -->",
+        f"<!-- {params['period_label']} 최고 {g.hi:,.2f} / 최저 {g.lo:,.2f} / y축 "
+        f"{g.p_min:,.2f}~{g.p_max:,.2f} / {unit}평균 거래량 "
+        f"{sum(b.v for b in bars) / len(bars):,.0f}주 -->",
     ]
     if meta.get("_splits"):
         out.append(f"<!-- ⚠️ 기간 내 주식분할 이벤트 있음: {meta['_splits']} — §4에 소급조정 여부 명시 -->")
@@ -431,7 +474,10 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("ticker")
     ap.add_argument("--name", help="차트 제목에 쓸 회사명 (기본: Yahoo longName)")
-    ap.add_argument("--range", default="1y", help="수집 기간 (기본 1y)")
+    ap.add_argument("--interval", choices=["1d", "1wk"], default="1d",
+                    help="1d=일봉·1년(09_technical.md 기본값), 1wk=주봉·5년(10_technical_weekly.md 기본값)")
+    ap.add_argument("--range", default=None,
+                    help="수집 기간 (기본: interval별 INTERVAL_PARAMS 값 — 1d=1y, 1wk=5y)")
     ap.add_argument("--emit", choices=["all", "chart", "table", "facts"], default="all")
     ap.add_argument("--event", action="append", default=[], metavar="YYYY-MM-DD:설명",
                     help="수직 이벤트선 (반복 가능)")
@@ -441,16 +487,23 @@ def main() -> None:
                     help="터치 횟수가 모자라도 포함할 레벨 (52주 최저 등, 사유는 문서에 기입)")
     ap.add_argument("--close-on", action="append", default=[], metavar="YYYY-MM-DD",
                     help="다른 문서와 대조할 특정일 종가 출력 (반복 가능)")
-    ap.add_argument("--min-touches", type=int, default=MIN_TOUCHES)
-    ap.add_argument("--levels", type=int, default=LEVELS_PER_SIDE,
-                    help=f"현재가 위/아래로 각각 최대 몇 개 (기본 {LEVELS_PER_SIDE})")
+    ap.add_argument("--min-touches", type=int, default=None,
+                    help="기본: interval별 INTERVAL_PARAMS 값 (둘 다 2)")
+    ap.add_argument("--levels", type=int, default=None,
+                    help="현재가 위/아래로 각각 최대 몇 개 (기본: interval별 INTERVAL_PARAMS 값, 둘 다 3)")
     ap.add_argument("-o", "--out", help="파일로 저장 (기본: 표준출력)")
     args = ap.parse_args()
 
-    bars, meta = fetch_daily(args.ticker, args.range)
+    params = INTERVAL_PARAMS[args.interval]
+    rng = args.range or params["range"]
+    min_touches = args.min_touches if args.min_touches is not None else params["min_touches"]
+    levels_per_side = args.levels if args.levels is not None else params["levels_per_side"]
+
+    bars, meta = fetch_bars(args.ticker, rng, args.interval, params["min_bars"])
     g = Geom(bars)
     levels = pick_levels(
-        bars, [kv(f, float) for f in args.force_level], args.min_touches, args.levels
+        bars, [kv(f, float) for f in args.force_level], min_touches, levels_per_side,
+        params["swing_window"],
     )
     name = args.name or meta.get("longName") or args.ticker
     events = [kv(e) for e in args.event]
@@ -458,17 +511,17 @@ def main() -> None:
 
     parts = []
     if args.emit in ("all", "chart"):
-        parts.append(render_svg(bars, g, levels, args.ticker, name, events, refs))
+        parts.append(render_svg(bars, g, levels, args.ticker, name, events, refs, params))
     if args.emit in ("all", "table"):
         parts.append(render_table(bars, levels, refs))
     if args.emit in ("all", "facts"):
-        parts.append(render_facts(bars, g, meta, args.min_touches, args.close_on))
+        parts.append(render_facts(bars, g, meta, min_touches, args.close_on, params))
     text = "\n\n".join(parts) + "\n"
 
     if args.out:
         with open(args.out, "w") as f:
             f.write(text)
-        print(f"[완료] {args.out} ({len(bars)}개 거래일, 레벨 {len(levels)}개)", file=sys.stderr)
+        print(f"[완료] {args.out} ({len(bars)}개 {params['unit']}, 레벨 {len(levels)}개)", file=sys.stderr)
     else:
         sys.stdout.write(text)
 

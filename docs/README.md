@@ -31,7 +31,8 @@ docs/
 │       │   ├── 06_valuation.md
 │       │   ├── 07_investment.md
 │       │   ├── 08_news.md
-│       │   └── 09_technical.md
+│       │   ├── 09_technical.md
+│       │   └── 10_technical_weekly.md
 │       └── sector/           # 섹터 폴더에 복사하는 템플릿
 │           └── 01_comparison.md
 └── sectors/               # 모든 섹터/회사 리서치 콘텐츠가 이 아래에 모임
@@ -73,9 +74,10 @@ docs/
 | `07_investment.md` | 투자 포인트(강점)·리스크·경쟁 해자·**투자 결론**. 밸류에이션 숫자는 `06_valuation.md`를 요약 인용만 한다 | 선택 |
 | `08_news.md` | 최근 뉴스·이슈·실적 발표 등 시점성 메모(발생 순 로그, **최신이 위**). 결론은 내리지 않고, 판단에 영향을 주면 `06_valuation.md`·`07_investment.md`를 직접 갱신. 반영이 끝난 항목은 한 줄로 압축(`→ 07§X에 반영`), 4분기 이상 지난 항목은 파일 하단 `## 아카이브` 절로 밀거나 삭제해 로그가 부풀지 않게 유지 | 선택 |
 | `09_technical.md` | 최근 1년 일봉 캔들차트(인라인 SVG)와 스윙 포인트 클러스터 기반 지지/저항 정리. 과거 가격 패턴 서술만 담고 매매 신호·목표가는 내지 않는다. 일봉 원자료는 `04_metrics.md` 범위 밖이라 이 문서에서 직접 수집하되, 겹치는 시점 종가는 대조해 기록. **SVG·레벨 표·방법론 수치는 `scripts/gen_technical_chart.py`로 생성**(아래 참고) | 선택 |
+| `10_technical_weekly.md` | `09_technical.md`와 같은 형식·규칙이되 **최근 5년 주봉**으로, 여러 사이클에 걸친 구조적 지지/저항을 본다. 스윙 탐지 창(전후 4주)만 다르고 나머지 방법론·생성 방식은 09와 동일 — 짧은 상장 기간 등으로 5년치가 무의미하면 이 문서 자체를 생략해도 된다 | 선택 |
 | `<sector>/01_comparison.md` | 같은 섹터 내 커버리지 기업 간 사업 포지셔닝·밸류에이션 비교와 종합 순위. `meta/.template/sector/01_comparison.md`를 복사해서 씀 | 선택 (섹터 내 2개사 이상일 때 권장) |
 
-> 파일명 앞 숫자(01~09)는 **읽는 순서**(개요→역사→경영진→원자료→해석→밸류에이션→결론→뉴스로그→차트)를 그대로 나타냅니다. 새 회사 폴더는 `meta/.template/company/`를 복사해서 만들기 때문에 숫자도 그대로 따라옵니다 — 기존에 이미 만들어둔 회사 폴더(번호 없는 파일명)까지 소급 적용하려면 별도로 리네이밍이 필요합니다. `08_news.md`는 핵심 분석 흐름(01~07) 완성 후에 붙는 로그, `09_technical.md`는 펀더멘털 판단과 별개인 가격 패턴 참고 자료라 순서상 뒤에 둡니다.
+> 파일명 앞 숫자(01~10)는 **읽는 순서**(개요→역사→경영진→원자료→해석→밸류에이션→결론→뉴스로그→차트(일봉·1년)→차트(주봉·5년))를 그대로 나타냅니다. 새 회사 폴더는 `meta/.template/company/`를 복사해서 만들기 때문에 숫자도 그대로 따라옵니다 — 기존에 이미 만들어둔 회사 폴더(번호 없는 파일명)까지 소급 적용하려면 별도로 리네이밍이 필요합니다. `08_news.md`는 핵심 분석 흐름(01~07) 완성 후에 붙는 로그, `09_technical.md`·`10_technical_weekly.md`는 펀더멘털 판단과 별개인 가격 패턴 참고 자료라 순서상 뒤에 두고, 그중에서도 단기(일봉)를 장기(주봉)보다 앞에 둡니다.
 >
 > 회사마다 파일을 **똑같은 이름**으로 유지하면, 나중에 회사 간 비교가 쉬워집니다.
 >
@@ -104,7 +106,7 @@ docs/
 - 저장소 안의 다른 문서를 링크할 땐 **폴더가 아니라 `.md` 파일을 직접** 가리키기 (`../rocket_lab/` ❌ → `../rocket_lab/01_overview.md` ✅) — 폴더 링크는 MkDocs가 해석하지 못하고 빌드 경고만 남긴 채 깨진 링크로 배포된다
 - 주관적 판단(투자 결론)과 객관적 사실(재무 수치)을 **섞지 말고 구분**해서 적기
 - 회계연도(FY)처럼 헷갈리는 개념은 각주로 설명 — 예: "FY2026 1분기 = 2025-11 ~ 2026-01. Synopsys는 10월 결산 회계연도로, 캘린더 연도와 어긋난다."
-- 문서 맨 아래에 `*작성일: YYYY-MM-DD*` 표기 — 기존 문서를 고쳤으면 `(최종 수정일: YYYY-MM-DD)`를 덧붙이되 **날짜만 적고 무엇을 고쳤는지는 서술하지 않는다**(변경 이력은 git log가 원 출처). 다시 고칠 땐 이 날짜를 오늘 날짜로 교체할 것 — 옛 날짜나 옛 설명을 이어 붙이지 않는다. 인용된 수치를 갱신했으면 그 값을 인용하는 다른 문서(같은 폴더의 `05_financials.md`·`06_valuation.md`·`07_investment.md`, 섹터 `01_comparison.md`, 종가가 겹치면 `09_technical.md`도)도 함께 확인
+- 문서 맨 아래에 `*작성일: YYYY-MM-DD*` 표기 — 기존 문서를 고쳤으면 `(최종 수정일: YYYY-MM-DD)`를 덧붙이되 **날짜만 적고 무엇을 고쳤는지는 서술하지 않는다**(변경 이력은 git log가 원 출처). 다시 고칠 땐 이 날짜를 오늘 날짜로 교체할 것 — 옛 날짜나 옛 설명을 이어 붙이지 않는다. 인용된 수치를 갱신했으면 그 값을 인용하는 다른 문서(같은 폴더의 `05_financials.md`·`06_valuation.md`·`07_investment.md`, 섹터 `01_comparison.md`, 종가가 겹치면 `09_technical.md`·`10_technical_weekly.md`도)도 함께 확인
 
 ### 숫자를 다룰 때 반드시 지키는 것
 
@@ -141,23 +143,29 @@ cp -r docs/meta/.template/company docs/sectors/<sector>/<company-name>
 # 4. 같은 섹터에 회사가 2개 이상이면 비교 문서도 추가
 cp docs/meta/.template/sector/01_comparison.md docs/sectors/<sector>/01_comparison.md
 
-# 5. 09_technical.md(차트)를 쓸 거라면 SVG·레벨 표는 손으로 만들지 말고 생성
-uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명>
+# 5. 09_technical.md·10_technical_weekly.md(차트)를 쓸 거라면 SVG·레벨 표는 손으로 만들지 말고 생성
+uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명>              # 09용 (일봉·1년)
+uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명> --interval 1wk  # 10용 (주봉·5년)
 ```
 
 **섹터 자체가 새로 생기는 경우에만** `docs/sectors/.pages`에 폴더명을 추가하는 한 단계가 더 있다(규칙은 위 "📁 폴더 구조"의 `.pages` 등록 규칙 참고). 기존 섹터에 회사만 추가할 땐 필요 없다.
 
-### 기술적 분석 차트 생성 (`09_technical.md`)
+### 기술적 분석 차트 생성 (`09_technical.md`·`10_technical_weekly.md`)
 
-`09_technical.md`의 캔들 SVG·지지/저항 표·방법론 수치는 **손으로 만들지 않고** `scripts/gen_technical_chart.py`로 생성합니다(표준 라이브러리만 쓰므로 추가 설치 불필요).
+두 문서의 캔들 SVG·지지/저항 표·방법론 수치는 **손으로 만들지 않고** 같은 스크립트 `scripts/gen_technical_chart.py`로 생성합니다(표준 라이브러리만 쓰므로 추가 설치 불필요). `--interval`만 다르고 나머지 사용법은 동일합니다 — 기본값 `1d`는 09용(일봉·1년), `1wk`는 10용(주봉·5년)입니다.
 
 ```bash
+# 09_technical.md (일봉·1년)
 uv run python scripts/gen_technical_chart.py SNPS --name Synopsys \
   --event 2025-09-10:"실적발표 갭다운" --ref-line 626.24:"52주 최고" \
   --force-level '366:(52주 최저)' --close-on 2026-08-13
+
+# 10_technical_weekly.md (주봉·5년) — --interval만 추가
+uv run python scripts/gen_technical_chart.py SNPS --name Synopsys --interval 1wk \
+  --close-on 2026-08-13
 ```
 
-> 왜 스크립트로 두는가 — 좌표 매핑·스윙 탐지 창(전후 5거래일)·클러스터링 허용오차(±2.5%) 같은 파라미터를 회사마다 다시 구현하면 값이 조용히 달라져 **회사 간 차트 비교가 깨집니다.** 이 파라미터의 단일 출처는 스크립트 상단 상수이며, 바꾸면 이미 만들어둔 `09_technical.md`를 전부 재생성하고 각 문서 §4에 바뀐 값을 남겨야 합니다.
+> 왜 스크립트로 두는가 — 좌표 매핑·스윙 탐지 창(일봉 전후 5거래일 / 주봉 전후 4주)·클러스터링 허용오차(±2.5%, 두 인터벌 공통) 같은 파라미터를 회사마다 다시 구현하면 값이 조용히 달라져 **회사 간 차트 비교가 깨집니다.** 이 파라미터의 단일 출처는 스크립트 상단 `INTERVAL_PARAMS`이며, 바꾸면 이미 만들어둔 `09_technical.md`·`10_technical_weekly.md`를 전부 재생성하고 각 문서 §4에 바뀐 값을 남겨야 합니다.
 
 스크립트가 만드는 것은 기계적 산출물뿐입니다. 레벨이 **어느 시기의 스윙대인지**(§2 비고), 갭·급락 구간의 **해석**(§3), 파라미터를 기본값에서 바꾼 **사유**(§4)는 사람이 채웁니다. `--close-on`으로 뽑은 종가는 `04_metrics.md`·`06_valuation.md`의 값과 대조해 문서 상단에 결과를 남기세요.
 
