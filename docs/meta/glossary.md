@@ -225,7 +225,7 @@
 
 ## 6. 수익성 · 효율성 · 안정성 심화 { #advanced-metrics }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/financial-metrics.md`](./concepts/financial-metrics.md)
+> 📖 예시로 풀어 쓴 설명: [`concepts/advanced-metrics.md`](./concepts/advanced-metrics.md)
 >
 > §2가 "자주 쓰는 지표"라면, 여기는 **자본을 얼마나 잘 굴리는가**와 **버틸 힘이 있는가**를 보는 지표들입니다.
 
@@ -402,6 +402,7 @@
 - 개념을 예시로 풀어 쓴 학습용 문서:
     - [`concepts/financial-statements.md`](./concepts/financial-statements.md) — 재무제표 3종 읽는 법 (입문)
     - [`concepts/financial-metrics.md`](./concepts/financial-metrics.md) — 재무 지표
+    - [`concepts/advanced-metrics.md`](./concepts/advanced-metrics.md) — 수익성·효율성·안정성 심화
     - [`concepts/business-metrics.md`](./concepts/business-metrics.md) — 사업 모델·성장 지표
     - [`concepts/valuation.md`](./concepts/valuation.md) — 밸류에이션 방법론
     - [`concepts/macroeconomics.md`](./concepts/macroeconomics.md) — 거시경제
@@ -412,4 +413,4 @@
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-15)*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-16)*

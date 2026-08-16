@@ -168,10 +168,10 @@ Non-GAAP 조정에서 "일회성 비용"으로 빠지는 항목이 **매년 나�
 
 - [glossary.md — 10. 리스크 · 회계 품질](../glossary.md#risk)
 - [재무제표 기초 개념 정리](./financial-statements.md) — 적신호가 나타나는 재무제표상 위치
-- [재무 지표 개념 정리](./financial-metrics.md) — DSO·DIO·이자보상배율 계산
+- [수익성·효율성·안정성 심화 개념 정리](./advanced-metrics.md) — DSO·DIO·이자보상배율 계산
 - [투자 판단 / 거버넌스 개념 정리](./investment-terms.md) — Bull/Bear Case 작성
 - [거시경제 개념 정리](./macroeconomics.md) — 체계적 위험의 실체
 
 ---
 
-*작성일: 2026-08-15*
+*작성일: 2026-08-15 (최종 수정일: 2026-08-16)*
