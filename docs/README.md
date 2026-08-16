@@ -21,26 +21,28 @@ docs/
 │   ├── glossary.md         # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
 │   ├── concepts/            # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
 │   ├── exceptions.md        # 정리 대기 중인 규칙 위반 목록 ("알려진 예외")
-│   └── .template/           # 새 회사 추가 시 복사해서 쓰는 템플릿 모음
-│       └── company/          # 회사 폴더에 복사하는 템플릿 (숫자 접두사 = 읽는 순서)
-│           ├── 01_overview.md
-│           ├── 02_history.md
-│           ├── 03_ceo.md
-│           ├── 04_metrics.md
-│           ├── 05_financials.md
-│           ├── 06_valuation.md
-│           ├── 07_investment.md
-│           ├── 08_news.md
-│           ├── 09_technical.md
-│           └── 10_technical_weekly.md
+│   └── .template/           # 새 회사/섹터 추가 시 복사해서 쓰는 템플릿 모음
+│       ├── company/          # 회사 폴더에 복사하는 템플릿 (숫자 접두사 = 읽는 순서)
+│       │   ├── 01_overview.md
+│       │   ├── 02_history.md
+│       │   ├── 03_ceo.md
+│       │   ├── 04_metrics.md
+│       │   ├── 05_financials.md
+│       │   ├── 06_valuation.md
+│       │   ├── 07_investment.md
+│       │   ├── 08_news.md
+│       │   ├── 09_technical.md
+│       │   └── 10_technical_weekly.md
+│       └── sector/           # 섹터 폴더에 복사하는 템플릿
+│           └── 00_overview.md
 └── sectors/               # 모든 섹터/회사 리서치 콘텐츠가 이 아래에 모임
     ├── .pages             # 섹터 nav 순서 — 새 섹터는 여기 등록해야 사이트에 노출됨 (아래 참고)
     ├── electronic_design_automation/   # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스
-    │   ├── 01_comparison.md # (선택) 섹터 내 회사 비교 — 2개사 이상일 때 권장
+    │   ├── 00_overview.md   # (선택) 섹터 자체 설명 — 산업 구조·성장 동력·리스크
     │   ├── synopsys/
     │   └── cadence_design_systems/
     └── <sector>/
-        ├── 01_comparison.md
+        ├── 00_overview.md
         └── <company-name>/
             └── ...
 ```
@@ -73,7 +75,7 @@ docs/
 | `08_news.md` | 최근 뉴스·이슈·실적 발표 등 시점성 메모(발생 순 로그, **최신이 위**). 결론은 내리지 않고, 판단에 영향을 주면 `06_valuation.md`·`07_investment.md`를 직접 갱신. 반영이 끝난 항목은 한 줄로 압축(`→ 07§X에 반영`), 4분기 이상 지난 항목은 파일 하단 `## 아카이브` 절로 밀거나 삭제해 로그가 부풀지 않게 유지 | 선택 |
 | `09_technical.md` | 최근 1년 일봉 캔들차트(인라인 SVG)와 스윙 포인트 클러스터 기반 지지/저항 정리. 과거 가격 패턴 서술만 담고 매매 신호·목표가는 내지 않는다. 일봉 원자료는 `04_metrics.md` 범위 밖이라 이 문서에서 직접 수집하되, 겹치는 시점 종가는 대조해 기록. **SVG·레벨 표·방법론 수치는 `scripts/gen_technical_chart.py`로 생성**(아래 참고) | 선택 |
 | `10_technical_weekly.md` | `09_technical.md`와 같은 형식·규칙이되 **최근 5년 주봉**으로, 여러 사이클에 걸친 구조적 지지/저항을 본다. 스윙 탐지 창(전후 4주)만 다르고 나머지 방법론·생성 방식은 09와 동일 — 짧은 상장 기간 등으로 5년치가 무의미하면 이 문서 자체를 생략해도 된다 | 선택 |
-| `<sector>/01_comparison.md` | 같은 섹터 내 커버리지 기업 간 사업 포지셔닝·밸류에이션 비교와 종합 순위. 전용 템플릿은 없고, 같은 섹터의 기존 `01_comparison.md`(예: `docs/sectors/electronic_design_automation/01_comparison.md`)를 참고해 새로 씀 | 선택 (섹터 내 2개사 이상일 때 권장) |
+| `<sector>/00_overview.md` | 개별 회사가 아니라 **산업 자체**를 설명 — 밸류체인·시장 규모/성장 동력·구조적 리스크·체크할 지표. `meta/.template/sector/00_overview.md`를 복사해서 씀 | 선택 (섹터 폴더 생성 시 권장) |
 
 > 파일명 앞 숫자(01~10)는 **읽는 순서**(개요→역사→경영진→원자료→해석→밸류에이션→결론→뉴스로그→차트(일봉·1년)→차트(주봉·5년))를 그대로 나타냅니다. 새 회사 폴더는 `meta/.template/company/`를 복사해서 만들기 때문에 숫자도 그대로 따라옵니다 — 기존에 이미 만들어둔 회사 폴더(번호 없는 파일명)까지 소급 적용하려면 별도로 리네이밍이 필요합니다. `08_news.md`는 핵심 분석 흐름(01~07) 완성 후에 붙는 로그, `09_technical.md`·`10_technical_weekly.md`는 펀더멘털 판단과 별개인 가격 패턴 참고 자료라 순서상 뒤에 두고, 그중에서도 단기(일봉)를 장기(주봉)보다 앞에 둡니다.
 >
@@ -104,7 +106,7 @@ docs/
 - 저장소 안의 다른 문서를 링크할 땐 **폴더가 아니라 `.md` 파일을 직접** 가리키기 (`../rocket_lab/` ❌ → `../rocket_lab/01_overview.md` ✅) — 폴더 링크는 MkDocs가 해석하지 못하고 빌드 경고만 남긴 채 깨진 링크로 배포된다
 - 주관적 판단(투자 결론)과 객관적 사실(재무 수치)을 **섞지 말고 구분**해서 적기
 - 회계연도(FY)처럼 헷갈리는 개념은 각주로 설명 — 예: "FY2026 1분기 = 2025-11 ~ 2026-01. Synopsys는 10월 결산 회계연도로, 캘린더 연도와 어긋난다."
-- 문서 맨 아래에 `*작성일: YYYY-MM-DD*` 표기 — 기존 문서를 고쳤으면 `(최종 수정일: YYYY-MM-DD)`를 덧붙이되 **날짜만 적고 무엇을 고쳤는지는 서술하지 않는다**(변경 이력은 git log가 원 출처). 다시 고칠 땐 이 날짜를 오늘 날짜로 교체할 것 — 옛 날짜나 옛 설명을 이어 붙이지 않는다. 인용된 수치를 갱신했으면 그 값을 인용하는 다른 문서(같은 폴더의 `05_financials.md`·`06_valuation.md`·`07_investment.md`, 섹터 `01_comparison.md`, 종가가 겹치면 `09_technical.md`·`10_technical_weekly.md`도)도 함께 확인
+- 문서 맨 아래에 `*작성일: YYYY-MM-DD*` 표기 — 기존 문서를 고쳤으면 `(최종 수정일: YYYY-MM-DD)`를 덧붙이되 **날짜만 적고 무엇을 고쳤는지는 서술하지 않는다**(변경 이력은 git log가 원 출처). 다시 고칠 땐 이 날짜를 오늘 날짜로 교체할 것 — 옛 날짜나 옛 설명을 이어 붙이지 않는다. 인용된 수치를 갱신했으면 그 값을 인용하는 다른 문서(같은 폴더의 `05_financials.md`·`06_valuation.md`·`07_investment.md`, 종가가 겹치면 `09_technical.md`·`10_technical_weekly.md`도)도 함께 확인
 
 ### 숫자를 다룰 때 반드시 지키는 것
 
@@ -120,7 +122,7 @@ docs/
 
 표준 재무 지표만으로는 그 회사의 동력이 안 잡히는 경우가 있습니다 — 방산의 **수주잔고·book-to-bill**, 구독 소프트웨어의 **ARR·NRR·RPO**, 플랫폼의 **거래대금·테이크레이트**, 금융의 **AUC·예치금 운용수익(float)** 같은 것들입니다. 정의는 [`glossary.md`](./meta/glossary.md) "7. 사업 모델 · 성장 지표"에 있습니다.
 
-1. **지표는 회사가 아니라 섹터 단위로 정한다** — 같은 섹터의 모든 회사가 같은 지표를 채워야 `01_comparison.md` §2-1에서 비교가 됩니다. 한 회사만 backlog를 기록하면 그 열은 비교표에서 쓸 수 없습니다. 섹터의 표준 지표는 그 섹터 `01_comparison.md` §2-1에 선언하고, 비교 문서가 아직 없으면 첫 회사의 `04_metrics.md` C절에서 정한 뒤 다음 회사가 따릅니다.
+1. **지표는 회사가 아니라 섹터 단위로 정한다** — 같은 섹터의 모든 회사가 같은 지표를 채워야 회사 간 비교가 됩니다. 한 회사만 backlog를 기록하면 다른 회사와 나란히 놓고 비교할 수 없습니다. 섹터의 표준 지표는 첫 회사의 `04_metrics.md` C절에서 정하고, 다음 회사가 그 지표를 그대로 따릅니다.
 2. **최대 5개** — 회사 IR이 자랑하는 지표를 다 옮기면 갱신이 안 돼 금방 낡습니다. "이 숫자가 나빠지면 투자 논거가 흔들리는가"로 고릅니다.
 3. **정의를 반드시 병기** — 같은 이름이 회사마다 다른 것을 가리킵니다(backlog의 funded 포함 여부, ARR에 포함되는 계약 범위, NRR의 고객 수 기준 vs 금액 기준). 회사 공시 정의를 그대로 적습니다.
 4. **잔고(stock)형 지표는 평균·중앙값을 내지 않는다** — backlog·AUC·이연수익처럼 "특정 시점의 잔량"은 기간 평균이 의미가 없어 해당 열을 `—`로 둡니다. book-to-bill·거래대금처럼 기간 유량(flow)인 지표만 평균을 냅니다.
@@ -147,8 +149,8 @@ cp -r docs/meta/.template/company docs/sectors/<sector>/<company-name>
 # 2. 파일 내용 채우기
 # 3. 필요 없는 파일은 삭제 (01_overview.md는 유지 권장)
 
-# 4. 같은 섹터에 회사가 2개 이상이면 비교 문서도 추가 (전용 템플릿은 없음 — 같은 섹터의
-#    기존 01_comparison.md를 참고해 새로 쓰거나, 없으면 다른 섹터 파일을 참고)
+# 4. 섹터 폴더가 새로 생기는 경우, 산업 자체를 설명하는 개요 문서도 추가
+cp docs/meta/.template/sector/00_overview.md docs/sectors/<sector>/00_overview.md
 
 # 5. 09_technical.md·10_technical_weekly.md(차트)를 쓸 거라면 SVG·레벨 표는 손으로 만들지 말고 생성
 uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명>              # 09용 (일봉·1년)
