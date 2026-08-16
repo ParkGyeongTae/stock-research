@@ -10,7 +10,8 @@
 - **CEO**: Sassine Ghazi (2024년 1월 취임, 전임 Aart de Geus는 Executive Chairman으로 이동)
 - **홈페이지**: https://www.synopsys.com
 - **섹터 / 산업**: 테크 / EDA (Electronic Design Automation)
-- **시가총액**: 약 744억 달러 (2026-08-08 기준)
+- **시가총액**: 약 811억 달러 (2026-08-14 종가 $421.50 기준, `04_metrics.md` A.2 인용)
+- **회계연도(FY) 마감월**: 10월 말(또는 10월 마지막 일요일). 예) FY2025 = 2024.11~2025.10
 
 ---
 
@@ -60,7 +61,8 @@ EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사(Big Three)가 과점�
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -72,4 +74,4 @@ EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사(Big Three)가 과점�
 
 ---
 
-*작성일: 2026-08-01*
+*작성일: 2026-08-01 (최종 수정일: 2026-08-16)*

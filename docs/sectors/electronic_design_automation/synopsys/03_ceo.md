@@ -81,7 +81,8 @@ Ansys 인수 발표 이후 KeyBanc(목표주가 660달러, Overweight), Piper Sa
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical.md)
+- [기술적 분석 — 일봉·1년](./09_technical.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -97,4 +98,4 @@ Ansys 인수 발표 이후 KeyBanc(목표주가 660달러, Overweight), Piper Sa
 
 ---
 
-*작성일: 2026-08-08 (최종 수정일: 2026-08-14)*
+*작성일: 2026-08-08 (최종 수정일: 2026-08-16)*
