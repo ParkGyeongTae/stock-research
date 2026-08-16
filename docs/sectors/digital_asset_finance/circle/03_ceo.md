@@ -77,6 +77,7 @@ Allaire는 두 차례(Allaire Corporation, Brightcove) 회사를 창업해 IPO�
 - [핵심 지표](./05_metrics.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 (차트)](./09_technical.md)
 
 ---
 
