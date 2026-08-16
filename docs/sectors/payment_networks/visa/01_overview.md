@@ -11,6 +11,7 @@
 - **홈페이지**: https://usa.visa.com , https://investor.visa.com
 - **섹터 / 산업**: Payment Networks (결제 네트워크) — Financial Services, Transaction & Payment Processing Services
 - **시가총액**: 약 $669B (2026-08-14 종가 기준)
+- **회계연도(FY) 마감월**: 9월 말 (FY2025 = 2024-10-01 ~ 2025-09-30) — 다른 문서에서 이 값을 그대로 인용할 것
 
 ---
 
@@ -65,7 +66,8 @@ Visa는 미국 카드 결제금액 기준 시장점유율 약 61%(2024년, Maste
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical_daily.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -78,4 +80,4 @@ Visa는 미국 카드 결제금액 기준 시장점유율 약 61%(2024년, Maste
 
 ---
 
-*작성일: 2026-08-15*
+*작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

@@ -19,7 +19,7 @@
 | 2025-12-08 | FY2025 위임장(DEF 14A) 제출 | McInerney CEO 총보상 $31.56M(전년 대비 +21%), 임직원 중위값 대비 204배 | [`03_ceo.md`](./03_ceo.md) §4 | [SEC EDGAR — DEF 14A](https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm) |
 | 2025-11-10 | Visa·Mastercard, 매입사 대상 개정·통합 화해안 체결 | Injunctive Relief Class 청구 관련 새 합의(위 2026-06 항목의 전 단계) | [`07_investment.md`](./07_investment.md) §3 | 2차 출처(법률 전문 매체) |
 | 2025-10-28 | FY2025 Q4·전체회계연도 실적 발표 및 분기배당 인상 | 전체회계연도 순매출 $40.0B(+11%), GAAP 순이익 $20.1B/$10.20, Non-GAAP $22.5B/$11.47. 이사회가 분기배당을 $0.59→$0.670(약 14% 인상)로 결정(2025-12-01 지급분부터 적용) | [`04_metrics.md`](./04_metrics.md), [`05_financials.md`](./05_financials.md) §4 | [8-K, SEC EDGAR](https://www.sec.gov/Archives/edgar/data/1403161/000140316125000077/q42025earningsrelease.htm) |
-| 2025-09-25 | 미국 소송에스크로 계좌에 $5억 추가 예치 | Visa 미국 소급책임계획(retrospective responsibility plan)에 따른 예치 — Class B-1/B-2 주식 전환비율 조정으로 이어짐(주당 $340.92 기준) | [`03_ceo.md`](./03_ceo.md) §6, [`04_metrics.md`](./04_metrics.md) A.1 각주 | [8-K, SEC EDGAR](https://www.sec.gov/Archives/edgar/data/1403161/000140316125000077/q42025earningsrelease.htm) |
+| 2025-09-25 | 미국 소송에스크로 계좌에 $5억 추가 예치 | → [`03_ceo.md`](./03_ceo.md) §6, [`04_metrics.md`](./04_metrics.md) A.1 각주에 반영 | [`03_ceo.md`](./03_ceo.md) §6 | [8-K, SEC EDGAR](https://www.sec.gov/Archives/edgar/data/1403161/000140316125000077/q42025earningsrelease.htm) |
 
 ---
 
@@ -34,7 +34,8 @@
 - [재무 / 실적](./05_financials.md)
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
-- [기술적 분석 (차트)](./09_technical_daily.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -45,4 +46,4 @@
 
 ---
 
-*작성일: 2026-08-15*
+*작성일: 2026-08-15 (최종 수정일: 2026-08-16)*
