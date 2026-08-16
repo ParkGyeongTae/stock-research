@@ -153,6 +153,7 @@ PER·시가총액만 보면 두 회사는 같아 보입니다. 하지만 J사는
 - [밸류에이션 방법론 개념 정리](./valuation.md)
 - [사업 모델 · 성장 지표 개념 정리](./business-metrics.md)
 - [리스크 · 회계 품질 개념 정리](./risk-and-quality.md)
+- [표기 규칙 개념 정리](./notation.md) — YoY·%p·(E) 등 여기 표에서 쓰는 표기법
 
 ---
 
