@@ -181,9 +181,9 @@ uv run mkdocs build   # 배포와 동일하게 빌드 — 경고 메시지를 �
     - `unmanned_aerial_systems` — Kratos는 이미 backlog·book-to-bill을 **B절 분기표 안에** 행으로 갖고 있어 C절로 옮기면 되고, AeroVironment는 아직 없어 새로 조사가 필요합니다. **제거 조건**: 두 회사 모두 C절 정착 + `01_comparison.md §2-1`에서 지표가 대응되면 이 하위 줄만 삭제.
     - `space_launch_services` — Rocket Lab은 백로그가 각주 서술로만 있고 표가 없습니다. **제거 조건**: Rocket Lab C절에 백로그 표가 들어가면 삭제(섹터가 1사이면 `01_comparison.md`는 필요 없음).
     - `electronic_design_automation` — 고유 지표 표가 없습니다. **제거 조건**: 그 섹터의 모든 회사가 C절 정착 + 섹터 `01_comparison.md §2-1`이 그 지표를 반영하면 이 줄에서 지움.
-    - `digital_asset_finance` — Coinbase는 C절(총 거래대금·시장점유율·고객 예치자산)을 갖췄으나(2026-08-15), Circle·Robinhood는 아직입니다. **제거 조건**: Circle·Robinhood도 C절을 채우고(Coinbase 지표를 그대로 따르거나 자사 사업 구조에 맞게 조정) 섹터 `01_comparison.md §2-1`이 반영하면 이 줄에서 지움.
+    - `digital_asset_finance` — Coinbase(2026-08-15)·Robinhood(2026-08-16)는 C절을 갖췄으나(Robinhood는 시장점유율 시계열을 구하지 못해 크립토 거래대금을 App·Bitstamp로 분해하는 방식으로 조정), Circle은 아직입니다. **제거 조건**: Circle도 C절을 채우고(Coinbase 지표를 그대로 따르거나 자사 사업 구조에 맞게 조정) 섹터 `01_comparison.md §2-1`이 반영하면 이 줄에서 지움.
     - 전체 항목 **제거 조건**: 위 하위 줄이 모두 지워지면 이 상위 항목 자체를 삭제.
 
 ---
 
-*작성일: 2026-08-01 (최종 수정: 2026-08-15)*
+*작성일: 2026-08-01 (최종 수정: 2026-08-16)*

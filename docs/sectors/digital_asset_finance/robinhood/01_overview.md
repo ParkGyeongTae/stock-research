@@ -61,6 +61,7 @@ Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 (차트)](./09_technical.md)
 
 ---
 
@@ -83,4 +84,4 @@ Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue
 
 ---
 
-*작성일: 2026-08-14 (최종 수정: 2026-08-14 — `05_metrics.md` 작성 중 확인된 FY2025 매출 수치(44.7억 달러, 기존 45.2억 달러에서 수정) 반영)*
+*작성일: 2026-08-14 (최종 수정: 2026-08-16 — 09_technical.md 링크 추가)*

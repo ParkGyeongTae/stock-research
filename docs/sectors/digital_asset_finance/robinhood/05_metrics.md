@@ -150,7 +150,31 @@
 
 ---
 
-## C. 판단 메모
+## C. 사업 고유 지표
+
+> ⚠️ `docs/README.md` "알려진 예외" 목록에 따르면 `digital_asset_finance` 섹터의 표준 지표는 Coinbase가 처음 정의(총 거래대금·크립토 거래대금 시장점유율·고객 예치자산)했다. Robinhood는 크립토가 사업의 일부일 뿐인 종합 브로커리지라 다음과 같이 조정해 따른다 — **크립토 거래대금 시장점유율**은 Robinhood 자체 공시나 신뢰할 만한 3자 집계 어디에서도 분기별 시계열을 확인하지 못해(`01_overview.md` §3의 단일 시점 스냅샷 비교만 존재) 이 표에서는 뺐다. 대신 **크립토 거래대금**을 자체 앱과 Bitstamp로 나눠 기록해(Coinbase의 "거래소 vs 매칭 거래" 구분과 달리 Robinhood는 리테일(앱)·기관(Bitstamp) 두 채널의 성격이 달라 합산보다 분해가 더 유의미) 사실상 같은 취지를 유지했고, **고객 예치자산**은 Robinhood가 직접 공시하는 정의(Total Platform Assets, 舊 Assets Under Custody)를 그대로 썼다.
+>
+> 이 지표는 회사가 분기 단위로만 공시하고 연간 합산치를 별도로 발표하지 않는다(Coinbase처럼 연간 총액을 직접 공시하지 않음) — 임의로 4개 분기를 합산하면 사실과 다른 숫자를 새로 만드는 셈이라, 아래 표는 `05_metrics.md` B절과 동일하게 **분기 단위(2025 Q1~2026 Q2)**로 채웠다.
+
+**Robinhood 조정 지표**: 크립토 거래대금(Robinhood App), 크립토 거래대금(Bitstamp), 고객 예치자산(Total Platform Assets)
+
+| 지표 | 정의 (회사 공시 기준) | 유형 | 2025 Q1 | 2025 Q2 | 2025 Q3 | 2025 Q4 | 2026 Q1 | 2026 Q2 | 출처 |
+|------|----------------------|------|---------|---------|---------|---------|---------|---------|------|
+| 크립토 거래대금 — Robinhood App | 자체 앱(리테일)에서 체결된 크립토 매매 대금(notional, 분기) | 유량 | $46B | $28B | $40B | $34B | $24B | $18B | 각 분기 실적 보도자료(8-K Ex.99.1) |
+| 크립토 거래대금 — Bitstamp | 기관 전용 거래소 Bitstamp에서 체결된 크립토 매매 대금(notional, 분기). 2025년 6월 인수 완료 이후부터 집계 | 유량 | 해당 없음(인수 전) | $7B | $40B | $48B | $42B | $22B | 상동 |
+| 고객 예치자산 (Total Platform Assets, 舊 Assets Under Custody) | 플랫폼 내 모든 주식·옵션·암호화폐 등 자산의 공정가치 합(분기말 기준). 2025 Q1부터 TradePMR RIA 관리자산을 포함해 "Total Platform Assets"로 명칭 변경(舊 AUC) | 잔고 | $221B | $279B | $333B | $324B | $307B | $369B | 상동 |
+
+- FY2023 말(2023-12-31) 참고치: Assets Under Custody $102.6B[^auc2023]. FY2024 말(2024-12-31): Assets Under Custody $193B(YoY +88%), 크립토 거래대금(4분기, App만·Bitstamp 인수 전) $71.0B(YoY +400%)[^q42024] — 두 해 모두 분기별 크립토 거래대금 전체를 확인하지 못해 연간 합산치는 "확인 필요"로 남긴다.
+- 잔고형 지표(고객 예치자산)는 규칙에 따라 평균·중앙값을 내지 않는다. 분기별 증감률(YoY)은 Q2'25 +99% → Q3'25 +119%(구간 내 최고) → Q4'25 +68% → Q1'26 +39% → Q2'26 +32%로, 절대 규모는 계속 커지는데 **증가 속도(YoY%)는 4개 분기 연속 둔화**되고 있다 — 분모(전년 동기)가 점점 커지는 기저효과 영향이 크지만, 아래 크립토 거래대금 감소 추세와 방향이 겹친다는 점은 유의할 만하다.
+- 크립토 거래대금(App+Bitstamp 합산)은 Q4'25 $82B로 정점을 찍은 뒤 Q1'26 $66B → Q2'26 $40B로 2개 분기 연속 감소했다 — `04_financials.md` §1·`01_overview.md` §2가 서술한 "크립토 매출 2개 분기 연속 급감(Q1 -47%, Q2 -38%)"과 정확히 같은 방향의 물량(volume) 지표다. 다만 감소 속도는 채널마다 다르다 — Bitstamp는 Q3'25~Q4'25 정점($40B→$48B) 이후 Q1'26 $42B(소폭 유지) → Q2'26 $22B(-48%)로 뒤늦게, 더 가파르게 꺾인 반면, Robinhood App은 Q3'25 $40B 이후 Q4'25($34B)부터 이미 꾸준히 줄어들고 있다 — Bitstamp 쪽 거래대금 둔화가 최근 분기 크립토 매출 급감의 더 큰 기여 요인일 가능성을 시사하나, 매출 기여도까지 분해한 공시는 확인하지 못했다.
+- 고객 예치자산은 계속 사상 최고치를 경신하고 있는데(Q2'26 $369B), 같은 분기 크립토 거래대금은 오히려 급감했다 — **주식·옵션 등 비(非)크립토 자산의 평가액 증가와 순유입(Net Deposits)이 크립토 거래 위축을 상쇄**하고 있다는 뜻으로, "플랫폼 전체 성장"과 "크립토 사업 성장"을 같은 지표로 혼동하면 안 된다는 근거이기도 하다.
+
+[^auc2023]: [Robinhood Reports Fourth Quarter and Full Year 2023 Results (2024-02-13)](https://www.globenewswire.com/news-release/2024/02/13/2828627/0/en/Robinhood-Reports-Fourth-Quarter-and-Full-Year-2023-Results.html)
+[^q42024]: [Robinhood Reports Fourth Quarter and Full Year 2024 Results, 8-K Ex.99.1 (SEC EDGAR, 2025-02-12)](https://www.sec.gov/Archives/edgar/data/1783879/000178387925000045/q42024robinhoodexhibit991.htm)
+
+---
+
+## D. 판단 메모
 
 - 현재(2026-08-13) GAAP PER(TTM 기준 약 43.8배)은 FY2024·FY2025 2개년 평균(약 39.5배)보다 다소 높은 수준이나, FY2025 연말 PER(55.2배)보다는 낮아진 상태 — 주가($113.10→$99.37)가 TTM EPS 상승(2.05→2.27)보다 더 크게 조정된 결과.
 - Non-GAAP PER은 Robinhood가 Non-GAAP EPS를 아예 공시하지 않아 판단 불가(해당 없음) — Synopsys 사례처럼 GAAP·Non-GAAP PER의 괴리를 비교하는 접근 자체가 이 회사에는 적용되지 않는다.
@@ -172,6 +196,7 @@
 - [밸류에이션 / 적정주가](./06_valuation.md)
 - [투자 판단](./07_investment.md)
 - [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 (차트)](./09_technical.md)
 
 ---
 
@@ -192,7 +217,13 @@
 - [stockanalysis.com — HOOD Cash Flow Statement](https://stockanalysis.com/stocks/hood/financials/cash-flow-statement/)
 - [stockanalysis.com — HOOD Ratios](https://stockanalysis.com/stocks/hood/financials/ratios/)
 - [Yahoo Finance — HOOD 종가 데이터 (query1.finance.yahoo.com chart API)](https://finance.yahoo.com/quote/HOOD/history/)
+- [Robinhood Reports First Quarter 2025 Results, 8-K Ex.99.1 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1783879/000178387925000144/q12025robinhoodexhibit991.htm)
+- [Robinhood Reports Second Quarter 2025 Results, 8-K Ex.99.1 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1783879/000178387925000250/q22025robinhoodexhibit991.htm)
+- [Robinhood Reports Third Quarter 2025 Results, 8-K Ex.99.1 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1783879/000178387925000309/q32025robinhoodexhibit991.htm)
+- [Robinhood Reports Fourth Quarter and Full Year 2025 Results, 8-K Ex.99.1 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1783879/000178387926000013/q42025robinhoodexhibit991.htm)
+- [Robinhood Reports First Quarter 2026 Results, 8-K Ex.99.1 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1783879/000178387926000061/q12026robinhoodexhibit991.htm)
+- [Robinhood Reports Second Quarter 2026 Results, 8-K Ex.99.1 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1783879/000178387926000113/q22026robinhoodexhibit991.htm)
 
 ---
 
-*작성일: 2026-08-14*
+*작성일: 2026-08-14 (최종 수정: 2026-08-16 — C절(사업 고유 지표) 신설, 09_technical.md 링크 추가)*
