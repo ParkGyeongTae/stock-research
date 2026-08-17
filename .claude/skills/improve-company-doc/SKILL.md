@@ -10,7 +10,7 @@ description: 이미 만들어진 회사 문서 폴더(`docs/sectors/<sector>/<co
 - 대상: 이미 존재하는 `docs/sectors/<sector>/<company>/` 폴더
 - 트리거 예시: "이 회사 문서 개선해", "템플릿 기준으로 업데이트해", "이 회사 문서 다시 손봐줘", "최신 템플릿 반영해줘"
 - **대상 아님**:
-  - 새 회사 폴더를 처음 만드는 작업 → `docs/README.md`의 "새 회사/섹터 추가 방법"대로 템플릿을 복사하면 끝. 이 스킬 불필요.
+  - 새 회사 폴더를 처음 만드는 작업 → `docs/meta/authoring-guide.md`의 "새 회사/섹터 추가 방법"대로 템플릿을 복사하면 끝. 이 스킬 불필요.
   - `docs/README.md`·`AGENTS.md` 자체에 대한 개선 요청 → `review-master-docs` 스킬 대상.
 
 ## 왜 필요한가
@@ -43,4 +43,4 @@ description: 이미 만들어진 회사 문서 폴더(`docs/sectors/<sector>/<co
 
 ## 참고
 
-- 회사 템플릿 자체의 마스터 규칙은 `docs/README.md`, 리뷰 관점(숫자 검증·방법론 적용 여부·Bear Case 판정)은 `AGENTS.md`에 있다 — 이 스킬은 그 둘을 "회사 폴더 전체 대상으로 빠짐없이" 적용하는 절차일 뿐, 새 기준을 만들지 않는다.
+- 회사 템플릿 자체의 마스터 규칙은 `docs/README.md`(폴더·파일 구조)·`docs/meta/authoring-guide.md`(작성 규칙), 리뷰 관점(숫자 검증·방법론 적용 여부·Bear Case 판정)은 `AGENTS.md`에 있다 — 이 스킬은 그 셋을 "회사 폴더 전체 대상으로 빠짐없이" 적용하는 절차일 뿐, 새 기준을 만들지 않는다.

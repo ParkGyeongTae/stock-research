@@ -9,7 +9,7 @@ description: docs/README.md 또는 AGENTS.md(=CLAUDE.md)에 대해 사용자가 
 
 이 스킬은 아래 두 문서에 대해서만 적용한다. 다른 문서(회사/섹터 문서, `docs/meta/` 등)의 개선사항 요청에는 이 스킬을 쓰지 않는다.
 
-- `/Users/pgt0409/Desktop/git/stock-research/docs/README.md` — 문서 작성 규칙의 마스터
+- `/Users/pgt0409/Desktop/git/stock-research/docs/README.md` — 폴더 구조·파일별 역할의 마스터
 - `/Users/pgt0409/Desktop/git/stock-research/AGENTS.md` — 에이전트 행동 지침 (`CLAUDE.md`는 이 파일의 심볼릭 링크, 같은 파일)
 
 ## 왜 필요한가

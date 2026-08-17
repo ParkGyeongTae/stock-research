@@ -50,4 +50,4 @@ description: 이미 만들어진 섹터 개요 문서(`docs/sectors/<sector>/00_
 
 ## 참고
 
-- 섹터 문서의 스코프·형식 마스터는 `docs/meta/.template/sector/00_overview.md`와 `docs/README.md`, 리뷰 관점은 `AGENTS.md`다 — 이 스킬은 그 규칙들을 섹터 문서 전체 대상으로 빠짐없이 적용하는 절차일 뿐, 새 기준을 만들지 않는다.
+- 섹터 문서의 스코프·형식 마스터는 `docs/meta/.template/sector/00_overview.md`와 `docs/README.md`(폴더·파일 구조)·`docs/meta/authoring-guide.md`(작성 규칙), 리뷰 관점은 `AGENTS.md`다 — 이 스킬은 그 규칙들을 섹터 문서 전체 대상으로 빠짐없이 적용하는 절차일 뿐, 새 기준을 만들지 않는다.
