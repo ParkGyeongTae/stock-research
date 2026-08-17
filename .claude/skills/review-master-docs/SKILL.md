@@ -1,15 +1,16 @@
 ---
 name: review-master-docs
-description: docs/README.md 또는 AGENTS.md(=CLAUDE.md)에 대해 사용자가 "개선사항 알려줘", "고칠 점 있어?", "리뷰해줘", "이상한 거 있나 봐줘", "문제 없는지 확인해줘" 처럼 열린 검토를 요청할 때 사용한다. 이 저장소에서 규칙의 마스터 역할을 하는 이 두 문서 전용이며, 다른 문서에는 적용하지 않는다. 판정 기준 없이 훑으면 스타일 취향까지 "개선사항"으로 보고하게 되는 문제를 막기 위해, 실제 모순·깨진 참조·낡은 사실만 걸러서 보고하도록 강제한다.
+description: docs/README.md·docs/meta/authoring-guide.md·AGENTS.md(=CLAUDE.md)에 대해 사용자가 "개선사항 알려줘", "고칠 점 있어?", "리뷰해줘", "이상한 거 있나 봐줘", "문제 없는지 확인해줘" 처럼 열린 검토를 요청할 때 사용한다. 이 저장소에서 규칙의 마스터 역할을 하는 이 세 문서 전용이며, 다른 문서에는 적용하지 않는다. 판정 기준 없이 훑으면 스타일 취향까지 "개선사항"으로 보고하게 되는 문제를 막기 위해, 실제 모순·깨진 참조·낡은 사실만 걸러서 보고하도록 강제한다.
 ---
 
-# docs/README.md · AGENTS.md 개선사항 엄격 검토
+# docs/README.md · authoring-guide.md · AGENTS.md 개선사항 엄격 검토
 
 ## 대상
 
-이 스킬은 아래 두 문서에 대해서만 적용한다. 다른 문서(회사/섹터 문서, `docs/meta/` 등)의 개선사항 요청에는 이 스킬을 쓰지 않는다.
+이 스킬은 아래 세 문서에 대해서만 적용한다. 다른 문서(회사/섹터 문서, `glossary.md`·`concepts/` 등 나머지 `docs/meta/`)의 개선사항 요청에는 이 스킬을 쓰지 않는다.
 
-- `/Users/pgt0409/Desktop/git/stock-research/docs/README.md` — 폴더 구조·파일별 역할의 마스터
+- `/Users/pgt0409/Desktop/git/stock-research/docs/README.md` — 폴더 구조·파일별 역할의 마스터 (GitHub Pages 홈 화면)
+- `/Users/pgt0409/Desktop/git/stock-research/docs/meta/authoring-guide.md` — 작성 규칙·신규 추가 절차의 마스터
 - `/Users/pgt0409/Desktop/git/stock-research/AGENTS.md` — 에이전트 행동 지침 (`CLAUDE.md`는 이 파일의 심볼릭 링크, 같은 파일)
 
 ## 왜 필요한가
@@ -19,7 +20,7 @@ description: docs/README.md 또는 AGENTS.md(=CLAUDE.md)에 대해 사용자가 
 ## 판정 기준 (넷 중 하나에 해당해야 보고한다)
 
 1. **자기모순** — 문서가 스스로 선언한 규칙과 같은 문서(또는 그 문서가 마스터로 지정한 문서) 안에서 실제로 어긋난다.
-2. **문서 간 충돌** — `docs/README.md`가 마스터인데 `AGENTS.md`가 그와 다른 내용을 말한다. 충돌 여부는 반드시 두 문서의 해당 위치를 모두 읽고 인용해서 확인한다 — 추측 금지.
+2. **문서 간 충돌** — 세 문서 중 하나가 마스터인 내용을 다른 문서가 그와 다르게 말한다(예: `docs/README.md`·`docs/meta/authoring-guide.md`가 마스터인데 `AGENTS.md`가 다르게 서술, 또는 어느 내용이 어느 문서 소관인지 겹치거나 비는 경우). 충돌 여부는 반드시 관련된 문서들의 해당 위치를 모두 읽고 인용해서 확인한다 — 추측 금지.
 3. **깨진 참조** — 링크·경로·섹션 이름이 실제로 존재하지 않는다. `grep`/`find`/`ls`로 대상이 실존하는지 확인한 뒤에만 보고한다.
 4. **낡은 사실** — 날짜, 파일 구조, 규칙 번호 등 문서가 서술하는 상태가 저장소의 현재 상태와 다르다. `grep`, `ls`, `git log` 등으로 현재 상태를 실제로 확인한 뒤에만 보고한다.
 
@@ -32,7 +33,7 @@ description: docs/README.md 또는 AGENTS.md(=CLAUDE.md)에 대해 사용자가 
 
 ## 절차
 
-1. `docs/README.md`와 `AGENTS.md` 둘 다 전체를 읽는다. 일부만 보고 판단하지 않는다.
+1. `docs/README.md`·`docs/meta/authoring-guide.md`·`AGENTS.md` 셋 다 전체를 읽는다. 일부만 보고 판단하지 않는다.
 2. 비교 대상이 있는 기준(2번, 4번)은 상대 문서·저장소 상태를 실제로 조회해서 근거를 확보한다. "아마 다를 것 같다"는 근거가 될 수 없다.
 3. 위 네 기준에 해당하는 항목만 후보로 남긴다.
 4. 후보가 없으면 "확인 결과 위반 사항 없음"이라고 짧게 보고하고 끝낸다. 억지로 뭔가 찾아내려 하지 않는다.
