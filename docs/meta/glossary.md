@@ -1,4 +1,4 @@
-# Company Research — 용어집
+# 용어집
 
 `.template/company/`·`.template/sector/`의 문서들이 설명 없이 바로 쓰는 용어를 한 곳에 모은 참고 문서입니다. 특정 회사·섹터에 종속되지 않는 내용이라 `docs/meta/`에 `.template/`·`concepts/`와 함께 둡니다.
 
