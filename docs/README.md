@@ -83,7 +83,7 @@ docs/
 >
 > `04_metrics.md`가 원자료의 유일한 출처입니다. `05_financials.md`·`06_valuation.md`·`07_investment.md`는 숫자를 다시 채우지 말고 `04_metrics.md` 값을 인용해 해석만 쓰세요. `06_valuation.md`에서 미래 추정치(E)처럼 `04_metrics.md`에 아직 없는 값을 쓸 때만 그 문서에 직접 근거를 남기고, 확정치는 항상 `04_metrics.md`로 되돌아가 채우세요.
 >
-> 같은 폴더의 다른 문서들은 서로 전부 링크하는 것(풀 메시)이 기본값��니다 — 없는 문서만 링크에서 빼세요.
+> 같은 폴더의 다른 문서들은 서로 전부 링크하는 것(풀 메시)이 기본값입니다 — 없는 문서만 링크에서 빼세요.
 >
 > PER·PBR·DCF·WACC·%p 등 용어가 낯설면 [`glossary.md`](./meta/glossary.md)를 먼저 보세요.
 
