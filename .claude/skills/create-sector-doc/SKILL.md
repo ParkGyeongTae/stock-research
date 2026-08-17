@@ -25,9 +25,7 @@ description: 아직 `00_overview.md`가 없는 섹터(완전히 새로운 섹터
    - 있으면(회사 폴더는 이미 있는데 `00_overview.md`만 없는 경우) 폴더는 그대로 두고 `00_overview.md`만 추가한다.
 
 2. **템플릿 복사**
-   ```bash
-   cp docs/meta/.template/sector/00_overview.md docs/sectors/<sector>/00_overview.md
-   ```
+   명령은 `docs/README.md` "➕ 새 회사 / 새 섹터 추가 방법"의 4번 그대로 따른다.
    폴더 자체가 새로 생긴 경우에만 `docs/sectors/.pages`의 `nav:`에 폴더명을 추가한다(등록 안 해도 빌드는 성공하지만 내비게이션에서 조용히 빠진다 — 경고 없음). 기존 섹터에 `00_overview.md`만 추가하는 경우는 이미 등록돼 있으므로 불필요.
 
 3. **콘텐츠를 산업 스코프 안에서 채운다** (템플릿의 절 순서대로)

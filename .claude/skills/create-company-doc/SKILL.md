@@ -26,9 +26,7 @@ description: 아직 이 저장소에 없는 회사를 "새로 만들어줘", "�
    - 복합기업이면 "관심을 갖게 된 사업" 기준으로 섹터를 정한다 — 매출 비중이 가장 큰 사업이 아니라, 이 저장소에서 그 회사를 보는 이유가 되는 사업 기준.
 
 2. **템플릿 복사**
-   ```bash
-   cp -r docs/meta/.template/company docs/sectors/<sector>/<company-name>
-   ```
+   명령은 `docs/README.md` "➕ 새 회사 / 새 섹터 추가 방법"의 1번 그대로 따른다.
    신규 섹터라면 `docs/sectors/.pages`의 `nav:`에 폴더명을 추가한다(등록 안 해도 빌드는 성공하지만 내비게이션에서 조용히 빠진다 — 경고 없음). 완전히 새로운 섹터라면 `create-sector-doc` 스킬로 `00_overview.md`(산업 개요)도 함께 만든다 — 빠뜨려도 에러는 안 나지만, 이 회사 `01_overview.md` §3이 걸려고 하는 링크 대상이 없어진다.
 
 3. **원자료부터 채운다 — `04_metrics.md`가 먼저**
@@ -47,10 +45,7 @@ description: 아직 이 저장소에 없는 회사를 "새로 만들어줘", "�
    - 처음엔 `01_overview.md`만 있어도 된다. 나머지는 분석이 깊어지는 만큼만 남기고, 안 쓸 파일은 삭제한다(`01_overview.md`는 유지 권장).
 
 6. **기술적 분석 차트(09·10)를 쓴다면 손으로 만들지 않는다**
-   ```bash
-   uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명>              # 09용 (일봉·1년)
-   uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명> --interval 1wk  # 10용 (주봉·5년)
-   ```
+   명령은 `docs/README.md` "기술적 분석 차트 생성" 절 그대로 따른다(`scripts/gen_technical_chart.py`, `--interval`만 다름).
    짧은 상장 기간 등으로 5년 주봉이 무의미하면 `10_technical_weekly.md` 자체를 생략해도 된다.
 
 7. **마무리 체크리스트** (`AGENTS.md` "작업을 마치기 전에" 그대로 적용)
