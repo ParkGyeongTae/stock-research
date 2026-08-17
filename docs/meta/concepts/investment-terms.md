@@ -1,6 +1,6 @@
 # 투자 판단 / 거버넌스 용어 — 개념 정리
 
-> `glossary.md` "4. 투자 판단 / 거버넌스 용어"에 있는 용어들을 예시와 함께 풀어 쓴 학습용 문서입니다.
+> `glossary.md` "7. 투자 판단 / 거버넌스 용어"에 있는 용어들을 예시와 함께 풀어 쓴 학습용 문서입니다.
 
 ---
 
@@ -65,7 +65,7 @@
 
 ## 관련 문서
 
-- [glossary.md — 4. 투자 판단 / 거버넌스 용어](../glossary.md#investment-terms)
+- [glossary.md — 7. 투자 판단 / 거버넌스 용어](../glossary.md#investment-terms)
 - [리스크 · 회계 품질 개념 정리](./risk-and-quality.md) — Bear Case를 구체적으로 쓰기 위한 재료
 - [사업 모델 · 성장 지표 개념 정리](./business-metrics.md) — 해자가 숫자로 드러나는 자리(NRR·전환비용)
 - [시장 구조 · 거래 개념 정리](./market-structure.md) — 차등의결권·락업·희석
