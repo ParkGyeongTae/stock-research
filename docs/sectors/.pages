@@ -1,4 +1,5 @@
 nav:
+  - 금융 정보·분석 서비스: financial_information_services
   - 반도체 설계 자동화 (EDA): electronic_design_automation
   - 반도체 테스트 장비 (ATE): automated_test_equipment
   - 우주 발사 서비스: space_launch_services
