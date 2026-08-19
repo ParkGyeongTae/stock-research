@@ -1,0 +1,66 @@
+# Centrus Energy — 역사 / 주요 이벤트
+
+> 냉전기 미 정부 농축사업 → 민영화(USEC) → 2014년 파산 재조정(Centrus) → 2023년 HALEU 상업 생산 개시 → 2025~2026년 대규모 자본조달과 상업 증설 착수로 이어지는, "국영 레거시 자산의 민영 재활용"에서 "국가 원자력 공급망 재건 파트너"로 위상이 바뀐 회사.
+
+> ⚠️ 모든 항목은 웹검색·1차 공시로 확인한 사실만 기록. 추측이나 출처 불명 내용은 작성 금지.
+>
+> ⚠️ 이 문서는 **회사 관점의 사건**만 다룬다. CEO 개인의 커리어·경영 스타일은 [`03_ceo.md`](./03_ceo.md)에 기록한다.
+
+---
+
+## 연혁
+
+| 시점 (연도.월) | 내용 |
+|----------------|------|
+| 1992 | 에너지정책법(Energy Policy Act)으로 미 정부 우라늄 농축 사업을 승계한 US Enrichment Corporation 설립 |
+| 1998 | 민영화되어 **USEC Inc.**로 전환 |
+| 2002.06 | DOE와 "2002 DOE-USEC Agreement" 체결(가스확산 농축시설 관련) |
+| 2000년대~2010년대 초 | 차세대 원심분리기 기술인 **American Centrifuge** 개발 추진, 레거시 가스확산 사업은 쇠퇴 |
+| 2011 | 후쿠시마 원전사고 여파로 글로벌 농축 가격 급락 — 이후 재무 압박 심화 |
+| **2014.03** | **American Centrifuge 개발 자금조달용 전환사채 재조정을 위해 Chapter 11 파산보호 신청** |
+| **2014.09** | 델라웨어 파산법원이 회생계획 승인, USEC Inc.가 **Centrus Energy Corp.**로 사명 변경하며 파산 재조정 완료(2014-09-30 발효) — 이 시점 자기자본이 극히 얇아진 상태로 재출발(§4 참고, `04_metrics.md` FY2023 자기자본 $32.3M 각주 참고) |
+| 2017 | Tetsuo Iguchi(Toshiba America) Class B 보통주 투자자지정이사(Investor-Designated Director)로 선임 — Toshiba America Energy Systems(TAES)가 Class B 보통주 대부분을 보유하는 지배구조 시작 |
+| **2019** | DOE, American Centrifuge Operating(ACO, Centrus 자회사)과 계약해 오하이오주 파이크턴에 **16기 원심분리기 데모 카스케이드** 건설 착수(HALEU 생산 실증 목적) |
+| **2023.10** | 파이크턴에서 **HALEU 농축 상업 생산 개시** — 1954년 이후 미국에서 신규 가동된 최초의 우라늄 농축 플랜트 |
+| 2023.12 | Amir Vexler, Special Advisor to the Board로 합류(Orano USA CEO 출신) |
+| **2024.01** | Vexler, President & CEO 겸 이사회 멤버로 취임(자세한 내용은 [`03_ceo.md`](./03_ceo.md)) |
+| 2024.11 | 2.25% 전환사채(2030년 만기) $402.5M 발행 |
+| **2025.06** | DOE에 HALEU UF6 900kg 계약 인도 완료(Phase 2 실질 완료), 누적 인도량 1,900kg 초과 |
+| 2025.07~08 | 경영진 교체: Larry Cutlip(SVP Field Operations) 퇴임(07-31) → Patrick Brown 선임(08월); Kevin Harrill(CFO) 사임(08-10) → **Todd Tinelli, CFO로 선임(2025.08)** |
+| 2025.03 | 기존 8.25% 회사채($74.3M, 2027년 만기 예정분) 조기상환 |
+| 2025년 중 | 0% 전환사채(2032년 만기) $805.0M(액면) 발행, 동시에 보통주 순 $523.7M 규모 유상증자(ATM 등) 진행 — 연간 합산 약 $1.3B 자본조달(`04_metrics.md` A절 각주 참고) |
+| **2026.01.05** | DOE, ACO를 상업 규모 HALEU 증설 과제(**최대 약 $1.07B** — 기본 $900.0M + 옵션 최대 $170.0M) 수행업체로 선정 발표 |
+| 2026.02 | FY2025 실적 발표, FY2026 최초 매출 가이던스 $425M~$475M 제시 |
+| 2026.08 | 2분기 실적 발표에서 FY2026 매출 가이던스 **$450M~$500M로 상향**, 총 백로그 $4.5B 공시. 동시에 DOE가 HALEU Operation Contract 추가 옵션 행사 의사가 없음을 통보(Technical Solutions 백로그의 약 $0.8B에 해당) — [`07_investment.md`](./07_investment.md) 참고 |
+
+---
+
+## 관련 문서
+
+같은 폴더 내 다른 문서로 이동:
+
+- [개요](./01_overview.md)
+- [CEO / 경영진](./03_ceo.md)
+- [핵심 지표](./04_metrics.md)
+- [재무 / 실적](./05_financials.md)
+- [밸류에이션 / 적정주가](./06_valuation.md)
+- [투자 판단](./07_investment.md)
+- [최근 뉴스 / 이슈](./08_news.md)
+- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
+- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+
+---
+
+## 참고 자료
+
+- [공식 홈페이지](https://www.centrusenergy.com)
+- [Centrus Energy Corp. Emerges from Chapter 11 Restructuring (2014-09-30)](https://www.centrusenergy.com/news/centrus-energy-corp-emerges-from-chapter-11-restructuring/)
+- [Centrus Begins Enrichment Operations in Ohio (2023-10)](https://www.centrusenergy.com/news/centrus-begins-enrichment-operations-in-ohio/)
+- [Centrus Awarded $900 Million to Expand Uranium Enrichment in Ohio (2026-01-05)](https://investors.centrusenergy.com/news-releases/news-release-details/centrus-awarded-900-million-expand-uranium-enrichment-ohio)
+- [Centrus Energy Corp. — Form 10-K, FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026007117/leu-20251231.htm)
+- [Centrus Energy Corp. — DEF 14A, 2026년 주주총회 위임장 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026027241/leu-20260424.htm)
+- [Centrus Reports Second Quarter 2026 Results (2026-08-05)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026053433/ex991-10q2026_08x05.htm)
+
+---
+
+*작성일: 2026-08-19*

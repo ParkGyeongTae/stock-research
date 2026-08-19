@@ -12,6 +12,7 @@
 - **밸류체인 위치**: 미드스트림 제조 — 농축 우라늄을 원자로·핵연료 완제품으로 정밀 가공하는 단계
 - **커버리지 기업**:
   - [BWX Technologies](./bwx_technologies/01_overview.md)
+  - [Centrus Energy](./centrus_energy/01_overview.md)
 - **인접 섹터**: 아직 없음 (이 섹터가 저장소 내 첫 원자력 관련 섹터)
 
 ---
