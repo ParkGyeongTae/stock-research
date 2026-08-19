@@ -9,10 +9,11 @@
 > ⚠️ `concepts/`는 시점에 무관한 영구 참고용이라 "현재" 서술을 넣지 않지만, 이 문서는 **특정 시점의 산업 스냅샷**이라 시점 서술이 들어갈 수 있는 문서다. 그만큼 내용이 시간이 지나면 낡으므로 갱신할 때 `*작성일*`을 놓치지 말 것.
 
 - **섹터명**: 원자력 부품·연료 제조 (Nuclear Components & Fuel Manufacturing)
-- **밸류체인 위치**: 업스트림(우라늄 농축)~미드스트림 제조 — 우라늄 농축부터 원자로·핵연료 완제품 정밀 가공까지 걸쳐 있으며, 커버리지 기업별로 위치가 다르다(BWXT는 미드스트림 제조, Centrus는 업스트림 농축)
+- **밸류체인 위치**: 업스트림(우라늄 농축)~미드스트림 제조(상업 생산·상업화 이전 단계 포함) — 우라늄 농축부터 원자로·핵연료 완제품 정밀 가공까지 걸쳐 있으며, 커버리지 기업별로 위치가 다르다(BWXT는 상업 생산 중인 미드스트림 제조, Centrus는 업스트림 농축, NuScale은 미드스트림 원자로 제조 중에서도 아직 상업화 이전 단계)
 - **커버리지 기업**:
   - [BWX Technologies](./bwx_technologies/01_overview.md)
   - [Centrus Energy](./centrus_energy/01_overview.md)
+  - [NuScale Power](./nuscale_power/01_overview.md)
 - **인접 섹터**: 아직 없음 (이 섹터가 저장소 내 첫 원자력 관련 섹터)
 
 ---
@@ -74,6 +75,7 @@
 
 - [BWX Technologies 개요](./bwx_technologies/01_overview.md)
 - [Centrus Energy 개요](./centrus_energy/01_overview.md)
+- [NuScale Power 개요](./nuscale_power/01_overview.md)
 
 ---
 
