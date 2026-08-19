@@ -33,16 +33,16 @@
 
 > 개별 회사의 진입장벽(브랜드/전환비용/네트워크 효과/규모의 경제)이 구체적으로 무엇인지는 각 회사 `07_investment.md`에서 다룬다. 여기서는 산업 단계별 장벽의 일반적 성격만 서술.
 
-업스트림 중에서도 **우라늄 농축** 단계는 특히 소수 과점 구조다. 글로벌 상업용 원전 농축 서비스 시장은 연간 약 5,000만 SWU(분리작업단위) 규모로 추정되며, Rosatom/TENEX(러시아, 약 2,700만 SWU/년)·Urenco(영·네덜란드·독일 컨소시엄, 약 1,700만 SWU/년)·CNEIC(중국, 약 1,100만 SWU/년)·Orano(프랑스) 4개사가 95% 이상을 과점한다[^4]. Centrus Energy는 이 중 미국이 자국 기술·자본으로 소유한 유일한 사업자라는 지정학적 위치를 갖는데, 러시아산 우라늄 수입을 제한하는 러시아 정지협정(RSA)·Import Ban Act가 이 위치의 가치를 직접 뒷받침한다 — 다만 이는 정책이 바뀌면 가치도 되돌아갈 수 있다는 뜻이기도 하다.
+업스트림 중에서도 **우라늄 농축** 단계는 특히 소수 과점 구조다. 글로벌 상업용 원전 농축 서비스 시장은 연간 약 5,000만 SWU(분리작업단위) 규모로 추정되며, Rosatom/TENEX(러시아, 약 2,700만 SWU/년)·Urenco(영·네덜란드·독일 컨소시엄, 약 1,700만 SWU/년)·CNEIC(중국, 약 1,100만 SWU/년)·Orano(프랑스) 4개사가 95% 이상을 과점한다(World Nuclear Association 2025년 데이터, Centrus Energy Corp. 10-K FY2025 "Competition and Foreign Trade" 절 인용). Centrus Energy는 이 중 미국이 자국 기술·자본으로 소유한 유일한 사업자라는 지정학적 위치를 갖는데, 러시아산 우라늄 수입을 제한하는 러시아 정지협정(RSA)·Import Ban Act가 이 위치의 가치를 직접 뒷받침한다 — 다만 이는 정책이 바뀌면 가치도 되돌아갈 수 있다는 뜻이기도 하다.
 
 ---
 
 ## 3. 시장 규모 / 성장 동력
 
-- **시장 규모(TAM)**: 글로벌 원자력 발전 시장 규모는 약 $37.46B(2025년 기준, Research Nester)[^1]. 이 수치는 발전 시장 전체를 포함하며 원자로·연료 "제조" 단계만의 시장 규모를 별도로 집계한 자료는 확인하지 못함 — 확인 필요
-- **성장률(CAGR)**: 약 3.3%(2026~2035년, Research Nester)[^1]. SMR(소형모듈원자로) 부문은 별도로 훨씬 가파른 성장이 전망됨 — 아래 참고
+- **시장 규모(TAM)**: 글로벌 원자력 발전 시장 규모는 약 $37.46B(2025년 기준, Research Nester). 이 수치는 발전 시장 전체를 포함하며 원자로·연료 "제조" 단계만의 시장 규모를 별도로 집계한 자료는 확인하지 못함 — 확인 필요
+- **성장률(CAGR)**: 약 3.3%(2026~2035년, Research Nester). SMR(소형모듈원자로) 부문은 별도로 훨씬 가파른 성장이 전망됨 — 아래 참고
 - **핵심 성장 동력**:
-  1. **AI 데이터센터발 전력수요 증가와 SMR 재조명** — IEA는 SMR 투자가 현재 연간 $5B 수준에서 2030년 $25B 이상으로, 2050년까지 누적 $670B 규모로 늘어날 것으로 전망한다[^2]. IAEA는 고성장 시나리오에서 2050년 글로벌 원전 설비용량이 2024년의 2.6배(992GW)까지 늘어날 것으로 본다(저성장 시나리오는 561GW)[^3].
+  1. **AI 데이터센터발 전력수요 증가와 SMR 재조명** — IEA는 SMR 투자가 현재 연간 $5B 수준에서 2030년 $25B 이상으로, 2050년까지 누적 $670B 규모로 늘어날 것으로 전망한다(IEA, "The Path to a New Era for Nuclear Energy"). IAEA는 고성장 시나리오에서 2050년 글로벌 원전 설비용량이 2024년의 2.6배(992GW)까지 늘어날 것으로 본다(저성장 시나리오는 561GW, IAEA 발표 기준).
   2. **미 해군 원자력 추진 함정 증산 및 국방예산 확대** — 컬럼비아급 전략핵잠수함·버지니아급 공격원잠 건조 물량이 늘면서 해군 원자로·핵연료 수요가 다년 계약으로 뒷받침됨(국방수권법(NDAA) 예산 배정에 연동).
   3. **노후 원전 교체 및 신규 원전 인허가 확대 기조** — 각국 정부의 탄소중립 정책과 에너지 안보 논의 속에 원전 신규 건설·수명연장 인허가가 늘어나는 추세.
 
@@ -79,11 +79,11 @@
 
 ## 참고 자료
 
-- [^1]: [Nuclear Power Market Size, Share & Growth Forecast to 2035 — Research Nester](https://www.researchnester.com/reports/nuclear-power-market/7450)
-- [^2]: [The Path to a New Era for Nuclear Energy: Outlook for nuclear investment — IEA](https://www.iea.org/reports/the-path-to-a-new-era-for-nuclear-energy/outlook-for-nuclear-investment)
-- [^3]: [IAEA Raises Nuclear Power Projections for Fifth Consecutive Year — IAEA](https://www.iaea.org/newscenter/pressreleases/iaea-raises-nuclear-power-projections-for-fifth-consecutive-year)
-- [^4]: Centrus Energy Corp. — Form 10-K FY2025, "Competition and Foreign Trade" 절(World Nuclear Association 2025년 데이터 인용, SEC EDGAR CIK 0001065059)
+- [Nuclear Power Market Size, Share & Growth Forecast to 2035 — Research Nester](https://www.researchnester.com/reports/nuclear-power-market/7450)
+- [The Path to a New Era for Nuclear Energy: Outlook for nuclear investment — IEA](https://www.iea.org/reports/the-path-to-a-new-era-for-nuclear-energy/outlook-for-nuclear-investment)
+- [IAEA Raises Nuclear Power Projections for Fifth Consecutive Year — IAEA](https://www.iaea.org/newscenter/pressreleases/iaea-raises-nuclear-power-projections-for-fifth-consecutive-year)
 - [BWX Technologies, Inc. — Form 10-K FY2025 (SEC EDGAR)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001486957&type=10-K)
+- Centrus Energy Corp. — Form 10-K FY2025, "Competition and Foreign Trade" 절(World Nuclear Association 2025년 데이터 인용, SEC EDGAR CIK 0001065059)
 
 ---
 
