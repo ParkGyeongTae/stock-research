@@ -9,7 +9,7 @@
 > ⚠️ `concepts/`는 시점에 무관한 영구 참고용이라 "현재" 서술을 넣지 않지만, 이 문서는 **특정 시점의 산업 스냅샷**이라 시점 서술이 들어갈 수 있는 문서다. 그만큼 내용이 시간이 지나면 낡으므로 갱신할 때 `*작성일*`을 놓치지 말 것.
 
 - **섹터명**: 원자력 부품·연료 제조 (Nuclear Components & Fuel Manufacturing)
-- **밸류체인 위치**: 미드스트림 제조 — 농축 우라늄을 원자로·핵연료 완제품으로 정밀 가공하는 단계
+- **밸류체인 위치**: 업스트림(우라늄 농축)~미드스트림 제조 — 우라늄 농축부터 원자로·핵연료 완제품 정밀 가공까지 걸쳐 있으며, 커버리지 기업별로 위치가 다르다(BWXT는 미드스트림 제조, Centrus는 업스트림 농축)
 - **커버리지 기업**:
   - [BWX Technologies](./bwx_technologies/01_overview.md)
   - [Centrus Energy](./centrus_energy/01_overview.md)
@@ -32,6 +32,8 @@
 | 다운스트림: 발전·운영·서비스 | 원전 건설·운영, 정비·연료교체, 사용후핵연료 관리 | 전력 유틸리티(Constellation Energy, Duke Energy 등), EPC 업체 | 대규모 자본, 원전 건설·운영 인허가, 지역 독점 규제 |
 
 > 개별 회사의 진입장벽(브랜드/전환비용/네트워크 효과/규모의 경제)이 구체적으로 무엇인지는 각 회사 `07_investment.md`에서 다룬다. 여기서는 산업 단계별 장벽의 일반적 성격만 서술.
+
+업스트림 중에서도 **우라늄 농축** 단계는 특히 소수 과점 구조다. 글로벌 상업용 원전 농축 서비스 시장은 연간 약 5,000만 SWU(분리작업단위) 규모로 추정되며, Rosatom/TENEX(러시아, 약 2,700만 SWU/년)·Urenco(영·네덜란드·독일 컨소시엄, 약 1,700만 SWU/년)·CNEIC(중국, 약 1,100만 SWU/년)·Orano(프랑스) 4개사가 95% 이상을 과점한다[^4]. Centrus Energy는 이 중 미국이 자국 기술·자본으로 소유한 유일한 사업자라는 지정학적 위치를 갖는데, 러시아산 우라늄 수입을 제한하는 러시아 정지협정(RSA)·Import Ban Act가 이 위치의 가치를 직접 뒷받침한다 — 다만 이는 정책이 바뀌면 가치도 되돌아갈 수 있다는 뜻이기도 하다.
 
 ---
 
@@ -71,6 +73,7 @@
 ## 관련 문서
 
 - [BWX Technologies 개요](./bwx_technologies/01_overview.md)
+- [Centrus Energy 개요](./centrus_energy/01_overview.md)
 
 ---
 
@@ -79,8 +82,9 @@
 - [^1]: [Nuclear Power Market Size, Share & Growth Forecast to 2035 — Research Nester](https://www.researchnester.com/reports/nuclear-power-market/7450)
 - [^2]: [The Path to a New Era for Nuclear Energy: Outlook for nuclear investment — IEA](https://www.iea.org/reports/the-path-to-a-new-era-for-nuclear-energy/outlook-for-nuclear-investment)
 - [^3]: [IAEA Raises Nuclear Power Projections for Fifth Consecutive Year — IAEA](https://www.iaea.org/newscenter/pressreleases/iaea-raises-nuclear-power-projections-for-fifth-consecutive-year)
+- [^4]: Centrus Energy Corp. — Form 10-K FY2025, "Competition and Foreign Trade" 절(World Nuclear Association 2025년 데이터 인용, SEC EDGAR CIK 0001065059)
 - [BWX Technologies, Inc. — Form 10-K FY2025 (SEC EDGAR)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001486957&type=10-K)
 
 ---
 
-*작성일: 2026-08-17 (최종 수정일: 2026-08-18)*
+*작성일: 2026-08-17 (최종 수정일: 2026-08-19)*
