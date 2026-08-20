@@ -606,20 +606,6 @@
 
 ---
 
-## 갱신 방법
-
-이 문서는 시점이 지나면 낡는 스냅샷이라, 정기적으로(예: 분기 1회) 재생성해 §1을 교체하는 것을 전제로 한다(§2는 손으로 갱신). 손으로 만들지 말고 아래 명령으로 생성할 것:
-
-```bash
-uv run python scripts/gen_technical_chart.py "^TNX" --name "미 국채 10년물 금리" --interval 1wk \
-  --symbol "%" --symbol-pos suffix --unit-label "%" \
-  --adj-note "국채 수익률 원자료(조정 없음)" --close-on <YYYY-MM-DD> --emit chart
-```
-
-`--close-on`에는 이 값을 DCF 무위험이자율 근거로 인용하는 회사 문서(`06_valuation.md`)와 대조할 날짜를 넣는다. `^TNX`는 종가 기준 수익률이며, 회사 문서의 DCF에서 "조회 시점" 무위험이자율로 인용할 때는 이 문서의 마지막 종가가 아니라 **DCF 작성 시점의 최신 값**을 다시 확인해 쓸 것 — 이 문서는 주기적으로만 갱신된다. 커맨드 문법은 [`../../authoring-guide.md`](../../authoring-guide.md) "주가가 아닌 시계열에 쓰기" 참고.
-
----
-
 ## 관련 문서
 
 - [13주 단기금리](./short_rate.md) — 장단기 스프레드(수익률곡선)의 짝 지표
@@ -638,4 +624,4 @@ uv run python scripts/gen_technical_chart.py "^TNX" --name "미 국채 10년물 
 
 ---
 
-*작성일: 2026-08-20*
+*작성일: 2026-08-20 (최종 수정일: 2026-08-21)*

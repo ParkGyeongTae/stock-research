@@ -608,20 +608,6 @@
 
 ---
 
-## 갱신 방법
-
-이 문서는 시점이 지나면 낡는 스냅샷이라, 정기적으로(예: 분기 1회) 재생성해 §1을 교체하는 것을 전제로 한다(§2는 손으로 갱신). 손으로 만들지 말고 아래 명령으로 생성할 것:
-
-```bash
-uv run python scripts/gen_technical_chart.py "CL=F" --name "WTI 원유" --interval 1wk \
-  --unit-label "USD/배럴" \
-  --adj-note "선물 원자료(연속월물, 조정 없음) — 만기 롤오버 시 가격 갭 가능" --close-on <YYYY-MM-DD> --emit chart
-```
-
-`--symbol`은 기본값($)이 그대로 맞아 생략했다. 커맨드 문법은 [`../../authoring-guide.md`](../../authoring-guide.md) "주가가 아닌 시계열에 쓰기" 참고.
-
----
-
 ## 관련 문서
 
 - [천연가스](./natural_gas.md) — 같은 에너지 원자재 짝 지표
@@ -636,4 +622,4 @@ uv run python scripts/gen_technical_chart.py "CL=F" --name "WTI 원유" --interv
 
 ---
 
-*작성일: 2026-08-20*
+*작성일: 2026-08-20 (최종 수정일: 2026-08-21)*

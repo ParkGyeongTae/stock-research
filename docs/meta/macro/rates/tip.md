@@ -611,19 +611,6 @@
 
 ---
 
-## 갱신 방법
-
-이 문서는 시점이 지나면 낡는 스냅샷이라, 정기적으로(예: 분기 1회) 재생성해 §1을 교체하는 것을 전제로 한다(§2는 손으로 갱신). 손으로 만들지 말고 아래 명령으로 생성할 것:
-
-```bash
-uv run python scripts/gen_technical_chart.py "TIP" --name "물가연동국채 ETF" --interval 1wk \
-  --adj-note "ETF 원자료(가격 기준, 분배금 재투자 미반영 — 총수익률 아님)" --close-on <YYYY-MM-DD> --emit chart
-```
-
-`--symbol`·`--unit-label`은 기본값($/USD)이 그대로 맞아 생략했다. 커맨드 문법은 [`../../authoring-guide.md`](../../authoring-guide.md) "주가가 아닌 시계열에 쓰기" 참고.
-
----
-
 ## 관련 문서
 
 - [20년+ 장기국채 ETF (TLT)](./tlt.md) — 명목채 짝 지표, 상대 강도로 기대인플레이션 방향을 가늠
@@ -638,4 +625,4 @@ uv run python scripts/gen_technical_chart.py "TIP" --name "물가연동국채 ET
 
 ---
 
-*작성일: 2026-08-20*
+*작성일: 2026-08-20 (최종 수정일: 2026-08-21)*

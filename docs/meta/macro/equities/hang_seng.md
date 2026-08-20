@@ -616,20 +616,6 @@
 
 ---
 
-## 갱신 방법
-
-이 문서는 시점이 지나면 낡는 스냅샷이라, 정기적으로(예: 분기 1회) 재생성해 §1을 교체하는 것을 전제로 한다(§2는 손으로 갱신). 손으로 만들지 말고 아래 명령으로 생성할 것:
-
-```bash
-uv run python scripts/gen_technical_chart.py "^HSI" --name "항셍지수" --interval 1wk \
-  --symbol "" --unit-label "지수" \
-  --adj-note "지수 원자료(조정 없음)" --close-on <YYYY-MM-DD> --emit chart
-```
-
-커맨드 문법은 [`../../authoring-guide.md`](../../authoring-guide.md) "주가가 아닌 시계열에 쓰기" 참고.
-
----
-
 ## 관련 문서
 
 - [닛케이225](./nikkei225.md) — 아시아 시장 비교군
@@ -643,4 +629,4 @@ uv run python scripts/gen_technical_chart.py "^HSI" --name "항셍지수" --inte
 
 ---
 
-*작성일: 2026-08-20*
+*작성일: 2026-08-20 (최종 수정일: 2026-08-21)*

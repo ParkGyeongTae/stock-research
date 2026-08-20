@@ -107,6 +107,61 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
 
 이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. `macro/`는 성격별 서브폴더(`fx/`·`rates/`·`equities/`·`commodities/`·`crypto/`)로 나뉘어 있으니 새 지표를 만들 땐 해당 서브폴더에 두세요 — 실제 예시는 [`fx/usd_krw.md`](./macro/fx/usd_krw.md)·[`rates/treasury_10y.md`](./macro/rates/treasury_10y.md)를 참고하세요.
 
+### macro 문서 재현 파라미터
+
+`docs/meta/macro/` 27개 문서는 §1(차트)만 스크립트로 생성하고 §3(지지/저항 표)·§4(방법론)는 두지 않기로 했다(2026-08-20) — 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 27개 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓰고 `--close-on`엔 최신 종가 기준일을 넣는다:
+
+```bash
+uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --interval 1wk \
+  <옵션> --adj-note "<조정 각주>" --close-on <YYYY-MM-DD> --emit chart
+```
+
+조정 각주 코드:
+
+| 코드 | 텍스트 |
+|------|--------|
+| FUT | 선물 원자료(연속월물, 조정 없음) — 만기 롤오버 시 가격 갭 가능 |
+| IDX | 지수 원자료(조정 없음) |
+| FX | 환율 원자료(조정 없음) |
+| ETF | ETF 원자료(가격 기준, 분배금 재투자 미반영 — 총수익률 아님) |
+| YLD | 국채 수익률 원자료(조정 없음) |
+| DISC | 13주 국채 할인율 원자료(조정 없음) |
+| VIXN | VIX 지수 원자료(조정 없음) |
+| DXYN | 달러인덱스 원자료(조정 없음) |
+| BTCN | BTC/USD 원자료(조정 없음, 24시간 시장이라 주 마지막 거래일 기준 종가) |
+
+| 문서 | 티커 | --name | 옵션 | 각주 |
+|------|------|--------|------|------|
+| `macro/commodities/gold.md` | `GC=F` | 금 | `--unit-label "USD/트로이온스"` | FUT |
+| `macro/commodities/silver.md` | `SI=F` | 은 | `--unit-label "USD/트로이온스" --decimals 2` | FUT |
+| `macro/commodities/copper.md` | `HG=F` | 구리 | `--unit-label "USD/파운드"` | FUT |
+| `macro/commodities/oil_wti.md` | `CL=F` | WTI 원유 | `--unit-label "USD/배럴"` | FUT |
+| `macro/commodities/natural_gas.md` | `NG=F` | 천연가스 | `--unit-label "USD/MMBtu"` | FUT |
+| `macro/equities/dow.md` | `^DJI` | 다우존스산업지수 | `--symbol "" --unit-label "지수"` | IDX |
+| `macro/equities/hang_seng.md` | `^HSI` | 항셍지수 | `--symbol "" --unit-label "지수"` | IDX |
+| `macro/equities/kosdaq.md` | `^KQ11` | 코스닥 | `--symbol "" --unit-label "지수"` | IDX |
+| `macro/equities/kospi.md` | `^KS11` | 코스피 | `--symbol "" --unit-label "지수"` | IDX |
+| `macro/equities/nasdaq.md` | `^IXIC` | 나스닥종합지수 | `--symbol "" --unit-label "지수"` | IDX |
+| `macro/equities/nikkei225.md` | `^N225` | 닛케이225 | `--symbol "" --unit-label "지수"` | IDX |
+| `macro/equities/russell2000.md` | `^RUT` | 러셀2000 | `--symbol "" --unit-label "지수"` | IDX |
+| `macro/equities/sox.md` | `^SOX` | 필라델피아 반도체지수 | `--symbol "" --unit-label "지수"` | IDX |
+| `macro/equities/sp500.md` | `^GSPC` | S&P 500 | `--symbol "" --unit-label "지수"` | IDX |
+| `macro/equities/vix.md` | `^VIX` | VIX 변동성지수 | `--symbol "" --unit-label "pt" --decimals 2` | VIXN |
+| `macro/fx/dxy.md` | `DX-Y.NYB` | 달러인덱스 | `--symbol "" --unit-label "지수" --decimals 2` | DXYN |
+| `macro/fx/eur_usd.md` | `EURUSD=X` | 유로/달러 | `--unit-label "USD/EUR"` | FX |
+| `macro/fx/jpy_usd.md` | `JPY=X` | 엔/달러 | `--symbol "엔" --symbol-pos suffix --unit-label "엔"` | FX |
+| `macro/fx/usd_krw.md` | `KRW=X` | 원달러 환율 | `--symbol "원" --symbol-pos suffix --unit-label "원"` | FX |
+| `macro/rates/hyg.md` | `HYG` | 하이일드 회사채 ETF | (기본값) | ETF |
+| `macro/rates/short_rate.md` | `^IRX` | 13주 단기금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | DISC |
+| `macro/rates/tip.md` | `TIP` | 물가연동국채 ETF | (기본값) | ETF |
+| `macro/rates/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
+| `macro/rates/treasury_10y.md` | `^TNX` | 미 국채 10년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
+| `macro/rates/treasury_30y.md` | `^TYX` | 미 국채 30년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
+| `macro/rates/treasury_5y.md` | `^FVX` | 미 국채 5년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
+| `macro/crypto/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
+
+새 macro 문서를 추가하면 이 표에 행을 하나 추가한다 — 개별 문서에는 재생성 커맨드를 남기지 않는다.
+
 ### 로컬에서 확인하기
 
 ```bash
@@ -124,4 +179,4 @@ uv run mkdocs build   # 배포와 동일하게 빌드 — 경고 메시지를 �
 
 ---
 
-*작성일: 2026-08-17 (최종 수정일: 2026-08-20)*
+*작성일: 2026-08-17 (최종 수정일: 2026-08-21)*
