@@ -1,8 +1,9 @@
 # 필라델피아 반도체지수 (SOX) — 기술적 참고 (주봉 5년)
 
-> 최근 5년 필라델피아 반도체지수(`^SOX`) 주봉 흐름을 지지선·저항선과 함께 정리한 참고 자료. 다른 macro 문서(원달러·국채금리 등)와 달리 이 지표는 **범용 거시지표가 아니라 이 레포의 특정 섹터 벤치마크**다 — [`sectors/electronic_design_automation/`](../../../sectors/electronic_design_automation/00_overview.md)(EDA)·[`sectors/automated_test_equipment/`](../../../sectors/automated_test_equipment/00_overview.md)(ATE) 소속 회사가 개별 종목의 주가 흐름을 **섹터 전체 대비**로 볼 때 인용한다.
->
-> **어떻게 쓰나**: 개별 회사 주가가 SOX 대비 초과 상승/하락하고 있다면, 그 회사 고유의 이슈(펀더멘털)인지 반도체 업황 전체(사이클)의 문제인지 구분하는 첫 단서가 된다. 두 09/10_technical_*.md(개별 회사 차트)와 이 문서를 같은 기간으로 나란히 보는 방식을 권한다.
+!!! note ""
+    최근 5년 필라델피아 반도체지수(`^SOX`) 주봉 흐름을 지지선·저항선과 함께 정리한 참고 자료. 다른 macro 문서(원달러·국채금리 등)와 달리 이 지표는 **범용 거시지표가 아니라 이 레포의 특정 섹터 벤치마크**다 — [`sectors/electronic_design_automation/`](../../../sectors/electronic_design_automation/00_overview.md)(EDA)·[`sectors/automated_test_equipment/`](../../../sectors/automated_test_equipment/00_overview.md)(ATE) 소속 회사가 개별 종목의 주가 흐름을 **섹터 전체 대비**로 볼 때 인용한다.
+
+    **어떻게 쓰나**: 개별 회사 주가가 SOX 대비 초과 상승/하락하고 있다면, 그 회사 고유의 이슈(펀더멘털)인지 반도체 업황 전체(사이클)의 문제인지 구분하는 첫 단서가 된다. 두 09/10_technical_*.md(개별 회사 차트)와 이 문서를 같은 기간으로 나란히 보는 방식을 권한다.
 
 ---
 
