@@ -1,0 +1,6 @@
+nav:
+  - 통화: fx
+  - 금리·채권: rates
+  - 주가지수·변동성: equities
+  - 원자재: commodities
+  - 디지털자산: crypto

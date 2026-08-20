@@ -18,15 +18,19 @@
     uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명> --interval 1wk
 
 주요 옵션(`--help`로 전체 확인, `09_technical_daily.md`와 공유):
-  --emit chart|table|facts|all  §1 SVG / §2 표 / §4 수치를 따로 뽑기
+  --emit chart|table|facts|dates|all  §1 SVG / §2 표 / §4 수치 / §2 비고용 날짜를 따로 뽑기
   --event 2025-09-10:"실적발표 갭다운"   §3에서 다루는 날에 수직선
   --ref-line 626.24:"역대 최고"          현재 레짐과 단절된 참고선
   --force-level '366:(2022 저점)'        터치 2회 미만이어도 표시할 레벨
   --close-on 2026-08-13                  다른 문서와 대조할 종가 조회
   --levels N / --min-touches N           표시 개수·최소 터치 조정 (기본값은 09와 동일)
 
+`--emit dates`는 §2 표를 만든 것과 같은 클러스터 계산 결과에서 레벨별 날짜만 뽑는다 —
+"어느 시기의 스윙대인지"를 눈대중하지 말고 이 출력을 그대로 옮겨 쓸 것.
+
 출력을 문서에 옮긴 뒤 사람이 할 일:
-  - §2 표의 `<...>` 비고(어느 시기의 스윙대인지)와 §3 서술 채우기
+  - §2 표의 `<...>` 비고에 `--emit dates` 출력(날짜)을 옮기고, 그 시기의 배경(뉴스·국면)은 직접 해석해 덧붙이기
+  - §3 서술 채우기
   - 기본값(--levels 3)이 이 회사에 안 맞으면 조정하고 그 사유를 §4에 남기기
   - `--close-on`으로 뽑은 종가를 04_metrics.md/06_valuation.md 값과 대조하고
     문서 상단 ⚠️ 블록에 결과 적기 (어긋나면 수정주가 여부부터 확인)

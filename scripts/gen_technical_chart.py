@@ -11,12 +11,21 @@
     uv run python scripts/gen_technical_chart.py SNPS --event 2025-09-10:"실적발표 갭다운" \
         --ref-line 626.24:"52주 최고" --force-level 366 --close-on 2026-08-13
 
+    # 주가가 아닌 시계열(환율·금리 등, docs/meta/macro/ 참고)에는 --symbol로 단위 표시를 바꾼다
+    uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
+        --symbol "원" --symbol-pos suffix --unit-label "원" --adj-note "환율 원자료(조정 없음)"
+
+    # §2 표 '비고'(어느 시기의 스윙대인지) 열을 채울 원자료 — 눈대중 대신 실제 날짜
+    uv run python scripts/gen_technical_chart.py SNPS --interval 1wk --emit dates
+
 왜 스크립트로 두는가: 좌표 매핑·스윙 탐지·클러스터링 파라미터를 회사마다 다시
 구현하면 값이 조용히 달라져 회사 간 차트 비교가 깨진다. 아래 INTERVAL_PARAMS·
 CLUSTER_TOL이 그 단일 출처이며, **바꾸면 이미 만든 문서와 어긋나므로** 바꿀 땐
 기존 09_technical_daily.md·10_technical_weekly.md를 전부 재생성하고 각 문서의 §4에
 변경된 파라미터를 남길 것. 일봉/주봉은 같은 렌더링 로직을 공유하고
 INTERVAL_PARAMS로만 갈라지므로, 두 문서 간 비교 가능성도 이 딕셔너리가 보장한다.
+같은 이유로 `--emit dates`도 §2 표를 만드는 pick_levels()의 결과를 그대로 재사용한다
+— 날짜를 별도 스크립트로 다시 계산하면 터치 횟수와 어긋날 수 있다.
 
 의존성 없음(표준 라이브러리만). 원자료는 저장소에 커밋하지 않는다.
 """
@@ -26,10 +35,11 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import re
 import sys
 import urllib.error
 import urllib.request
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
 
 # ── 파라미터: 모든 회사가 공유하는 단일 출처 (임의 변경 금지) ──────────────
@@ -97,6 +107,7 @@ class Level:
     kind: str  # "support" | "resistance"
     name: str = ""
     forced: bool = False
+    dates: list[date] = field(default_factory=list)  # 이 클러스터를 이룬 스윙 포인트 날짜
 
 
 # ── 데이터 수집 ──────────────────────────────────────────────────────────
@@ -125,6 +136,11 @@ def fetch_bars(ticker: str, rng: str, interval: str, min_bars: int) -> tuple[lis
         o, h, lo, c = q["open"][i], q["high"][i], q["low"][i], q["close"][i]
         if None in (o, h, lo, c):  # 거래정지일 등 결측 봉은 버린다
             continue
+        if o == 0 and h == 0 and lo == 0 and c != 0:  # ^TNX·^IRX 등 지수 티커에서
+            # 아직 마감 안 된 최근 주간 봉에 Yahoo가 시가/고가/저가를 0으로 채워
+            # 보내는 경우가 있다(종가만 유효) — 그대로 두면 캔들이 0까지 그려지고
+            # 5년 최고/최저·y축 범위까지 이 0에 오염된다. 결측과 동일하게 버린다.
+            continue
         bars.append(
             Bar(
                 d=(datetime.fromtimestamp(ts, timezone.utc) + tzoff).date(),
@@ -148,27 +164,34 @@ def fetch_bars(ticker: str, rng: str, interval: str, min_bars: int) -> tuple[lis
 
 
 # ── 스윙 포인트 · 클러스터링 ─────────────────────────────────────────────
-def find_swings(bars: list[Bar], w: int) -> tuple[list[float], list[float]]:
-    """고가/저가가 전후 w개 봉(거래일 또는 거래주) 창 내 최고/최저와 같은 지점."""
+def find_swings(bars: list[Bar], w: int) -> tuple[list[tuple[float, date]], list[tuple[float, date]]]:
+    """고가/저가가 전후 w개 봉(거래일 또는 거래주) 창 내 최고/최저와 같은 지점.
+    (가격, 날짜) 쌍으로 반환 — 값만으로 봉을 역추적하면 같은 가격을 가진 다른
+    봉과 혼동될 수 있어 인덱스 순회 중에 바로 날짜를 붙인다."""
     highs, lows = [], []
     for i in range(w, len(bars) - w):
         win = bars[i - w : i + w + 1]
         if bars[i].h == max(b.h for b in win):
-            highs.append(bars[i].h)
+            highs.append((bars[i].h, bars[i].d))
         if bars[i].lo == min(b.lo for b in win):
-            lows.append(bars[i].lo)
+            lows.append((bars[i].lo, bars[i].d))
     return highs, lows
 
 
-def cluster(points: list[float], tol: float = CLUSTER_TOL) -> list[tuple[float, int]]:
-    """가격 오름차순으로 훑으며 중심 ±tol 이내면 합치고 중심을 재계산."""
-    out: list[list[float]] = []
-    for p in sorted(points):
-        if out and abs(p - sum(out[-1]) / len(out[-1])) <= tol * p:
-            out[-1].append(p)
+def cluster(
+    points: list[tuple[float, date]], tol: float = CLUSTER_TOL
+) -> list[tuple[float, int, list[date]]]:
+    """가격 오름차순으로 훑으며 중심 ±tol 이내면 합치고 중심을 재계산.
+    (중심가, 터치 횟수, 그 클러스터를 이룬 날짜 목록) 반환."""
+    out: list[list[tuple[float, date]]] = []
+    for p, d in sorted(points, key=lambda x: x[0]):
+        if out and abs(p - sum(x[0] for x in out[-1]) / len(out[-1])) <= tol * p:
+            out[-1].append((p, d))
         else:
-            out.append([p])
-    return [(sum(g) / len(g), len(g)) for g in out]
+            out.append([(p, d)])
+    return [
+        (sum(x[0] for x in g) / len(g), len(g), sorted(x[1] for x in g)) for g in out
+    ]
 
 
 def pick_levels(
@@ -182,8 +205,8 @@ def pick_levels(
     forced에 지정한 가격과 ±CLUSTER_TOL 안에 드는 클러스터는 개수 제한 없이 포함."""
     last = bars[-1].c
     hi_sw, lo_sw = find_swings(bars, swing_window)
-    res = [(c, n) for c, n in cluster(hi_sw) if c > last]
-    sup = [(c, n) for c, n in cluster(lo_sw) if c < last]
+    res = [(c, n, ds) for c, n, ds in cluster(hi_sw) if c > last]
+    sup = [(c, n, ds) for c, n, ds in cluster(lo_sw) if c < last]
 
     def suffix_for(price: float) -> str:
         for f, lab in forced:
@@ -202,10 +225,10 @@ def pick_levels(
         ]
         merged = sorted(keep + extra, key=lambda c: abs(c[0] - last))
         out = []
-        for i, (c, n) in enumerate(merged):
+        for i, (c, n, ds) in enumerate(merged):
             sfx = suffix_for(c)
             name = f"{prefix}{i + 1}" + (f" {sfx}" if sfx else "")
-            out.append(Level(c, n, kind, name, forced=(c, n) in extra))
+            out.append(Level(c, n, kind, name, forced=(c, n, ds) in extra, dates=ds))
         return out
 
     return take(res, "resistance", "R") + take(sup, "support", "S")
@@ -259,9 +282,23 @@ def fmt(v: float, nd: int = 1) -> str:
     return f"{v:.{nd}f}"
 
 
-def money(p: float) -> str:
-    """레벨 라벨용 — 저가주는 소수점을 살린다."""
+def money(p: float, nd: int | None = None) -> str:
+    """레벨 라벨용. nd가 None이면 기존 휴리스틱(저가주는 소수점을 살린다) —
+    주가는 20 이상이면 정수 단위 차이가 유의미하지만, VIX·DXY 같은 지수는
+    같은 가격대에서도 1 미만 차이가 서로 다른 레벨을 가른다. 그런 시계열엔
+    `--decimals`로 고정 자릿수를 지정할 것(자동 휴리스틱을 쓰지 않음)."""
+    if nd is not None:
+        return f"{p:,.{nd}f}"
     return f"{p:,.0f}" if p >= 20 else f"{p:,.2f}"
+
+
+def sym_wrap(num_str: str, params: dict) -> str:
+    """숫자 문자열에 통화/단위 기호를 붙인다. 기본값(symbol="$", prefix)은
+    기존 주가 차트 출력과 동일 — 회사 문서를 재생성할 필요가 없다."""
+    sym = params.get("symbol", "$")
+    if not sym:
+        return num_str
+    return f"{num_str}{sym}" if params.get("symbol_pos") == "suffix" else f"{sym}{num_str}"
 
 
 # ── SVG ──────────────────────────────────────────────────────────────────
@@ -275,7 +312,7 @@ def render_svg(
     refs: list[tuple[float, str]],
     params: dict,
 ) -> str:
-    cls = f"{ticker.lower()}-chart"
+    cls = re.sub(r"[^a-z0-9]+", "-", ticker.lower()).strip("-") + "-chart"
     period_label, bar_desc, tick_mode = params["period_label"], params["bar_desc"], params["tick_mode"]
     first, lastbar = bars[0], bars[-1]
     L: list[str] = []
@@ -311,7 +348,8 @@ def render_svg(
     a(f'<text x="60" y="26" class="title" font-size="18">{name} ({ticker}) — {period_label} {bar_desc}</text>')
     a(
         f'<text x="60" y="44" font-size="12.5" fill="var(--ink2)">{first.d} ~ {lastbar.d} · '
-        f"마지막 종가 ${lastbar.c:,.2f} ({lastbar.d}) · 단위 USD</text>"
+        f"마지막 종가 {sym_wrap(f'{lastbar.c:,.2f}', params)} ({lastbar.d}) · "
+        f"단위 {params.get('unit_label', 'USD')}</text>"
     )
 
     for p in g.grid_prices():
@@ -319,7 +357,7 @@ def render_svg(
         a(f'<line x1="{X_LEFT:.0f}" y1="{fmt(y)}" x2="{X_RIGHT:.0f}" y2="{fmt(y)}" class="grid"/>')
         a(
             f'<text x="52" y="{fmt(y + 4)}" font-size="11" text-anchor="end" '
-            f'fill="var(--muted)">{money(p)}</text>'
+            f'fill="var(--muted)">{money(p, params.get("decimals"))}</text>'
         )
 
     seen: set[tuple[int, ...]] = set()
@@ -349,7 +387,7 @@ def render_svg(
         )
         a(
             f'<text x="{LABEL_X:.0f}" y="{fmt(y + 3)}" font-size="10.5" '
-            f'fill="var(--muted)">${money(price)} {label}</text>'
+            f'fill="var(--muted)">{sym_wrap(money(price, params.get("decimals")), params)} {label}</text>'
         )
 
     idx = {b.d.isoformat(): i for i, b in enumerate(bars)}
@@ -385,7 +423,7 @@ def render_svg(
         ly, ty = (y + 3.5, y + 15.5) if lv.kind == "resistance" else (y - 6, y + 6)
         a(
             f'<text x="{LABEL_X:.0f}" y="{fmt(ly)}" font-size="11.5" fill="{var}" '
-            f'font-weight="600">${money(lv.price)} {lv.name}</text>'
+            f'font-weight="600">{sym_wrap(money(lv.price, params.get("decimals")), params)} {lv.name}</text>'
         )
         a(f'<text x="{LABEL_X:.0f}" y="{fmt(ty)}" font-size="9.5" fill="var(--muted)">터치 {lv.touches}회</text>')
 
@@ -405,14 +443,16 @@ def render_svg(
 
 
 # ── 마크다운 산출물 ──────────────────────────────────────────────────────
-def render_table(bars: list[Bar], levels: list[Level], refs: list[tuple[float, str]]) -> str:
+def render_table(
+    bars: list[Bar], levels: list[Level], refs: list[tuple[float, str]], params: dict
+) -> str:
     last = bars[-1]
     rows = ["| 레벨 | 가격 | 터치 횟수 | 비고 |", "|------|------|-----------|------|"]
     res = sorted([lv for lv in levels if lv.kind == "resistance"], key=lambda l: -l.price)
     sup = sorted([lv for lv in levels if lv.kind == "support"], key=lambda l: -l.price)
     for lv in res:
         note = "강제 포함(사유 기입)" if lv.forced else "<어느 시기의 스윙 고점대인지>"
-        rows.append(f"| {lv.name} | ${money(lv.price)} | {lv.touches} | {note} |")
+        rows.append(f"| {lv.name} | {sym_wrap(money(lv.price, params.get('decimals')), params)} | {lv.touches} | {note} |")
     if res and sup:
         where = f"{res[-1].name}과 {sup[0].name} 사이"
     elif sup:  # 기간 내 위쪽 스윙 고점 클러스터가 없음 = 신고가 구간
@@ -421,13 +461,31 @@ def render_table(bars: list[Bar], levels: list[Level], refs: list[tuple[float, s
         where = f"기간 내 하단 지지 없음(신저가 구간) — 가장 가까운 저항은 {res[-1].name}"
     else:
         where = "유효한 클러스터 없음 — §4에 표본 부족 사유 기입"
-    rows.append(f"| **현재가** | **${last.c:,.2f}** ({last.d} 종가) | — | {where} |")
+    cur = sym_wrap(f"{last.c:,.2f}", params)
+    rows.append(f"| **현재가** | **{cur}** ({last.d} 종가) | — | {where} |")
     for lv in sup:
         note = "강제 포함(사유 기입)" if lv.forced else "<어느 시기의 스윙 저점대인지>"
-        rows.append(f"| {lv.name} | ${money(lv.price)} | {lv.touches} | {note} |")
+        rows.append(f"| {lv.name} | {sym_wrap(money(lv.price, params.get('decimals')), params)} | {lv.touches} | {note} |")
     for price, label in refs:
-        rows.append(f"| 참고선 | ${money(price)} | — | {label} — <근시일 지지/저항으로 보지 않는 사유> |")
+        rows.append(
+            f"| 참고선 | {sym_wrap(money(price, params.get('decimals')), params)} | — | {label} — "
+            "<근시일 지지/저항으로 보지 않는 사유> |"
+        )
     return "\n".join(rows)
+
+
+def render_dates(levels: list[Level]) -> str:
+    """레벨별로 그 클러스터를 이룬 스윙 포인트 날짜를 나열 — §2 표 '비고' 열에
+    "<어느 시기의 스윙 고점/저점대인지>" 자리를 채울 때 그대로 옮겨 쓸 원자료.
+    날짜 나열 자체는 기계적 산출물이고, 그 시기에 무슨 일이 있었는지(뉴스·국면
+    해석)는 사람이 §2 비고에 덧붙인다."""
+    res = sorted([lv for lv in levels if lv.kind == "resistance"], key=lambda l: -l.price)
+    sup = sorted([lv for lv in levels if lv.kind == "support"], key=lambda l: -l.price)
+    lines = ["<!-- --emit dates: §2 표 비고 열에 옮겨 쓸 원자료 (해석은 직접 덧붙일 것) -->"]
+    for lv in res + sup:
+        ds = "·".join(d.isoformat() for d in lv.dates) if lv.dates else "(forced, 실제 터치 없음)"
+        lines.append(f"{lv.name}: {ds}")
+    return "\n".join(lines)
 
 
 def render_facts(
@@ -435,7 +493,7 @@ def render_facts(
 ) -> str:
     first, last = bars[0], bars[-1]
     today = date.today().isoformat()
-    adj = "원주가(과거 분할은 소급 반영, 배당은 미반영)"
+    adj = params.get("adj_note", "원주가(과거 분할은 소급 반영, 배당은 미반영)")
     unit, sw = params["unit"], params["swing_window"]
     out = [
         f"- **데이터**: Yahoo Finance {params['data_desc']}, {len(bars)}개 {unit}, "
@@ -460,7 +518,10 @@ def render_facts(
         out.append("<!-- 04_metrics.md/06_valuation.md 대조용 종가 -->")
         for ds in closes:
             b = by_date.get(ds)
-            out.append(f"<!-- {ds} 종가 " + (f"${b.c:,.2f} -->" if b else "— 거래일 아님 -->"))
+            out.append(
+                f"<!-- {ds} 종가 "
+                + (f"{sym_wrap(f'{b.c:,.2f}', params)} -->" if b else "— 거래일 아님 -->")
+            )
     return "\n".join(out)
 
 
@@ -478,7 +539,9 @@ def main() -> None:
                     help="1d=일봉·1년(09_technical_daily.md 기본값), 1wk=주봉·5년(10_technical_weekly.md 기본값)")
     ap.add_argument("--range", default=None,
                     help="수집 기간 (기본: interval별 INTERVAL_PARAMS 값 — 1d=1y, 1wk=5y)")
-    ap.add_argument("--emit", choices=["all", "chart", "table", "facts"], default="all")
+    ap.add_argument("--emit", choices=["all", "chart", "table", "facts", "dates"], default="all",
+                    help="all=chart+table+facts(기본). dates는 별도 요청 시에만 — "
+                    "§2 비고를 채울 스윙 날짜 원자료(레벨별)를 출력한다")
     ap.add_argument("--event", action="append", default=[], metavar="YYYY-MM-DD:설명",
                     help="수직 이벤트선 (반복 가능)")
     ap.add_argument("--ref-line", action="append", default=[], metavar="가격:라벨",
@@ -491,10 +554,30 @@ def main() -> None:
                     help="기본: interval별 INTERVAL_PARAMS 값 (둘 다 2)")
     ap.add_argument("--levels", type=int, default=None,
                     help="현재가 위/아래로 각각 최대 몇 개 (기본: interval별 INTERVAL_PARAMS 값, 둘 다 3)")
+    ap.add_argument("--symbol", default="$",
+                    help="가격 라벨에 붙일 통화/단위 기호 (기본 \"$\"). 없으면 빈 문자열 지정")
+    ap.add_argument("--symbol-pos", choices=["prefix", "suffix"], default="prefix",
+                    help="기호 위치 (예: 원화 \"원\"=suffix, 수익률 \"%%\"=suffix, 달러 \"$\"=prefix). 기본 prefix")
+    ap.add_argument("--unit-label", default="USD",
+                    help="차트 상단 \"단위 X\" 표기에 쓸 문자열 (기본 USD)")
+    ap.add_argument("--adj-note", default=None,
+                    help="§4 방법론 1행의 수정 여부 설명 (기본: 주가용 문구). "
+                    "주가가 아닌 시계열(환율·금리 등)에는 그 시계열에 맞는 문구로 교체할 것")
+    ap.add_argument("--decimals", type=int, default=None,
+                    help="레벨·현재가 표시 소수 자릿수 (기본: 20 이상이면 0자리, 미만이면 2자리 자동). "
+                    "VIX·DXY처럼 20 이상인데 1 미만 차이가 서로 다른 레벨을 가르는 지수는 "
+                    "명시적으로 지정할 것(예: --decimals 2) — 자동 규칙은 주가 기준이라 다른 레벨이 "
+                    "같은 값으로 뭉개져 보일 수 있다")
     ap.add_argument("-o", "--out", help="파일로 저장 (기본: 표준출력)")
     args = ap.parse_args()
 
-    params = INTERVAL_PARAMS[args.interval]
+    params = dict(INTERVAL_PARAMS[args.interval])
+    params["symbol"] = args.symbol
+    params["symbol_pos"] = args.symbol_pos
+    params["unit_label"] = args.unit_label
+    params["decimals"] = args.decimals
+    if args.adj_note is not None:
+        params["adj_note"] = args.adj_note
     rng = args.range or params["range"]
     min_touches = args.min_touches if args.min_touches is not None else params["min_touches"]
     levels_per_side = args.levels if args.levels is not None else params["levels_per_side"]
@@ -513,9 +596,11 @@ def main() -> None:
     if args.emit in ("all", "chart"):
         parts.append(render_svg(bars, g, levels, args.ticker, name, events, refs, params))
     if args.emit in ("all", "table"):
-        parts.append(render_table(bars, levels, refs))
+        parts.append(render_table(bars, levels, refs, params))
     if args.emit in ("all", "facts"):
         parts.append(render_facts(bars, g, meta, min_touches, args.close_on, params))
+    if args.emit == "dates":
+        parts.append(render_dates(levels))
     text = "\n\n".join(parts) + "\n"
 
     if args.out:

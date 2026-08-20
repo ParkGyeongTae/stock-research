@@ -87,7 +87,25 @@ uv run python scripts/gen_technical_chart.py SNPS --name Synopsys --interval 1wk
 
 > 왜 스크립트로 두는가 — 좌표 매핑·스윙 탐지 창(일봉 전후 5거래일 / 주봉 전후 4주)·클러스터링 허용오차(±2.5%, 두 인터벌 공통) 같은 파라미터를 회사마다 다시 구현하면 값이 조용히 달라져 **회사 간 차트 비교가 깨집니다.** 이 파라미터의 단일 출처는 스크립트 상단 `INTERVAL_PARAMS`이며, 바꾸면 이미 만들어둔 `09_technical_daily.md`·`10_technical_weekly.md`를 전부 재생성하고 각 문서 §4에 바뀐 값을 남겨야 합니다.
 
-스크립트가 만드는 것은 기계적 산출물뿐입니다. 레벨이 **어느 시기의 스윙대인지**(§2 비고), 갭·급락 구간의 **해석**(§3), 파라미터를 기본값에서 바꾼 **사유**(§4)는 사람이 채웁니다. `--close-on`으로 뽑은 종가는 `04_metrics.md`·`06_valuation.md`의 값과 대조해 문서 상단에 결과를 남기세요.
+스크립트가 만드는 것은 기계적 산출물뿐입니다. 갭·급락 구간의 **해석**(§3), 파라미터를 기본값에서 바꾼 **사유**(§4)는 사람이 채웁니다. §2 비고의 "어느 시기의 스윙대인지"는 `--emit dates`로 뽑은 날짜 목록(아래)을 그대로 옮기고, 그 시기에 무슨 일이 있었는지 같은 해석만 사람이 덧붙이면 됩니다 — 날짜 자체를 눈대중으로 채우지 않습니다:
+
+```bash
+uv run python scripts/gen_technical_chart.py SNPS --interval 1wk --emit dates
+```
+
+`--close-on`으로 뽑은 종가는 `04_metrics.md`·`06_valuation.md`의 값과 대조해 문서 상단에 결과를 남기세요.
+
+### 주가가 아닌 시계열(환율·금리 등)에 쓰기
+
+이 스크립트는 Yahoo Finance 티커라면 주가가 아니어도(`KRW=X`=원달러, `^TNX`=미 국채 10년물 등) 그대로 쓸 수 있습니다. 기본값(`$` prefix, "USD")은 주가 전용이므로 `--symbol`·`--symbol-pos`·`--unit-label`·`--adj-note`로 바꿉니다:
+
+```bash
+uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
+  --symbol "원" --symbol-pos suffix --unit-label "원" \
+  --adj-note "환율 원자료(조정 없음)"
+```
+
+이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. `macro/`는 성격별 서브폴더(`fx/`·`rates/`·`equities/`·`commodities/`·`crypto/`)로 나뉘어 있으니 새 지표를 만들 땐 해당 서브폴더에 두세요 — 실제 예시는 [`fx/usd_krw.md`](./macro/fx/usd_krw.md)·[`rates/treasury_10y.md`](./macro/rates/treasury_10y.md)를 참고하세요.
 
 ### 로컬에서 확인하기
 
@@ -106,4 +124,4 @@ uv run mkdocs build   # 배포와 동일하게 빌드 — 경고 메시지를 �
 
 ---
 
-*작성일: 2026-08-17*
+*작성일: 2026-08-17 (최종 수정일: 2026-08-20)*
