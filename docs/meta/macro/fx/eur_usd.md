@@ -1,4 +1,4 @@
-# 유로/달러 (EUR/USD)
+# 유로/달러 환율 (EUR/USD)
 
 !!! note ""
     최근 5년간 유로/달러 환율(1유로가 몇 달러인지, `EURUSD=X`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 달러인덱스에서 가장 큰 비중(약 58%)을 차지하는 통화쌍이 바로 이 유로/달러라서, 달러인덱스가 움직이는 이유의 대부분은 사실상 이 환율이 주도한다고 봐도 된다.
@@ -23,9 +23,9 @@
 .eurusd-x-chart .grid { stroke: var(--grid); stroke-width:1; }
 .eurusd-x-chart .axis { stroke: var(--axis); stroke-width:1; }
 </style>
-<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="유로/달러(EURUSD=X) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="유로/달러 환율(EURUSD=X) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
 <rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
-<text x="60" y="26" class="title" font-size="18">유로/달러 (EURUSD=X) — 최근 5년 주봉</text>
+<text x="60" y="26" class="title" font-size="18">유로/달러 환율 (EURUSD=X) — 최근 5년 주봉</text>
 <text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-08-16 ~ 2026-08-20 · 마지막 종가 $1.17 (2026-08-20) · 단위 USD/EUR</text>
 <line x1="60" y1="551.2" x2="1052" y2="551.2" class="grid"/>
 <text x="52" y="555.2" font-size="11" text-anchor="end" fill="var(--muted)">0.95</text>
@@ -624,6 +624,7 @@
 ## 관련 문서
 
 - [달러인덱스 (DXY)](./dxy.md)
+- [fx 4종 비교 (지수화)](./comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 

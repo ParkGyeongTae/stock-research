@@ -1,4 +1,4 @@
-# 원달러 환율 (USD/KRW)
+# 원/달러 환율 (USD/KRW)
 
 !!! note ""
     최근 5년간 원/달러 환율(1달러가 몇 원인지, `KRW=X`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 해외 매출 비중이 큰 회사가 환율 변화에 얼마나 민감한지, 또는 상수통화(constant currency, 환율 변동 효과를 뺀 성장률) 기준 성장률과 실제 보고된 성장률이 왜 차이 나는지를 설명할 때 자주 쓰이는 지표다.
@@ -23,9 +23,9 @@
 .krw-x-chart .grid { stroke: var(--grid); stroke-width:1; }
 .krw-x-chart .axis { stroke: var(--axis); stroke-width:1; }
 </style>
-<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="원달러 환율(KRW=X) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="원/달러 환율(KRW=X) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
 <rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
-<text x="60" y="26" class="title" font-size="18">원달러 환율 (KRW=X) — 최근 5년 주봉</text>
+<text x="60" y="26" class="title" font-size="18">원/달러 환율 (KRW=X) — 최근 5년 주봉</text>
 <text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-08-16 ~ 2026-08-20 · 마지막 종가 1,395.68원 (2026-08-20) · 단위 원</text>
 <line x1="60" y1="542.0" x2="1052" y2="542.0" class="grid"/>
 <text x="52" y="546.0" font-size="11" text-anchor="end" fill="var(--muted)">1,200</text>
@@ -626,6 +626,7 @@
 
 - [달러인덱스 (DXY)](./dxy.md)
 - [코스피](../equities/kospi.md)
+- [fx 4종 비교 (지수화)](./comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 - [표기 규칙 개념 정리](../../concepts/notation.md)

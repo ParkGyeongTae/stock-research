@@ -1,4 +1,4 @@
-# 엔/달러 (USD/JPY)
+# 엔/달러 환율 (USD/JPY)
 
 !!! note ""
     최근 5년간 엔/달러 환율(1달러가 몇 엔인지, `JPY=X`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 엔화는 투자자들이 위기 때 몰리는 대표적인 **안전자산 통화**이면서, 동시에 **캐리트레이드**(금리가 낮은 통화를 빌려서 금리가 높은 자산에 투자하는 거래)에서 돈을 빌리는 데 가장 많이 쓰이는 통화이기도 하다. 그래서 이 환율이 급격히 움직이면(특히 엔화가 갑자기 강해지는 "엔 급등" = 캐리트레이드 청산), 위험자산 전반이 함께 흔들리는 경우가 있다.
@@ -23,9 +23,9 @@
 .jpy-x-chart .grid { stroke: var(--grid); stroke-width:1; }
 .jpy-x-chart .axis { stroke: var(--axis); stroke-width:1; }
 </style>
-<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="엔/달러(JPY=X) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="엔/달러 환율(JPY=X) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
 <rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
-<text x="60" y="26" class="title" font-size="18">엔/달러 (JPY=X) — 최근 5년 주봉</text>
+<text x="60" y="26" class="title" font-size="18">엔/달러 환율 (JPY=X) — 최근 5년 주봉</text>
 <text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-08-16 ~ 2026-08-20 · 마지막 종가 158.71엔 (2026-08-20) · 단위 엔</text>
 <line x1="60" y1="597.0" x2="1052" y2="597.0" class="grid"/>
 <text x="52" y="601.0" font-size="11" text-anchor="end" fill="var(--muted)">110</text>
@@ -624,6 +624,7 @@
 ## 관련 문서
 
 - [닛케이225](../equities/nikkei225.md)
+- [fx 4종 비교 (지수화)](./comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
