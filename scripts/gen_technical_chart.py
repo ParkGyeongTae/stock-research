@@ -370,6 +370,11 @@ def render_svg(
             continue
         seen.add(key)
         x = g.x(i)
+        if tick_mode == "year":  # 연도 경계(1월 첫 거래일)를 플롯 전체 높이로 표시 — 시각적 구획선
+            a(
+                f'<line x1="{fmt(x)}" y1="{fmt(Y_TOP)}" x2="{fmt(x)}" y2="{fmt(Y_BOTTOM)}" '
+                'stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>'
+            )
         a(f'<line x1="{fmt(x)}" y1="{fmt(Y_BOTTOM)}" x2="{fmt(x)}" y2="{fmt(Y_BOTTOM + 5)}" class="axis"/>')
         a(
             f'<text x="{fmt(x)}" y="{fmt(Y_BOTTOM + 18)}" font-size="10.5" '
@@ -427,7 +432,16 @@ def render_svg(
         )
         a(f'<text x="{LABEL_X:.0f}" y="{fmt(ty)}" font-size="9.5" fill="var(--muted)">터치 {lv.touches}회</text>')
 
-    a(f'<circle cx="{X_RIGHT:.1f}" cy="{fmt(g.y(lastbar.c))}" r="3" fill="var(--ink)"/>')
+    cur_y = g.y(lastbar.c)
+    a(f'<circle cx="{X_RIGHT:.1f}" cy="{fmt(cur_y)}" r="3" fill="var(--ink)"/>')
+    # 우측 여백의 레벨 라벨(LABEL_X)과 겹치지 않도록 플롯 영역 안쪽, 점 위/아래에 표시.
+    # halo(stroke)로 뒤에 겹치는 캔들이 있어도 읽히게 한다.
+    cur_ty = cur_y - 8 if cur_y > Y_TOP + 20 else cur_y + 16
+    a(
+        f'<text x="{X_RIGHT - 6:.1f}" y="{fmt(cur_ty)}" font-size="11.5" text-anchor="end" '
+        f'fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" '
+        f'stroke-width="3">현재 {sym_wrap(money(lastbar.c, params.get("decimals")), params)} ({lastbar.d})</text>'
+    )
 
     a('<rect x="60" y="651" width="10" height="10" fill="var(--up)"/>')
     a('<text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>')

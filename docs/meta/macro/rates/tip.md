@@ -1,9 +1,9 @@
 # 물가연동국채 ETF (TIP)
 
 !!! note ""
-    최근 5년 iShares 물가연동국채(TIPS) ETF(`TIP`) 주봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. TIPS는 원금이 CPI에 연동돼 조정되는 국채라, TLT(명목 장기국채) 대비 상대 강도를 보면 시장이 반영하는 **기대인플레이션의 대략적인 방향**을 가늠하는 실마리가 된다.
+    최근 5년간 iShares 물가연동국채(TIPS) ETF(`TIP`)의 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. TIPS는 원금이 소비자물가지수(CPI)에 맞춰 자동으로 조정되는 국채다. TLT(명목 장기국채, 물가에 연동되지 않는 일반 국채) 대비 이 ETF가 상대적으로 강한지 약한지를 보면, 시장이 앞으로의 물가 상승(기대인플레이션)을 어느 방향으로 예상하는지 대략 가늠할 수 있다.
 
-    ⚠️ **정밀한 기대인플레이션(breakeven inflation) 수치가 아니다** — 실제 BEI는 만기가 일치하는 명목채·물가연동채 수익률을 빼서 계산하며(예: FRED `T10YIE`), 이 문서는 그 계산을 하지 않는다. 이 문서와 TLT의 방향을 정성적으로 비교하는 용도로만 쓴다.
+    ⚠️ **정밀한 기대인플레이션(breakeven inflation, BEI) 수치는 아니다** — 실제 BEI는 만기가 같은 명목채와 물가연동채의 수익률을 서로 빼서 계산하는데(예: FRED `T10YIE`), 이 문서는 그런 계산을 하지 않는다. 이 문서는 TLT와 비교했을 때 방향이 어느 쪽인지 대략적으로만 참고하는 용도로 쓴다.
 
 ---
 
@@ -53,6 +53,12 @@
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
 <line x1="61.9" y1="115.7" x2="61.9" y2="123.2" stroke="var(--down)" class="wick"/>
@@ -591,6 +597,7 @@
 <text x="1058" y="520.5" font-size="11.5" fill="var(--support)" font-weight="600">$106 S1</text>
 <text x="1058" y="532.5" font-size="9.5" fill="var(--muted)">터치 10회</text>
 <circle cx="1052.0" cy="501.1" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="493.1" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 $107.51 (2026-08-19)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -604,19 +611,19 @@
 
 ---
 
-## 2. 해석 참고 — 상승/하락이 의미하는 것
+## 2. 해석
 
-- **상승**: TIPS 원금이 CPI에 연동돼 조정되므로, 명목채(TLT) 대비 상대 강도가 강해지면 기대인플레이션 상승 신호로 흔히 해석된다.
-- **하락**: 명목채 대비 상대 강도가 약해지면 기대인플레이션 하락(또는 실질금리 상승) 신호로 흔히 해석된다.
-- **왜 이런 신호로 읽히나**: TIPS는 원금이 CPI-U에 연동돼 조정되므로, 물가가 오르면 원금·이자 지급액이 함께 늘어난다 — TIPS 가격은 명목채와 달리 실질금리에 직접 노출된다. TLT(명목채) 대비 상대 강도가 오른다는 것은 시장이 물가 상승분을 더 많이 보상받아야 한다고(기대인플레이션 상승) 가격에 반영하기 시작했다는 뜻으로 읽는다.
-- 정밀한 기대인플레이션(breakeven inflation) 수치가 아니다 — 실제 BEI는 만기가 일치하는 명목채·물가연동채 수익률을 빼서 계산한다(예: FRED `T10YIE`). 이 문서는 TLT와의 방향을 정성적으로 비교하는 용도로만 쓴다.
+- **상승**: TIPS 원금은 CPI에 맞춰 조정되므로, 명목채(TLT) 대비 이 ETF가 더 강해지면 기대인플레이션이 올라가고 있다는 신호로 흔히 해석한다.
+- **하락**: 명목채 대비 이 ETF가 더 약해지면 기대인플레이션이 내려가고 있다는(또는 실질금리가 올라가고 있다는) 신호로 흔히 해석한다.
+- **왜 이런 신호로 읽히나**: TIPS는 원금이 CPI-U(소비자물가지수)에 맞춰 조정되기 때문에, 물가가 오르면 원금과 이자 지급액도 함께 늘어난다 — 그래서 TIPS 가격은 명목채와 달리 실질금리에 직접 영향을 받는다. TLT(명목채) 대비 이 ETF가 상대적으로 강해진다는 것은, 시장이 "앞으로 물가가 오른 만큼 더 보상받아야 한다"고 가격에 반영하기 시작했다는(기대인플레이션이 올라가고 있다는) 뜻으로 읽는다.
+- 정밀한 기대인플레이션(breakeven inflation) 수치는 아니다 — 실제 BEI는 만기가 같은 명목채와 물가연동채 수익률을 빼서 계산한다(예: FRED `T10YIE`). 이 문서는 TLT와의 방향을 대략적으로 비교하는 용도로만 쓴다.
 
 ---
 
 ## 관련 문서
 
-- [20년+ 장기국채 ETF (TLT)](./tlt.md) — 명목채 짝 지표, 상대 강도로 기대인플레이션 방향을 가늠
-- [거시경제 개념 정리](../../concepts/macroeconomics.md) — "인플레이션" 절
+- [20년+ 장기국채 ETF (TLT)](./tlt.md)
+- [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
 ---

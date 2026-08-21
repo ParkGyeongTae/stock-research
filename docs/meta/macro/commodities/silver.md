@@ -1,7 +1,7 @@
 # 은
 
 !!! note ""
-    최근 5년 은 선물(연속월물, `SI=F`) 주봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. 금과 같은 귀금속이지만, 은은 전자·태양광 등 **산업 수요 비중이 금보다 훨씬 커서** 안전자산 성격과 산업재 성격이 섞여 있고 변동성도 금보다 크다.
+    최근 5년간 은 선물(연속월물, `SI=F`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 은은 금과 같은 귀금속이지만, 전자제품이나 태양광 패널 등에 쓰이는 **산업용 수요 비중이 금보다 훨씬 커서** "안전자산"과 "산업 원자재"의 성격이 섞여 있고, 그만큼 가격도 금보다 더 크게 움직인다.
 
 ---
 
@@ -51,6 +51,12 @@
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
 <line x1="61.9" y1="579.7" x2="61.9" y2="579.7" stroke="var(--up)" class="wick"/>
@@ -589,6 +595,7 @@
 <text x="1058" y="580.7" font-size="11.5" fill="var(--support)" font-weight="600">$21.72 S3</text>
 <text x="1058" y="592.7" font-size="9.5" fill="var(--muted)">터치 4회</text>
 <circle cx="1052.0" cy="359.4" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="351.4" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 $66.39 (2026-08-20)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -602,19 +609,19 @@
 
 ---
 
-## 2. 해석 참고 — 상승/하락이 의미하는 것
+## 2. 해석
 
-- **상승**: 금과 마찬가지로 안전자산 수요·실질금리 하락 기대를 반영할 수도 있고, 전자·태양광 등 산업 수요 확대(경기 확장)를 반영할 수도 있다 — 두 성격이 섞여 있어 방향만으로는 원인을 구분하기 어렵다.
-- **하락**: 위험선호 심리 강화(안전자산 수요 감소), 산업 수요 위축(경기 둔화) 중 하나 혹은 둘 다를 반영할 수 있다.
-- 금/은 비율(gold-silver ratio) 등 관련 지표와 함께 보면 안전자산 성격과 산업재 성격 중 어느 쪽이 더 강하게 작용했는지 가늠하는 데 도움이 된다.
-- **참고**: 은은 전자·태양광 패널 등에 쓰이는 산업 수요 비중이 금보다 훨씬 크고, 시장 유동성(거래대금)은 금보다 얕아 같은 폭의 수급 변화에도 가격이 더 크게 움직이는 경향이 있다.
+- **상승**: 금처럼 안전자산을 찾는 수요나 실질금리 하락 기대를 반영한 것일 수도 있고, 전자·태양광 등 산업 수요가 늘어난(경기 확장) 것을 반영한 것일 수도 있다 — 두 성격이 섞여 있어 가격 방향만 보고는 어느 쪽 때문인지 구분하기 어렵다.
+- **하락**: 위험자산 선호 심리가 강해져 안전자산 수요가 줄었거나, 산업 수요가 위축(경기 둔화)됐거나, 둘 다일 수 있다.
+- 금/은 비율(gold-silver ratio, 금값을 은값으로 나눈 값) 같은 관련 지표를 함께 보면 안전자산 성격과 산업재 성격 중 어느 쪽이 더 강하게 작용했는지 가늠하는 데 도움이 된다.
+- **참고**: 은은 전자제품·태양광 패널 등에 쓰이는 산업 수요 비중이 금보다 훨씬 크고, 거래되는 금액(유동성)은 금보다 적어서 같은 크기의 수급 변화에도 가격이 더 크게 움직이는 편이다.
 
 ---
 
 ## 관련 문서
 
-- [금](./gold.md) — 같은 귀금속 짝 지표
-- [거시경제 개념 정리](../../concepts/macroeconomics.md) — "주요 지표 읽는 법 요약" 표의 유가·원자재 행
+- [금](./gold.md)
+- [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
 ---

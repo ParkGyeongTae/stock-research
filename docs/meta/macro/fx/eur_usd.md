@@ -1,7 +1,7 @@
 # 유로/달러 (EUR/USD)
 
 !!! note ""
-    최근 5년 유로/달러 환율(1유로당 USD, `EURUSD=X`) 주봉 흐름을 지지선·저항선과 함께 정리한 참고 자료. 달러인덱스의 최대 비중(약 58%) 구성 통화쌍이 바로 이것이라, 달러인덱스 움직임의 대부분은 사실상 이 환율이 주도한다.
+    최근 5년간 유로/달러 환율(1유로가 몇 달러인지, `EURUSD=X`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 달러인덱스에서 가장 큰 비중(약 58%)을 차지하는 통화쌍이 바로 이 유로/달러라서, 달러인덱스가 움직이는 이유의 대부분은 사실상 이 환율이 주도한다고 봐도 된다.
 
 ---
 
@@ -51,6 +51,12 @@
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
 <line x1="61.9" y1="139.7" x2="61.9" y2="146.7" stroke="var(--up)" class="wick"/>
@@ -592,6 +598,7 @@
 <text x="1058" y="351.8" font-size="11.5" fill="var(--support)" font-weight="600">$1.05 S3</text>
 <text x="1058" y="363.8" font-size="9.5" fill="var(--muted)">터치 8회</text>
 <circle cx="1052.0" cy="142.7" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="134.7" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 $1.17 (2026-08-20)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -605,19 +612,19 @@
 
 ---
 
-## 2. 해석 참고 — 상승/하락이 의미하는 것
+## 2. 해석
 
-- **상승**: 유로 강세(달러 약세) — 유로존 경기·금리 기대 개선 또는 미국 상대적 약세 신호로 흔히 해석된다.
-- **하락**: 유로 약세(달러 강세) — 유로존 경기 둔화 또는 미국 상대적 강세 신호로 흔히 해석된다.
-- **왜 이렇게 해석되나**: 금리평가이론(interest rate parity)에 따르면 두 통화 간 환율의 기대 변화율은 대략 금리차와 맞물린다 — 유로존과 미국의 절대적인 금리 수준보다 **상대적인** 정책 기대 변화(ECB가 얼마나 더 매파적·비둘기파적인가)가 환율을 움직이는 핵심 변수다.
-- 달러인덱스의 최대 비중(약 58%) 구성 통화쌍이라 두 문서가 상당 부분 같은 정보를 담는다 — 두 문서를 각각 독립 근거로 중복 인용하지 않는다.
+- **상승**: 유로 강세(달러 약세) — 유로존의 경기·금리에 대한 기대가 좋아졌거나, 미국이 상대적으로 약해졌다는 신호로 흔히 해석한다.
+- **하락**: 유로 약세(달러 강세) — 유로존 경기가 둔화되거나, 미국이 상대적으로 강해졌다는 신호로 흔히 해석한다.
+- **왜 이렇게 해석되나**: 금리평가이론(interest rate parity, 두 통화의 환율 변화율은 두 나라의 금리 차이와 대략 맞물린다는 이론)에 따르면, 유로존과 미국의 금리 수준 자체보다 그 금리가 앞으로 어떻게 바뀔지에 대한 **상대적인** 기대(ECB가 연준보다 얼마나 더 긴축적이거나 완화적인가)가 환율을 움직이는 핵심 변수다.
+- 달러인덱스에서 가장 큰 비중(약 58%)을 차지하는 통화쌍이라 두 문서가 상당 부분 같은 정보를 담고 있다 — 두 문서를 각각 독립된 근거로 중복해서 인용하지 않는다.
 
 ---
 
 ## 관련 문서
 
-- [달러인덱스 (DXY)](./dxy.md) — 이 환율이 최대 비중으로 들어가는 지수
-- [거시경제 개념 정리](../../concepts/macroeconomics.md) — 환율이 종목 밸류에이션에 닿는 경로
+- [달러인덱스 (DXY)](./dxy.md)
+- [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
 ---

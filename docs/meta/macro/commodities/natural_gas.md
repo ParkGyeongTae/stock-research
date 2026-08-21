@@ -1,7 +1,7 @@
 # 천연가스
 
 !!! note ""
-    최근 5년 헨리허브 천연가스 선물(연속월물, `NG=F`) 주봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. 원유와 같은 에너지 원자재지만, 천연가스는 계절(난방 수요) 영향이 커서 변동성 패턴이 원유와 다르다.
+    최근 5년간 헨리허브 천연가스 선물(연속월물, `NG=F`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 원유와 같은 에너지 원자재이지만, 천연가스는 겨울철 난방 수요처럼 계절 영향을 훨씬 많이 받아서 가격이 출렁이는 패턴이 원유와는 다르다.
 
 ---
 
@@ -49,6 +49,12 @@
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
 <line x1="61.9" y1="455.6" x2="61.9" y2="462.9" stroke="var(--down)" class="wick"/>
@@ -593,6 +599,7 @@
 <text x="1058" y="573.2" font-size="11.5" fill="var(--support)" font-weight="600">$1.96 S3</text>
 <text x="1058" y="585.2" font-size="9.5" fill="var(--muted)">터치 2회</text>
 <circle cx="1052.0" cy="529.7" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="521.7" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 $2.76 (2026-08-20)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -606,19 +613,19 @@
 
 ---
 
-## 2. 해석 참고 — 상승/하락이 의미하는 것
+## 2. 해석
 
-- **상승**: 난방·발전 수요 급증(계절 요인), 공급 차질(파이프라인 문제, LNG 수출 확대에 따른 국내 공급 축소) 신호로 흔히 해석된다.
-- **하락**: 온화한 날씨로 인한 수요 둔화, 생산 증가·재고 축적에 따른 공급 과잉 신호로 흔히 해석된다.
-- 계절성이 강해 같은 방향의 움직임도 시기(겨울철 vs 여름철)에 따라 의미가 다르다 — 절대가격보다 계절 대비 재고 수준을 함께 봐야 한다.
-- **왜 원유보다 지역적인 시장인가**: 천연가스는 파이프라인·LNG 터미널 등 운송 인프라 제약이 커서 지역 간 차익거래가 원유만큼 자유롭지 않다 — 그래서 헨리허브(미국)·TTF(유럽)·JKM(아시아) 가격이 서로 크게 벌어지는 경우가 흔하고, 이 문서의 가격은 어디까지나 미국 시장 기준이다.
+- **상승**: 난방·발전용 수요가 계절적으로 급증했거나, 파이프라인 문제나 LNG(액화천연가스) 수출 확대로 국내에 남는 공급이 줄어드는 등 공급에 차질이 생겼다는 신호로 흔히 해석한다.
+- **하락**: 날씨가 따뜻해 수요가 줄었거나, 생산이 늘고 재고가 쌓여 공급이 넘친다는 신호로 흔히 해석한다.
+- 계절성이 워낙 강해서, 같은 방향으로 움직여도 시기(겨울철인지 여름철인지)에 따라 의미가 다르다 — 가격 자체보다 그 계절 기준으로 재고가 많은지 적은지를 함께 봐야 한다.
+- **왜 원유보다 지역별로 가격이 다른가**: 천연가스는 파이프라인이나 LNG 터미널 같은 운송 설비가 있어야만 옮길 수 있어서, 원유만큼 세계 어디로든 자유롭게 옮겨 팔기가 어렵다. 그래서 미국(헨리허브)·유럽(TTF)·아시아(JKM)의 가격이 서로 크게 벌어지는 일이 흔하고, 이 문서의 가격은 어디까지나 미국 시장 기준이다.
 
 ---
 
 ## 관련 문서
 
-- [WTI 원유](./oil_wti.md) — 같은 에너지 원자재 짝 지표
-- [거시경제 개념 정리](../../concepts/macroeconomics.md) — "주요 지표 읽는 법 요약" 표의 유가·원자재 행
+- [WTI 원유](./oil_wti.md)
+- [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
 ---

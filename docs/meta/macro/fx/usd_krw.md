@@ -1,7 +1,7 @@
 # 원달러 환율 (USD/KRW)
 
 !!! note ""
-    최근 5년 원/달러(1달러당 원화, `KRW=X`) 주봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. 해외 매출 비중이 큰 회사의 환율 민감도, 혹은 상수통화(constant currency) 성장률과 보고 성장률의 괴리를 설명하는 데 관련이 큰 지표다.
+    최근 5년간 원/달러 환율(1달러가 몇 원인지, `KRW=X`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 해외 매출 비중이 큰 회사가 환율 변화에 얼마나 민감한지, 또는 상수통화(constant currency, 환율 변동 효과를 뺀 성장률) 기준 성장률과 실제 보고된 성장률이 왜 차이 나는지를 설명할 때 자주 쓰이는 지표다.
 
 ---
 
@@ -49,6 +49,12 @@
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
 <line x1="61.9" y1="561.8" x2="61.9" y2="577.1" stroke="var(--down)" class="wick"/>
@@ -593,6 +599,7 @@
 <text x="1058" y="519.5" font-size="11.5" fill="var(--support)" font-weight="600">1,214원 S3</text>
 <text x="1058" y="531.5" font-size="9.5" fill="var(--muted)">터치 4회</text>
 <circle cx="1052.0" cy="307.2" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="299.2" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 1,395.68원 (2026-08-20)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -606,22 +613,22 @@
 
 ---
 
-## 2. 해석 참고 — 상승/하락이 의미하는 것
+## 2. 해석
 
-- **상승(원화 약세)**: 위험회피 심리, 외국인 자금 유출, 무역수지 악화, 한·미 금리차 확대 신호로 흔히 해석된다. 해외 매출 비중이 큰 회사는 원화 환산 매출이 늘어나는 효과가 있다.
-- **하락(원화 강세)**: 위험선호 심리, 외국인 자금 유입, 무역수지 개선 신호로 흔히 해석된다.
-- **왜 다른 통화보다 변동성이 큰가**: 원화는 국제 기축통화가 아니고, 반도체·자동차 등 소수 품목에 수출이 집중돼 있어 무역수지가 특정 업황에 좌우되기 쉽다. 외국인의 한국 주식·채권 보유 비중도 높아, 위험선호가 꺾이면 자본유출(원화 매도)이 짧은 기간에 몰리는 경향이 있다.
-- 한국은행·연준 통화정책, 무역수지, 위험선호 등 여러 요인이 동시에 작용해 한 가지 원인으로 단정하기 어렵다.
+- **상승(원화 약세)**: 위험을 피하려는 심리, 외국인 자금 유출, 무역수지 악화, 한·미 금리차 확대 신호로 흔히 해석한다. 해외 매출 비중이 큰 회사는 원화로 환산한 매출이 늘어나는 효과가 있다.
+- **하락(원화 강세)**: 위험선호 심리, 외국인 자금 유입, 무역수지 개선 신호로 흔히 해석한다.
+- **왜 다른 통화보다 변동성이 큰가**: 원화는 달러·유로처럼 세계 어디서나 통용되는 기축통화가 아니고, 반도체·자동차 등 몇몇 품목에 수출이 집중돼 있어서 무역수지가 특정 업황에 좌우되기 쉽다. 외국인이 보유한 한국 주식·채권 비중도 높은 편이라, 위험선호가 꺾이면 짧은 기간에 자금이 한꺼번에 빠져나가는(원화 매도) 경향이 있다.
+- 한국은행·연준의 통화정책, 무역수지, 위험선호 등 여러 요인이 동시에 작용하기 때문에, 한 가지 원인으로 단정하기 어렵다.
 
 ---
 
 ## 관련 문서
 
-- [달러인덱스 (DXY)](./dxy.md) — 원화 고유 요인을 뺀, 달러 자체의 강약만 보는 짝 지표
-- [코스피](../equities/kospi.md) — 원화·한국 증시 국면을 함께 보는 짝 지표
-- [거시경제 개념 정리](../../concepts/macroeconomics.md) — 환율이 종목 밸류에이션에 닿는 경로, 상수통화 기준
+- [달러인덱스 (DXY)](./dxy.md)
+- [코스피](../equities/kospi.md)
+- [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
-- [표기 규칙 개념 정리](../../concepts/notation.md) — 상수통화 기준 표기
+- [표기 규칙 개념 정리](../../concepts/notation.md)
 
 ---
 

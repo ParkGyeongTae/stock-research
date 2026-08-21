@@ -1,7 +1,7 @@
 # 코스피
 
 !!! note ""
-    최근 5년 코스피 지수(한국거래소 유가증권시장, `^KS11`) 주봉 흐름을 지지선·저항선과 함께 정리한 참고 자료. 원달러 환율과 함께 보면 원화·한국 증시 국면을 종합적으로 파악할 수 있다.
+    최근 5년간 코스피 지수(한국거래소 유가증권시장, `^KS11`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 원달러 환율 문서와 함께 보면 원화 가치와 한국 증시가 지금 어떤 국면인지 종합적으로 파악하는 데 도움이 된다.
 
 ---
 
@@ -55,6 +55,12 @@
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
 <line x1="61.9" y1="536.7" x2="61.9" y2="542.0" stroke="var(--down)" class="wick"/>
@@ -593,6 +599,7 @@
 <text x="1058" y="586.1" font-size="11.5" fill="var(--support)" font-weight="600">2,364 S3</text>
 <text x="1058" y="598.1" font-size="9.5" fill="var(--muted)">터치 3회</text>
 <circle cx="1052.0" cy="264.1" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="256.1" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 6,852.58 (2026-08-20)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -606,12 +613,12 @@
 
 ---
 
-## 2. 해석 참고 — 상승/하락이 의미하는 것
+## 2. 해석
 
-- **상승**: 한국 대형·수출기업 실적 기대 개선, 외국인 자금 유입 신호로 흔히 해석된다.
-- **하락**: 수출 경기 둔화 우려, 외국인 자금 유출 신호로 흔히 해석된다.
-- 원달러 환율과 반대로 움직이는 경우가 많다(원화 강세가 외국인 자금 유입을 유인하는 경로) — 두 문서를 함께 보면 국면을 더 잘 가늠할 수 있다.
-- **왜 외국인 수급에 유독 민감한가**: 코스피는 시가총액 대비 유동주식(실제 거래 가능 물량) 비중이 낮은 대형주가 많고, 반도체 등 특정 업종 편중도가 높다. MSCI·FTSE 같은 글로벌 지수의 국가·종목 비중 조정 이벤트가 패시브 자금의 대규모 매매를 유발하는 경우도 잦다.
+- **상승**: 한국 대형·수출기업의 실적 기대가 좋아졌거나, 외국인 투자자의 자금이 들어오고 있다는 신호로 흔히 해석한다.
+- **하락**: 수출 경기가 둔화될 것이라는 우려나, 외국인 자금이 빠져나가고 있다는 신호로 흔히 해석한다.
+- 원달러 환율과 반대로 움직이는 경우가 많다(원화가 강해지면 외국인 자금이 더 들어오기 쉬워지기 때문이다) — 두 문서를 함께 보면 지금 국면을 더 잘 가늠할 수 있다.
+- **왜 외국인 자금 흐름에 유독 민감한가**: 코스피에는 시가총액은 크지만 실제로 시장에서 거래 가능한 물량(유동주식)이 적은 대형주가 많고, 반도체 등 특정 업종에 쏠려 있다. MSCI·FTSE 같은 글로벌 지수에서 한국의 비중을 조정하는 이벤트가 있을 때마다, 그 지수를 따라가는 자금(패시브 자금)이 한꺼번에 크게 사고팔면서 지수를 흔드는 경우도 잦다.
 
 ---
 

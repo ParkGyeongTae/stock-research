@@ -1,7 +1,7 @@
 # WTI 원유
 
 !!! note ""
-    최근 5년 WTI 원유 선물(연속월물, `CL=F`) 주봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. 제조 원가와 소비자 물가에 직접 영향을 미치는 대표적인 원가·인플레이션 경로 지표다.
+    최근 5년간 WTI 원유 선물(연속월물, `CL=F`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 원유 값은 기업이 물건을 만드는 원가와 소비자가 체감하는 물가에 곧바로 영향을 주는, 원가·인플레이션을 보여주는 대표적인 지표다.
 
 ---
 
@@ -47,6 +47,12 @@
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
 <line x1="61.9" y1="541.9" x2="61.9" y2="555.7" stroke="var(--down)" class="wick"/>
@@ -588,6 +594,7 @@
 <text x="1058" y="540.8" font-size="11.5" fill="var(--support)" font-weight="600">$63 S3</text>
 <text x="1058" y="552.8" font-size="9.5" fill="var(--muted)">터치 3회</text>
 <circle cx="1052.0" cy="381.9" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="373.9" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 $87.12 (2026-08-20)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -601,19 +608,19 @@
 
 ---
 
-## 2. 해석 참고 — 상승/하락이 의미하는 것
+## 2. 해석
 
-- **상승**: 원유 수요 확장(경기 확장) 또는 공급 축소(OPEC+ 감산, 지정학 리스크에 따른 공급 차질) 신호로 흔히 해석되며, 기업 원가·소비자 물가에 상방 압력으로 작용한다.
-- **하락**: 수요 위축(경기 둔화) 또는 공급 확대 신호로 흔히 해석되며, 원가·물가에 하방 압력으로 작용한다.
-- 수요발 움직임과 공급발 움직임은 원인이 다르므로, 가격 변화만으로 어느 쪽인지 단정하지 않는다 — EIA 원유재고, OPEC+ 감산 발표 등 다른 지표와 함께 봐야 한다.
-- **참고**: WTI는 미국 내륙(오클라호마 쿠싱) 인도 기준이고, 국제적으로 더 널리 쓰이는 벤치마크는 북해산 브렌트유다 — 두 유종은 산지·품질·물류 차이로 가격이 벌어지기도 한다(WTI-브렌트 스프레드). OPEC+는 회원국 감산 쿼터를 조율해 공급을 제한하는 카르텔로, 그 발표가 공급발 가격 변동의 주요 계기가 된다.
+- **상승**: 경기가 확장돼 원유 수요가 늘었거나, OPEC+(주요 산유국 모임)의 감산이나 지정학적 사건으로 공급이 줄었다는 신호로 흔히 해석한다. 기업 원가와 소비자 물가에는 상승 압력으로 작용한다.
+- **하락**: 경기 둔화로 수요가 줄었거나 공급이 늘었다는 신호로 흔히 해석한다. 원가와 물가에는 하락 압력으로 작용한다.
+- 수요가 줄어서 내린 것인지 공급이 늘어서 내린 것인지는 원인이 전혀 다르다. 가격 변화만 보고 어느 쪽인지 단정하지 말고, 미국 에너지정보청(EIA) 원유재고나 OPEC+ 감산 발표 같은 다른 지표도 함께 확인한다.
+- **참고**: WTI는 미국 내륙(오클라호마주 쿠싱)에서 인도되는 것을 기준으로 하고, 국제적으로 더 널리 쓰이는 유가 기준은 북해산 브렌트유다. 두 유종은 생산지·품질·운송 여건이 달라 가격 차이(WTI-브렌트 스프레드)가 나기도 한다. OPEC+는 회원국들의 생산량(쿼터)을 조율해 공급을 조절하는 산유국 모임으로, 그 발표가 공급 쪽 가격 변동의 주요 계기가 된다.
 
 ---
 
 ## 관련 문서
 
-- [천연가스](./natural_gas.md) — 같은 에너지 원자재 짝 지표
-- [거시경제 개념 정리](../../concepts/macroeconomics.md) — "주요 지표 읽는 법 요약" 표의 유가·원자재 행
+- [천연가스](./natural_gas.md)
+- [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
 ---

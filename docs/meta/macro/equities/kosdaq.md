@@ -1,7 +1,7 @@
 # 코스닥
 
 !!! note ""
-    최근 5년 코스닥 지수(한국거래소 코스닥시장, 중소형·성장주 중심, `^KQ11`) 주봉 흐름을 지지선·저항선과 함께 정리한 참고 자료. 코스피가 대형주 위주라면, 이 지수는 미국의 러셀2000처럼 중소형·성장주 성격이 강해 국내 경기·위험선호에 더 민감하게 반응하는 편이다.
+    최근 5년간 코스닥 지수(한국거래소 코스닥시장, 중소형·성장주 중심, `^KQ11`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 코스피가 대형주 위주라면, 코스닥은 미국의 러셀2000처럼 중소형·성장주 성격이 강해서 국내 경기나 투자자들의 위험선호 변화에 더 민감하게 반응하는 편이다.
 
 ---
 
@@ -53,6 +53,12 @@
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
 <line x1="61.9" y1="274.6" x2="61.9" y2="306.8" stroke="var(--down)" class="wick"/>
@@ -600,6 +606,7 @@
 <text x="1058" y="528.5" font-size="11.5" fill="var(--support)" font-weight="600">704 S3</text>
 <text x="1058" y="540.5" font-size="9.5" fill="var(--muted)">터치 4회</text>
 <circle cx="1052.0" cy="414.8" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="406.8" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 840.89 (2026-08-20)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -613,19 +620,19 @@
 
 ---
 
-## 2. 해석 참고 — 상승/하락이 의미하는 것
+## 2. 해석
 
-- **상승**: 국내 위험선호 확대, 중소형·성장주로의 자금 유입 신호로 흔히 해석된다.
-- **하락**: 국내 위험회피 심리, 유동성 위축 신호로 흔히 해석된다.
-- 코스피 대비 상대 강도로 보면 국내 자금이 대형주와 중소형주 중 어느 쪽으로 쏠리는지 가늠하는 실마리가 된다.
-- **왜 변동성이 코스피보다 큰가**: 코스닥은 개인 투자자 비중과 신용거래(레버리지) 비중이 코스피보다 높고, 개별 종목 시가총액이 작아 같은 규모의 자금이 들어와도 가격 충격이 더 크다.
+- **상승**: 국내에서 위험을 더 감수하려는 심리가 커졌거나, 자금이 중소형·성장주로 몰리고 있다는 신호로 흔히 해석한다.
+- **하락**: 국내에서 위험을 피하려는 심리가 커졌거나, 시중 자금 사정이 위축됐다는 신호로 흔히 해석한다.
+- 코스피 대비 상대적으로 강한지 약한지를 보면, 국내 자금이 대형주와 중소형주 중 어느 쪽으로 더 쏠리고 있는지 가늠하는 실마리가 된다.
+- **왜 변동성이 코스피보다 큰가**: 코스닥은 개인 투자자 비중과 신용거래(돈을 빌려 주식을 사는 것) 비중이 코스피보다 높고, 개별 종목의 규모(시가총액)가 작아서 같은 금액의 자금이 들어와도 가격이 더 크게 흔들린다.
 
 ---
 
 ## 관련 문서
 
-- [코스피](./kospi.md) — 대형주 위주 비교군
-- [러셀2000](./russell2000.md) — 미국 중소형주 비교군
+- [코스피](./kospi.md)
+- [러셀2000](./russell2000.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
 ---

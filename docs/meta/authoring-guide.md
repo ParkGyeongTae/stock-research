@@ -157,7 +157,6 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/rates/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
 | `macro/rates/treasury_10y.md` | `^TNX` | 미 국채 10년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
 | `macro/rates/treasury_30y.md` | `^TYX` | 미 국채 30년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
-| `macro/rates/treasury_5y.md` | `^FVX` | 미 국채 5년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
 | `macro/crypto/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
 
 새 macro 문서를 추가하면 이 표에 행을 하나 추가한다 — 개별 문서에는 재생성 커맨드를 남기지 않는다.
