@@ -12,7 +12,7 @@ description: 아직 `00_overview.md`가 없는 섹터(완전히 새로운 섹터
 - **대상 아님**:
   - 이미 있는 `00_overview.md`를 갱신하는 작업 → `improve-sector-doc` 대상
   - 회사 문서 신규 작성 → `create-company-doc` 대상 (신규 섹터에서 첫 회사를 추가하는 상황이면 두 스킬을 함께 쓴다 — 아래 "참고" 참조)
-  - `docs/README.md`·`AGENTS.md` 자체 개선 → `review-master-docs` 대상
+  - `docs/index.md`·`AGENTS.md` 자체 개선 → `review-master-docs` 대상
 
 ## 왜 필요한가
 
@@ -57,4 +57,4 @@ description: 아직 `00_overview.md`가 없는 섹터(완전히 새로운 섹터
 ## 참고
 
 - 완전히 새로운 섹터에서 첫 회사를 동시에 추가하는 상황이면 `create-company-doc`과 이 스킬을 함께 쓴다 — 순서는 상관없지만, 회사 문서 §3에서 `00_overview.md`를 링크하려면 이 스킬로 그 파일을 먼저 만들어두는 편이 자연스럽다.
-- 문서 스코프·형식의 마스터는 `docs/meta/.template/sector/00_overview.md`와 `docs/README.md`다 — 이 스킬은 그 스코프를 신규 작성 흐름에서 지키게 할 뿐, 새 기준을 만들지 않는다.
+- 문서 스코프·형식의 마스터는 `docs/meta/.template/sector/00_overview.md`와 `docs/meta/authoring-guide.md`다 — 이 스킬은 그 스코프를 신규 작성 흐름에서 지키게 할 뿐, 새 기준을 만들지 않는다.

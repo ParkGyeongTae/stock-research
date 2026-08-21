@@ -1,6 +1,6 @@
 ---
 name: create-macro-doc
-description: 아직 `docs/meta/macro/`에 없는 거시지표(환율·금리·지수·원자재·디지털자산)를 "새로 만들어줘", "차트 추가해줘", "macro에 <지표> 추가해줘" 처럼 요청할 때 사용한다. `scripts/gen_technical_chart.py`로 캔들 SVG를 생성하고, 상승/하락 해석 절과 카테고리별 `.pages` 등록까지 `docs/README.md`·`docs/meta/authoring-guide.md`의 규칙대로 채운다. 이미 있는 macro 문서를 최신 데이터로 재생성하는 작업에는 쓰지 않는다 — 그건 `improve-macro-doc` 대상.
+description: 아직 `docs/meta/macro/`에 없는 거시지표(환율·금리·지수·원자재·디지털자산)를 "새로 만들어줘", "차트 추가해줘", "macro에 <지표> 추가해줘" 처럼 요청할 때 사용한다. `scripts/gen_technical_chart.py`로 캔들 SVG를 생성하고, 상승/하락 해석 절과 카테고리별 `.pages` 등록까지 `docs/meta/authoring-guide.md`의 규칙대로 채운다. 이미 있는 macro 문서를 최신 데이터로 재생성하는 작업에는 쓰지 않는다 — 그건 `improve-macro-doc` 대상.
 ---
 
 # 거시지표 참고 문서 신규 작성
@@ -12,7 +12,7 @@ description: 아직 `docs/meta/macro/`에 없는 거시지표(환율·금리·�
 - **대상 아님**:
   - 이미 있는 macro 문서를 최신 데이터로 재생성 → `improve-macro-doc`
   - 회사 자체의 `09_technical_daily.md`·`10_technical_weekly.md` → `create-company-doc`/`improve-company-doc` 대상(같은 스크립트를 쓰지만 회사 폴더 소관)
-  - `docs/README.md`·`AGENTS.md` 자체 개선 → `review-master-docs`
+  - `docs/index.md`·`AGENTS.md` 자체 개선 → `review-master-docs`
 
 ## 왜 필요한가
 
@@ -39,7 +39,7 @@ description: 아직 `docs/meta/macro/`에 없는 거시지표(환율·금리·�
    `--emit chart`로 캔들 SVG만 뽑아 §1에 그대로 옮긴다(지지/저항 표·방법론 텍스트는 이 문서에 넣지 않으므로 `table`·`facts`·`dates`는 필요 없다).
 
 5. **문서 골격 채우기** — 기존 정리된 문서(예: `commodities/gold.md`)를 구조 기준으로 삼는다:
-   - 제목 + intro 블록쿼트 1문장: 이 지표가 무엇의 프록시인지, 관련 문서와의 관계만 간결히 적는다. **아래 세 가지는 넣지 않는다** — 커버리지 연관성 경고, "객관적 서술이며 투자 판단이 아니다" 면책, 스크립트 공유 각주. 이 셋은 이미 전체 macro 문서에서 제거된 보일러플레이트이고, 마지막 것의 근거(회사 문서와 같은 스크립트를 쓰지만 `meta/`에 두는 이유)는 `docs/README.md` "📁 폴더 구조"가 마스터라 각 문서에서 반복할 필요가 없다.
+   - 제목 + intro 블록쿼트 1문장: 이 지표가 무엇의 프록시인지, 관련 문서와의 관계만 간결히 적는다. **아래 세 가지는 넣지 않는다** — 커버리지 연관성 경고, "객관적 서술이며 투자 판단이 아니다" 면책, 스크립트 공유 각주. 이 셋은 이미 전체 macro 문서에서 제거된 보일러플레이트이고, 마지막 것의 근거(회사 문서와 같은 스크립트를 쓰지만 `meta/`에 두는 이유)는 `docs/meta/authoring-guide.md` "📁 폴더 구조·명명 규칙"이 마스터라 각 문서에서 반복할 필요가 없다.
    - `## 1. 차트 — 최근 5년 주봉`
    - `## 2. 해석 참고 — 상승/하락이 의미하는 것` — **스크립트가 만들지 않는다. 사람이 직접 쓴다.** "**상승**: …", "**하락**: …" 두 불릿 + 해석이 갈리거나 다른 요인이 섞이는 경우의 한계를 짚는 불릿 하나(3번째 불릿). `commodities/*.md` 5개가 참고 예시다. 일반적·교과서적인 경제적 해석만 적고, 지금 이 시점의 가격 전망이나 투자 판단은 적지 않는다.
    - **`## 갱신 방법`은 넣지 않는다** — 재생성 커맨드(티커·옵션·조정 각주)는 문서에 남기지 않고 `docs/meta/authoring-guide.md` "macro 문서 재현 파라미터" 표에만 행으로 추가한다(6번 참고).
@@ -71,4 +71,4 @@ description: 아직 `docs/meta/macro/`에 없는 거시지표(환율·금리·�
 
 ## 참고
 
-- 폴더 구조·역할의 마스터는 `docs/README.md`("📁 폴더 구조"), 생성 커맨드 문법의 마스터는 `docs/meta/authoring-guide.md`("주가가 아닌 시계열에 쓰기")다 — 이 스킬은 신규 작성이라는 한 흐름 안에서 그 규칙들을 순서대로 적용할 뿐, 새 기준을 만들지 않는다.
+- 폴더 구조·역할과 생성 커맨드 문법 모두 `docs/meta/authoring-guide.md`가 마스터다("📁 폴더 구조·명명 규칙", "주가가 아닌 시계열에 쓰기") — 이 스킬은 신규 작성이라는 한 흐름 안에서 그 규칙들을 순서대로 적용할 뿐, 새 기준을 만들지 않는다.

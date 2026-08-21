@@ -1,6 +1,6 @@
 ---
 name: create-company-doc
-description: 아직 이 저장소에 없는 회사를 "새로 만들어줘", "새 회사 문서 작성해줘", "템플릿으로 추가해줘" 처럼 요청할 때 사용한다. `docs/meta/.template/company/`를 복사해 폴더를 만드는 기계적 단계뿐 아니라, 섹터·폴더명 판단부터 수치 검증 우선순위, 밸류에이션 방법론 적용 여부 판단, Bear Case 3요소, 마무리 체크리스트까지 `AGENTS.md`·`docs/README.md`의 규칙을 처음부터 지키며 채우게 한다. 이미 있는 회사 폴더를 고치는 작업에는 쓰지 않는다 — 그건 `improve-company-doc` 대상.
+description: 아직 이 저장소에 없는 회사를 "새로 만들어줘", "새 회사 문서 작성해줘", "템플릿으로 추가해줘" 처럼 요청할 때 사용한다. `docs/meta/.template/company/`를 복사해 폴더를 만드는 기계적 단계뿐 아니라, 섹터·폴더명 판단부터 수치 검증 우선순위, 밸류에이션 방법론 적용 여부 판단, Bear Case 3요소, 마무리 체크리스트까지 `AGENTS.md`·`docs/meta/authoring-guide.md`의 규칙을 처음부터 지키며 채우게 한다. 이미 있는 회사 폴더를 고치는 작업에는 쓰지 않는다 — 그건 `improve-company-doc` 대상.
 ---
 
 # 회사 문서 신규 작성
@@ -11,7 +11,7 @@ description: 아직 이 저장소에 없는 회사를 "새로 만들어줘", "�
 - 트리거 예시: "<회사명> 문서 새로 만들어줘", "템플릿으로 <회사명> 추가해줘", "<회사명> 커버리지 시작하자"
 - **대상 아님**:
   - 이미 존재하는 회사 폴더를 고치는 작업 → `improve-company-doc` 대상
-  - `docs/README.md`·`AGENTS.md` 자체 개선 → `review-master-docs` 대상
+  - `docs/index.md`·`AGENTS.md` 자체 개선 → `review-master-docs` 대상
 
 ## 왜 필요한가
 
@@ -63,4 +63,4 @@ description: 아직 이 저장소에 없는 회사를 "새로 만들어줘", "�
 
 ## 참고
 
-- 폴더 구조·파일별 역할의 마스터는 `docs/README.md`, 콘텐츠 검증·리뷰 기준은 `AGENTS.md`다 — 이 스킬은 신규 작성이라는 한 흐름 안에서 그 규칙들을 순서대로 적용할 뿐, 새 기준을 만들지 않는다.
+- 폴더 구조·파일별 역할의 마스터는 `docs/meta/authoring-guide.md`, 콘텐츠 검증·리뷰 기준은 `AGENTS.md`다 — 이 스킬은 신규 작성이라는 한 흐름 안에서 그 규칙들을 순서대로 적용할 뿐, 새 기준을 만들지 않는다.

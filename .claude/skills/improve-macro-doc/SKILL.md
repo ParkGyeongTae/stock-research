@@ -57,4 +57,4 @@ description: 이미 있는 `docs/meta/macro/**/*.md` 문서를 "최신화해줘"
 
 ## 참고
 
-- 갱신 커맨드 문법의 마스터는 `docs/meta/authoring-guide.md`, 폴더·`.pages` 규칙의 마스터는 `docs/README.md`다.
+- 갱신 커맨드 문법·폴더·`.pages` 규칙 모두 `docs/meta/authoring-guide.md`가 마스터다.
