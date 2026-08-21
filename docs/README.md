@@ -22,7 +22,8 @@ docs/
 │   ├── concepts/            # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
 │   ├── macro/               # 여러 회사 문서가 공통으로 인용하는 거시지표 차트 (환율·금리·지수 등)
 │   │   ├── fx/                # 통화 (원달러·달러인덱스 등)
-│   │   ├── rates/             # 금리·채권 ETF (국채수익률·HYG·TLT 등)
+│   │   ├── rates/             # 금리·수익률 (13주물·10년물·30년물 국채금리 등)
+│   │   ├── bonds/             # 실제 거래되는 채권 ETF (HYG·TLT·TIP 등)
 │   │   ├── equities/          # 주가지수·변동성 (S&P500·VIX·SOX 등)
 │   │   ├── commodities/       # 원자재 (유가·금·구리 등)
 │   │   └── crypto/            # 디지털자산 (BTC 등)
@@ -55,7 +56,7 @@ docs/
 
 - 최상위(`docs/`)는 **`README.md` + `meta/`(참고 문서) + `sectors/`(리서치 콘텐츠)**로만 구성 — 리서치 콘텐츠와 참고 문서를 같은 depth에 섞지 않는다
 - `meta/` 안에서도 성격이 갈린다: **`glossary.md`·`concepts/`는 읽는 문서**, **`macro/`는 여러 회사 문서가 공통으로 인용하는 거시지표 차트**(개별 회사·섹터의 밸류에이션 판단은 담지 않음), **`.template/`은 복사해서 쓰는 스캐폴딩**, **`exceptions.md`는 정리 대기 상태를 추적하는 목록**이다 — 같은 폴더에 있는 이유는 모두 "특정 회사·섹터에 종속되지 않는다"는 기준으로 묶였기 때문이다
-- `macro/` 하위는 통화·금리·주가지수·원자재·디지털자산 성격별 서브폴더(`fx/`·`rates/`·`equities/`·`commodities/`·`crypto/`)로 나뉜다. 각 문서는 `09_technical_daily.md`·`10_technical_weekly.md`와 같은 `scripts/gen_technical_chart.py`로 생성 — 작성 방법은 [`meta/authoring-guide.md`](./meta/authoring-guide.md) "주가가 아닌 시계열에 쓰기" 참고
+- `macro/` 하위는 통화·금리·채권·주가지수·원자재·디지털자산 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`commodities/`·`crypto/`)로 나뉜다. `rates/`는 실제 거래되는 자산이 아닌 순수 금리·수익률(%), `bonds/`는 실제 거래되는 채권 ETF 가격($)으로 갈린다. 각 문서는 `09_technical_daily.md`·`10_technical_weekly.md`와 같은 `scripts/gen_technical_chart.py`로 생성 — 작성 방법은 [`meta/authoring-guide.md`](./meta/authoring-guide.md) "주가가 아닌 시계열에 쓰기" 참고
 - 섹터 폴더명: **풀어 쓴 소문자 스네이크케이스** (예: `electronic_design_automation`, `semiconductor`, `cloud_infrastructure`) — 약어보다 명확한 전체 표기 우선
 - 회사 폴더명: **회사명 소문자 스네이크케이스** (예: `synopsys`, `nvidia`, `apple`)
 - 복합기업은 "관심 이유"가 되는 사업 기준 섹터에 배치 (예: Siemens → `sectors/electronic_design_automation/`)

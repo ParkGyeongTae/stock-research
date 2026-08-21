@@ -617,8 +617,9 @@
 
 ## 관련 문서
 
-- [13주 단기금리](./short_rate.md)
+- [미국 13주물 국채금리](./treasury_13w.md)
 - [미국 30년물 국채금리](./treasury_30y.md)
+- [미국 국채금리 3종 비교 (수익률곡선)](./comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [밸류에이션 개념 정리](../../concepts/valuation.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)

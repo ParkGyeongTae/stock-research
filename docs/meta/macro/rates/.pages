@@ -1,7 +1,5 @@
 nav:
-  - short_rate.md
+  - treasury_13w.md
   - treasury_10y.md
   - treasury_30y.md
-  - hyg.md
-  - tlt.md
-  - tip.md
+  - comparison.md

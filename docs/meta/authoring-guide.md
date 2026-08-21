@@ -151,31 +151,41 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/fx/eur_usd.md` | `EURUSD=X` | 유로/달러 환율 | `--unit-label "USD/EUR"` | FX |
 | `macro/fx/jpy_usd.md` | `JPY=X` | 엔/달러 환율 | `--symbol "엔" --symbol-pos suffix --unit-label "엔"` | FX |
 | `macro/fx/usd_krw.md` | `KRW=X` | 원/달러 환율 | `--symbol "원" --symbol-pos suffix --unit-label "원"` | FX |
-| `macro/rates/hyg.md` | `HYG` | 하이일드 회사채 ETF | (기본값) | ETF |
-| `macro/rates/short_rate.md` | `^IRX` | 13주 단기금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | DISC |
-| `macro/rates/tip.md` | `TIP` | 물가연동국채 ETF | (기본값) | ETF |
-| `macro/rates/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
+| `macro/rates/treasury_13w.md` | `^IRX` | 미 국채 13주물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | DISC |
 | `macro/rates/treasury_10y.md` | `^TNX` | 미 국채 10년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
 | `macro/rates/treasury_30y.md` | `^TYX` | 미 국채 30년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
+| `macro/bonds/hyg.md` | `HYG` | 하이일드 회사채 ETF | (기본값) | ETF |
+| `macro/bonds/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
+| `macro/bonds/tip.md` | `TIP` | 물가연동국채 ETF | (기본값) | ETF |
 | `macro/crypto/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
 
 새 macro 문서를 추가하면 이 표에 행을 하나 추가한다 — 개별 문서에는 재생성 커맨드를 남기지 않는다.
 
-### 여러 자산을 겹쳐 비교하는 문서 (지수화)
+### 여러 자산을 겹쳐 비교하는 문서
 
-단일 자산이 아니라 스케일이 서로 다른 여러 자산(예: fx 여러 통화쌍)을 "상대적으로 어느 쪽이 더 크게 움직였는지" 비교하려면 `gen_technical_chart.py`가 아니라 `gen_index_overlay_chart.py`를 쓴다. 원가격을 그대로 겹치면 스케일 차이 때문에 비교가 안 되므로, 모든 시리즈가 공통으로 데이터를 가진 첫 날을 100으로 맞춰(지수화) 겹친다. 지지/저항 레벨은 다루지 않고 §1(차트+순변화 표)·§2(해석)만 둔다 — 단일 자산 문서와 같은 규칙이다:
+단일 자산이 아니라 여러 자산을 "상대적으로 어느 쪽이 더 크게 움직였는지" 비교하려면 `gen_technical_chart.py`가 아니라 `gen_index_overlay_chart.py`를 쓴다. 지지/저항 레벨은 다루지 않고 §1(차트+요약 표)·§2(해석)만 둔다 — 단일 자산 문서와 같은 규칙이다. **모드는 자산 단위로 정한다:**
+
+- `--mode index`(기본): 환율·지수처럼 **단위 자체가 서로 다른** 자산. 공통 시작일을 100으로 맞춰 상대 변화율로 겹친다.
+- `--mode raw`: 국채금리처럼 **이미 같은 단위(%)인** 자산. 지수화하면 안 된다 — 기준값이 0에 가까운 시리즈가 하나라도 있으면(예: 2021년 ZIRP 시기 13주물 금리 0.04%) 지수가 수천으로 튀어 왜곡된다. 원값을 그대로 겹치면 스프레드·역전 같은 실제 정보까지 보여줘 오히려 더 유용하다.
 
 ```bash
+# index 모드
 uv run python scripts/gen_index_overlay_chart.py \
+  --series "<티커1>:<라벨1>:<색상슬롯1>" --series "<티커2>:<라벨2>:<색상슬롯2>" ... \
+  --title "<제목>" --period-label "최근 5년 주간"
+
+# raw 모드 (같은 단위인 자산 — 예: 국채금리 %)
+uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
   --series "<티커1>:<라벨1>:<색상슬롯1>" --series "<티커2>:<라벨2>:<색상슬롯2>" ... \
   --title "<제목>" --period-label "최근 5년 주간"
 ```
 
 색상슬롯은 `docs/meta/macro/`가 이미 쓰는 검증된 8색 팔레트 순번(1=파랑 2=주황 3=아쿠아 4=노랑 5=마젠타 6=초록 7=보라 8=빨강)이다 — 새 배색을 만들지 않고 그 순서를 재사용한다.
 
-| 문서 | 시리즈(티커:라벨:색상슬롯) |
-|------|---------------------------|
-| `macro/fx/comparison.md` | `DX-Y.NYB:달러인덱스 (DXY):1` · `EURUSD=X:유로/달러 환율:2` · `JPY=X:엔/달러 환율:3` · `KRW=X:원/달러 환율:4` |
+| 문서 | 모드 | 시리즈(티커:라벨:색상슬롯) |
+|------|------|---------------------------|
+| `macro/fx/comparison.md` | index | `DX-Y.NYB:달러인덱스 (DXY):1` · `EURUSD=X:유로/달러 환율:2` · `JPY=X:엔/달러 환율:3` · `KRW=X:원/달러 환율:4` |
+| `macro/rates/comparison.md` | raw (`--unit-label "%"`) | `^IRX:미국 13주물 국채금리:1` · `^TNX:미국 10년물 국채금리:2` · `^TYX:미국 30년물 국채금리:3` |
 
 ### 로컬에서 확인하기
 

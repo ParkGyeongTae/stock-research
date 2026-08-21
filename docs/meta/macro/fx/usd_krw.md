@@ -626,7 +626,7 @@
 
 - [달러인덱스 (DXY)](./dxy.md)
 - [코스피](../equities/kospi.md)
-- [fx 4종 비교 (지수화)](./comparison.md)
+- [통화 4종 비교 (지수화)](./comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 - [표기 규칙 개념 정리](../../concepts/notation.md)

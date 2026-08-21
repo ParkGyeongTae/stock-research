@@ -1,4 +1,4 @@
-# 13주 단기금리
+# 미국 13주물 국채금리
 
 !!! note ""
     최근 5년간 미국 13주(3개월) 단기국채 할인율(`^IRX`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 사실상 연준(미국 중앙은행) 기준금리를 시장 가격으로 보여주는 지표라서, 10년물 국채금리와 함께 보면서 **장단기 금리차(수익률곡선)** 국면을 확인할 때 자주 인용한다.
@@ -27,9 +27,9 @@
 .irx-chart .grid { stroke: var(--grid); stroke-width:1; }
 .irx-chart .axis { stroke: var(--axis); stroke-width:1; }
 </style>
-<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="13주 단기금리(^IRX) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="미 국채 13주물 금리(^IRX) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
 <rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
-<text x="60" y="26" class="title" font-size="18">13주 단기금리 (^IRX) — 최근 5년 주봉</text>
+<text x="60" y="26" class="title" font-size="18">미 국채 13주물 금리 (^IRX) — 최근 5년 주봉</text>
 <text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-08-16 ~ 2026-08-17 · 마지막 종가 3.70% (2026-08-17) · 단위 %</text>
 <line x1="60" y1="606.3" x2="1052" y2="606.3" class="grid"/>
 <text x="52" y="610.3" font-size="11" text-anchor="end" fill="var(--muted)">0.00</text>
@@ -624,6 +624,7 @@
 
 - [미국 10년물 국채금리](./treasury_10y.md)
 - [미국 30년물 국채금리](./treasury_30y.md)
+- [미국 국채금리 3종 비교 (수익률곡선)](./comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [밸류에이션 개념 정리](../../concepts/valuation.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)

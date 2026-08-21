@@ -626,7 +626,7 @@
 
 ## 관련 문서
 
-- [미국 30년물 국채금리](./treasury_30y.md)
+- [미국 30년물 국채금리](../rates/treasury_30y.md)
 - [물가연동국채 ETF (TIP)](./tip.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
