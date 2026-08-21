@@ -1,11 +1,6 @@
----
-search:
-  exclude: true
----
-
 # 문서 작성 가이드
 
-이 문서는 `docs/` 안에서 리서치 문서를 **쓰고 관리할 때** 지키는 규칙을 모아둡니다 — 폴더 구조·명명 규칙, 회사 폴더 파일별 역할(01~10 번호 체계), 작성 규칙, 신규 추가 절차, 로컬 확인까지 여기서 다룹니다. 사이트 첫 페이지인 [`../index.md`](../index.md)는 소개·커버리지 범위만 담은 환영 페이지입니다.
+이 문서는 `docs/` 안에서 리서치 문서를 **쓰고 관리할 때** 지키는 규칙을 모아둡니다 — 폴더 구조·명명 규칙, 회사 폴더 파일별 역할(01~10 번호 체계), 작성 규칙, 신규 추가 절차, 로컬 확인까지 여기서 다룹니다. 사이트 방문자용 콘텐츠가 아니라 `docs/`를 쓰고 관리하는 사람(Claude Code 등 에이전트)만 참조하는 절차서라 `docs/` 밖 저장소 루트에 둡니다 — 사이트 첫 페이지는 [`docs/index.md`](./docs/index.md)입니다.
 
 ---
 
@@ -14,22 +9,27 @@ search:
 **`sectors/` 아래에 산업/섹터 폴더**, 그 아래에 회사 폴더를 둡니다. 리서치 콘텐츠는 전부 `sectors/` 한 곳에 모여 있고, `meta/`는 콘텐츠에 종속되지 않는 참고 문서로 별도 depth에 둡니다.
 
 ```
-docs/
-├── .pages                 # 최상위 nav 순서 (awesome-pages 플러그인)
-├── index.md               # 사이트 첫 페이지 — 소개·커버리지 범위만 담은 환영 페이지
-├── meta/                  # 특정 회사·섹터에 종속되지 않는 참고 문서 모음
-│   ├── glossary.md         # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
-│   ├── concepts/            # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
-│   ├── macro/               # 여러 회사 문서가 공통으로 인용하는 거시지표 차트 — 통화·금리·채권·주가지수·금속·에너지·디지털자산 서브폴더로 나뉨
-│   ├── exceptions.md        # 정리 대기 중인 규칙 위반 목록 ("알려진 예외")
-│   └── .template/           # 새 회사/섹터 추가 시 복사해서 쓰는 템플릿 모음 (company/·sector/)
-└── sectors/               # 모든 섹터/회사 리서치 콘텐츠가 이 아래에 모임
-    ├── .pages             # 섹터 nav 순서 — 새 섹터는 여기 등록해야 사이트에 노출됨 (아래 참고)
-    └── <sector>/          # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스 (예: electronic_design_automation) — 그 아래에 회사별 폴더
+stock-research/
+├── AGENTS.md              # 에이전트 역할·행동 지침 (CLAUDE.md는 이 파일의 심볼릭 링크)
+├── README.md              # 레포 설명 (GitHub용)
+├── authoring-guide.md     # 이 문서 — docs/ 작성 규칙
+├── exceptions.md          # 정리 대기 중인 규칙 위반 목록 ("알려진 예외")
+└── docs/
+    ├── .pages             # 최상위 nav 순서 (awesome-pages 플러그인)
+    ├── index.md           # 사이트 첫 페이지 — 소개·커버리지 범위만 담은 환영 페이지
+    ├── meta/              # 특정 회사·섹터에 종속되지 않는 참고 문서 모음
+    │   ├── glossary.md     # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
+    │   ├── concepts/        # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
+    │   ├── macro/           # 여러 회사 문서가 공통으로 인용하는 거시지표 차트 — 통화·금리·채권·주가지수·금속·에너지·디지털자산 서브폴더로 나뉨
+    │   └── .template/       # 새 회사/섹터 추가 시 복사해서 쓰는 템플릿 모음 (company/·sector/)
+    └── sectors/           # 모든 섹터/회사 리서치 콘텐츠가 이 아래에 모임
+        ├── .pages         # 섹터 nav 순서 — 새 섹터는 여기 등록해야 사이트에 노출됨 (아래 참고)
+        └── <sector>/      # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스 (예: electronic_design_automation) — 그 아래에 회사별 폴더
 ```
 
-- 최상위(`docs/`)는 **`index.md` + `meta/`(참고 문서) + `sectors/`(리서치 콘텐츠)**로만 구성 — 리서치 콘텐츠와 참고 문서를 같은 depth에 섞지 않는다
-- `meta/` 안에서도 성격이 갈린다: **`glossary.md`·`concepts/`는 읽는 문서**, **`macro/`는 여러 회사 문서가 공통으로 인용하는 거시지표 차트**(개별 회사·섹터의 밸류에이션 판단은 담지 않음), **`.template/`은 복사해서 쓰는 스캐폴딩**, **`exceptions.md`는 정리 대기 상태를 추적하는 목록**이다 — 같은 폴더에 있는 이유는 모두 "특정 회사·섹터에 종속되지 않는다"는 기준으로 묶였기 때문이다
+- **`authoring-guide.md`(이 문서)·`exceptions.md`는 `docs/` 밖에 있다** — 사이트 방문자가 아니라 `docs/`를 쓰고 관리하는 사람(Claude Code 등)만 참조하는 절차서·정리 대기 목록이라, 사이트에 배포되는 `docs/` 트리와 분리해 `AGENTS.md`와 같은 저장소 루트에 둔다.
+- `docs/`는 **`index.md` + `meta/`(참고 문서) + `sectors/`(리서치 콘텐츠)**로만 구성 — 리서치 콘텐츠와 참고 문서를 같은 depth에 섞지 않는다
+- `meta/` 안에서도 성격이 갈린다: **`glossary.md`·`concepts/`는 읽는 문서**, **`macro/`는 여러 회사 문서가 공통으로 인용하는 거시지표 차트**(개별 회사·섹터의 밸류에이션 판단은 담지 않음), **`.template/`은 복사해서 쓰는 스캐폴딩**이다 — 같은 폴더에 있는 이유는 모두 "특정 회사·섹터에 종속되지 않는다"는 기준으로 묶였기 때문이다
 - `macro/` 하위는 통화·금리·채권·주가지수·금속·에너지·디지털자산 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`crypto/`)로 나뉜다. `rates/`는 실제 거래되는 자산이 아닌 순수 금리·수익률(%), `bonds/`는 실제 거래되는 채권 ETF 가격($)으로 갈린다. 각 문서는 `09_technical_daily.md`·`10_technical_weekly.md`와 같은 `scripts/gen_technical_chart.py`로 생성 — 작성 방법은 아래 "주가가 아닌 시계열에 쓰기" 참고
 - 섹터 폴더명: **풀어 쓴 소문자 스네이크케이스** (예: `electronic_design_automation`, `semiconductor`, `cloud_infrastructure`) — 약어보다 명확한 전체 표기 우선
 - 회사 폴더명: **회사명 소문자 스네이크케이스** (예: `synopsys`, `nvidia`, `apple`)
@@ -81,7 +81,7 @@ docs/
 
 같은 폴더의 다른 문서들은 서로 전부 링크하는 것(풀 메시)이 기본값이다 — 이 표의 파일은 전부 필수이므로 원칙적으로 뺄 링크가 없어야 하고, 아직 정책 적용 전인 기존 회사 폴더처럼 예외적으로 없는 문서가 있을 때만 그 링크를 뺀다.
 
-PER·PBR·DCF·WACC·%p 등 용어가 낯설면 [`glossary.md`](./glossary.md)를 먼저 본다.
+PER·PBR·DCF·WACC·%p 등 용어가 낯설면 [`glossary.md`](./docs/meta/glossary.md)를 먼저 본다.
 
 ### `04_metrics.md` 절 구조
 
@@ -94,17 +94,17 @@ PER·PBR·DCF·WACC·%p 등 용어가 낯설면 [`glossary.md`](./glossary.md)�
 
 ### 숫자를 다룰 때 반드시 지키는 것
 
-문서 간에 숫자가 어긋나는 사고는 대부분 아래 다섯 가지에서 납니다. 정의는 [`glossary.md`](./glossary.md), 예시 풀이는 [`concepts/`](./concepts/financial-metrics.md)에 있습니다.
+문서 간에 숫자가 어긋나는 사고는 대부분 아래 다섯 가지에서 납니다. 정의는 [`glossary.md`](./docs/meta/glossary.md), 예시 풀이는 [`concepts/`](./docs/meta/concepts/financial-metrics.md)에 있습니다.
 
 1. **할인율과 현금흐름의 짝** — `04_metrics.md`의 FCF(`CFO − CapEx`)는 지급이자가 이미 빠진 **Levered FCF**(≈ FCFE)다. DCF에서 이 값을 할인할 땐 **자기자본비용(Ke)**을 쓰고 순부채를 따로 빼지 않는다. WACC를 쓰려면 현금흐름을 FCFF(≈ EBIT×(1−t) + D&A − CapEx − ΔWC)로 바꾸고 마지막에 순부채를 차감해야 한다 — **섞으면 결과가 틀린다.** 정통 FCFE는 여기에 Net Borrowing(신규 차입 − 상환)을 더한 값이므로, 표 기간에 순차입이 크게 변한 회사(대규모 자사주매입용 차입, 대규모 채무상환)는 그 해만 별도 보정하거나 FCFF+WACC 프레임으로 통일하는 편이 안전하다.
 2. **GAAP / Non-GAAP 구분** — 행마다 어느 기준인지 표기. 둘의 차이가 무엇으로 채워져 있는지(SBC / 인수 무형자산 상각 / 일회성)를 각주로 분해할 것. 반복되는 SBC를 "일회성 제거"로 읽지 않는다.
-3. **부채총계 vs 이자부 차입금** — 정의는 [`glossary.md`](./glossary.md) "부채비율"·"순부채" 항목 참고, 두 값을 섞지 않는다. ⚠️ 미국 10-K의 **D/E ratio**(Debt-to-Equity)는 대개 이자부 차입금 ÷ 자기자본을 가리켜 이 레포의 부채비율 정의(부채총계 기준)와 다르다 — 10-K가 보고한 D/E 값을 그대로 "부채비율" 열에 옮기지 말 것.
+3. **부채총계 vs 이자부 차입금** — 정의는 [`glossary.md`](./docs/meta/glossary.md) "부채비율"·"순부채" 항목 참고, 두 값을 섞지 않는다. ⚠️ 미국 10-K의 **D/E ratio**(Debt-to-Equity)는 대개 이자부 차입금 ÷ 자기자본을 가리켜 이 레포의 부채비율 정의(부채총계 기준)와 다르다 — 10-K가 보고한 D/E 값을 그대로 "부채비율" 열에 옮기지 말 것.
 4. **평균·중앙값에 추정치(E)를 섞지 않는다** — 확정치만으로 계산하고, 몇 개년 기준인지 각주에 남긴다.
 5. **주식분할 소급조정** — 표 기간 내 분할·병합이 있었으면 과거 전 구간(주가·EPS·BPS·DPS·주식수)을 조정 후 기준으로 맞춘다.
 
 ### 사업 고유 지표 (`04_metrics.md` C절)
 
-표준 재무 지표만으로는 그 회사의 동력이 안 잡히는 경우가 있습니다 — 방산의 **수주잔고·book-to-bill**, 구독 소프트웨어의 **ARR·NRR·RPO**, 플랫폼의 **거래대금·테이크레이트**, 금융의 **AUC·예치금 운용수익(float)** 같은 것들입니다. 정의는 [`glossary.md`](./glossary.md) "5. 사업 모델 · 성장 지표"에 있습니다.
+표준 재무 지표만으로는 그 회사의 동력이 안 잡히는 경우가 있습니다 — 방산의 **수주잔고·book-to-bill**, 구독 소프트웨어의 **ARR·NRR·RPO**, 플랫폼의 **거래대금·테이크레이트**, 금융의 **AUC·예치금 운용수익(float)** 같은 것들입니다. 정의는 [`glossary.md`](./docs/meta/glossary.md) "5. 사업 모델 · 성장 지표"에 있습니다.
 
 1. **지표는 회사가 아니라 섹터 단위로 정한다** — 같은 섹터의 모든 회사가 같은 지표를 채워야 회사 간 비교가 됩니다. 한 회사만 backlog를 기록하면 다른 회사와 나란히 놓고 비교할 수 없습니다. 섹터의 표준 지표는 첫 회사의 `04_metrics.md` C절에서 정하고, 다음 회사가 그 지표를 그대로 따릅니다.
 2. **최대 5개** — 회사 IR이 자랑하는 지표를 다 옮기면 갱신이 안 돼 금방 낡습니다. "이 숫자가 나빠지면 투자 논거가 흔들리는가"로 고릅니다.
@@ -177,7 +177,7 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
   --adj-note "환율 원자료(조정 없음)"
 ```
 
-이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. 새 지표를 만들 땐 위 "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`crypto/`) 중 맞는 곳에 두세요 — 실제 예시는 [`fx/usd_krw.md`](./macro/fx/usd_krw.md)·[`rates/treasury_10y.md`](./macro/rates/treasury_10y.md)를 참고하세요.
+이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. 새 지표를 만들 땐 위 "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`crypto/`) 중 맞는 곳에 두세요 — 실제 예시는 [`fx/usd_krw.md`](./docs/meta/macro/fx/usd_krw.md)·[`rates/treasury_10y.md`](./docs/meta/macro/rates/treasury_10y.md)를 참고하세요.
 
 ### macro 문서 재현 파라미터
 

@@ -25,7 +25,7 @@ description: 아직 `00_overview.md`가 없는 섹터(완전히 새로운 섹터
    - 있으면(회사 폴더는 이미 있는데 `00_overview.md`만 없는 경우) 폴더는 그대로 두고 `00_overview.md`만 추가한다.
 
 2. **템플릿 복사**
-   명령은 `docs/meta/authoring-guide.md` "➕ 새 회사 / 새 섹터 추가 방법"의 4번 그대로 따른다.
+   명령은 `authoring-guide.md` "➕ 새 회사 / 새 섹터 추가 방법"의 4번 그대로 따른다.
    폴더 자체가 새로 생긴 경우에만 `docs/sectors/.pages`의 `nav:`에 폴더명을 추가한다(등록 안 해도 빌드는 성공하지만 내비게이션에서 조용히 빠진다 — 경고 없음). 기존 섹터에 `00_overview.md`만 추가하는 경우는 이미 등록돼 있으므로 불필요.
 
 3. **콘텐츠를 산업 스코프 안에서 채운다** (템플릿의 절 순서대로)
@@ -57,4 +57,4 @@ description: 아직 `00_overview.md`가 없는 섹터(완전히 새로운 섹터
 ## 참고
 
 - 완전히 새로운 섹터에서 첫 회사를 동시에 추가하는 상황이면 `create-company-doc`과 이 스킬을 함께 쓴다 — 순서는 상관없지만, 회사 문서 §3에서 `00_overview.md`를 링크하려면 이 스킬로 그 파일을 먼저 만들어두는 편이 자연스럽다.
-- 문서 스코프·형식의 마스터는 `docs/meta/.template/sector/00_overview.md`와 `docs/meta/authoring-guide.md`다 — 이 스킬은 그 스코프를 신규 작성 흐름에서 지키게 할 뿐, 새 기준을 만들지 않는다.
+- 문서 스코프·형식의 마스터는 `docs/meta/.template/sector/00_overview.md`와 `authoring-guide.md`다 — 이 스킬은 그 스코프를 신규 작성 흐름에서 지키게 할 뿐, 새 기준을 만들지 않는다.
