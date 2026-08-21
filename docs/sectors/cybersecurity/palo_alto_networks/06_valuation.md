@@ -27,9 +27,9 @@
 |-----------|-----|------|--------|
 | 목표 PER (Non-GAAP 기준) | 55.2배 | 최근 3개년(FY2023~FY2025) Non-GAAP PER 평균([`04_metrics.md`](./04_metrics.md) A.2: 56.3x/57.2x/52.0x) | **Medium** — 3개년뿐이라 표본이 짧고, CyberArk 인수로 사업 믹스가 바뀌어 과거 배수가 미래에도 유효할지 불확실. 현재 시장의 실제 선행(forward) PER은 약 98배로 이 평균보다 훨씬 높아, 시장은 이미 "구조적 재평가"를 반영 중일 가능성 — §4-B·§5에서 이 괴리를 별도로 다룸 |
 | 목표 PBR | 12배 (참고용) | 2026-04-30 기준 실제 PBR(약 11.3배, [`04_metrics.md`](./04_metrics.md) A.2)에 근접한 수준을 그대로 채택 — 과거 3개년 평균(약 26배)은 인수 전 자본구조라 왜곡돼 있어 미채택 | **Low** |
-| **DCF 현금흐름 기준** | FCFE ([`04_metrics.md`](./04_metrics.md) A.4의 FCF = CFO−CapEx) | GAAP CFO는 지급이자가 이미 차감돼 있어 FCFE 성격([`glossary.md`](../../../meta/glossary.md) "FCFE/FCFF") | — |
+| **DCF 현금흐름 기준** | FCFE ([`04_metrics.md`](./04_metrics.md) A.4의 FCF = CFO−CapEx) | GAAP CFO는 지급이자가 이미 차감돼 있어 FCFE 성격([용어집](../../../meta/glossary.md) "FCFE/FCFF") | — |
 | 할인율 (Ke, 자기자본비용) | **9.0%** (범위 8.3~9.55%) | CAPM 자체 계산: 무위험이자율 4.65%(10Y 미 국채, 2026-08-14) + β 0.89(stockanalysis.com) × ERP 5.5%(장기 평균 추정) = 9.55%. valueinvesting.io Cost of Equity 8.35%와 평균해 9.0%로 채택 | **Medium** — 두 출처 간 편차(8.35% vs 9.55%)가 작지 않아 범위로 관리 |
-| GuruFocus WACC(10.37%) 미채택 사유 | 참고만 함, DCF엔 미사용 | FCFE를 WACC로 할인하면 순부채를 이중 반영하는 오류([`glossary.md`](../../../meta/glossary.md) "FCFE/FCFF"). PANW는 FY2023~FY2025 순현금 상태였고 CyberArk 인수 이후 자본구조가 급변 중이라(§ [`04_metrics.md`](./04_metrics.md) A.3) WACC 프레임 전환 자체도 지금은 부적절 | — |
+| GuruFocus WACC(10.37%) 미채택 사유 | 참고만 함, DCF엔 미사용 | FCFE를 WACC로 할인하면 순부채를 이중 반영하는 오류([용어집](../../../meta/glossary.md) "FCFE/FCFF"). PANW는 FY2023~FY2025 순현금 상태였고 CyberArk 인수 이후 자본구조가 급변 중이라(§ [`04_metrics.md`](./04_metrics.md) A.3) WACC 프레임 전환 자체도 지금은 부적절 | — |
 | 순부채 차감 여부 | 해당 없음 (FCFE 사용) | FCFE는 이미 주주 귀속 현금흐름이라 EV→주주가치 환산(순부채 차감) 불필요 | — |
 | SBC 차감 여부 | **미차감** | [`04_metrics.md`](./04_metrics.md) A.4의 표준 FCF(CFO−CapEx) 사용. SBC가 매출의 13~16%를 차지하는 구조적 비용이라, 아래 DCF 결과는 **SBC를 걷어내지 않은 낙관적 값**이다 — SBC 차감 후 FCF(A.4)는 원래 FCF보다 40~45% 낮음 | — |
 | 영구/장기 성장률 (DCF) | 3.0% | 미국 장기 명목 GDP 성장률 근사치. 별도 컨센서스는 확인 못함 | **Medium** |
@@ -175,4 +175,4 @@ FY2026(E)은 회사 가이던스(Non-GAAP EPS)를 최대한 사용했으나 FCF�
 
 ---
 
-*작성일: 2026-08-16*
+*작성일: 2026-08-16 (최종 수정일: 2026-08-21)*

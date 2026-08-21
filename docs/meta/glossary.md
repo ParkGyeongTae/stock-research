@@ -1,10 +1,10 @@
 # 용어집
 
-`.template/company/`·`.template/sector/`의 문서들이 설명 없이 바로 쓰는 용어를 한 곳에 모은 참고 문서입니다. 특정 회사·섹터에 종속되지 않는 내용이라 `docs/meta/`에 `.template/`·`concepts/`와 함께 둡니다.
+회사·섹터 문서 템플릿이 설명 없이 바로 쓰는 용어를 한 곳에 모은 참고 문서입니다. 특정 회사·섹터에 종속되지 않는 일반적인 정의만 다룹니다.
 
 > ⚠️ 이 문서는 **일반적인 정의**만 다룬다. 특정 회사 문서(`06_valuation.md` 등)에 그 회사만의 가정·근거가 각주로 따로 적혀 있다면 그쪽이 우선한다 — 여기서 개념을 확인하고, 실제 계산 방식은 항상 해당 회사 문서에서 확인할 것.
 >
-> 여기 표는 **빠르게 찾아보는 용도**라 정의가 1~2문장으로 압축돼 있다. 공식이 왜 그렇게 생겼는지, 실제 숫자로 계산하면 어떻게 되는지 제대로 이해하고 싶다면 각 절 제목 아래 링크된 `concepts/` 학습용 문서(맨 아래 "관련 문서"에 전체 목록)를 참고할 것.
+> 여기 표는 **빠르게 찾아보는 용도**라 정의가 1~2문장으로 압축돼 있다. 공식이 왜 그렇게 생겼는지, 실제 숫자로 계산하면 어떻게 되는지 제대로 이해하고 싶다면 각 절 제목 아래 링크된 개념 정리 학습용 문서(맨 아래 "관련 문서"에 전체 목록)를 참고할 것.
 >
 > ⚠️ **수치를 적지 않는 것이 원칙이다.** 특히 §9 거시경제의 기준금리·물가상승률·국채수익률 같은 값은 계속 변하므로 여기에는 "무엇을 뜻하는 지표인가"만 적고, 실제 수준은 항상 원출처(FRED, BLS, 연준, 재무부 등)에서 확인할 것.
 
@@ -33,7 +33,7 @@
 
 ## 1. 재무제표 기초 { #financial-statements }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/financial-statements.md`](./concepts/financial-statements.md)
+> 📖 예시로 풀어 쓴 설명: [재무제표 기초](./concepts/financial-statements.md)
 >
 > 재무제표를 처음 본다면 여기부터 시작하세요. §2·§6의 지표는 전부 이 세 표에서 나옵니다.
 
@@ -46,7 +46,7 @@
 | **매출원가 (COGS)** | 그 매출을 일으키는 데 직접 든 원가(재료비·직접 인건비·클라우드 비용 등). |
 | **매출총이익** (Gross Profit) | 매출 − 매출원가. 판매·관리·연구개발 비용을 대기 전의 1차 이익. |
 | **판매관리비 (SG&A)** | 영업·마케팅·일반관리 비용. 매출 성장 대비 SG&A 증가 속도를 보면 성장이 효율적인지 드러난다. |
-| **연구개발비 (R&D)** | 미국 GAAP에서는 원칙적으로 발생 즉시 비용 처리한다(자산화하지 않음) — R&D가 큰 회사는 그만큼 당장의 이익이 낮게 나올 뿐, 미래 경쟁력을 만드는 투자일 수 있다. 예시는 [`concepts/financial-statements.md`](./concepts/financial-statements.md) 참고. |
+| **연구개발비 (R&D)** | 미국 GAAP에서는 원칙적으로 발생 즉시 비용 처리한다(자산화하지 않음) — R&D가 큰 회사는 그만큼 당장의 이익이 낮게 나올 뿐, 미래 경쟁력을 만드는 투자일 수 있다. 예시는 [재무제표 기초](./concepts/financial-statements.md) 참고. |
 | **영업이익 (EBIT)** | 매출 − 매출원가 − 판관비 − R&D. 본업에서 남긴 이익으로, 이자·세금의 영향을 받기 전 단계. |
 | **EBITDA** | 영업이익 + 감가상각비·무형자산상각비(D&A). 설비 투자 방식과 감가상각 정책 차이를 걷어내고 비교하려는 지표. **CapEx가 큰 회사에서는 실제 현금창출력을 과대평가한다**(§4 참고). |
 | **D&A (감가상각 / 상각)** | 설비·건물처럼 여러 해 쓰는 자산의 취득원가를 사용 기간에 나눠 비용으로 인식하는 것(유형=감가상각, 무형=상각). 현금이 나가지 않는 비용이라 현금흐름표에서 다시 더해진다. |
@@ -72,7 +72,7 @@
 
 ## 2. 재무 지표 { #financial-metrics }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/financial-metrics.md`](./concepts/financial-metrics.md)
+> 📖 예시로 풀어 쓴 설명: [재무 지표](./concepts/financial-metrics.md)
 
 | 용어 | 뜻 |
 |------|-----|
@@ -80,8 +80,8 @@
 | **EPS** (주당순이익, Earnings Per Share) | 순이익 ÷ 희석주식수. GAAP/Non-GAAP 두 기준으로 나눠 기록(아래 참고). |
 | **BPS** (주당순자산, Book Value Per Share) | 자기자본 ÷ 희석주식수. PBR 계산의 기준값. |
 | **DPS** (주당배당금, Dividend Per Share) | 1주당 지급한 배당금. 무배당 기업은 0으로 기록(행을 지우지 않음). |
-| **GAAP vs Non-GAAP** | GAAP은 미국 회계기준에 따른 공식 수치, Non-GAAP은 회사가 특정 비용을 제외해 조정한 수치. 제외 항목엔 일회성뿐 아니라 **SBC·무형자산상각처럼 매년 반복되는 항목**도 흔히 포함되므로 무엇을 뺐는지 항목별로 확인하고, 어느 기준인지 행마다 구분해서 기록할 것 — 예시는 [`concepts/financial-metrics.md`](./concepts/financial-metrics.md) 참고. |
-| **SBC** (주식보상비용, Stock-Based Compensation) | 스톡옵션·RSU 지급을 비용으로 인식한 금액. 현금이 나가지 않아 CFO에 다시 더해지므로 **FCF와 Non-GAAP EPS 양쪽에서 동시에 사라지지만**, 실제로는 희석주식수 증가로 기존 주주 몫을 줄이는 실질 비용이다 — 매출 대비 SBC 비율과 희석주식수 추이를 함께 기록할 것. 자세한 예시는 [`concepts/financial-metrics.md`](./concepts/financial-metrics.md) 참고. |
+| **GAAP vs Non-GAAP** | GAAP은 미국 회계기준에 따른 공식 수치, Non-GAAP은 회사가 특정 비용을 제외해 조정한 수치. 제외 항목엔 일회성뿐 아니라 **SBC·무형자산상각처럼 매년 반복되는 항목**도 흔히 포함되므로 무엇을 뺐는지 항목별로 확인하고, 어느 기준인지 행마다 구분해서 기록할 것 — 예시는 [재무 지표](./concepts/financial-metrics.md) 참고. |
+| **SBC** (주식보상비용, Stock-Based Compensation) | 스톡옵션·RSU 지급을 비용으로 인식한 금액. 현금이 나가지 않아 CFO에 다시 더해지므로 **FCF와 Non-GAAP EPS 양쪽에서 동시에 사라지지만**, 실제로는 희석주식수 증가로 기존 주주 몫을 줄이는 실질 비용이다 — 매출 대비 SBC 비율과 희석주식수 추이를 함께 기록할 것. 자세한 예시는 [재무 지표](./concepts/financial-metrics.md) 참고. |
 | **FCF** (잉여현금흐름, Free Cash Flow) | 영업활동현금흐름(CFO) − 자본적지출(CapEx). 배당·자사주매입·재투자에 실제 쓸 수 있는 현금. 미국 GAAP에서 CFO는 지급이자를 이미 차감한 뒤의 값이라 이 FCF는 **FCFE(주주 귀속) 성격**이며, SBC는 차감돼 있지 않다(위 SBC 항목 참고). |
 | **FCFPS** (FCF per share) | FCF ÷ 희석주식수. DCF의 기준값이며, 위 정의상 FCFE 기준이므로 **자기자본비용(Ke)으로 할인**해야 정합적이다. |
 | **CFO / CapEx** | CFO(영업활동현금흐름)는 본업에서 벌어들인 현금, CapEx(자본적지출)는 설비·시설 등에 재투자한 현금. |
@@ -102,7 +102,7 @@
 
 ## 3. 표기 규칙 { #notation }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/notation.md`](./concepts/notation.md)
+> 📖 예시로 풀어 쓴 설명: [표기 규칙](./concepts/notation.md)
 
 | 용어 | 뜻 |
 |------|-----|
@@ -126,7 +126,7 @@
 
 ## 4. 수익성 · 효율성 · 안정성 심화 { #advanced-metrics }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/advanced-metrics.md`](./concepts/advanced-metrics.md)
+> 📖 예시로 풀어 쓴 설명: [수익성 · 효율성 · 안정성 심화](./concepts/advanced-metrics.md)
 >
 > §2가 "자주 쓰는 지표"라면, 여기는 **자본을 얼마나 잘 굴리는가**와 **버틸 힘이 있는가**를 보는 지표들입니다.
 
@@ -159,7 +159,7 @@
 
 ## 5. 사업 모델 · 성장 지표 { #business-metrics }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/business-metrics.md`](./concepts/business-metrics.md)
+> 📖 예시로 풀어 쓴 설명: [사업 모델 · 성장 지표](./concepts/business-metrics.md)
 >
 > 회사가 속한 업종에 따라 "봐야 할 숫자"가 달라집니다. 구독 소프트웨어·수주 산업·플랫폼·금융은 각각 핵심 지표가 다릅니다.
 
@@ -192,7 +192,7 @@
 
 ## 6. 밸류에이션 방법론 { #valuation }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/valuation.md`](./concepts/valuation.md)
+> 📖 예시로 풀어 쓴 설명: [밸류에이션 방법론](./concepts/valuation.md)
 
 ### 6.1 상대가치 (배수) 방식
 
@@ -200,11 +200,11 @@
 |------|-----|
 | **PER** (주가수익비율, Price to Earnings Ratio) | 주가 ÷ EPS. 적정주가 = EPS × 목표 PER. 이익이 안정적인 기업에 가장 널리 쓰이는 상대가치 지표. 적자 기업엔 부적합. |
 | **PBR** (주가순자산비율, Price to Book Ratio) | 주가 ÷ BPS. 적정주가 = BPS × 목표 PBR. 순자산(장부가치) 대비 주가 수준. 금융/자산주나 적자 기업 평가에 유용하나, 대형 M&A로 자기자본이 단절적으로 급변하면 과거 평균 배수가 왜곡될 수 있음. |
-| **PSR** (주가매출비율, Price to Sales Ratio) | 시가총액 ÷ 매출. 적자라 PER을 못 쓰는 고성장 기업에 쓰지만 **이익률을 전혀 반영하지 않으므로** 반드시 매출총이익률과 함께 볼 것 — 예시는 [`concepts/valuation.md`](./concepts/valuation.md) 참고. |
+| **PSR** (주가매출비율, Price to Sales Ratio) | 시가총액 ÷ 매출. 적자라 PER을 못 쓰는 고성장 기업에 쓰지만 **이익률을 전혀 반영하지 않으므로** 반드시 매출총이익률과 함께 볼 것 — 예시는 [밸류에이션 방법론](./concepts/valuation.md) 참고. |
 | **EV/Sales** | EV ÷ 매출. PSR과 취지는 같으나 분자에 순부채를 포함해 자본구조 차이를 걷어낸 버전. 순차입이 큰 회사를 PSR로 비교하면 저평가로 보이는 착시가 생기므로 이쪽이 더 정확하다. |
 | **EV/EBITDA** | EV ÷ EBITDA. 감가상각 정책·자본구조·세율 차이를 걷어내고 비교할 수 있어 M&A와 자본집약 산업에서 표준처럼 쓰인다. 단 CapEx가 큰 회사일수록 EBITDA는 실제 현금창출력을 과대평가한다(§4 "EBITDA의 함정" 참고). |
 | **EV/EBIT** | EV ÷ 영업이익. EV/EBITDA와 달리 감가상각을 비용으로 인정하므로, 설비 재투자 부담이 큰 회사를 볼 땐 이쪽이 더 보수적이고 현실적이다. |
-| **PEG** (Price/Earnings to Growth) | PER ÷ 이익성장률(%). 통상 1 미만이면 저렴하다고 해석하지만, 성장률을 몇 년 기준으로 잡느냐에 따라 값이 크게 갈리므로 **기준 기간을 반드시 함께 표기**할 것 — 예시는 [`concepts/valuation.md`](./concepts/valuation.md) 참고. |
+| **PEG** (Price/Earnings to Growth) | PER ÷ 이익성장률(%). 통상 1 미만이면 저렴하다고 해석하지만, 성장률을 몇 년 기준으로 잡느냐에 따라 값이 크게 갈리므로 **기준 기간을 반드시 함께 표기**할 것 — 예시는 [밸류에이션 방법론](./concepts/valuation.md) 참고. |
 | **FCF 수익률** (FCF Yield) | FCF ÷ 시가총액(또는 FCFPS ÷ 주가). "이 회사를 통째로 사면 매년 시총 대비 몇 %의 현금이 나오는가". 국채수익률과 직접 비교할 수 있어 금리 환경 변화의 영향을 가늠하기 좋다. |
 | **이익수익률** (Earnings Yield) | EPS ÷ 주가 = PER의 역수. PER 25배 = 이익수익률 4%. 국채수익률과 나란히 놓고 "주식이 채권 대비 얼마나 보상해주는가"를 볼 때 쓴다. |
 | **배당수익률 기준 평가** | DPS ÷ 주가. 성숙한 배당주에서 과거 배당수익률 밴드의 상단(주가가 싼 구간)·하단을 비교 잣대로 삼는 방식. 배당 삭감 위험이 있으면 무의미해지므로 배당성향·FCF 커버리지와 함께 볼 것. |
@@ -217,8 +217,8 @@
 | 용어 | 뜻 |
 |------|-----|
 | **DCF** (현금흐름할인법, Discounted Cash Flow) | 미래 잉여현금흐름을 할인해 내재가치를 산정하는 절대가치 방식. **할인율과 현금흐름의 짝을 맞추는 것이 전제** — 아래 "FCFE / FCFF" 항목을 반드시 먼저 볼 것. |
-| **FCFE / FCFF — 할인율 정합성** | **FCFE**(주주 귀속, 실무상 ≈ `CFO − CapEx`)는 **자기자본비용(Ke)**으로, **FCFF**(기업 전체 귀속)는 **WACC**로 할인해 EV를 구한 뒤 순부채를 차감한다 — 둘을 섞으면(예: FCFE를 WACC로 할인) 결과가 틀린다. 오차 크기를 숫자로 보려면 [`concepts/valuation.md`](./concepts/valuation.md) 참고. |
-| **Gordon growth 모델 (1단계 DCF)** | DCF의 가장 단순한 형태: 주주가치/주 ≈ FCFEPS × (1+g) ÷ (Ke − g)(FCFF 기준이면 같은 식으로 EV를 구한 뒤 순부채 차감). 실제 성장률이 g보다 훨씬 높은 고성장 기업엔 구조적으로 낮은 값이 나오므로 **2단계 모델**을 쓰거나 한계를 명시할 것 — 민감도 예시는 [`concepts/valuation.md`](./concepts/valuation.md) 참고. |
+| **FCFE / FCFF — 할인율 정합성** | **FCFE**(주주 귀속, 실무상 ≈ `CFO − CapEx`)는 **자기자본비용(Ke)**으로, **FCFF**(기업 전체 귀속)는 **WACC**로 할인해 EV를 구한 뒤 순부채를 차감한다 — 둘을 섞으면(예: FCFE를 WACC로 할인) 결과가 틀린다. 오차 크기를 숫자로 보려면 [밸류에이션 방법론](./concepts/valuation.md) 참고. |
+| **Gordon growth 모델 (1단계 DCF)** | DCF의 가장 단순한 형태: 주주가치/주 ≈ FCFEPS × (1+g) ÷ (Ke − g)(FCFF 기준이면 같은 식으로 EV를 구한 뒤 순부채 차감). 실제 성장률이 g보다 훨씬 높은 고성장 기업엔 구조적으로 낮은 값이 나오므로 **2단계 모델**을 쓰거나 한계를 명시할 것 — 민감도 예시는 [밸류에이션 방법론](./concepts/valuation.md) 참고. |
 | **2단계 / 다단계 DCF** | 명시적 예측기간(보통 5~10년)의 현금흐름을 연도별로 할인하고, 그 이후는 터미널 밸류로 한 번에 처리하는 방식. 고성장 기업의 표준 접근. |
 | **터미널 밸류** (TV, 잔존가치) | 명시적 예측기간 이후의 가치를 한 덩어리로 계산한 값. 영구성장 방식(`FCF×(1+g) ÷ (r−g)`)이나 출구배수 방식(`최종연도 EBITDA × 목표 EV/EBITDA`)을 쓰며, **DCF 총가치의 60~80%가 여기서 나오는 경우가 흔하므로** 비중을 반드시 밝힐 것. |
 | **영구성장률 (g)** | DCF에서 예측 기간 이후 현금흐름이 영원히 성장한다고 가정하는 비율. 통상 장기 명목 GDP 성장률(2~3%) 근사치를 씀. **g가 장기 경제성장률을 넘으면 그 회사가 언젠가 경제 전체보다 커진다는 뜻**이 되므로 성립하지 않는다. |
@@ -226,12 +226,12 @@
 | **NPV** (순현재가치) | 미래 현금흐름의 현재가치 합계 − 초기 투자액. 0보다 크면 그 투자는 요구수익률을 넘는다는 뜻. DCF의 기본 원리 자체다. |
 | **IRR** (내부수익률) | NPV를 0으로 만드는 할인율. "이 투자가 연 몇 %의 수익률인가"로 읽는다. 현금흐름 부호가 여러 번 바뀌면 해가 여러 개 나올 수 있어 NPV와 함께 봐야 한다. |
 | **현재가치 / 할인** | 미래의 1달러는 오늘의 1달러보다 가치가 낮다(그동안 굴릴 수 있었으므로). 이 차이를 되돌리는 계산이 할인이며, 할인율이 높을수록·시점이 멀수록 현재가치는 작아진다(성장주가 금리에 더 민감한 이유는 §9 "금리가 주가에 닿는 두 경로" 참고). |
-| **SOTP** (부문별 합산가치, Sum of the Parts) | 사업부별로 각각 다른 방법론·배수를 적용해 가치를 매기고 합산한 뒤, 순부채와 지주회사 할인을 조정하는 방식 — 성격이 다른 사업을 겸영하는 회사에 단일 배수보다 타당하다. 계산 예시는 [`concepts/valuation.md`](./concepts/valuation.md) 참고. |
-| **잔여이익모형** (RIM, Residual Income Model) | 가치 = 현재 자기자본 장부가 + 미래 초과이익(순이익 − 자기자본비용×자기자본)의 현재가치. 상당 부분이 이미 확정된 장부가에서 나와 터미널 밸류 의존도가 낮다(금융회사 평가에 자주 쓰임) — 수치 예시는 [`concepts/valuation.md`](./concepts/valuation.md) 참고. |
+| **SOTP** (부문별 합산가치, Sum of the Parts) | 사업부별로 각각 다른 방법론·배수를 적용해 가치를 매기고 합산한 뒤, 순부채와 지주회사 할인을 조정하는 방식 — 성격이 다른 사업을 겸영하는 회사에 단일 배수보다 타당하다. 계산 예시는 [밸류에이션 방법론](./concepts/valuation.md) 참고. |
+| **잔여이익모형** (RIM, Residual Income Model) | 가치 = 현재 자기자본 장부가 + 미래 초과이익(순이익 − 자기자본비용×자기자본)의 현재가치. 상당 부분이 이미 확정된 장부가에서 나와 터미널 밸류 의존도가 낮다(금융회사 평가에 자주 쓰임) — 수치 예시는 [밸류에이션 방법론](./concepts/valuation.md) 참고. |
 | **청산가치** (Liquidation Value) | 자산을 모두 팔고 부채를 갚았을 때 남는 값. 계속기업 가정이 흔들리는 회사의 하방 기준선으로 쓴다. |
 | **DCF 민감도 분석** | 할인율·g 가정을 조금씩 바꿔가며 DCF 적정주가가 얼마나 흔들리는지 보는 표. `(할인율−g)`가 작을수록 민감도가 커짐. |
 | **시나리오 분석** | 낙관/기본/보수 세 가지 가정 묶음으로 각각 값을 내는 것. 민감도 분석이 "변수 하나씩"을 흔든다면, 시나리오는 "서로 연관된 변수들을 한꺼번에" 흔든다(예: 침체 시 매출↓·마진↓·배수↓가 동시에). |
-| **역DCF** (Reverse DCF) | 현재 주가를 정당화하려면 어떤 성장률·마진이 필요한지 거꾸로 푸는 방법 — **"시장은 지금 무엇을 가정하고 있나"**를 묻는 유용한 교차검증이다. 계산 예시는 [`concepts/valuation.md`](./concepts/valuation.md) 참고. |
+| **역DCF** (Reverse DCF) | 현재 주가를 정당화하려면 어떤 성장률·마진이 필요한지 거꾸로 푸는 방법 — **"시장은 지금 무엇을 가정하고 있나"**를 묻는 유용한 교차검증이다. 계산 예시는 [밸류에이션 방법론](./concepts/valuation.md) 참고. |
 
 ### 6.3 할인율 구성요소
 
@@ -243,7 +243,7 @@
 | **무위험이자율 (Rf)** | 위험이 없다고 간주하는 수익률. 통상 미국 10년물 국채수익률을 쓴다. **DCF 대상 현금흐름의 기간과 만기를 맞추는 것**이 원칙(장기 현금흐름엔 10년물·30년물). |
 | **베타 (β)** | 시장 전체가 1% 움직일 때 이 주식이 몇 % 움직이는지. 1보다 크면 시장보다 변동이 크다는 뜻. 추정 기간(2년/5년)과 비교 지수에 따라 값이 달라지므로 어느 기준인지 밝힐 것. |
 | **시장위험프리미엄 (ERP)** | 주식시장 전체가 무위험이자율 대비 추가로 요구되는 수익률. 통상 4~6% 범위의 추정치가 쓰이며, 출처마다 편차가 크므로 **한 값으로 단정하지 말고 범위로 기록**한다. |
-| **타인자본비용 (Kd)** | 회사가 부채로 자금을 조달할 때 부담하는 이자율. 이자비용 ÷ 평균 이자부 차입금으로 근사하거나 신용등급 기준 시장 금리를 쓰며, 세후(`Kd×(1−t)`) 기준으로 WACC에 넣는다 — 이유는 [`concepts/valuation.md`](./concepts/valuation.md) 참고. |
+| **타인자본비용 (Kd)** | 회사가 부채로 자금을 조달할 때 부담하는 이자율. 이자비용 ÷ 평균 이자부 차입금으로 근사하거나 신용등급 기준 시장 금리를 쓰며, 세후(`Kd×(1−t)`) 기준으로 WACC에 넣는다 — 이유는 [밸류에이션 방법론](./concepts/valuation.md) 참고. |
 | **규모 프리미엄 / 국가 위험 프리미엄** | 소형주나 신흥국 기업에 CAPM 결과 위로 추가하는 할인율 가산분. 자의성이 크므로 얼마를 왜 더했는지 반드시 밝힐 것. |
 | **요구수익률 (r)** | 투자자가 이 자산에 최소한 기대하는 수익률. DDM의 할인율이며, 주식에서는 대개 Ke와 같은 뜻으로 쓴다. |
 | **자본비용 vs 기대수익률** | 회사 입장에서는 "자본을 쓰는 대가(비용)", 투자자 입장에서는 "요구하는 수익률"로, 같은 숫자를 양쪽에서 부르는 이름이다. |
@@ -262,7 +262,7 @@
 
 ## 7. 투자 판단 / 거버넌스 용어 { #investment-terms }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/investment-terms.md`](./concepts/investment-terms.md)
+> 📖 예시로 풀어 쓴 설명: [투자 판단 / 거버넌스 용어](./concepts/investment-terms.md)
 
 | 용어 | 뜻 |
 |------|-----|
@@ -291,7 +291,7 @@
 
 ## 8. 리스크 · 회계 품질 { #risk }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/risk-and-quality.md`](./concepts/risk-and-quality.md)
+> 📖 예시로 풀어 쓴 설명: [리스크 · 회계 품질](./concepts/risk-and-quality.md)
 >
 > Bear Case(§7)를 구체적으로 쓰려면, "무엇이 위험인가"를 종류별로 나눠 볼 수 있어야 합니다.
 
@@ -331,7 +331,7 @@
 
 ## 9. 거시경제 { #macro }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/macroeconomics.md`](./concepts/macroeconomics.md)
+> 📖 예시로 풀어 쓴 설명: [거시경제](./concepts/macroeconomics.md)
 >
 > ⚠️ 아래 지표들의 **현재 수준은 여기 적지 않는다.** 계속 바뀌므로 항상 원출처(FRED, BLS, 연준, 미 재무부)에서 확인할 것. 여기서는 "그 지표가 무엇이고 주가에 어떤 경로로 닿는가"만 다룬다.
 
@@ -369,7 +369,7 @@
 
 ## 10. 시장 구조 · 거래 { #market }
 
-> 📖 예시로 풀어 쓴 설명: [`concepts/market-structure.md`](./concepts/market-structure.md)
+> 📖 예시로 풀어 쓴 설명: [시장 구조 · 거래](./concepts/market-structure.md)
 
 | 용어 | 뜻 |
 |------|-----|
@@ -399,18 +399,17 @@
 ## 관련 문서
 
 - [사이트 첫 페이지](../index.md)
-- 개념을 예시로 풀어 쓴 학습용 문서:
-    - [`concepts/financial-statements.md`](./concepts/financial-statements.md) — 재무제표 3종 읽는 법 (입문)
-    - [`concepts/financial-metrics.md`](./concepts/financial-metrics.md) — 재무 지표
-    - [`concepts/notation.md`](./concepts/notation.md) — 표기 규칙
-    - [`concepts/advanced-metrics.md`](./concepts/advanced-metrics.md) — 수익성·효율성·안정성 심화
-    - [`concepts/business-metrics.md`](./concepts/business-metrics.md) — 사업 모델·성장 지표
-    - [`concepts/valuation.md`](./concepts/valuation.md) — 밸류에이션 방법론
-    - [`concepts/investment-terms.md`](./concepts/investment-terms.md) — 투자 판단·거버넌스
-    - [`concepts/risk-and-quality.md`](./concepts/risk-and-quality.md) — 리스크·회계 품질
-    - [`concepts/macroeconomics.md`](./concepts/macroeconomics.md) — 거시경제
-    - [`concepts/market-structure.md`](./concepts/market-structure.md) — 시장 구조·거래
+- [재무제표 기초](./concepts/financial-statements.md)
+- [재무 지표](./concepts/financial-metrics.md)
+- [표기 규칙](./concepts/notation.md)
+- [수익성 · 효율성 · 안정성 심화](./concepts/advanced-metrics.md)
+- [사업 모델 · 성장 지표](./concepts/business-metrics.md)
+- [밸류에이션 방법론](./concepts/valuation.md)
+- [투자 판단 / 거버넌스 용어](./concepts/investment-terms.md)
+- [리스크 · 회계 품질](./concepts/risk-and-quality.md)
+- [거시경제](./concepts/macroeconomics.md)
+- [시장 구조 · 거래](./concepts/market-structure.md)
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-17)*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-21)*
