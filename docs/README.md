@@ -1,4 +1,4 @@
-# Stock Research
+# 주식 리서치 노트
 
 **투자 판단**을 위한 회사 분석 문서를 모아두는 폴더입니다.
 "이 회사에 투자할 만한가?"를 스스로 정리하는 것이 목적입니다.
@@ -20,39 +20,12 @@ docs/
 ├── meta/                  # 특정 회사·섹터에 종속되지 않는 참고 문서 모음
 │   ├── glossary.md         # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
 │   ├── concepts/            # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
-│   ├── macro/               # 여러 회사 문서가 공통으로 인용하는 거시지표 차트 (환율·금리·지수 등)
-│   │   ├── fx/                # 통화 (원달러·달러인덱스 등)
-│   │   ├── rates/             # 금리·수익률 (13주물·10년물·30년물 국채금리 등)
-│   │   ├── bonds/             # 실제 거래되는 채권 ETF (HYG·TLT·TIP 등)
-│   │   ├── equities/          # 주가지수·변동성 (S&P500·VIX·SOX 등)
-│   │   ├── metals/            # 금속 (금·은·구리 등)
-│   │   ├── energy/            # 에너지 (WTI 원유·천연가스 등)
-│   │   └── crypto/            # 디지털자산 (BTC 등)
+│   ├── macro/               # 여러 회사 문서가 공통으로 인용하는 거시지표 차트 — 통화·금리·채권·주가지수·금속·에너지·디지털자산 서브폴더로 나뉨
 │   ├── exceptions.md        # 정리 대기 중인 규칙 위반 목록 ("알려진 예외")
-│   └── .template/           # 새 회사/섹터 추가 시 복사해서 쓰는 템플릿 모음
-│       ├── company/          # 회사 폴더에 복사하는 템플릿 (숫자 접두사 = 읽는 순서)
-│       │   ├── 01_overview.md
-│       │   ├── 02_history.md
-│       │   ├── 03_ceo.md
-│       │   ├── 04_metrics.md
-│       │   ├── 05_financials.md
-│       │   ├── 06_valuation.md
-│       │   ├── 07_investment.md
-│       │   ├── 08_news.md
-│       │   ├── 09_technical_daily.md
-│       │   └── 10_technical_weekly.md
-│       └── sector/           # 섹터 폴더에 복사하는 템플릿
-│           └── 00_overview.md
+│   └── .template/           # 새 회사/섹터 추가 시 복사해서 쓰는 템플릿 모음 (company/·sector/)
 └── sectors/               # 모든 섹터/회사 리서치 콘텐츠가 이 아래에 모임
     ├── .pages             # 섹터 nav 순서 — 새 섹터는 여기 등록해야 사이트에 노출됨 (아래 참고)
-    ├── electronic_design_automation/   # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스
-    │   ├── 00_overview.md   # (선택) 섹터 자체 설명 — 산업 구조·성장 동력·리스크
-    │   ├── synopsys/
-    │   └── cadence_design_systems/
-    └── <sector>/
-        ├── 00_overview.md
-        └── <company-name>/
-            └── ...
+    └── <sector>/          # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스 (예: electronic_design_automation) — 그 아래에 회사별 폴더
 ```
 
 - 최상위(`docs/`)는 **`README.md` + `meta/`(참고 문서) + `sectors/`(리서치 콘텐츠)**로만 구성 — 리서치 콘텐츠와 참고 문서를 같은 depth에 섞지 않는다
@@ -114,4 +87,4 @@ docs/
 
 ---
 
-*작성일: 2026-08-01 (최종 수정일: 2026-08-20)*
+*작성일: 2026-08-01 (최종 수정일: 2026-08-21)*
