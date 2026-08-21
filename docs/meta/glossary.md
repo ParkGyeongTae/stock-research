@@ -399,7 +399,6 @@
 ## 관련 문서
 
 - [사이트 첫 페이지](../index.md)
-- [문서 작성 가이드 (공통 규칙)](./authoring-guide.md)
 - 개념을 예시로 풀어 쓴 학습용 문서:
     - [`concepts/financial-statements.md`](./concepts/financial-statements.md) — 재무제표 3종 읽는 법 (입문)
     - [`concepts/financial-metrics.md`](./concepts/financial-metrics.md) — 재무 지표
