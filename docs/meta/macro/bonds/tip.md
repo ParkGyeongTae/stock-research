@@ -623,6 +623,7 @@
 ## 관련 문서
 
 - [20년+ 장기국채 ETF (TLT)](./tlt.md)
+- [채권 3종 비교 (지수화)](./comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 

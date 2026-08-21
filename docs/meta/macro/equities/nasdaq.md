@@ -627,6 +627,7 @@
 ## 관련 문서
 
 - [S&P 500](./sp500.md)
+- [미국 4대 지수 비교 (지수화)](./us_comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 

@@ -626,6 +626,7 @@
 
 - [원/달러 환율](../fx/usd_krw.md)
 - [코스닥](./kosdaq.md)
+- [코스피·코스닥 비교 (지수화)](./kr_comparison.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
 ---

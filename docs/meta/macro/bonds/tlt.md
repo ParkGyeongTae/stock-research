@@ -628,6 +628,7 @@
 
 - [미국 30년물 국채금리](../rates/treasury_30y.md)
 - [물가연동국채 ETF (TIP)](./tip.md)
+- [채권 3종 비교 (지수화)](./comparison.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
 ---

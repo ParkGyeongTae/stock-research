@@ -633,6 +633,7 @@
 
 - [코스피](./kospi.md)
 - [러셀2000](./russell2000.md)
+- [코스피·코스닥 비교 (지수화)](./kr_comparison.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
 ---

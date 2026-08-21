@@ -83,6 +83,7 @@
 - [미국 13주물 국채금리](./treasury_13w.md)
 - [미국 10년물 국채금리](./treasury_10y.md)
 - [미국 30년물 국채금리](./treasury_30y.md)
+- [채권 3종 비교 (지수화)](../bonds/comparison.md)
 - [통화 4종 비교 (지수화)](../fx/comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)

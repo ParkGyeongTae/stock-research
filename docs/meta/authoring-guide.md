@@ -105,7 +105,7 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
   --adj-note "환율 원자료(조정 없음)"
 ```
 
-이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. `macro/`는 성격별 서브폴더(`fx/`·`rates/`·`equities/`·`commodities/`·`crypto/`)로 나뉘어 있으니 새 지표를 만들 땐 해당 서브폴더에 두세요 — 실제 예시는 [`fx/usd_krw.md`](./macro/fx/usd_krw.md)·[`rates/treasury_10y.md`](./macro/rates/treasury_10y.md)를 참고하세요.
+이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. `macro/`는 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`crypto/`)로 나뉘어 있으니 새 지표를 만들 땐 해당 서브폴더에 두세요 — 실제 예시는 [`fx/usd_krw.md`](./macro/fx/usd_krw.md)·[`rates/treasury_10y.md`](./macro/rates/treasury_10y.md)를 참고하세요.
 
 ### macro 문서 재현 파라미터
 
@@ -132,11 +132,11 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 
 | 문서 | 티커 | --name | 옵션 | 각주 |
 |------|------|--------|------|------|
-| `macro/commodities/gold.md` | `GC=F` | 금 | `--unit-label "USD/트로이온스"` | FUT |
-| `macro/commodities/silver.md` | `SI=F` | 은 | `--unit-label "USD/트로이온스" --decimals 2` | FUT |
-| `macro/commodities/copper.md` | `HG=F` | 구리 | `--unit-label "USD/파운드"` | FUT |
-| `macro/commodities/oil_wti.md` | `CL=F` | WTI 원유 | `--unit-label "USD/배럴"` | FUT |
-| `macro/commodities/natural_gas.md` | `NG=F` | 천연가스 | `--unit-label "USD/MMBtu"` | FUT |
+| `macro/metals/gold.md` | `GC=F` | 금 | `--unit-label "USD/트로이온스"` | FUT |
+| `macro/metals/silver.md` | `SI=F` | 은 | `--unit-label "USD/트로이온스" --decimals 2` | FUT |
+| `macro/metals/copper.md` | `HG=F` | 구리 | `--unit-label "USD/파운드"` | FUT |
+| `macro/energy/oil_wti.md` | `CL=F` | WTI 원유 | `--unit-label "USD/배럴"` | FUT |
+| `macro/energy/natural_gas.md` | `NG=F` | 천연가스 | `--unit-label "USD/MMBtu"` | FUT |
 | `macro/equities/dow.md` | `^DJI` | 다우존스산업지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/hang_seng.md` | `^HSI` | 항셍지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/kosdaq.md` | `^KQ11` | 코스닥 | `--symbol "" --unit-label "지수"` | IDX |
@@ -186,6 +186,11 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 |------|------|---------------------------|
 | `macro/fx/comparison.md` | index | `DX-Y.NYB:달러인덱스 (DXY):1` · `EURUSD=X:유로/달러 환율:2` · `JPY=X:엔/달러 환율:3` · `KRW=X:원/달러 환율:4` |
 | `macro/rates/comparison.md` | raw (`--unit-label "%"`) | `^IRX:미국 13주물 국채금리:1` · `^TNX:미국 10년물 국채금리:2` · `^TYX:미국 30년물 국채금리:3` |
+| `macro/bonds/comparison.md` | index | `TLT:20년+ 장기국채 ETF (TLT):1` · `TIP:물가연동국채 ETF (TIP):2` · `HYG:하이일드 회사채 ETF (HYG):3` |
+| `macro/metals/comparison.md` | index | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
+| `macro/energy/comparison.md` | index | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` |
+| `macro/equities/us_comparison.md` | index | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^DJI:다우존스산업지수:3` · `^RUT:러셀2000:4` |
+| `macro/equities/kr_comparison.md` | index | `^KS11:코스피:1` · `^KQ11:코스닥:2` |
 
 ### 로컬에서 확인하기
 

@@ -4,8 +4,10 @@ nav:
   - nasdaq.md
   - dow.md
   - russell2000.md
+  - us_comparison.md
   - sox.md
   - kospi.md
   - kosdaq.md
+  - kr_comparison.md
   - nikkei225.md
   - hang_seng.md

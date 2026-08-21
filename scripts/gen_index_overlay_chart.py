@@ -110,6 +110,11 @@ def fetch_closes(ticker: str, rng: str, interval: str) -> dict:
     return out
 
 
+def xml_escape(s: str) -> str:
+    """라벨에 `&`(예: "S&P 500`) 같은 문자가 들어올 수 있어 SVG(XML) 텍스트·속성에 넣기 전 이스케이프한다."""
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
 def nice_unit(target: float) -> float:
     if target <= 0:
         return 1.0
@@ -209,7 +214,8 @@ def render_svg(
     a(f".{cls} .grid {{ stroke: var(--grid); stroke-width:1; }}")
     a(f".{cls} .axis {{ stroke: var(--axis); stroke-width:1; }}")
     a("</style>")
-    names = "·".join(s.label for s in series_list)
+    names = "·".join(xml_escape(s.label) for s in series_list)
+    title_x = xml_escape(title)
     mode_desc = f"{common_start} 기준 100 지수화" if mode == "index" else "원값(지수화 없음)"
     a(
         f'<svg viewBox="0 0 {VB_W} {VB_H}" xmlns="http://www.w3.org/2000/svg" role="img" '
@@ -217,10 +223,10 @@ def render_svg(
     )
     a(f'<rect x="0" y="0" width="{VB_W}" height="{VB_H}" fill="var(--bg)"/>')
     if mode == "index":
-        a(f'<text x="60" y="26" class="title" font-size="18">{title} — {common_start} = 100 지수화 ({period_label})</text>')
+        a(f'<text x="60" y="26" class="title" font-size="18">{title_x} — {common_start} = 100 지수화 ({period_label})</text>')
         a(f'<text x="60" y="44" font-size="12.5" fill="var(--ink2)">{common_start} ~ {global_end} · 단위: 지수(index)</text>')
     else:
-        a(f'<text x="60" y="26" class="title" font-size="18">{title} ({period_label})</text>')
+        a(f'<text x="60" y="26" class="title" font-size="18">{title_x} ({period_label})</text>')
         a(f'<text x="60" y="44" font-size="12.5" fill="var(--ink2)">{common_start} ~ {global_end} · 단위: {unit_label}</text>')
 
     grid_nd = 0 if mode == "index" else decimals
@@ -271,7 +277,7 @@ def render_svg(
         a(
             f'<text x="{LABEL_X:.0f}" y="{y+4:.1f}" font-size="11.5" font-weight="700" '
             f'fill="var(--s-{slug(s.ticker)})" paint-order="stroke" stroke="var(--bg)" '
-            f'stroke-width="3">{s.label} {v:.{end_nd}f}{end_suffix}</text>'
+            f'stroke-width="3">{xml_escape(s.label)} {v:.{end_nd}f}{end_suffix}</text>'
         )
 
     a("</svg>")

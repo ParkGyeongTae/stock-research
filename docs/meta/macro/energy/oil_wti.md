@@ -620,6 +620,7 @@
 ## 관련 문서
 
 - [천연가스](./natural_gas.md)
+- [에너지 2종 비교 (지수화)](./comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 
