@@ -13,7 +13,6 @@ stock-research/
 ├── AGENTS.md              # 에이전트 역할·행동 지침 (CLAUDE.md는 이 파일의 심볼릭 링크)
 ├── README.md              # 레포 설명 (GitHub용)
 ├── authoring-guide.md     # 이 문서 — docs/ 작성 규칙
-├── exceptions.md          # 정리 대기 중인 규칙 위반 목록 ("알려진 예외")
 └── docs/
     ├── .pages             # 최상위 nav 순서 (awesome-pages 플러그인)
     ├── index.md           # 사이트 첫 페이지 — 소개·커버리지 범위만 담은 환영 페이지
@@ -27,7 +26,7 @@ stock-research/
         └── <sector>/      # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스 (예: electronic_design_automation) — 그 아래에 회사별 폴더
 ```
 
-- **`authoring-guide.md`(이 문서)·`exceptions.md`는 `docs/` 밖에 있다** — 사이트 방문자가 아니라 `docs/`를 쓰고 관리하는 사람(Claude Code 등)만 참조하는 절차서·정리 대기 목록이라, 사이트에 배포되는 `docs/` 트리와 분리해 `AGENTS.md`와 같은 저장소 루트에 둔다.
+- **`authoring-guide.md`(이 문서)는 `docs/` 밖에 있다** — 사이트 방문자가 아니라 `docs/`를 쓰고 관리하는 사람(Claude Code 등)만 참조하는 절차서라, 사이트에 배포되는 `docs/` 트리와 분리해 `AGENTS.md`와 같은 저장소 루트에 둔다.
 - `docs/`는 **`index.md` + `meta/`(참고 문서) + `sectors/`(리서치 콘텐츠)**로만 구성 — 리서치 콘텐츠와 참고 문서를 같은 depth에 섞지 않는다
 - `meta/` 안에서도 성격이 갈린다: **`glossary.md`·`concepts/`는 읽는 문서**, **`macro/`는 여러 회사 문서가 공통으로 인용하는 거시지표 차트**(개별 회사·섹터의 밸류에이션 판단은 담지 않음), **`.template/`은 복사해서 쓰는 스캐폴딩**이다 — 같은 폴더에 있는 이유는 모두 "특정 회사·섹터에 종속되지 않는다"는 기준으로 묶였기 때문이다
 - `macro/` 하위는 통화·금리·채권·주가지수·금속·에너지·디지털자산 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`crypto/`)로 나뉜다. `rates/`는 실제 거래되는 자산이 아닌 순수 금리·수익률(%), `bonds/`는 실제 거래되는 채권 ETF 가격($)으로 갈린다. 각 문서는 `09_technical_daily.md`·`10_technical_weekly.md`와 같은 `scripts/gen_technical_chart.py`로 생성 — 작성 방법은 아래 "주가가 아닌 시계열에 쓰기" 참고
@@ -277,12 +276,6 @@ uv run mkdocs build   # 배포와 동일하게 빌드 — 경고 메시지를 �
 ```
 
 `build` 출력에 뜨는 `unrecognized relative link` 경고는 **깨진 문서 간 링크**를 뜻한다. 깨진 링크가 있어도 빌드는 성공하고 GitHub Actions 배포도 그대로 통과하므로, 문서를 추가·이동한 뒤에는 경고가 늘지 않았는지 직접 봐야 한다. 나머지 nav 순서는 `awesome-pages` 플러그인이 `.pages` 파일과 파일명 숫자 접두사로 결정한다.
-
----
-
-## 🗂 알려진 예외
-
-위 규칙을 지키지 못한 채 "나중에 고칠 것"으로 남겨둔 항목은 이 문서가 아니라 [`exceptions.md`](./exceptions.md)에서 관리합니다 — 정리 대기 목록은 항목이 자주 추가·삭제되는데, 이 마스터 문서까지 매번 같이 건드리지 않기 위함입니다. 회사 사정상 템플릿을 벗어난 것이 오히려 맞는 경우(비상장 기간이 섞여 시장 지표를 채울 수 없다든지, Non-GAAP 대신 조정 EBITDA를 쓰는 회사)는 예외가 아니라 정상이므로, 그 목록에도 적지 말고 **그 문서 안에 왜 벗어났는지 각주로** 남기면 됩니다.
 
 ---
 

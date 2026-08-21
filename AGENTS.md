@@ -100,7 +100,6 @@ Bull Case에도 같은 잣대를 적용하되, 이 저장소는 낙관 편향이
 - [용어집 (빠른 참조)](./docs/meta/glossary.md)
 - [개념 정리 (학습용)](./docs/meta/concepts/)
 - [회사/섹터 템플릿](./docs/meta/.template/)
-- [알려진 예외 (정리 대기 목록)](./exceptions.md)
 
 ---
 
