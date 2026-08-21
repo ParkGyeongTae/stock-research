@@ -129,6 +129,8 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | VIXN | VIX 지수 원자료(조정 없음) |
 | DXYN | 달러인덱스 원자료(조정 없음) |
 | BTCN | BTC/USD 원자료(조정 없음, 24시간 시장이라 주 마지막 거래일 기준 종가) |
+| ETHN | ETH/USD 원자료(조정 없음, 24시간 시장이라 주 마지막 거래일 기준 종가) |
+| URTN | 실물 우라늄 신탁 원자료(조정 없음) — 순자산가치(NAV) 대비 프리미엄/디스카운트로 거래될 수 있음 |
 
 | 문서 | 티커 | --name | 옵션 | 각주 |
 |------|------|--------|------|------|
@@ -137,6 +139,7 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/metals/copper.md` | `HG=F` | 구리 | `--unit-label "USD/파운드"` | FUT |
 | `macro/energy/oil_wti.md` | `CL=F` | WTI 원유 | `--unit-label "USD/배럴"` | FUT |
 | `macro/energy/natural_gas.md` | `NG=F` | 천연가스 | `--unit-label "USD/MMBtu"` | FUT |
+| `macro/energy/uranium.md` | `SRUUF` | Sprott Physical Uranium Trust | (기본값) | URTN |
 | `macro/equities/dow.md` | `^DJI` | 다우존스산업지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/hang_seng.md` | `^HSI` | 항셍지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/kosdaq.md` | `^KQ11` | 코스닥 | `--symbol "" --unit-label "지수"` | IDX |
@@ -158,6 +161,7 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/bonds/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
 | `macro/bonds/tip.md` | `TIP` | 물가연동국채 ETF | (기본값) | ETF |
 | `macro/crypto/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
+| `macro/crypto/ethereum.md` | `ETH-USD` | 이더리움 | (기본값) | ETHN |
 
 새 macro 문서를 추가하면 이 표에 행을 하나 추가한다 — 개별 문서에는 재생성 커맨드를 남기지 않는다.
 
@@ -188,9 +192,10 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 | `macro/rates/comparison.md` | raw (`--unit-label "%"`) | `^IRX:미국 13주물 국채금리:1` · `^TNX:미국 10년물 국채금리:2` · `^TYX:미국 30년물 국채금리:3` |
 | `macro/bonds/comparison.md` | index | `TLT:20년+ 장기국채 ETF (TLT):1` · `TIP:물가연동국채 ETF (TIP):2` · `HYG:하이일드 회사채 ETF (HYG):3` |
 | `macro/metals/comparison.md` | index | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
-| `macro/energy/comparison.md` | index | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` |
+| `macro/energy/comparison.md` | index | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` · `SRUUF:우라늄 실물 신탁 (SRUUF):3` |
 | `macro/equities/us_comparison.md` | index | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^DJI:다우존스산업지수:3` · `^RUT:러셀2000:4` |
 | `macro/equities/kr_comparison.md` | index | `^KS11:코스피:1` · `^KQ11:코스닥:2` |
+| `macro/crypto/comparison.md` | index | `BTC-USD:비트코인:1` · `ETH-USD:이더리움:2` |
 
 ### 로컬에서 확인하기
 
