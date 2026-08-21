@@ -9,38 +9,9 @@
 
 ---
 
-## 📁 폴더 구조
+## 📁 둘러보기
 
-**`sectors/` 아래에 산업/섹터 폴더**, 그 아래에 회사 폴더를 둡니다. 리서치 콘텐츠는 전부 `sectors/` 한 곳에 모여 있고, `meta/`는 콘텐츠에 종속되지 않는 참고 문서로 별도 depth에 둡니다.
-
-```
-docs/
-├── .pages                 # 최상위 nav 순서 (awesome-pages 플러그인)
-├── README.md              # (이 파일) 공통 규칙 — 사이트 첫 페이지
-├── meta/                  # 특정 회사·섹터에 종속되지 않는 참고 문서 모음
-│   ├── glossary.md         # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
-│   ├── concepts/            # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
-│   ├── macro/               # 여러 회사 문서가 공통으로 인용하는 거시지표 차트 — 통화·금리·채권·주가지수·금속·에너지·디지털자산 서브폴더로 나뉨
-│   ├── exceptions.md        # 정리 대기 중인 규칙 위반 목록 ("알려진 예외")
-│   └── .template/           # 새 회사/섹터 추가 시 복사해서 쓰는 템플릿 모음 (company/·sector/)
-└── sectors/               # 모든 섹터/회사 리서치 콘텐츠가 이 아래에 모임
-    ├── .pages             # 섹터 nav 순서 — 새 섹터는 여기 등록해야 사이트에 노출됨 (아래 참고)
-    └── <sector>/          # 섹터 폴더명은 풀어 쓴 소문자 스네이크케이스 (예: electronic_design_automation) — 그 아래에 회사별 폴더
-```
-
-- 최상위(`docs/`)는 **`README.md` + `meta/`(참고 문서) + `sectors/`(리서치 콘텐츠)**로만 구성 — 리서치 콘텐츠와 참고 문서를 같은 depth에 섞지 않는다
-- `meta/` 안에서도 성격이 갈린다: **`glossary.md`·`concepts/`는 읽는 문서**, **`macro/`는 여러 회사 문서가 공통으로 인용하는 거시지표 차트**(개별 회사·섹터의 밸류에이션 판단은 담지 않음), **`.template/`은 복사해서 쓰는 스캐폴딩**, **`exceptions.md`는 정리 대기 상태를 추적하는 목록**이다 — 같은 폴더에 있는 이유는 모두 "특정 회사·섹터에 종속되지 않는다"는 기준으로 묶였기 때문이다
-- `macro/` 하위는 통화·금리·채권·주가지수·금속·에너지·디지털자산 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`crypto/`)로 나뉜다. `rates/`는 실제 거래되는 자산이 아닌 순수 금리·수익률(%), `bonds/`는 실제 거래되는 채권 ETF 가격($)으로 갈린다. 각 문서는 `09_technical_daily.md`·`10_technical_weekly.md`와 같은 `scripts/gen_technical_chart.py`로 생성 — 작성 방법은 [`meta/authoring-guide.md`](./meta/authoring-guide.md) "주가가 아닌 시계열에 쓰기" 참고
-- 섹터 폴더명: **풀어 쓴 소문자 스네이크케이스** (예: `electronic_design_automation`, `semiconductor`, `cloud_infrastructure`) — 약어보다 명확한 전체 표기 우선
-- 회사 폴더명: **회사명 소문자 스네이크케이스** (예: `synopsys`, `nvidia`, `apple`)
-- 복합기업은 "관심 이유"가 되는 사업 기준 섹터에 배치 (예: Siemens → `sectors/electronic_design_automation/`)
-- 처음엔 `01_overview.md`만 있어도 됨. 분석이 깊어지면 아래 표대로 분리.
-- **`.pages` 등록 규칙 (경고 없이 조용히 실패하므로 주의):**
-    - 새 **섹터 폴더** → `docs/sectors/.pages`의 `nav:`에 직접 추가해야 사이트 좌측 내비게이션에 노출된다. 등록하지 않아도 빌드는 성공하고 검색에도 잡히지만 nav에서만 사라져 사실상 링크로만 닿는 고아 페이지가 된다(에러·경고가 안 뜬다).
-    - 새 **회사 폴더**(기존 섹터 안) → 등록 불필요. 자동으로 nav에 들어온다.
-    - 새 **최상위 폴더**(`meta/`·`sectors/` 옆) → `docs/.pages`(최상위)에 추가해야 한다. 규칙은 섹터와 같다.
-    - 새 `macro/` **하위 카테고리 폴더**(`fx/`·`rates/` 등 옆에 새 카테고리를 만드는 경우) → `docs/meta/macro/.pages`에 추가해야 한다. 기존 카테고리 안에 문서만 추가할 땐 그 카테고리의 `.pages`(예: `docs/meta/macro/fx/.pages`)에 추가한다.
-- `meta/.template/` 안의 상대 링크(`../../../meta/glossary.md` 등)는 **복사된 위치**(`docs/sectors/<sector>/<company>/`) 기준으로 적혀 있음 — 템플릿 폴더에서 직접 열면 깨져 보이는 게 정상이며, 복사 후에는 맞는다. (`.template`은 앞에 점이 붙어 있어 MkDocs 빌드에서도 제외됨)
+**`sectors/` 아래에 산업/섹터 폴더**, 그 아래에 회사 폴더를 두는 구조입니다 — 왼쪽 메뉴에서 관심 있는 섹터를 골라 들어가면 됩니다. 저장소 구조를 자세히 알고 싶거나 새 문서를 추가하려면 [`meta/authoring-guide.md`](./meta/authoring-guide.md) "📁 폴더 구조·명명 규칙"을 참고하세요.
 
 ---
 

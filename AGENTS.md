@@ -1,6 +1,6 @@
 # AGENTS.md
 
-이 문서는 이 저장소에서 작업하는 AI 에이전트(Claude Code 등)를 위한 **역할·행동 지침**입니다. 사람이 읽는 폴더 구조는 [`docs/README.md`](./docs/README.md), 문서 작성 규칙은 [`docs/meta/authoring-guide.md`](./docs/meta/authoring-guide.md), 용어 정의는 [`docs/meta/glossary.md`](./docs/meta/glossary.md)가 마스터입니다 — 이 문서는 그 내용을 다시 옮기지 않고 참조만 하며, 이 세 문서와 어긋나면 **그쪽이 항상 우선**입니다.
+이 문서는 이 저장소에서 작업하는 AI 에이전트(Claude Code 등)를 위한 **역할·행동 지침**입니다. 폴더 구조·명명 규칙과 문서 작성 규칙은 [`docs/meta/authoring-guide.md`](./docs/meta/authoring-guide.md), 회사 폴더 파일별 역할은 [`docs/README.md`](./docs/README.md), 용어 정의는 [`docs/meta/glossary.md`](./docs/meta/glossary.md)가 마스터입니다 — 이 문서는 그 내용을 다시 옮기지 않고 참조만 하며, 이 세 문서와 어긋나면 **그쪽이 항상 우선**입니다.
 
 > `CLAUDE.md`는 이 파일을 가리키는 **심볼릭 링크**입니다(`CLAUDE.md -> AGENTS.md`). 둘은 같은 파일이니 지침을 고칠 땐 `AGENTS.md` 하나만 고치고, `CLAUDE.md`를 별도 파일로 새로 만들지 마세요 — 링크가 끊기면서 지침이 둘로 갈라집니다.
 
@@ -84,7 +84,7 @@ Bull Case에도 같은 잣대를 적용하되, 이 저장소는 낙관 편향이
    ```
    `<sector>`·`<company>`·값은 실제 값으로 치환할 것(꺾쇠 문자 그대로 타이핑 금지). `--include='*.md'`로 빌드 산출물·스크립트를 걸러 노이즈를 줄인다.
 2. **`*작성일*` 줄을 갱신했는가** — 규칙은 `docs/meta/authoring-guide.md` "✍️ 작성 규칙" 마지막 bullet(날짜만 교체, 무엇을 고쳤는지는 서술 안 함) 참고. 오늘 날짜는 위 "오늘 날짜 확인" 절차대로 얻는다.
-3. **새 섹터를 만들었다면 `docs/sectors/.pages`에 등록했는가** — 빠뜨려도 빌드는 성공하고 경고도 없지만 사이트 내비게이션에서 문서가 사라진다. 기존 섹터에 회사만 추가했다면 불필요([`docs/README.md`](./docs/README.md) "폴더 구조" 참고).
+3. **새 섹터를 만들었다면 `docs/sectors/.pages`에 등록했는가** — 빠뜨려도 빌드는 성공하고 경고도 없지만 사이트 내비게이션에서 문서가 사라진다. 기존 섹터에 회사만 추가했다면 불필요([`docs/meta/authoring-guide.md`](./docs/meta/authoring-guide.md) "📁 폴더 구조·명명 규칙" 참고).
 4. **빌드 경고를 봤는가** — 문서를 추가·이동·링크했으면 `uv run mkdocs build`를 돌려 `unrecognized relative link`(깨진 링크)가 늘지 않았는지 확인한다. 깨진 링크가 있어도 빌드와 배포는 통과하므로 자동으로 걸러지지 않는다.
 5. **확인 못 한 값이 그대로 확정치처럼 남아 있지 않은가** — 검증하지 못한 수치는 (E) 표기와 출처 각주(가이던스/컨센서스/자체 추정), 정의를 확인 못 한 인용값은 "확인 필요"가 남아 있어야 한다.
 
@@ -94,8 +94,8 @@ Bull Case에도 같은 잣대를 적용하되, 이 저장소는 낙관 편향이
 
 ## 참고 문서
 
-- [폴더 구조 (사이트 첫 페이지)](./docs/README.md) — **폴더 구조·파일별 역할의 마스터**
-- [문서 작성 가이드](./docs/meta/authoring-guide.md) — **작성 규칙·신규 추가 절차의 마스터**
+- [사이트 첫 페이지](./docs/README.md) — **회사 폴더 파일별 역할의 마스터**
+- [문서 작성 가이드](./docs/meta/authoring-guide.md) — **폴더 구조·명명 규칙·작성 규칙·신규 추가 절차의 마스터**
 - [용어집 (빠른 참조)](./docs/meta/glossary.md)
 - [개념 정리 (학습용)](./docs/meta/concepts/)
 - [회사/섹터 템플릿](./docs/meta/.template/)
@@ -103,4 +103,4 @@ Bull Case에도 같은 잣대를 적용하되, 이 저장소는 낙관 편향이
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-16)*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-21)*
