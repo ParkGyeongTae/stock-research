@@ -55,6 +55,7 @@ GAAP 순이익·EPS는 출처 간 이견이 거의 없다 — GAAP EPS는 FY2023
 - [최근 뉴스 / 이슈](./08_news.md)
 - [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+- [최종 보고서](./11_final_report.md)
 
 ---
 

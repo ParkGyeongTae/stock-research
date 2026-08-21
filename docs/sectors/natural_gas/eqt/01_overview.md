@@ -62,6 +62,7 @@ EQT는 미국 최대 천연가스 생산사로, 애팔래치아 분지(마르셀
 - [최근 뉴스 / 이슈](./08_news.md)
 - [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+- [최종 보고서](./11_final_report.md)
 
 ---
 

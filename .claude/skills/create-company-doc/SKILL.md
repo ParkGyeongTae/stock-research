@@ -48,12 +48,18 @@ description: 아직 이 저장소에 없는 회사를 "새로 만들어줘", "�
    명령은 `authoring-guide.md` "기술적 분석 차트 생성" 절 그대로 따른다(`scripts/gen_technical_chart.py`, `--interval`만 다름).
    짧은 상장 기간 등으로 5년 주봉이 무의미하면 `10_technical_weekly.md` 자체를 생략해도 된다.
 
-7. **마무리 체크리스트** (`AGENTS.md` "작업을 마치기 전에" 그대로 적용)
+7. **최종 보고서(`11_final_report.md`)는 01~10이 다 채워진 뒤 가장 마지막에 쓴다**
+   규칙은 `authoring-guide.md` "`11_final_report.md` 작성 규칙" 그대로 따른다 — 이 문서에서 새 숫자·새 판단을 만들지 않고 `01~10`을 인용·요약만 한다.
+   §6(거시 환경)에 넣을 `docs/meta/macro/` 문서는 이 회사와 실제로 연결되는 것만 고른다(예: 원자재 노출이 크면 `energy`/`metals`, 밸류에이션 할인율 근거로는 대부분 `rates/treasury_10y.md`) — 카테고리 전체를 나열하지 않는다. 인용할 macro 문서의 차트가 오래됐으면 먼저 갱신한다.
+   §9(시나리오 요약)는 `06_valuation.md`의 가격과 `07_investment.md`의 리스크를 표로 재배치할 뿐 새로 계산하지 않는다.
+
+8. **마무리 체크리스트** (`AGENTS.md` "작업을 마치기 전에" 그대로 적용)
    - 회사 폴더 안 문서들이 서로 전부 링크하는지(풀 메시) — 없는 문서만 링크에서 뺀다
    - `*작성일*` 표기 — 오늘 날짜는 세션 컨텍스트 `# currentDate` → `date +%Y-%m-%d` → 확인 불가 시 사용자에게 확인
    - 신규 섹터라면 `docs/sectors/.pages` 등록을 실제로 했는지 재확인
    - `uv run mkdocs build`로 깨진 링크(`unrecognized relative link`) 없는지 확인
    - 확인 못 한 값이 확정치처럼 남아 있지 않은지 — (E) 표기와 출처 각주, "확인 필요" 표기가 남아 있어야 한다
+   - `11_final_report.md`가 01~10의 최신 값과 어긋나지 않는지 — 특히 `04_metrics.md`·`06_valuation.md`·`07_investment.md`를 마지막에 다시 손봤다면 이 문서도 함께 확인
 
 ## 하지 않는 것
 

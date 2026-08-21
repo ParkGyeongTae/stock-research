@@ -86,6 +86,7 @@ Class B 최대주주가 이 저장소가 같은 섹터에서 이미 다루는 [B
 - [최근 뉴스 / 이슈](./08_news.md)
 - [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+- [최종 보고서](./11_final_report.md)
 
 ---
 

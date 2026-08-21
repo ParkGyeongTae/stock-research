@@ -118,6 +118,7 @@ PBR도 참고로 병기하면(하단 4.15x~상단 6.75x, FY2023 26.16x 제외), 
 - [최근 뉴스 / 이슈](./08_news.md)
 - [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+- [최종 보고서](./11_final_report.md)
 
 ---
 

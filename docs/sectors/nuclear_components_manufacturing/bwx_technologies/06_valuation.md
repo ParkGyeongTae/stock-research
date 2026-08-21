@@ -148,6 +148,7 @@ FY2026(E) 실적 기준 종합 적정주가($139.85, PER 70%+DCF 30%) 대비 현
 - [최근 뉴스 / 이슈](./08_news.md)
 - [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+- [최종 보고서](./11_final_report.md)
 
 ---
 
