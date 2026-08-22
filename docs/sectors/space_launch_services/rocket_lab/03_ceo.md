@@ -24,7 +24,7 @@
 | 2013년 | 본사 미국 이전 | 캘리포니아 헌팅턴비치(이후 2020년 롱비치로 재이전) |
 | 2017년 | Electron 첫 궤도 발사 시도 | 이후 상업 발사 서비스 본격화 |
 | 2021년 8월 | 나스닥 상장 | Vector Acquisition Corp과의 SPAC 합병을 통해 RKLB로 상장 |
-| 2026년 6월 | Iridium Communications 인수 계약 발표 | 80억 달러(EV) 규모 현금+주식 인수. 완료 시 발사·위성 제조·위성통신을 아우르는 구조로 확장(`01_overview.md` 참고) |
+| 2026년 6월 | Iridium Communications 인수 계약 발표 | 80억 달러(EV) 규모 현금+주식 인수. 완료 시 발사·위성 제조·위성통신을 아우르는 구조로 확장(개요 참고) |
 
 영국 왕실로부터 기사 작위(Knight Bachelor)를 받아 "Sir Peter Beck"으로 불림.
 

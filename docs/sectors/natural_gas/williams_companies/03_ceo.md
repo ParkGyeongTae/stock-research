@@ -4,7 +4,7 @@
 
 > ⚠️ 모든 항목은 웹검색으로 확인한 사실만 기록. 추측이나 출처 불명 내용은 작성 금지 — 출처(공식 프로필, 언론 인터뷰, IR 자료, SEC 공시 등)를 반드시 함께 표기.
 >
-> ⚠️ 이 문서는 **인물 관점의 이력**만 다룬다. 창업·상장·M&A 등 회사 전체 연혁은 `02_history.md` 참고.
+> ⚠️ 이 문서는 **인물 관점의 이력**만 다룬다. 창업·상장·M&A 등 회사 전체 연혁은 역사 / 주요 이벤트 참고.
 
 - **이름**: Chad J. Zamarin
 - **직책**: President & CEO, 이사회 멤버
@@ -22,20 +22,20 @@
 | ~2017 이전 | Chief Operating Officer(Midstream/Energy Ventures) / NiSource·Columbia Pipeline Group, President / Pennant Midstream | 파이프라인·미드스트림 운영 및 신사업 개발 경력 축적 |
 | ~2017 이전 | Senior VP & President, Pipeline and Midstream / Cheniere Energy | LNG 수출 터미널 운영사 Cheniere에서 파이프라인·미드스트림 사업 총괄 |
 | 2017 | Williams 합류 | Senior VP, Corporate Strategic Development로 입사 |
-| 2023.01~2025.06 | Executive Vice President, Corporate Strategic Development / Williams | 전사 전략·사업개발·신사업(New Energy Ventures, Power Innovation 포함) 총괄, 다수의 M&A(Rimrock·Saber Midstream 등 §`02_history.md` 참고)를 주도 |
+| 2023.01~2025.06 | Executive Vice President, Corporate Strategic Development / Williams | 전사 전략·사업개발·신사업(New Energy Ventures, Power Innovation 포함) 총괄, 다수의 M&A(Rimrock·Saber Midstream 등 §역사 / 주요 이벤트 참고)를 주도 |
 | **2025.07.01~** | **President & CEO / Williams** | 다년간 준비된 승계 절차를 거쳐 취임, 동시에 이사회 합류 |
 
 ---
 
 ## 2. 경영 스타일 / 전략 방향
 
-Zamarin은 취임사에서부터 전임 Armstrong 체제의 "천연가스 인프라 리더" 포지셔닝을 계승하겠다는 점을 분명히 했다 — 애널리스트들도 이번 교체를 "전략적 리셋이 아니라 연속성(continuity)의 신호"로 해석했다. CEO 취임 전부터 Rimrock·Saber Midstream 인수와 Power Innovation(비하인드더미터 발전) 사업 기획을 직접 주도해온 이력이 있어, 취임 이후에도 (1) 기존 파이프라인 확장 프로젝트의 실행 속도 유지, (2) 데이터센터向 전력 인프라(Power Innovation) 투자 확대, (3) Momentum Midstream 인수(2026.08, `08_news.md` 참고) 같은 볼트온 M&A를 통한 헤인즈빌~걸프코스트 LNG 밸류체인 강화를 강조하고 있다. Cheniere(LNG)·Columbia Pipeline(파이프라인) 경력이 있어 미드스트림과 LNG 수요를 잇는 전략에 특히 강점이 있다는 평가다.
+Zamarin은 취임사에서부터 전임 Armstrong 체제의 "천연가스 인프라 리더" 포지셔닝을 계승하겠다는 점을 분명히 했다 — 애널리스트들도 이번 교체를 "전략적 리셋이 아니라 연속성(continuity)의 신호"로 해석했다. CEO 취임 전부터 Rimrock·Saber Midstream 인수와 Power Innovation(비하인드더미터 발전) 사업 기획을 직접 주도해온 이력이 있어, 취임 이후에도 (1) 기존 파이프라인 확장 프로젝트의 실행 속도 유지, (2) 데이터센터向 전력 인프라(Power Innovation) 투자 확대, (3) Momentum Midstream 인수(2026.08, 최근 뉴스 / 이슈 참고) 같은 볼트온 M&A를 통한 헤인즈빌~걸프코스트 LNG 밸류체인 강화를 강조하고 있다. Cheniere(LNG)·Columbia Pipeline(파이프라인) 경력이 있어 미드스트림과 LNG 수요를 잇는 전략에 특히 강점이 있다는 평가다.
 
 ---
 
 ## 3. 주요 성과 / 논란
 
-- **성과**: CEO 취임 첫 4개 분기(2025 Q3~2026 Q2) 동안 Adjusted EBITDA·AFFO가 매 분기 전년동기 대비 증가세를 유지했고(`04_metrics.md` §B 참고), 2026년 상반기에 Blackstone과의 $5.34B Power Innovation 합작 조인트벤처를 최종화하고 Momentum Midstream 인수($5.5B)를 발표하는 등 취임 후에도 대형 딜 실행력을 보여주고 있다. 다만 이 실적이 Zamarin 개인의 전략 전환 효과인지, 전임 체제에서 이미 설계된 프로젝트의 실행 연장선인지는 재임 기간이 짧아(1년 남짓) 아직 구분하기 이르다.
+- **성과**: CEO 취임 첫 4개 분기(2025 Q3~2026 Q2) 동안 Adjusted EBITDA·AFFO가 매 분기 전년동기 대비 증가세를 유지했고(핵심 지표 §B 참고), 2026년 상반기에 Blackstone과의 $5.34B Power Innovation 합작 조인트벤처를 최종화하고 Momentum Midstream 인수($5.5B)를 발표하는 등 취임 후에도 대형 딜 실행력을 보여주고 있다. 다만 이 실적이 Zamarin 개인의 전략 전환 효과인지, 전임 체제에서 이미 설계된 프로젝트의 실행 연장선인지는 재임 기간이 짧아(1년 남짓) 아직 구분하기 이르다.
 - **논란 / 리스크**: 취임 자체는 이사회가 수년간 준비한 승계 절차의 결과로 알려져 있어 지배구조 갈등은 확인되지 않는다. 다만 재임 기간이 짧아 독자적 경영 스타일에 대한 시장의 검증이 아직 충분히 쌓이지 않았다는 점 자체가 불확실성 요인이다 — 전임 Armstrong이 완전히 이사회를 떠난 2026.03 이후의 독자 행보를 계속 지켜볼 필요가 있다.
 
 ---

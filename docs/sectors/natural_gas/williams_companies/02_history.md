@@ -2,7 +2,7 @@
 
 > 100년 넘게 이어온 파이프라인 건설·운영 회사가, 2000년대 초 통신사업 도박으로 파산 직전까지 몰렸다가 순수 천연가스 인프라 회사로 재편해 지금의 대형 미드스트림 사업자로 자리잡기까지의 여정.
 
-> ⚠️ 아래 항목은 공식 연혁(williams.com), SEC 공시, 언론 보도로 확인한 사실만 기록했다. CEO 개인 이력은 `03_ceo.md`, 사업부문 구조·현재 매출 구성은 `01_overview.md`를 참고.
+> ⚠️ 아래 항목은 공식 연혁(williams.com), SEC 공시, 언론 보도로 확인한 사실만 기록했다. CEO 개인 이력은 CEO / 경영진, 사업부문 구조·현재 매출 구성은 개요를 참고.
 
 ---
 
@@ -30,7 +30,7 @@
 | 2021 | Sequent Energy Management 인수(가스 마케팅 역량 강화) |
 | 2022.09 | 델라웨어 형평법법원이 Williams 승소 판결(위약금+이자+비용 총 $602M) — Energy Transfer가 항소 |
 | **2023.10** | 델라웨어 대법원이 원심을 확정, Williams 승소 최종 확정(위약금 $410M + 계약 이율 이자 등) |
-| 2023.11 | Energy Transfer로부터 $627M 최종 수령 — 변호사 비용 등을 제한 세후 순이익 **$534M**을 FY2023 GAAP 손익계산서에 "Net gain from Energy Transfer litigation judgment"로 인식(`04_metrics.md` §1 각주 참고) |
+| 2023.11 | Energy Transfer로부터 $627M 최종 수령 — 변호사 비용 등을 제한 세후 순이익 **$534M**을 FY2023 GAAP 손익계산서에 "Net gain from Energy Transfer litigation judgment"로 인식(핵심 지표 §1 각주 참고) |
 | 2023.02 | MountainWest Pipeline Holding Company 인수($1.024B) |
 | 2023.11 | DJ 분지(Denver-Julesburg Basin) 가스 수집·처리 자산 인수($544M) |
 | 2024.01 | Hartree Partners 계열사로부터 걸프코스트 가스 저장 자산 포트폴리오 인수($1.844B) |
@@ -41,9 +41,9 @@
 | 2025.03 | Cogentrix Energy 지분 투자($153M, 발전 자산) |
 | 2025.06 | Saber Midstream 인수($43M) |
 | 2025년 상반기 | Haynesville 업스트림(E&P) 자산을 Woodside Energy에 매각하고 전략적 파트너십 체결 — 업스트림 비중을 줄이고 미드스트림·전력 인프라에 집중 |
-| **2025.07.01** | **Chad Zamarin이 President & CEO로 취임**, 14년 재임한 Alan Armstrong은 Executive Chairman으로 이동(2026.03 이사회에서 완전 퇴임) — `03_ceo.md` 참고 |
+| **2025.07.01** | **Chad Zamarin이 President & CEO로 취임**, 14년 재임한 Alan Armstrong은 Executive Chairman으로 이동(2026.03 이사회에서 완전 퇴임) — CEO / 경영진 참고 |
 | 2026.02 | 2026 Analyst Day에서 FY2025 실적(Adjusted EBITDA $7.75B, 5개년 CAGR 9%) 발표 및 2026년 가이던스(Adjusted EBITDA 중간값 $8.2B) 제시 |
-| **2026.08** | **Momentum Midstream을 최대 $5.5B에 인수하기로 합의**(헤인즈빌~걸프코스트 LNG·전력 수요 연결 강화) 및 **Blackstone과 Power Innovation 합작 조인트벤처 최종화**($5.34B 저비용 자본 조달) — `08_news.md` 참고 |
+| **2026.08** | **Momentum Midstream을 최대 $5.5B에 인수하기로 합의**(헤인즈빌~걸프코스트 LNG·전력 수요 연결 강화) 및 **Blackstone과 Power Innovation 합작 조인트벤처 최종화**($5.34B 저비용 자본 조달) — 최근 뉴스 / 이슈 참고 |
 
 ---
 

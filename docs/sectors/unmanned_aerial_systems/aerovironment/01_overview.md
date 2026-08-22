@@ -34,13 +34,13 @@ AeroVironment는 미군을 주요 고객으로 하는 소형 무인항공기(UAS
 | Uncrewed Systems (UxS) | 휴대용 정찰·감시 무인기. Puma, Raven 등 | 약 45~50% (FY2025 기준) |
 | MacCready Works (MW) | 신기술 연구개발·시제품 사업부 | 약 7~9% (FY2025 기준, 약 2,400만 달러) |
 
-> ⚠️ 2025년 5월 BlueHalo 인수 완료 이후 사업부를 **Autonomous Systems(AxS)**와 **Space, Cyber and Directed Energy(SCDE)** 2개 부문으로 재편. 위 표는 인수 이전 FY2025 기준 3개 부문 체계다. 재편 후 FY2026(2026-04-30 종료) 전체 실적 기준 신규 세그먼트 매출은 AxS $1,358.1M(68.7%), SCDE $618.8M(31.3%), 합계 $1,976.8M — 상세 근거는 [`04_metrics.md`](./04_metrics.md) 참고.
+> ⚠️ 2025년 5월 BlueHalo 인수 완료 이후 사업부를 **Autonomous Systems(AxS)**와 **Space, Cyber and Directed Energy(SCDE)** 2개 부문으로 재편. 위 표는 인수 이전 FY2025 기준 3개 부문 체계다. 재편 후 FY2026(2026-04-30 종료) 전체 실적 기준 신규 세그먼트 매출은 AxS $1,358.1M(68.7%), SCDE $618.8M(31.3%), 합계 $1,976.8M — 상세 근거는 [핵심 지표](./04_metrics.md) 참고.
 
 ---
 
 ## 3. 산업 / 시장 내 위치
 
-> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [`../00_overview.md`](../00_overview.md) 참고.
+> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [섹터 개요](../00_overview.md) 참고.
 
 - **미 국방 소형 UAS 시장 선도**: 우크라이나 전쟁 이후 소모성 정밀타격 드론(loitering munitions) 수요가 급증하며 핵심 수혜 기업으로 부상.
 - **BlueHalo 인수를 통한 사업 다각화**: 우주 시스템, 사이버 보안, 지향성 에너지(레이저 무기) 등으로 영역을 넓혀 순수 드론 기업에서 종합 방산 기술기업으로 전환 중.

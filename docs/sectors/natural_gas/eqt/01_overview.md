@@ -33,7 +33,7 @@ EQT는 3개 보고 세그먼트(Upstream·Gathering·Transmission)로 구성되�
 
 > Upstream 세그먼트가 Gathering 시스템 처리량의 약 73%, Transmission 시스템 처리량의 약 69%를 차지해(EQT 물량이 EQT 자사 파이프라인을 우선 이용) 세 세그먼트가 사실상 하나의 수직계열화된 사업으로 움직인다. 2023년(합병 전)에는 Upstream이 세그먼트 매출의 97.7%를 차지했으나, 2024년 Equitrans 합병 이후 미드스트림(Gathering+Transmission) 비중이 빠르게 커지는 중이다.
 >
-> 매출 구조 외에 판매량·실현가격 등 사업 고유 지표는 [`04_metrics.md`](./04_metrics.md) C절 참고.
+> 매출 구조 외에 판매량·실현가격 등 사업 고유 지표는 [핵심 지표](./04_metrics.md) C절 참고.
 
 ---
 
@@ -41,7 +41,7 @@ EQT는 3개 보고 세그먼트(Upstream·Gathering·Transmission)로 구성되�
 
 EQT는 미국 최대 천연가스 생산사로, 애팔래치아 분지(마르셀러스·유티카) 최대 사업자다. 2024년 Equitrans Midstream 합병으로 "북미 유일의 대형 수직계열화 천연가스 기업"이라는 포지셔닝을 확보했으며, 걸프코스트 LNG 수출 터미널로의 파이프라인 접근성 확대를 핵심 성장 전략으로 삼고 있다.
 
-산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 섹터 개요로 넘기고, 여기서는 이 회사가 그 안에서 어떤 위치인지만 서술한다 — 링크: [`../00_overview.md`](../00_overview.md)
+산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 섹터 개요로 넘기고, 여기서는 이 회사가 그 안에서 어떤 위치인지만 서술한다 — 링크: [섹터 개요](../00_overview.md)
 
 - **밸류체인 위치**: 업스트림(생산)과 미드스트림(수집·수송)을 모두 보유 — 섹터 내 동종 E&P(Expand Energy·Range Resources)는 업스트림 단일 사업자, Williams Companies는 미드스트림 단일 사업자인 것과 달리 EQT는 양쪽을 겸함
 - **주요 경쟁사**: Expand Energy(Chesapeake+Southwestern 합병사), Range Resources, Antero Resources, Coterra Energy — 모두 애팔래치아 분지 경쟁사

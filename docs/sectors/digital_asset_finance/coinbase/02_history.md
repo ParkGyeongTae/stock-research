@@ -4,7 +4,7 @@
 
 > ⚠️ 모든 항목은 웹검색으로 확인한 사실만 기록. 추측이나 출처 불명 내용은 작성 금지 — 가능하면 연도뿐 아니라 월까지 표기하고 출처를 함께 남길 것.
 >
-> ⚠️ 이 문서는 **회사 관점의 사건**만 다룬다. CEO 개인의 커리어·경영 스타일은 [`03_ceo.md`](./03_ceo.md)에 기록하고, 여기서는 CEO 교체가 회사에 미친 영향이 있을 때만 간단히 언급한다(Coinbase는 창업자 Brian Armstrong이 현재까지 CEO를 유지 중이라 해당 사항 없음).
+> ⚠️ 이 문서는 **회사 관점의 사건**만 다룬다. CEO 개인의 커리어·경영 스타일은 [CEO / 경영진](./03_ceo.md)에 기록하고, 여기서는 CEO 교체가 회사에 미친 영향이 있을 때만 간단히 언급한다(Coinbase는 창업자 Brian Armstrong이 현재까지 CEO를 유지 중이라 해당 사항 없음).
 
 ---
 
@@ -38,7 +38,7 @@
 [^yc]: Coinbase — Wikipedia; EBSCO Research Starters "Coinbase".
 [^funding]: 위와 동일 — Series A/B/C 투자 라운드 정보(Union Square Ventures, a16z, Ribbit Capital, DFJ, NYSE, USAA 참여).
 [^usdc]: Coinbase — Wikipedia. USDC는 Centre 컨소시엄(Coinbase·Circle 공동 설립, Bitmain 초기 투자자) 명의로 출시.
-[^split]: `04_metrics.md` A절 머리말 각주4 — 2019년 5월 비상장 상태에서 실시된 6:1 액면분할로, 2021년 상장 이후 구간(FY2023~현재)에는 분할 이력 없음.
+[^split]: 핵심 지표 A절 머리말 각주4 — 2019년 5월 비상장 상태에서 실시된 6:1 액면분할로, 2021년 상장 이후 구간(FY2023~현재)에는 분할 이력 없음.
 [^remote]: [Coinbase is a decentralized company, with no headquarters — Coinbase 공식 블로그](https://www.coinbase.com/blog/coinbase-is-a-decentralized-company-with-no-headquarters)
 [^listing]: Coinbase — Wikipedia (Nasdaq 직상장 준거가격 $250, 2021-04-14 종가 $328.28).
 [^layoff2022]: Coinbase — Wikipedia (2022-06-14, 약 1,100명/전체 약 18% 감원).

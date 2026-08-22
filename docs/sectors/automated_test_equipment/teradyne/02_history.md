@@ -2,7 +2,7 @@
 
 > MIT 동문 두 명이 세운 반도체 테스터 회사에서 출발해, LitePoint·Universal Robots 등 인수를 통해 "테스트 + 로보틱스" 이중 사업 구조를 갖추게 됐고, 2023년 창업자 계열이 아닌 내부 승진 CEO 체제로 전환한 뒤 2025년 AI 반도체 수요 급증의 최대 수혜 기업 중 하나로 부상했다.
 
-> ⚠️ 아래 항목은 웹검색으로 확인한 사실만 기록. CEO 개인의 커리어·경영 스타일은 [`03_ceo.md`](./03_ceo.md)에 있고, 여기서는 회사 관점의 사건만 다룬다.
+> ⚠️ 아래 항목은 웹검색으로 확인한 사실만 기록. CEO 개인의 커리어·경영 스타일은 [CEO / 경영진](./03_ceo.md)에 있고, 여기서는 회사 관점의 사건만 다룬다.
 
 ---
 
@@ -23,7 +23,7 @@
 | **2018.11.27** | 상장 거래소를 **NYSE에서 NASDAQ으로 이전**(티커 TER 유지) |
 | 2020 | AutoGuide Mobile Robots 인수 — 로보틱스 포트폴리오 강화 |
 | 2022.07.01 | Greg Smith, President 취임(CEO 승진 전 단계) |
-| **2023.02.01** | **Greg Smith CEO 취임** — Mark E. Jagiela 후임, 동시에 이사회 합류(Chairman은 겸임하지 않음, [`03_ceo.md`](./03_ceo.md) §6 참고) |
+| **2023.02.01** | **Greg Smith CEO 취임** — Mark E. Jagiela 후임, 동시에 이사회 합류(Chairman은 겸임하지 않음, [CEO / 경영진](./03_ceo.md) §6 참고) |
 | 2023.11 | Technoprobe(프로브카드 공급사) 지분 10% 취득 계약(콜옵션 방식) — 공급망 파트너십 강화 |
 | **2024.05.27** | **Device Interface Solutions(DIS) 사업부를 Technoprobe에 $85.0M에 매각**(세전 처분이익 $57.1M) — Semiconductor Test 내 일부 제품군을 핵심 사업 집중을 위해 정리 |
 | 2024 (4Q 보고 기준) | 보고 세그먼트를 4개(Semiconductor Test·System Test·Wireless Test·Robotics)에서 3개(Semiconductor Test·Product Test·Robotics)로 재편 |

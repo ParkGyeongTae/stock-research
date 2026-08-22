@@ -8,8 +8,8 @@
 
 - **회사명**: Linde plc
 - **티커 / 상장 시장**: NYSE: LIN (프랑크푸르트 증권거래소에도 이중상장)
-- **설립 / 본사**: 1879-06-21 독일 비스바덴에서 Carl von Linde가 창업(→ 연혁은 [`02_history.md`](./02_history.md) 참고) / 법인 등록지는 아일랜드 더블린(Ten Earlsfort Terrace, Dublin 2), 실질 경영 사무소(principal executive offices)는 영국 서리주 워킹(Woking, Surrey)
-- **CEO**: Sanjiv Lamba (2022-03 취임, 2026-01-31부로 이사회 의장 겸임 — [`03_ceo.md`](./03_ceo.md) 참고)
+- **설립 / 본사**: 1879-06-21 독일 비스바덴에서 Carl von Linde가 창업(→ 연혁은 [역사 / 주요 이벤트](./02_history.md) 참고) / 법인 등록지는 아일랜드 더블린(Ten Earlsfort Terrace, Dublin 2), 실질 경영 사무소(principal executive offices)는 영국 서리주 워킹(Woking, Surrey)
+- **CEO**: Sanjiv Lamba (2022-03 취임, 2026-01-31부로 이사회 의장 겸임 — [CEO / 경영진](./03_ceo.md) 참고)
 - **홈페이지**: [linde.com](https://www.linde.com)
 - **섹터 / 산업**: 산업가스 (Industrial Gases)
 - **시가총액**: 약 $222.5B (2026-08-14 종가 $482.74 기준, USD)
@@ -42,7 +42,7 @@ Linde의 매출은 지역(Americas/EMEA/APAC) 3개 산업가스 부문과, 대�
 
 ## 3. 산업 / 시장 내 위치
 
-> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [`../00_overview.md`](../00_overview.md) 참고.
+> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [섹터 개요](../00_overview.md) 참고.
 
 글로벌 산업가스 시장(2025년 기준 약 $104.2B 규모)은 Linde·Air Liquide(프랑스)·Air Products(미국)·Messer(독일, 비상장)·Nippon Sanso(일본) 5개사가 약 80~84%를 과점하는 구조다. Linde는 2018년 Praxair와의 합병 이후 매출 기준 세계 1위 산업가스 회사이며(FY2025 매출 $33,986M, Air Liquide는 €27.6B 수준), Air Products·Air Liquide와 함께 3강 체제를 이룬다.
 

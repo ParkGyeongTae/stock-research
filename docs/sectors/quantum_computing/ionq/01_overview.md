@@ -40,7 +40,7 @@ IonQ는 2026년 기준 스스로를 4개 사업 축(양자컴퓨팅·양자네�
 
 ## 3. 산업 / 시장 내 위치
 
-> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [`../00_overview.md`](../00_overview.md) 참고.
+> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [섹터 개요](../00_overview.md) 참고.
 
 IonQ는 트랩드 이온(trapped-ion) 방식을 채택하고 있으며, 같은 방식의 주요 경쟁자로 Quantinuum(비상장, Honeywell·Cambridge Quantum 합작)·Oxford Ionics(2025년 IonQ에 인수돼 편입)가 있다. 초전도 방식(IBM·Google — 대형 기술기업이 자체 자금으로 개발, 상장된 순수 플레이는 아님)과 초전도/애널로그 방식의 상장 소형주(Rigetti Computing, D-Wave Quantum — 매출 규모는 IonQ보다 훨씬 작음, 예: Rigetti 분기 매출이 수백만 달러 수준)도 경쟁 구도에 있다.
 

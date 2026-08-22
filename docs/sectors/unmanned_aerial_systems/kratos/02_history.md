@@ -4,7 +4,7 @@
 
 > ⚠️ 모든 항목은 웹검색으로 확인한 사실만 기록. 추측이나 출처 불명 내용은 작성 금지.
 >
-> ⚠️ 이 문서는 **회사 관점의 사건**만 다룬다. Eric DeMarco 개인의 커리어는 [`03_ceo.md`](./03_ceo.md)에 별도로 기록했다.
+> ⚠️ 이 문서는 **회사 관점의 사건**만 다룬다. Eric DeMarco 개인의 커리어는 [CEO / 경영진](./03_ceo.md)에 별도로 기록했다.
 
 ---
 
@@ -26,7 +26,7 @@
 | 2019.03.05 | 유마 사격장(애리조나)에서 **XQ-58A Valkyrie 첫 비행** — 미 공군 저비용 소모성 타격 시연(LCASD) 프로그램용 스텔스 무인전투기 |
 | 2020.02.24 | 디트로이트 소재 터보젯 제조사 **Technical Directions, Inc.(TDI) 인수** |
 | 2020.03 | 극초음속 시험체 **Gray Wolf 순항미사일 고고도 비행시험** 실시 |
-| 2024.04 | 미 공군 **CCA(Collaborative Combat Aircraft) Increment 1** 프로그램 시제 단계에 General Atomics·Anduril이 선정 — Kratos는 자체 무인전투기(XQ-58 등) 포트폴리오를 보유했음에도 이 1차 선정에서는 제외됨(`07_investment.md` 리스크 참고) |
+| 2024.04 | 미 공군 **CCA(Collaborative Combat Aircraft) Increment 1** 프로그램 시제 단계에 General Atomics·Anduril이 선정 — Kratos는 자체 무인전투기(XQ-58 등) 포트폴리오를 보유했음에도 이 1차 선정에서는 제외됨(투자 판단 리스크 참고) |
 | 2025.11.05 | 이스라엘 위성통신 시스템 업체 **Orbit Technologies Ltd 인수 계약**(약 3.563억 달러) 발표 |
 | 2026.01.08 | 미 해병대가 Northrop Grumman·Kratos 컨소시엄을 **XQ-58 Valkyrie 기반 무인 윙맨 드론 사업자로 선정** |
 | 2026.02.10 | 미 전쟁부(Department of War) 산하 "Drone Dominance" 프로그램의 **1단계 Gauntlet에 참여 기업으로 선정**(4단계에 걸쳐 총 11억 달러 규모, 약 35만 대 조달 목표) |
