@@ -585,8 +585,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동:
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -602,7 +600,7 @@
 
 ## 참고 자료
 
-- [Yahoo Finance — SMR 주봉 OHLCV 원자료](https://finance.yahoo.com/quote/SMR/history/) (수집 2026-08-19)
+- [Yahoo Finance — SMR 주봉 OHLCV 원자료](https://finance.yahoo.com/quote/SMR/history/)
 - [stockanalysis.com — SMR 시황 (조회 2026-08-19)](https://stockanalysis.com/stocks/smr/)
 
 ---

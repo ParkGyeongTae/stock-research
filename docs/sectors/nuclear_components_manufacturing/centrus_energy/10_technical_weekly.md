@@ -643,8 +643,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동:
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -660,7 +658,7 @@
 
 ## 참고 자료
 
-- [Yahoo Finance — LEU 주봉 시세](https://finance.yahoo.com/quote/LEU/history/) (수집 2026-08-19)
+- [Yahoo Finance — LEU 주봉 시세](https://finance.yahoo.com/quote/LEU/history/)
 - [stockanalysis.com — LEU 현재가·통계](https://stockanalysis.com/stocks/leu/) (04_metrics.md/06_valuation.md 대조용)
 
 ---

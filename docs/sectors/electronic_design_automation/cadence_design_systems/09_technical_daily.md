@@ -654,8 +654,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동:
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -670,7 +668,7 @@
 
 ## 참고 자료
 
-- [Yahoo Finance — CDNS 일봉 OHLCV](https://finance.yahoo.com/quote/CDNS/history/) (수집 2026-08-15)
+- [Yahoo Finance — CDNS 일봉 OHLCV](https://finance.yahoo.com/quote/CDNS/history/)
 - [stockanalysis.com — CDNS 현재가/종가 대조용](https://stockanalysis.com/stocks/cdns/)
 - [GuruFocus — Cadence Design Systems (CDNS) Shares Drop Amid AI Model Concerns](https://www.gurufocus.com/news/8965307/cadence-design-systems-cdns-shares-drop-amid-ai-model-concerns?mobile=true)
 - [TradingKey — Cadence Design Systems Inc Stock (CDNS) Moved Down by 9.82% on Jul 17](https://www.tradingkey.com/news/market-movers/262038361-market-movers-cdns-20260717)

@@ -52,8 +52,6 @@ ATE(반도체 테스트 장비) 시장은 **Teradyne과 Advantest 두 회사가 
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동:
-
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
 - [핵심 지표](./04_metrics.md)

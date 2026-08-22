@@ -53,8 +53,6 @@ Palo Alto Networks는 [Cybersecurity](../00_overview.md) 섹터에서 네트워�
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
-
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
 - [핵심 지표](./04_metrics.md)

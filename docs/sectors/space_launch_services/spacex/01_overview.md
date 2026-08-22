@@ -52,8 +52,6 @@ SpaceX는 Falcon 9/Heavy 재사용 로켓과 차세대 초대형 로켓 Starship
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동:
-
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
 - [핵심 지표](./04_metrics.md)

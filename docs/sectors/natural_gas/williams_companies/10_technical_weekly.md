@@ -652,8 +652,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -669,7 +667,7 @@
 
 ## 참고 자료
 
-- [Yahoo Finance — The Williams Companies (WMB)](https://finance.yahoo.com/quote/WMB/) (수집 2026-08-22)
+- [Yahoo Finance — The Williams Companies (WMB)](https://finance.yahoo.com/quote/WMB/)
 - [StockAnalysis — WMB 종가 이력](https://stockanalysis.com/stocks/wmb/history/)
 
 ---

@@ -655,8 +655,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동:
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -671,7 +669,7 @@
 
 ## 참고 자료
 
-- [Yahoo Finance — HOOD 일봉 OHLCV (query1.finance.yahoo.com chart API)](https://finance.yahoo.com/quote/HOOD/history/) (수집 2026-08-16)
+- [Yahoo Finance — HOOD 일봉 OHLCV (query1.finance.yahoo.com chart API)](https://finance.yahoo.com/quote/HOOD/history/)
 - [stockanalysis.com — HOOD 종가 데이터](https://stockanalysis.com/stocks/hood/) (대조용)
 
 [^sp500]: [Robinhood shares soar 15% after getting long-sought addition to S&P 500 — CNBC (2025-09-08)](https://www.cnbc.com/2025/09/08/robinhood-shares-soar-14percent-after-getting-long-sought-addition-to-sp-500.html)

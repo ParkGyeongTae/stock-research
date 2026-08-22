@@ -662,8 +662,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -678,7 +676,7 @@
 
 ## 참고 자료
 
-- [Yahoo Finance 일봉 OHLCV (SPGI)](https://query1.finance.yahoo.com/v8/finance/chart/SPGI) (수집 2026-08-17)
+- [Yahoo Finance 일봉 OHLCV (SPGI)](https://query1.finance.yahoo.com/v8/finance/chart/SPGI)
 - [S&P Global shares tumble as 2026 guidance disappoints investors — Investing.com (2026-02-10)](https://www.investing.com/news/earnings/sp-global-shares-tumble-as-2026-guidance-disappoints-investors-93CH-4496341)
 
 ---

@@ -638,8 +638,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -655,7 +653,7 @@
 
 ## 참고 자료
 
-- [Yahoo Finance — BWXT 주봉 시세](https://finance.yahoo.com/quote/BWXT/history/) (수집 2026-08-18)
+- [Yahoo Finance — BWXT 주봉 시세](https://finance.yahoo.com/quote/BWXT/history/)
 - [stockanalysis.com — BWXT 현재가·통계](https://stockanalysis.com/stocks/bwxt/) (04_metrics.md/06_valuation.md 대조용)
 
 ---

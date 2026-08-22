@@ -165,8 +165,6 @@ Transmission, Power & Gulf 부문의 Adjusted EBITDA 비중이 FY2023 44.0% → 
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)

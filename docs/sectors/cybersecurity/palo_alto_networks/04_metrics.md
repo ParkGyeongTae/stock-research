@@ -156,8 +156,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -172,7 +170,7 @@
 
 ## 참고 자료
 
-- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1327567/000132756725000027/panw-20250731.htm) (수집 2026-08-16)
+- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1327567/000132756725000027/panw-20250731.htm)
 - [10-K FY2023 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1327567/000132756723000024/panw-20230731.htm)
 - [10-Q Q3 FY2026 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1327567/000132756726000015/panw-20260430.htm)
 - [SEC XBRL Frames API (companyconcept, CIK 0001327567)](https://data.sec.gov/api/xbrl/companyconcept/CIK0001327567/us-gaap/) — 분기별 원자료 교차검증

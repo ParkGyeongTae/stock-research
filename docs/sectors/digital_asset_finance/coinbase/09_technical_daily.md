@@ -642,8 +642,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동 (없는 문서는 링크 제거):
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -658,7 +656,7 @@
 
 ## 참고 자료
 
-- [Yahoo Finance — COIN Historical Data](https://finance.yahoo.com/quote/COIN/history) (수집 2026-08-15)
+- [Yahoo Finance — COIN Historical Data](https://finance.yahoo.com/quote/COIN/history)
 - [stockanalysis.com — COIN Price History](https://stockanalysis.com/stocks/coin/history/) (대조용)
 
 ---

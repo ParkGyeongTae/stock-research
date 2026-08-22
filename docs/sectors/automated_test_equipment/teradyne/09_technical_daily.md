@@ -639,8 +639,6 @@
 
 ## 관련 문서
 
-같은 폴더 내 다른 문서로 이동:
-
 - [개요](./01_overview.md)
 - [역사 / 주요 이벤트](./02_history.md)
 - [CEO / 경영진](./03_ceo.md)
@@ -655,7 +653,7 @@
 
 ## 참고 자료
 
-- [Yahoo Finance — Teradyne, Inc. (TER) 일봉 시세](https://finance.yahoo.com/quote/TER/history/) (수집 2026-08-16)
+- [Yahoo Finance — Teradyne, Inc. (TER) 일봉 시세](https://finance.yahoo.com/quote/TER/history/)
 - [stockanalysis.com — Teradyne 주가 이력 API 교차 확인](https://stockanalysis.com/stocks/TER/history/)
 - [The Motley Fool — Why Teradyne Tumbled Today (2026-04-29)](https://www.fool.com/investing/2026/04/29/why-teradyne-tumbled-today/)
 
