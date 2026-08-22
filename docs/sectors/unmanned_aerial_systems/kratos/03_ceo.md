@@ -1,4 +1,4 @@
-# Kratos Defense & Security Solutions — CEO / 경영진
+# CEO / 경영진
 
 > 회계법인 Arthur Andersen 출신으로 Titan Corporation을 10배 성장시킨 뒤, 2004년부터 20년 넘게 Kratos를 이끌어온 CEO. "저비용 대량생산(affordable mass)" 철학을 앞세워 회사를 무인 표적기 업체에서 소모성 전투 무인기 대표 기업으로 성장시켰다.
 

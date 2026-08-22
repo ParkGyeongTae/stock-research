@@ -1,4 +1,4 @@
-# Robinhood Markets — CEO / 경영진
+# CEO / 경영진
 
 > 이민자 출신 창업자로 13년간 회사를 이끌며 IPO·GameStop 사태·다각화 전략을 모두 직접 헤쳐온 인물이다. 다만 공동창업자 Baiju Bhatt가 경영 일선(Chief Creative Officer)에서 물러난 뒤에도 Tenev보다 더 큰 의결권(약 40% vs Tenev 약 24%)을 그대로 보유하고 있다는 점은 이례적인 거버넌스 구조로, 경영권 분쟁 시 누가 최종 결정권을 갖는지 불분명하다는 잠재 리스크가 있다.
 

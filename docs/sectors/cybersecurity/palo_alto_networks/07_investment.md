@@ -1,4 +1,4 @@
-# Palo Alto Networks — 투자 판단
+# 투자 판단
 
 > 관심 — CyberArk 인수로 아이덴티티 보안까지 플랫폼을 확장한 사이버보안 통합자(consolidator)지만, 현재주가는 시장의 현재 선행 PER(약 98배)이 지속된다는 전제를 이미 상당 부분 반영하고 있어(`06_valuation.md`) 신규 진입보다는 CyberArk 통합 성과 확인 후 판단이 합리적.
 

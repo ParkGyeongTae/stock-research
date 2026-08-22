@@ -1,4 +1,4 @@
-# Cadence Design Systems — CEO / 경영진
+# CEO / 경영진
 
 > IBM·Magma를 거쳐 2012년 Cadence에 합류한 EDA 기술 전문가 출신 CEO. 취임 이후 AI 기반 컴퓨테이셔널 소프트웨어로 사업 영역을 확장하며 사상 최대 실적 흐름을 이끌고 있다.
 

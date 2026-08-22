@@ -1,4 +1,4 @@
-# The Williams Companies — 재무 / 실적
+# 재무 / 실적
 
 > 매출·GAAP 이익의 변동은 대부분 파생상품 마크투마켓과 일회성 항목이 만든 잡음이고, 실제 사업의 방향은 Adjusted EBITDA·AFFO의 견조한 증가와 대규모 성장capex 사이클로의 진입이다.
 

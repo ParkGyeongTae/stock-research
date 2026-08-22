@@ -1,4 +1,4 @@
-# BWX Technologies — CEO / 경영진
+# CEO / 경영진
 
 > NASA 최고운영책임자(COO) 출신 엔지니어 경영자로, 2017년 취임 이후 국방 매출의 안정성 위에 상업 원전·의료동위원소로 사업을 확장해온 인수합병 지향형 CEO. 2025~2026년 Kinectrics·Precision Components Group 인수와 의료 사업 매각을 동시에 밀어붙이는 등 재임 후반부로 갈수록 포트폴리오 재편 속도가 빨라지고 있다.
 

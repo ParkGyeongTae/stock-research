@@ -1,4 +1,4 @@
-# The Williams Companies — 최근 뉴스 / 이슈
+# 최근 뉴스 / 이슈
 
 > 2025년 하반기부터 이어진 흐름은 크게 두 갈래 — (1) 신임 CEO 체제 아래 Power Innovation·LNG 인접 자산으로의 볼트온 M&A 가속, (2) 그에 따른 성장capex·레버리지 가이던스의 동반 상향.
 

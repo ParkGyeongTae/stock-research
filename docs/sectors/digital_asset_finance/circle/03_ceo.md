@@ -1,4 +1,4 @@
-# Circle Internet Group — CEO / 경영진
+# CEO / 경영진
 
 > 두 차례의 성공적 IPO(Allaire Corporation, Brightcove) 경험을 가진 반복 창업가로, Circle에서도 창업자·회장·CEO를 겸하며 13년 이상 단독으로 회사를 이끌고 있다는 점이 경영 안정성 측면에서는 강점이나, 차등의결권 구조로 인해 이사회 견제력이 구조적으로 제한된다는 점은 거버넌스 리스크로 함께 봐야 한다.
 

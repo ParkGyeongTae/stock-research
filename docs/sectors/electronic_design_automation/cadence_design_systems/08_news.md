@@ -1,4 +1,4 @@
-# Cadence Design Systems (케이던스) — 최근 뉴스 / 이슈
+# 최근 뉴스 / 이슈
 
 > 2025년 이후 흐름은 크게 두 갈래: (1) BETA CAE·Hexagon D&E 등 연속 인수를 통한 System Design and Analysis 확장과 에이전틱 AI 전략 가속, (2) 대중국 수출규제·소송 등 지정학·법률 리스크의 간헐적 충격.
 

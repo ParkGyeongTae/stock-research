@@ -1,4 +1,4 @@
-# BWX Technologies — 역사 / 주요 이벤트
+# 역사 / 주요 이벤트
 
 > 1867년 보일러 제조사로 출발해 1950년대 미 해군 원자력 추진 사업에 진입한 뒤, 2015년 McDermott International 산하 Babcock & Wilcox에서 원자력·정부사업 부문만 분사해 지금의 BWXT가 됐다. 2025~2026년에는 Kinectrics·Precision Components Group 인수로 상업용 원전 부문을 키우는 동시에 의료 사업은 매각하며 "핵심 원자력 국가안보·상업발전"에 집중하는 재편이 진행 중이다.
 

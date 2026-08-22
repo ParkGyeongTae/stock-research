@@ -1,4 +1,4 @@
-# Kratos Defense & Security Solutions — 핵심 지표
+# 핵심 지표
 
 > Kratos는 2026년 2~3월 14.29~16.4백만 주 규모 공모증자(순조달액 약 13.5억 달러)로 Nomad·Orbit Technologies 인수와 생산능력 확충 재원을 조달하면서 자기자본이 단절적으로 급증했다(FY2025 말 $2.0B → 2026-06-28 기준 $3.4B). GAAP 순이익은 FY2023 적자에서 FY2025 흑자로 돌아섰지만 절대 규모가 작아(FY2025 EPS $0.13) GAAP PER은 수백 배 수준으로 뛰었고, 회사가 별도로 공시하는 **Adjusted EPS**가 상대가치 비교에 더 적합하다.
 
