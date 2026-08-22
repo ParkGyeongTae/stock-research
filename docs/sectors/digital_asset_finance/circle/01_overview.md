@@ -8,10 +8,12 @@
 - **CEO**: Jeremy Allaire (공동창업자 겸 회장 겸 CEO)
 - **홈페이지**: https://www.circle.com
 - **섹터 / 산업**: 금융(Financials) / 자본시장(Capital Markets) — 스테이블코인·디지털자산 인프라
-- **시가총액**: 약 191.4억 달러 (2026-08-13 종가 $75.38 기준, stockanalysis.com)
+- **시가총액**: 약 223.4억 달러 (2026-08-21 종가 $87.98 기준, stockanalysis.com)
 - **회계연도(FY) 마감월**: 12월 말(캘린더 연도와 동일)
 
-> ⚠️ 시가총액 출처 간 편차 주의: stockanalysis.com은 2026-08-13 기준 $19.14B로 집계(발행주식수 약 2.539억 주 — Class A 약 2.347억 주(2026-07-30 기준) + Class B 약 1,920만 주(2026-06-30 기준) 합산과 정합적). 반면 macrotrends.net은 동일 시점 부근에서 $15.7~16.1B로 더 낮은 값을 보여 편차가 있음(직접 페이지 접근이 403으로 막혀 원인 확인 불가 — 계산 기준일/발행주식수 차이로 추정). 발행주식수 기반 계산과 일치하는 stockanalysis.com 값을 본문에 채택하되, 확정 수치가 필요하면 최신 10-Q 표지의 발행주식수로 재계산 권장.
+> ⚠️ 시가총액 출처 간 편차 주의: stockanalysis.com은 2026-08-21 기준 $22.34B로 집계(발행주식수 약 2.539억 주 — Class A 약 2.347억 주(2026-07-30 기준) + Class B 약 1,920만 주(2026-06-30 기준) 합산과 정합적). 반면 macrotrends.net은 유사 시점 부근에서 더 낮은 값을 보인 전례가 있어(2026-08-13 기준 확인, 원인 미확인 — 계산 기준일/발행주식수 차이로 추정) 편차에 유의. 발행주식수 기반 계산과 일치하는 stockanalysis.com 값을 본문에 채택하되, 확정 수치가 필요하면 최신 10-Q 표지의 발행주식수로 재계산 권장.
+>
+> ⚠️ **주가 급변동 참고**: 2026-08-19~21 사흘간 비트코인 랠리와 IBM 블록체인 특허 인수(2026-07-27 발표, `08_news.md` 참고) 재조명이 겹쳐 주가가 $71.60(2026-08-14) → $87.98(2026-08-21)로 약 3거래일 만에 +22.9% 급등했다 — 변동성이 큰 구간이므로 이 문서를 다시 열람하는 시점에는 최신 종가를 재확인할 것.
 
 ---
 
@@ -75,13 +77,14 @@ USDC 유통량의 상당 부분이 Coinbase 플랫폼(및 Coinbase 생태계)에
 - [Circle Q2 2026 실적 보도자료 (Circle IR)](https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results)
 - [Circle Internet Group, Inc. — Form 10-Q, FY2026 Q1 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000150/crcl-20260331.htm)
 - [Circle Internet Group, Inc. — Form 10-Q, FY2026 Q2 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000248/crcl-20260630.htm)
-- [Circle Internet Group (CRCL) — 기업 개요·시가총액 (stockanalysis.com)](https://stockanalysis.com/stocks/crcl/)
+- [Circle Internet Group (CRCL) — 기업 개요·시가총액 (stockanalysis.com)](https://stockanalysis.com/stocks/crcl/) (조회일 2026-08-22)
 - [Circle (CRCL) Founder Jeremy Allaire Is a Billionaire as Shares Surge After IPO — Bloomberg](https://www.bloomberg.com/news/articles/2025-06-05/circle-founder-is-a-billionaire-as-crypto-firm-jumps-after-ipo)
 - [USDT, USDC, USD1: The Stablecoin Market Share War — Forbes](https://www.forbes.com/sites/boazsobrado/2026/03/12/usdt-usdc-usd1-the-stablecoin-market-share-war/)
 - [Circle's USDC Pulls Ahead of Tether as Stablecoin Volume Hits Record $1.79T — Yahoo Finance / CoinDesk](https://finance.yahoo.com/markets/crypto/articles/circle-usdc-pulls-ahead-tether-192600167.html)
 - [GENIUS Act: U.S. Stablecoin Law | Circle & USDC Compliance (Circle)](https://www.circle.com/genius-act)
 - [Introducing Arc: An L1 Blockchain for Stablecoin Finance (Circle)](https://www.circle.com/blog/introducing-arc-an-open-layer-1-blockchain-purpose-built-for-stablecoin-finance)
+- [Circle Acquires IBM Blockchain Patent Portfolio (Circle 보도자료, 2026-07-27)](https://www.circle.com/pressroom/circle-acquires-ibm-blockchain-patent-portfolio)
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-16)*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-22)*
