@@ -8,11 +8,12 @@
 - **CEO**: Brian Armstrong (공동창업자 겸 CEO)
 - **홈페이지**: https://www.coinbase.com
 - **섹터 / 산업**: 디지털자산 금융 / 가상자산 거래소·인프라 (증권가 분류상 Financials — Financial Data & Stock Exchanges)
-- **시가총액**: 약 406.0억 달러 (2026-08-13 종가 $153.90 기준, stockanalysis.com)[^mktcap]
+- **시가총액**: 약 492.0억 달러 (2026-08-21 종가 $186.49 기준, stockanalysis.com)[^mktcap][^rally2026]
 - **회계연도(FY) 마감월**: 12월 말(캘린더 연도와 동일)
 
 [^hq]: Coinbase는 2020년 5월 이후 특정 도시를 본사로 규정하지 않는 원격 근무 중심 조직 운영을 공식 정책으로 채택했다. 뉴욕·런던·더블린·싱가포르 등에 규제 대응 목적의 물리적 오피스를 유지한다.
-[^mktcap]: 같은 날짜 기준 다른 집계 사이트(companiesmarketcap.com)는 약 392~395억 달러로 소폭 낮게 집계 — 데이터 갱신 시점 차이로 추정. 정확한 기준일 종가는 stockanalysis.com 값을 우선했다.
+[^mktcap]: 2026-08-13 기준으로는 다른 집계 사이트(companiesmarketcap.com)가 약 392~395억 달러로 소폭 낮게 집계된 바 있음(데이터 갱신 시점 차이로 추정) — 정확한 기준일 종가는 stockanalysis.com 값을 우선했다.
+[^rally2026]: **주가 급변동 참고**: 2026-08-19~21 사흘간 비트코인 랠리와 토큰화·규제 순풍(아부다비 토큰화 허브 승인, SEC 디지털증권 혁신면제 등, `08_news.md` 참고)이 겹쳐 주가가 $153.90(2026-08-13) → $186.49(2026-08-21)로 약 3거래일 만에 +21.2% 급등했다 — 변동성이 큰 구간이므로 이 문서를 다시 열람하는 시점에는 최신 종가를 재확인할 것.
 
 ---
 
@@ -74,7 +75,8 @@ Coinbase는 개인·기관 투자자를 대상으로 가상자산 거래 플랫�
 - [Coinbase 공식 홈페이지](https://www.coinbase.com)
 - [Coinbase Investor Relations](https://investor.coinbase.com)
 - [Coinbase — Wikipedia](https://en.wikipedia.org/wiki/Coinbase)
-- [Coinbase Global (COIN) — Market Cap (stockanalysis.com, 2026-08-13 기준)](https://stockanalysis.com/stocks/coin/)
+- [Coinbase Global (COIN) — Market Cap (stockanalysis.com, 2026-08-21 기준)](https://stockanalysis.com/stocks/coin/)
+- [Coinbase Share Price Gained 10% to Hit $190: Is $200 Next? — CryptoTimes (2026-08-21)](https://www.cryptotimes.io/2026/08/21/coinbase-share-price-gained-10-to-hit-190-is-200-next/)
 - [Coinbase Q2 2026 8-K 요약 — stocktitan.net](https://www.stocktitan.net/sec-filings/COIN/8-k-coinbase-global-inc-reports-material-event-f715851e1497.html)
 - [Coinbase Global, Inc. Form 10-Q (분기 종료 2026-06-30) — SEC EDGAR](https://www.sec.gov/Archives/edgar/data/0001679788/000167978826000088/coin-20260630.htm)
 - [Coinbase Q2 Earnings: 3rd Consecutive Quarter of Record Crypto Trading Volume Market Share — Coinbase 공식 블로그](https://www.coinbase.com/blog/coinbase-q2-earnings-everything-exchange-drives-3rd-consecutive-quarter-of-record-crypto-trading-volume-market-share-revenue-diversification-and-resilience)
@@ -83,4 +85,4 @@ Coinbase는 개인·기관 투자자를 대상으로 가상자산 거래 플랫�
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-16)*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-22)*
