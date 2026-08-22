@@ -18,11 +18,7 @@
 | 2026-02-17 | FY2025 4분기·연간 실적 발표 | — | [`04_metrics.md`](./04_metrics.md) | [SEC 8-K](https://www.sec.gov/Archives/edgar/data/813672/000081367226000013/cdns02172026ex9901.htm) |
 | 2026년 상반기(정확한 완료일 확인 필요) | Hexagon D&E 인수 완료 | 자기자본·총자산이 크게 늘며 반영(부채비율 상승 요인 중 하나) | [`05_financials.md`](./05_financials.md), [`04_metrics.md`](./04_metrics.md) | `04_metrics.md` A.3 각주 |
 | 2025-10-27 | FY2025 3분기 실적 발표 | — | [`04_metrics.md`](./04_metrics.md) | [SEC 8-K](https://www.sec.gov/Archives/edgar/data/813672/000081367225000144/cdns10272025ex9901.htm) |
-| 2025-07-28 | FY2025 2분기 실적 발표, DOJ·BIS 소송 합의금 $140.6M 반영 | 미 법무부(DOJ)·상무부 산업안보국(BIS) 관련 소송 합의금(일회성)으로 GAAP 영업이익률이 18.96%까지 일시 하락(같은 분기 Non-GAAP 영업이익률은 42.8%로 오히려 개선) | [`05_financials.md`](./05_financials.md), [`04_metrics.md`](./04_metrics.md) | [SEC 8-K](https://www.sec.gov/Archives/edgar/data/813672/000081367225000108/cdns7282025ex9901.htm) |
-| 2025-05 | 이사회, 자사주매입 한도 $1.5B 추가 승인 | 2026-06-30(2분기 10-Q) 기준 잔여 승인 한도 $1.0B로 확인 | [`05_financials.md`](./05_financials.md) | [TipRanks](https://www.tipranks.com/news/company-announcements/cadence-design-expands-share-repurchase-program) |
-| 2025-04-28 | FY2025 1분기 실적 발표 | — | [`04_metrics.md`](./04_metrics.md) | [SEC 8-K](https://www.sec.gov/Archives/edgar/data/813672/000081367225000046/cdns4282025ex9901.htm) |
-| 2024-05 | **BETA CAE Systems 인수 완료** | 구조·멀티피직스 시뮬레이션(약 12.4억 달러) — System Design and Analysis 사업 부문 확대의 핵심 축 | [`01_overview.md`](./01_overview.md), [`02_history.md`](./02_history.md) | [Cadence 공식 발표](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2024/cadence-completes-acquisition-of-beta-cae.html) |
-| 2021-12-15 | Anirudh Devgan CEO 취임 | 전임 Lip-Bu Tan은 Executive Chairman으로 이동(2023년 퇴임, 2025년 Intel CEO 취임) | [`03_ceo.md`](./03_ceo.md) | [Cadence 공식 발표](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2021/cadence-announces-anirudh-devgan-to-become-ceo-in-december-2021-.html) |
+| 2021-12-15~2025-07-28 | CEO 취임·BETA CAE 인수·FY2025 Q1 실적·자사주매입 증액·DOJ·BIS 합의금 | → `02_history.md`·`03_ceo.md`·`05_financials.md`에 이미 반영(4분기 이상 지난 항목이라 로그에서 압축) | `02_history.md`, `03_ceo.md`, `05_financials.md` | `02_history.md` 연혁 표 참고 |
 
 ---
 
@@ -46,4 +42,4 @@
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-16)*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-22)*
