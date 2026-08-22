@@ -13,7 +13,7 @@
 - **시가총액**: 약 $3.51B (2026-08-18 종가 $175.70 × 발행주식수 약 19.95백만 주[^shares] 기준, stockanalysis.com)
 - **회계연도(FY) 마감월**: 12월(캘린더 연도와 동일)
 
-[^shares]: 발행주식수는 2026-08-01 기준 Class A 19,233,658주 + Class B 719,200주 = 19,952,858주(Centrus 2026년 2분기 10-Q 표지). Class A·Class B는 배당·경제적 권리는 동일하나 의결권 구조가 달라 아래 §2·[CEO / 경영진](./03_ceo.md) §6에서 다룬다.
+[^shares]: 발행주식수는 2026-08-01 기준 Class A 19,233,658주 + Class B 719,200주 = 19,952,858주(Centrus 2026년 2분기 10-Q 표지). Class A·Class B는 배당·경제적 권리는 동일하나 의결권 구조가 달라 아래 2. 사업 모델 — 어떻게 돈을 버는가·[CEO / 경영진](./03_ceo.md) 6. 지분 구조 / 거버넌스에서 다룬다.
 
 ---
 
@@ -45,7 +45,7 @@ LEU 세그먼트 합계는 총매출의 약 77%($346.2M), Technical Solutions는
 
 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [섹터 개요](../00_overview.md)를 따른다. 여기서는 Centrus가 그 안에서 어떤 위치인지만 서술한다.
 
-Centrus는 이 섹터에서 유일하게 **업스트림(농축)에 가까운 회사**다 — 같은 섹터의 BWX Technologies가 완제품(원자로 압력용기·핵연료 조립체)을 만드는 미드스트림 제조업체라면, Centrus는 그 원료가 되는 농축우라늄(SWU) 자체를 생산한다. 글로벌 농축 시장의 과점 구조(Rosatom/Urenco/CNEIC/Orano 4개사 95%↑)와 Centrus의 지정학적 위치(미국이 자국 기술·자본으로 소유한 유일한 사업자, RSA·Import Ban Act 수혜)는 [섹터 개요](../00_overview.md) §2를 참고하고, 여기서는 Centrus 고유 수치만 남긴다 — 연간 약 5,000만 SWU 규모 시장에서 Centrus의 점유율은 5% 미만이다.[^market]
+Centrus는 이 섹터에서 유일하게 **업스트림(농축)에 가까운 회사**다 — 같은 섹터의 BWX Technologies가 완제품(원자로 압력용기·핵연료 조립체)을 만드는 미드스트림 제조업체라면, Centrus는 그 원료가 되는 농축우라늄(SWU) 자체를 생산한다. 글로벌 농축 시장의 과점 구조(Rosatom/Urenco/CNEIC/Orano 4개사 95%↑)와 Centrus의 지정학적 위치(미국이 자국 기술·자본으로 소유한 유일한 사업자, RSA·Import Ban Act 수혜)는 [섹터 개요](../00_overview.md) 2. 산업 구조 — 돈이 어떻게 도는가를 참고하고, 여기서는 Centrus 고유 수치만 남긴다 — 연간 약 5,000만 SWU 규모 시장에서 Centrus의 점유율은 5% 미만이다.[^market]
 
 HALEU(고순도저농축우라늄, U-235 농도 5~20%)는 대부분의 차세대 SMR·마이크로원자로 설계에 필요한 연료인데, Centrus는 2023년 10월부터 미국에서 유일하게 HALEU를 상업 생산하는 회사다. 이 선점 위치 때문에 DOE HALEU Production Contract·HALEU Operation Contract 등 정부 계약의 사실상 유일한 수의계약 상대방에 가깝다 — 다만 이는 반대로 **DOE 예산·정책 결정에 대한 의존도**로 직결된다([투자 판단](./07_investment.md) Bear Case 참고).
 

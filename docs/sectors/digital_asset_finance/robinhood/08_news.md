@@ -19,7 +19,7 @@
 | 2026-04-28 | 2026년 1분기 실적 발표 | 매출 $1,067M(QoQ -16.84%), 영업이익 $411M, 크립토 매출 YoY -47% | 핵심 지표 | [Robinhood IR](https://investors.robinhood.com/static-files/15576d76-2d02-4aea-a40d-48e694c04a4b) |
 | 2026-02-04 | CFTC, 스포츠·선거 이벤트 계약 금지 규칙 개정안 철회 | 이전에 Robinhood 등의 스포츠·선거 이벤트 계약 취급을 금지할 수 있었던 개정안을 CFTC가 철회 — 사업 지속에는 우호적이나 규제 불확실성 자체는 해소되지 않음(같은 해 6월 새 규칙제정안 발표로 이어짐) | 투자 판단 | [Norton Rose Fulbright](https://www.nortonrosefulbright.com/en-us/knowledge/publications/ad8a494a/prediction-markets-at-a-crossroads-preemption-enforcement-and-rulemaking) |
 | 2026-01 (구체일 확인 필요) | 15억 달러 규모 신규 자사주매입 프로그램 승인 | 약 3개년에 걸쳐 집행 예정 | 역사 / 주요 이벤트, 재무 / 실적 | [The Globe and Mail](https://www.theglobeandmail.com/investing/markets/stocks/HOOD/pressreleases/936003/robinhood-authorizes-15-billion-share-buyback-amid-2026-stock-decline/) |
-| 2025-01-13~2025-06-03 | SEC 4,500만 달러 합의·일리노이 중지명령·Bitstamp 인수 완료 | → 역사 / 주요 이벤트·투자 판단 §3에 이미 반영(4분기 이상 지난 항목이라 로그에서 압축) | 역사 / 주요 이벤트, 투자 판단 | 역사 / 주요 이벤트 연혁 표 참고 |
+| 2025-01-13~2025-06-03 | SEC 4,500만 달러 합의·일리노이 중지명령·Bitstamp 인수 완료 | → 역사 / 주요 이벤트·투자 판단 3. 리스크 (약점 / Bear Case)에 이미 반영(4분기 이상 지난 항목이라 로그에서 압축) | 역사 / 주요 이벤트, 투자 판단 | 역사 / 주요 이벤트 연혁 표 참고 |
 
 ---
 

@@ -22,7 +22,7 @@
 | ~2017 이전 | Chief Operating Officer(Midstream/Energy Ventures) / NiSource·Columbia Pipeline Group, President / Pennant Midstream | 파이프라인·미드스트림 운영 및 신사업 개발 경력 축적 |
 | ~2017 이전 | Senior VP & President, Pipeline and Midstream / Cheniere Energy | LNG 수출 터미널 운영사 Cheniere에서 파이프라인·미드스트림 사업 총괄 |
 | 2017 | Williams 합류 | Senior VP, Corporate Strategic Development로 입사 |
-| 2023.01~2025.06 | Executive Vice President, Corporate Strategic Development / Williams | 전사 전략·사업개발·신사업(New Energy Ventures, Power Innovation 포함) 총괄, 다수의 M&A(Rimrock·Saber Midstream 등 §역사 / 주요 이벤트 참고)를 주도 |
+| 2023.01~2025.06 | Executive Vice President, Corporate Strategic Development / Williams | 전사 전략·사업개발·신사업(New Energy Ventures, Power Innovation 포함) 총괄, 다수의 M&A(Rimrock·Saber Midstream 등 역사 / 주요 이벤트 참고)를 주도 |
 | **2025.07.01~** | **President & CEO / Williams** | 다년간 준비된 승계 절차를 거쳐 취임, 동시에 이사회 합류 |
 
 ---
@@ -35,7 +35,7 @@ Zamarin은 취임사에서부터 전임 Armstrong 체제의 "천연가스 인프
 
 ## 3. 주요 성과 / 논란
 
-- **성과**: CEO 취임 첫 4개 분기(2025 Q3~2026 Q2) 동안 Adjusted EBITDA·AFFO가 매 분기 전년동기 대비 증가세를 유지했고(핵심 지표 §B 참고), 2026년 상반기에 Blackstone과의 $5.34B Power Innovation 합작 조인트벤처를 최종화하고 Momentum Midstream 인수($5.5B)를 발표하는 등 취임 후에도 대형 딜 실행력을 보여주고 있다. 다만 이 실적이 Zamarin 개인의 전략 전환 효과인지, 전임 체제에서 이미 설계된 프로젝트의 실행 연장선인지는 재임 기간이 짧아(1년 남짓) 아직 구분하기 이르다.
+- **성과**: CEO 취임 첫 4개 분기(2025 Q3~2026 Q2) 동안 Adjusted EBITDA·AFFO가 매 분기 전년동기 대비 증가세를 유지했고(핵심 지표 B. 분기별 지표 참고), 2026년 상반기에 Blackstone과의 $5.34B Power Innovation 합작 조인트벤처를 최종화하고 Momentum Midstream 인수($5.5B)를 발표하는 등 취임 후에도 대형 딜 실행력을 보여주고 있다. 다만 이 실적이 Zamarin 개인의 전략 전환 효과인지, 전임 체제에서 이미 설계된 프로젝트의 실행 연장선인지는 재임 기간이 짧아(1년 남짓) 아직 구분하기 이르다.
 - **논란 / 리스크**: 취임 자체는 이사회가 수년간 준비한 승계 절차의 결과로 알려져 있어 지배구조 갈등은 확인되지 않는다. 다만 재임 기간이 짧아 독자적 경영 스타일에 대한 시장의 검증이 아직 충분히 쌓이지 않았다는 점 자체가 불확실성 요인이다 — 전임 Armstrong이 완전히 이사회를 떠난 2026.03 이후의 독자 행보를 계속 지켜볼 필요가 있다.
 
 ---
@@ -62,7 +62,7 @@ Zamarin은 취임사에서부터 전임 Armstrong 체제의 "천연가스 인프
 | 항목 | 값 | 기준일 |
 |------|-----|--------|
 | 기관 투자자 지분율 (%) | 약 87.1% | 2026-08(집계 사이트 기준) |
-| 내부자(임원·이사) 지분율 (%) | 약 6.0% (§4의 CEO 개인 지분 포함) | 2026-08(집계 사이트 기준) |
+| 내부자(임원·이사) 지분율 (%) | 약 6.0% (4. 보상 / 지분의 CEO 개인 지분 포함) | 2026-08(집계 사이트 기준) |
 | 주요 대주주 (5% 이상 보유) | BlackRock(약 8.7%), The Vanguard Group(약 7.5%, SEC Schedule 13G 2026-03-31 기준 92.2M주), State Street(약 6.5%) | 2026-08(집계 사이트·SEC 13G 혼합)¹ |
 | 차등의결권 구조 (dual-class) | 없음 — 보통주 1주 1의결권 | — |
 

@@ -62,7 +62,7 @@
 | 총 의결권 대비 비율 (%) | 49.6 | 2026-03-31 기준 |
 
 - Armstrong의 기타보상 대부분은 2025년 1월부터 시행된 전용기 정책(경호 목적)에 따른 개인용 전용기 이용 관련 비용으로, 회사는 이를 독립 제3자 보안 컨설팅 결과에 따른 리스크 완화 조치로 설명한다[^comp].
-- 보너스·주식보상(Stock Awards)·옵션보상(Option Awards) 항목은 최근 3개년(FY2023~2025) 모두 "$0"으로 공시됨 — Armstrong은 창업자 지분이 이미 크기 때문에 신규 주식보상을 받지 않는 구조로 보인다(§6 지분구조와 연결해서 볼 것).
+- 보너스·주식보상(Stock Awards)·옵션보상(Option Awards) 항목은 최근 3개년(FY2023~2025) 모두 "$0"으로 공시됨 — Armstrong은 창업자 지분이 이미 크기 때문에 신규 주식보상을 받지 않는 구조로 보인다(6. 지분 구조 / 거버넌스와 연결해서 볼 것).
 - 참고로 President & COO Emilie Choi는 FY2025 총보상 $22.2M(대부분 주식보상)으로 Armstrong보다 크다 — Armstrong의 보상이 낮은 것은 회사 전체 보상 수준이 낮아서가 아니라 본인이 이미 대규모 지분을 보유해 신규 주식보상을 받지 않기 때문으로 해석된다.
 
 [^comp]: [Coinbase Global, Inc. DEF 14A (2026-04-24 제출, FY2025 위임장) — SEC EDGAR](https://www.sec.gov/Archives/edgar/data/0001679788/000167978826000045/coin-20260424.htm)
@@ -85,8 +85,8 @@
 | 항목 | 값 | 기준일 |
 |------|-----|--------|
 | 기관 투자자 지분율 (%) | BlackRock, Inc. 6.6%(Class A 기준, 의결권 1.4%)만 5% 이상 보유자로 공시됨 — 그 외 기관 지분은 위임장에 개별 공시되지 않음(확인 필요) | 2025-06-30 기준(BlackRock 13G/A) |
-| 내부자(임원·이사) 지분율 (%) (§4의 CEO 개인 지분 포함 합계) | 전체 임원·이사 14인 합산 Class A 5.5% / Class B 75.9% / 총 의결권 60.4% | 2026-03-31 |
-| 주요 대주주 (5% 이상 보유) | ① BlackRock, Inc. — Class A 6.6%, 의결권 1.4% ② Brian Armstrong 관련 독립수탁 신탁·LLC(Jeffrey Billings 수탁, Armstrong 본인이 직접 지배하지 않는 별도 신탁군) — Class B 24.0%, 의결권 18.9% ③ Brian Armstrong 본인(§4의 직접 보유분, Living Trust 포함) — Class A 3.5% / Class B 62.5%, 의결권 49.6% ④ Frederick Ehrsam(공동창업자) — Class B 13.4%, 의결권 10.6% | 2026-03-31 |
+| 내부자(임원·이사) 지분율 (%) (4. 보상 / 지분의 CEO 개인 지분 포함 합계) | 전체 임원·이사 14인 합산 Class A 5.5% / Class B 75.9% / 총 의결권 60.4% | 2026-03-31 |
+| 주요 대주주 (5% 이상 보유) | ① BlackRock, Inc. — Class A 6.6%, 의결권 1.4% ② Brian Armstrong 관련 독립수탁 신탁·LLC(Jeffrey Billings 수탁, Armstrong 본인이 직접 지배하지 않는 별도 신탁군) — Class B 24.0%, 의결권 18.9% ③ Brian Armstrong 본인(4. 보상 / 지분의 직접 보유분, Living Trust 포함) — Class A 3.5% / Class B 62.5%, 의결권 49.6% ④ Frederick Ehrsam(공동창업자) — Class B 13.4%, 의결권 10.6% | 2026-03-31 |
 | 차등의결권 구조 (dual-class) | 있음 — Class A 보통주 1주당 1의결권, Class B 보통주 1주당 20의결권. Class B는 대부분 창업자(Armstrong·Ehrsam) 및 관련 신탁이 보유 | 2026-03-31 |
 
 - ⚠️ Armstrong 본인 직접 지배분(의결권 49.6%)과 독립수탁 신탁(의결권 18.9%, Armstrong이 설립했으나 독립 수탁자가 재량권을 가짐)을 단순 합산하면 68.5%p가 되지만, 위임장은 이 둘을 **별도 항목**으로 공시한다 — 후자는 법적으로 Armstrong의 의결권으로 집계되지 않으므로 "Armstrong 개인 의결권 = 49.6%"가 공시 기준 정확한 값이다. 다만 家族 관련 신탁까지 포함한 "Armstrong 계열"의 실질적 영향력은 이보다 클 수 있다는 점은 참고로 남긴다.

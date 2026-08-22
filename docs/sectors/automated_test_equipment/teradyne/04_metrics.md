@@ -42,7 +42,7 @@
 
 > **Non-GAAP 조정 항목**: GAAP–Non-GAAP EPS 차이는 주로 인수 무형자산 상각(취득 관련), 구조조정 비용([역사 / 주요 이벤트](./02_history.md) 2024·2025 Robotics 구조조정 참고), 연금 시가평가 조정으로 구성된다. SBC는 매출의 2%대로 크지 않아 이 회사에서 GAAP-Non-GAAP 괴리의 주된 원인은 아니다.
 >
-> **FY2023 매출이 전년(FY2022 $3,155.0M) 대비 −15.2% 급감한 이유**: 2022년까지 이어진 반도체 업사이클 이후의 재고 조정·다운사이클 국면 — ATE 산업 특유의 강한 경기민감도([섹터 개요](../00_overview.md) §4 참고)를 그대로 보여주는 구간이다. FY2024~FY2025의 반등, 특히 FY2026의 폭발적 성장(E)은 AI 반도체 테스트 수요가 이 다운사이클을 완전히 뒤집은 결과로 해석된다.
+> **FY2023 매출이 전년(FY2022 $3,155.0M) 대비 −15.2% 급감한 이유**: 2022년까지 이어진 반도체 업사이클 이후의 재고 조정·다운사이클 국면 — ATE 산업 특유의 강한 경기민감도([섹터 개요](../00_overview.md) 4. 구조적 리스크 / 경기 민감도 참고)를 그대로 보여주는 구간이다. FY2024~FY2025의 반등, 특히 FY2026의 폭발적 성장(E)은 AI 반도체 테스트 수요가 이 다운사이클을 완전히 뒤집은 결과로 해석된다.
 >
 > 출처: [Teradyne FY2023 10-K/4Q23 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/33/teradyne-reports-fourth-quarter-and-fiscal-year-2023-results), [FY2024 4Q24 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/15/teradyne-reports-fourth-quarter-2024-results), [FY2025 4Q25 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/433/teradyne-reports-fourth-quarter-and-full-year-2025-results), FY2026(E) 컨센서스는 [stockanalysis.com](https://stockanalysis.com/stocks/TER/forecast/)(15개 증권사 집계, 2026-08 시점).
 
@@ -140,7 +140,7 @@
 ¹ Q1·Q2 FY25의 전년동기(Q1·Q2 FY24) 매출·EPS는 이번 조사에서 신뢰할 수 있는 값을 확보하지 못함 — 확인 필요.
 ² Q3 FY24 GAAP EPS $0.89, Q4 FY24 GAAP EPS $0.90(stockanalysis.com 집계, 1차 공시 직접 대조는 하지 않음 — 확인 필요) 기준으로 계산.
 
-> Q4 FY25~Q2 FY26 사이 영업이익률이 30%대까지 급등한 것은 AI 컴퓨트 수요 급증에 따른 매출 레버리지 효과다([재무 / 실적](./05_financials.md) §2 참고). Q3 FY26 가이던스(2026-07-28 발표: 매출 $1,200~1,300M, Non-GAAP EPS $1.85~2.15)는 Q2 대비 매출 하단 기준 소폭 둔화를 시사한다 — AI 수요의 분기별 변동성(재고·발주 타이밍)을 보여주는 신호로, 추세 자체가 꺾인 것인지는 다음 분기 확인이 필요하다.
+> Q4 FY25~Q2 FY26 사이 영업이익률이 30%대까지 급등한 것은 AI 컴퓨트 수요 급증에 따른 매출 레버리지 효과다([재무 / 실적](./05_financials.md) 2. 수익성 참고). Q3 FY26 가이던스(2026-07-28 발표: 매출 $1,200~1,300M, Non-GAAP EPS $1.85~2.15)는 Q2 대비 매출 하단 기준 소폭 둔화를 시사한다 — AI 수요의 분기별 변동성(재고·발주 타이밍)을 보여주는 신호로, 추세 자체가 꺾인 것인지는 다음 분기 확인이 필요하다.
 >
 > 유동비율·부채비율은 분기 단위로 별도 추적하지 않음(연간 A.3 표로 충분히 추세 확인 가능하다고 판단).
 >

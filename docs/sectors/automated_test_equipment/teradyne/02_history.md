@@ -23,7 +23,7 @@
 | **2018.11.27** | 상장 거래소를 **NYSE에서 NASDAQ으로 이전**(티커 TER 유지) |
 | 2020 | AutoGuide Mobile Robots 인수 — 로보틱스 포트폴리오 강화 |
 | 2022.07.01 | Greg Smith, President 취임(CEO 승진 전 단계) |
-| **2023.02.01** | **Greg Smith CEO 취임** — Mark E. Jagiela 후임, 동시에 이사회 합류(Chairman은 겸임하지 않음, [CEO / 경영진](./03_ceo.md) §6 참고) |
+| **2023.02.01** | **Greg Smith CEO 취임** — Mark E. Jagiela 후임, 동시에 이사회 합류(Chairman은 겸임하지 않음, [CEO / 경영진](./03_ceo.md) 6. 지분 구조 / 거버넌스 참고) |
 | 2023.11 | Technoprobe(프로브카드 공급사) 지분 10% 취득 계약(콜옵션 방식) — 공급망 파트너십 강화 |
 | **2024.05.27** | **Device Interface Solutions(DIS) 사업부를 Technoprobe에 $85.0M에 매각**(세전 처분이익 $57.1M) — Semiconductor Test 내 일부 제품군을 핵심 사업 집중을 위해 정리 |
 | 2024 (4Q 보고 기준) | 보고 세그먼트를 4개(Semiconductor Test·System Test·Wireless Test·Robotics)에서 3개(Semiconductor Test·Product Test·Robotics)로 재편 |

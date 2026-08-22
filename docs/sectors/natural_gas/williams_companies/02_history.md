@@ -30,7 +30,7 @@
 | 2021 | Sequent Energy Management 인수(가스 마케팅 역량 강화) |
 | 2022.09 | 델라웨어 형평법법원이 Williams 승소 판결(위약금+이자+비용 총 $602M) — Energy Transfer가 항소 |
 | **2023.10** | 델라웨어 대법원이 원심을 확정, Williams 승소 최종 확정(위약금 $410M + 계약 이율 이자 등) |
-| 2023.11 | Energy Transfer로부터 $627M 최종 수령 — 변호사 비용 등을 제한 세후 순이익 **$534M**을 FY2023 GAAP 손익계산서에 "Net gain from Energy Transfer litigation judgment"로 인식(핵심 지표 §1 각주 참고) |
+| 2023.11 | Energy Transfer로부터 $627M 최종 수령 — 변호사 비용 등을 제한 세후 순이익 **$534M**을 FY2023 GAAP 손익계산서에 "Net gain from Energy Transfer litigation judgment"로 인식(핵심 지표 A.1. 실적 지표 각주 참고) |
 | 2023.02 | MountainWest Pipeline Holding Company 인수($1.024B) |
 | 2023.11 | DJ 분지(Denver-Julesburg Basin) 가스 수집·처리 자산 인수($544M) |
 | 2024.01 | Hartree Partners 계열사로부터 걸프코스트 가스 저장 자산 포트폴리오 인수($1.844B) |

@@ -17,7 +17,7 @@
 ## 1. 한 줄 요약
 
 Kratos는 무인 표적기(target drone) 개발로 시작해, 현재는 저비용 소모성 전투 무인기(XQ-58 Valkyrie 등), 초음속 비행체, 위성·통신, 마이크로파 전자부품 등을 아우르는 방산 기술기업이다.
-미 국방부의 "저비용 대량생산(affordable mass)" 무인체계 전략에서 수혜가 기대되는 기업으로 꼽히지만, 미 공군의 대표 프로그램인 CCA(Collaborative Combat Aircraft) Increment 1 1차 선정(2024년 4월)에서는 General Atomics·Anduril에 밀려 제외됐다 — 대신 해병대·Drone Dominance 등 대체 경로로 입지를 넓히는 중이다(투자 판단 §2·§3 참고).
+미 국방부의 "저비용 대량생산(affordable mass)" 무인체계 전략에서 수혜가 기대되는 기업으로 꼽히지만, 미 공군의 대표 프로그램인 CCA(Collaborative Combat Aircraft) Increment 1 1차 선정(2024년 4월)에서는 General Atomics·Anduril에 밀려 제외됐다 — 대신 해병대·Drone Dominance 등 대체 경로로 입지를 넓히는 중이다(투자 판단 2. 경쟁 해자 (Moat)·3. 리스크 (약점 / Bear Case) 참고).
 
 ---
 

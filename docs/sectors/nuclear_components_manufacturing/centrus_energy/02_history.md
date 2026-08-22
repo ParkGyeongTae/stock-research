@@ -18,7 +18,7 @@
 | 2000년대~2010년대 초 | 차세대 원심분리기 기술인 **American Centrifuge** 개발 추진, 레거시 가스확산 사업은 쇠퇴 |
 | 2011 | 후쿠시마 원전사고 여파로 글로벌 농축 가격 급락 — 이후 재무 압박 심화 |
 | **2014.03** | **American Centrifuge 개발 자금조달용 전환사채 재조정을 위해 Chapter 11 파산보호 신청** |
-| **2014.09** | 델라웨어 파산법원이 회생계획 승인, USEC Inc.가 **Centrus Energy Corp.**로 사명 변경하며 파산 재조정 완료(2014-09-30 발효) — 이 시점 자기자본이 극히 얇아진 상태로 재출발(§4 참고, 핵심 지표 FY2023 자기자본 $32.3M 각주 참고) |
+| **2014.09** | 델라웨어 파산법원이 회생계획 승인, USEC Inc.가 **Centrus Energy Corp.**로 사명 변경하며 파산 재조정 완료(2014-09-30 발효) — 이 시점 자기자본이 극히 얇아진 상태로 재출발(핵심 지표 FY2023 자기자본 $32.3M 각주 참고) |
 | 2017 | Tetsuo Iguchi(Toshiba America) Class B 보통주 투자자지정이사(Investor-Designated Director)로 선임 — Toshiba America Energy Systems(TAES)가 Class B 보통주 대부분을 보유하는 지배구조 시작 |
 | **2019** | DOE, American Centrifuge Operating(ACO, Centrus 자회사)과 계약해 오하이오주 파이크턴에 **16기 원심분리기 데모 카스케이드** 건설 착수(HALEU 생산 실증 목적) |
 | **2023.10** | 파이크턴에서 **HALEU 농축 상업 생산 개시** — 1954년 이후 미국에서 신규 가동된 최초의 우라늄 농축 플랜트 |
