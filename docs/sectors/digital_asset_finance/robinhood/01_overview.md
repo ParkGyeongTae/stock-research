@@ -2,7 +2,9 @@
 
 > 수수료 무료 주식·옵션 거래로 성장한 리테일 증권 브로커리지. 본업은 여전히 주식·옵션 중개이지만, 암호화폐 거래(자체 앱 + 2025년 인수한 기관용 거래소 Bitstamp)와 자체 레이어2 블록체인(Robinhood Chain) 기반 토큰화 주식 사업을 적극 확장하면서 크립토 테마 관련주로도 분류되는 종목.
 
-> ⚠️ 시가총액은 2026-08-13(수) 종가 $99.37 기준. 집계 사이트마다 조회 시점(장중/전일 종가 등)이 달라 소폭(수억~수십억 달러) 차이가 날 수 있음 — 갱신 시 항상 기준일을 함께 명시할 것.
+> ⚠️ 시가총액은 2026-08-21(금) 종가 $108.13 기준. 집계 사이트마다 조회 시점(장중/전일 종가 등)이 달라 소폭(수억~수십억 달러) 차이가 날 수 있음 — 갱신 시 항상 기준일을 함께 명시할 것.
+>
+> ⚠️ **주가 급변동 참고**: 2026-08-19~21 사흘간 영국 크립토 거래 출시(Bitstamp UK)·비상장기업 노출 펀드(Robinhood Ventures Fund II) NYSE 상장 추진·AI 트레이딩 도구 공개가 겹쳐 주가가 $99.37(2026-08-13) → $108.13(2026-08-21)로 약 +8.8% 급등했다(`08_news.md` 참고) — 변동성이 큰 구간이므로 이 문서를 다시 열람하는 시점에는 최신 종가를 재확인할 것.
 
 - **회사명**: Robinhood Markets, Inc.
 - **티커 / 상장 시장**: HOOD / NASDAQ
@@ -10,7 +12,7 @@
 - **CEO**: Vladimir Tenev (공동창업자, 회장 겸 CEO)
 - **홈페이지**: https://robinhood.com
 - **섹터 / 산업**: 금융(Financials) / 자본시장(Capital Markets) — 리테일 증권 브로커리지(핀테크). 암호화폐 거래소업을 겸영
-- **시가총액**: 약 893.4억 달러 (2026-08-13 종가 $99.37 기준, stockanalysis.com)
+- **시가총액**: 약 972.2억 달러 (2026-08-21 종가 $108.13 기준, stockanalysis.com)
 - **회계연도(FY) 마감월**: 12월 말(캘린더 연도와 동일)
 
 ---
@@ -71,7 +73,8 @@ Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue
 
 - [Robinhood 공식 홈페이지](https://robinhood.com)
 - [Robinhood Markets, Inc. Investor Relations](https://investors.robinhood.com)
-- [Robinhood (HOOD) Market Cap & Net Worth — stockanalysis.com](https://stockanalysis.com/stocks/hood/market-cap/)
+- [Robinhood (HOOD) Market Cap & Net Worth — stockanalysis.com](https://stockanalysis.com/stocks/hood/market-cap/) (조회일 2026-08-22)
+- [HOOD Stock Rallies As Crypto And Private-Market Bets Accelerate — StocksToTrade (2026-08-21)](https://stockstotrade.com/news/robinhood-markets-inc-hood-news-2026_08_21-4/)
 - [Robinhood Reports Second Quarter 2026 Results (GlobeNewswire, 2026-07-29)](https://www.globenewswire.com/news-release/2026/07/29/3335576/0/en/robinhood-reports-second-quarter-2026-results.html)
 - [Robinhood Q2 2026 Revenue $1.308B, EPS $0.62 — 10-Q Summary (TradingView)](https://www.tradingview.com/news/tradingview:e9d8e3b1fa206:0-robinhood-markets-inc-q2-2026-revenue-1-308b-eps-0-62-10-q-summary/)
 - [Robinhood Q2 Revenue Hits Record $1.31B as Crypto Revenue Falls 38% to $100M (CryptoTimes)](https://www.cryptotimes.io/2026/07/30/robinhood-q2-revenue-hits-record-1-31-billion-crypto-earnings-fall-38/)
@@ -86,5 +89,5 @@ Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-16)*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-22)*
 
