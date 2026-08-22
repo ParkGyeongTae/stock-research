@@ -45,7 +45,7 @@ description: 아직 이 저장소에 없는 회사를 "새로 만들어줘", "�
    - 처음엔 `01_overview.md`만 있어도 된다. 나머지는 분석이 깊어지는 만큼만 남기고, 안 쓸 파일은 삭제한다(`01_overview.md`는 유지 권장).
 
 6. **기술적 분석 차트(09·10)를 쓴다면 손으로 만들지 않는다**
-   명령은 `authoring-guide.md` "기술적 분석 차트 생성" 절 그대로 따른다(`scripts/gen_technical_chart.py`, `--interval`만 다름).
+   명령은 `chart-generation-guide.md` "기술적 분석 차트 생성" 절 그대로 따른다(`scripts/gen_technical_chart.py`, `--interval`만 다름).
    짧은 상장 기간 등으로 5년 주봉이 무의미하면 `10_technical_weekly.md` 자체를 생략해도 된다.
 
 7. **최종 보고서(`11_final_report.md`)는 01~10이 다 채워진 뒤 가장 마지막에 쓴다**

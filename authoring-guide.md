@@ -13,6 +13,7 @@ stock-research/
 ├── AGENTS.md              # 에이전트 역할·행동 지침 (CLAUDE.md는 이 파일의 심볼릭 링크)
 ├── README.md              # 레포 설명 (GitHub용)
 ├── authoring-guide.md     # 이 문서 — docs/ 작성 규칙
+├── chart-generation-guide.md  # 차트 생성 스크립트 사용법·재현 파라미터 (이 문서에서 분리됨)
 └── docs/
     ├── .pages             # 최상위 nav 순서 (awesome-pages 플러그인)
     ├── index.md           # 사이트 첫 페이지 — 소개·커버리지 범위만 담은 환영 페이지
@@ -146,7 +147,7 @@ cp -r docs/meta/.template/company docs/sectors/<sector>/<company-name>
 # 3. 섹터 폴더가 새로 생기는 경우, 산업 자체를 설명하는 개요 문서도 필수로 추가
 cp docs/meta/.template/sector/00_overview.md docs/sectors/<sector>/00_overview.md
 
-# 4. 09_technical_daily.md·10_technical_weekly.md(차트)는 SVG·레벨 표를 손으로 만들지 말고 생성
+# 4. 09_technical_daily.md·10_technical_weekly.md(차트)는 SVG·레벨 표를 손으로 만들지 말고 생성 (상세: chart-generation-guide.md)
 uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명>              # 09용 (일봉·1년)
 uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명> --interval 1wk  # 10용 (주봉·5년)
 
@@ -156,132 +157,7 @@ uv run python scripts/gen_technical_chart.py <TICKER> --name <회사명> --inter
 
 **섹터 자체가 새로 생기는 경우에만** `docs/sectors/.pages`에 폴더명을 추가하는 한 단계가 더 있다(규칙은 위 "📁 폴더 구조·명명 규칙"의 `.pages` 등록 규칙 참고). 기존 섹터에 회사만 추가할 땐 필요 없다.
 
-### 기술적 분석 차트 생성 (`09_technical_daily.md`·`10_technical_weekly.md`)
-
-두 문서의 캔들 SVG·지지/저항 표·방법론 수치는 **손으로 만들지 않고** 같은 스크립트 `scripts/gen_technical_chart.py`로 생성합니다(표준 라이브러리만 쓰므로 추가 설치 불필요). `--interval`만 다르고 나머지 사용법은 동일합니다 — 기본값 `1d`는 09용(일봉·1년), `1wk`는 10용(주봉·5년)입니다.
-
-```bash
-# 09_technical_daily.md (일봉·1년)
-uv run python scripts/gen_technical_chart.py SNPS --name Synopsys \
-  --event 2025-09-10:"실적발표 갭다운" --ref-line 626.24:"52주 최고" \
-  --force-level '366:(52주 최저)' --close-on 2026-08-13
-
-# 10_technical_weekly.md (주봉·5년) — --interval만 추가
-uv run python scripts/gen_technical_chart.py SNPS --name Synopsys --interval 1wk \
-  --close-on 2026-08-13
-```
-
-> 왜 스크립트로 두는가 — 좌표 매핑·스윙 탐지 창(일봉 전후 5거래일 / 주봉 전후 4주)·클러스터링 허용오차(±2.5%, 두 인터벌 공통) 같은 파라미터를 회사마다 다시 구현하면 값이 조용히 달라져 **회사 간 차트 비교가 깨집니다.** 이 파라미터의 단일 출처는 스크립트 상단 `INTERVAL_PARAMS`이며, 바꾸면 이미 만들어둔 `09_technical_daily.md`·`10_technical_weekly.md`를 전부 재생성하고 각 문서 §4에 바뀐 값을 남겨야 합니다.
-
-스크립트가 만드는 것은 기계적 산출물뿐입니다. 갭·급락 구간의 **해석**(§3), 파라미터를 기본값에서 바꾼 **사유**(§4)는 사람이 채웁니다. §2 비고의 "어느 시기의 스윙대인지"는 `--emit dates`로 뽑은 날짜 목록(아래)을 그대로 옮기고, 그 시기에 무슨 일이 있었는지 같은 해석만 사람이 덧붙이면 됩니다 — 날짜 자체를 눈대중으로 채우지 않습니다:
-
-```bash
-uv run python scripts/gen_technical_chart.py SNPS --interval 1wk --emit dates
-```
-
-`--close-on`으로 뽑은 종가는 `04_metrics.md`·`06_valuation.md`의 값과 대조해 문서 상단에 결과를 남기세요.
-
-### 주가가 아닌 시계열(환율·금리 등)에 쓰기
-
-이 스크립트는 Yahoo Finance 티커라면 주가가 아니어도(`KRW=X`=원달러, `^TNX`=미 국채 10년물 등) 그대로 쓸 수 있습니다. 기본값(`$` prefix, "USD")은 주가 전용이므로 `--symbol`·`--symbol-pos`·`--unit-label`·`--adj-note`로 바꿉니다:
-
-```bash
-uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
-  --symbol "원" --symbol-pos suffix --unit-label "원" \
-  --adj-note "환율 원자료(조정 없음)"
-```
-
-이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. 새 지표를 만들 땐 위 "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`crypto/`) 중 맞는 곳에 두세요 — 실제 예시는 [`fx/usd_krw.md`](./docs/meta/macro/fx/usd_krw.md)·[`rates/treasury_10y.md`](./docs/meta/macro/rates/treasury_10y.md)를 참고하세요.
-
-### macro 문서 재현 파라미터
-
-`docs/meta/macro/`의 단일 자산 문서(아래 표 28개)는 §1(차트)만 스크립트로 생성하고 §3(지지/저항 표)·§4(방법론)는 두지 않기로 했다(2026-08-20) — 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓰고 `--close-on`엔 최신 종가 기준일을 넣는다:
-
-```bash
-uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --interval 1wk \
-  <옵션> --adj-note "<조정 각주>" --close-on <YYYY-MM-DD> --emit chart
-```
-
-조정 각주 코드:
-
-| 코드 | 텍스트 |
-|------|--------|
-| FUT | 선물 원자료(연속월물, 조정 없음) — 만기 롤오버 시 가격 갭 가능 |
-| IDX | 지수 원자료(조정 없음) |
-| FX | 환율 원자료(조정 없음) |
-| ETF | ETF 원자료(가격 기준, 분배금 재투자 미반영 — 총수익률 아님) |
-| YLD | 국채 수익률 원자료(조정 없음) |
-| DISC | 13주 국채 할인율 원자료(조정 없음) |
-| VIXN | VIX 지수 원자료(조정 없음) |
-| DXYN | 달러인덱스 원자료(조정 없음) |
-| BTCN | BTC/USD 원자료(조정 없음, 24시간 시장이라 주 마지막 거래일 기준 종가) |
-| ETHN | ETH/USD 원자료(조정 없음, 24시간 시장이라 주 마지막 거래일 기준 종가) |
-| URTN | 실물 우라늄 신탁 원자료(조정 없음) — 순자산가치(NAV) 대비 프리미엄/디스카운트로 거래될 수 있음 |
-
-| 문서 | 티커 | --name | 옵션 | 각주 |
-|------|------|--------|------|------|
-| `macro/metals/gold.md` | `GC=F` | 금 | `--unit-label "USD/트로이온스"` | FUT |
-| `macro/metals/silver.md` | `SI=F` | 은 | `--unit-label "USD/트로이온스" --decimals 2` | FUT |
-| `macro/metals/copper.md` | `HG=F` | 구리 | `--unit-label "USD/파운드"` | FUT |
-| `macro/energy/oil_wti.md` | `CL=F` | WTI 원유 | `--unit-label "USD/배럴"` | FUT |
-| `macro/energy/natural_gas.md` | `NG=F` | 천연가스 | `--unit-label "USD/MMBtu"` | FUT |
-| `macro/energy/uranium.md` | `SRUUF` | Sprott Physical Uranium Trust | (기본값) | URTN |
-| `macro/equities/dow.md` | `^DJI` | 다우존스산업지수 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/hang_seng.md` | `^HSI` | 항셍지수 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/kosdaq.md` | `^KQ11` | 코스닥 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/kospi.md` | `^KS11` | 코스피 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/nasdaq.md` | `^IXIC` | 나스닥종합지수 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/nikkei225.md` | `^N225` | 닛케이225 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/russell2000.md` | `^RUT` | 러셀2000 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/sox.md` | `^SOX` | 필라델피아 반도체지수 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/sp500.md` | `^GSPC` | S&P 500 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/vix.md` | `^VIX` | VIX 변동성지수 | `--symbol "" --unit-label "pt" --decimals 2` | VIXN |
-| `macro/fx/dxy.md` | `DX-Y.NYB` | 달러인덱스 | `--symbol "" --unit-label "지수" --decimals 2` | DXYN |
-| `macro/fx/eur_usd.md` | `EURUSD=X` | 유로/달러 환율 | `--unit-label "USD/EUR"` | FX |
-| `macro/fx/jpy_usd.md` | `JPY=X` | 엔/달러 환율 | `--symbol "엔" --symbol-pos suffix --unit-label "엔"` | FX |
-| `macro/fx/usd_krw.md` | `KRW=X` | 원/달러 환율 | `--symbol "원" --symbol-pos suffix --unit-label "원"` | FX |
-| `macro/rates/treasury_13w.md` | `^IRX` | 미 국채 13주물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | DISC |
-| `macro/rates/treasury_10y.md` | `^TNX` | 미 국채 10년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
-| `macro/rates/treasury_30y.md` | `^TYX` | 미 국채 30년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
-| `macro/bonds/hyg.md` | `HYG` | 하이일드 회사채 ETF | (기본값) | ETF |
-| `macro/bonds/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
-| `macro/bonds/tip.md` | `TIP` | 물가연동국채 ETF | (기본값) | ETF |
-| `macro/crypto/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
-| `macro/crypto/ethereum.md` | `ETH-USD` | 이더리움 | (기본값) | ETHN |
-
-새 macro 문서를 추가하면 이 표에 행을 하나 추가한다 — 개별 문서에는 재생성 커맨드를 남기지 않는다.
-
-### 여러 자산을 겹쳐 비교하는 문서
-
-단일 자산이 아니라 여러 자산을 "상대적으로 어느 쪽이 더 크게 움직였는지" 비교하려면 `gen_technical_chart.py`가 아니라 `gen_index_overlay_chart.py`를 쓴다. 지지/저항 레벨은 다루지 않고 §1(차트+요약 표)·§2(해석)만 둔다 — 단일 자산 문서와 같은 규칙이다. **모드는 자산 단위로 정한다:**
-
-- `--mode index`(기본): 환율·지수처럼 **단위 자체가 서로 다른** 자산. 공통 시작일을 100으로 맞춰 상대 변화율로 겹친다.
-- `--mode raw`: 국채금리처럼 **이미 같은 단위(%)인** 자산. 지수화하면 안 된다 — 기준값이 0에 가까운 시리즈가 하나라도 있으면(예: 2021년 ZIRP 시기 13주물 금리 0.04%) 지수가 수천으로 튀어 왜곡된다. 원값을 그대로 겹치면 스프레드·역전 같은 실제 정보까지 보여줘 오히려 더 유용하다.
-
-```bash
-# index 모드
-uv run python scripts/gen_index_overlay_chart.py \
-  --series "<티커1>:<라벨1>:<색상슬롯1>" --series "<티커2>:<라벨2>:<색상슬롯2>" ... \
-  --title "<제목>" --period-label "최근 5년 주간"
-
-# raw 모드 (같은 단위인 자산 — 예: 국채금리 %)
-uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
-  --series "<티커1>:<라벨1>:<색상슬롯1>" --series "<티커2>:<라벨2>:<색상슬롯2>" ... \
-  --title "<제목>" --period-label "최근 5년 주간"
-```
-
-색상슬롯은 `docs/meta/macro/`가 이미 쓰는 검증된 8색 팔레트 순번(1=파랑 2=주황 3=아쿠아 4=노랑 5=마젠타 6=초록 7=보라 8=빨강)이다 — 새 배색을 만들지 않고 그 순서를 재사용한다.
-
-| 문서 | 모드 | 시리즈(티커:라벨:색상슬롯) |
-|------|------|---------------------------|
-| `macro/fx/comparison.md` | index | `DX-Y.NYB:달러인덱스 (DXY):1` · `EURUSD=X:유로/달러 환율:2` · `JPY=X:엔/달러 환율:3` · `KRW=X:원/달러 환율:4` |
-| `macro/rates/comparison.md` | raw (`--unit-label "%"`) | `^IRX:미국 13주물 국채금리:1` · `^TNX:미국 10년물 국채금리:2` · `^TYX:미국 30년물 국채금리:3` |
-| `macro/bonds/comparison.md` | index | `TLT:20년+ 장기국채 ETF (TLT):1` · `TIP:물가연동국채 ETF (TIP):2` · `HYG:하이일드 회사채 ETF (HYG):3` |
-| `macro/metals/comparison.md` | index | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
-| `macro/energy/comparison.md` | index | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` · `SRUUF:우라늄 실물 신탁 (SRUUF):3` |
-| `macro/equities/us_comparison.md` | index | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^DJI:다우존스산업지수:3` · `^RUT:러셀2000:4` |
-| `macro/equities/kr_comparison.md` | index | `^KS11:코스피:1` · `^KQ11:코스닥:2` |
-| `macro/crypto/comparison.md` | index | `BTC-USD:비트코인:1` · `ETH-USD:이더리움:2` |
+차트 생성(SVG·지지/저항 표·재현 파라미터)에 쓰는 스크립트 사용법·macro 문서 재현 파라미터 표는 별도 문서 [`chart-generation-guide.md`](./chart-generation-guide.md)로 옮겼다 — 이 문서가 다루는 "회사 문서를 어떻게 쓰는가"와 성격이 달라(회사 문서를 안 쓰는 세션에서도 macro 문서 갱신 때 필요), 두 관심사를 분리했다.
 
 ### 로컬에서 확인하기
 
@@ -295,3 +171,4 @@ uv run mkdocs build   # 배포와 동일하게 빌드 — 경고 메시지를 �
 ---
 
 *작성일: 2026-08-17 (최종 수정일: 2026-08-22)*
+
