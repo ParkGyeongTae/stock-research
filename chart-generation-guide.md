@@ -45,7 +45,7 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
 
 ## macro 문서 재현 파라미터
 
-`docs/meta/macro/`의 단일 자산 문서(아래 표 28개)는 1. 차트만 스크립트로 생성하고 3. 지지선 / 저항선 요약(지지/저항 표)·4. 방법론 · 한계는 두지 않기로 했다(2026-08-20) — 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓰고 `--close-on`엔 최신 종가 기준일을 넣는다:
+`docs/meta/macro/`의 단일 자산 문서(아래 표 28개)는 1. 차트만 스크립트로 생성하고 지지선 / 저항선 요약(지지/저항 표)·방법론 · 한계 절은 두지 않기로 했다(2026-08-20) — 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓰고 `--close-on`엔 최신 종가 기준일을 넣는다:
 
 ```bash
 uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --interval 1wk \
@@ -135,4 +135,4 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 ---
 
-*작성일: 2026-08-22*
+*작성일: 2026-08-22 (최종 수정일: 2026-08-23)*
