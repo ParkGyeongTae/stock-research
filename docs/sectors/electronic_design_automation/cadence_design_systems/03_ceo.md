@@ -2,8 +2,6 @@
 
 > IBM·Magma를 거쳐 2012년 Cadence에 합류한 EDA 기술 전문가 출신 CEO. 취임 이후 AI 기반 컴퓨테이셔널 소프트웨어로 사업 영역을 확장하며 사상 최대 실적 흐름을 이끌고 있다.
 
-> ⚠️ 모든 항목은 웹검색으로 확인한 사실만 기록. 추측이나 출처 불명 내용은 작성 금지 — 출처(공식 프로필, 언론 인터뷰, IR 자료 등)를 반드시 함께 표기.
-
 - **이름**: Anirudh Devgan (아니루드 데브간)
 - **직책**: President & CEO
 - **취임일**: 2021년 12월 15일 (2026년 기준 재임 약 4년차, 전임 Lip-Bu Tan은 Executive Chairman으로 이동)
@@ -84,6 +82,7 @@ IEEE Fellow, 미국 공학한림원(National Academy of Engineering) 회원이�
 - [최근 뉴스 / 이슈](./08_news.md)
 - [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+- [최종 보고서](./11_final_report.md)
 
 ---
 
@@ -99,4 +98,4 @@ IEEE Fellow, 미국 공학한림원(National Academy of Engineering) 회원이�
 
 ---
 
-*작성일: 2026-08-08 (최종 수정일: 2026-08-16)*
+*작성일: 2026-08-08 (최종 수정일: 2026-08-23)*

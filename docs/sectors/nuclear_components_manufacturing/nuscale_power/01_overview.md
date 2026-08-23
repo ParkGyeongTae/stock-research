@@ -2,8 +2,6 @@
 
 > 미 NRC(원자력규제위원회)로부터 소형모듈원자로(SMR) 설계인증을 받은 유일한 회사 — NPM(NuScale Power Module) 기술을 라이선스·엔지니어링 서비스 형태로 제공하며 상업화를 추진 중이지만, 아직 구속력 있는 생산계약 기반 매출은 없는 상업화 이전(pre-commercial) 단계 기업이다. 전략적 파트너 ENTRA1 Energy를 통한 대형 프로젝트(TVA 6GW, 루마니아 RoPower)가 성사 여부의 스윙 팩터다.
 
-> ⚠️ 시가총액은 항상 작성 시점(오늘 날짜) 기준 최신 값으로 기록. 통화 단위(USD/EUR/JPY 등)와 기준일(주가 기준 며칠 종가인지)을 반드시 함께 명시하고, 문서를 갱신할 때마다 시가총액과 기준일도 최신 날짜로 함께 업데이트할 것. 원래 통화가 아닌 다른 통화로 환산한 값이면 환산 시점의 환율도 밝힐 것.
-
 - **회사명**: NuScale Power Corporation
 - **티커 / 상장 시장**: SMR / NYSE
 - **설립 / 본사**: 2007년 오리건주립대(Oregon State University) 기술이전으로 Paul G. Lorenzini·José Reyes가 공동 설립. 2022-05-02 스팩(SPAC) Spring Valley Acquisition Corp와의 합병으로 NYSE 상장(자세한 연혁은 [역사 / 주요 이벤트](./02_history.md)). 본사: 미국 오리건주 코발리스(Corvallis, Oregon) — Delaware 법인
@@ -84,4 +82,4 @@ NuScale은 "규제 인증에서 가장 앞서 있다"는 강점과 "아직 착�
 
 ---
 
-*작성일: 2026-08-19*
+*작성일: 2026-08-19 (최종 수정일: 2026-08-23)*

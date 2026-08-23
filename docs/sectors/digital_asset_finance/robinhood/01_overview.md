@@ -66,6 +66,7 @@ Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue
 - [최근 뉴스 / 이슈](./08_news.md)
 - [기술적 분석 — 일봉·1년](./09_technical_daily.md)
 - [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+- [최종 보고서](./11_final_report.md)
 
 ---
 
@@ -89,5 +90,5 @@ Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-22)*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-23)*
 
