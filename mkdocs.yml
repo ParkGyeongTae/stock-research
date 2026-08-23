@@ -37,6 +37,7 @@ markdown_extensions:
   - tables
   - footnotes
   - admonition
+  - pymdownx.details   # ??? 접히는 admonition — 표 읽는 기준 등 참조 정보를 접어두는 데 씀
   - attr_list
   - toc:
       permalink: true
