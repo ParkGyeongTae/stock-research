@@ -103,6 +103,12 @@ def fetch_closes(ticker: str, rng: str, interval: str) -> dict:
         c = q["close"][i]
         if c is None or c == 0:
             continue
+        o, h, lo = q["open"][i], q["high"][i], q["low"][i]
+        if None in (o, h, lo) or (o == 0 and h == 0 and lo == 0):
+            # 아직 마감 안 된 주의 부분 봉 — Yahoo가 종가만 채우고 시가/고가/저가를
+            # null이나 0으로 보낸다. gen_technical_chart.py가 같은 조건으로 버리므로
+            # 여기서도 버려야 단일 자산 문서와 비교 문서의 기준일이 어긋나지 않는다.
+            continue
         d = (datetime.fromtimestamp(ts, timezone.utc) + tzoff).date()
         out[d] = c
     if not out:
@@ -201,7 +207,8 @@ def render_svg(
         f"--muted:#898781; --base:#898781; {light_vars};\n}}"
     )
     a(
-        f"@media (prefers-color-scheme: dark) {{\n  .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; "
+        f"@media (prefers-color-scheme: dark) {{\n"
+        f'  body:not([data-md-color-scheme="default"]) .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; '
         f"--axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; {dark_vars}; }}\n}}"
     )
     a(

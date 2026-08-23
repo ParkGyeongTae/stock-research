@@ -45,12 +45,16 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
 
 ## macro 문서 재현 파라미터
 
-`docs/meta/macro/`의 단일 자산 문서(아래 표 28개)는 1. 차트만 스크립트로 생성하고 지지선 / 저항선 요약(지지/저항 표)·방법론 · 한계 절은 두지 않기로 했다(2026-08-20) — 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓰고 `--close-on`엔 최신 종가 기준일을 넣는다:
+`docs/meta/macro/`의 단일 자산 문서(아래 표 28개)는 1. 차트만 스크립트로 생성하고 지지선 / 저항선 요약(지지/저항 표)·방법론 · 한계 절은 두지 않기로 했다(2026-08-20) — 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓴다:
 
 ```bash
 uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --interval 1wk \
-  <옵션> --adj-note "<조정 각주>" --close-on <YYYY-MM-DD> --emit chart
+  <옵션> --decimals 2 --emit chart
 ```
+
+`--decimals 2`는 28개 문서 전부에 붙인다 — 기본 자동 규칙(20 이상이면 정수, 미만이면 소수 2자리)을 그대로 두면 지수·금 같은 큰 값에서 소수점이 사라져 기존 문서와 표시가 달라진다.
+
+⚠️ **`--close-on`·`--adj-note`는 `--emit chart`에서 아무 효과가 없다** — 둘 다 `--emit all`/`--emit facts`가 만드는 방법론·데이터 블록에만 반영되는데, macro 문서는 그 절을 두지 않아 차트만 뽑기 때문이다. 그래서 재현 커맨드에서 뺐다. 아래 각주 코드표는 커맨드에 넣는 플래그가 아니라 **각 시리즈의 원자료 성격을 기록해 둔 것**이다(문서 상단 인용문에 반영할 때 참고).
 
 조정 각주 코드:
 
@@ -71,7 +75,7 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | 문서 | 티커 | --name | 옵션 | 각주 |
 |------|------|--------|------|------|
 | `macro/metals/gold.md` | `GC=F` | 금 | `--unit-label "USD/트로이온스"` | FUT |
-| `macro/metals/silver.md` | `SI=F` | 은 | `--unit-label "USD/트로이온스" --decimals 2` | FUT |
+| `macro/metals/silver.md` | `SI=F` | 은 | `--unit-label "USD/트로이온스"` | FUT |
 | `macro/metals/copper.md` | `HG=F` | 구리 | `--unit-label "USD/파운드"` | FUT |
 | `macro/energy/oil_wti.md` | `CL=F` | WTI 원유 | `--unit-label "USD/배럴"` | FUT |
 | `macro/energy/natural_gas.md` | `NG=F` | 천연가스 | `--unit-label "USD/MMBtu"` | FUT |
@@ -85,8 +89,8 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/equities/russell2000.md` | `^RUT` | 러셀2000 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/sox.md` | `^SOX` | 필라델피아 반도체지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/sp500.md` | `^GSPC` | S&P 500 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/vix.md` | `^VIX` | VIX 변동성지수 | `--symbol "" --unit-label "pt" --decimals 2` | VIXN |
-| `macro/fx/dxy.md` | `DX-Y.NYB` | 달러인덱스 | `--symbol "" --unit-label "지수" --decimals 2` | DXYN |
+| `macro/equities/vix.md` | `^VIX` | VIX 변동성지수 | `--symbol "" --unit-label "pt"` | VIXN |
+| `macro/fx/dxy.md` | `DX-Y.NYB` | 달러인덱스 | `--symbol "" --unit-label "지수"` | DXYN |
 | `macro/fx/eur_usd.md` | `EURUSD=X` | 유로/달러 환율 | `--unit-label "USD/EUR"` | FX |
 | `macro/fx/jpy_usd.md` | `JPY=X` | 엔/달러 환율 | `--symbol "엔" --symbol-pos suffix --unit-label "엔"` | FX |
 | `macro/fx/usd_krw.md` | `KRW=X` | 원/달러 환율 | `--symbol "원" --symbol-pos suffix --unit-label "원"` | FX |
@@ -122,16 +126,18 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 색상슬롯은 `docs/meta/macro/`가 이미 쓰는 검증된 8색 팔레트 순번(1=파랑 2=주황 3=아쿠아 4=노랑 5=마젠타 6=초록 7=보라 8=빨강)이다 — 새 배색을 만들지 않고 그 순서를 재사용한다.
 
-| 문서 | 모드 | 시리즈(티커:라벨:색상슬롯) |
-|------|------|---------------------------|
-| `macro/fx/comparison.md` | index | `DX-Y.NYB:달러인덱스 (DXY):1` · `EURUSD=X:유로/달러 환율:2` · `JPY=X:엔/달러 환율:3` · `KRW=X:원/달러 환율:4` |
-| `macro/rates/comparison.md` | raw (`--unit-label "%"`) | `^IRX:미국 13주물 국채금리:1` · `^TNX:미국 10년물 국채금리:2` · `^TYX:미국 30년물 국채금리:3` |
-| `macro/bonds/comparison.md` | index | `TLT:20년+ 장기국채 ETF (TLT):1` · `TIP:물가연동국채 ETF (TIP):2` · `HYG:하이일드 회사채 ETF (HYG):3` |
-| `macro/metals/comparison.md` | index | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
-| `macro/energy/comparison.md` | index | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` · `SRUUF:우라늄 실물 신탁 (SRUUF):3` |
-| `macro/equities/us_comparison.md` | index | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^DJI:다우존스산업지수:3` · `^RUT:러셀2000:4` |
-| `macro/equities/kr_comparison.md` | index | `^KS11:코스피:1` · `^KQ11:코스닥:2` |
-| `macro/crypto/comparison.md` | index | `BTC-USD:비트코인:1` · `ETH-USD:이더리움:2` |
+`--title`은 아래 표의 값을 그대로 쓰고, `--period-label`은 8개 문서 모두 `"최근 5년 주간"`이다. 스크립트가 제목 뒤에 기준일·지수화 여부를 자동으로 붙이므로 제목에 그 정보를 직접 적지 않는다.
+
+| 문서 | 모드 | --title | 시리즈(티커:라벨:색상슬롯) |
+|------|------|---------|---------------------------|
+| `macro/fx/comparison.md` | index | 통화 4종 비교 | `DX-Y.NYB:달러인덱스 (DXY):1` · `EURUSD=X:유로/달러 환율:2` · `JPY=X:엔/달러 환율:3` · `KRW=X:원/달러 환율:4` |
+| `macro/rates/comparison.md` | raw (`--unit-label "%"`) | 미국 국채금리 3종 비교 | `^IRX:미국 13주물 국채금리:1` · `^TNX:미국 10년물 국채금리:2` · `^TYX:미국 30년물 국채금리:3` |
+| `macro/bonds/comparison.md` | index | 채권 3종 비교 | `TLT:20년+ 장기국채 ETF (TLT):1` · `TIP:물가연동국채 ETF (TIP):2` · `HYG:하이일드 회사채 ETF (HYG):3` |
+| `macro/metals/comparison.md` | index | 금속 3종 비교 | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
+| `macro/energy/comparison.md` | index | 에너지 3종 비교 | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` · `SRUUF:우라늄 실물 신탁 (SRUUF):3` |
+| `macro/equities/us_comparison.md` | index | 미국 4대 지수 비교 | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^DJI:다우존스산업지수:3` · `^RUT:러셀2000:4` |
+| `macro/equities/kr_comparison.md` | index | 코스피·코스닥 비교 | `^KS11:코스피:1` · `^KQ11:코스닥:2` |
+| `macro/crypto/comparison.md` | index | 디지털자산 2종 비교 | `BTC-USD:비트코인:1` · `ETH-USD:이더리움:2` |
 
 ---
 

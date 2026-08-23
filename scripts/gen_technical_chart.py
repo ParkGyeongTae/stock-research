@@ -332,7 +332,10 @@ def render_svg(
         "--muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; "
         "--resistance:#d95926; --ref:#898781;"
     )
-    a(f"@media (prefers-color-scheme: dark) {{\n  .{cls} {{ {dark} }}\n}}")
+    a(
+        f"@media (prefers-color-scheme: dark) {{\n"
+        f'  body:not([data-md-color-scheme="default"]) .{cls} {{ {dark} }}\n}}'
+    )
     a(f'[data-md-color-scheme="slate"] .{cls} {{ {dark} }}')
     a(f".{cls} svg {{ width:100%; height:auto; display:block; }}")
     a(f'.{cls} text {{ font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }}')
