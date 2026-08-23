@@ -17,7 +17,7 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  .panw-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  body:not([data-md-color-scheme="default"]) .panw-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
 [data-md-color-scheme="slate"] .panw-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .panw-chart svg { width:100%; height:auto; display:block; }
@@ -669,4 +669,4 @@
 
 ---
 
-*작성일: 2026-08-16*
+*작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

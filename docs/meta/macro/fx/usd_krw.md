@@ -14,7 +14,7 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  .krw-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  body:not([data-md-color-scheme="default"]) .krw-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
 [data-md-color-scheme="slate"] .krw-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .krw-x-chart svg { width:100%; height:auto; display:block; }
@@ -26,39 +26,39 @@
 <svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="원/달러 환율(KRW=X) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
 <rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">원/달러 환율 (KRW=X) — 최근 5년 주봉</text>
-<text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-08-16 ~ 2026-08-20 · 마지막 종가 1,395.68원 (2026-08-20) · 단위 원</text>
+<text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-08-16 ~ 2026-08-23 · 마지막 종가 1,383.90원 (2026-08-23) · 단위 원</text>
 <line x1="60" y1="542.0" x2="1052" y2="542.0" class="grid"/>
-<text x="52" y="546.0" font-size="11" text-anchor="end" fill="var(--muted)">1,200</text>
+<text x="52" y="546.0" font-size="11" text-anchor="end" fill="var(--muted)">1,200.00</text>
 <line x1="60" y1="422.0" x2="1052" y2="422.0" class="grid"/>
-<text x="52" y="426.0" font-size="11" text-anchor="end" fill="var(--muted)">1,300</text>
+<text x="52" y="426.0" font-size="11" text-anchor="end" fill="var(--muted)">1,300.00</text>
 <line x1="60" y1="302.0" x2="1052" y2="302.0" class="grid"/>
-<text x="52" y="306.0" font-size="11" text-anchor="end" fill="var(--muted)">1,400</text>
+<text x="52" y="306.0" font-size="11" text-anchor="end" fill="var(--muted)">1,400.00</text>
 <line x1="60" y1="182.0" x2="1052" y2="182.0" class="grid"/>
-<text x="52" y="186.0" font-size="11" text-anchor="end" fill="var(--muted)">1,500</text>
+<text x="52" y="186.0" font-size="11" text-anchor="end" fill="var(--muted)">1,500.00</text>
 <line x1="60" y1="62.0" x2="1052" y2="62.0" class="grid"/>
-<text x="52" y="66.0" font-size="11" text-anchor="end" fill="var(--muted)">1,600</text>
+<text x="52" y="66.0" font-size="11" text-anchor="end" fill="var(--muted)">1,600.00</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="61.9" y1="626.0" x2="61.9" y2="631.0" class="axis"/>
 <text x="61.9" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2021</text>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="137.3" y1="626.0" x2="137.3" y2="631.0" class="axis"/>
 <text x="137.3" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2022</text>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="333.5" y1="626.0" x2="333.5" y2="631.0" class="axis"/>
 <text x="333.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2023</text>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="529.6" y1="626.0" x2="529.6" y2="631.0" class="axis"/>
 <text x="529.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2024</text>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="729.5" y1="626.0" x2="729.5" y2="631.0" class="axis"/>
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
-<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
-<line x1="61.9" y1="561.8" x2="61.9" y2="577.1" stroke="var(--down)" class="wick"/>
-<rect x="60.72" y="571.4" width="2.34" height="2.7" fill="var(--down)"/>
+<line x1="61.9" y1="573.5" x2="61.9" y2="574.2" stroke="var(--down)" class="wick"/>
+<rect x="60.72" y="573.5" width="2.34" height="1.0" fill="var(--down)"/>
 <line x1="65.7" y1="570.3" x2="65.7" y2="589.7" stroke="var(--down)" class="wick"/>
 <rect x="64.49" y="572.6" width="2.34" height="15.8" fill="var(--down)"/>
 <line x1="69.4" y1="582.0" x2="69.4" y2="599.4" stroke="var(--down)" class="wick"/>
@@ -579,27 +579,27 @@
 <rect x="1037.63" y="259.8" width="2.34" height="35.2" fill="var(--down)"/>
 <line x1="1042.6" y1="271.4" x2="1042.6" y2="293.7" stroke="var(--up)" class="wick"/>
 <rect x="1041.40" y="284.0" width="2.34" height="9.7" fill="var(--up)"/>
-<line x1="1046.3" y1="282.7" x2="1046.3" y2="321.0" stroke="var(--down)" class="wick"/>
-<rect x="1045.17" y="283.5" width="2.34" height="2.2" fill="var(--down)"/>
-<line x1="1050.1" y1="306.1" x2="1050.1" y2="321.1" stroke="var(--up)" class="wick"/>
-<rect x="1048.94" y="307.2" width="2.34" height="10.3" fill="var(--up)"/>
+<line x1="1046.3" y1="282.7" x2="1046.3" y2="326.9" stroke="var(--down)" class="wick"/>
+<rect x="1045.17" y="283.5" width="2.34" height="29.6" fill="var(--down)"/>
+<line x1="1050.1" y1="321.3" x2="1050.1" y2="321.3" stroke="var(--up)" class="wick"/>
+<rect x="1048.94" y="321.3" width="2.34" height="1.0" fill="var(--up)"/>
 <line x1="60" y1="301.8" x2="1052" y2="301.8" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="305.3" font-size="11.5" fill="var(--resistance)" font-weight="600">1,400원 R1</text>
+<text x="1058" y="305.3" font-size="11.5" fill="var(--resistance)" font-weight="600">1,400.16원 R1</text>
 <text x="1058" y="317.3" font-size="9.5" fill="var(--muted)">터치 3회</text>
 <line x1="60" y1="198.7" x2="1052" y2="198.7" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="202.2" font-size="11.5" fill="var(--resistance)" font-weight="600">1,486원 R2</text>
+<text x="1058" y="202.2" font-size="11.5" fill="var(--resistance)" font-weight="600">1,486.12원 R2</text>
 <text x="1058" y="214.2" font-size="9.5" fill="var(--muted)">터치 3회</text>
 <line x1="60" y1="377.5" x2="1052" y2="377.5" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="371.5" font-size="11.5" fill="var(--support)" font-weight="600">1,337원 S1</text>
+<text x="1058" y="371.5" font-size="11.5" fill="var(--support)" font-weight="600">1,337.11원 S1</text>
 <text x="1058" y="383.5" font-size="9.5" fill="var(--muted)">터치 5회</text>
 <line x1="60" y1="449.0" x2="1052" y2="449.0" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="443.0" font-size="11.5" fill="var(--support)" font-weight="600">1,277원 S2</text>
+<text x="1058" y="443.0" font-size="11.5" fill="var(--support)" font-weight="600">1,277.48원 S2</text>
 <text x="1058" y="455.0" font-size="9.5" fill="var(--muted)">터치 5회</text>
 <line x1="60" y1="525.5" x2="1052" y2="525.5" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="519.5" font-size="11.5" fill="var(--support)" font-weight="600">1,214원 S3</text>
+<text x="1058" y="519.5" font-size="11.5" fill="var(--support)" font-weight="600">1,213.73원 S3</text>
 <text x="1058" y="531.5" font-size="9.5" fill="var(--muted)">터치 4회</text>
-<circle cx="1052.0" cy="307.2" r="3" fill="var(--ink)"/>
-<text x="1046.0" y="299.2" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 1,395.68원 (2026-08-20)</text>
+<circle cx="1052.0" cy="321.3" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="313.3" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 1,383.90원 (2026-08-23)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -639,4 +639,4 @@
 
 ---
 
-*작성일: 2026-08-20 (최종 수정일: 2026-08-21)*
+*작성일: 2026-08-20 (최종 수정일: 2026-08-23)*

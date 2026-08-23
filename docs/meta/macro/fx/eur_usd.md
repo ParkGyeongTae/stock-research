@@ -14,7 +14,7 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  .eurusd-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  body:not([data-md-color-scheme="default"]) .eurusd-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
 [data-md-color-scheme="slate"] .eurusd-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .eurusd-x-chart svg { width:100%; height:auto; display:block; }
@@ -26,7 +26,7 @@
 <svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="유로/달러 환율(EURUSD=X) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
 <rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">유로/달러 환율 (EURUSD=X) — 최근 5년 주봉</text>
-<text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-08-16 ~ 2026-08-20 · 마지막 종가 $1.17 (2026-08-20) · 단위 USD/EUR</text>
+<text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-08-16 ~ 2026-08-21 · 마지막 종가 $1.17 (2026-08-21) · 단위 USD/EUR</text>
 <line x1="60" y1="551.2" x2="1052" y2="551.2" class="grid"/>
 <text x="52" y="555.2" font-size="11" text-anchor="end" fill="var(--muted)">0.95</text>
 <line x1="60" y1="457.8" x2="1052" y2="457.8" class="grid"/>
@@ -39,28 +39,28 @@
 <text x="52" y="181.5" font-size="11" text-anchor="end" fill="var(--muted)">1.15</text>
 <line x1="60" y1="84.0" x2="1052" y2="84.0" class="grid"/>
 <text x="52" y="88.0" font-size="11" text-anchor="end" fill="var(--muted)">1.20</text>
+<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="61.9" y1="626.0" x2="61.9" y2="631.0" class="axis"/>
 <text x="61.9" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2021</text>
+<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="137.3" y1="626.0" x2="137.3" y2="631.0" class="axis"/>
 <text x="137.3" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2022</text>
+<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="333.5" y1="626.0" x2="333.5" y2="631.0" class="axis"/>
 <text x="333.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2023</text>
+<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="529.6" y1="626.0" x2="529.6" y2="631.0" class="axis"/>
 <text x="529.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2024</text>
+<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="729.5" y1="626.0" x2="729.5" y2="631.0" class="axis"/>
 <text x="729.5" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
+<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="925.6" y1="626.0" x2="925.6" y2="631.0" class="axis"/>
 <text x="925.6" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
-<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="137.3" y1="56.0" x2="137.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="333.5" y1="56.0" x2="333.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="529.6" y1="56.0" x2="529.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="729.5" y1="56.0" x2="729.5" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="925.6" y1="56.0" x2="925.6" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
-<line x1="61.9" y1="139.7" x2="61.9" y2="146.7" stroke="var(--up)" class="wick"/>
-<rect x="60.72" y="140.5" width="2.34" height="4.0" fill="var(--up)"/>
+<line x1="61.9" y1="139.7" x2="61.9" y2="140.5" stroke="var(--up)" class="wick"/>
+<rect x="60.72" y="140.5" width="2.34" height="1.0" fill="var(--up)"/>
 <line x1="65.7" y1="120.7" x2="65.7" y2="140.9" stroke="var(--up)" class="wick"/>
 <rect x="64.49" y="122.1" width="2.34" height="18.1" fill="var(--up)"/>
 <line x1="69.4" y1="101.3" x2="69.4" y2="124.3" stroke="var(--up)" class="wick"/>
@@ -581,10 +581,10 @@
 <rect x="1037.63" y="165.6" width="2.34" height="4.4" fill="var(--up)"/>
 <line x1="1042.6" y1="161.4" x2="1042.6" y2="175.1" stroke="var(--up)" class="wick"/>
 <rect x="1041.40" y="164.6" width="2.34" height="2.4" fill="var(--up)"/>
-<line x1="1046.3" y1="144.2" x2="1046.3" y2="164.9" stroke="var(--up)" class="wick"/>
-<rect x="1045.17" y="162.6" width="2.34" height="1.0" fill="var(--up)"/>
-<line x1="1050.1" y1="137.5" x2="1050.1" y2="144.9" stroke="var(--up)" class="wick"/>
-<rect x="1048.94" y="142.7" width="2.34" height="1.0" fill="var(--up)"/>
+<line x1="1046.3" y1="137.8" x2="1046.3" y2="164.9" stroke="var(--up)" class="wick"/>
+<rect x="1045.17" y="142.4" width="2.34" height="21.0" fill="var(--up)"/>
+<line x1="1050.1" y1="137.3" x2="1050.1" y2="145.2" stroke="var(--down)" class="wick"/>
+<rect x="1048.94" y="143.7" width="2.34" height="1.0" fill="var(--down)"/>
 <line x1="60" y1="103.8" x2="1052" y2="103.8" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
 <text x="1058" y="107.3" font-size="11.5" fill="var(--resistance)" font-weight="600">$1.19 R1</text>
 <text x="1058" y="119.3" font-size="9.5" fill="var(--muted)">터치 4회</text>
@@ -597,8 +597,8 @@
 <line x1="60" y1="357.8" x2="1052" y2="357.8" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
 <text x="1058" y="351.8" font-size="11.5" fill="var(--support)" font-weight="600">$1.05 S3</text>
 <text x="1058" y="363.8" font-size="9.5" fill="var(--muted)">터치 8회</text>
-<circle cx="1052.0" cy="142.7" r="3" fill="var(--ink)"/>
-<text x="1046.0" y="134.7" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 $1.17 (2026-08-20)</text>
+<circle cx="1052.0" cy="144.2" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="136.2" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 $1.17 (2026-08-21)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -636,4 +636,4 @@
 
 ---
 
-*작성일: 2026-08-20 (최종 수정일: 2026-08-21)*
+*작성일: 2026-08-20 (최종 수정일: 2026-08-23)*
