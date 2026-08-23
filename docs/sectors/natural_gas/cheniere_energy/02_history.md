@@ -1,0 +1,72 @@
+# 역사 / 주요 이벤트
+
+> LNG를 **수입**하려고 지은 터미널을 셰일 혁명 이후 **수출** 설비로 뒤집어, 창업자 축출과 두 차례의 재무 위기를 지나 미국 최대 LNG 수출 기업이 된 회사다 — 전략의 방향을 두 번 바꾼 것이 이 회사 역사의 골격이다.
+
+!!! note "이 문서의 범위"
+    회사 관점의 전환점만 기록한다. CEO 개인의 커리어·경영 스타일·보상은 [CEO / 경영진](./03_ceo.md)에, 최근 1년 이내의 시점성 이슈는 [최근 뉴스 / 이슈](./08_news.md)에 있다.
+
+---
+
+## 연혁
+
+| 시점 (연도.월) | 내용 |
+|----------------|------|
+| 1996.07 | Charif Souki가 텍사스 휴스턴에 Cheniere Energy 설립. 초기에는 멕시코만 석유·가스 탐사 회사였다 |
+| 2000년대 초 | 미국 내 천연가스 고갈 전망에 베팅해 **LNG 수입(재기화) 터미널** 개발로 사업을 전환 |
+| 2005.03 | 루이지애나 사빈패스 LNG 수입 터미널 착공 |
+| 2008 | 사빈패스 수입 터미널 완공. 그러나 같은 시기 **셰일 혁명으로 미국 가스가 남아돌기 시작해 수입 수요가 사라졌다** — 회사는 금융위기까지 겹쳐 주가가 $40대에서 $2 아래로 붕괴하며 파산 직전까지 몰렸다 |
+| 2010~2012 | **두 번째 전환 — 수입 터미널을 수출 터미널로 뒤집는다.** 사빈패스에 액화 설비를 덧붙이는 계획으로 DOE 수출 인가와 FERC 허가를 순차 확보하고, 장기 SPA를 먼저 팔아 프로젝트 파이낸싱을 조달 |
+| 2012.08 | 사빈패스 액화 설비(SPL) 착공 |
+| **2016.02** | **사빈패스에서 미국 본토 최초의 셰일가스 기반 LNG 수출 카고 선적.** 미국이 LNG 순수출국으로 전환하는 출발점이 됐다 |
+| 2015.12 | 이사회가 창업자 Charif Souki를 축출. 행동주의 투자자 Carl Icahn의 이사회 진입과 비용·확장 전략을 둘러싼 갈등이 배경으로 알려져 있다 |
+| **2016.05** | **Jack Fusco를 사장 겸 CEO로 선임.** 이후 전략의 무게중심이 "무한 확장"에서 **재무 규율·장기계약 선확보**로 이동한다([CEO / 경영진](./03_ceo.md) 참고) |
+| 2018 | 텍사스 코퍼스크리스티 터미널 첫 LNG 생산·수출 개시 — 두 번째 액화 거점 확보 |
+| 2018.09 | 중간 지주회사 Cheniere Energy Partners LP Holdings를 본사에 흡수합병해 지배구조를 단순화. 이후 구조는 Cheniere(본사) → CQP(사빈패스 자산 보유, 별도 상장) 2단계로 정리됐다 |
+| 2021.11 | 사빈패스 6번 트레인 첫 LNG 생산 — 사빈패스 액화 능력이 30 mtpa 초과 규모로 완성 |
+| **2021.09** | **장기 자본배분 계획(Comprehensive Long-Term Capital Allocation Plan) 발표.** 창업 이래 처음으로 배당을 도입(2021년 3분기분 주당 $0.33, 11월 지급)하고, 연 약 $10억 규모 차입금 상환·자사주매입을 병행하는 정책을 공식화했다. **"건설하는 회사"에서 "현금을 돌려주는 회사"로 성격이 바뀐 분기점** |
+| 2022 | 러시아-우크라이나 전쟁으로 유럽이 러시아 파이프라인 가스를 미국 LNG로 대체하면서 국제 가격이 폭등, 사상 최대 실적. FY2023까지 그 잔영이 남아 Consolidated Adjusted EBITDA가 $8,771M을 기록했다 |
+| 2022.06 | **코퍼스크리스티 Stage 3 프로젝트(7개 미드스케일 트레인, 10 mtpa 초과) 최종투자결정(FID)**, Bechtel에 착공 지시 |
+| 2024.12 | CCL Stage 3 1번 트레인 첫 LNG 생산 (첫 카고는 2025년 2월 선적) |
+| 2025 | CCL Stage 3 1~4번 트레인이 3·8·10·12월에 순차적으로 실질 완공(substantial completion) — 물량 증가 국면 진입 |
+| 2025.06 | **CCL Midscale Trains 8 & 9(약 5 mtpa) FID**, Bechtel에 착공 지시(6월 18일 효력) |
+| 2025.08 | JERA와 장기 SPA 체결 — 연 약 1 mtpa, 2029~2050년, 헨리허브 연동 + 고정 액화수수료 |
+| **2026.03** | **카타르 라스라판 LNG 설비가 피격돼 세계 공급의 약 20%가 이탈.** 국제 LNG 가격이 급등하면서 Cheniere의 비계약 물량 마진이 크게 확대됐고, 연간 가이던스가 두 차례 상향됐다 — 회사가 일으킨 사건이 아니라 외부 충격이지만, 2026년 실적과 주가를 가장 크게 움직인 요인이다([최근 뉴스 / 이슈](./08_news.md) 참고) |
+| 2026.02 | 대만 CPC Corporation과 장기 SPA 체결 — 연 약 1.2 mtpa, 2026~2050년 |
+| 2026.03·06 | CCL Stage 3 5번·6번 트레인 실질 완공. 가동 중 액화 능력이 약 55 mtpa로 확대 |
+| 2026.05 | **사빈패스 확장(SPL Expansion) 1단계**에 대해 Bechtel과 EPC 계약 체결, 제한적 착공지시(LNTP) 발령. 정식 FID는 규제 승인·자금조달 확정 후로 남아 있다 |
+| **2026.05** | **Fusco가 이사회 의장을 겸직.** 직전 의장 G. Andrea Botta가 이사 정년 규정에 따라 퇴임하면서, 이사회는 의장·CEO 통합과 Lead Director(Patricia Collawn) 신설을 택했다 |
+| 2026.06 | FERC가 CCL Stage 3·Midscale Trains 8&9의 생산능력을 합산 약 5 mtpa 증설하도록 승인 |
+
+---
+
+## 이 연혁이 남긴 것
+
+**두 번의 방향 전환이 모두 외부 충격에서 나왔다.** 수입에서 수출로의 전환(2010~2012)은 셰일 혁명이라는 예상 밖의 공급 폭발에 떠밀린 결과였고, 확장 일변도에서 재무 규율로의 전환(2015~2021)은 창업자 축출이라는 지배구조 사건이 계기였다. 즉 이 회사의 성공은 "미리 옳게 봤다"기보다 **되돌리기 어려운 자산을 이미 지어놓은 상태에서 방향을 바꿀 수 있었던 것**에 가깝다 — 액화 플랜트와 파이프라인·항만 인프라는 용도를 바꿔도 자산 자체가 남았기 때문이다.
+
+**2021년 자본배분 계획 이전과 이후를 같은 회사로 보면 안 된다.** 2021년 이전은 무배당·순차입 확대·주식수 증가 국면이었고, 이후는 배당 개시·차입금 상환·자사주매입으로 발행주식수가 3년 반 만에 12.9% 줄어든 국면이다([핵심 지표](./04_metrics.md) A.4 현금흐름·주주환원 지표 참고). 5년 이상 과거 배수와 현재 배수를 단순 비교하면 이 성격 변화가 지워진다.
+
+---
+
+## 관련 문서
+
+- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
+- **회사 이해** — [개요](./01_overview.md) · [CEO / 경영진](./03_ceo.md)
+- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
+- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
+- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+
+---
+
+## 참고 자료
+
+- [공식 홈페이지](https://www.cheniere.com)
+- [10-K FY2025 — 사업 연혁·프로젝트 진행 상황 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/3570/000000357026000005/lng-20251231.htm)
+- [Cheniere Announces Comprehensive Long-Term Capital Allocation Plan (2021.09)](https://lngir.cheniere.com/news-events/press-releases/detail/229/cheniere-announces-comprehensive-long-term-capital)
+- [Cheniere Announces Positive Final Investment Decision on the Corpus Christi Stage 3 Liquefaction Project (2022.06)](https://www.businesswire.com/news/home/20220621005946/en/Cheniere-Announces-Positive-Final-Investment-Decision-on-the-Corpus-Christi-Stage-3-Liquefaction-Project)
+- [Cheniere Partners Announces Achievement of First LNG at Sabine Pass Train 6 (2021.11)](https://www.businesswire.com/news/home/20211123005917/en/Cheniere-Partners-Announces-Achievement-of-First-LNG-at-Sabine-Pass-Train-6)
+- [2026년 위임장 (DEF 14A) — 이사회 의장 교체 경위](https://www.sec.gov/Archives/edgar/data/3570/000119312526144572/d93921ddef14a.htm)
+- [Wood Mackenzie — Ras Laffan attacks fundamentally reshape global LNG outlook (2026.03)](https://www.woodmac.com/press-releases/new-page6/)
+
+---
+
+*작성일: 2026-08-24*
