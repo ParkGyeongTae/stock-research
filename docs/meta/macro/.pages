@@ -1,8 +1,8 @@
 nav:
-  - 통화: fx
+  - 통화: foreign_exchange
   - 금리: rates
   - 채권: bonds
   - 주가지수·변동성: equities
   - 금속: metals
   - 에너지: energy
-  - 디지털자산: crypto
+  - 디지털자산: cryptocurrency

@@ -41,7 +41,7 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
   --adj-note "환율 원자료(조정 없음)"
 ```
 
-이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`crypto/`) 중 맞는 곳에 두세요 — 실제 예시는 [`fx/usd_krw.md`](./docs/meta/macro/fx/usd_krw.md)·[`rates/treasury_10y.md`](./docs/meta/macro/rates/treasury_10y.md)를 참고하세요.
+이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`) 중 맞는 곳에 두세요 — 실제 예시는 [`foreign_exchange/usd_krw.md`](./docs/meta/macro/foreign_exchange/usd_krw.md)·[`rates/treasury_10y.md`](./docs/meta/macro/rates/treasury_10y.md)를 참고하세요.
 
 ## macro 문서 재현 파라미터
 
@@ -90,18 +90,18 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/equities/sox.md` | `^SOX` | 필라델피아 반도체지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/sp500.md` | `^GSPC` | S&P 500 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/vix.md` | `^VIX` | VIX 변동성지수 | `--symbol "" --unit-label "pt"` | VIXN |
-| `macro/fx/dxy.md` | `DX-Y.NYB` | 달러인덱스 | `--symbol "" --unit-label "지수"` | DXYN |
-| `macro/fx/eur_usd.md` | `EURUSD=X` | 유로/달러 환율 | `--unit-label "USD/EUR"` | FX |
-| `macro/fx/jpy_usd.md` | `JPY=X` | 엔/달러 환율 | `--symbol "엔" --symbol-pos suffix --unit-label "엔"` | FX |
-| `macro/fx/usd_krw.md` | `KRW=X` | 원/달러 환율 | `--symbol "원" --symbol-pos suffix --unit-label "원"` | FX |
+| `macro/foreign_exchange/dxy.md` | `DX-Y.NYB` | 달러인덱스 | `--symbol "" --unit-label "지수"` | DXYN |
+| `macro/foreign_exchange/eur_usd.md` | `EURUSD=X` | 유로/달러 환율 | `--unit-label "USD/EUR"` | FX |
+| `macro/foreign_exchange/jpy_usd.md` | `JPY=X` | 엔/달러 환율 | `--symbol "엔" --symbol-pos suffix --unit-label "엔"` | FX |
+| `macro/foreign_exchange/usd_krw.md` | `KRW=X` | 원/달러 환율 | `--symbol "원" --symbol-pos suffix --unit-label "원"` | FX |
 | `macro/rates/treasury_13w.md` | `^IRX` | 미 국채 13주물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | DISC |
 | `macro/rates/treasury_10y.md` | `^TNX` | 미 국채 10년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
 | `macro/rates/treasury_30y.md` | `^TYX` | 미 국채 30년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
 | `macro/bonds/hyg.md` | `HYG` | 하이일드 회사채 ETF | (기본값) | ETF |
 | `macro/bonds/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
 | `macro/bonds/tip.md` | `TIP` | 물가연동국채 ETF | (기본값) | ETF |
-| `macro/crypto/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
-| `macro/crypto/ethereum.md` | `ETH-USD` | 이더리움 | (기본값) | ETHN |
+| `macro/cryptocurrency/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
+| `macro/cryptocurrency/ethereum.md` | `ETH-USD` | 이더리움 | (기본값) | ETHN |
 
 새 macro 문서를 추가하면 이 표에 행을 하나 추가한다 — 개별 문서에는 재생성 커맨드를 남기지 않는다.
 
@@ -130,14 +130,14 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 | 문서 | 모드 | --title | 시리즈(티커:라벨:색상슬롯) |
 |------|------|---------|---------------------------|
-| `macro/fx/comparison.md` | index | 통화 4종 비교 | `DX-Y.NYB:달러인덱스 (DXY):1` · `EURUSD=X:유로/달러 환율:2` · `JPY=X:엔/달러 환율:3` · `KRW=X:원/달러 환율:4` |
+| `macro/foreign_exchange/comparison.md` | index | 통화 4종 비교 | `DX-Y.NYB:달러인덱스 (DXY):1` · `EURUSD=X:유로/달러 환율:2` · `JPY=X:엔/달러 환율:3` · `KRW=X:원/달러 환율:4` |
 | `macro/rates/comparison.md` | raw (`--unit-label "%"`) | 미국 국채금리 3종 비교 | `^IRX:미국 13주물 국채금리:1` · `^TNX:미국 10년물 국채금리:2` · `^TYX:미국 30년물 국채금리:3` |
 | `macro/bonds/comparison.md` | index | 채권 3종 비교 | `TLT:20년+ 장기국채 ETF (TLT):1` · `TIP:물가연동국채 ETF (TIP):2` · `HYG:하이일드 회사채 ETF (HYG):3` |
 | `macro/metals/comparison.md` | index | 금속 3종 비교 | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
 | `macro/energy/comparison.md` | index | 에너지 3종 비교 | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` · `SRUUF:우라늄 실물 신탁 (SRUUF):3` |
 | `macro/equities/us_comparison.md` | index | 미국 4대 지수 비교 | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^DJI:다우존스산업지수:3` · `^RUT:러셀2000:4` |
 | `macro/equities/kr_comparison.md` | index | 코스피·코스닥 비교 | `^KS11:코스피:1` · `^KQ11:코스닥:2` |
-| `macro/crypto/comparison.md` | index | 디지털자산 2종 비교 | `BTC-USD:비트코인:1` · `ETH-USD:이더리움:2` |
+| `macro/cryptocurrency/comparison.md` | index | 디지털자산 2종 비교 | `BTC-USD:비트코인:1` · `ETH-USD:이더리움:2` |
 
 ---
 

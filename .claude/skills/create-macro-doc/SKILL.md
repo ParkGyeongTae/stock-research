@@ -7,7 +7,7 @@ description: 아직 `docs/meta/macro/`에 없는 거시지표(환율·금리·�
 
 ## 언제 쓰나
 
-- 대상: `docs/meta/macro/{fx,rates,equities,commodities,crypto}/`에 아직 없는 새 자산·지표
+- 대상: `docs/meta/macro/{foreign_exchange,rates,bonds,equities,metals,energy,cryptocurrency}/`에 아직 없는 새 자산·지표
 - 트리거 예시: "위안화 환율 macro 문서 만들어줘", "나스닥 100 차트 추가해줘", "이더리움 거시 참고 문서 새로 만들어줘"
 - **대상 아님**:
   - 이미 있는 macro 문서를 최신 데이터로 재생성 → `improve-macro-doc`
@@ -23,7 +23,7 @@ description: 아직 `docs/meta/macro/`에 없는 거시지표(환율·금리·�
 ## 절차
 
 1. **카테고리 폴더 확정**
-   `docs/meta/macro/{fx,rates,equities,commodities,crypto}/` 중 성격이 맞는 곳을 고른다. 다섯 개 중 어디에도 안 맞는 완전히 새로운 자산군이면 새 카테고리 폴더를 만들고 `docs/meta/macro/.pages`의 `nav:`에 추가한다 — 이 경우만 필요하고, 기존 카테고리에 문서만 추가할 땐 불필요하다.
+   `docs/meta/macro/{foreign_exchange,rates,bonds,equities,metals,energy,cryptocurrency}/` 중 성격이 맞는 곳을 고른다. 일곱 개 중 어디에도 안 맞는 완전히 새로운 자산군이면 새 카테고리 폴더를 만들고 `docs/meta/macro/.pages`의 `nav:`에 추가한다 — 이 경우만 필요하고, 기존 카테고리에 문서만 추가할 땐 불필요하다.
 
 2. **티커·파라미터 확인**
    Yahoo Finance 티커를 WebSearch로 확인한다(추측 금지 — 환율·선물·지수는 `KRW=X`, `GC=F`, `^TNX`처럼 비직관적인 표기가 많다). 주가가 아닌 시계열이면 `--symbol`·`--symbol-pos`·`--unit-label`·`--adj-note`가 필요하다 — 문법은 `chart-generation-guide.md` "주가가 아닌 시계열에 쓰기" 참고. 같은 카테고리의 기존 자산이 `chart-generation-guide.md` "macro 문서 재현 파라미터" 표에 이미 있으면(예: 환율이면 `usd_krw.md` 행) 그 옵션 패턴을 참고하면 빠르다.
@@ -51,7 +51,7 @@ description: 아직 `docs/meta/macro/`에 없는 거시지표(환율·금리·�
    2번에서 확정한 티커·옵션·조정 각주를 표에 새 행으로 넣는다. 각주가 기존 코드(FUT/IDX/FX/ETF/YLD/DISC 등) 중 하나와 같은 문구면 그 코드를 재사용하고, 다르면 새 코드를 만들어 위 범례에도 추가한다.
 
 7. **`.pages` 등록**
-   해당 카테고리의 `.pages`(예: `docs/meta/macro/fx/.pages`) `nav:`에 파일명을 추가한다. 빠뜨려도 빌드는 성공하지만 내비게이션에서 문서가 조용히 사라진다. 카테고리 폴더에 `.pages`가 아예 없으면(이 스킬 작성 시점의 `crypto/`가 그렇다) 새로 만든다.
+   해당 카테고리의 `.pages`(예: `docs/meta/macro/foreign_exchange/.pages`) `nav:`에 파일명을 추가한다. 빠뜨려도 빌드는 성공하지만 내비게이션에서 문서가 조용히 사라진다. 카테고리 폴더에 `.pages`가 아예 없으면(현재는 7개 카테고리 모두 갖추고 있으므로, 새 카테고리를 만든 경우에만 해당) 새로 만든다.
 
 8. **다른 문서에서 인용할 곳이 있는지 확인**
    이 지표를 언급할 만한 기존 회사·섹터 문서가 있으면(예: 원자력 섹터 회사 문서에서 우라늄 가격 문서를 인용) 링크를 추가할지 사용자에게 확인한다 — 자동으로 끼워 넣지 않는다.

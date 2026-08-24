@@ -30,7 +30,7 @@ stock-research/
 - **`authoring-guide.md`(이 문서)는 `docs/` 밖에 있다** — 사이트 방문자가 아니라 `docs/`를 쓰고 관리하는 사람(Claude Code 등)만 참조하는 절차서라, 사이트에 배포되는 `docs/` 트리와 분리해 `AGENTS.md`와 같은 저장소 루트에 둔다.
 - `docs/`는 **`index.md` + `meta/`(참고 문서) + `sectors/`(리서치 콘텐츠)**로만 구성 — 리서치 콘텐츠와 참고 문서를 같은 depth에 섞지 않는다
 - `meta/` 안에서도 성격이 갈린다: **`glossary.md`·`concepts/`는 읽는 문서**, **`macro/`는 여러 회사 문서가 공통으로 인용하는 거시지표 차트**(개별 회사·섹터의 밸류에이션 판단은 담지 않음), **`.template/`은 복사해서 쓰는 스캐폴딩**이다 — 같은 폴더에 있는 이유는 모두 "특정 회사·섹터에 종속되지 않는다"는 기준으로 묶였기 때문이다
-- `macro/` 하위는 통화·금리·채권·주가지수·금속·에너지·디지털자산 성격별 서브폴더(`fx/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`crypto/`)로 나뉜다. `rates/`는 실제 거래되는 자산이 아닌 순수 금리·수익률(%), `bonds/`는 실제 거래되는 채권 ETF 가격($)으로 갈린다. 각 문서는 `09_technical_daily.md`·`10_technical_weekly.md`와 같은 `scripts/gen_technical_chart.py`로 생성 — 작성 방법은 [`chart-generation-guide.md`](./chart-generation-guide.md) "주가가 아닌 시계열에 쓰기" 참고
+- `macro/` 하위는 통화·금리·채권·주가지수·금속·에너지·디지털자산 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`)로 나뉜다. `rates/`는 실제 거래되는 자산이 아닌 순수 금리·수익률(%), `bonds/`는 실제 거래되는 채권 ETF 가격($)으로 갈린다. 각 문서는 `09_technical_daily.md`·`10_technical_weekly.md`와 같은 `scripts/gen_technical_chart.py`로 생성 — 작성 방법은 [`chart-generation-guide.md`](./chart-generation-guide.md) "주가가 아닌 시계열에 쓰기" 참고
 - 섹터 폴더명: **풀어 쓴 소문자 스네이크케이스** (예: `electronic_design_automation`, `semiconductor`, `cloud_infrastructure`) — 약어보다 명확한 전체 표기 우선
 - 회사 폴더명: **회사명 소문자 스네이크케이스** (예: `synopsys`, `nvidia`, `apple`)
 - 복합기업은 "관심 이유"가 되는 사업 기준 섹터에 배치 (예: Siemens → `sectors/electronic_design_automation/`)
@@ -39,7 +39,7 @@ stock-research/
     - 새 **섹터 폴더** → `docs/sectors/.pages`의 `nav:`에 직접 추가해야 사이트 좌측 내비게이션에 노출된다. 등록하지 않아도 빌드는 성공하고 검색에도 잡히지만 nav에서만 사라져 사실상 링크로만 닿는 고아 페이지가 된다(에러·경고가 안 뜬다).
     - 새 **회사 폴더**(기존 섹터 안) → 등록 불필요. 자동으로 nav에 들어온다.
     - 새 **최상위 폴더**(`meta/`·`sectors/` 옆) → `docs/.pages`(최상위)에 추가해야 한다. 규칙은 섹터와 같다.
-    - 새 `macro/` **하위 카테고리 폴더**(`fx/`·`rates/` 등 옆에 새 카테고리를 만드는 경우) → `docs/meta/macro/.pages`에 추가해야 한다. 기존 카테고리 안에 문서만 추가할 땐 그 카테고리의 `.pages`(예: `docs/meta/macro/fx/.pages`)에 추가한다.
+    - 새 `macro/` **하위 카테고리 폴더**(`foreign_exchange/`·`rates/` 등 옆에 새 카테고리를 만드는 경우) → `docs/meta/macro/.pages`에 추가해야 한다. 기존 카테고리 안에 문서만 추가할 땐 그 카테고리의 `.pages`(예: `docs/meta/macro/foreign_exchange/.pages`)에 추가한다.
 - `meta/.template/` 안의 상대 링크(`../../../meta/glossary.md` 등)는 **복사된 위치**(`docs/sectors/<sector>/<company>/`) 기준으로 적혀 있음 — 템플릿 폴더에서 직접 열면 깨져 보이는 게 정상이며, 복사 후에는 맞는다. (`.template`은 앞에 점이 붙어 있어 MkDocs 빌드에서도 제외됨)
 
 ---
@@ -127,7 +127,7 @@ PER·PBR·DCF·WACC·%p 등 용어가 낯설면 [`glossary.md`](./docs/meta/glos
 `meta/.template/company/11_final_report.md`를 복사해서 쓴다. 다른 파일과 달리 이 문서는 **새 사실·새 판단을 만들지 않고, `01~10`과 [`macro/`](./docs/meta/macro/)의 관련 문서를 종합·요약만** 한다 — 여기서 처음 등장하는 숫자나 결론이 있으면 안 된다.
 
 1. **가장 마지막에 쓴다** — 01~10이 최신 상태가 아니면 작성을 미룬다. 이후 01~10 중 하나라도 갱신되면(특히 `04_metrics.md`·`06_valuation.md`·`07_investment.md`) 이 문서도 함께 갱신 대상이다 — [`AGENTS.md`](./AGENTS.md) "작업을 마치기 전에"의 인용처 추적 체크리스트에 이 문서를 포함시킬 것.
-2. **"6. 거시 환경(Macro Backdrop)"에 넣을 macro 문서는 회사마다 다르게 고른다** — `docs/meta/macro/`의 7개 카테고리(`fx`·`rates`·`bonds`·`equities`·`metals`·`energy`·`crypto`)를 전부 나열하지 않는다. 이 회사의 매출·매입원가가 특정 원자재·환율에 연동되는지, `06_valuation.md`의 할인율이 금리에 근거하는지(대부분의 회사가 해당), 동종업계·지수 대비 상대 성과를 봐야 하는지를 기준으로 고른다. 인용하는 macro 문서의 차트가 오래됐다면 이 문서를 쓰기 전에 먼저 `scripts/gen_technical_chart.py`로 갱신한다 — 최종 보고서 안에서 새 차트를 만들지 않는다.
+2. **"6. 거시 환경(Macro Backdrop)"에 넣을 macro 문서는 회사마다 다르게 고른다** — `docs/meta/macro/`의 7개 카테고리(`foreign_exchange`·`rates`·`bonds`·`equities`·`metals`·`energy`·`cryptocurrency`)를 전부 나열하지 않는다. 이 회사의 매출·매입원가가 특정 원자재·환율에 연동되는지, `06_valuation.md`의 할인율이 금리에 근거하는지(대부분의 회사가 해당), 동종업계·지수 대비 상대 성과를 봐야 하는지를 기준으로 고른다. 인용하는 macro 문서의 차트가 오래됐다면 이 문서를 쓰기 전에 먼저 `scripts/gen_technical_chart.py`로 갱신한다 — 최종 보고서 안에서 새 차트를 만들지 않는다.
 3. **"9. 시나리오 요약"은 새 계산이 아니라 재배치다** — `06_valuation.md`의 가격(하방/기본/상방)과 `07_investment.md`의 리스크(트리거)를 하나의 표로 합칠 뿐, 여기서 처음 계산하는 숫자가 있으면 안 된다. 상방 시나리오가 원 문서에 없으면 그 행을 비워두지 말고 통째로 뺀다.
 4. **최종 매수/매도 트리거를 새로 만들지 않는다** — 최종 결론은 `07_investment.md` "5. 투자 결론"을 인용하되, 위 시나리오 표를 근거로 한 문장만 덧붙인다. 이 문서를 쓰다가 새로운 판단이 떠올랐다면 그 판단은 먼저 `07_investment.md`(또는 해당 원 문서)에 반영한 뒤 여기서 인용한다.
 5. **본문 중간에 다른 문서로의 링크·인용을 넣지 않는다** — 위 "✍️ 작성 규칙"의 원본 파일명 노출 금지 규칙(모든 문서 공통)보다 한 단계 더 엄격하다. 이 문서는 `01~10`을 종합하는 요약본이라, 각 절 끝에 "→ 상세: 핵심 지표" 같은 줄이나 본문 중 "(기술적 분석 참고)" 같은 괄호 인용도 넣지 않는다 — 다른 절을 가리켜야 하면 "위 "4. 밸류에이션 결론"에서 보듯"처럼 이 문서 자체의 절 제목으로 참조한다. 원 문서로의 이동은 문서 하단 "관련 문서"·"참고 자료" 목록의 링크로만 제공한다.

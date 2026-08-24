@@ -7,7 +7,7 @@ description: 이미 있는 `docs/meta/macro/**/*.md` 문서를 "최신화해줘"
 
 ## 언제 쓰나
 
-- 대상: 이미 존재하는 `docs/meta/macro/{fx,rates,equities,commodities,crypto}/*.md`
+- 대상: 이미 존재하는 `docs/meta/macro/{foreign_exchange,rates,bonds,equities,metals,energy,cryptocurrency}/*.md`
 - 트리거 예시: "금 차트 최신 데이터로 갱신해줘", "commodities 문서들 이번 분기 갱신 돌려줘", "이 macro 문서 손봐줘"
 - **대상 아님**: 아직 없는 새 자산 추가 → `create-macro-doc`
 

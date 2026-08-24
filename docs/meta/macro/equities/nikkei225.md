@@ -616,7 +616,7 @@
 
 ## 관련 문서
 
-- [엔/달러 환율](../fx/jpy_usd.md)
+- [엔/달러 환율](../foreign_exchange/jpy_usd.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
 - [용어집 — 9. 거시경제](../../glossary.md#macro)
 

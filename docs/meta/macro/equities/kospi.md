@@ -622,7 +622,7 @@
 
 ## 관련 문서
 
-- [원/달러 환율](../fx/usd_krw.md)
+- [원/달러 환율](../foreign_exchange/usd_krw.md)
 - [코스닥](./kosdaq.md)
 - [코스피·코스닥 비교 (지수화)](./kr_comparison.md)
 - [거시경제 개념 정리](../../concepts/macroeconomics.md)
