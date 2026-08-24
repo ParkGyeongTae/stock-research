@@ -1,0 +1,57 @@
+# 역사 / 주요 이벤트
+
+> 엔론에서 떨어져 나온 파이프라인 사업을 사들여 시작해, MLP 구조로 빠르게 몸집을 불린 뒤 2014년 그 구조를 스스로 해체하고 2015년 배당을 74% 삭감하며 재무 정책을 근본적으로 갈아엎은 회사다. 지금의 "배당은 조금만 올리고 성장은 자체 현금으로 조달한다"는 원칙은 그 2015년 사건의 직접적인 산물이다.
+
+!!! warning "2015년 이전과 이후는 사실상 다른 회사로 봐야 한다"
+    2015년 12월 배당 삭감 이전의 KMI는 **외부 자본시장에서 자금을 조달해 배당을 계속 올리는 MLP형 모델**이었고, 그 이후는 **잉여현금으로 성장 투자와 배당을 모두 감당하는 모델**이다. 배당 성장률·레버리지·자본 배분 방식이 이 시점에서 단절적으로 바뀌었으므로, 2015년 이전 배당 이력이나 배수를 지금과 이어 붙여 추세로 읽지 말 것.
+
+---
+
+## 연혁
+
+| 시점 (연도.월) | 내용 |
+|----------------|------|
+| 1997 | Richard D. Kinder(전 엔론 사장)와 William V. Morgan이 투자자 그룹을 이끌고 **엔론의 액체 파이프라인 사업을 운영하던 무한책임사원(GP) 지분을 인수** — Kinder Morgan Energy Partners(KMP, MLP) 출범. 당시 기업가치 약 $350M |
+| 1999 | **KN Energy 인수** — 천연가스 파이프라인 종합기업 KN Energy(핵심 자산은 Natural Gas Pipeline Company of America 시스템)의 경영권을 확보하고 사명을 Kinder Morgan, Inc.로 변경 |
+| 2005.08 | 캐나다 **Terasen 인수**(약 $5.6B) — 오일샌드 접근과 함께 **Trans Mountain 파이프라인**을 확보 |
+| 2006~2007 | 경영진 주도 차입매수(MBO)로 **KMI 상장 폐지 및 비공개 기업 전환** — 회사 공식 연혁은 "2006년 5월 종결"로 적고 있으나 주주 승인·거래 종결을 2007년으로 기록한 자료도 있어, 정확한 종결 시점은 확인하지 못했다 |
+| **2011.02** | **NYSE 재상장** — 당시 미국 역사상 최대 규모의 사모펀드 후원 IPO(약 1.1억 주, 약 $3.3B 조달). 현재 SEC 등록 실체(CIK 1506307)가 여기서 시작됨 |
+| **2012.05** | **El Paso Corporation 인수 완료** — 부채 포함 약 $38B 규모. 이 거래로 KMI는 북미 최대 미드스트림 사업자이자 최대 천연가스 네트워크 운영사가 됐고, **현재 대차대조표의 영업권 약 $20B가 대부분 이 인수에서 나왔다**([핵심 지표](./04_metrics.md) 참고) |
+| **2014.11** | **MLP 구조 해체** — 상장 자회사 KMP·KMR·EPB의 외부 지분을 전부 사들여 KMI 하나로 통합(약 $76B 규모). 세금·자본조달 구조가 단순해진 대신, MLP 특유의 인센티브 분배권(IDR)에 기대던 성장 엔진도 함께 사라짐 |
+| **2015.12** | **분기배당 $0.51 → $0.125로 74% 삭감** — 유가 급락으로 현금흐름이 줄고 신용등급이 투기등급으로 강등될 위기에 몰리자, 성장 프로젝트를 외부 조달 없이 자체 자금으로 하기 위해 배당을 잘랐다. 불과 3주 전까지 회사는 이듬해 배당을 6~10% 올리겠다고 밝히던 상태였다. 이 사건이 지금까지 이어지는 **"연 2% 안팎 배당 인상 + 내부조달 성장"** 정책의 출발점이다 |
+| 2018 | Trans Mountain 파이프라인 시스템을 **캐나다 정부에 $4.5B에 매각** — 인허가·정치 리스크가 큰 자산을 정리(2005년 Terasen 인수로 들어온 자산) |
+| 2019.12 | 상장 자회사 Kinder Morgan Canada Limited(KML)가 Pembina Pipeline에 인수되며 캐나다 사업 정리 완료 |
+| 2021.08 | 재생천연가스(RNG) 사업자 **Kinetrex Energy 인수 완료**($310M, 8월 20일 종결) — 현재 CO2 부문 안의 Energy Transition Ventures 그룹의 뼈대 |
+| **2023.08** | **Kimberly A. Dang이 CEO 취임** — 2005~2018년 CFO, 2018~2023년 President을 거쳐 승진. Richard Kinder는 Executive Chairman 유지([CEO / 경영진](./03_ceo.md) 참고) |
+| 2023 | 남텍사스 가스 인프라 **STX Midstream 인수**(NextEra Energy Partners로부터, 발표 기준 $1.815B·10-K 확정 취득가 $1,829M) — 멕시코 수출·LNG 원료가스 경로 강화 |
+| 2025.08 | **Fitch가 장기 신용등급을 BBB+로 상향**(2025-08-11) |
+| 2025 | Bakken 지역 가스 수집·처리 자산 **Outrigger Energy II 인수**(회사 발표 약 $640M·10-K 확정 취득가 $648M) |
+| **2025.12** | **EagleHawk(BPX Eagle Ford Gathering) 25% 비운영 지분 매각**($382M) — FY2025 GAAP 순이익에 일회성 매각이익 $123M이 잡힘 |
+| **2026.01** | **S&P가 장기 신용등급을 BBB → BBB+로 상향**(2026-01-13). Moody's는 Baa2 긍정적 전망 유지 |
+| 2026.01 | President Tom Martin 은퇴, **Dax Sanders가 President 취임**(2026-01-31 효력) |
+| **2026.07** | **FERC가 SSE4(약 $3.5B, KMI 지분 약 $1.8B)와 Mississippi Crossing(약 $1.7B) 두 대형 프로젝트의 사업 인허가 승인**(2026-07-31) — 합계 3.8 MMDth/d 이상의 신규 확정 수송용량 ([최근 뉴스 / 이슈](./08_news.md) 참고) |
+
+---
+
+## 관련 문서
+
+- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
+- **회사 이해** — [개요](./01_overview.md) · [CEO / 경영진](./03_ceo.md)
+- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
+- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
+- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+
+---
+
+## 참고 자료
+
+- [KMI History (회사 공식 연혁 페이지)](https://www.kindermorgan.com/About-Us/History)
+- [10-K FY2025 — Note 3. Acquisitions and Divestitures (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1506307/000150630726000011/kmi-20251231.htm)
+- [Kinder Morgan Cuts Dividend by 74% to Conserve Cash — Bloomberg (2015-12-08)](https://www.bloomberg.com/news/articles/2015-12-08/kinder-morgan-cuts-dividend-by-74-percent-to-conserve-cash)
+- [Under Fire, Kinder Morgan Slashes Dividend — Forbes (2015-12-08)](https://www.forbes.com/sites/christopherhelman/2015/12/08/under-fire-kinder-morgan-slashes-dividend-shares-sink-in-after-hours-trading/)
+- [Kinder Morgan Reports Fourth Quarter 2025 Financial Results (S&P 등급 상향·EagleHawk 매각)](https://www.sec.gov/Archives/edgar/data/1506307/000150630726000002/kmi2025q48-kex991.htm)
+- [FERC Lands Certificates for Southeast Natural Gas Buildout — NGI (2026-08)](https://naturalgasintel.com/news/kinder-morgan-lands-ferc-certificates-for-34-bcfd-southeast-natural-gas-buildout/)
+
+---
+
+*작성일: 2026-08-24*

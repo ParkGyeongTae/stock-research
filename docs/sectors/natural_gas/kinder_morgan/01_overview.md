@@ -1,0 +1,78 @@
+# Kinder Morgan
+
+> 북미 최대 규모의 에너지 인프라 기업. 약 78,000마일의 파이프라인과 136개 터미널을 보유하고 미국 천연가스의 약 40%를 실어 나르며, 미국 LNG 수출 터미널로 가는 원료가스의 40% 이상을 공급한다. 헨리허브 가격에 실적이 직접 노출되는 업스트림(EQT 등)과 달리 장기 take-or-pay 수수료 계약 중심 구조이고, 배당은 연 2%씩만 올리는 대신 남는 현금을 성장 프로젝트 자체 조달과 레버리지 축소에 쓰는 **"저성장 배당 + 내부조달 성장"** 모델이다.
+
+!!! warning "이 회사 숫자를 볼 때 먼저 알아둘 것"
+    - **시가총액 산정 근거**: 2026-08-21 종가 $30.98 × 2026-06-30 기준 발행주식수(자사주 제외, 2,224.8백만 주).
+    - **아래 부문별 비중은 매출이 아니라 Adjusted Segment EBDA 기준이다.** KMI 매출의 42%가 마진이 거의 없는 상품 판매 통과 매출이라, 매출 비중으로 사업 구성을 보면 실제 이익 기여가 왜곡된다([핵심 지표](./04_metrics.md) 참고).
+    - **GAAP 손익으로 실적 추세를 판단하지 말 것.** 파생상품 평가손익과 자산매각이익이 GAAP 이익을 흔든다 — 회사가 관리하는 지표는 Adjusted EPS·Adjusted EBITDA다.
+    - **PBR을 다른 회사와 그대로 비교하지 말 것.** 자기자본의 63.5%가 2012년 El Paso 인수 등에서 나온 영업권이다.
+
+- **회사명**: Kinder Morgan, Inc.
+- **티커 / 상장 시장**: KMI / NYSE
+- **설립 / 본사**: 1997년 Kinder Morgan Energy Partners 설립, 1999년 KN Energy 인수로 현재의 Kinder Morgan, Inc. 출범 / 미국 텍사스주 휴스턴(Houston, TX)
+- **CEO**: Kimberly A. Dang (Kim Dang, 2023-08-01 취임) — 창업자 Richard D. Kinder는 Executive Chairman으로 재직 중이며 지분 11.60% 보유 ([CEO / 경영진](./03_ceo.md) 참고)
+- **홈페이지**: [kindermorgan.com](https://www.kindermorgan.com)
+- **섹터 / 산업**: [천연가스](../00_overview.md) — 밸류체인상 미드스트림(수집·처리·파이프라인 수송·터미널 저장)
+- **시가총액**: 약 $68.9B (2026-08-21 종가 기준)
+- **회계연도(FY) 마감월**: 12월(캘린더 연도와 동일)
+
+---
+
+## 1. 한 줄 요약
+
+Kinder Morgan은 미국 전역에 깔린 약 78,000마일의 파이프라인(그중 천연가스 파이프라인이 65,000마일 이상)과 136개 터미널, 700 Bcf가 넘는 가스 저장 용량을 운영하는 북미 최대 규모 에너지 인프라 사업자다. 회사 설명대로 미국에서 소비되는 천연가스의 약 40%가 KMI 시스템을 거쳐 가고, 미국 LNG 수출 터미널이 받는 원료가스(feedgas)의 40% 이상을 공급한다. 최근에는 LNG 수출 확대와 데이터센터發 전력 수요가 겹치면서, 2026년 6월 말 기준 $9.6B 규모의 확장 프로젝트 백로그를 쌓아둔 성장 국면에 들어가 있다.
+
+---
+
+## 2. 사업 모델 — 어떻게 돈을 버는가
+
+KMI의 핵심 수익원은 파이프라인 수송·저장·터미널 서비스에 대한 **장기 take-or-pay 수수료 계약**이다. 고객(발전사·LNG 수출업자·정유사·산업체·지역 가스회사)이 실제 사용량과 무관하게 예약한 용량에 대해 고정 요금을 지불하는 구조라, 헨리허브 스팟가스 가격이 하락해도 매출이 직접 흔들리지 않는다. FY2025 기준 계약 매출($15,202M) 중 고정 요금 성격의 **Firm services가 $5,342M**, 사용량 연동 **Fee-based services가 $2,719M**으로 서비스 매출이 $8,061M이고, 나머지 $7,141M은 가스·정유제품·CO2 등의 **상품 판매(commodity sales)** 매출이다.
+
+이 상품 판매 매출은 거의 같은 규모의 매출원가와 짝을 이루는 통과성 매출이라, 사업 구성은 매출이 아니라 회사가 실제로 관리·공시하는 **Adjusted Segment EBDA 기준**으로 봐야 한다.
+
+| 사업 부문 | 설명 | Adjusted Segment EBDA 비중(FY2025) | 기준 시점 |
+|-----------|------|-----------|-----------|
+| Natural Gas Pipelines | 주간(interstate) 및 텍사스 주내(intrastate) 천연가스 수송·저장, 가스 수집·처리, 가스·NGL 판매. Tennessee Gas Pipeline(TGP)·El Paso Natural Gas(EPNG)·Southern Natural Gas(SNG)·NGPL·Texas Intrastate 등 | 67.0% | FY2025 |
+| Products Pipelines | 정유제품(가솔린·디젤·항공유)·원유·컨덴세이트 수송·저장, 트랜스믹스 처리. CALNEV·SFPP 등 | 13.1% | FY2025 |
+| Terminals | 액체·벌크 화물 저장·하역 터미널(휴스턴 십채널 허브 등)과 Jones Act 유조선 선대 | 13.0% | FY2025 |
+| CO2 (Energy Transition Ventures 포함) | CO2 주입 방식 원유 증산(EOR)과 CO2·원유 수송, 재생천연가스(RNG)·RIN 판매. 4개 부문 중 유일하게 상품가격에 직접 노출 | 6.9% | FY2025 |
+
+성장 축은 하나로 모여 있다 — **천연가스 파이프라인 확장**이다. 2026년 6월 말 기준 프로젝트 백로그 $9.6B 중 약 92%가 천연가스 프로젝트이고, 그중 60% 이상이 발전용·지역가스회사(LDC) 수요를 겨냥한다. 2026년 7월 31일 FERC가 South System Expansion 4(SSE4, 총 약 $3.5B·KMI 지분 약 $1.8B)와 Mississippi Crossing(MSX, 약 $1.7B) 두 대형 프로젝트의 인허가를 승인하면서 남동부 증설 경로가 확정됐다([최근 뉴스 / 이슈](./08_news.md) 참고).
+
+KMI가 강조하는 자본 배분 원칙은 **"성장 프로젝트를 외부 자금 없이 자체 현금으로 조달한다"**는 것이다. 배당은 연 2% 안팎으로만 올리고(FY2023 $1.13 → 2026년 예상 $1.19), 자사주매입은 사실상 하지 않으며, 남는 현금을 확장 capex와 레버리지 축소에 쓴다 — Net Debt-to-Adjusted EBITDA가 FY2023 4.2배에서 2026 Q2 3.6배로 낮아진 것이 그 결과다([핵심 지표](./04_metrics.md) C. 사업 고유 지표 참고).
+
+---
+
+## 3. 산업 / 시장 내 위치
+
+KMI는 [천연가스 섹터](../00_overview.md)의 미드스트림 단계에서 규모 기준 최상위 사업자다. 주요 경쟁·비교 대상은 이 저장소가 이미 커버하는 [Williams Companies](../williams_companies/01_overview.md)와, 아직 커버하지 않는 Energy Transfer·Enterprise Products Partners·ONEOK·TC Energy(캐나다계) 등이다. 같은 섹터의 [EQT](../eqt/01_overview.md) 같은 업스트림 E&P와는 사업 모델이 달라 직접 비교보다는 밸류체인상 보완 관계로 보는 편이 맞고, [Cheniere Energy](../cheniere_energy/01_overview.md) 같은 LNG 수출 사업자는 KMI의 **고객**이다 — LNG 터미널이 늘수록 거기까지 가스를 대는 KMI의 수송 물량이 늘어난다.
+
+Williams와 비교하면 사업 성격은 비슷하지만 무게중심이 다르다. Williams는 규제된 주간 파이프라인(Transco)을 축으로 데이터센터 전력 인프라(Power Innovation)까지 사업을 넓히는 반면, KMI는 파이프라인 자체의 물리적 규모(78,000마일·700 Bcf 저장)와 텍사스 주내 시스템·정유제품·터미널까지 아우르는 **사업 다각화 폭**이 더 크다. 재무 정책도 갈린다 — Williams는 배당을 연 5% 안팎으로 올려온 반면 KMI는 2015년 배당 삭감 이후 연 2% 인상에 묶어 두고 그만큼 자체 조달 여력을 남긴다([역사 / 주요 이벤트](./02_history.md) 참고).
+
+KMI 파이프라인의 진입장벽은 신규 인허가·용지 확보에 수년이 걸리는 반면 한 번 깔리면 대체가 불가능하다는 데서 나온다([섹터 개요](../00_overview.md) 2. 산업 구조 — 돈이 어떻게 도는가 참고). 회사가 밝힌 바에 따르면 자사 주간 파이프라인 시스템의 연평균 가동률은 2016년 74%에서 2025년 90%로 올라, 신규 증설 없이 흡수할 수 있는 여유가 줄어든 상태다 — 이것이 백로그가 쌓이는 구조적 배경이지만, 동시에 증설 실행이 늦어지면 수요를 놓친다는 뜻이기도 하다. 이 성장 기대가 밸류에이션에 얼마나 반영돼 있는지는 [투자 판단](./07_investment.md)에서 다룬다.
+
+---
+
+## 관련 문서
+
+- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
+- **회사 이해** — [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
+- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
+- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
+- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+
+---
+
+## 참고 자료
+
+- [공식 홈페이지](https://www.kindermorgan.com)
+- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1506307/000150630726000011/kmi-20251231.htm)
+- [Kinder Morgan Reports Fourth Quarter 2025 Financial Results](https://www.sec.gov/Archives/edgar/data/1506307/000150630726000002/kmi2025q48-kex991.htm)
+- [Kinder Morgan Reports Second Quarter 2026 Financial Results](https://www.sec.gov/Archives/edgar/data/1506307/000150630726000063/kmi2026q28-kex991.htm)
+- [KMI History (회사 연혁 페이지)](https://www.kindermorgan.com/About-Us/History)
+- [Natural Gas — 회사 사업 소개 페이지 (미국 소비 천연가스의 약 40% 수송)](https://www.kindermorgan.com/Operations/Natural-Gas/Index)
+
+---
+
+*작성일: 2026-08-24*

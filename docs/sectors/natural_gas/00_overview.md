@@ -10,6 +10,7 @@
   - [Range Resources](./range_resources/01_overview.md)
   - [Cheniere Energy](./cheniere_energy/01_overview.md)
   - [Williams Companies](./williams_companies/01_overview.md)
+  - [Kinder Morgan](./kinder_morgan/01_overview.md)
 - **인접 섹터**: [WTI 원유](../../meta/macro/energy/oil_wti.md)·[헨리허브 천연가스](../../meta/macro/energy/natural_gas.md) 등 매크로 문서와 연결되며, 이 저장소에서 화학·정유(다운스트림 가공) 섹터는 아직 별도로 커버하지 않음
 
 ---
@@ -79,6 +80,7 @@ Sources: [U.S. Natural Gas Market Size & Share Report — Market Data Forecast](
 - [Range Resources 개요](./range_resources/01_overview.md)
 - [Cheniere Energy 개요](./cheniere_energy/01_overview.md)
 - [Williams Companies 개요](./williams_companies/01_overview.md)
+- [Kinder Morgan 개요](./kinder_morgan/01_overview.md)
 - [헨리허브 천연가스 (매크로)](../../meta/macro/energy/natural_gas.md)
 
 ---
@@ -93,4 +95,4 @@ Sources: [U.S. Natural Gas Market Size & Share Report — Market Data Forecast](
 
 ---
 
-*작성일: 2026-08-21 (최종 수정일: 2026-08-23)*
+*작성일: 2026-08-21 (최종 수정일: 2026-08-24)*
