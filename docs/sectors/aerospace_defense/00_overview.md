@@ -14,7 +14,8 @@
 
 - **섹터명**: 항공우주·방위산업 (Aerospace & Defense)
 - **밸류체인 위치**: 특수금속 소재(업스트림)부터 부품·엔진·완제기 조립, 인도 후 애프터마켓·MRO까지 전 구간 — **이 섹터 안에서도 회사마다 위치가 크게 다르므로, 매출을 OE(초도장착)와 애프터마켓으로 나눠 보는 것이 사업 모델 파악의 출발점이다.**
-- **커버리지 기업**: (아직 없음 — 회사 문서가 추가되면 여기에 링크)
+- **커버리지 기업**: (각 회사 폴더로 링크)
+  - [TransDigm Group](./transdigm/01_overview.md) — 부품·서브시스템(Tier 2~3), 애프터마켓 중심
 - **인접 섹터**: [무인체계 (UAS)](../unmanned_aerial_systems/00_overview.md)(방산 예산·국방 조달 경로를 공유하나 플랫폼 성격이 다름) · [우주 발사 서비스](../space_launch_services/00_overview.md)(일부 방산 고객군 공유) — 이 저장소에서 항공사(운항 사업자)·항공기 리스는 아직 별도로 커버하지 않음
 
 ---
@@ -107,6 +108,7 @@
 
 ## 관련 문서
 
+- [TransDigm Group 개요](./transdigm/01_overview.md)
 - [무인체계 (UAS) 섹터 개요](../unmanned_aerial_systems/00_overview.md)
 - [우주 발사 서비스 섹터 개요](../space_launch_services/00_overview.md)
 - [WTI 원유 (매크로)](../../meta/macro/energy/oil_wti.md)
@@ -134,4 +136,4 @@
 
 ---
 
-*작성일: 2026-08-25*
+*작성일: 2026-08-25 (최종 수정일: 2026-08-26)*
