@@ -2,15 +2,13 @@
 
 > 반도체 설계 자동화(EDA) 분야의 Big Three 중 하나. Synopsys와 함께 EDA 시장을 양분하며, 최근 System Design and Analysis(시스템 설계·해석) 영역으로 확장 중.
 
-> ⚠️ 시가총액은 항상 작성 시점(오늘 날짜) 기준 최신 값으로 갱신. 통화 단위(USD)와 기준일을 함께 표기함.
-
 - **회사명**: Cadence Design Systems, Inc.
 - **티커 / 상장 시장**: CDNS (NASDAQ)
 - **설립 / 본사**: 1988년 / 미국 캘리포니아 산호세(San Jose)
 - **CEO**: Anirudh Devgan (2021년 12월 취임)
 - **홈페이지**: https://www.cadence.com
 - **섹터 / 산업**: 테크 / EDA (Electronic Design Automation)
-- **시가총액**: 약 878.6억 달러 (2026-08-21 종가 $319.02 기준, 핵심 지표 A.2 인용)
+- **시가총액**: 약 870.0억 달러 (2026-08-24 종가 $315.92 기준, 핵심 지표 A.2 인용)
 - **회계연도(FY) 마감월**: 12월 말(달력연도와 거의 동일)
 
 ---
@@ -27,13 +25,11 @@ Cadence는 Synopsys와 함께 반도체 칩을 설계·검증하는 **EDA(Electr
 
 라이선스/구독 형태로 EDA 소프트웨어와 IP를 반도체·전자 시스템 기업에 판매한다.
 
-> ⚠️ 매출 비중은 추정하지 말고 웹검색으로 최신 실적 자료(10-K, 10-Q, IR 자료 등)를 찾아 정확한 %로 작성. 출처와 기준 회계연도/분기를 함께 표기할 것.
-
-| 사업 부문 | 설명 | 매출 비중 (FY2025 기준) |
-|-----------|------|-----------|
-| Core EDA | 칩 설계·검증 소프트웨어. 아날로그/커스텀 설계(Virtuoso), 디지털 구현(Innovus, Genus), 검증(Xcelium, JasperGold), 에뮬레이션(Palladium), 회로 시뮬레이션(Spectre), PCB 설계(Allegro) 등 | 70% |
-| System Design and Analysis (SD&A) | 구조·유체·전자기 등 멀티피직스 시뮬레이션(BETA CAE 인수 기반), 분자 시뮬레이션/신약 설계(OpenEye Scientific 인수 기반) 등 칩 너머 시스템 레벨 설계·해석 | 16% |
-| Semiconductor IP | 인터페이스 IP(USB, PCIe, DDR 등), 프로세서 IP 등 재사용 가능한 설계 블록 | 14% |
+| 사업 부문 | 설명 | 매출 비중 | 기준 시점 |
+|-----------|------|-----------|-----------|
+| Core EDA | 칩 설계·검증 소프트웨어. 아날로그/커스텀 설계(Virtuoso), 디지털 구현(Innovus, Genus), 검증(Xcelium, JasperGold), 에뮬레이션(Palladium), 회로 시뮬레이션(Spectre), PCB 설계(Allegro) 등 | 70% | FY2025 (10-K) |
+| System Design and Analysis (SD&A) | 구조·유체·전자기 등 멀티피직스 시뮬레이션(BETA CAE 인수 기반), 분자 시뮬레이션/신약 설계(OpenEye Scientific 인수 기반) 등 칩 너머 시스템 레벨 설계·해석 | 16% | FY2025 (10-K) |
+| Semiconductor IP | 인터페이스 IP(USB, PCIe, DDR 등), 프로세서 IP 등 재사용 가능한 설계 블록 | 14% | FY2025 (10-K) |
 
 ---
 
@@ -51,16 +47,11 @@ EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사(Big Three)가 과점�
 
 ## 관련 문서
 
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
+- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
+- **회사 이해** — [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
+- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
+- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
+- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -68,9 +59,10 @@ EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사(Big Three)가 과점�
 
 - [Cadence Design Systems 공식 홈페이지](https://www.cadence.com)
 - [Cadence Design Systems Wikipedia](https://en.wikipedia.org/wiki/Cadence_Design_Systems)
+- [Cadence FY2025 Form 10-K (SEC, 사업 부문별 매출 비중 출처)](https://www.sec.gov/Archives/edgar/data/813672/000081367226000016/cdns-20251231.htm)
 - [Cadence Q4/FY2025 실적 발표 (SEC 8-K)](https://www.sec.gov/Archives/edgar/data/0000813672/000081367226000044/cfocommentary04272026ex9902.htm)
 - [Cadence Design Systems 2025 revenue climbs to $5.3B (StockTitan)](https://www.stocktitan.net/sec-filings/CDNS/10-k-cadence-design-systems-inc-files-annual-report-6bcef311af10.html)
 
 ---
 
-*작성일: 2026-08-01 (최종 수정일: 2026-08-23)*
+*작성일: 2026-08-01 (최종 수정일: 2026-08-25)*

@@ -19,21 +19,18 @@
 | 2023.05 | Lip-Bu Tan, Executive Chairman 직에서 퇴임 |
 | 2024.05 | **BETA CAE Systems** 인수 완료 (구조·멀티피직스 시뮬레이션, 약 12.4억 달러) → System Design and Analysis 사업 부문 확대 |
 | 2025.03 | 전 CEO Lip-Bu Tan이 Intel CEO로 취임 (Cadence 재직 기간과는 별개의 이후 행보) |
+| 2025.08 | Arm의 **Artisan foundation IP** 사업 인수 완료(2025-08-27) — 표준 셀 라이브러리·메모리 컴파일러·GPIO 등 확보로 Semiconductor IP 부문 보강. 회사는 인수 당해 매출·이익 기여는 미미할 것으로 안내 |
+| 2026.02 | **Hexagon Design & Engineering(D&E) 사업 인수 완료**(2026-02-23, 약 27억 유로 — 현금 70% + Cadence 보통주 30%) — 구조해석·음향·다물체동역학을 확보해 System Design and Analysis 부문을 대폭 확대. 회사는 2026년 매출에 약 $160M 기여, Non-GAAP EPS에는 약 $0.28 희석 효과가 있고 2027년부터 가산 전환될 것으로 전망 |
 
 ---
 
 ## 관련 문서
 
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
+- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
+- **회사 이해** — [개요](./01_overview.md) · [CEO / 경영진](./03_ceo.md)
+- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
+- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
+- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -44,7 +41,9 @@
 - [Cadence Completes Acquisition of OpenEye Scientific (Cadence 공식 발표)](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2022/cadence-completes-acquisition-of-openeye-scientific.html)
 - [Cadence Completes Acquisition of BETA CAE (Cadence 공식 발표)](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2024/cadence-completes-acquisition-of-beta-cae.html)
 - [Intel Appoints Lip-Bu Tan as Chief Executive Officer (Intel 공식 발표)](https://newsroom.intel.com/corporate/intel-appoints-lip-bu-tan-chief-executive-officer)
+- [Cadence Completes Acquisition of Arm Artisan Foundation IP Business (2025-08-27, Cadence 공식 발표)](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2025/cadence-completes-acquisition-of-arm-artisan-foundation-ip.html)
+- [Cadence Completes Acquisition of Hexagon's Design and Engineering Business (2026-02-23, Business Wire)](https://www.businesswire.com/news/home/20260223046294/en/Cadence-Completes-Acquisition-of-Hexagons-Design-and-Engineering-Business-Advancing-Leadership-in-Physical-AI-and-Multiphysics)
 
 ---
 
-*작성일: 2026-08-01 (최종 수정일: 2026-08-23)*
+*작성일: 2026-08-01 (최종 수정일: 2026-08-25)*

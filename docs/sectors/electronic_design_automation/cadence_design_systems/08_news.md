@@ -2,7 +2,8 @@
 
 > 2025년 이후 흐름은 크게 두 갈래: (1) BETA CAE·Hexagon D&E 등 연속 인수를 통한 System Design and Analysis 확장과 에이전틱 AI 전략 가속, (2) 대중국 수출규제·소송 등 지정학·법률 리스크의 간헐적 충격.
 
-> ⚠️ 이 문서는 시점성 메모(로그)다. 발생 순으로 쌓아두는 용도이며, 여기서 투자 결론을 내리지 않는다 — 판단에 영향을 주는 항목은 밸류에이션 / 적정주가·투자 판단를 직접 갱신할 것.
+!!! note "이 문서의 성격"
+    발생 순으로 쌓는 **시점성 로그**다(최신이 위). 여기서는 투자 결론을 내리지 않는다 — 판단에 영향을 주는 항목은 [밸류에이션 / 적정주가](./06_valuation.md)·[투자 판단](./07_investment.md)을 직접 갱신하고, 여기에는 반영했다는 표시만 남긴다.
 
 ---
 
@@ -16,7 +17,7 @@
 | 2026-04-27 | FY2026 1분기 실적 발표 | 전 사업부문 두 자릿수 성장 | [핵심 지표](./04_metrics.md) | [TIKR](https://www.tikr.com/blog/cadence-design-systems-stock-q1-2026-earnings-every-segment-grew-double-digits) |
 | 2026-04-20 | 에이전틱 AI 전략 공개 | ChipStack·AgentStack 등 멀티 에이전트 자동화 계층 발표 — RTL·검증부터 아날로그 설계, 백엔드 구현까지 AI 에이전트가 Cadence 엔진을 호출하는 구조. "EDA를 넘어선" 컴퓨테이셔널 소프트웨어 기업으로의 재포지셔닝 강화 | [CEO / 경영진](./03_ceo.md), [투자 판단](./07_investment.md) | [HPCwire](https://www.hpcwire.com/2026/04/20/cadence-maps-its-future-beyond-eda-with-agentic-ai-and-simulation/) |
 | 2026-02-17 | FY2025 4분기·연간 실적 발표 | — | [핵심 지표](./04_metrics.md) | [SEC 8-K](https://www.sec.gov/Archives/edgar/data/813672/000081367226000013/cdns02172026ex9901.htm) |
-| 2026년 상반기(정확한 완료일 확인 필요) | Hexagon D&E 인수 완료 | 자기자본·총자산이 크게 늘며 반영(부채비율 상승 요인 중 하나) | [재무 / 실적](./05_financials.md), [핵심 지표](./04_metrics.md) | 핵심 지표 A.3 각주 |
+| 2026-02-23 | Hexagon D&E 인수 완료 | 약 27억 유로(현금 70% + 보통주 30%)로 구조해석·음향·다물체동역학 사업 확보 → SD&A 부문 확대. 회사 안내로는 2026년 매출 약 $160M 기여·Non-GAAP EPS 약 $0.28 희석(2027년 가산 전환). 주식 대가 발행과 인수 회계로 자기자본·총자산이 함께 증가 | → [역사 / 주요 이벤트](./02_history.md) 연혁·[핵심 지표](./04_metrics.md) A.3·[재무 / 실적](./05_financials.md) 3. 재무 건전성에 반영 | [Business Wire](https://www.businesswire.com/news/home/20260223046294/en/Cadence-Completes-Acquisition-of-Hexagons-Design-and-Engineering-Business-Advancing-Leadership-in-Physical-AI-and-Multiphysics) |
 | 2025-10-27 | FY2025 3분기 실적 발표 | — | [핵심 지표](./04_metrics.md) | [SEC 8-K](https://www.sec.gov/Archives/edgar/data/813672/000081367225000144/cdns10272025ex9901.htm) |
 | 2021-12-15~2025-07-28 | CEO 취임·BETA CAE 인수·FY2025 Q1 실적·자사주매입 증액·DOJ·BIS 합의금 | → 역사 / 주요 이벤트·CEO / 경영진·재무 / 실적에 이미 반영(4분기 이상 지난 항목이라 로그에서 압축) | 역사 / 주요 이벤트, CEO / 경영진, 재무 / 실적 | 역사 / 주요 이벤트 연혁 표 참고 |
 
@@ -24,16 +25,11 @@
 
 ## 관련 문서
 
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
+- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
+- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
+- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
+- **판단 · 로그** — [투자 판단](./07_investment.md)
+- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
 
 ---
 
@@ -43,4 +39,4 @@
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-23)*
+*작성일: 2026-08-14 (최종 수정일: 2026-08-25)*
