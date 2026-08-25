@@ -1,8 +1,9 @@
 # 최근 뉴스 / 이슈
 
-> AI 반도체 테스트 수요 급증에 따른 연속 실적 서프라이즈, 자사주매입 목표 상향($400M→$1B), 포토닉스·데이터센터 인터커넥트 테스트로의 볼트온 M&A가 최근 흐름의 세 축이다.
+> AI 반도체 테스트 수요 급증에 따른 연속 실적 서프라이즈, 자사주매입 목표 상향($400M→$1B), 포토닉스·데이터센터 인터커넥트 테스트로의 볼트온 M&A가 흐름의 세 축이었고, 2026년 8월 들어 $1.0B 리볼빙 신용약정 체결(미인출)과 밸류에이션을 근거로 한 투자의견 하향이 더해졌다.
 
-> ⚠️ 이 문서는 시점성 메모(로그)다. 투자 결론은 여기서 내리지 않는다 — 판단에 영향을 주는 항목은 [밸류에이션 / 적정주가](./06_valuation.md)·[투자 판단](./07_investment.md)를 직접 갱신했다.
+!!! note "이 문서의 성격"
+    발생 순으로 쌓는 **시점성 로그**다(최신이 위). 여기서는 투자 결론을 내리지 않는다 — 판단에 영향을 주는 항목은 [밸류에이션 / 적정주가](./06_valuation.md)·[투자 판단](./07_investment.md)를 직접 갱신하고, 여기에는 반영했다는 표시만 남긴다.
 
 ---
 
@@ -10,6 +11,8 @@
 
 | 날짜 | 이슈 | 내용 | 관련 문서 | 출처 |
 |------|------|------|-----------|------|
+| 2026-08-21 | 투자의견 | Baird, 투자의견을 Outperform → **Neutral**로 하향(목표주가 $420은 유지). 하향 사유로 **밸류에이션**을 제시 — 8월 중순 반도체 장비 업종 전반의 조정(Applied Materials −4%, Lam Research·Teradyne −5%대)과 겹치며 주가는 2026-08-14 $418.79에서 2026-08-25 $366.43로 −12.5% 조정됐다 | → [밸류에이션 / 적정주가](./06_valuation.md)·[투자 판단](./07_investment.md)의 기준 주가·괴리율을 2026-08-25 종가로 전면 갱신 | 언론 보도(1차 자료인 애널리스트 노트 원문은 미열람 — 확인 필요) |
+| 2026-08-07 | 재무구조 | **$1.0B 5년 만기 선순위 담보부 리볼빙 신용약정 체결**(PNC Bank 주간사, 2026-08-10 8-K 공시). 운전자본·일반 기업목적용이며 **공시 시점 인출액 $0**. 금리는 SOFR+1.00~1.75%(레버리지 연동), 미사용 약정수수료 0.125~0.225%. 재무약정은 레버리지비율 3.50배 이하·이자보상배율 2.50배 이상이며, 3대 신용평가사 중 2곳에서 투자등급을 받으면 담보·보증·약정 대부분이 해제되는 구조 | [핵심 지표](./04_metrics.md) A.3 각주, [재무 / 실적](./05_financials.md) 3. 재무 건전성, [역사 / 주요 이벤트](./02_history.md) | [Teradyne 8-K (2026-08-10 제출, 사건일 2026-08-07)](https://www.sec.gov/Archives/edgar/data/97210/000119312526342367/ter-20260807.htm) |
 | 2026-07-28 | 실적발표 | Q2 FY2026 실적 발표. 매출 $1,329M(+104% YoY), GAAP 순이익 $374.5M/$2.38, Non-GAAP 순이익 $389.0M/$2.47(+300%대 YoY). Semiconductor Test $1,122M(+128% YoY). Q3 FY2026 가이던스: 매출 $1,200~1,300M, GAAP EPS $1.79~2.09, Non-GAAP EPS $1.85~2.15 | [핵심 지표](./04_metrics.md) A.1·B | [Teradyne 2Q26 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/445/teradyne-reports-second-quarter-2026-results) |
 | 2026-04-29 | 실적발표 | Q1 FY2026 실적 발표. 매출 $1,282.5M(+87% YoY), GAAP EPS $2.53, Non-GAAP EPS $2.56. GAAP 영업이익률 36.9%로 사상 최고 수준 | [핵심 지표](./04_metrics.md) A.1·B | [Teradyne 1Q26 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/440/teradyne-reports-first-quarter-2026-results) |
 | 2026-04-08 | M&A | MultiLane과의 조인트벤처(MultiLane Test Products, MLTP) 설립 완료 — Teradyne이 약 $157M 투자로 75% 지분 확보, AI 데이터센터용 고속 인터커넥트 테스트 솔루션 확대 목적 | [역사 / 주요 이벤트](./02_history.md) | [Teradyne and MultiLane JV 발표](https://investors.teradyne.com/news-events/press-releases/detail/432/teradyne-and-multilane-announce-formation-of-joint-venture-multilane-test-products) |
@@ -26,15 +29,12 @@
 
 ## 관련 문서
 
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
+- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
+- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
+- **판단 · 로그** — [투자 판단](./07_investment.md)
+- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
+- **산업 맥락** — [반도체 테스트 장비 (ATE) 섹터 개요](../00_overview.md)
 
 ---
 
@@ -42,7 +42,8 @@
 
 - [Teradyne Investor Relations — News & Press Releases](https://investors.teradyne.com/news-events/press-releases)
 - [SEC EDGAR — Teradyne 전체 제출 이력 (CIK 0000097210)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000097210)
+- [Teradyne 8-K — $1.0B 리볼빙 신용약정 (2026-08-10)](https://www.sec.gov/Archives/edgar/data/97210/000119312526342367/ter-20260807.htm)
 
 ---
 
-*작성일: 2026-08-16*
+*작성일: 2026-08-16 (최종 수정일: 2026-08-26)*
