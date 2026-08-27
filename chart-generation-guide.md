@@ -9,15 +9,19 @@
 두 문서의 캔들 SVG·지지/저항 표·방법론 수치는 **손으로 만들지 않고** 같은 스크립트 `scripts/gen_technical_chart.py`로 생성합니다(표준 라이브러리만 쓰므로 추가 설치 불필요). `--interval`만 다르고 나머지 사용법은 동일합니다 — 기본값 `1d`는 09용(일봉·1년), `1wk`는 10용(주봉·5년)입니다.
 
 ```bash
+S=<scratchpad>   # 산출물은 표준출력으로 받지 말고 파일로 (아래 ⚠️ 참고)
+
 # 09_technical_daily.md (일봉·1년)
 uv run python scripts/gen_technical_chart.py SNPS --name Synopsys \
   --event 2025-09-10:"실적발표 갭다운" --ref-line 626.24:"52주 최고" \
-  --force-level '366:(52주 최저)' --close-on 2026-08-13
+  --force-level '366:(52주 최저)' --close-on 2026-08-13 -o $S/daily.txt
 
 # 10_technical_weekly.md (주봉·5년) — --interval만 추가
 uv run python scripts/gen_technical_chart.py SNPS --name Synopsys --interval 1wk \
-  --close-on 2026-08-13
+  --close-on 2026-08-13 -o $S/weekly.txt
 ```
+
+⚠️ **`-o` 없이 실행해 SVG를 대화로 통과시키지 마세요.** 캔들 SVG는 문서 하나에 5만 자 안팎이라, 한 번 대화에 들어오면 그 세션이 끝날 때까지 남아 이후 모든 턴에 곱해집니다. 문서에 넣을 때도 손으로 다시 타이핑하지 말고 **스크립트로 파일에서 파일로 옮기세요.** 대화로 받아도 되는 건 `--emit dates`·`--emit facts`처럼 짧은 산출물뿐입니다.
 
 > 왜 스크립트로 두는가 — 좌표 매핑·스윙 탐지 창(일봉 전후 5거래일 / 주봉 전후 4주)·클러스터링 허용오차(±2.5%, 두 인터벌 공통) 같은 파라미터를 회사마다 다시 구현하면 값이 조용히 달라져 **회사 간 차트 비교가 깨집니다.** 이 파라미터의 단일 출처는 스크립트 상단 `INTERVAL_PARAMS`이며, 바꾸면 이미 만들어둔 `09_technical_daily.md`·`10_technical_weekly.md`를 전부 재생성하고 각 문서 4. 방법론 · 한계에 바뀐 값을 남겨야 합니다.
 
@@ -29,7 +33,7 @@ uv run python scripts/gen_technical_chart.py SNPS --interval 1wk --emit dates
 
 `--close-on`으로 뽑은 종가는 `04_metrics.md`·`06_valuation.md`의 값과 대조해 문서 상단에 결과를 남기세요.
 
-`--emit chart` 출력(`<div class="<ticker>-chart">…</div>`)은 클래스명·범례·다크모드 CSS가 한 벌로 들어 있으니 **그대로 붙여넣고 손대지 마세요.** 특히 다크모드 CSS는 세 규칙이 한 세트입니다 — (1) 기본(라이트) 값, (2) `@media (prefers-color-scheme: dark)` 안에 `body:not([data-md-color-scheme="default"])` 가드를 건 다크 값, (3) `[data-md-color-scheme="slate"]` 다크 값. (2)의 가드를 지우면 **OS가 다크인 사용자가 사이트에서 라이트 모드를 골랐을 때 페이지는 밝은데 차트만 어둡게** 남습니다(MkDocs Material이 이때 body에 `data-md-color-scheme="default"`를 붙입니다).
+`--emit chart` 출력(`<div class="<ticker>-chart">…</div>`)은 클래스명·범례·다크모드 CSS가 한 벌로 들어 있으니 **한 글자도 바꾸지 마세요**(옮길 땐 위 ⚠️대로 파일에서 파일로). 특히 다크모드 CSS는 세 규칙이 한 세트입니다 — (1) 기본(라이트) 값, (2) `@media (prefers-color-scheme: dark)` 안에 `body:not([data-md-color-scheme="default"])` 가드를 건 다크 값, (3) `[data-md-color-scheme="slate"]` 다크 값. (2)의 가드를 지우면 **OS가 다크인 사용자가 사이트에서 라이트 모드를 골랐을 때 페이지는 밝은데 차트만 어둡게** 남습니다(MkDocs Material이 이때 body에 `data-md-color-scheme="default"`를 붙입니다).
 
 `--levels` 기본값은 3이지만 **억지로 3개를 채우지 마세요** — 유효한 클러스터가 2개면 2개만 씁니다. 개수를 바꿨거나 터치 2회 미만인 레벨을 `--force-level`로 넣었다면 그 사유를 각 문서 4. 방법론 · 한계와 표 비고에 남깁니다.
 
@@ -164,4 +168,4 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 ---
 
-*작성일: 2026-08-22 (최종 수정일: 2026-08-27)*
+*작성일: 2026-08-22 (최종 수정일: 2026-08-28)*
