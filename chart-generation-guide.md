@@ -1,8 +1,6 @@
 # 차트 생성 가이드
 
-이 문서는 `scripts/gen_technical_chart.py`·`scripts/gen_index_overlay_chart.py`로 캔들 차트·비교 차트를 생성할 때 지키는 규칙을 모아둡니다 — 회사 문서의 `09_technical_daily.md`·`10_technical_weekly.md`, `docs/meta/macro/`의 거시지표 문서 모두 여기 규칙을 따릅니다. 사이트 방문자용 콘텐츠가 아니라 `docs/`를 쓰고 관리하는 사람(Claude Code 등 에이전트)만 참조하는 절차서라 [`authoring-guide.md`](./authoring-guide.md)와 같은 이유로 `docs/` 밖 저장소 루트에 둡니다.
-
-폴더 구조·명명 규칙·회사 문서 파일별 역할의 마스터는 여전히 [`authoring-guide.md`](./authoring-guide.md)입니다 — 이 문서는 그중 차트 생성이라는 한 가지 절차만 떼어내 다룹니다.
+이 문서는 `scripts/gen_technical_chart.py`·`scripts/gen_index_overlay_chart.py`로 캔들 차트·비교 차트를 생성할 때 지키는 규칙을 모아둡니다 — 회사 문서의 `09_technical_daily.md`·`10_technical_weekly.md`, `docs/meta/macro/`의 거시지표 문서 모두 여기 규칙을 따릅니다. 폴더 구조·파일별 역할의 마스터는 [`authoring-guide.md`](./authoring-guide.md)이고, 이 문서는 그중 차트 생성이라는 한 가지 절차만 떼어내 다룹니다 — 같은 이유로 `docs/` 밖 저장소 루트에 둡니다.
 
 ---
 
@@ -23,7 +21,7 @@ uv run python scripts/gen_technical_chart.py SNPS --name Synopsys --interval 1wk
 
 > 왜 스크립트로 두는가 — 좌표 매핑·스윙 탐지 창(일봉 전후 5거래일 / 주봉 전후 4주)·클러스터링 허용오차(±2.5%, 두 인터벌 공통) 같은 파라미터를 회사마다 다시 구현하면 값이 조용히 달라져 **회사 간 차트 비교가 깨집니다.** 이 파라미터의 단일 출처는 스크립트 상단 `INTERVAL_PARAMS`이며, 바꾸면 이미 만들어둔 `09_technical_daily.md`·`10_technical_weekly.md`를 전부 재생성하고 각 문서 4. 방법론 · 한계에 바뀐 값을 남겨야 합니다.
 
-스크립트가 만드는 것은 기계적 산출물뿐입니다. 갭·급락 구간의 **해석**(3. 관측된 특이 구간), 파라미터를 기본값에서 바꾼 **사유**(4. 방법론 · 한계)는 사람이 채웁니다. 2. 지지선 / 저항선 요약 비고의 "어느 시기의 스윙대인지"는 `--emit dates`로 뽑은 날짜 목록(아래)을 그대로 옮기고, 그 시기에 무슨 일이 있었는지 같은 해석만 사람이 덧붙이면 됩니다 — 날짜 자체를 눈대중으로 채우지 않습니다:
+스크립트가 만드는 것은 기계적 산출물뿐입니다. 갭·급락 구간의 **해석**(3. 관측된 특이 구간)과 파라미터를 바꾼 **사유**(4. 방법론 · 한계)는 사람이 채웁니다. 2. 지지선 / 저항선 요약 비고의 "어느 시기의 스윙대인지"는 **눈대중하지 말고** `--emit dates` 출력을 그대로 옮긴 뒤, 그 시기에 무슨 일이 있었는지만 덧붙입니다:
 
 ```bash
 uv run python scripts/gen_technical_chart.py SNPS --interval 1wk --emit dates
@@ -70,7 +68,7 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
 
 ## macro 문서 재현 파라미터
 
-`docs/meta/macro/`의 단일 자산 문서(아래 표 28개)는 1. 차트만 스크립트로 생성하고 지지선 / 저항선 요약(지지/저항 표)·방법론 · 한계 절은 두지 않기로 했다(2026-08-20) — 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓴다:
+`docs/meta/macro/`의 단일 자산 문서(아래 표 28개)는 **1. 차트와 2. 해석만** 둔다 — 지지/저항 표·방법론 절은 2026-08-20에, 문서 하단의 관련 문서·참고 자료 목록은 2026-08-27에 걷어냈다. 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓴다:
 
 ```bash
 uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --interval 1wk \
@@ -166,4 +164,4 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 ---
 
-*작성일: 2026-08-22 (최종 수정일: 2026-08-25)*
+*작성일: 2026-08-22 (최종 수정일: 2026-08-27)*

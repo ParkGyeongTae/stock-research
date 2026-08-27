@@ -8,13 +8,15 @@
 
 - `docs/sectors/` — 섹터별·회사별 리서치 문서(개요·연혁·경영진·재무·밸류에이션·투자 결론·뉴스·기술적 차트·최종 보고서)
 - `docs/meta/` — 용어집·개념 정리·거시지표 차트 등 특정 회사·섹터에 종속되지 않는 참고 문서
-- `scripts/` — 기술적 분석 차트(SVG)·거시지표 비교 차트를 생성하는 Python 스크립트(표준 라이브러리만 사용, 추가 설치 불필요)
+- `scripts/` — 기술적 분석 차트(SVG)·거시지표 비교 차트 생성 스크립트(표준 라이브러리만 사용, 추가 설치 불필요)
 - `.claude/skills/` — 회사/섹터/거시지표 문서를 새로 만들거나 개선하는 절차를 코드화한 Claude Code 스킬 모음
-- `.github/workflows/deploy.yml` — `main` 브랜치에 푸시하면 `uv run mkdocs build` 결과를 GitHub Pages로 자동 배포
-- `authoring-guide.md` — `docs/` 문서를 쓰고 관리할 때 지키는 규칙. 사이트 방문자용이 아니라 작성 절차용이라 `docs/` 밖에 둠
-- `chart-generation-guide.md` — 차트 생성 스크립트 사용법·재현 파라미터. `authoring-guide.md`와 같은 이유로 `docs/` 밖에 둠
+- `.github/workflows/deploy.yml` — `main`에 푸시하면 빌드 결과를 GitHub Pages로 자동 배포
 
-작성 규칙·새 회사/섹터 추가 절차는 [`authoring-guide.md`](./authoring-guide.md), 차트 생성 스크립트 사용법은 [`chart-generation-guide.md`](./chart-generation-guide.md), AI 에이전트(Claude Code 등) 작업 지침은 [`AGENTS.md`](./AGENTS.md)에 정리되어 있습니다.
+저장소 루트의 세 문서는 사이트 방문자용이 아니라 작성 절차용이라 `docs/` 밖에 둡니다.
+
+- [`authoring-guide.md`](./authoring-guide.md) — 폴더 구조·파일별 역할·작성 규칙·새 회사/섹터 추가 절차
+- [`chart-generation-guide.md`](./chart-generation-guide.md) — 차트 생성 스크립트 사용법·재현 파라미터
+- [`AGENTS.md`](./AGENTS.md) — AI 에이전트(Claude Code 등) 작업 지침 (`CLAUDE.md`는 이 파일의 심볼릭 링크)
 
 ## 로컬에서 실행
 
