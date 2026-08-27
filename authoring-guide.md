@@ -145,7 +145,8 @@ PER·PBR·DCF·WACC·%p 등 용어가 낯설면 [`glossary.md`](./docs/meta/glos
 ## ➕ 새 회사 / 새 섹터 추가 방법
 
 ```bash
-# 1. 템플릿 복사
+# 1. 템플릿 복사 (이미 있는 회사를 다시 만드는 경우 폴더부터 지운다 — 아래 "재생성" 참고)
+rm -rf docs/sectors/<sector>/<company-name>
 cp -r docs/meta/.template/company docs/sectors/<sector>/<company-name>
 
 # 2. 파일 내용 채우기 — 전부 필수, 삭제하지 않는다. 01~10을 먼저 채우고 11은 가장 마지막
@@ -155,6 +156,8 @@ cp docs/meta/.template/sector/00_overview.md docs/sectors/<sector>/00_overview.m
 ```
 
 `09_technical_daily.md`·`10_technical_weekly.md`의 SVG·레벨 표·방법론 수치는 손으로 만들지 말고 스크립트로 생성한다 — 커맨드·옵션·주의사항은 [`chart-generation-guide.md`](./chart-generation-guide.md) "기술적 분석 차트 생성"이 마스터다.
+
+**재생성** — 이미 있는 문서를 고칠 때도 부분 수정하지 않고 위 절차 그대로 지우고 다시 만든다. 부분 수정하면 눈에 띄는 절만 고쳐지고 템플릿이 바뀐 뒤에도 옛 절 구성·옛 항목 수가 남는다. 다만 지우기 전에 **웹에서 다시 구할 수 없는 것**은 옮겨 적는다 — 뉴스 로그, `04_metrics.md`의 회사 고유 `!!! warning`(분할 소급조정 이력 등), 섹터 단위로 합의된 사업 고유 지표, `06_valuation.md`의 방법론 채택·제외 사유. 나머지는 전부 새로 조사한다.
 
 **섹터 자체가 새로 생기는 경우에만** `docs/sectors/.pages`에 폴더명을 추가하는 단계가 더 있다(위 `.pages` 등록 규칙 참고). 기존 섹터에 회사만 추가할 땐 필요 없다.
 
