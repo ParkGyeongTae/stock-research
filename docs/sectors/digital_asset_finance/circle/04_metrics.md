@@ -188,38 +188,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·상장 이후](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Circle Internet Group, Inc. — Form 10-K, FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm)
-- [Circle Internet Group, Inc. — Form S-1 (2025-04, FY2023·FY2024 비교 재무제표) (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1876042/000119312525070481/d737521ds1.htm)
-- [Circle Internet Group, Inc. — Form 10-Q, FY2026 Q2 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000248/crcl-20260630.htm)
-- [Circle Reports Third Quarter 2025 Results (8-K 첨부, 2025-11-12)](https://www.sec.gov/Archives/edgar/data/1876042/000187604225000045/nolivelinksversion_q3202.htm)
-- [Circle Reports Fourth Quarter and Full Year 2025 Results (8-K 첨부, 2026-02-25)](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000032/final_circlereportsfourt.htm)
-- [Circle Reports First Quarter 2026 Results (8-K 첨부, 2026-05-11)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000148/final_05x11q1epr30.htm)
-- [Circle Reports Second Quarter 2026 Results (8-K 첨부, 2026-08-05)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000246/augustepr-circle_q22026f.htm)
-- [Circle Reports Fourth Quarter and Full Fiscal Year 2025 Financial Results — Key Operating Indicators 표 (Circle IR, 2026-02-25)](https://www.circle.com/pressroom/circle-reports-fourth-quarter-and-full-fiscal-year-2025-financial-results)
-- [Circle Reports Second Quarter 2026 Results — Key Operating Indicators 표 (Circle IR, 2026-08-05)](https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results)
-- [stockanalysis.com — CRCL Financials](https://stockanalysis.com/stocks/crcl/financials/)
-- [stockanalysis.com — CRCL Balance Sheet](https://stockanalysis.com/stocks/crcl/financials/balance-sheet/)
-- [stockanalysis.com — CRCL Cash Flow Statement](https://stockanalysis.com/stocks/crcl/financials/cash-flow-statement/)
-- [stockanalysis.com — CRCL Ratios](https://stockanalysis.com/stocks/crcl/financials/ratios/)
-- Yahoo Finance 차트 API(query1.finance.yahoo.com) — 2025-12-31 종가 $79.30 등 과거 주가 조회
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-23)*

@@ -68,19 +68,4 @@ Sources: [Credit Card Market Size & Industry Analysis — Mordor Intelligence](h
 
 ---
 
-## 관련 문서
-
-- [Visa 개요](./visa/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Credit Card Market Size, Share & Industry Analysis 2031 — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/global-credit-cards-market)
-- [Cards and Payment Market 2026-2035 — Business Research Insights](https://www.businessresearchinsights.com/market-reports/cards-and-payment-market-100132)
-- [Payment Processor Market Trends Analysis Report 2026-2030 — The Business Research Company](https://www.thebusinessresearchcompany.com/report/payment-processor-global-market-report)
-- [Credit Card Market Share (2026): Visa vs Mastercard vs Others — Capital One Shopping Research](https://capitaloneshopping.com/research/credit-card-market-share-statistics/)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

@@ -627,21 +627,4 @@
 
 ---
 
-## 관련 문서
-
-- [WTI 원유](./oil_wti.md)
-- [천연가스](./natural_gas.md)
-- [에너지 3종 비교 (지수화)](./comparison.md)
-- [거시경제 개념 정리](../../concepts/macroeconomics.md)
-- [용어집 — 9. 거시경제](../../glossary.md#macro)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — Sprott Physical Uranium Trust (SRUUF)](https://finance.yahoo.com/quote/SRUUF/)
-- [Sprott Physical Uranium Trust — 공식 사이트](https://sprott.com/investment-strategies/physical-commodity-funds/uranium/)
-
----
-
 *작성일: 2026-08-21 (최종 수정일: 2026-08-25)*

@@ -136,25 +136,4 @@ DCF·DDM은 같은 회사·같은 기간에 대해 시장가보다 30~45% 낮은
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Linde FY2025 10-K (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1707925/000162828026011430/lin-20251231.htm)
-- [stockanalysis.com — LIN 컨센서스](https://stockanalysis.com/stocks/lin/)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

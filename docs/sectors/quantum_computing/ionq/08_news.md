@@ -25,23 +25,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [기술적 분석 (차트)](./09_technical_daily.md)
-
----
-
-## 참고 자료
-
-- [IonQ Investor Relations — News](https://investors.ionq.com/news/default.aspx)
-- [The Quantum Insider — IonQ 관련 기사](https://thequantuminsider.com/?s=IonQ)
-
----
-
 *작성일: 2026-08-15*

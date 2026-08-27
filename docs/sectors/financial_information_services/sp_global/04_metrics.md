@@ -164,29 +164,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [S&P Global Inc. — 10-K FY2025 (SEC EDGAR)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000064040&type=10-K)
-- [S&P Global 4Q & FY2025 Earnings Release Exhibits (2026-02-10)](https://s29.q4cdn.com/690959130/files/doc_financials/2025/q4/S-P-Global-4Q-FY-2025-Earnings-Release-Exhibits-2-10-2026.pdf)
-- [S&P Global 4Q & FY2024 Earnings Release Exhibits (2025-02-11)](https://s29.q4cdn.com/690959130/files/doc_financials/2024/q4/S-P-Global-4Q-and-Full-Year-2024-Earnings-Release-Exhibits-2-11-2025.pdf)
-- [S&P Global 2Q 2026 Earnings Release Exhibits (2026-07-28)](https://s29.q4cdn.com/690959130/files/doc_financials/2026/q2/S-P-Global-2Q-2026-Earnings-Release-and-Exhibits-7-28-2026.pdf)
-- [S&P Global, Provides Pro Forma and Recast Financial Results and Updated Segment Information (2026-07-06, SEC 8-K Ex.99.1)](https://www.sec.gov/Archives/edgar/data/64040/000110465926080571/tm2619099d2_ex99-1.htm)
-- [Investor Relations 페이지](https://investor.spglobal.com)
-
----
-
 *작성일: 2026-08-17 (최종 수정일: 2026-08-21)*

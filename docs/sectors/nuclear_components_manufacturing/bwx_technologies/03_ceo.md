@@ -63,27 +63,4 @@ Geveden 취임 이후 BWXT는 국방(해군 원자로) 부문의 안정적 현�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Rex Geveden — BWX Technologies 공식 경영진 소개](https://www.bwxt.com/about/management-team/rex-d-geveden)
-- [Rex Geveden — Wikipedia](https://en.wikipedia.org/wiki/Rex_Geveden)
-- [BWX Technologies, Inc. — 2026 Proxy Statement (DEF 14A)](https://investors.bwxt.com/static-files/78a5b75e-fcfe-440a-8831-a2e0f836ddd4)
-
----
-
 *작성일: 2026-08-18 (최종 수정일: 2026-08-23)*

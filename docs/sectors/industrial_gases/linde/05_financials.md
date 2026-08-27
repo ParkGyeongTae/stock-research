@@ -48,25 +48,4 @@ FCF는 FY2023 $5,518M → FY2024 $4,926M → FY2025 $5,089M로 CapEx 확대(A.4,
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표 (원자료)](./04_metrics.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Linde 4Q25 실적발표 자료](https://assets.linde.com/-/media/global/corporate/corporate/documents/press-releases/2025/linde-4q25-earnings-release-tables.pdf)
-- [Linde FY2025 10-K (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1707925/000162828026011430/lin-20251231.htm)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

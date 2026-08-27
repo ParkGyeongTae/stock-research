@@ -36,34 +36,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·상장 이후](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Circle 공식 홈페이지](https://www.circle.com)
-- [Circle Internet Group — Wikipedia](https://en.wikipedia.org/wiki/Circle_Internet_Group)
-- [Coinbase Gets a Stake in Stablecoin Operator Circle and USDC Adds 6 New Blockchains — CoinDesk (2023-08-21)](https://www.coindesk.com/business/2023/08/21/coinbase-buys-a-stake-in-stablecoin-operator-circle-and-usdc-adds-6-new-blockchains)
-- [Circle Announces Pricing of Upsized Initial Public Offering — Circle IR (2025-06)](https://www.circle.com/pressroom/circle-announces-pricing-of-upsized-initial-public-offering)
-- [Circle IPO News: Circle (CRCL) Debuts on NYSE — CoinDesk (2025-06-05)](https://www.coindesk.com/markets/2025/06/05/circle-shares-open-at-69-on-nyse-debut-signaling-strong-appetite-for-stablecoin-issuers)
-- [SEC.gov | Statement on President Trump Signing the GENIUS Act into Law](https://www.sec.gov/newsroom/speeches-statements/atkins-statement-genius-act-071825)
-- [Circle Receives Final OCC Approval to Establish National Trust Bank — Circle 보도자료 (2026-07-10)](https://www.circle.com/pressroom/circle-receives-final-occ-approval-to-establish-national-trust-bank)
-- [Stripe, Visa and over 140 other businesses to launch stablecoin to rival Tether and Circle — Fortune (2026-06-30)](https://fortune.com/2026/06/30/stripe-visa-stablecoin-rival-ousd-tether-circle/)
-- [Circle Internet Is Still Down 10% in 2026 — 24/7 Wall St. (2026-08-11)](https://247wallst.com/investing/2026/08/11/circle-internet-is-still-down-10-in-2026-what-will-it-take-to-get-crcl-stock-back-up-to-100/)
-- [CRCL Q2 2026 Earnings — Arc mainnet Sept 16 — BigGo Finance (2026-08-05)](https://finance.biggo.com/news/US_CRCL_2026-08-05)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-23)*

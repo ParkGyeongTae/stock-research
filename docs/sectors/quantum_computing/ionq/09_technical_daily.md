@@ -632,23 +632,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — IONQ 일봉 데이터](https://finance.yahoo.com/quote/IONQ/history/)
-- [stockanalysis.com — IONQ 주가 이력 (대조용)](https://stockanalysis.com/stocks/ionq/history/)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-23)*

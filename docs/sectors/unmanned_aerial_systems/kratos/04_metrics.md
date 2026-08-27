@@ -153,32 +153,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Kratos Defense & Security Solutions, Inc. — Form 10-K, FY2025 (SEC EDGAR CIK 0001069258)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001069258)
-- [Kratos Reports Fourth Quarter and Full Year 2025 Financial Results (2026-02-23)](https://www.kratosdefense.com/newsroom/kratos-reports-fourth-quarter-and-full-year-2025-financial-results)
-- [Kratos Reports First Quarter 2026 Financial Results and Increases Fiscal FY26 Financial Guidance (2026-05-05경)](https://www.kratosdefense.com/newsroom/kratos-reports-first-quarter-2026-financial-results-and-increases-fiscal-fy26-financial-guidance)
-- [Kratos Reports Second Quarter 2026 Financial Results (2026-08-04)](https://www.kratosdefense.com/newsroom/kratos-reports-second-quarter-2026-financial-results)
-- [Kratos Reports Third Quarter 2025 Financial Results (2025-11-04)](https://www.kratosdefense.com/newsroom/kratos-reports-third-quarter-2025-financial-results)
-- [Kratos Reports Second Quarter 2025 Financial Results (2025-08)](https://www.kratosdefense.com/newsroom/kratos-reports-second-quarter-2025-financial-results)
-- [Kratos Reports First Quarter 2025 Financial Results (2025-05-07)](https://www.globenewswire.com/news-release/2025/05/07/3076520/0/en/Kratos-Reports-First-Quarter-2025-Financial-Results.html)
-- [Kratos Reports Fourth Quarter and Full Year 2024 Financial Results (2025-02-26)](https://www.kratosdefense.com/newsroom/kratos-reports-fourth-quarter-and-full-year-2024-financial-results)
-- [Kratos to Acquire Israel-Based Orbit Technologies Ltd for $356.3 Million (2025-11-05)](https://www.kratosdefense.com/newsroom/kratos-to-acquire-israel-based-orbit-technologies-ltd-for-356-3-million)
-- [stockanalysis.com — KTOS Financials / Balance Sheet / Cash Flow / Ratios](https://stockanalysis.com/stocks/ktos/financials/)
-- Yahoo Finance 차트 API(query1.finance.yahoo.com) — 회계연도 말 종가 조회
-
----
-
 *작성일: 2026-08-15*

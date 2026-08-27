@@ -55,40 +55,5 @@ Robinhood의 매출은 크게 ① 거래 기반 수익(Transaction-based revenue
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Robinhood 공식 홈페이지](https://robinhood.com)
-- [Robinhood Markets, Inc. Investor Relations](https://investors.robinhood.com)
-- [Robinhood (HOOD) Market Cap & Net Worth — stockanalysis.com](https://stockanalysis.com/stocks/hood/market-cap/) (조회일 2026-08-22)
-- [HOOD Stock Rallies As Crypto And Private-Market Bets Accelerate — StocksToTrade (2026-08-21)](https://stockstotrade.com/news/robinhood-markets-inc-hood-news-2026_08_21-4/)
-- [Robinhood Reports Second Quarter 2026 Results (GlobeNewswire, 2026-07-29)](https://www.globenewswire.com/news-release/2026/07/29/3335576/0/en/robinhood-reports-second-quarter-2026-results.html)
-- [Robinhood Q2 2026 Revenue $1.308B, EPS $0.62 — 10-Q Summary (TradingView)](https://www.tradingview.com/news/tradingview:e9d8e3b1fa206:0-robinhood-markets-inc-q2-2026-revenue-1-308b-eps-0-62-10-q-summary/)
-- [Robinhood Q2 Revenue Hits Record $1.31B as Crypto Revenue Falls 38% to $100M (CryptoTimes)](https://www.cryptotimes.io/2026/07/30/robinhood-q2-revenue-hits-record-1-31-billion-crypto-earnings-fall-38/)
-- [Robinhood Q1 2026 earnings: revenue up 15%, crypto down 47% (Yahoo Finance)](https://finance.yahoo.com/markets/stocks/articles/robinhood-q1-2026-earnings-revenue-203244837.html)
-- [Robinhood Reports Fourth Quarter and Full Year 2025 Results (Investor Relations, 2026-02-10)](https://investors.robinhood.com/static-files/b2f8b742-6b7f-430d-9a42-3b06d5040bda)
-- [Robinhood Completes $200 Million Acquisition of Crypto Exchange Bitstamp (CoinDesk, 2025-06-03)](https://www.coindesk.com/business/2025/06/03/robinhood-completes-200m-acquisition-of-crypto-exchange-bitstamp)
-- [Robinhood vs Coinbase Statistics 2026 (coinlaw.io)](https://coinlaw.io/robinhood-vs-coinbase-statistics/)
-- [Robinhood Accelerates Global Expansion with Robinhood Chain Mainnet, Stock Tokens (Robinhood Newsroom)](https://robinhood.com/us/en/newsroom/robinhood-accelerates-global-expansion-robinhood-chain-mainnet-stock-tokens-agentic-trading/)
-- [Schwab plans spot crypto trading launch in first half of 2026 (CoinDesk, 2026-04-03)](https://www.coindesk.com/business/2026/04/03/schwab-plans-spot-bitcoin-ether-trading-launch-in-first-half-of-2026)
-- [Robinhood Markets — Wikipedia](https://en.wikipedia.org/wiki/Robinhood_Markets)
-- [Vlad Tenev | Management — Robinhood Investor Relations](https://investors.robinhood.com/management/vlad-tenev)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-23)*
 

@@ -150,29 +150,4 @@ FY2024 → FY2025 → 2026년 상반기로 갈수록 backlog·book-to-bill 모�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [BWX Technologies, Inc. — Form 10-K, FY2025 (SEC EDGAR CIK 0001486957)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001486957&type=10-K)
-- [BWX Technologies Reports Fourth Quarter and Full Year 2025 Results, Initiates 2026 Guidance (2026-02-23)](https://investors.bwxt.com/news-releases/news-release-details/bwx-technologies-reports-fourth-quarter-and-full-year-2025)
-- [BWX Technologies Reports Fourth Quarter and Full Year 2023 Results, Initiates 2024 Guidance (2024-02-27)](https://investors.bwxt.com/news-releases/news-release-details/bwx-technologies-reports-fourth-quarter-and-full-year-2023)
-- [BWX Technologies Reports Second Quarter 2026 Results (2026-08-03)](https://investors.bwxt.com/news-releases/news-release-details/bwx-technologies-reports-second-quarter-2026-results)
-- [stockanalysis.com — BWXT 재무제표·비율 집계 (조회 2026-08-17)](https://stockanalysis.com/stocks/bwxt/financials/)
-
----
-
 *작성일: 2026-08-18*

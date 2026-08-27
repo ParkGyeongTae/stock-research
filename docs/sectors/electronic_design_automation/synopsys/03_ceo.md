@@ -70,26 +70,4 @@ Ansys 인수 발표 이후 KeyBanc(목표주가 660달러, Overweight), Piper Sa
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Sassine Ghazi (Synopsys 공식 프로필)](https://www.synopsys.com/company/management-team/sassine-ghazi-bio.html)
-- [Synopsys CEO Ghazi took us inside his $35 billion acquisition of Ansys (Fortune/Yahoo Finance)](https://finance.yahoo.com/news/synopsys-ceo-sassine-ghazi-took-084759371.html)
-- [Sassine Ghazi 보상 내역 (Salary.com)](https://www.salary.com/research/executive-compensation/sassine-ghazi-executive-member-of-synopsys-inc)
-- [Synopsys CEO Pay Jumps 172% to $27.4 Million on Promotion (Panabee)](https://www.panabee.com/news/synopsys-ceo-pay-jumps-172-to-27-4-million-on-promotion)
-- [SNPS: CEO Ghazi's Tech and Integrity Gaps May Undermine IP and Credibility Needs (Paragon Intel)](https://paragonintel.com/sassine-ghazi-ceo-analysis-snps/)
-- [Sassine Ghazi - Net Worth and Insider Trading (GuruFocus)](https://www.gurufocus.com/insider/4980/sassine-ghazi)
-- [WallStreetZen — Synopsys Stock Ownership](https://www.wallstreetzen.com/stocks/us/nasdaq/snps/ownership) (기관/내부자 지분율, 5% 이상 대주주)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-25)*

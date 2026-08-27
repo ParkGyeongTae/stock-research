@@ -59,27 +59,4 @@ NuScale은 "규제 인증에서 가장 앞서 있다"는 강점과 "아직 착�
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.nuscalepower.com)
-- [NuScale Power Corp — Form 10-K, FY2025 (SEC EDGAR CIK 0001822966, 제출일 2026-02-26)](https://www.sec.gov/Archives/edgar/data/1822966/000182296626000018/smr-20251231.htm)
-- [stockanalysis.com — SMR 재무제표·시황 집계 (조회 2026-08-19)](https://stockanalysis.com/stocks/smr/)
-
----
-
 *작성일: 2026-08-19 (최종 수정일: 2026-08-23)*

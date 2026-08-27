@@ -154,32 +154,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1327567/000132756725000027/panw-20250731.htm)
-- [10-K FY2023 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1327567/000132756723000024/panw-20230731.htm)
-- [10-Q Q3 FY2026 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1327567/000132756726000015/panw-20260430.htm)
-- [SEC XBRL Frames API (companyconcept, CIK 0001327567)](https://data.sec.gov/api/xbrl/companyconcept/CIK0001327567/us-gaap/) — 분기별 원자료 교차검증
-- [Fiscal Fourth Quarter and Fiscal Year 2025 Financial Results — Palo Alto Networks IR](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-year-2025-financial-results)
-- [Fiscal Third Quarter 2026 Financial Results — Palo Alto Networks IR](https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-reports-fiscal-third-quarter-2026-financial-results)
-- [Fiscal First/Second Quarter 2026 Financial Results — Palo Alto Networks IR](https://investors.paloaltonetworks.com/)
-- [stockanalysis.com/stocks/PANW](https://stockanalysis.com/stocks/PANW/) (현재가·발행주식수·PER 교차검증, 수집 2026-08-14)
-- `scripts/gen_technical_chart.py` 실행 결과 (종가 대조) — PANW 종가 2023-07-31 $124.98 / 2024-07-31 $162.37 / 2025-07-31 $173.60 / 2026-08-14 $384.27 (Yahoo Finance, 분할 소급반영)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-21)*

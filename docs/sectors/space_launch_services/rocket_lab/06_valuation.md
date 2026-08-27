@@ -87,25 +87,4 @@ FY2027 매출 컨센서스는 확보하지 못했다(확인 필요). 애널리�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [핵심 지표](./04_metrics.md) 참고 자료 목록과 동일
-- [Rocket Lab (RKLB) Stock Forecast & Analyst Price Targets (stockanalysis.com)](https://stockanalysis.com/stocks/rklb/forecast/)
-- [Rocket Lab Stock Fell Nearly 50% From Its Record High (The Motley Fool, 2026-08-11)](https://www.fool.com/investing/2026/08/11/rocket-lab-stock-fell-nearly-50-from-highs-history/)
-- [`../spacex/06_valuation.md`](../spacex/06_valuation.md) (동종업계 비교 인용)
-
----
-
 *작성일: 2026-08-14*

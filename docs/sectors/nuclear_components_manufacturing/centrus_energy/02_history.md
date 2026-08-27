@@ -35,31 +35,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.centrusenergy.com)
-- [Centrus Energy Corp. Emerges from Chapter 11 Restructuring (2014-09-30)](https://www.centrusenergy.com/news/centrus-energy-corp-emerges-from-chapter-11-restructuring/)
-- [Centrus Begins Enrichment Operations in Ohio (2023-10)](https://www.centrusenergy.com/news/centrus-begins-enrichment-operations-in-ohio/)
-- [Centrus Awarded $900 Million to Expand Uranium Enrichment in Ohio (2026-01-05)](https://investors.centrusenergy.com/news-releases/news-release-details/centrus-awarded-900-million-expand-uranium-enrichment-ohio)
-- [Centrus Energy Corp. — Form 10-K, FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026007117/leu-20251231.htm)
-- [Centrus Energy Corp. — DEF 14A, 2026년 주주총회 위임장 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026027241/leu-20260424.htm)
-- [Centrus Reports Second Quarter 2026 Results (2026-08-05)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026053433/ex991-10q2026_08x05.htm)
-
----
-
 *작성일: 2026-08-19*

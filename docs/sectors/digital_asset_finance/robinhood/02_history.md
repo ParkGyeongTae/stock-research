@@ -38,35 +38,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Robinhood 공식 홈페이지](https://robinhood.com)
-- [Robinhood Markets — Wikipedia](https://en.wikipedia.org/wiki/Robinhood_Markets)
-- [Robinhood slapped with biggest-ever penalty by Wall Street regulator — CNN (2021-06-30)](https://amp.cnn.com/cnn/2021/06/30/investing/robinhood-trading-fine-finra)
-- [FINRA Fines Robinhood A Record $70M — Benzinga](https://www.benzinga.com/government/21/06/21793858/finra-fines-robinhood-a-record-70m)
-- [Robinhood settles 'gamification' case with Massachusetts — Cointelegraph](https://cointelegraph.com/news/robinhood-settles-massachusetts-regulator)
-- [Robinhood to Pay $45 Million to Settle SEC Claims — Bloomberg (2025-01-13)](https://www.bloomberg.com/news/articles/2025-01-13/robinhood-to-pay-45-million-to-settle-sec-claims)
-- [Robinhood Completes $200 Million Acquisition of Crypto Exchange Bitstamp — CoinDesk (2025-06-03)](https://www.coindesk.com/business/2025/06/03/robinhood-completes-200m-acquisition-of-crypto-exchange-bitstamp)
-- [Robinhood Authorizes $1.5 Billion Share Buyback — The Globe and Mail (2026-01)](https://www.theglobeandmail.com/investing/markets/stocks/HOOD/pressreleases/936003/robinhood-authorizes-15-billion-share-buyback-amid-2026-stock-decline/)
-- [Robinhood Prices $2.0 Billion Convertible Senior Notes Offering (2026-06)](https://www.quiverquant.com/news/Robinhood+Prices+$2.0+Billion+Convertible+Senior+Notes+Offering,+Plans+Concurrent+Share+Repurchases)
-- [Robinhood Launches Its Own Blockchain, New Stock Tokens And DeFi Products — Forbes (2026-07-01)](https://www.forbes.com/sites/ninabambysheva/2026/07/01/robinhood-launches-its-own-blockchain-new-stock-tokens-and-defi-products/)
-- [Co-Founder Baiju Bhatt Steps Down as Robinhood's Chief Creative Officer — Finance Magnates](https://www.financemagnates.com/executives/co-founder-baiju-bhatt-steps-down-as-robinhoods-chief-creative-officer/)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-23)*

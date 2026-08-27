@@ -2,8 +2,6 @@
 
 > Google·SoftBank에서 대규모 조직을 키운 세일즈·전략통 경영자. 취임 후 공격적 M&A로 매출을 4배 이상 키웠지만, 그만큼 공격적인 보상 구조 때문에 주주총회 자문사 반대 권고와 표결 부결이 반복되는 CEO다.
 
-> ⚠️ 항목별 출처는 하단 "참고 자료" 참고.
-
 - **이름**: Nikesh Arora
 - **직책**: Chairman and Chief Executive Officer (이사회 의장 겸 CEO)
 - **취임일**: 2018-06 (2026-08 기준 8년째)
@@ -64,29 +62,6 @@ Google·SoftBank에서의 대규모 조직 운영 경험과 공격적 사업 확
 | 차등의결권 구조 (dual-class) | 없음 — 단일 종류 보통주, 창업자(Nir Zuk)를 포함해 별도 초의결권 클래스 없음(확인된 위임장 기준) | — |
 
 > 위 지분율은 집계 사이트(fintel.io, bullfincher.io 등) 기준으로, 정확한 %는 최신 DEF 14A(위임장)·13F 공시로 재확인 필요 — 특히 BlackRock 관련 수치는 자회사별 합산 여부에 따라 자료마다 갈렸다.
-
----
-
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [회사 공식 경영진 소개 페이지](https://www.paloaltonetworks.com/company/leadership)
-- [Nikesh Arora — Wikipedia](https://en.wikipedia.org/wiki/Nikesh_Arora)
-- [Palo Alto Networks shareholders have rejected executive pay seven times — TheNextWeb](https://thenextweb.com/news/palo-alto-networks-arora-100m-pay-shareholders-reject)
-- [Nikesh Arora Salary — salary.com](https://www1.salary.com/Nikesh-Arora-Salary-Bonus-Stock-Options-for-PALO-ALTO-NETWORKS-INC.html)
 
 ---
 

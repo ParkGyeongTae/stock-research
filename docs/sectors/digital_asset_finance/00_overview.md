@@ -68,21 +68,4 @@ Sources: [Cryptocurrency Exchange Platform Market — Straits Research](https://
 
 ---
 
-## 관련 문서
-
-- [Coinbase 개요](./coinbase/01_overview.md)
-- [Robinhood 개요](./robinhood/01_overview.md)
-- [Circle 개요](./circle/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Cryptocurrency Exchange Platform Market Size, Share, Growth, 2034 — Straits Research](https://straitsresearch.com/report/cryptocurrency-exchange-platform-market)
-- [Crypto Exchange Market Size and Forecast – 2026 to 2033 — Coherent Market Insights](https://www.coherentmarketinsights.com/industry-reports/crypto-exchange-market)
-- [Cryptocurrency Exchange Market Size & Growth Report 2026-35 — SNS Insider](https://www.snsinsider.com/reports/cryptocurrency-exchange-market-7226)
-- [Stablecoin Market Size, Share & 2031 Growth Trends Report — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/stablecoin-market)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

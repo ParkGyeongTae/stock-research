@@ -79,27 +79,4 @@ R&D 대 M&A 성향, 조직 개편의 세부 방향에 대한 추가 공개 자�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Martina L. Cheung — S&P Global Investor Relations 프로필](https://investor.spglobal.com/our-leadership/person-details/default.aspx?ItemId=b0e07a35-b9bf-4141-b0dc-ea7158138b58)
-- [S&P Global Announces Leadership Succession (2024-06-27)](https://www.prnewswire.com/news-releases/sp-global-announces-leadership-succession-302185122.html)
-- [2025 The Most Powerful Women in Finance, No. 17, Martina Cheung — American Banker](https://www.americanbanker.com/news/2025-the-most-powerful-women-in-finance-no-17-martina-cheung-s-p-global)
-- [S&P Global 2Q 2026 Earnings Release (2026-07-28)](https://s29.q4cdn.com/690959130/files/doc_financials/2026/q2/S-P-Global-2Q-2026-Earnings-Release-and-Exhibits-7-28-2026.pdf)
-
----
-
 *작성일: 2026-08-17 (최종 수정일: 2026-08-23)*

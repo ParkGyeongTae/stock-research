@@ -64,21 +64,4 @@ Sources: [Credit Agency Market Size — Market Research Future](https://www.mark
 
 ---
 
-## 관련 문서
-
-- [S&P Global 개요](./sp_global/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Credit Agency Market Size, Share and Industry Trends 2035 — Market Research Future](https://www.marketresearchfuture.com/reports/credit-agency-market-24072)
-- [Financial Analytics Market Size, Share | Trends Report — Fortune Business Insights](https://www.fortunebusinessinsights.com/financial-analytics-market-107948)
-- [Can you take me higher? How the Big Three benefit from the dominance of index providers — Oxford Law Blogs](https://blogs.law.ox.ac.uk/oblb/blog-post/2024/06/can-you-take-me-higher-how-big-three-benefit-dominance-index-providers)
-- [Corporate debt market outlook in a transforming world: Global Debt Report 2026 — OECD](https://www.oecd.org/en/publications/global-debt-report-2026_e9d80efd-en/full-report/corporate-debt-market-outlook-in-a-transforming-world_cf86a220.html)
-- [Why Is the Oligopoly in the Credit-Rating Market So Tenacious? — International Banker](https://internationalbanker.com/finance/why-is-the-oligopoly-in-the-credit-rating-market-so-tenacious/)
-- [Report on Vulnerabilities in Private Credit (2026-05-06) — Financial Stability Board](https://www.fsb.org/uploads/P060526.pdf)
-
----
-
 *작성일: 2026-08-17 (최종 수정일: 2026-08-23)*

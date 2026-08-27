@@ -78,25 +78,4 @@ AI 반도체 테스트 수요 급증의 최대 수혜 기업 중 하나로 부�
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- **산업 맥락** — [반도체 테스트 장비 (ATE) 섹터 개요](../00_overview.md)
-
----
-
-## 참고 자료
-
-- [Greg Smith Named Teradyne President (2022 보도자료)](https://investors.teradyne.com/news-events/press-releases/detail/63/greg-smith-named-teradyne-president)
-- [Teradyne Executive Team](https://investors.teradyne.com/company-information/executive-team)
-- [Teradyne Board of Directors](https://investors.teradyne.com/governance/board-of-directors)
-- [Gregory S. Smith 보상 내역 (salary.com)](https://www.salary.com/research/executive-compensation/gregory-s-smith-executive-member-of-teradyne-inc)
-- [Gregory Smith Form 4 내역 (GuruFocus)](https://www.gurufocus.com/insider/18092/gregory-stephen-smith)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-26)*

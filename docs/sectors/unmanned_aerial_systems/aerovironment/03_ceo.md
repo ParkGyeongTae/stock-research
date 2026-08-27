@@ -70,28 +70,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Wahid Nawabi - AeroVironment (공식 프로필)](https://www.avinc.com/about/team/president-ceo)
-- [AeroVironment and BlueHalo Complete Transaction (공식 보도자료)](https://www.avinc.com/2025/05/01/aerovironment-and-bluehalo-complete-transaction-creating-a-global-defense-technology/)
-- [AeroVironment's Wahid Nawabi Earns First Wash100 Award](https://www.wash100.com/winners/2026/wahid-nawabi/)
-- [Wahid Nawabi 보상 내역 (Salary.com)](https://www1.salary.com/Wahid-Nawabi-Salary-Bonus-Stock-Options-for-AEROVIRONMENT-INC.html)
-- [DEF 14A — 2025년 정기주주총회 위임장, 지분 구조(SHARE OWNERSHIP) 섹션 (SEC EDGAR, 2025-08-13 제출)](https://www.sec.gov/Archives/edgar/data/1368622/000110465925077059/tm2522088-1_def14a.htm)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-23)*

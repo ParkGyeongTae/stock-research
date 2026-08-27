@@ -54,25 +54,4 @@ KMI 파이프라인의 진입장벽은 신규 인허가·용지 확보에 수년
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.kindermorgan.com)
-- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1506307/000150630726000011/kmi-20251231.htm)
-- [Kinder Morgan Reports Fourth Quarter 2025 Financial Results](https://www.sec.gov/Archives/edgar/data/1506307/000150630726000002/kmi2025q48-kex991.htm)
-- [Kinder Morgan Reports Second Quarter 2026 Financial Results](https://www.sec.gov/Archives/edgar/data/1506307/000150630726000063/kmi2026q28-kex991.htm)
-- [KMI History (회사 연혁 페이지)](https://www.kindermorgan.com/About-Us/History)
-- [Natural Gas — 회사 사업 소개 페이지 (미국 소비 천연가스의 약 40% 수송)](https://www.kindermorgan.com/Operations/Natural-Gas/Index)
-
----
-
 *작성일: 2026-08-24*

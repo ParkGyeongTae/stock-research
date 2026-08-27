@@ -65,19 +65,4 @@ Sources: [Industrial Gases Market Size to Attain USD 209.42 Bn By 2035 — Prece
 
 ---
 
-## 관련 문서
-
-- [Linde 개요](./linde/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Industrial Gases Market Size to Attain USD 209.42 Bn By 2035 — Precedence Research](https://www.precedenceresearch.com/industrial-gases-market)
-- [Industrial Gases Market Size. Share & Growth outlook 2026-33 — DataM Intelligence](https://www.datamintelligence.com/research-report/industrial-gases-market)
-- [Industrial Gases Market Size, Share, Growth, 2034 — Straits Research](https://straitsresearch.com/report/industrial-gases-market)
-- [Industrial Gases Market — Future Market Insights](https://www.futuremarketinsights.com/reports/industrial-gases-market)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

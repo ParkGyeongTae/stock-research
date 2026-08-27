@@ -142,23 +142,4 @@ PER·PBR·DDM은 모두 제외했다 — PER은 파생상품 평가손익으로 
 
 ---
 
-## 관련 문서
-
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [미 국채 10년물 금리 (macro)](../../../meta/macro/rates/treasury_10y.md)
-- [천연가스 — 헨리허브 (macro)](../../../meta/macro/energy/natural_gas.md)
-- [천연가스 섹터 개요](../00_overview.md)
-- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/3570/000000357026000005/lng-20251231.htm)
-- [Cheniere Reports Second Quarter 2026 Results and Raises Full Year 2026 Financial Guidance](https://www.sec.gov/Archives/edgar/data/3570/000000357026000030/cei20262ndqtrerex991.htm)
-
----
-
 *작성일: 2026-08-24*

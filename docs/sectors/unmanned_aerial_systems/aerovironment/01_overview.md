@@ -48,27 +48,4 @@ AeroVironment는 미군을 주요 고객으로 하는 소형 무인항공기(UAS
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [AeroVironment 공식 홈페이지](https://www.avinc.com)
-- [AeroVironment - Wikipedia](https://en.wikipedia.org/wiki/AeroVironment)
-- [AeroVironment Announces Fiscal 2026 Fourth Quarter and Fiscal Year Results (공식 IR)](https://www.sec.gov/Archives/edgar/data/1368622/000110465926078824/avav-20260629xex99d1.htm)
-- [AeroVironment (AVAV) 주가·시가총액 (stockanalysis.com)](https://stockanalysis.com/stocks/AVAV/)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-16)*

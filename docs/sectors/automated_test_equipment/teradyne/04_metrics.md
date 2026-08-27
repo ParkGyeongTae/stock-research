@@ -208,28 +208,4 @@
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- **산업 맥락** — [반도체 테스트 장비 (ATE) 섹터 개요](../00_overview.md)
-
----
-
-## 참고 자료
-
-- [Teradyne FY2023 10-K/4Q23 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/33/teradyne-reports-fourth-quarter-and-fiscal-year-2023-results)
-- [Teradyne FY2024 4Q24 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/15/teradyne-reports-fourth-quarter-2024-results)
-- [Teradyne FY2025 4Q25 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/433/teradyne-reports-fourth-quarter-and-full-year-2025-results)
-- [Teradyne 1Q26 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/440/teradyne-reports-first-quarter-2026-results)
-- [Teradyne 2Q26 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/445/teradyne-reports-second-quarter-2026-results)
-- [Teradyne FY2025 10-K (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/97210/000119312526059002/ter-20251231.htm)
-- [SEC XBRL company concepts — Teradyne (CIK 0000097210)](https://data.sec.gov/api/xbrl/companyfacts/CIK0000097210.json)
-- [stockanalysis.com — Teradyne 재무·통계](https://stockanalysis.com/stocks/TER/financials/)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-26)*

@@ -55,7 +55,7 @@
   4. **산업·석유화학 수요** — 저렴한 국내 가스 가격을 원료로 하는 석유화학 콤플렉스 투자가 걸프코스트 중심으로 이어지고 있다.
   5. **장기 가격 상승 전망과 생산 유인** — EIA 장기 전망(Annual Energy Outlook, 2025-07 발표)의 기준 시나리오는 헨리허브 가격이 **2025년 $2.88/MMBtu(2024년 실질달러)에서 2050년 $4.80/MMBtu**로 완만히 오르고, LNG 수출은 **2040년 9.8 Tcf로 정점**을 찍어 2024년 수출량의 두 배를 넘길 것으로 본다. 현재 저가 국면이 LNG 수출 확대에 따라 구조적으로 흡수될 여지가 있다는 신호로 해석되지만, 어디까지나 전망치이며 확정된 사실이 아니다.
 
-출처는 하단 참고 자료에 모아 두었다 — 각 수치의 기준 시점(EIA 수출 전망 2026-04-16, EIA 장기 전망 2025-07-11, 시장 규모 리포트 2025~2026년판)을 함께 확인할 것.
+각 수치의 기준 시점(EIA 수출 전망 2026-04-16, EIA 장기 전망 2025-07-11, 시장 규모 리포트 2025~2026년판)이 서로 다르다는 점에 유의할 것.
 
 ---
 
@@ -85,32 +85,6 @@
 - **DOE·FERC 인허가 일정** — 신규 LNG 프로젝트·파이프라인의 착공·가동 시점에 직접 영향
 - **유럽 TTF·아시아 JKM 스팟가격** — 미국 LNG의 수출 마진(액화 스프레드)과 카고 목적지를 결정하는 해외 기준가
 - **냉난방도일(HDD/CDD) 예보** — 계절 수요 전망, 특히 극한 한파·폭염 시 단기 가격 급등 요인
-
----
-
-## 관련 문서
-
-- [EQT Corporation 개요](./eqt/01_overview.md)
-- [Cheniere Energy 개요](./cheniere_energy/01_overview.md)
-- [Williams Companies 개요](./williams_companies/01_overview.md)
-- [Kinder Morgan 개요](./kinder_morgan/01_overview.md)
-- [헨리허브 천연가스 (매크로)](../../meta/macro/energy/natural_gas.md)
-- [WTI 원유 (매크로)](../../meta/macro/energy/oil_wti.md)
-- [미 국채 10년물 금리 (매크로)](../../meta/macro/rates/treasury_10y.md)
-
----
-
-## 참고 자료
-
-- [U.S. Natural Gas Market Size & Share Report, 2034 — Market Data Forecast](https://www.marketdataforecast.com/market-reports/united-states-natural-gas-market)
-- [U.S. Natural Gas Market Size & Top Players Analysis, 2032 — Persistence Market Research](https://www.persistencemarketresearch.com/market-research/us-natural-gas-market.asp)
-- [US Upstream Oil and Gas Market — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/united-states-oil-and-gas-upstream-market)
-- [U.S. natural gas exports to grow nearly 30% by 2027 as LNG facilities ramp up — EIA (2026-04-16, 수출능력·터미널 가동 일정)](https://www.eia.gov/todayinenergy/detail.php?id=67484)
-- [U.S. hydrocarbon production supported by export growth in long-term projections — EIA (2025-07-11, AEO 장기 전망)](https://www.eia.gov/todayinenergy/detail.php?id=65724)
-- [The 9th U.S. liquefied natural gas export terminal, Golden Pass, ships first cargo — EIA](https://www.eia.gov/todayinenergy/detail.php?id=67564)
-- [QatarEnergy Extends LNG Force Majeure to Mid-August 2026 — energynews.pro](https://energynews.pro/en/qatarenergy-extends-lng-force-majeure-to-mid-august-2026)
-- [Qatar's Ras Laffan LNG site may not be fully back online for months — The National](https://www.thenationalnews.com/business/energy/2026/04/09/months-expected-until-qatars-ras-laffan-lng-site-resumes-full-operations/)
-- [Ras Laffan attacks could reshape global LNG supply as outage timeline extends — World Oil](https://www.worldoil.com/news/2026/3/20/ras-laffan-attacks-could-reshape-global-lng-supply-as-outage-timeline-extends/)
 
 ---
 

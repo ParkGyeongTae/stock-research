@@ -45,26 +45,4 @@ NuScale의 매출을 "성장"의 관점으로 읽으면 안 된다. FY2023 $22.8
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표 (원자료)](./04_metrics.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [NuScale Power Corp — Form 10-K, FY2025 (SEC EDGAR CIK 0001822966)](https://www.sec.gov/Archives/edgar/data/1822966/000182296626000018/smr-20251231.htm)
-- [NuScale Power Reports Second Quarter 2026 Results (2026-08-05)](https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-second-quarter-2026-results)
-
----
-
 *작성일: 2026-08-19*

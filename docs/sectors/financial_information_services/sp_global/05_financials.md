@@ -42,25 +42,4 @@ GAAP과 Adjusted 순이익의 차이(FY2025 기준 $4,471M → $5,441M, 약 $970
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표 (원자료)](./04_metrics.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [투자자 관계(IR) 페이지](https://investor.spglobal.com)
-- [S&P Global 4Q & FY2025 Earnings Release Exhibits (2026-02-10)](https://s29.q4cdn.com/690959130/files/doc_financials/2025/q4/S-P-Global-4Q-FY-2025-Earnings-Release-Exhibits-2-10-2026.pdf)
-
----
-
 *작성일: 2026-08-17*

@@ -619,22 +619,4 @@
 
 ---
 
-## 관련 문서
-
-- [원/달러 환율](./usd_krw.md)
-- [유로/달러 환율](./eur_usd.md)
-- [엔/달러 환율](./jpy_usd.md)
-- [통화 4종 비교 (지수화)](./comparison.md)
-- [거시경제 개념 정리](../../concepts/macroeconomics.md)
-- [용어집 — 9. 거시경제](../../glossary.md#macro)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — US Dollar Index (DX-Y.NYB)](https://finance.yahoo.com/quote/DX-Y.NYB/)
-- [ICE — U.S. Dollar Index (원출처, 지수 운영기관)](https://www.ice.com/index/ICE-US-Dollar-Index)
-
----
-
 *작성일: 2026-08-20 (최종 수정일: 2026-08-23)*

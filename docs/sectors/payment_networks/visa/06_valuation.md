@@ -134,27 +134,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Visa FY2025 10-K (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm)
-- [stockanalysis.com — Visa 컨센서스 전망](https://stockanalysis.com/stocks/v/forecast/)
-- [Visa 베타·WACC 추정 (alphaspread.com)](https://www.alphaspread.com/security/nyse/v/discount-rate)
-- 10년물 국채수익률: [ETF Trends — Treasury Yields Snapshot 2026-08-14](https://www.etftrends.com/fixed-income-content-hub/treasury-yields-snapshot-august-14-2026/)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

@@ -620,19 +620,4 @@
 
 ---
 
-## 관련 문서
-
-- [반도체 설계 자동화 (EDA) 섹터 개요](../../../sectors/electronic_design_automation/00_overview.md)
-- [반도체 테스트 장비 (ATE) 섹터 개요](../../../sectors/automated_test_equipment/00_overview.md)
-- [거시경제 개념 정리](../../concepts/macroeconomics.md)
-- [용어집 — 9. 거시경제](../../glossary.md#macro)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — PHLX Semiconductor (^SOX)](https://finance.yahoo.com/quote/%5ESOX/)
-
----
-
 *작성일: 2026-08-20 (최종 수정일: 2026-08-25)*

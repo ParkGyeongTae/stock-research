@@ -612,20 +612,4 @@
 
 ---
 
-## 관련 문서
-
-- [은](./silver.md)
-- [구리](./copper.md)
-- [금속 3종 비교 (지수화)](./comparison.md)
-- [거시경제 개념 정리](../../concepts/macroeconomics.md)
-- [용어집 — 9. 거시경제](../../glossary.md#macro)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — Gold (GC=F)](https://finance.yahoo.com/quote/GC=F/)
-
----
-
 *작성일: 2026-08-20 (최종 수정일: 2026-08-23)*

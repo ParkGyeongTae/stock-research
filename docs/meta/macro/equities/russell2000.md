@@ -620,19 +620,4 @@
 
 ---
 
-## 관련 문서
-
-- [S&P 500](./sp500.md) · [나스닥종합지수](./nasdaq.md)
-- [미국 4대 지수 비교 (지수화)](./us_comparison.md)
-- [거시경제 개념 정리](../../concepts/macroeconomics.md)
-- [용어집 — 9. 거시경제](../../glossary.md#macro)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — Russell 2000 (^RUT)](https://finance.yahoo.com/quote/%5ERUT/)
-
----
-
 *작성일: 2026-08-20 (최종 수정일: 2026-08-23)*

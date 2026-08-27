@@ -61,22 +61,4 @@
 
 ---
 
-## 관련 문서
-
-- [BWX Technologies 개요](./bwx_technologies/01_overview.md)
-- [Centrus Energy 개요](./centrus_energy/01_overview.md)
-- [NuScale Power 개요](./nuscale_power/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Nuclear Power Market Size, Share & Growth Forecast to 2035 — Research Nester](https://www.researchnester.com/reports/nuclear-power-market/7450)
-- [The Path to a New Era for Nuclear Energy: Outlook for nuclear investment — IEA](https://www.iea.org/reports/the-path-to-a-new-era-for-nuclear-energy/outlook-for-nuclear-investment)
-- [IAEA Raises Nuclear Power Projections for Fifth Consecutive Year — IAEA](https://www.iaea.org/newscenter/pressreleases/iaea-raises-nuclear-power-projections-for-fifth-consecutive-year)
-- [BWX Technologies, Inc. — Form 10-K FY2025 (SEC EDGAR)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001486957&type=10-K)
-- Centrus Energy Corp. — Form 10-K FY2025, "Competition and Foreign Trade" 절(World Nuclear Association 2025년 데이터 인용, SEC EDGAR CIK 0001065059)
-
----
-
 *작성일: 2026-08-17 (최종 수정일: 2026-08-23)*

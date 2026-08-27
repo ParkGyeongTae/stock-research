@@ -101,24 +101,4 @@ Adjusted PER 기준으로 현재주가는 목표 배수를 3개년 평균(80.0x)
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [핵심 지표 원자료 — 핵심 지표](./04_metrics.md)
-- [Kratos Defense & Security Solutions (KTOS) Stock Forecast & Analyst Price Targets — stockanalysis.com](https://stockanalysis.com/stocks/ktos/forecast/) (조회일 2026-08-15)
-- [KTOS Discount Rate — WACC & Cost of Equity — GuruFocus](https://www.gurufocus.com/term/wacc/KTOS) (조회일 2026-08-15)
-
----
-
 *작성일: 2026-08-15*

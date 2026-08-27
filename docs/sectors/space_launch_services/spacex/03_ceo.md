@@ -61,29 +61,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Elon Musk - Wikipedia](https://en.wikipedia.org/wiki/Elon_Musk)
-- [Who Really Owns SpaceX? How Elon Musk Controls 82.4% of the Votes With Just 42% of the Equity](https://www.mexc.com/learn/article/who-really-owns-spacex-how-elon-musk-controls-82-4-of-the-votes-with-just-42-of-the-equity/1)
-- ['Catastrophic Governance Structure' and Murky Financials Complicate SpaceX IPO (Gizmodo)](https://gizmodo.com/catastrophic-governance-structure-and-murky-financials-complicate-spacex-ipo-2000765052)
-- [Jefferies analyst calls out 'simple-minded' criticism of SpaceX's governance (Fortune)](https://fortune.com/2026/08/02/spacex-corporate-governance-elon-musk-ceo-chairman-voting-shares/)
-- [SpaceX employees denounce CEO Musk as 'distraction': letter (AOL/Reuters)](https://www.aol.com/finance/spacex-employees-denounce-ceo-musk-170623252-203719283.html)
-- [3 Reasons SpaceX May Be a Risky Investment (The Motley Fool)](https://www.fool.com/investing/2026/04/02/3-reasons-spacex-may-be-a-risky-investment/)
-- [Top IPO, Weak Governance (Harvard Law School Forum on Corporate Governance)](https://corpgov.law.harvard.edu/2026/05/19/top-ipo-weak-governance/)
-- [Musk's xAI, SpaceX combo is the biggest merger of all time, valued at $1.25 trillion (CNBC)](https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-23)*

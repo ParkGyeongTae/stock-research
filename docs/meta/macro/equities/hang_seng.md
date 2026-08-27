@@ -623,18 +623,4 @@
 
 ---
 
-## 관련 문서
-
-- [닛케이225](./nikkei225.md)
-- [거시경제 개념 정리](../../concepts/macroeconomics.md)
-- [용어집 — 9. 거시경제](../../glossary.md#macro)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — Hang Seng Index (^HSI)](https://finance.yahoo.com/quote/%5EHSI/)
-
----
-
 *작성일: 2026-08-20 (최종 수정일: 2026-08-23)*

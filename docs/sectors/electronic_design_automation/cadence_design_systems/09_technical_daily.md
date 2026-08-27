@@ -655,27 +655,4 @@
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — CDNS Chart API](https://query1.finance.yahoo.com/v8/finance/chart/CDNS) (일봉 OHLCV 원자료, 2026-08-25 수집)
-- [stockanalysis.com — CDNS Price History](https://stockanalysis.com/stocks/cdns/history/)
-- [GuruFocus — Cadence Design Systems (CDNS) Shares Drop Amid AI Model Concerns](https://www.gurufocus.com/news/8965307/cadence-design-systems-cdns-shares-drop-amid-ai-model-concerns?mobile=true)
-- [TradingKey — Cadence Design Systems Inc Stock (CDNS) Moved Down by 9.82% on Jul 17](https://www.tradingkey.com/news/market-movers/262038361-market-movers-cdns-20260717)
-- [Trefis — Cadence Design Systems Stock Slides 14% Over 6 Straight Down Days](https://www.trefis.com/stock/cdns/articles/607964/cadence-design-systems-stock-slides-14-over-6-straight-down-days/2026-07-20)
-- [GuruFocus — Cadence Design Systems (CDNS) Shares Surge 10.5%](https://www.gurufocus.com/news/8894566/cadence-design-systems-inc-cdns-shares-surge-105-what-gf-score-of-99-tells-investors)
-- [Parameter — Cadence Design Systems (CDNS) Stock Soars Nearly 9% on AI Breakthrough That Slashes Verification Time](https://parameter.io/cadence-design-systems-cdns-stock-soars-nearly-9-on-ai-breakthrough-that-slashes-verification-time/)
-- [Trefis — The AI Double-Tap That Lit Up Cadence](https://www.trefis.com/stock/cdns/articles/601032/the-ai-double-tap-that-lit-up-cadence/2026-06-02)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-25)*

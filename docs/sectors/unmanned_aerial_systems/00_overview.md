@@ -65,20 +65,4 @@ Sources: [Military Drone Market — Fortune Business Insights](https://www.fortu
 
 ---
 
-## 관련 문서
-
-- [AeroVironment 개요](./aerovironment/01_overview.md)
-- [Kratos Defense & Security Solutions 개요](./kratos/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Military Drone Market Size, Share, Trends — Fortune Business Insights](https://www.fortunebusinessinsights.com/military-drone-market-102181)
-- [Military Drones Market Size, Share & Growth Report — GMInsights](https://www.gminsights.com/industry-analysis/military-drone-market)
-- [Military Drone Market Size And Growth Report — Grand View Research](https://www.grandviewresearch.com/industry-analysis/military-drone-market-report)
-- [Military Drones Market — MarketsandMarkets](https://www.marketsandmarkets.com/Market-Reports/military-drone-market-221577711.html)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

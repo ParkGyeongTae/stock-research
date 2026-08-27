@@ -31,26 +31,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical_daily.md)
-
----
-
-## 참고 자료
-
-- [IonQ — About](https://www.ionq.com/company)
-- [IonQ, dMY Technology Group III 사업결합 종결 보도자료](https://investors.ionq.com/news/news-details/2021/IonQ-Becomes-First-Publicly-Traded-Pure-Play-Quantum-Computing-Company-Closes-Business-Combination-with-dMY-Technology-Group-III/default.aspx)
-- [IonQ Names Niccolo de Masi as President & CEO (2025-02-26 보도자료)](https://investors.ionq.com/news/news-details/2025/IonQ-Names-Niccolo-de-Masi-as-President--Chief-Executive-Officer/default.aspx)
-- [IonQ SkyWater Technology 인수 관련 SEC 8-K](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1824920&type=8-K)
-
----
-
 *작성일: 2026-08-15*

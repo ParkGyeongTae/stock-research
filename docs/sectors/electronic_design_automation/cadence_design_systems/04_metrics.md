@@ -187,38 +187,4 @@
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Cadence Reports Fourth Quarter and Fiscal Year 2025 Financial Results (SEC 8-K Ex-99.01, 2026-02-17)](https://www.sec.gov/Archives/edgar/data/813672/000081367226000013/cdns02172026ex9901.htm)
-- [Cadence Reports Fourth Quarter and Fiscal Year 2024 Financial Results (SEC 8-K Ex-99.01, 2025-02-18)](https://www.sec.gov/Archives/edgar/data/813672/000081367225000016/cdns2182025ex9901.htm)
-- [Cadence Reports Fourth Quarter and Fiscal Year 2023 Financial Results (SEC 8-K Ex-99.01, 2024-02-12)](https://www.sec.gov/Archives/edgar/data/813672/000081367224000030/cdns02122024ex9901.htm)
-- [Cadence Reports Fourth Quarter and Fiscal Year 2021 Financial Results (SEC 8-K Ex-99.01, 2022-02-22)](https://www.sec.gov/Archives/edgar/data/813672/000081367222000010/cdns02222022ex9901.htm)
-- [Cadence Reports First Quarter 2025 Financial Results (SEC 8-K Ex-99.01)](https://www.sec.gov/Archives/edgar/data/813672/000081367225000046/cdns4282025ex9901.htm)
-- [Cadence Reports Second Quarter 2025 Financial Results (SEC 8-K Ex-99.01)](https://www.sec.gov/Archives/edgar/data/813672/000081367225000108/cdns7282025ex9901.htm)
-- [Cadence Reports Third Quarter 2025 Financial Results (SEC 8-K Ex-99.01)](https://www.sec.gov/Archives/edgar/data/813672/000081367225000144/cdns10272025ex9901.htm)
-- [Cadence Reports First Quarter 2026 Financial Results (SEC 8-K Ex-99.01)](https://www.sec.gov/Archives/edgar/data/813672/000081367226000044/cdns04272026ex9901.htm)
-- [Cadence Reports Second Quarter 2026 Financial Results (SEC 8-K Ex-99.01, 2026-07-27, 최신 FY2026 가이던스)](https://www.sec.gov/Archives/edgar/data/813672/000081367226000089/cdns07272026ex9901.htm)
-- [stockanalysis.com — CDNS 재무제표(손익계산서)](https://stockanalysis.com/stocks/CDNS/financials/)
-- [stockanalysis.com — CDNS 재무상태표](https://stockanalysis.com/stocks/CDNS/financials/balance-sheet/)
-- [stockanalysis.com — CDNS 밸류에이션 비율](https://stockanalysis.com/stocks/CDNS/financials/ratios/)
-- [stockanalysis.com — CDNS 현재 주가/시가총액](https://stockanalysis.com/stocks/cdns/)
-- [MacroTrends — CDNS Free Cash Flow History](https://www.macrotrends.net/stocks/charts/CDNS/cadence-design-systems/free-cash-flow)
-- [financecharts.com — CDNS Share Buybacks](https://www.financecharts.com/stocks/CDNS/cash-flow/repurchase-of-capital-stock)
-- [stockanalysis.com — CDNS Cash Flow Statement (SBC)](https://stockanalysis.com/stocks/cdns/financials/cash-flow-statement/)
-- [stockanalysis.com — CDNS Balance Sheet (총차입금·현금성자산)](https://stockanalysis.com/stocks/cdns/financials/balance-sheet/)
-- [stockanalysis.com — CDNS Ratios (EV/EBITDA·EV/Sales)](https://stockanalysis.com/stocks/cdns/financials/ratios/)
-- [stockanalysis.com — CDNS Statistics (2026-08-24 기준 EV·순부채)](https://stockanalysis.com/stocks/cdns/statistics/)
-
----
-
 *작성일: 2026-08-01 (최종 수정일: 2026-08-25)*

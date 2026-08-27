@@ -51,28 +51,4 @@ HALEU(고순도저농축우라늄, U-235 농도 5~20%)는 대부분의 차세대
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.centrusenergy.com)
-- [Centrus Energy Corp. — Form 10-K, FY2025 (SEC EDGAR CIK 0001065059)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026007117/leu-20251231.htm)
-- [Centrus Energy Corp. — Form 10-Q, Q2 2026 (2026-06-30)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026053863/leu-20260630.htm)
-- [stockanalysis.com — LEU 재무제표·시황 집계 (조회 2026-08-18~19)](https://stockanalysis.com/stocks/leu/)
-
----
-
 *작성일: 2026-08-19 (최종 수정일: 2026-08-23)*

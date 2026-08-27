@@ -27,23 +27,4 @@
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- **산업 맥락** — [반도체 테스트 장비 (ATE) 섹터 개요](../00_overview.md)
-
----
-
-## 참고 자료
-
-- [Teradyne Investor Relations — News & Press Releases](https://investors.teradyne.com/news-events/press-releases)
-- [SEC EDGAR — Teradyne 전체 제출 이력 (CIK 0000097210)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000097210)
-- [Teradyne 8-K — $1.0B 리볼빙 신용약정 (2026-08-10)](https://www.sec.gov/Archives/edgar/data/97210/000119312526342367/ter-20260807.htm)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-26)*

@@ -40,26 +40,4 @@ S&P Global은 신용평가에서 Moody's·Fitch와 함께 "빅3" 과점 구도�
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.spglobal.com)
-- [S&P Global, Provides Pro Forma and Recast Financial Results and Updated Segment Information (2026-07-06)](https://www.sec.gov/Archives/edgar/data/64040/000110465926080571/tm2619099d2_ex99-1.htm)
-- [S&P Global Inc. Completes Separation of Mobility Global Inc. (2026-07-01)](https://investor.spglobal.com/news-releases/news-details/2026/SP-GLOBAL-INC--COMPLETES-SEPARATION-OF-MOBILITY-GLOBAL-INC-/default.aspx)
-
----
-
 *작성일: 2026-08-17 (최종 수정일: 2026-08-23)*

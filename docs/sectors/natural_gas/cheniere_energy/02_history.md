@@ -47,26 +47,4 @@
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.cheniere.com)
-- [10-K FY2025 — 사업 연혁·프로젝트 진행 상황 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/3570/000000357026000005/lng-20251231.htm)
-- [Cheniere Announces Comprehensive Long-Term Capital Allocation Plan (2021.09)](https://lngir.cheniere.com/news-events/press-releases/detail/229/cheniere-announces-comprehensive-long-term-capital)
-- [Cheniere Announces Positive Final Investment Decision on the Corpus Christi Stage 3 Liquefaction Project (2022.06)](https://www.businesswire.com/news/home/20220621005946/en/Cheniere-Announces-Positive-Final-Investment-Decision-on-the-Corpus-Christi-Stage-3-Liquefaction-Project)
-- [Cheniere Partners Announces Achievement of First LNG at Sabine Pass Train 6 (2021.11)](https://www.businesswire.com/news/home/20211123005917/en/Cheniere-Partners-Announces-Achievement-of-First-LNG-at-Sabine-Pass-Train-6)
-- [2026년 위임장 (DEF 14A) — 이사회 의장 교체 경위](https://www.sec.gov/Archives/edgar/data/3570/000119312526144572/d93921ddef14a.htm)
-- [Wood Mackenzie — Ras Laffan attacks fundamentally reshape global LNG outlook (2026.03)](https://www.woodmac.com/press-releases/new-page6/)
-
----
-
 *작성일: 2026-08-24*

@@ -68,31 +68,4 @@ Allaire는 두 차례(Allaire Corporation, Brightcove) 회사를 창업해 IPO�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·상장 이후](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Jeremy Allaire | Circle CEO | Circle](https://www.circle.com/leadership/jeremy-allaire)
-- [Jeremy Allaire — Wikipedia](https://en.wikipedia.org/wiki/Jeremy_Allaire)
-- [Circle details growth and key votes in 2026 proxy — StockTitan (DEF 14A 요약)](https://www.stocktitan.net/sec-filings/CRCL/def-14a-circle-internet-group-inc-definitive-proxy-statement-f68ffd7934ee.html)
-- [Circle Internet Group, Inc. — Form S-1/A (2025, FY2024 임원보수 공시) (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1876042/000119312525132755/d737521ds1a.htm)
-- [Circle Internet Group Stock Ownership — WallStreetZen](https://www.wallstreetzen.com/stocks/us/nyse/crcl/ownership)
-- [Circle Internet Group (CRCL) Institutional Holders — Discounting Cash Flows](https://discountingcashflows.com/company/CRCL/institutional-holders/)
-- [Circle President Defends Stock Plunge From $260 to $62 but Sold $31M in CRCL Shares — CCN](https://www.ccn.com/news/crypto/circle-president-sold-31m-crcl-shares-stock-plunge/)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-23)*

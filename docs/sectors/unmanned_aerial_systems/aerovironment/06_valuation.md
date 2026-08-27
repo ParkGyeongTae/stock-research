@@ -102,26 +102,4 @@ Non-GAAP PER 기준으로 현재주가는 3개년 평균 배수 대비 3개년 �
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [핵심 지표 원자료 — 핵심 지표](./04_metrics.md)
-- [AeroVironment Announces Fiscal 2026 Fourth Quarter and Fiscal Year Results — FY2027 가이던스 (2026-06-29)](https://www.sec.gov/Archives/edgar/data/1368622/000110465926078824/avav-20260629xex99d1.htm)
-- [AeroVironment (AVAV) 현재주가·시가총액 (stockanalysis.com, 2026-08-13 기준)](https://stockanalysis.com/stocks/AVAV/)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-16)*

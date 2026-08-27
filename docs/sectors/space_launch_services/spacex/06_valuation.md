@@ -87,26 +87,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [핵심 지표](./04_metrics.md) 참고 자료 목록과 동일
-- [SpaceX (SPCX) Stock Forecast & Price Targets (stockanalysis.com)](https://stockanalysis.com/stocks/spcx/forecast/)
-- [Wall Street Analysts Are Predicting a Huge Move in SpaceX Stock by Mid-2027 (Yahoo Finance)](https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-predicting-huge-105000118.html)
-- [SpaceX stock falls below its IPO price despite a wall of bullish analyst price targets (Fortune, 2026-07-18)](https://fortune.com/2026/07/18/wall-street-analysts-spacex-outlook-stock-predictions/)
-- [ROCKET LAB EV-to-Revenue (GuruFocus)](https://www.gurufocus.com/term/enterprise-value-to-revenue/RKLB)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-15)*

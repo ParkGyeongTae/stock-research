@@ -45,24 +45,4 @@ EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사(Big Three)가 과점�
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Cadence Design Systems 공식 홈페이지](https://www.cadence.com)
-- [Cadence Design Systems Wikipedia](https://en.wikipedia.org/wiki/Cadence_Design_Systems)
-- [Cadence FY2025 Form 10-K (SEC, 사업 부문별 매출 비중 출처)](https://www.sec.gov/Archives/edgar/data/813672/000081367226000016/cdns-20251231.htm)
-- [Cadence Q4/FY2025 실적 발표 (SEC 8-K)](https://www.sec.gov/Archives/edgar/data/0000813672/000081367226000044/cfocommentary04272026ex9902.htm)
-- [Cadence Design Systems 2025 revenue climbs to $5.3B (StockTitan)](https://www.stocktitan.net/sec-filings/CDNS/10-k-cadence-design-systems-inc-files-annual-report-6bcef311af10.html)
-
----
-
 *작성일: 2026-08-01 (최종 수정일: 2026-08-25)*

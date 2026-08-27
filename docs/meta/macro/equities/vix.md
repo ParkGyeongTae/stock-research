@@ -622,19 +622,4 @@
 
 ---
 
-## 관련 문서
-
-- [거시경제 개념 정리](../../concepts/macroeconomics.md)
-- [리스크 · 회계 품질 개념 정리](../../concepts/risk-and-quality.md)
-- [용어집 — 9. 거시경제](../../glossary.md#macro)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — CBOE Volatility Index (^VIX)](https://finance.yahoo.com/quote/%5EVIX/)
-- [CBOE — VIX Index (원출처)](https://www.cboe.com/tradable_products/vix/)
-
----
-
 *작성일: 2026-08-20 (최종 수정일: 2026-08-25)*

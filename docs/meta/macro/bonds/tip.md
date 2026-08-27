@@ -618,20 +618,4 @@
 
 ---
 
-## 관련 문서
-
-- [20년+ 장기국채 ETF (TLT)](./tlt.md)
-- [하이일드 회사채 ETF (HYG)](./hyg.md)
-- [채권 3종 비교 (지수화)](./comparison.md)
-- [거시경제 개념 정리](../../concepts/macroeconomics.md)
-- [용어집 — 9. 거시경제](../../glossary.md#macro)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — iShares TIPS Bond ETF (TIP)](https://finance.yahoo.com/quote/TIP/)
-
----
-
 *작성일: 2026-08-20 (최종 수정일: 2026-08-23)*

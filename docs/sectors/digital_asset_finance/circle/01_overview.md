@@ -55,37 +55,4 @@ USDC 유통량의 상당 부분이 Coinbase 플랫폼(및 Coinbase 생태계)에
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·상장 이후](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Circle 공식 홈페이지](https://www.circle.com)
-- [Circle Internet Group — Wikipedia](https://en.wikipedia.org/wiki/Circle_Internet_Group)
-- [Circle Reports First Quarter 2026 Results (Circle IR)](https://www.circle.com/pressroom/circle-reports-first-quarter-2026-results)
-- [Circle Q2 2026 실적 보도자료 (Circle IR)](https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results)
-- [Circle Internet Group, Inc. — Form 10-Q, FY2026 Q1 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000150/crcl-20260331.htm)
-- [Circle Internet Group, Inc. — Form 10-Q, FY2026 Q2 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000248/crcl-20260630.htm)
-- [Circle Internet Group (CRCL) — 기업 개요·시가총액 (stockanalysis.com)](https://stockanalysis.com/stocks/crcl/) (조회일 2026-08-22)
-- [Circle (CRCL) Founder Jeremy Allaire Is a Billionaire as Shares Surge After IPO — Bloomberg](https://www.bloomberg.com/news/articles/2025-06-05/circle-founder-is-a-billionaire-as-crypto-firm-jumps-after-ipo)
-- [USDT, USDC, USD1: The Stablecoin Market Share War — Forbes](https://www.forbes.com/sites/boazsobrado/2026/03/12/usdt-usdc-usd1-the-stablecoin-market-share-war/)
-- [Circle's USDC Pulls Ahead of Tether as Stablecoin Volume Hits Record $1.79T — Yahoo Finance / CoinDesk](https://finance.yahoo.com/markets/crypto/articles/circle-usdc-pulls-ahead-tether-192600167.html)
-- [GENIUS Act: U.S. Stablecoin Law | Circle & USDC Compliance (Circle)](https://www.circle.com/genius-act)
-- [Introducing Arc: An L1 Blockchain for Stablecoin Finance (Circle)](https://www.circle.com/blog/introducing-arc-an-open-layer-1-blockchain-purpose-built-for-stablecoin-finance)
-- [Circle Acquires IBM Blockchain Patent Portfolio (Circle 보도자료, 2026-07-27)](https://www.circle.com/pressroom/circle-acquires-ibm-blockchain-patent-portfolio)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-23)*

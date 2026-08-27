@@ -116,25 +116,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Rocket Lab (RKLB) — Financials (stockanalysis.com)](https://stockanalysis.com/stocks/rklb/financials/)
-- [Rocket Lab (RKLB) — Balance Sheet (stockanalysis.com)](https://stockanalysis.com/stocks/rklb/financials/balance-sheet/)
-- [Rocket Lab (RKLB) — Cash Flow Statement (stockanalysis.com)](https://stockanalysis.com/stocks/rklb/financials/cash-flow-statement/)
-- [Rocket Lab Announces Second Quarter 2026 Financial Results (GlobeNewswire, 2026-08-10)](https://www.globenewswire.com/news-release/2026/08/10/3342195/0/en/rocket-lab-announces-second-quarter-2026-financial-results-posts-record-revenue-and-record-backlog-guides-to-another-record-revenue-quarter-in-q3-2026.html)
-
----
-
 *작성일: 2026-08-14*

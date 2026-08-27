@@ -94,30 +94,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Coinbase Global, Inc. DEF 14A (2026년 위임장, 2026-04-24 제출, FY2025 보상·2026-03-31 기준 지분) — SEC EDGAR](https://www.sec.gov/Archives/edgar/data/0001679788/000167978826000045/coin-20260424.htm)
-- [Brian Armstrong (businessman) — Wikipedia](https://en.wikipedia.org/wiki/Brian_Armstrong_(businessman))
-- [Coinbase CEO discourages politics at work — CNBC (2020-09-30)](https://www.cnbc.com/2020/09/30/coinbase-ceo-offers-severance-to-employees-leaving-over-politics.html)
-- [Coinbase says 60 employees are leaving over its apolitical stance — Fortune (2020-10-09)](https://fortune.com/2020/10/09/coinbase-says-60-employees-are-leaving-over-its-apolitical-stance)
-- [Coinbase CEO's journey from no 'political causes' to hiring DOGE staff — Cointelegraph](https://cointelegraph.com/news/brian-armstrong-coinbase-political-journey)
-- [Coinbase cuts headcount by 14% citing AI acceleration — CNBC (2026-05-05)](https://www.cnbc.com/2026/05/05/coinbase-cuts-headcount-by-14percent-citing-ai-acceleration-the-shares-are-gaining.html)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-23)*

@@ -50,29 +50,4 @@ SpaceX는 Falcon 9/Heavy 재사용 로켓과 차세대 초대형 로켓 Starship
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [SpaceX 공식 홈페이지](https://www.spacex.com)
-- [SpaceX - Wikipedia](https://en.wikipedia.org/wiki/SpaceX)
-- [SpaceX S-1 (SEC EDGAR, 2026-05-20 제출)](https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm)
-- [SpaceX IPO takeaways: SPCX closes at $161, jumping 19% after record debut (CNBC)](https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html)
-- [SpaceX earnings takeaways: Soaring AI costs outweigh revenue beat in first report since IPO (CNBC)](https://www.cnbc.com/2026/08/04/spacex-spcx-earnings-live-updates-q2-2026.html)
-- [Musk's xAI, SpaceX combo is the biggest merger of all time, valued at $1.25 trillion (CNBC)](https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html)
-- [SpaceX (SPCX) — Financials, Balance Sheet, Key Stats (stockanalysis.com)](https://stockanalysis.com/stocks/spcx/)
-- [SpaceX vs. Blue Origin, Rocket Lab: What The Numbers Show (Trefis)](https://www.trefis.com/stock/spcx/articles/603095/spacex-vs-blue-origin-rocket-lab-what-the-numbers-show/2026-06-16)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-14)*

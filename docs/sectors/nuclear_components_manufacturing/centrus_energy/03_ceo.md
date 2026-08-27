@@ -73,27 +73,4 @@ Class B 최대주주가 이 저장소가 같은 섹터에서 이미 다루는 [B
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Centrus Energy Corp. — DEF 14A, 2026년 정기주주총회 위임장 (SEC EDGAR, 2026-04-24 제출)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026027241/leu-20260424.htm)
-- [Amir Vexler — Centrus Energy Corp. 경영진 소개](https://www.centrusenergy.com/news/tag/amir-vexler/)
-- [stockanalysis.com — LEU Forecast(애널리스트 컨센서스) (조회 2026-08-19)](https://stockanalysis.com/stocks/leu/forecast/)
-
----
-
 *작성일: 2026-08-19*

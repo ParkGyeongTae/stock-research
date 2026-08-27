@@ -27,31 +27,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.linde.com)
-- [Sullivan & Cromwell — Praxair/Linde AG 합병 완료 보도](https://www.sullcrom.com/About/News-and-Events/Highlights/2018/October/Praxair-Inc-Linde-AG-Complete-80-Billion-Merger-of-Equals-Create-Largest-Industrial-Gas-Supplier)
-- [Linde 보도자료 — 합병 완료(2018)](https://www.linde.com/news-and-media/2018/business-combination-between-praxair-and-linde-ag-successfully-completed)
-- [FTC 보도자료(2018-10) — 자산매각 조건](https://www.ftc.gov/news-events/news/press-releases/2018/10/ftc-requires-international-industrial-gas-suppliers-praxair-inc-linde-ag-divest-assets-nine)
-- [FTC 최종명령(2019-02)](https://www.ftc.gov/news-events/news/press-releases/2019/02/ftc-issues-modified-final-order-imposing-conditions-merger-international-industrial-gas-suppliers)
-- [Linde 보도자료 — OCI 블루암모니아 프로젝트(2023)](https://www.linde.com/news-and-media/2023/linde-to-invest-1-8-billion-to-supply-clean-hydrogen-to-oci-s-world-scale-blue-ammonia-project-in-the-u-s-gulf-coas)
-- [Linde 보도자료 — 삼성전자 공급 확대(2025-04-29)](https://www.linde.com/news-and-media/2025/linde-to-expand-supply-of-industrial-gases-to-samsung-in-south-korea)
-- [Linde 보도자료 — 반도체 대형 투자(2026-07-31)](https://www.linde.com/news-and-media/2026/linde-to-invest-$1-billion-to-support-major-u,-d-,s,-d-,-semiconductor-facility-expansion)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

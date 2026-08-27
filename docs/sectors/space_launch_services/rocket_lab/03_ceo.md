@@ -73,30 +73,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Peter Beck - Wikipedia](https://en.wikipedia.org/wiki/Peter_Beck)
-- [How Rocket Lab CEO Peter Beck built a multibillion-dollar company (CNBC)](https://www.cnbc.com/2023/04/11/how-rocket-lab-ceo-peter-beck-built-multibillion-dollar-company.html)
-- [Rocket Lab CEO: 'We have the right combination' to break SpaceX's monopoly (AOL/Yahoo Finance)](https://www.aol.com/finance/rocket-lab-ceo-combination-break-194214721.html)
-- [Rocket Lab CEO Reduces Pay to $1 and Forfeits Major RSU Holdings (MLQ News)](https://mlq.ai/news/rocket-lab-ceo-reduces-pay-to-1-and-forfeits-major-rsu-holdings/)
-- [Peter Beck salary at Rocket Lab Corp (Salary.com)](https://www.salary.com/research/executive-compensation/peter-beck-executive-member-of-rocket-lab-usa-inc)
-- [Rocket Lab (RKLB): We Think It's Gonna Be a Long, Long Time (Bleecker Street Research)](https://www.bleeckerstreetresearch.com/research/rklb)
-- [Rocket Lab Stock Forecast & Analyst Price Targets (StockAnalysis)](https://stockanalysis.com/stocks/rklb/forecast/)
-- [Rocket Lab trust sells 3,275,779 shares (StockTitan Form 4)](https://www.stocktitan.net/sec-filings/RKLB/form-4-rocket-lab-corp-insider-trading-activity-88b792454463.html)
-- [RKLB Stock Slips Overnight: CEO Peter Beck Eyes Trimming Stake By $465M After Iridium Deal (Yahoo Finance)](https://finance.yahoo.com/markets/stocks/articles/rklb-stock-slips-overnight-ceo-042842410.html)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-23)*

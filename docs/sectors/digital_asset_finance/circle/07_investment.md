@@ -76,30 +76,4 @@ Circle은 규제 라이선스라는 진짜 해자를 갖고 있고 재무구조�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·상장 이후](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Stripe, Visa and over 140 other businesses to launch stablecoin to rival Tether and Circle — Fortune (2026-06-30)](https://fortune.com/2026/06/30/stripe-visa-stablecoin-rival-ousd-tether-circle/)
-- [Circle Internet Is Still Down 10% in 2026 — 24/7 Wall St. (2026-08-11)](https://247wallst.com/investing/2026/08/11/circle-internet-is-still-down-10-in-2026-what-will-it-take-to-get-crcl-stock-back-up-to-100/)
-- [Bank-Issued Stablecoins 2026: SoFi, JPM Coin, and the New Wave](https://eco.com/support/en/articles/15275171-bank-issued-stablecoins-2026-sofi-jpm-coin-and-the-new-wave)
-- [Stablecoin Competition 2026: USDC vs PYUSD and the Race for Regulated Markets — VaaSBlock](https://www.vaasblock.com/news/stablecoin-competition-usdc-pyusd-regulated-markets-2026/)
-- [Circle Receives Final OCC Approval to Establish National Trust Bank — Circle 보도자료 (2026-07-10)](https://www.circle.com/pressroom/circle-receives-final-occ-approval-to-establish-national-trust-bank)
-- [Circle Acquires IBM Blockchain Patent Portfolio — Circle 보도자료 (2026-07-27)](https://www.circle.com/pressroom/circle-acquires-ibm-blockchain-patent-portfolio)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-23)*

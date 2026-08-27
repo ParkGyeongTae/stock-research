@@ -122,27 +122,4 @@ PER·DCF 두 독립적 방법론이 FY2026(E) 기준 각각 $445·$462로 비교
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [S&P Global 4Q & FY2025 Earnings Release Exhibits (2026-02-10)](https://s29.q4cdn.com/690959130/files/doc_financials/2025/q4/S-P-Global-4Q-FY-2025-Earnings-Release-Exhibits-2-10-2026.pdf)
-- [S&P Global 2Q 2026 Earnings Release — FY2026 가이던스 (2026-07-28)](https://s29.q4cdn.com/690959130/files/doc_financials/2026/q2/S-P-Global-2Q-2026-Earnings-Release-and-Exhibits-7-28-2026.pdf)
-- [SPGI Discount Rate — WACC & Cost of Equity, Alpha Spread](https://www.alphaspread.com/security/nyse/spgi/discount-rate)
-- [S&P GLOBAL WACC, GuruFocus](https://www.gurufocus.com/term/wacc/SPGI)
-
----
-
 *작성일: 2026-08-17 (최종 수정일: 2026-08-23)*

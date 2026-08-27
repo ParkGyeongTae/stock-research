@@ -75,29 +75,4 @@ Hydrogen Council 공동의장을 역임하는 등 청정수소 전환을 전략 
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Linde 공식 경영진 소개 페이지](https://www.linde.com/about-us/leadership/sanjiv-lamba)
-- [MarketScreener — 경영진/이사회 변경 보도](https://www.marketscreener.com/news/linde-plc-announces-executive-and-board-changes-ce7d5bdcd88ff324)
-- [panabee.com — 2024년 CEO 보상 (proxy 인용)](https://www.panabee.com/news/linde-ceo-compensation-nears-21-million-in-2024-strongly-tied-to-performance)
-- [GuruFocus — CEO 내부자 지분](https://www.gurufocus.com/insider/21379/sanjiv-lamba)
-- [fintel.io — 기관 지분](https://fintel.io/so/us/lin)
-- [Investing.com — 2Q26 실적콜 트랜스크립트](https://www.investing.com/news/transcripts/earnings-call-transcript-linde-beats-q2-2026-estimates-but-shares-fall-52-93CH-4828679)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

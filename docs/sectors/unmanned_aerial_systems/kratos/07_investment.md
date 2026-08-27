@@ -60,26 +60,4 @@ Kratos는 방산 예산의 구조적 전환(저비용 대량생산·극초음속
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Air Force Selects General Atomics and Anduril for CCA Production — Air & Space Forces Magazine](https://www.airandspaceforces.com/air-force-general-atomics-anduril-cca-production-contracts/)
-- [Kratos wins firm's largest-ever $1.5 billion award for DoD hypersonic testbed — Breaking Defense](https://breakingdefense.com/2025/01/kratos-wins-firms-largest-ever-1-5-billion-award-for-dod-hypersonic-testbed/)
-- [Kratos Lands $400M for US Hypersonic, National Security Programs — The Defense Post](https://thedefensepost.com/2026/07/17/kratos-hypersonic-us-funding/)
-- [Kratos finishes $50M hypersonic test facility ahead of schedule — Defence Blog](https://defence-blog.com/kratos-finishes-50m-hypersonic-test-facility-ahead-of-schedule/)
-- [Why Kratos Stock Just Dropped — The Motley Fool (2026-05-07)](https://www.fool.com/investing/2026/05/07/why-kratos-stock-just-dropped/)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-21)*

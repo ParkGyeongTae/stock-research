@@ -49,28 +49,4 @@ Rocket Lab은 소형 위성 전용 발사체 **Electron**으로 사업을 시작
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Rocket Lab 공식 홈페이지](https://www.rocketlabusa.com)
-- [Rocket Lab - Wikipedia](https://en.wikipedia.org/wiki/Rocket_Lab)
-- [Rocket Lab (RKLB) — Financials, Key Stats (stockanalysis.com)](https://stockanalysis.com/stocks/rklb/)
-- [Rocket Lab Announces Second Quarter 2026 Financial Results (GlobeNewswire, 2026-08-10)](https://www.globenewswire.com/news-release/2026/08/10/3342195/0/en/rocket-lab-announces-second-quarter-2026-financial-results-posts-record-revenue-and-record-backlog-guides-to-another-record-revenue-quarter-in-q3-2026.html)
-- [Rocket Lab to Acquire Iridium in Historic Deal (Rocket Lab IR, 2026-06-29)](https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully)
-- [Rocket Lab pops 16%, Iridium soars 25% on $8 billion space consolidation deal (CNBC)](https://www.cnbc.com/2026/06/29/rocket-lab-buys-iridium.html)
-- [Rocket Lab's Neutron Rocket On-Ramped to NSSL Phase 3 Lane 1 (Rocket Lab)](https://rocketlabcorp.com/updates/rocket-labs-neutron-rocket-on-ramped-to-u-s-space-forces-5-6b-national-security-space-launch-nssl-program/)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-21)*

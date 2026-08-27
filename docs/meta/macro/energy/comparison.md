@@ -92,22 +92,4 @@
 
 ---
 
-## 관련 문서
-
-- [WTI 원유](./oil_wti.md)
-- [천연가스](./natural_gas.md)
-- [우라늄 실물 신탁 (SRUUF)](./uranium.md)
-- [거시경제 개념 정리](../../concepts/macroeconomics.md)
-- [용어집 — 9. 거시경제](../../glossary.md#macro)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — Crude Oil (CL=F)](https://finance.yahoo.com/quote/CL=F/)
-- [Yahoo Finance — Natural Gas (NG=F)](https://finance.yahoo.com/quote/NG=F/)
-- [Yahoo Finance — Sprott Physical Uranium Trust (SRUUF)](https://finance.yahoo.com/quote/SRUUF/)
-
----
-
 *작성일: 2026-08-21 (최종 수정일: 2026-08-25)*

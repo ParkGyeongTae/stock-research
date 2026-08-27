@@ -32,29 +32,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Rocket Lab - Wikipedia](https://en.wikipedia.org/wiki/Rocket_Lab)
-- [Still Testing (Rocket Lab)](https://rocketlabcorp.com/missions/launches/still-testing/)
-- [Rocket Lab Closes Acquisition of SolAero Holdings (Rocket Lab)](https://rocketlabcorp.com/updates/rocket-lab-closes-acquisition-of-space-solar-power-products-company-solaero-holdings-inc/)
-- [Rocket Lab to acquire satellite payload manufacturer Geost for $275 million (SpaceNews)](https://spacenews.com/rocket-lab-to-acquire-satellite-payload-manufacturer-geost-for-275-million/)
-- [Rocket Lab's Neutron Rocket On-Ramped to NSSL Phase 3 Lane 1 (Rocket Lab)](https://rocketlabcorp.com/updates/rocket-labs-neutron-rocket-on-ramped-to-u-s-space-forces-5-6b-national-security-space-launch-nssl-program/)
-- [Rocket Lab to Acquire Iridium in Historic Deal (Rocket Lab IR, 2026-06-29)](https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully)
-- [Rocket Lab Corporation Announces Progress on Iridium Acquisition (GlobeNewswire, 2026-08-13)](https://www.globenewswire.com/news-release/2026/08/13/3344359/0/en/rocket-lab-corporation-announces-progress-on-iridium-acquisition-hsr-period-lapses-form-s-4-filed-fcc-applications-filed-capital-strategy-underway.html)
-- [Rocket Lab Stock Fell Nearly 50% From Its Record High (The Motley Fool)](https://www.fool.com/investing/2026/08/11/rocket-lab-stock-fell-nearly-50-from-highs-history/)
-
----
-
 *작성일: 2026-08-14*

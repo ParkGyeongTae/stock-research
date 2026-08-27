@@ -24,29 +24,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [BWX Technologies — Wikipedia](https://en.wikipedia.org/wiki/BWX_Technologies)
-- [Babcock & Wilcox — Wikipedia](https://en.wikipedia.org/wiki/Babcock_%26_Wilcox)
-- [BWXT Enters Agreement to Acquire Kinectrics (2025-01-07)](https://www.businesswire.com/news/home/20250107043148/en/BWXT-Enters-Agreement-to-Acquire-Kinectrics-a-Leading-Service-Provider-to-the-Global-Nuclear-Market)
-- [BWXT Completes Acquisition of Precision Components Group (2026)](https://www.bwxt.com/bwxt-completes-acquisition-of-precision-components-group-expanding-u-s-nuclear-manufacturing-capacity/)
-- [BWXT Selling Medical Business to Nordic Capital in Transaction Valued at up to $800 Million (2026-08-03)](https://www.prnewswire.com/news-releases/bwxt-selling-medical-business-to-nordic-capital-in-transaction-valued-at-up-to-800-million-302841634.html)
-
----
-
 *작성일: 2026-08-18 (최종 수정일: 2026-08-23)*

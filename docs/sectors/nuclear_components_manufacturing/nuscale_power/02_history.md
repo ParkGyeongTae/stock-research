@@ -32,30 +32,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.nuscalepower.com)
-- [Utah Associated Municipal Power Systems and NuScale Power Agree to Terminate the Carbon Free Power Project (2023-11-08)](https://www.nuscalepower.com/press-releases/2023/utah-associated-municipal-power-systems-and-nuscale-power-agree-to-terminate-the-carbon-free-power-project)
-- [NuScale Power Reports Third Quarter 2025 Results (2025-11-06)](https://www.nuscalepower.com/press-releases/2025/nuscale-power-reports-third-quarter-2025-results)
-- [NuScale Power Corp — Form 10-K, FY2025 (SEC EDGAR CIK 0001822966)](https://www.sec.gov/Archives/edgar/data/1822966/000182296626000018/smr-20251231.htm)
-- [NuScale Power Corp — DEF 14A, 2026년 주주총회 위임장 (SEC EDGAR, 제출일 2026-04-15)](https://www.sec.gov/Archives/edgar/data/1822966/000182296626000042/smr-20260415.htm)
-- [NuScale Power Reports Second Quarter 2026 Results (2026-08-05)](https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-second-quarter-2026-results)
-
----
-
 *작성일: 2026-08-19*

@@ -111,25 +111,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical_daily.md)
-
----
-
-## 참고 자료
-
-- [IonQ 10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1824920/000119312526071562/ionq-20251231.htm)
-- [IonQ Q2 2026 실적발표 및 가이던스 (IR)](https://investors.ionq.com/news/news-details/2026/IonQ-Announces-Record-Second-Quarter-2026-Revenues-Growing-287-YoY/default.aspx)
-- [애널리스트 컨센서스 목표주가 집계 (ChartMill·TradingView 등, 2026-08)](https://www.chartmill.com/stock/quote/IONQ/analyst-ratings)
-- [WACC·베타 추정치 비교 (Alpha Spread, GuruFocus, ValueInvesting.io)](https://www.alphaspread.com/security/nyse/ionq/discount-rate)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-21)*

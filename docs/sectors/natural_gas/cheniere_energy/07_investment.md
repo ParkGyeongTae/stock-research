@@ -88,24 +88,4 @@ Moat의 유형으로 분류하면 **규모의 경제 + 전환비용 + 규제 진
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [10-K FY2025 — 리스크 요인·계약 구조 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/3570/000000357026000005/lng-20251231.htm)
-- [Cheniere Reports Second Quarter 2026 Results and Raises Full Year 2026 Financial Guidance](https://www.sec.gov/Archives/edgar/data/3570/000000357026000030/cei20262ndqtrerex991.htm)
-- [Wood Mackenzie — Ras Laffan attacks fundamentally reshape global LNG outlook](https://www.woodmac.com/press-releases/new-page6/)
-- [천연가스 섹터 개요](../00_overview.md)
-- [용어집 — 7. 투자 판단 / 거버넌스 용어](../../../meta/glossary.md#investment-terms)
-
----
-
 *작성일: 2026-08-24*

@@ -67,19 +67,4 @@ Sources: [Semiconductor Automated Test Equipment Market — 360iResearch](https:
 
 ---
 
-## 관련 문서
-
-- [Teradyne 개요](./teradyne/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Semiconductor Automated Test Equipment Market Size 2026-2032 — 360iResearch](https://www.360iresearch.com/library/intelligence/semiconductor-automated-test-equipment)
-- [Semiconductor Test Equipment Market Forecast 2026-2033 — Persistence Market Research](https://www.persistencemarketresearch.com/market-research/semiconductor-test-equipment-market.asp)
-- [Automated Test Equipment Market Outlook 2026-2034 — Intel Market Research](https://www.intelmarketresearch.com/automated-test-equipment-market-47367)
-- [Semiconductor Test Equipment Market Size & Growth to 2031 — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/semiconductor-test-equipment-market)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

@@ -56,25 +56,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Eric DeMarco - Kratos Defense (공식 프로필)](https://www.kratosdefense.com/about/leadership/eric-demarco)
-- [Kratos CEO Eric DeMarco on Disrupting Defense (CMC Markets)](https://www.cmcmarkets.com/en-au/opto-partners/kratos-ceo-eric-demarco-on-disrupting-defense)
-- [Eric DeMarco 보상 내역 (Salary.com)](https://www.salary.com/research/executive-compensation/eric-demarco-executive-member-of-kratos-defense-and-security)
-- [Kratos Defense & Security Solutions (KTOS): The Rise of the Disruptive Prime and Attritable Mass](https://markets.financialcontent.com/lightport.lightport3/article/predictstreet-2026-1-9-kratos-defense-and-security-solutions-ktos-the-rise-of-the-disruptive-prime-and-attritable-mass)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-23)*

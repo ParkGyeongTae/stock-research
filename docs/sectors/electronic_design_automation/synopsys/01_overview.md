@@ -51,23 +51,4 @@ EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사(Big Three)가 과점�
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Synopsys 공식 홈페이지](https://www.synopsys.com)
-- [Synopsys Posts Financial Results for Fourth Quarter and Fiscal Year 2025 (2025.12.10)](https://news.synopsys.com/2025-12-10-Synopsys-Posts-Financial-Results-for-Fourth-Quarter-and-Fiscal-Year-2025) — FY2025 부문별 매출(Design Automation $5,302M / Design IP $1,752M)·FY2026 가이던스
-- [Synopsys Posts Financial Results for Second Quarter Fiscal Year 2026 (2026.5.27)](https://news.synopsys.com/2026-05-27-Synopsys-Posts-Financial-Results-for-Second-Quarter-Fiscal-Year-2026) — FY2026 가이던스 상향
-- [Synopsys Wikipedia](https://en.wikipedia.org/wiki/Synopsys)
-
----
-
 *작성일: 2026-08-01 (최종 수정일: 2026-08-25)*

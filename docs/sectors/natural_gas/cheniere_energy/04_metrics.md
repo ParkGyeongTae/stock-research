@@ -200,34 +200,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/3570/000000357026000005/lng-20251231.htm)
-- [Cheniere Reports Second Quarter 2026 Results and Raises Full Year 2026 Financial Guidance](https://www.sec.gov/Archives/edgar/data/3570/000000357026000030/cei20262ndqtrerex991.htm)
-- [Cheniere Reports First Quarter 2026 Results](https://www.sec.gov/Archives/edgar/data/3570/000000357026000016/cei20261stqtrerex991.htm)
-- [Cheniere Reports Full Year 2025 Results and Issues 2026 Guidance](https://www.sec.gov/Archives/edgar/data/3570/000000357026000006/cei20254thqtrerex991.htm)
-- [Cheniere Reports Third Quarter 2025 Results](https://www.sec.gov/Archives/edgar/data/3570/000000357025000109/cei20253rdqtrerex991.htm)
-- [Cheniere Reports Full Year 2024 Results](https://www.sec.gov/Archives/edgar/data/3570/000000357025000036/cei20244thqtrerex991.htm)
-- [Cheniere Reports Full Year 2023 Results](https://www.sec.gov/Archives/edgar/data/3570/000000357024000043/cei20234thqtrerex991.htm)
-- [2026년 위임장 (DEF 14A)](https://www.sec.gov/Archives/edgar/data/3570/000119312526144572/d93921ddef14a.htm)
-- [SEC XBRL companyfacts — Cheniere Energy (CIK 0000003570)](https://data.sec.gov/api/xbrl/companyfacts/CIK0000003570.json)
-- [Investor Relations 페이지](https://www.cheniere.com/investors)
-
----
-
 *작성일: 2026-08-24*

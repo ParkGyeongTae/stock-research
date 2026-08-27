@@ -46,26 +46,4 @@ IonQ는 2025년 기준 매출 규모(연 $130M)로 순수 양자컴퓨팅 상장
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical_daily.md)
-
----
-
-## 참고 자료
-
-- [IonQ 공식 홈페이지](https://www.ionq.com)
-- [IonQ — About (연혁·기술 소개)](https://www.ionq.com/company)
-- [IonQ 10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1824920/000119312526071562/ionq-20251231.htm)
-- [IonQ Q2 2026 실적발표 (IR)](https://investors.ionq.com/news/news-details/2026/IonQ-Announces-Record-Second-Quarter-2026-Revenues-Growing-287-YoY/default.aspx)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-23)*

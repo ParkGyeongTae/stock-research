@@ -184,25 +184,4 @@ FY2026 시점 기준(발행주식수 206.5백만 주, 순부채 $22,944M, NCI �
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/3570/000000357026000005/lng-20251231.htm)
-- [Cheniere Reports Second Quarter 2026 Results and Raises Full Year 2026 Financial Guidance — FY2026 가이던스 출처](https://www.sec.gov/Archives/edgar/data/3570/000000357026000030/cei20262ndqtrerex991.htm)
-- [Cheniere Reports Full Year 2025 Results and Issues 2026 Guidance — 연초 가이던스 출처](https://www.sec.gov/Archives/edgar/data/3570/000000357026000006/cei20254thqtrerex991.htm)
-- [Venture Global 2026년 2분기 실적발표 — 동종업계 비교용](https://www.sec.gov/Archives/edgar/data/2007855/000200785526000063/vgincq22026earningsrelease.htm)
-- [미 국채 10년물 금리 (macro)](../../../meta/macro/rates/treasury_10y.md)
-- [용어집 — 6. 밸류에이션 방법론](../../../meta/glossary.md#valuation)
-
----
-
 *작성일: 2026-08-24*

@@ -105,27 +105,4 @@ PBR도 참고로 병기하면(하단 4.15x~상단 6.75x, FY2023 26.16x 제외), 
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Centrus Energy Corp. — Form 10-K, FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026007117/leu-20251231.htm)
-- [stockanalysis.com — LEU Forecast(애널리스트 컨센서스) (조회 2026-08-19)](https://stockanalysis.com/stocks/leu/forecast/)
-- 원자료(EPS·BPS·주가)는 [핵심 지표](./04_metrics.md) 참고
-
----
-
 *작성일: 2026-08-19*

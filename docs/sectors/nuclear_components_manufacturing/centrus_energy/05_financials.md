@@ -42,27 +42,4 @@ Centrus는 무배당 기업이며 "예측 가능한 미래에 현금배당 계�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표 (원자료)](./04_metrics.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Centrus Energy Corp. — Form 10-K, FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1065059/000162828026007117/leu-20251231.htm)
-- [Centrus Energy Corp. — Form 10-Q, 2026 Q2](https://www.sec.gov/Archives/edgar/data/1065059/000162828026053863/leu-20260630.htm)
-- 상세 수치·출처는 [핵심 지표](./04_metrics.md) 참고 자료 절과 동일
-
----
-
 *작성일: 2026-08-19*

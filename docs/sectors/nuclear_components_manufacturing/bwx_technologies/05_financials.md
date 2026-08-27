@@ -42,26 +42,4 @@ GAAP 순이익·EPS는 출처 간 이견이 거의 없다 — GAAP EPS는 FY2023
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표 (원자료)](./04_metrics.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [투자자 관계(IR) 페이지](https://investors.bwxt.com)
-- 수치 출처는 [핵심 지표](./04_metrics.md) 참고 자료와 동일
-
----
-
 *작성일: 2026-08-18*

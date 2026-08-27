@@ -82,23 +82,4 @@ CEO 개인에 대한 시장의 별도 평가(신뢰도·커뮤니케이션 스�
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [DEF 14A 2026년 위임장 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1506307/000150630726000024/kmi-20260401.htm)
-- [회사 공식 경영진 소개 페이지](https://www.kindermorgan.com/About-Us/Management)
-- [Kinder Morgan (KMI) Statistics & Valuation — stockanalysis (지분율·목표주가)](https://stockanalysis.com/stocks/kmi/statistics/)
-- [Kinder Morgan (KMI) Earnings Forecast — Nasdaq (컨센서스 EPS)](https://www.nasdaq.com/market-activity/stocks/kmi/earnings)
-
----
-
 *작성일: 2026-08-24*

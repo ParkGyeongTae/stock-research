@@ -102,20 +102,4 @@ PER·PBR·DCF 3개 방법론(DDM은 무배당이라 해당 없음)을 신뢰도�
 
 ---
 
-## 관련 문서
-
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [필라델피아 반도체 지수(SOX)](../../../meta/macro/equities/sox.md)
-- [미 국채 10년물](../../../meta/macro/rates/treasury_10y.md)
-
----
-
 *작성일: 2026-08-22 (최종 수정일: 2026-08-25)*

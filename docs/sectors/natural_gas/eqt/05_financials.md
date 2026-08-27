@@ -46,21 +46,4 @@ EQT는 배당성향이 15%대(TTM 기준)로 낮고, 배당보다는 **부채 �
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [투자자 관계(IR) 페이지](https://ir.eqt.com/)
-- [EQT Reports Second Quarter 2026 Results (SEC 8-K Ex-99.1)](https://www.sec.gov/Archives/edgar/data/33213/000003321326000041/ex9916302026earningsrelease.htm)
-
----
-
 *작성일: 2026-08-21 (최종 수정일: 2026-08-24)*

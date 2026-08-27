@@ -198,28 +198,4 @@ PBR은 성격이 다르다. 현재 1.33x는 3개년 평균(1.28x)보다 **높고
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/33213/000003321326000018/eqt-20251231.htm)
-- [EQT Reports Fourth Quarter and Full Year 2025 Results and Provides 2026 Guidance (SEC 8-K Ex-99.1)](https://www.sec.gov/Archives/edgar/data/33213/000003321326000012/ex99112312025earningsrelea.htm)
-- [EQT Reports Fourth Quarter and Full Year 2024 Results and Provides 2025 Guidance](https://www.prnewswire.com/news-releases/eqt-reports-fourth-quarter-and-full-year-2024-results-and-provides-2025-guidance-302379415.html)
-- [EQT Reports Fourth Quarter and Full Year 2023 Results and Provides 2024 Guidance](https://www.prnewswire.com/news-releases/eqt-reports-fourth-quarter-and-full-year-2023-results-and-provides-2024-guidance-302061086.html)
-- [EQT Reports First Quarter 2025 Results](https://www.prnewswire.com/news-releases/eqt-reports-first-quarter-2025-results-302434968.html) · [Second Quarter 2025](https://www.sec.gov/Archives/edgar/data/33213/000003321325000030/ex9916302025earningsrelease.htm) · [Third Quarter 2025](https://www.prnewswire.com/news-releases/eqt-reports-third-quarter-2025-results-302590541.html)
-- [EQT Reports First Quarter 2026 Results](https://www.prnewswire.com/news-releases/eqt-reports-first-quarter-2026-results-302749286.html) · [Second Quarter 2026 (SEC)](https://www.sec.gov/Archives/edgar/data/33213/000003321326000041/ex9916302026earningsrelease.htm)
-- [EQT Q1 2026 Investor Presentation (PDF)](https://s205.q4cdn.com/630272887/files/doc_financials/2026/q1/EQT-Q1-2026-Earnings-Presentation.pdf)
-- [SEC XBRL 재무데이터 (companyfacts API, CIK 0000033213)](https://data.sec.gov/api/xbrl/companyfacts/CIK0000033213.json)
-- [Investor Relations 페이지](https://ir.eqt.com/)
-
----
-
 *작성일: 2026-08-21 (최종 수정일: 2026-08-24)*

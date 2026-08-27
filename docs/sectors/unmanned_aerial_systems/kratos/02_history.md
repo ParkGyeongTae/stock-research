@@ -37,29 +37,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Kratos Defense 공식 홈페이지](https://www.kratosdefense.com)
-- [Kratos Defense & Security Solutions — Wikipedia](https://en.wikipedia.org/wiki/Kratos_Defense_%26_Security_Solutions)
-- [Kratos XQ-58 Valkyrie — Wikipedia](https://en.wikipedia.org/wiki/Kratos_XQ-58_Valkyrie)
-- [Kratos Defense & Security Solutions, Inc. to Acquire Herley Industries, Inc.](https://www.kratosdefense.com/newsroom/kratos-defense-security-solutions-inc-to-acquire-herley-industries-inc)
-- [Kratos Completes Acquisition of Aerial Drone and Targets Provider Composite Engineering, Inc.](https://www.globenewswire.com/news-release/2012/07/02/272591/224/en/Kratos-Completes-Acquisition-of-Aerial-Drone-and-Targets-Provider-Composite-Engineering-Inc.html)
-- [Kratos Executes Definitive Agreement to Sell Public Safety & Security Division to Securitas Electronic Security](https://www.globenewswire.com/news-release/2018/02/28/1401694/0/en/Kratos-Executes-Definitive-Agreement-to-Sell-Public-Safety-Security-Division-to-Securitas-Electronic-Security-Inc-for-Expected-Net-Proceeds-of-Approximately-70-Million.html)
-- [Marine Corps picks Northrop Grumman, Kratos team to build CCA drones — DefenseScoop (2026-01-08)](https://defensescoop.com/2026/01/08/marine-corps-cca-drones-northrop-grumman-kratos-team-contract/)
-- [Kratos Selected to Participate in Phase 1 Gauntlet for the Office of the Secretary of War's Drone Dominance Program (2026-02-10)](https://www.kratosdefense.com/newsroom/kratos-selected-to-participate-in-phase-1-gauntlet-for-the-office-of-the-secretary-of-wars-drone-dominance-program)
-- [Kratos to Acquire Israel-Based Orbit Technologies Ltd for $356.3 Million](https://www.kratosdefense.com/newsroom/kratos-to-acquire-israel-based-orbit-technologies-ltd-for-356-3-million)
-- [Air Force Selects General Atomics and Anduril for CCA Production](https://www.airandspaceforces.com/air-force-general-atomics-anduril-cca-production-contracts/)
-
----
-
 *작성일: 2026-08-15*

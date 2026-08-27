@@ -82,25 +82,4 @@ de Masi는 SPAC·M&A 전문 경영자 출신이라는 이력 자체가 시장에
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical_daily.md)
-
----
-
-## 참고 자료
-
-- [IonQ — Executive management](https://investors.ionq.com/governance/executive-management/default.aspx)
-- [IonQ Names Niccolo de Masi as President & CEO (2025-02-26 보도자료)](https://investors.ionq.com/news/news-details/2025/IonQ-Names-Niccolo-de-Masi-as-President--Chief-Executive-Officer/default.aspx)
-- [IonQ 2026 DEF 14A (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/0001824920/000119312526197487/ionq-20260430.htm)
-
----
-
 *작성일: 2026-08-15*

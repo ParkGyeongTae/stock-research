@@ -164,24 +164,4 @@ PER 적정주가와 PBR 적정주가가 FY2026(E) 기준 $379 대 $150으로 2.5
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- **산업 맥락** — [반도체 테스트 장비 (ATE) 섹터 개요](../00_overview.md)
-
----
-
-## 참고 자료
-
-- [핵심 지표 — 원자료 표](./04_metrics.md)
-- [stockanalysis.com — Teradyne 컨센서스 전망](https://stockanalysis.com/stocks/TER/forecast/)
-- [stockanalysis.com — Teradyne 통계(베타·WACC)](https://stockanalysis.com/stocks/TER/statistics/)
-- [미국 10년물 국채금리 — 무위험이자율 참고](../../../meta/macro/rates/treasury_10y.md)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-26)*

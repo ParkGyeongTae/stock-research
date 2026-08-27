@@ -64,19 +64,4 @@ Sources: [Quantum Computing Market — Grand View Research](https://www.grandvie
 
 ---
 
-## 관련 문서
-
-- [IonQ 개요](./ionq/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Quantum Computing Market Size & Share Report, 2026-2033 — Grand View Research](https://www.grandviewresearch.com/industry-analysis/quantum-computing-market)
-- [Quantum Computing Market Size, Share — Fortune Business Insights](https://www.fortunebusinessinsights.com/quantum-computing-market-104855)
-- [Quantum Computing Market - Global Forecast 2026-2032 — Research and Markets](https://www.researchandmarkets.com/reports/5470718/quantum-computing-market-global-forecast-2026)
-- [Quantum Computing Market — FactMR](https://www.factmr.com/report/quantum-computing-market)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

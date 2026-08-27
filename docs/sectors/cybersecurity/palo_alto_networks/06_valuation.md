@@ -146,31 +146,4 @@ FY2026(E)은 회사 가이던스(Non-GAAP EPS)를 최대한 사용했으나 FCF�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1327567/000132756725000027/panw-20250731.htm)
-- [Fiscal Third Quarter 2026 Financial Results (가이던스)](https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-reports-fiscal-third-quarter-2026-financial-results)
-- [PANW Statistics & Valuation — stockanalysis.com](https://stockanalysis.com/stocks/panw/) (현재가·PER·베타, 수집 2026-08-14)
-- [PANW Forecast/Consensus — stockanalysis.com](https://stockanalysis.com/stocks/panw/forecast/)
-- [PANW WACC/Cost of Equity — valueinvesting.io](https://valueinvesting.io/PANW/valuation/wacc)
-- [PANW WACC — GuruFocus](https://www.gurufocus.com/term/wacc/PANW) (미채택, 참고만)
-- [10-Year Treasury Yield — Convex](https://convextrade.com/metrics/dgs10) (Rf, 2026-08-13 기준 4.63~4.70%)
-- [FTNT/ZS 선행 PER — stockanalysis.com](https://stockanalysis.com/stocks/FTNT/) · [ZS](https://stockanalysis.com/stocks/ZS/)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-21)*

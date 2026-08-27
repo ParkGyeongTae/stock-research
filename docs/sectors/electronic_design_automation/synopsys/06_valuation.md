@@ -150,32 +150,4 @@ FY2026(E)은 회사가 직접 제시한 지표(Non-GAAP EPS·FCF 가이던스)�
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [stockanalysis.com — SNPS Forecast & Analyst Estimates](https://stockanalysis.com/stocks/snps/forecast/)
-- [stockanalysis.com — SNPS 현재가](https://stockanalysis.com/stocks/snps/) (2026-08-24 정규장 마감 $394.51 확인)
-- [stockanalysis.com — SNPS Cash Flow Statement](https://stockanalysis.com/stocks/snps/financials/cash-flow-statement/) (FY2021~FY2025 영업현금흐름·자본적지출·FCF·SBC)
-- [stockanalysis.com — SNPS Balance Sheet](https://stockanalysis.com/stocks/snps/financials/balance-sheet/) (자기자본·BPS·순부채 검증용)
-- [stockanalysis.com — SNPS Dividend History](https://stockanalysis.com/stocks/snps/dividend/) (무배당 확인)
-- [Synopsys Investor FAQ](https://investor.synopsys.com/resources/investor-faqs/default.aspx) (무배당·자사주매입 중심 주주환원 정책 확인)
-- [GuruFocus — Synopsys WACC](https://www.gurufocus.com/term/wacc/SNPS) (WACC 10.33%, 2026-06-10 기준 — 본 문서 DCF엔 미사용)
-- [valueinvesting.io — Synopsys WACC/Cost of Equity](https://valueinvesting.io/SNPS/valuation/wacc) (Ke 8.35%, CAPM 구성요소)
-- [alphaspread.com — Synopsys Discount Rate](https://www.alphaspread.com/security/nasdaq/snps/discount-rate) (Cost of Equity 약 8.50%)
-- [MSN/Reuters — Synopsys FY2026 revenue and free cash flow guidance (~$2B FCF)](https://www.msn.com/en-us/money/companies/synopsys-forecasts-fy2026-revenue-of-9-625b-9-705b-while-raising-free-cash-flow-to-about-2b/ar-AA24eXkF) (FY2026 Q2 실적 발표, 2026-05-27 기준 FCF 가이던스 상향)
-- [WallStreetZen — SNPS Stock Forecast (FY2026~2028 EPS 컨센서스)](https://www.wallstreetzen.com/stocks/us/nasdaq/snps/stock-forecast)
-- [MarketBeat — SNPS Price Target](https://www.marketbeat.com/stocks/NASDAQ/SNPS/price-target/)
-- [핵심 지표](./04_metrics.md) — 과거 EPS·PER·BPS·PBR·순부채·EV·SBC·FCF 원자료 출처
-
----
-
 *작성일: 2026-08-01 (최종 수정일: 2026-08-25)*

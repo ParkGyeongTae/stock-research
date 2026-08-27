@@ -48,25 +48,4 @@
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지 — 연혁](https://www.williams.com/our-company/our-history/)
-- [Buffett, banks lend Williams Cos. $2B — CNN Money (2002)](https://money.cnn.com/2002/08/01/news/companies/williams_buffett/)
-- [The Williams Companies Wins Judgment for $410 Million Contractual Breakup Fee — Cravath](https://www.cravath.com/news-insights/the-williams-companies-wins-judgment-for-dollar410-million-contractual-breakup-fee.html)
-- [Energy Transfer, LP v. The Williams Companies, Inc. — Delaware Supreme Court (2023)](https://law.justia.com/cases/delaware/supreme-court/2023/391-2022.html)
-- [Williams Announces Agreement to Acquire All Public Equity of Williams Partners L.P. (2018)](https://investor.williams.com/news-releases/news-release-details/williams-announces-agreement-acquire-all-public-equity-williams)
-- [Williams Announces Executive Management Changes (2025 CEO 교체)](https://investor.williams.com/news-releases/news-release-details/williams-announces-executive-management-changes)
-
----
-
 *작성일: 2026-08-22 (최종 수정일: 2026-08-24)*

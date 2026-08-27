@@ -144,30 +144,4 @@ PER 기준 괴리율은 해가 갈수록 음의 폭이 커지지만(저평가 �
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md) · [CEO / 경영진](./03_ceo.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [stockanalysis.com — CDNS Forecast & Analyst Estimates](https://stockanalysis.com/stocks/cdns/forecast/)
-- [stockanalysis.com — CDNS 현재가 (2026-08-24 종가 $315.92)](https://stockanalysis.com/stocks/cdns/)
-- [stockanalysis.com — CDNS 현금흐름표(FCF·SBC 연도별 원자료)](https://stockanalysis.com/stocks/cdns/financials/cash-flow-statement/)
-- [stockanalysis.com — CDNS 재무상태표(순부채 검증용)](https://stockanalysis.com/stocks/cdns/financials/balance-sheet/)
-- [stockanalysis.com — CDNS 배당 내역(무배당 확인)](https://stockanalysis.com/stocks/cdns/dividend/)
-- [WallStreetZen — CDNS Stock Forecast (FY2026~2028 EPS 컨센서스 및 배당 이력)](https://www.wallstreetzen.com/stocks/us/nasdaq/cdns/stock-forecast)
-- [GuruFocus — CDNS WACC](https://www.gurufocus.com/term/wacc/NAS:CDNS/WACC-/Cadence-Design-Systems) (본 문서 DCF엔 미사용, 1. 적용 방법론 참고)
-- [valueinvesting.io — CDNS WACC/Cost of Equity](https://valueinvesting.io/CDNS/valuation/wacc) (Ke 8.70%, CAPM 구성요소)
-- [Alpha Spread — CDNS Discount Rate](https://www.alphaspread.com/security/nasdaq/cdns/discount-rate) (Cost of Equity 8.35%)
-- [MacroTrends — CDNS Free Cash Flow History](https://www.macrotrends.net/stocks/charts/CDNS/cadence-design-systems/free-cash-flow)
-- 본 폴더 [핵심 지표](./04_metrics.md) — 과거 EPS·BPS·PBR·순부채·EV·SBC·FCF 원자료 출처
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-25)*

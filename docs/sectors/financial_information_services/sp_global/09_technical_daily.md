@@ -660,25 +660,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance 일봉 OHLCV (SPGI)](https://query1.finance.yahoo.com/v8/finance/chart/SPGI)
-- [S&P Global shares tumble as 2026 guidance disappoints investors — Investing.com (2026-02-10)](https://www.investing.com/news/earnings/sp-global-shares-tumble-as-2026-guidance-disappoints-investors-93CH-4496341)
-
----
-
 *작성일: 2026-08-17 (최종 수정일: 2026-08-23)*

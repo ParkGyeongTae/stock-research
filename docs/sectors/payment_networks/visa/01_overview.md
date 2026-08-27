@@ -55,27 +55,4 @@ Visa는 미국 카드 결제금액 기준 시장점유율 약 61%(2024년, Maste
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://usa.visa.com)
-- [Visa FY2025 10-K (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm)
-- [Investor Relations](https://investor.visa.com)
-- [Nilson Report — Mastercard and Visa Cards in the US 2025](https://nilsonreport.com/articles/mastercard-and-visa-cards-in-the-us-2025/)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

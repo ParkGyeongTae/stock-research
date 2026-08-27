@@ -165,30 +165,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [NuScale Power Corp — Form 10-K, FY2025 (SEC EDGAR CIK 0001822966, 제출일 2026-02-26)](https://www.sec.gov/Archives/edgar/data/1822966/000182296626000018/smr-20251231.htm)
-- [NuScale Power Reports First Quarter 2025 Results (8-K Ex. 99.1, 2025-05-12)](https://www.sec.gov/Archives/edgar/data/1822966/000182296625000086/a2025-05x12xpr8xk1q25ear.htm)
-- [NuScale Power Reports Third Quarter 2025 Results (8-K Ex. 99.1, 2025-11-06)](https://www.sec.gov/Archives/edgar/data/1822966/000182296625000173/a2025-11x06x8xkq325earni.htm)
-- [NuScale Power Reports First Quarter 2026 Results (8-K Ex. 99.1, 2026-05-07)](https://www.sec.gov/Archives/edgar/data/1822966/000182296626000052/a2026-05x07xnuscaleq1202.htm)
-- [NuScale Power Reports Second Quarter 2026 Results (8-K Ex. 99.1, 2026-08-05)](https://www.sec.gov/Archives/edgar/data/1822966/000182296626000086/a2026-08x05xnuscaleq2202.htm)
-- [stockanalysis.com — SMR 재무제표·시황 집계 (조회 2026-08-19)](https://stockanalysis.com/stocks/smr/)
-
----
-
 *작성일: 2026-08-19*

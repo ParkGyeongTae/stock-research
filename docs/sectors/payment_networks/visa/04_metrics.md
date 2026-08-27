@@ -187,30 +187,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Visa FY2025 10-K (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm)
-- [Visa FY2023 10-K (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1403161/000140316123000099/v-20230930.htm)
-- [FY2025 Q4·전체회계연도 실적발표 (8-K, SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1403161/000140316125000077/q42025earningsrelease.htm)
-- [FY2026 Q1 실적발표 (8-K)](https://www.sec.gov/Archives/edgar/data/1403161/000140316126000044/q12026earningsrelease.htm)
-- [FY2026 Q3 실적발표 (8-K)](https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000103/q32026earningsrelease.htm)
-- [stockanalysis.com — Visa 재무·통계](https://stockanalysis.com/stocks/v/financials/)
-- Investor Relations 페이지: https://investor.visa.com
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-21)*

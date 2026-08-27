@@ -67,24 +67,4 @@ Linde는 과점적 지위·장기계약 구조·성장 산업向 백로그 확�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Investing.com — 2Q26 실적콜 트랜스크립트](https://www.investing.com/news/transcripts/earnings-call-transcript-linde-beats-q2-2026-estimates-but-shares-fall-52-93CH-4828679)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

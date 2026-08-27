@@ -71,26 +71,4 @@ IEEE Fellow, 미국 공학한림원(National Academy of Engineering) 회원이�
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Anirudh Devgan - Wikipedia](https://en.wikipedia.org/wiki/Anirudh_Devgan)
-- [Cadence Leadership Team (공식)](https://www.cadence.com/en_US/home/company/leadership-team.html)
-- [Cadence Announces Anirudh Devgan to Become CEO in December 2021 (공식 보도자료)](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2021/cadence-announces-anirudh-devgan-to-become-ceo-in-december-2021-.html)
-- [Anirudh Devgan 보상 내역 (Salary.com)](https://www.salary.com/research/executive-compensation/anirudh-devgan-executive-member-of-cadence-design-systems-inc)
-- [Cadence Maps Its Future Beyond EDA With Agentic AI and Simulation (HPCwire)](https://www.hpcwire.com/2026/04/20/cadence-maps-its-future-beyond-eda-with-agentic-ai-and-simulation/)
-- [Lam Research Appoints Cadence CEO Anirudh Devgan to Board of Directors](https://newsroom.lamresearch.com/2026-02-03-Lam-Research-Appoints-Cadence-CEO-Anirudh-Devgan-to-Board-of-Directors)
-- [TIKR — Who Owns Cadence Design Systems? Top Shareholders](https://www.tikr.com/blog/who-owns-cadence-design-systems-top-shareholders-and-recent-insider-trades) (2026-01-05 기준 대주주 명단)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-25)*

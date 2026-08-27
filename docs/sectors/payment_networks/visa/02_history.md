@@ -27,28 +27,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Britannica — Visa, Inc.: History, BankAmericard, IPO & Credit Card Innovation](https://www.britannica.com/money/Visa-Inc)
-- [Visa Inc. to Acquire Visa Europe (2015 발표 보도자료)](https://investor.visa.com/news/news-details/2015/Visa-Inc-to-Acquire-Visa-Europe/default.aspx)
-- [Visa Inc. Completes Acquisition of Visa Europe (2016 완료 보도자료)](https://investor.visa.com/news/news-details/2016/Visa-Inc-Completes-Acquisition-of-Visa-Europe/default.aspx)
-- [DOJ — Antitrust Division: Visa and Plaid Abandon Anticompetitive Merger](https://www.justice.gov/atr/division-operations/division-update-spring-2021/protecting-nascent-competition-visa-and-plaid-abandon-anticompetitive-merger)
-- [Visa Announces Leadership Transition (McInerney CEO 취임 보도자료)](https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.19271.html)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

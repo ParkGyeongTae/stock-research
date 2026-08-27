@@ -31,6 +31,10 @@ uv run python scripts/gen_technical_chart.py SNPS --interval 1wk --emit dates
 
 `--close-on`으로 뽑은 종가는 `04_metrics.md`·`06_valuation.md`의 값과 대조해 문서 상단에 결과를 남기세요.
 
+`--emit chart` 출력(`<div class="<ticker>-chart">…</div>`)은 클래스명·범례·다크모드 CSS가 한 벌로 들어 있으니 **그대로 붙여넣고 손대지 마세요.** 특히 다크모드 CSS는 세 규칙이 한 세트입니다 — (1) 기본(라이트) 값, (2) `@media (prefers-color-scheme: dark)` 안에 `body:not([data-md-color-scheme="default"])` 가드를 건 다크 값, (3) `[data-md-color-scheme="slate"]` 다크 값. (2)의 가드를 지우면 **OS가 다크인 사용자가 사이트에서 라이트 모드를 골랐을 때 페이지는 밝은데 차트만 어둡게** 남습니다(MkDocs Material이 이때 body에 `data-md-color-scheme="default"`를 붙입니다).
+
+`--levels` 기본값은 3이지만 **억지로 3개를 채우지 마세요** — 유효한 클러스터가 2개면 2개만 씁니다. 개수를 바꿨거나 터치 2회 미만인 레벨을 `--force-level`로 넣었다면 그 사유를 각 문서 4. 방법론 · 한계와 표 비고에 남깁니다.
+
 ## 주가가 아닌 시계열(환율·금리 등)에 쓰기
 
 이 스크립트는 Yahoo Finance 티커라면 주가가 아니어도(`KRW=X`=원달러, `^TNX`=미 국채 10년물 등) 그대로 쓸 수 있습니다. 기본값(`$` prefix, "USD")은 주가 전용이므로 `--symbol`·`--symbol-pos`·`--unit-label`·`--adj-note`로 바꿉니다:

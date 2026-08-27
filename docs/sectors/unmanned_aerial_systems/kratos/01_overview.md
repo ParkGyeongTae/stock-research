@@ -44,25 +44,4 @@ Kratos Government Solutions(KGS)와 Unmanned Systems(USS) 두 사업부로 구�
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [Kratos Defense 공식 홈페이지](https://www.kratosdefense.com)
-- [Kratos Defense & Security Solutions - Wikipedia](https://en.wikipedia.org/wiki/Kratos_Defense_%26_Security_Solutions)
-- [Kratos Reports Fourth Quarter and Full Year 2025 Financial Results (공식 IR)](https://www.kratosdefense.com/newsroom/kratos-reports-fourth-quarter-and-full-year-2025-financial-results)
-- [Kratos Defense & Security Solutions (KTOS) - Market capitalization (companiesmarketcap.com)](https://companiesmarketcap.com/kratos-defense/marketcap/)
-
----
-
 *작성일: 2026-08-08 (최종 수정일: 2026-08-15)*

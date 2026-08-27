@@ -83,30 +83,5 @@ Robinhood는 수익 다변화 전략이 실제로 작동하고 있음을 숫자�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Will Legal Action Slow HOOD's Event Contracts Business Growth? — Yahoo Finance](https://finance.yahoo.com/news/legal-action-slow-hoods-event-165300761.html)
-- [Rewriting the Rulebook: CFTC Proposes Rule Changes for Prediction Market Contracts — Ropes & Gray](https://www.ropesgray.com/en/insights/alerts/2026/06/rewriting-the-rulebook-cftc-proposes-rule-changes-for-prediction-market-contracts)
-- [Prediction markets at a crossroads: Preemption, enforcement and rulemaking — Norton Rose Fulbright](https://www.nortonrosefulbright.com/en-us/knowledge/publications/ad8a494a/prediction-markets-at-a-crossroads-preemption-enforcement-and-rulemaking)
-- [Base, Coinbase near 1:1 tokenized stocks as Robinhood leads — crypto.news](https://crypto.news/base-coinbase-near-11-tokenized-stocks-as-robinhood-leads/)
-- [Robinhood Chain Goes Live With Tokenized Stocks and a Key Ownership Caveat — Tech Times](https://www.techtimes.com/articles/319564/20260702/robinhood-chain-goes-live-tokenized-stocks-key-ownership-caveat.htm)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-23)*
 

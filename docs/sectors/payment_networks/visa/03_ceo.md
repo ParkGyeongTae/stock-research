@@ -75,27 +75,4 @@ McInerney 취임 이후 시장은 대체로 "안정적 연속성"으로 평가�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [Visa Announces Leadership Transition (2023 CEO 취임 보도자료)](https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.19271.html)
-- [Visa Investor Relations — Class B/C Stock Info](https://investor.visa.com/stock-information/class-b-c-stock-info/default.aspx)
-- [Visa FY2025 DEF 14A (위임장, SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm)
-- [Payments Dive — Visa CEO pay tops $31M](https://www.paymentsdive.com/news/visa-ceo-pay-tops-31m/807679/)
-
----
-
 *작성일: 2026-08-15 (최종 수정일: 2026-08-16)*

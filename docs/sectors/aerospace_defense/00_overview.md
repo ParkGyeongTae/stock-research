@@ -70,7 +70,7 @@
 4. **국방비의 구조적 증액** — NATO의 2035년 GDP 5% 합의와 미국 FY2026 예산은 모두 방향이 위쪽이다. 2026년 중 각국이 이행 로드맵을 제출하도록 돼 있어, 단년도 증액이 아니라 10년 단위 계획으로 고정되는 성격이 강하다.
 5. **방산 지출 구성의 이동** — 예산 총액뿐 아니라 **어디에 쓰이는지**가 바뀌고 있다. 탄약·무인체계·대(對)무인기·자율·미사일방어·우주·사이버 쪽으로 무게가 옮겨가는 흐름이며, 방산 테크 분야 벤처 투자는 2026년 1분기 $19.8B로 전년 동기 대비 146% 늘어 사상 최고를 기록했다(Deloitte). 기존 대형 플랫폼 중심 사업자에게는 기회인 동시에 경쟁 구도 재편 요인이다.
 
-각 수치의 기준 시점(미 국방세출 2026-02-03 제정, NATO 2025년 실적·2035년 목표, IATA 2026년 전망, 기업 백로그 2026년 6월 말)이 서로 다르므로 하단 참고 자료에서 원문을 함께 확인할 것.
+각 수치의 기준 시점(미 국방세출 2026-02-03 제정, NATO 2025년 실적·2035년 목표, IATA 2026년 전망, 기업 백로그 2026년 6월 말)이 서로 다르다는 점에 유의할 것.
 
 ---
 
@@ -103,36 +103,6 @@
 - **티타늄·니켈 초합금 리드타임과 가격** — 생산율 상향 가능 여부를 가장 앞에서 알려주는 소재 측 신호
 - **FAA·EASA 인증 일정** — 신규 형식증명 진행, 생산 상한 조치의 부과·해제
 - **MRO 정비 소요 시간(TAT)·엔진 shop visit 대기 물량** — 애프터마켓 수요가 아니라 **처리 능력**이 병목인지 판별하는 지표
-
----
-
-## 관련 문서
-
-- [TransDigm Group 개요](./transdigm/01_overview.md)
-- [무인체계 (UAS) 섹터 개요](../unmanned_aerial_systems/00_overview.md)
-- [우주 발사 서비스 섹터 개요](../space_launch_services/00_overview.md)
-- [WTI 원유 (매크로)](../../meta/macro/energy/oil_wti.md)
-- [미 국채 10년물 금리 (매크로)](../../meta/macro/rates/treasury_10y.md)
-- [용어집 — 사업 모델·성장 지표](../../meta/glossary.md#business-metrics)
-
----
-
-## 참고 자료
-
-- [Aerospace And Defense Global Market Report 2026 — The Business Research Company](https://www.thebusinessresearchcompany.com/report/aerospace-defense-global-market-report)
-- [Aerospace and Defense Market Share & Opportunities 2026-2033 — Coherent Market Insights](https://www.coherentmarketinsights.com/industry-reports/aerospace-and-defense-market)
-- [Early 2026 Outlook Shows MRO Market Momentum Increasing — Aviation Week](https://aviationweek.com/mro/supply-chain/early-2026-outlook-shows-mro-market-momentum-increasing)
-- [Commercial Aircraft MRO Market Size, Trends & Outlook — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/global-aircraft-maintenance-repair-and-overhaul-market-industry)
-- [FY2026 Department of Defense Appropriations: In Brief (R48891, 2026-04-02) — Congressional Research Service](https://www.congress.gov/crs-product/R48891)
-- [FY2026 NDAA: Summary of Funding Authorizations (IN12641) — Congressional Research Service](https://www.congress.gov/crs-product/IN12641)
-- [Defence investment and NATO's 5% commitment — NATO](https://www.nato.int/en/what-we-do/introduction-to-nato/defence-expenditures-and-natos-5-commitment)
-- [Airline Profitability Stabilizes with 3.9% Net Margin Expected in 2026 (2025-12-09) — IATA](https://www.iata.org/en/pressroom/2025-releases/2025-12-09-01/)
-- [Boeing Reports Second Quarter Results (2026-07-28) — Boeing](https://boeing.mediaroom.com/2026-07-28-Boeing-Reports-Second-Quarter-Results)
-- [Airbus reports Half-Year (H1) 2026 results — Airbus](https://www.airbus.com/en/newsroom/press-releases/2026-07-airbus-reports-half-year-h1-2026-results)
-- [Midyear update: 2026 Aerospace and Defense Industry Outlook — Deloitte Insights](https://www.deloitte.com/us/en/insights/industry/aerospace-defense/midyear-update-aerospace-and-defense-industry-outlook.html)
-- [Global Fleet and MRO Market Forecast 2026-2036 — Oliver Wyman](https://www.oliverwyman.com/our-expertise/insights/2026/feb/global-fleet-and-mro-market-forecast-2026-2036.html)
-- [Trump Administration Declines to Institute Section 232 Tariffs on Commercial Aircrafts, Jet Engines, and Aircraft Parts (2026-07)](https://www.internationaltradeinsights.com/2026/07/trump-administration-declines-to-institute-section-232-tariffs-on-commercial-aircrafts-jet-engines-and-aircraft-parts/)
-- [United States imposes Section 232 tariffs on unmanned aircraft systems (drones) and components (2026-08) — KPMG](https://kpmg.com/us/en/taxnewsflash/news/2026/08/united-states-section-232-tariffs-drones-components.html)
 
 ---
 

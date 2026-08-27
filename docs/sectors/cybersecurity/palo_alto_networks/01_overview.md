@@ -51,27 +51,4 @@ Palo Alto Networks는 [Cybersecurity](../00_overview.md) 섹터에서 네트워�
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.paloaltonetworks.com)
-- [10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1327567/000132756725000027/panw-20250731.htm)
-- [Palo Alto Networks Announces Agreement to Acquire CyberArk](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-announces-agreement-to-acquire-cyberark--the-identity-security-leader)
-- [Fiscal Third Quarter 2026 Financial Results](https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-reports-fiscal-third-quarter-2026-financial-results)
-
----
-
 *작성일: 2026-08-16*

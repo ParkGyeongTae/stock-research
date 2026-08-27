@@ -67,20 +67,4 @@ Sources: [Electronic Design Automation Tools (EDA) Market Analysis — Mordor In
 
 ---
 
-## 관련 문서
-
-- [Synopsys 개요](./synopsys/01_overview.md)
-- [Cadence Design Systems 개요](./cadence_design_systems/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Electronic Design Automation Tools (EDA) Market Analysis — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/electronic-design-automation-eda-tools-market)
-- [Electronic Design Automation Market Size & Forecast, 2033 — Persistence Market Research](https://www.persistencemarketresearch.com/market-research/electronic-design-automation-eda-market.asp)
-- [Electronic Design Automation (EDA) Market Report 2026 — Research and Markets](https://www.researchandmarkets.com/reports/5953345/electronic-design-automation-eda-market-report)
-- [Electronic Design Automation Software Market Size, Share, Forecast to 2034 — Fortune Business Insights](https://www.fortunebusinessinsights.com/electronic-design-automation-software-market-105985)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

@@ -65,22 +65,4 @@ Sources: [Gartner Forecasts Worldwide End-User Spending on Information Security 
 
 ---
 
-## 관련 문서
-
-- [Palo Alto Networks 개요](./palo_alto_networks/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Gartner Forecasts Worldwide End-User Spending on Information Security to Total $213 Billion in 2025](https://www.gartner.com/en/newsroom/press-releases/2025-07-29-gartner-forecasts-worldwide-end-user-spending-on-information-security-to-total-213-billion-us-dollars-in-2025)
-- [Top 6 cybersecurity trends from Gartner's 2026 Security Forecast — Software Strategies Blog](https://softwarestrategiesblog.com/2026/02/10/gartner-cybersecurity-trends-2026/)
-- [Cybersecurity Spending Statistics 2026 — StationX](https://app.stationx.net/articles/cybersecurity-spending-statistics)
-- [Cybersecurity Market Size & Growth Report 2034 — Persistence Market Research](https://www.persistencemarketresearch.com/market-research/cyber-security-market.asp)
-- [Cybersecurity Market — Precedence Research](https://www.precedenceresearch.com/cyber-security-market)
-- [The $96 Billion Consolidation — Lyrie Research](https://lyrie.ai/research/research/cybersecurity-ma-consolidation-96bn-platform-wave-ciso-vendor-fatigue)
-- [2026 CISO Budget Benchmark Report — Wiz](https://www.wiz.io/reports/ciso-security-budget-benchmark-2026)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

@@ -84,26 +84,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [10-Q/A FY2026 3분기 — 영업권 손상 재작성 (SEC EDGAR, 2026-06-22)](https://www.sec.gov/Archives/edgar/data/1368622/000110465926076141/avav-20260131x10qa.htm)
-- [AVAV Shareholder Alert — 증권집단소송 관련 보도자료 모음 (2026-07)](https://www.morningstar.com/news/pr-newswire/20260721ny08353/avav-shareholder-alert-aerovironment-inc-securities-class-action-lawsuit-investors-with-losses-may-contact-the-gross-law-firm)
-- [AeroVironment (AVAV) 주가 변동 이력 — stockanalysis.com](https://stockanalysis.com/stocks/AVAV/)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-21)*

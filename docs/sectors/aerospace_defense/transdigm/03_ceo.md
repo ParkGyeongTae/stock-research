@@ -99,26 +99,4 @@
 
 ---
 
-## 관련 문서
-
-- **먼저 읽기** — [최종 보고서](./11_final_report.md): 아래 문서 전체를 종합한 요약이라, 처음이라면 여기부터 봐도 된다
-- **회사 이해** — [개요](./01_overview.md) · [역사 / 주요 이벤트](./02_history.md)
-- **숫자** — [핵심 지표](./04_metrics.md) · [재무 / 실적](./05_financials.md) · [밸류에이션 / 적정주가](./06_valuation.md)
-- **판단 · 로그** — [투자 판단](./07_investment.md) · [최근 뉴스 / 이슈](./08_news.md)
-- **가격 차트** — [기술적 분석 — 일봉·1년](./09_technical_daily.md) · [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- **산업 맥락** — [항공우주·방위산업 섹터 개요](../00_overview.md)
-
----
-
-## 참고 자료
-
-- [2026 Proxy Statement (DEF 14A, 2026-01-23 제출) — 보상표·수익적 소유·이사 약력·AOP 가득 조건](https://www.sec.gov/Archives/edgar/data/1260221/000126022126000009/tdg-20260122.htm)
-- [TransDigm Announces Retirement of Kevin Stein as CEO and Current Co-COO Mike Lisman as Successor (2025-05-06)](https://transdigmgroupinc.gcs-web.com/news-releases/news-release-details/transdigm-announces-retirement-kevin-stein-ceo-and-current-co/)
-- [Mike Lisman Named TransDigm President & CEO (GovConWire) — 학력 등 위임장에 없는 신상](https://www.govconwire.com/articles/transdigm-mike-lisman-president-ceo-kevin-stein)
-- [DOD Inspector General Report on Excess Profits by TransDigm Group (2019 하원 청문회)](https://oversightdemocrats.house.gov/committee-activity/hearings/dod-inspector-general-report-on-excess-profits-by-transdigm-group-inc)
-- [Price Gouging in Military Contracts: New Inspector General Report (2021 후속 보고서)](https://oversightdemocrats.house.gov/legislation/hearings/price-gouging-in-military-contracts-new-inspector-general-report-exposes-excess)
-- [TransDigm Group Incorporated (NYSE:TDG) 기관 지분율 82% (Simply Wall St) — 집계 사이트](https://simplywall.st/stocks/us/capital-goods/nyse-tdg/transdigm-group/news/transdigm-group-incorporated-nysetdg-is-a-favorite-amongst-i)
-
----
-
 *작성일: 2026-08-26*

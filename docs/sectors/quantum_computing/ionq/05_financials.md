@@ -40,24 +40,4 @@ IonQ는 상장 이후 배당을 지급한 적이 없고 자사주매입도 없�
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표 (원자료)](./04_metrics.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 (차트)](./09_technical_daily.md)
-
----
-
-## 참고 자료
-
-- [IonQ 10-K FY2025 (SEC EDGAR)](https://www.sec.gov/Archives/edgar/data/1824920/000119312526071562/ionq-20251231.htm)
-- [IonQ Investor Relations](https://investors.ionq.com/)
-
----
-
 *작성일: 2026-08-15*

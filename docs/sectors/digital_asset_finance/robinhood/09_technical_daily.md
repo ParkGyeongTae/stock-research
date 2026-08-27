@@ -653,30 +653,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Yahoo Finance — HOOD 일봉 OHLCV (query1.finance.yahoo.com chart API)](https://finance.yahoo.com/quote/HOOD/history/)
-- [stockanalysis.com — HOOD 종가 데이터](https://stockanalysis.com/stocks/hood/) (대조용)
-
-[^sp500]: [Robinhood shares soar 15% after getting long-sought addition to S&P 500 — CNBC (2025-09-08)](https://www.cnbc.com/2025/09/08/robinhood-shares-soar-14percent-after-getting-long-sought-addition-to-sp-500.html)
-[^q4miss]: [Why Robinhood Stock Crashed After Earnings — Yahoo Finance](https://finance.yahoo.com/news/why-robinhood-stock-crashed-earnings-161735966.html); [Robinhood revenue miss: Why the market reaction is 'warranted' — Yahoo Finance](https://finance.yahoo.com/video/robinhood-revenue-miss-why-market-221409897.html)
-[^q1miss]: [Robinhood Stock Is Dropping After Q1 2026 Earnings -- What Happened and What to Do Next — The Motley Fool (2026-04-30)](https://www.fool.com/investing/2026/04/30/robinhood-stock-is-dropping-after-q1-2026-earnings/); [Robinhood Markets Inc Stock (HOOD) Moved Down by 13.72% on Apr 29 — TradingKey](https://www.tradingkey.com/news/market-movers/261838577-market-movers-hood-20260429)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

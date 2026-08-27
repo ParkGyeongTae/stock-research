@@ -56,34 +56,4 @@ Coinbase는 개인·기관 투자자를 대상으로 가상자산 거래 플랫�
 
 ---
 
-## 관련 문서
-
-- [역사 / 주요 이벤트](./02_history.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-- [최종 보고서](./11_final_report.md)
-
----
-
-## 참고 자료
-
-- [Coinbase 공식 홈페이지](https://www.coinbase.com)
-- [Coinbase Investor Relations](https://investor.coinbase.com)
-- [Coinbase — Wikipedia](https://en.wikipedia.org/wiki/Coinbase)
-- [Coinbase Global (COIN) — Market Cap (stockanalysis.com, 2026-08-21 기준)](https://stockanalysis.com/stocks/coin/)
-- [Coinbase Share Price Gained 10% to Hit $190: Is $200 Next? — CryptoTimes (2026-08-21)](https://www.cryptotimes.io/2026/08/21/coinbase-share-price-gained-10-to-hit-190-is-200-next/)
-- [Coinbase Q2 2026 8-K 요약 — stocktitan.net](https://www.stocktitan.net/sec-filings/COIN/8-k-coinbase-global-inc-reports-material-event-f715851e1497.html)
-- [Coinbase Global, Inc. Form 10-Q (분기 종료 2026-06-30) — SEC EDGAR](https://www.sec.gov/Archives/edgar/data/0001679788/000167978826000088/coin-20260630.htm)
-- [Coinbase Q2 Earnings: 3rd Consecutive Quarter of Record Crypto Trading Volume Market Share — Coinbase 공식 블로그](https://www.coinbase.com/blog/coinbase-q2-earnings-everything-exchange-drives-3rd-consecutive-quarter-of-record-crypto-trading-volume-market-share-revenue-diversification-and-resilience)
-- [Coinbase Hits Record 10.3% Market Share Despite $359M Loss — news.bitcoin.com](https://news.bitcoin.com/crypto-news/coinbase-record-market-share-q2-2026-loss/)
-- [Coinbase is a decentralized company, with no headquarters — Coinbase 공식 블로그](https://www.coinbase.com/blog/coinbase-is-a-decentralized-company-with-no-headquarters)
-
----
-
 *작성일: 2026-08-14 (최종 수정일: 2026-08-23)*

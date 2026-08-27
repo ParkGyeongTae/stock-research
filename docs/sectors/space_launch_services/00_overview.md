@@ -65,20 +65,4 @@ Sources: [Space Launch Services Market — Research and Markets](https://www.res
 
 ---
 
-## 관련 문서
-
-- [Rocket Lab 개요](./rocket_lab/01_overview.md)
-- [SpaceX 개요](./spacex/01_overview.md)
-
----
-
-## 참고 자료
-
-- [Space Launch Services Market - Global Forecast 2026-2032 — Research and Markets](https://www.researchandmarkets.com/reports/6012027/space-launch-services-market-global-forecast)
-- [Space Launch Services Market Size Report, 2024-2030 — Grand View Research](https://www.grandviewresearch.com/industry-analysis/space-launch-services-market-report)
-- [Space Launch Services Market Report 2026 — Research and Markets](https://www.researchandmarkets.com/reports/5782706/space-launch-services-market-report)
-- [Space Launch Services Market Size, Share, Growth Report 2034 — Fortune Business Insights](https://www.fortunebusinessinsights.com/industry-reports/space-launch-services-market-101931)
-
----
-
 *작성일: 2026-08-16 (최종 수정일: 2026-08-23)*

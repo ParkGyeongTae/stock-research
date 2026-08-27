@@ -2,7 +2,7 @@
 
 > 방화벽 하드웨어 단일 제품 스타트업에서, 17건 이상의 인수합병을 통해 클라우드 보안·SOC·(2026년부터) 아이덴티티 보안까지 아우르는 플랫폼 기업으로 확장해온 20년.
 
-> ⚠️ 항목별 출처는 하단 "참고 자료" 참고. 인수 금액은 발표 시점 기준(딜 종결 시 조정될 수 있음).
+> ⚠️ 인수 금액은 발표 시점 기준(딜 종결 시 조정될 수 있음).
 
 ---
 
@@ -31,29 +31,6 @@
 | **2026.02.11** | **CyberArk·Chronosphere 인수 종결** — 현금 $2.3B + 신주 약 112M주 발행. 창사 이래 최대 규모 M&A로, 네트워크·클라우드·SOC에 이어 아이덴티티 보안까지 플랫폼을 확장([최근 뉴스 / 이슈](./08_news.md) 상세) |
 
 2018년 이후 누계로는 약 17건, 총 $5.5B 이상을 M&A에 투입해 Prisma(클라우드 보안)·Cortex(SOC) 제품군을 사실상 인수를 통해 조립해왔다 — CyberArk 인수는 이 전략의 연장선이자 지금까지 중 압도적으로 큰 베팅이다.
-
----
-
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-- [기술적 분석 — 일봉·1년](./09_technical_daily.md)
-- [기술적 분석 — 주봉·5년](./10_technical_weekly.md)
-
----
-
-## 참고 자료
-
-- [공식 홈페이지](https://www.paloaltonetworks.com)
-- [Palo Alto Networks Strategic Acquisitions — 공식 Cyberpedia](https://www.paloaltonetworks.com/cyberpedia/palo-alto-networks-strategic-acquisitions)
-- [Palo Alto Networks Announces Agreement to Acquire CyberArk](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-announces-agreement-to-acquire-cyberark--the-identity-security-leader)
-- [Palo Alto Networks — Wikipedia](https://en.wikipedia.org/wiki/Palo_Alto_Networks)
 
 ---
 

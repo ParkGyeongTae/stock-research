@@ -38,27 +38,4 @@
 
 ---
 
-## 관련 문서
-
-- [개요](./01_overview.md)
-- [CEO / 경영진](./03_ceo.md)
-- [핵심 지표](./04_metrics.md)
-- [재무 / 실적](./05_financials.md)
-- [밸류에이션 / 적정주가](./06_valuation.md)
-- [투자 판단](./07_investment.md)
-- [최근 뉴스 / 이슈](./08_news.md)
-
----
-
-## 참고 자료
-
-- [SpaceX - Wikipedia](https://en.wikipedia.org/wiki/SpaceX)
-- [The SpaceX Milestones That Built Elon Musk's $2T Rocket Empire (TechRepublic)](https://www.techrepublic.com/article/news-spacex-timeline-major-milestones-elon-musk/)
-- [SpaceX shatters its rocket launch record yet again — 165 orbital flights in 2025 (Space.com)](https://www.space.com/space-exploration/private-spaceflight/spacex-shatters-its-rocket-launch-record-yet-again-167-orbital-flights-in-2025)
-- [Musk's xAI, SpaceX combo is the biggest merger of all time, valued at $1.25 trillion (CNBC, 2026-02-03)](https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html)
-- [SpaceX IPO takeaways: SPCX closes at $161, jumping 19% after record debut (CNBC, 2026-06-12)](https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html)
-- [SpaceX earnings takeaways: Soaring AI costs outweigh revenue beat in first report since IPO (CNBC, 2026-08-04)](https://www.cnbc.com/2026/08/04/spacex-spcx-earnings-live-updates-q2-2026.html)
-
----
-
 *작성일: 2026-08-14*
