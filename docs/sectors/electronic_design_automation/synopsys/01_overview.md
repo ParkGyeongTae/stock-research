@@ -1,54 +1,49 @@
 # Synopsys (시놉시스)
 
-> 반도체 설계 자동화(EDA) 분야의 글로벌 1위 기업. 전 세계 거의 모든 반도체 회사가 칩을 설계할 때 쓰는 소프트웨어를 만들어, 특정 AI 칩 회사의 승패와 무관하게 반도체 설계 물량 확대의 수혜를 받는 "숨은 인프라" 기업이다.
-
-!!! warning "이 회사 숫자를 볼 때 먼저 알아둘 것"
-    - **시가총액 산정 근거**: 2026-08-24 종가 $394.51 × FY2026 Q2 기준 희석주식수(192.3백만 주). 희석주식수는 근사치이므로 집계 사이트 표시값과 1% 안팎의 차이가 날 수 있다([핵심 지표](./04_metrics.md) A.2 참고).
-    - **Ansys는 별도 사업 부문이 아니다.** 2025년 7월 인수한 Ansys의 매출은 **Design Automation 부문 안에** 포함돼 보고된다 — 아래 표를 "EDA + IP + Ansys" 세 축으로 읽으면 비중이 100%를 넘게 된다.
-    - **GAAP 손익만 보고 수익성을 판단하면 안 된다.** Ansys 인수 관련 무형자산 상각·구조조정 비용이 FY2025부터 GAAP 영업이익을 크게 눌러, GAAP 지표는 사업의 실제 수익력보다 나쁘게 보인다. 반대로 회사가 강조하는 Non-GAAP은 매년 반복되는 주식보상비용(SBC)을 되더한 값이라 좋게 보인다 — 두 기준의 차이가 왜 생기는지는 [핵심 지표](./04_metrics.md)·[재무 / 실적](./05_financials.md)에서 다룬다.
+> 반도체 설계 자동화(EDA) 시장의 1위 사업자. 2025년 Ansys 인수로 "칩 설계"에서 "시스템 시뮬레이션"까지 영역을 넓혔고, AI 반도체 설계 수요를 직접 받는 상류 위치에 있다 — 다만 그 확장 대가로 자본구조와 회계 지표가 단절적으로 바뀌었다.
 
 - **회사명**: Synopsys, Inc.
 - **티커 / 상장 시장**: SNPS (NASDAQ)
 - **설립 / 본사**: 1986년 / 미국 캘리포니아 서니베일(Sunnyvale)
-- **CEO**: Sassine Ghazi (2024년 1월 취임, 전임 Aart de Geus는 Executive Chairman으로 이동 — [CEO / 경영진](./03_ceo.md) 참고)
-- **홈페이지**: [synopsys.com](https://www.synopsys.com)
-- **섹터 / 산업**: [반도체 설계 자동화(EDA)](../00_overview.md) — 밸류체인상 업스트림(설계·검증 소프트웨어·IP 공급)
-- **시가총액**: 약 758.6억 달러 (2026-08-24 종가 $394.51 기준)
-- **회계연도(FY) 마감월**: 10월 말(또는 10월 마지막 일요일) — FY2025 = 2024.11~2025.10
+- **CEO**: Sassine Ghazi (2024년 1월 취임)
+- **홈페이지**: https://www.synopsys.com
+- **섹터 / 산업**: 테크 / EDA (Electronic Design Automation)
+- **시가총액**: 약 890.8억 달러 (2026-08-27 종가 $464.89 × 기말 발행주식수 191.605백만 주, [핵심 지표](./04_metrics.md) A.2 인용)
+- **회계연도(FY) 마감월**: 10월 말 (FY2025 = 2024.11~2025.10). 다른 문서는 이 정의를 인용만 한다
 
 ---
 
-## 1. 한 줄 요약
+## 1. 사업 모델 — 어떻게 돈을 버는가
 
-Synopsys는 **반도체 칩을 설계·검증하는 소프트웨어(EDA, Electronic Design Automation)** 와 **칩에 그대로 얹어 쓰는 설계 자산(Semiconductor IP)** 을 만드는 회사다. 엔비디아, AMD, 인텔, 삼성, TSMC 등 전 세계 거의 모든 반도체 회사가 칩을 만들 때 Synopsys의 도구를 사용하기 때문에 "반도체 산업의 숨은 인프라"로 불린다. 2025년 7월 약 349억 달러에 시뮬레이션 소프트웨어 기업 Ansys를 인수하며, 칩 단위를 넘어 패키지·시스템 전체를 아우르는 "실리콘에서 시스템까지" 엔지니어링 솔루션 기업으로 재편 중이다.
+반도체 설계사(팹리스·IDM)와 전자 시스템 기업에 **설계·검증 소프트웨어를 시분할 라이선스(time-based license) 형태로 판매**하고, 사전 검증된 설계 블록(IP)을 라이선스·로열티로 공급한다. 소프트웨어 라이선스는 계약 기간에 걸쳐 매출로 인식되므로 매출의 상당 부분이 이미 수주된 잔고에서 나오며, 이것이 FY2023~FY2025 매출 증감률이 15.21%·15.22%·15.13%로 극히 안정적이었던 이유다([핵심 지표](./04_metrics.md) A.1).
 
----
-
-## 2. 사업 모델 — 어떻게 돈을 버는가
-
-라이선스/구독 형태로 소프트웨어 툴과 IP를 반도체 회사에 판매하며, 매출 상당 부분이 반복 매출(recurring) 성격을 띤다. 고객이 한 번 특정 EDA 툴체인에 설계 워크플로우를 맞추면 바꾸기가 매우 어려워, 계약이 해마다 갱신되는 구조다.
+회사가 공시하는 보고 부문은 **Design Automation과 Design IP 둘뿐**이며, 2025년 인수한 Ansys는 별도 부문이 아니라 Design Automation에 통합돼 있다.
 
 | 사업 부문 | 설명 | 매출 비중 | 기준 시점 |
 |-----------|------|-----------|-----------|
-| Design Automation (Ansys 포함) | 칩 설계·검증 소프트웨어 툴 체인 — 논리 합성(Design Compiler, Fusion Compiler), 검증(VCS, Verdi), 물리 설계·사이닝오프(IC Compiler II, PrimeTime), 에뮬레이션(ZeBu, HAPS). 2025년 인수한 Ansys의 멀티피직스 시뮬레이션(구조·유체·전자기·열) 매출도 이 부문에 포함해 보고 | **75.2%** ($5,302M) | FY2025 |
-| Design IP (Semiconductor IP) | 칩 설계 시 재사용하는 검증된 설계 블록 — USB·PCIe·DDR·Ethernet 등 인터페이스 IP, 프로세서·보안·아날로그 IP | **24.8%** ($1,752M) | FY2025 |
+| Design Automation | 디지털·커스텀 설계 구현, 검증·시뮬레이션, 에뮬레이션 하드웨어, 그리고 인수한 Ansys의 구조·유체·전자기 멀티피직스 해석 | $5,302.4M (**75.2%**) | FY2025 (2025-12-10 실적발표 부문 표) |
+| Design IP | 인터페이스 IP(USB·PCIe·DDR 등), 파운드리 공정별 재사용 설계 블록 | $1,751.8M (**24.8%**) | FY2025 (2025-12-10 실적발표 부문 표) |
 
-- 위 비중은 FY2025 확정 실적(총매출 $7,054M) 기준이다. **Ansys는 FY2025에 약 3.5개월치만 반영됐다** — FY2026 가이던스에 포함된 Ansys 기여분은 약 $29억으로, 연간 가이던스 중간값 $96.65억의 약 30%에 해당한다. 즉 FY2026부터 Design Automation 부문의 구성 자체가 크게 달라진다.
-- 과거 사업부였던 **소프트웨어 보안(Software Integrity)** 부문은 2024년 9월 매각되어 현재 Synopsys 소속이 아니다(→ Black Duck Software). FY2024부터 매출·이익 기저에서 빠져 있어, FY2023과 FY2024를 단순 비교하면 성장률이 실제보다 낮게 보인다.
+- FY2024는 Design Automation 68.9%($4,221.1M) / Design IP 31.1%($1,906.3M)였다. **한 해 만에 비중이 6%p 이동한 것은 두 부문이 서로 반대로 움직였기 때문**이다 — Design Automation은 Ansys 편입으로 +25.6%, Design IP는 중국 수출규제와 대형 파운드리 고객 수요 부진으로 −8.1%.
+- FY2026 Q3(2026-07-31 종료)에는 Ansys 온기 반영으로 이 쏠림이 더 커졌다: Design Automation $2,003.0M(80.9%, YoY +52.6%) / Design IP $473.8M(19.1%, YoY +10.8%). Design IP는 전년 부진의 기저효과로 성장률이 플러스 전환했으나 비중 자체는 계속 줄고 있다.
+- **매각으로 빠지는 매출이 있다.** Optical Solutions Group과 Ansys PowerArtist RTL은 **FTC 동의명령에 따른 강제 매각**으로 2025-10-17경 Keysight에 넘겼고(FY2025 Q4), Processor IP Solutions는 FY2026 중 자발적으로 매각했다. 회사는 이 셋이 FY2026 매출을 각각 약 $110M·약 $40M(합계 약 $150M) 낮춘다고 밝혔으며 이미 가이던스에 반영돼 있다(2026-08-26 FY2026 Q3 실적발표).
 
----
-
-## 3. 산업 / 시장 내 위치
-
-> 산업 밸류체인·시장 규모·성장 동력·구조적 리스크는 [섹터 개요](../00_overview.md)에서 다룬다. 여기서는 그 안에서 Synopsys가 어떤 위치인지만 정리한다.
-
-EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사(Big Three)가 과점하고 있으며, 그중 Synopsys가 매출 기준 1위다. 이 저장소에서는 같은 섹터의 [Cadence](../cadence_design_systems/01_overview.md)를 함께 커버하고 있다.
-
-- **높은 진입장벽 + 과점 구조**: 고객(반도체 회사)의 전환비용이 매우 높아 안정적 매출 구조. 파운드리 공정 사전 인증(sign-off) 관계까지 얽혀 있어 신규 진입자가 넘기 어렵다.
-- **AI 반도체 수혜의 "곡괭이" 기업**: 엔비디아·AMD 등 AI 칩 수요가 늘수록, 특정 칩 회사의 성패와 무관하게 EDA 도구 수요도 함께 증가한다.
-- **Ansys 인수로 인접 영역 확장**: 칩 설계 + 시스템 시뮬레이션 결합으로 TAM(총 시장 규모) 확대를 노린다. 다만 대형 인수에 따른 통합 리스크와 부채 부담이 함께 따라왔다 — 구체적 판단은 [투자 판단](./07_investment.md) 참고.
-- **중국 노출**: 2025년 5월 미 상무부의 대중국 EDA 수출규제 당시 중국 매출 비중은 회사 전체의 약 16%로 보도됐다. 규제는 6주 만에 철회됐으나 섹터 공통의 구조적 리스크로 남아 있다.
+Sources: [Synopsys Q4·FY2025 실적발표](https://news.synopsys.com/2025-12-10-Synopsys-Posts-Financial-Results-for-Fourth-Quarter-and-Fiscal-Year-2025) · [Synopsys FY2026 Q3 실적발표](https://news.synopsys.com/2026-08-26-Synopsys-Posts-Financial-Results-for-Third-Quarter-Fiscal-Year-2026)
 
 ---
 
-*작성일: 2026-08-01 (최종 수정일: 2026-08-25)*
+## 2. 산업 / 시장 내 위치
+
+> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [섹터 개요](../00_overview.md) 참고.
+
+EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사가 과점하며, Synopsys는 매출 기준 1위다. 같은 섹터의 [Cadence](../cadence_design_systems/01_overview.md) FY2025 매출이 약 $53억인 데 비해 Synopsys는 $70.5억(FY2025)·FY2026 가이던스 $97.2억으로, Ansys 인수 이후 **매출 규모에서 2위와의 격차를 크게 벌렸다.**
+
+- **경쟁 구도의 축이 "칩"에서 "시스템"으로 옮겨가고 있다.** Synopsys의 Ansys 인수와 Cadence의 System Design and Analysis 사업(BETA CAE·OpenEye·Hexagon D&E 인수)은 같은 방향의 경쟁이다. 다만 Synopsys는 약 $349억을 한 번에 들여 시장 1위 해석 소프트웨어 회사를 통째로 사들인 반면, Cadence는 중소형 인수를 연속으로 쌓는 방식이라 **재무 부담의 성격이 다르다**([재무 / 실적](./05_financials.md) 3. 재무 건전성).
+- **지리적으로는 중국 익스포저가 줄고 있다.** FY2025 중국 매출은 약 $814M으로 전체의 약 11.5% 수준이며, 회사는 실적발표에서 중국 매출이 전년 대비 18%(Ansys 제외 시 22%) 감소했다고 밝혔다. 2025년 수출규제 국면 당시 보도된 약 16%에서 낮아진 것으로, 규제 재도입 시 충격의 크기도 그만큼 달라진다([투자 판단](./07_investment.md) 3. 리스크).
+- **Design IP는 EDA 도구와 성격이 다르다.** 도구 사업이 라이선스 갱신으로 방어되는 반면, IP는 개별 칩 프로젝트 수주에 연동돼 변동성이 크다 — FY2025 −8.1%가 그 예다. 회사가 FY2026에 Processor IP Solutions를 매각한 것도 이 사업의 선택과 집중으로 읽힌다.
+
+Sources: [Bullfincher — Synopsys revenue by geography](https://bullfincher.io/companies/synopsys/revenue-by-geography) (집계 사이트, 1차 공시 대조 필요) · [Synopsys Q4 FY2025 실적 컨퍼런스콜](https://www.fool.com/earnings/call-transcripts/2025/12/10/synopsys-snps-q4-2025-earnings-call-transcript/)
+
+---
+
+*작성일: 2026-08-28*
