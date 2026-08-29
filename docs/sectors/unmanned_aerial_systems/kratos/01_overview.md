@@ -42,4 +42,4 @@ Kratos Government Solutions(KGS)와 Unmanned Systems(USS) 두 사업부로 구�
 
 ---
 
-*작성일: 2026-08-08 (최종 수정일: 2026-08-15)*
+*작성일: 2026-08-15*

@@ -168,4 +168,4 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 ---
 
-*작성일: 2026-08-22 (최종 수정일: 2026-08-28)*
+*작성일: 2026-08-28*

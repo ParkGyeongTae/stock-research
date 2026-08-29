@@ -68,4 +68,4 @@ Allaire는 두 차례(Allaire Corporation, Brightcove) 회사를 창업해 IPO�
 
 ---
 
-*작성일: 2026-08-14 (최종 수정일: 2026-08-23)*
+*작성일: 2026-08-23*

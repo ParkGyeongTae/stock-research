@@ -102,4 +102,4 @@ BWXT의 Government Operations 매출은 국방예산에, Commercial Operations�
 
 ---
 
-*작성일: 2026-08-22 (최종 수정일: 2026-08-23)*
+*작성일: 2026-08-23*
