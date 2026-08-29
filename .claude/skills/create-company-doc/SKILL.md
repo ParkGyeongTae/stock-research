@@ -155,7 +155,7 @@ rm -rf docs/sectors/<sector>/<company>
 cp -r docs/meta/.template/company docs/sectors/<sector>/<company>
 ```
 
-신규 섹터라면 폴더명은 풀어 쓴 소문자 스네이크케이스(`electronic_design_automation`), 회사 폴더명은 회사명 스네이크케이스(`synopsys`). 복합기업은 매출 비중이 아니라 **"이 저장소에서 그 회사를 보는 이유"가 되는 사업** 기준으로 섹터를 정한다. 섹터 폴더가 새로 생기면 `docs/sectors/.pages`에 등록한다(안 하면 경고 없이 내비게이션에서 빠진다). **섹터 폴더는 회사를 담는 그릇일 뿐 개요 문서를 두지 않는다** — 산업 분석은 각 회사 `01_overview.md`의 "산업 / 시장 내 위치"에서 그 회사 관점으로만 다룬다.
+신규 섹터라면 폴더명은 풀어 쓴 소문자 스네이크케이스(`electronic_design_automation`), 회사 폴더명은 회사명 스네이크케이스(`synopsys`). 복합기업은 매출 비중이 아니라 **"이 저장소에서 그 회사를 보는 이유"가 되는 사업** 기준으로 섹터를 정한다. 섹터 폴더가 새로 생기면 `docs/sectors/.pages`에 등록한다(안 하면 경고 없이 내비게이션에서 빠진다). **섹터 폴더에 산업 분석·개요 문서를 두지 않는다** — 산업 분석은 각 회사 `01_overview.md`의 "산업 / 시장 내 위치"에서 그 회사 관점으로만 다룬다. 유일한 예외가 섹터 전용 용어를 모으는 `00_glossary.md`인데, 이건 **정의만** 담고 분석·전망은 담지 않는다(1-4 참고).
 
 ### 1-3. GAAP 수치를 스크립트로 먼저 확보한다
 
@@ -353,7 +353,7 @@ uv run mkdocs build 2>&1 | grep -i "unrecognized relative link" | head
 - 1단계 `carryover.md`에 추려둔 항목이 새 문서에 실제로 반영됐는지
 - `04_metrics.md` 수치를 인용한 문서(`05`·`06`·`07`·`11`, 종가가 겹치면 `09`·`10`)가 서로 일치하는지 — grep으로 실제 검색할 것
 - `*작성일*` — 오늘 날짜는 `# currentDate` → `date +%Y-%m-%d` → 확인 불가 시 사용자에게 확인
-- 신규 섹터라면 `docs/sectors/.pages` 등록 재확인
+- 신규 섹터라면 `docs/sectors/.pages` 등록 재확인. 이번에 `00_glossary.md`를 만들었다면 **그 섹터 폴더의 `.pages`**도 있는지 본다(없으면 회사 폴더 사이에 섞여 나온다)
 - 확인 못 한 값이 확정치처럼 남아 있지 않은지 — (E)·출처 각주·"확인 필요"가 남아 있어야 한다
 
 끝나면 `.work/<company>/`를 지워도 된다(gitignore 대상이라 저장소에는 남지 않는다).
@@ -364,7 +364,7 @@ uv run mkdocs build 2>&1 | grep -i "unrecognized relative link" | head
 
 ## 하지 않는 것
 
-- 회사 문서에서 새 용어를 정의하는 것 — `glossary.md`·`concepts/`를 먼저 갱신
+- 회사 문서에서 새 용어를 정의하는 것 — `glossary.md`·`concepts/`(또는 섹터 전용이면 `docs/sectors/<sector>/00_glossary.md`)를 먼저 갱신
 - "사라/팔아라" 식 단정적 투자 권유 — 근거와 불확실성을 함께 제시
 - 커밋·푸시 — 사용자가 명시적으로 요청할 때만
 - 재무 수치 조사를 서브에이전트에 넘기는 것 — 1-3의 스크립트가 대체한다
