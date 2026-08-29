@@ -35,8 +35,6 @@ Cadence는 Synopsys와 함께 반도체 칩을 설계·검증하는 **EDA(Electr
 
 ## 3. 산업 / 시장 내 위치
 
-> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [섹터 개요](../00_overview.md) 참고.
-
 EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사(Big Three)가 과점하고 있으며, Cadence는 매출 기준 업계 2위권이다.
 
 - **높은 진입장벽 + 과점 구조**: 고객(반도체 회사)의 전환비용이 매우 높아 안정적인 반복 매출 구조.

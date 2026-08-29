@@ -54,7 +54,7 @@
 
 > **Non-GAAP 조정 항목**: GAAP–Non-GAAP EPS 차이는 주로 인수 무형자산 상각(취득 관련), 구조조정 비용([역사 / 주요 이벤트](./02_history.md) 2024·2025 Robotics 구조조정 참고), 연금 시가평가 조정으로 구성된다. SBC는 매출의 2%대로 크지 않아 이 회사에서 GAAP-Non-GAAP 괴리의 주된 원인은 아니다 — 정의는 [용어집](../../../meta/glossary.md) "SBC" 참고.
 >
-> **FY2023 매출이 전년(FY2022 $3,155.0M) 대비 −15.2% 급감한 이유**: 2022년까지 이어진 반도체 업사이클 이후의 재고 조정·다운사이클 국면 — ATE 산업 특유의 강한 경기민감도([섹터 개요](../00_overview.md) 4. 구조적 리스크 / 경기 민감도 참고)를 그대로 보여주는 구간이다. FY2024~FY2025의 반등, 특히 FY2026의 폭발적 성장(E)은 AI 반도체 테스트 수요가 이 다운사이클을 완전히 뒤집은 결과로 해석된다.
+> **FY2023 매출이 전년(FY2022 $3,155.0M) 대비 −15.2% 급감한 이유**: 2022년까지 이어진 반도체 업사이클 이후의 재고 조정·다운사이클 국면 — ATE 산업 특유의 강한 경기민감도를 그대로 보여주는 구간이다. FY2024~FY2025의 반등, 특히 FY2026의 폭발적 성장(E)은 AI 반도체 테스트 수요가 이 다운사이클을 완전히 뒤집은 결과로 해석된다.
 >
 > 출처: [Teradyne FY2023 10-K/4Q23 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/33/teradyne-reports-fourth-quarter-and-fiscal-year-2023-results), [FY2024 4Q24 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/15/teradyne-reports-fourth-quarter-2024-results), [FY2025 4Q25 실적발표](https://investors.teradyne.com/news-events/press-releases/detail/433/teradyne-reports-fourth-quarter-and-full-year-2025-results), FY2026(E) 컨센서스는 [stockanalysis.com](https://stockanalysis.com/stocks/TER/forecast/)(15개 증권사 집계, 2026-08 시점).
 

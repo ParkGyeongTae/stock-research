@@ -34,8 +34,6 @@ Sources: [Synopsys Q4·FY2025 실적발표](https://news.synopsys.com/2025-12-10
 
 ## 2. 산업 / 시장 내 위치
 
-> 산업 밸류체인·시장 규모/성장 동력·구조적 리스크는 [섹터 개요](../00_overview.md) 참고.
-
 EDA 시장은 **Synopsys · Cadence · Siemens EDA** 3사가 과점하며, Synopsys는 매출 기준 1위다. 같은 섹터의 [Cadence](../cadence_design_systems/01_overview.md) FY2025 매출이 약 $53억인 데 비해 Synopsys는 $70.5억(FY2025)·FY2026 가이던스 $97.2억으로, Ansys 인수 이후 **매출 규모에서 2위와의 격차를 크게 벌렸다.**
 
 - **경쟁 구도의 축이 "칩"에서 "시스템"으로 옮겨가고 있다.** Synopsys의 Ansys 인수와 Cadence의 System Design and Analysis 사업(BETA CAE·OpenEye·Hexagon D&E 인수)은 같은 방향의 경쟁이다. 다만 Synopsys는 약 $349억을 한 번에 들여 시장 1위 해석 소프트웨어 회사를 통째로 사들인 반면, Cadence는 중소형 인수를 연속으로 쌓는 방식이라 **재무 부담의 성격이 다르다**([재무 / 실적](./05_financials.md) 3. 재무 건전성).

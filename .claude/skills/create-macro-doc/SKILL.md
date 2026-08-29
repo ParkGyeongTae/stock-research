@@ -9,7 +9,7 @@ description: 거시지표 참고 문서(`docs/meta/macro/**`)를 만들거나 �
 
 - 신규: "위안화 환율 macro 문서 만들어줘", "나스닥 100 차트 추가해줘"
 - 재생성: "<지표> 차트 다시 뽑아줘 / 최신화해줘 / 갱신해줘"
-- **대상 아님**: 회사 문서의 `09`·`10` → `create-company-doc`(같은 스크립트를 쓰지만 회사 폴더 소관) · 섹터 개요 → `create-sector-doc` · 마스터 문서 검토 → `review-master-docs`
+- **대상 아님**: 회사 문서의 `09`·`10` → `create-company-doc`(같은 스크립트를 쓰지만 회사 폴더 소관) · 마스터 문서 검토 → `review-master-docs`
 
 ## 왜 이렇게 하나
 

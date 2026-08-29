@@ -7,7 +7,7 @@
 - **설립 / 본사**: 1860년(Henry Varnum Poor의 철도 통계 발행사업이 뿌리, 1941년 Poor's Publishing과 Standard Statistics가 합병해 Standard & Poor's 설립) · 본사 55 Water Street, New York, NY 10041
 - **CEO**: Martina L. Cheung (President & CEO, 2024-11-01 취임)
 - **홈페이지**: https://www.spglobal.com
-- **섹터 / 산업**: 금융 정보·분석 서비스 (신용평가·벤치마크 지수·시장 데이터) — [섹터 개요](../00_overview.md)
+- **섹터 / 산업**: 금융 정보·분석 서비스 (신용평가·벤치마크 지수·시장 데이터)
 - **시가총액**: $123,461M (USD, 2026-08-14 종가 $418.80 × 발행주식수 294.8M 기준)
 - **회계연도(FY) 마감월**: 12월(캘린더 연도와 동일)
 
@@ -36,7 +36,7 @@ S&P Global은 채권 발행 시 사실상 필수로 거쳐야 하는 신용등�
 
 ## 3. 산업 / 시장 내 위치
 
-S&P Global은 신용평가에서 Moody's·Fitch와 함께 "빅3" 과점 구도의 한 축이며, 지수 사업(S&P Dow Jones Indices)에서는 MSCI·FTSE Russell과 함께 미국 ETF 자산의 절반 이상이 추종하는 최대 지수 사업자다. 시장 데이터·분석 플랫폼(Market Intelligence)에서는 Bloomberg·FactSet·LSEG(Refinitiv)와 경쟁한다. 산업 전체의 밸류체인·시장 규모·구조적 리스크(채권 발행 경기민감도, 규제 지정 의존 진입장벽, 사모신용시장 탈중개화 등)는 [섹터 개요](../00_overview.md)에서 다루며, 이 문서에서는 그 안에서 S&P Global이 각 사업별로 1~2위권 지위를 갖는다는 점만 남긴다 — 개별 경쟁사 대비 구체적 강점·약점은 [투자 판단](./07_investment.md) "경쟁 해자" 절 참고.
+S&P Global은 신용평가에서 Moody's·Fitch와 함께 "빅3" 과점 구도의 한 축이며, 지수 사업(S&P Dow Jones Indices)에서는 MSCI·FTSE Russell과 함께 미국 ETF 자산의 절반 이상이 추종하는 최대 지수 사업자다. 시장 데이터·분석 플랫폼(Market Intelligence)에서는 Bloomberg·FactSet·LSEG(Refinitiv)와 경쟁한다. 이 문서에서는 S&P Global이 각 사업별로 1~2위권 지위를 갖는다는 점만 남긴다 — 개별 경쟁사 대비 구체적 강점·약점은 [투자 판단](./07_investment.md) "경쟁 해자" 절 참고.
 
 ---
 
