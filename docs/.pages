@@ -1,4 +1,6 @@
 nav:
   - index.md
-  - 참고 문서: meta
+  - 용어집: meta/glossary.md
+  - 개념 정리: meta/concepts
+  - 거시지표 차트: meta/macro
   - 섹터 리서치: sectors

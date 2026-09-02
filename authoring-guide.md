@@ -6,7 +6,7 @@
 
 ## 📁 폴더 구조·명명 규칙
 
-**`sectors/` 아래에 산업/섹터 폴더**, 그 아래에 회사 폴더를 둡니다. 리서치 콘텐츠는 전부 `sectors/` 한 곳에 모여 있고, `meta/`는 콘텐츠에 종속되지 않는 참고 문서로 별도 depth에 둡니다.
+**`sectors/` 아래에 산업/섹터 폴더**, 그 아래에 회사 폴더를 둡니다. 리서치 콘텐츠는 전부 `sectors/` 한 곳에 모여 있고, `meta/`는 콘텐츠에 종속되지 않는 참고 문서로 파일 시스템에서만 별도 depth에 둡니다 — **좌측 내비게이션에서는 `meta/` 그룹을 거치지 않고 `glossary.md`·`concepts/`·`macro/`가 최상위로 평탄화돼 나옵니다**(`docs/.pages` 참고).
 
 ```
 stock-research/
@@ -15,7 +15,7 @@ stock-research/
 ├── authoring-guide.md     # 이 문서 — docs/ 작성 규칙
 ├── chart-generation-guide.md  # 차트 생성 스크립트 사용법·재현 파라미터 (이 문서에서 분리됨)
 └── docs/
-    ├── .pages             # 최상위 nav 순서 (awesome-pages 플러그인)
+    ├── .pages             # 최상위 nav 순서 — meta/ 하위 항목을 경로째 적어 최상위로 끌어올린다 (awesome-pages 플러그인)
     ├── index.md           # 사이트 첫 페이지 — 소개·커버리지 범위만 담은 환영 페이지
     ├── meta/              # 특정 회사·섹터에 종속되지 않는 참고 문서 모음
     │   ├── glossary.md     # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
@@ -39,6 +39,7 @@ stock-research/
     - 새 **섹터 폴더** → `docs/sectors/.pages`의 `nav:`에 추가해야 좌측 내비게이션에 노출된다. 등록하지 않아도 빌드는 성공하고 검색에도 잡히지만 nav에서만 사라져 사실상 고아 페이지가 된다(에러·경고 없음).
     - 새 **회사 폴더**(기존 섹터 안) → 등록 불필요, 자동으로 들어온다.
     - 새 **최상위 폴더**(`meta/`·`sectors/` 옆) → `docs/.pages`에 추가. 규칙은 섹터와 같다.
+    - 새 **`meta/` 직속 문서·폴더**(`glossary.md`·`concepts/`·`macro/` 옆) → `docs/.pages`에 **경로째**(`meta/<이름>`) 추가한다. `meta/`는 nav 그룹이 아니라 최상위로 평탄화돼 있어서, 등록하지 않으면 어디에도 나오지 않는다(경고 없음). `meta/` 자체에는 `.pages`를 두지 않는다 — 둬도 무시된다.
     - 새 `macro/` **하위 카테고리 폴더** → `docs/meta/macro/.pages`에 추가. 기존 카테고리 안에 문서만 추가할 땐 그 카테고리의 `.pages`(예: `docs/meta/macro/foreign_exchange/.pages`)에 추가한다.
 - `meta/.template/` 안의 상대 링크(`../../../meta/glossary.md` 등)는 **복사된 위치**(`docs/sectors/<sector>/<company>/`) 기준이라 템플릿 폴더에서 직접 열면 깨져 보이는 게 정상이다. (`.template`은 앞의 점 때문에 MkDocs 빌드에서도 제외된다.)
 
@@ -193,4 +194,4 @@ uv run mkdocs build   # 배포와 동일하게 빌드 — 경고 메시지를 �
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-02*
