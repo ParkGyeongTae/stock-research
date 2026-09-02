@@ -154,7 +154,9 @@
 
 ## C. 사업 고유 지표
 
-> `quantum_computing` 섹터의 첫 회사라 여기서 섹터 표준 지표를 정한다. 정의는 [용어집 — 5. 사업 모델 · 성장 지표](../../../glossary.md#business-metrics) 참고.
+> `quantum_computing` 섹터의 첫 회사로서 여기서 섹터 표준 지표를 정했고, 이후 추가된 [D-Wave Quantum](../d_wave_quantum/04_metrics.md)·[Quantinuum](../quantinuum/04_metrics.md)이 그대로 따른다. 정의는 [용어집 — 5. 사업 모델 · 성장 지표](../../../glossary.md#business-metrics) 참고.
+>
+> **섹터 내 대조(2026 Q2 기준)**: RPO는 IonQ $485M · D-Wave $40.7M · Quantinuum **미공시**. Adjusted EBITDA 손실은 IonQ -$120.3M · D-Wave -$37.1M · Quantinuum -$68.3M. D-Wave는 수주(bookings)를 보조 지표로 추가했으나 IonQ는 이를 공시하지 않아 그 행으로는 비교할 수 없다.
 
 **이 섹터의 표준 지표**: **RPO(잔여 이행의무)** — ASC 606 기준 공통 공시 항목이라 향후 이 섹터에 회사가 추가되면 그대로 따를 것. **Adjusted EBITDA 손실**은 이 회사 고유라기보다 성장기 기술기업 전반의 표준 비GAAP 지표에 가깝지만, IonQ가 GAAP 손익이 아니라 이 지표로 가이던스를 제시하므로 함께 기록한다.
 

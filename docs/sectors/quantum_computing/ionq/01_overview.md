@@ -34,15 +34,15 @@ IonQ는 2026년 기준 스스로를 4개 사업 축(양자컴퓨팅·양자네�
 !!! warning "읽기 전 주의"
     사업 부문별 매출 비중(%)은 IonQ가 세그먼트 단위로 별도 공시하지 않아 확인하지 못했다 — 2026 Q2 실적발표에서 "해외 고객 비중 약 50%, 기업 고객(엔터프라이즈) 비중 약 60%, 복수 제품 동시 구매 비중 약 25%"라는 고객 구성 지표만 공개했다(제품별 매출 비중 아님). 향후 10-K 세그먼트 주석이 공시되면 갱신할 것.
 
-    같은 섹터 폴더에 아직 다른 회사가 없어(IonQ가 `quantum_computing` 섹터 첫 회사) 경쟁사 배수·포지셔닝 비교는 생략한다. 두 번째 회사가 추가되면 [용어집](../../../glossary.md#business-metrics) 기준으로 사업 고유 지표를 맞출 것.
+    2026-09 기준 `quantum_computing` 섹터에는 IonQ 외에 [D-Wave Quantum](../d_wave_quantum/01_overview.md)·[Quantinuum](../quantinuum/01_overview.md)이 있다. 세 회사의 사업 고유 지표는 IonQ가 정한 섹터 표준(RPO·Adjusted EBITDA 손실)을 공유하되, D-Wave는 수주(bookings)를 보조 지표로 추가했고 Quantinuum은 RPO를 공시하지 않는다 — 자세한 대조는 [핵심 지표](./04_metrics.md) C절 참고.
 
 ---
 
 ## 3. 산업 / 시장 내 위치
 
-IonQ는 트랩드 이온(trapped-ion) 방식을 채택하고 있으며, 같은 방식의 주요 경쟁자로 Quantinuum(비상장, Honeywell·Cambridge Quantum 합작)이 있다. 같은 방식의 Oxford Ionics는 2025-09 IonQ에 인수돼 경쟁자에서 빠졌다. 초전도 방식(IBM·Google — 대형 기술기업이 자체 자금으로 개발, 상장된 순수 플레이는 아님)과 초전도/애널로그 방식의 상장 소형주(Rigetti Computing, D-Wave Quantum — 매출 규모는 IonQ보다 훨씬 작다)도 경쟁 구도에 있다.
+IonQ는 트랩드 이온(trapped-ion) 방식을 채택하고 있으며, 같은 방식의 주요 경쟁자는 [Quantinuum](../quantinuum/01_overview.md)(Nasdaq: QNT — Honeywell·Cambridge Quantum 합작으로 **2026-06-04 상장**해 이제 상장 경쟁사가 됐다)이다. 같은 방식의 Oxford Ionics는 2025-09 IonQ에 인수돼 경쟁자에서 빠졌다. 초전도 방식(IBM·Google — 대형 기술기업이 자체 자금으로 개발, 상장된 순수 플레이는 아님)과 어닐링·초전도 방식의 상장 소형주([D-Wave Quantum](../d_wave_quantum/01_overview.md), Rigetti Computing — 매출 규모는 IonQ보다 훨씬 작다)도 경쟁 구도에 있다.
 
-IonQ는 FY2025 매출 규모(연 $130M)로 순수 양자컴퓨팅 상장기업 중 가장 크고, 2큐비트 게이트 정확도(fidelity) 지표에서 업계 최상위권(99.99% 수준, Quantinuum과 경쟁)을 주장한다. 다만 "매출 1위"가 "기술 1위"를 뜻하지는 않으며, 대형 기술기업(IBM·Google·Microsoft·Amazon)이 자체 양자컴퓨팅 개발과 클라우드 유통(Braket·Azure Quantum)을 동시에 쥐고 있어 IonQ가 이들의 유통 채널에 상당 부분 의존한다는 구조적 리스크가 있다.
+IonQ는 FY2025 매출 규모(연 $130M)로 순수 양자컴퓨팅 상장기업 중 가장 크고 — 같은 해 Quantinuum은 $30.9M, D-Wave는 $24.6M이었다 — 2큐비트 게이트 정확도(fidelity) 지표에서 업계 최상위권(99.99% 수준, Quantinuum과 경쟁)을 주장한다. 다만 "매출 1위"가 "기술 1위"를 뜻하지는 않으며, 대형 기술기업(IBM·Google·Microsoft·Amazon)이 자체 양자컴퓨팅 개발과 클라우드 유통(Braket·Azure Quantum)을 동시에 쥐고 있어 IonQ가 이들의 유통 채널에 상당 부분 의존한다는 구조적 리스크가 있다.
 
 2026년 들어 이 포지셔닝에 새로 더해진 축이 **수직계열화**다. SkyWater 인수로 자체 이온트랩 칩의 설계·웨이퍼 제조·패키징을 사내로 가져왔고, Skyloom 인수로 우주 광통신 단말까지 확보했다. 회사는 SkyWater로부터 완전 사양의 QPU를 수령했다고 밝히며 Q3~Q4 2026 통합 시스템 테스트, 2027 상반기 256큐비트 시스템 고객 커미셔닝을 목표로 제시했다 — 이 일정이 지켜지는지가 수직계열화가 실제 우위로 전환되는지를 가늠하는 첫 관문이다.
 
