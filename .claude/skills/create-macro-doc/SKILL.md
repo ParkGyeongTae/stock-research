@@ -1,6 +1,6 @@
 ---
 name: create-macro-doc
-description: 거시지표 참고 문서(`docs/meta/macro/**`)를 만들거나 다시 만들 때 사용한다. "macro에 <지표> 추가해줘" 같은 신규 요청뿐 아니라 "차트 다시 뽑아줘", "최신화해줘", "갱신해줘"처럼 이미 있는 문서를 손보는 요청에도 이 스킬을 쓴다 — 이 저장소는 부분 수정 대신 **파일을 지우고 다시 만드는 방식**을 쓴다. `scripts/gen_technical_chart.py`로 캔들 SVG를 생성하고, 상승/하락 해석 절과 카테고리별 `.pages` 등록까지 규칙대로 채운다.
+description: 거시지표 참고 문서(`docs/macro/**`)를 만들거나 다시 만들 때 사용한다. "macro에 <지표> 추가해줘" 같은 신규 요청뿐 아니라 "차트 다시 뽑아줘", "최신화해줘", "갱신해줘"처럼 이미 있는 문서를 손보는 요청에도 이 스킬을 쓴다 — 이 저장소는 부분 수정 대신 **파일을 지우고 다시 만드는 방식**을 쓴다. `scripts/gen_technical_chart.py`로 캔들 SVG를 생성하고, 상승/하락 해석 절과 카테고리별 `.pages` 등록까지 규칙대로 채운다.
 ---
 
 # 거시지표 문서 작성 (신규 · 재생성 공통)
@@ -21,7 +21,7 @@ description: 거시지표 참고 문서(`docs/meta/macro/**`)를 만들거나 �
 
 ### 1. 카테고리·파일명·파라미터 확정
 
-- 카테고리: `docs/meta/macro/{foreign_exchange,rates,bonds,equities,metals,energy,cryptocurrency}/` 중 성격이 맞는 곳. 일곱 개 어디에도 안 맞는 새 자산군이면 폴더를 만들고 `docs/meta/macro/.pages`에 추가한다.
+- 카테고리: `docs/macro/{foreign_exchange,rates,bonds,equities,metals,energy,cryptocurrency}/` 중 성격이 맞는 곳. 일곱 개 어디에도 안 맞는 새 자산군이면 폴더를 만들고 `docs/macro/.pages`에 추가한다.
 - 파일명: snake_case, 티커가 아니라 사람이 읽는 이름(`usd_krw.md`, `treasury_10y.md`).
 - **재생성이면 `chart-generation-guide.md` "macro 문서 재현 파라미터" 표에서 그 문서 행을 가져온다** — 티커·옵션·조정 각주의 단일 출처다. 표에 행이 없는 구세대 문서면 이번에 추가한다.
 - 신규면 Yahoo Finance 티커를 WebSearch로 확인한다(추측 금지 — `KRW=X`·`GC=F`·`^TNX`처럼 비직관적 표기가 많다). 주가가 아닌 시계열은 `--symbol`·`--symbol-pos`·`--unit-label`·`--adj-note`가 필요하며, 문법은 `chart-generation-guide.md` "주가가 아닌 시계열에 쓰기"가 마스터다. 같은 카테고리의 기존 행을 패턴으로 삼으면 빠르다.
@@ -29,7 +29,7 @@ description: 거시지표 참고 문서(`docs/meta/macro/**`)를 만들거나 �
 ### 2. 파일 삭제 후 차트 생성
 
 ```bash
-rm -f docs/meta/macro/<category>/<name>.md
+rm -f docs/macro/<category>/<name>.md
 uv run python scripts/gen_technical_chart.py "<TICKER>" --name "<한글명>" --interval 1wk \
   <옵션> --decimals 2 --emit chart -o <scratchpad>/chart.svg.txt
 ```
@@ -50,7 +50,7 @@ uv run python scripts/gen_technical_chart.py "<TICKER>" --name "<한글명>" --i
 ### 4. 재현 파라미터 표·`.pages` 등록
 
 - 신규면 `chart-generation-guide.md` "macro 문서 재현 파라미터" 표에 행을 추가한다. 조정 각주가 기존 코드(FUT/IDX/FX/ETF/YLD/DISC 등)와 같은 문구면 그 코드를 재사용하고, 다르면 새 코드를 만들어 범례에도 추가한다.
-- 해당 카테고리의 `.pages`(예: `docs/meta/macro/foreign_exchange/.pages`) `nav:`에 파일명을 추가한다. 빠뜨리면 경고 없이 내비게이션에서 사라진다. 재생성이면 이미 등록돼 있다.
+- 해당 카테고리의 `.pages`(예: `docs/macro/foreign_exchange/.pages`) `nav:`에 파일명을 추가한다. 빠뜨리면 경고 없이 내비게이션에서 사라진다. 재생성이면 이미 등록돼 있다.
 
 ### 5. 마무리 체크리스트
 

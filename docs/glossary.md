@@ -164,7 +164,7 @@
 
 > 📖 예시로 풀어 쓴 설명: [사업 모델 · 성장 지표](./concepts/business-metrics.md)
 >
-> 여기에는 **여러 섹터에 두루 쓰이는 지표만** 둡니다. 한 섹터 안에서만 쓰는 지표(E&P의 증명매장량, LNG의 액화 능력, 항공우주의 형식증명 등)는 그 섹터 폴더의 용어 문서에 둡니다 — [천연가스](../sectors/natural_gas/00_glossary.md) · [항공우주·방위산업](../sectors/aerospace_defense/00_glossary.md).
+> 여기에는 **여러 섹터에 두루 쓰이는 지표만** 둡니다. 한 섹터 안에서만 쓰는 지표(E&P의 증명매장량, LNG의 액화 능력, 항공우주의 형식증명 등)는 그 섹터 폴더의 용어 문서에 둡니다 — [천연가스](sectors/natural_gas/00_glossary.md) · [항공우주·방위산업](sectors/aerospace_defense/00_glossary.md).
 
 | 용어 | 뜻 |
 |------|-----|

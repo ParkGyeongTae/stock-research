@@ -98,7 +98,7 @@ grep -l '^> ⚠️' docs/sectors/<sector>/<company>/*.md 2>/dev/null | sed 's#.*
 ```bash
 mkdir -p .work/<company>
 rm -rf docs/sectors/<sector>/<company>
-cp -r docs/meta/.template/company docs/sectors/<sector>/<company>
+cp -r docs/.template/company docs/sectors/<sector>/<company>
 ```
 
 신규 섹터라면 폴더명은 풀어 쓴 소문자 스네이크케이스(`electronic_design_automation`), 회사 폴더명은 회사명 스네이크케이스(`synopsys`). 복합기업은 매출 비중이 아니라 **"이 저장소에서 그 회사를 보는 이유"가 되는 사업** 기준으로 섹터를 정한다. 섹터 폴더가 새로 생기면 `docs/sectors/.pages`에 등록한다(안 하면 경고 없이 내비게이션에서 빠진다). **섹터 폴더에 산업 분석·개요 문서를 두지 않는다** — 산업 분석은 각 회사 `01_overview.md`의 "산업 / 시장 내 위치"에서 그 회사 관점으로만 다룬다. 유일한 예외가 섹터 전용 용어를 모으는 `00_glossary.md`인데, 이건 **정의만** 담고 분석·전망은 담지 않는다(2-3 참고).
@@ -132,7 +132,7 @@ A(연간)·B(분기)·C(사업 고유)·D(판단 메모) 순으로 채운다. **
 
 ### 2-3. C절은 섹터 단위로 정한다
 
-같은 섹터에 회사가 이미 있으면 그 지표를 따르고, 첫 회사면 여기서 정한다. 최대 5개. 없는 지표면 용어 문서부터 갱신하되, **두 개 이상의 섹터가 쓰면 `docs/meta/glossary.md`, 이 섹터에서만 쓰면 `docs/sectors/<sector>/00_glossary.md`**에 넣는다(후자가 없으면 만들고 `.pages`도 함께 둔다). 단순한 사업이면 C절을 통째로 삭제하고 사유를 A절 각주에 남긴다.
+같은 섹터에 회사가 이미 있으면 그 지표를 따르고, 첫 회사면 여기서 정한다. 최대 5개. 없는 지표면 용어 문서부터 갱신하되, **두 개 이상의 섹터가 쓰면 `docs/glossary.md`, 이 섹터에서만 쓰면 `docs/sectors/<sector>/00_glossary.md`**에 넣는다(후자가 없으면 만들고 `.pages`도 함께 둔다). 단순한 사업이면 C절을 통째로 삭제하고 사유를 A절 각주에 남긴다.
 
 동종사 문서를 통째로 읽지 말고 **지표명·정의만** 뽑는다(실측: `natural_gas` 5개사 4.6KB ≈ 1.5k 토큰). 아래 명령은 4-1의 가정 대조와 **한 턴에 같이** 낸다:
 

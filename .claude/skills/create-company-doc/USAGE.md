@@ -106,5 +106,5 @@ Rocket Lab을 5단계로 만들었는데도 **5시간 한도의 80% 이상**을 
 
 ## 이 스킬이 아닌 경우
 
-- 거시지표 문서(`docs/meta/macro/**`) → **`create-macro-doc`**
+- 거시지표 문서(`docs/macro/**`) → **`create-macro-doc`**
 - `AGENTS.md`·`authoring-guide.md`·`chart-generation-guide.md`·`docs/index.md` 검토 → **`review-master-docs`**

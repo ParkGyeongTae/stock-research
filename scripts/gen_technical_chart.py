@@ -2,7 +2,7 @@
 """09_technical_daily.md(일봉·1년)·10_technical_weekly.md(주봉·5년) 용
 캔들차트(SVG)·지지/저항 레벨 생성기.
 
-`docs/meta/.template/company/09_technical_daily.md`·`10_technical_weekly.md`가
+`docs/.template/company/09_technical_daily.md`·`10_technical_weekly.md`가
 요구하는 기계적 산출물(캔들 SVG 블록, §2 레벨 표, §4 방법론 수치)을 만든다.
 서술·판단은 만들지 않는다.
 
@@ -11,7 +11,7 @@
     uv run python scripts/gen_technical_chart.py SNPS --event 2025-09-10:"실적발표 갭다운" \
         --ref-line 626.24:"52주 최고" --force-level 366 --close-on 2026-08-13
 
-    # 주가가 아닌 시계열(환율·금리 등, docs/meta/macro/ 참고)에는 --symbol로 단위 표시를 바꾼다
+    # 주가가 아닌 시계열(환율·금리 등, docs/macro/ 참고)에는 --symbol로 단위 표시를 바꾼다
     uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
         --symbol "원" --symbol-pos suffix --unit-label "원" --adj-note "환율 원자료(조정 없음)"
 

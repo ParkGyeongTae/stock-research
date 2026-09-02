@@ -1,6 +1,6 @@
 # 항공우주·방위산업 섹터 용어
 
-> 항공우주·방위산업 섹터 회사 문서가 쓰는 **섹터 전용 지표 정의**입니다. 전 섹터 공통 용어(백로그·book-to-bill·EBITDA·PER 등)는 [용어집](../../meta/glossary.md)이 마스터이고, 여기에는 이 섹터 밖에서는 쓰이지 않는 것만 둡니다.
+> 항공우주·방위산업 섹터 회사 문서가 쓰는 **섹터 전용 지표 정의**입니다. 전 섹터 공통 용어(백로그·book-to-bill·EBITDA·PER 등)는 [용어집](../../glossary.md)이 마스터이고, 여기에는 이 섹터 밖에서는 쓰이지 않는 것만 둡니다.
 >
 > 이 문서는 **정의만** 담습니다 — 산업 분석·전망은 각 회사 문서 몫입니다.
 
@@ -21,9 +21,9 @@
 
 ## 관련 문서
 
-- [용어집](../../meta/glossary.md) — 전 섹터 공통 용어
-- [용어집 — 5. 사업 모델 · 성장 지표](../../meta/glossary.md#business-metrics) — 백로그·book-to-bill 등 수주 산업 공통 지표
-- [사업 모델 · 성장 지표 개념 정리](../../meta/concepts/business-metrics.md)
+- [용어집](../../glossary.md) — 전 섹터 공통 용어
+- [용어집 — 5. 사업 모델 · 성장 지표](../../glossary.md#business-metrics) — 백로그·book-to-bill 등 수주 산업 공통 지표
+- [사업 모델 · 성장 지표 개념 정리](../../concepts/business-metrics.md)
 
 ---
 

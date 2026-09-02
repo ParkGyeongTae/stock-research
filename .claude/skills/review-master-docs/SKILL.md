@@ -7,7 +7,7 @@ description: docs/index.md·authoring-guide.md·chart-generation-guide.md·AGENT
 
 ## 대상
 
-아래 네 문서에만 적용한다. 회사/섹터 문서, `glossary.md`·`concepts/` 등 나머지 `docs/meta/`의 개선 요청에는 쓰지 않는다.
+아래 네 문서에만 적용한다. 회사/섹터 문서, `glossary.md`·`concepts/` 등 나머지 `docs/`의 개선 요청에는 쓰지 않는다.
 
 - `docs/index.md` — 소개·커버리지 범위만 담은 환영 페이지. 폴더 구조·파일별 역할 규칙은 담지 않는다(그건 `authoring-guide.md` 소관)
 - `authoring-guide.md` — 폴더 구조·명명 규칙·파일별 역할·작성 규칙·신규 추가 절차의 마스터

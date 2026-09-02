@@ -1,6 +1,6 @@
 # 차트 생성 가이드
 
-이 문서는 `scripts/gen_technical_chart.py`·`scripts/gen_index_overlay_chart.py`로 캔들 차트·비교 차트를 생성할 때 지키는 규칙을 모아둡니다 — 회사 문서의 `09_technical_daily.md`·`10_technical_weekly.md`, `docs/meta/macro/`의 거시지표 문서 모두 여기 규칙을 따릅니다. 폴더 구조·파일별 역할의 마스터는 [`authoring-guide.md`](./authoring-guide.md)이고, 이 문서는 그중 차트 생성이라는 한 가지 절차만 떼어내 다룹니다 — 같은 이유로 `docs/` 밖 저장소 루트에 둡니다.
+이 문서는 `scripts/gen_technical_chart.py`·`scripts/gen_index_overlay_chart.py`로 캔들 차트·비교 차트를 생성할 때 지키는 규칙을 모아둡니다 — 회사 문서의 `09_technical_daily.md`·`10_technical_weekly.md`, `docs/macro/`의 거시지표 문서 모두 여기 규칙을 따릅니다. 폴더 구조·파일별 역할의 마스터는 [`authoring-guide.md`](./authoring-guide.md)이고, 이 문서는 그중 차트 생성이라는 한 가지 절차만 떼어내 다룹니다 — 같은 이유로 `docs/` 밖 저장소 루트에 둡니다.
 
 ---
 
@@ -47,11 +47,11 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
   --adj-note "환율 원자료(조정 없음)"
 ```
 
-이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/meta/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`) 중 맞는 곳에 두세요 — 실제 예시는 [`foreign_exchange/usd_krw.md`](./docs/meta/macro/foreign_exchange/usd_krw.md)·[`rates/treasury_10y.md`](./docs/meta/macro/rates/treasury_10y.md)를 참고하세요.
+이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`) 중 맞는 곳에 두세요 — 실제 예시는 [`foreign_exchange/usd_krw.md`](./docs/macro/foreign_exchange/usd_krw.md)·[`rates/treasury_10y.md`](./docs/macro/rates/treasury_10y.md)를 참고하세요.
 
 ## macro 문서의 산문은 시점에 종속되지 않게 씁니다
 
-`docs/meta/macro/`의 문서에서 **수치·날짜·순위·기간은 스크립트 산출물(차트 SVG, 그리고 비교 문서의 `### 5년간 순변화 요약` 표)에만 둡니다.** intro 인용문과 `## 2. 해석`은 사람이 쓰는 부분이라 스크립트가 갱신해 주지 않으므로, 여기에 그 회차의 수치나 국면을 적어 두면 차트를 재생성할 때마다 손으로 다시 써야 하고 방치하면 표와 어긋납니다(2026-08-25 전체 36개 문서에 적용).
+`docs/macro/`의 문서에서 **수치·날짜·순위·기간은 스크립트 산출물(차트 SVG, 그리고 비교 문서의 `### 5년간 순변화 요약` 표)에만 둡니다.** intro 인용문과 `## 2. 해석`은 사람이 쓰는 부분이라 스크립트가 갱신해 주지 않으므로, 여기에 그 회차의 수치나 국면을 적어 두면 차트를 재생성할 때마다 손으로 다시 써야 하고 방치하면 표와 어긋납니다(2026-08-25 전체 36개 문서에 적용).
 
 `## 2. 해석`은 "이번 구간에 무슨 일이 있었나"가 아니라 **"이 표를 어떻게 읽는가"**를 씁니다. 각 자산의 구조적 성격(듀레이션, 주가 가중, 산업 수요 vs 안전자산 등)은 바뀌지 않으므로 그대로 두되, 결과는 조건부로 서술합니다:
 
@@ -72,7 +72,7 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
 
 ## macro 문서 재현 파라미터
 
-`docs/meta/macro/`의 단일 자산 문서(아래 표 28개)는 **1. 차트와 2. 해석만** 둔다 — 지지/저항 표·방법론 절은 2026-08-20에, 문서 하단의 관련 문서·참고 자료 목록은 2026-08-27에 걷어냈다. 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓴다:
+`docs/macro/`의 단일 자산 문서(아래 표 28개)는 **1. 차트와 2. 해석만** 둔다 — 지지/저항 표·방법론 절은 2026-08-20에, 문서 하단의 관련 문서·참고 자료 목록은 2026-08-27에 걷어냈다. 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓴다:
 
 ```bash
 uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --interval 1wk \
@@ -151,7 +151,7 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
   --title "<제목>" --period-label "최근 5년 주간"
 ```
 
-색상슬롯은 `docs/meta/macro/`가 이미 쓰는 검증된 8색 팔레트 순번(1=파랑 2=주황 3=아쿠아 4=노랑 5=마젠타 6=초록 7=보라 8=빨강)이다 — 새 배색을 만들지 않고 그 순서를 재사용한다.
+색상슬롯은 `docs/macro/`가 이미 쓰는 검증된 8색 팔레트 순번(1=파랑 2=주황 3=아쿠아 4=노랑 5=마젠타 6=초록 7=보라 8=빨강)이다 — 새 배색을 만들지 않고 그 순서를 재사용한다.
 
 `--title`은 아래 표의 값을 그대로 쓰고, `--period-label`은 8개 문서 모두 `"최근 5년 주간"`이다. 스크립트가 제목 뒤에 기준일·지수화 여부를 자동으로 붙이므로 제목에 그 정보를 직접 적지 않는다.
 
@@ -168,4 +168,4 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 ---
 
-*작성일: 2026-08-28*
+*작성일: 2026-09-02*
