@@ -1,30 +1,25 @@
 # 역사 / 주요 이벤트
 
-> 은행 컨소시엄이 만든 협동조합에서 출발해 2008년 IPO로 일반 주주 소유의 상장사가 됐고, 2016년 Visa Europe 재통합으로 마지막까지 남아있던 지역별 분절을 해소한 뒤 지금은 결제 레일을 스테이블코인·AI 에이전트 커머스까지 확장하는 단계다.
-
-> ⚠️ 아래 항목은 웹검색으로 확인한 사실만 기록. 일부 초기 연혁(1970년대)은 정확한 월 단위 출처가 제한적이라 연도까지만 표기.
+> 은행 컨소시엄이 공동 소유하던 협회에서, 2007년 지역 법인을 하나로 묶고 2008년 상장하며 **주주가 소유하는 영리 네트워크**로 바뀐 것이 이 회사의 결정적 전환점이다. 그 과정에서 만들어진 Class B/C 주식과 소송에스크로 구조가 지금까지 자본구조와 소송 리스크를 규정한다.
 
 ---
 
 ## 연혁
 
-| 연도 | 내용 |
-|------|------|
-| 1958.09 | Bank of America가 캘리포니아 프레즈노에서 **BankAmericard** 신용카드 프로그램 출시(65,000명에게 무작위 카드 발송) — Visa의 기원 |
-| 1970 | Bank of America가 BankAmericard 프로그램 운영권을 카드 발급사(회원은행) 컨소시엄에 이관, National BankAmericard Inc. 설립(Dee Hock 초대 회장) |
-| 1974 | 국제 회원사 조직 IBANCO(International Bankcard Company) 설립 — 국제 BankAmericard 프로그램 관리 |
-| 1976 | 브랜드를 **Visa**로 통일(국가별로 제각각이던 브랜드명을 단일화), 글로벌 확장 본격화 |
-| 2007.10 | 미국·아시아태평양 등 지역 조직을 하나의 지주회사 **Visa Inc.**로 통합 재편(Visa Europe은 회원 소유 별도 법인으로 존속) |
-| **2008.03.18** | **뉴욕증권거래소(NYSE) IPO** — 4.06억 주를 주당 $44에 공모, 당시 미국 역사상 최대 규모 IPO |
-| 2016.06.21 | **Visa Europe 재인수 완료** — 선지급 €165억 + 최대 €47억 조건부 지급(총 최대 €212억), 마지막까지 별도 회원조직으로 남아있던 유럽을 Visa Inc.로 통합. 인수 대가 일부를 우선주(전환우선주)로 지급해 향후 유럽 관련 소송 손실을 흡수하는 구조를 채택([CEO / 경영진](./03_ceo.md) 6. 지분 구조 / 거버넌스 참고) |
-| 2019.02 | **Alfred F. Kelly, Jr.** CEO 취임(2016년부터 President 겸 CEO였던 Charlie Scharf 후임), 이후 Chairman도 겸임 |
-| 2020.01 | 오픈뱅킹·데이터 연동 스타트업 **Plaid** 인수 발표($53억) |
-| 2020.11 | 미 법무부(DOJ)가 Plaid 인수에 대해 반독점 소송 제기(신흥 결제 경쟁자를 사전에 제거하려는 시도라고 주장) |
-| **2021.01.12** | Visa-Plaid 인수 계약 **철회** — DOJ 소송 제기 약 2개월 만에 거래 무산 |
-| **2023.02.01** | **Ryan McInerney CEO 취임** — 2013년부터 10년간 President로 재직한 뒤 승진, Al Kelly는 Chairman직 유지 |
-| 2025.10~2026 | **스테이블코인 정산(USDC) 미국 출시**, **Trusted Agent Protocol**(AI 에이전트 커머스 프레임워크) 공개 — 카드 레일을 넘어선 자금이동 인프라로 사업 확장 시도 |
-| 2025.11~2026.06 | Visa·Mastercard 매입사(merchant) 반독점 다분지소송(Interchange MDL)에 대한 개정 합의안, 법원 예비승인(2026.06) — [최근 뉴스 / 이슈](./08_news.md) 참고 |
+| 시점 (연도.월) | 내용 |
+|----------------|------|
+| 1958.09 | Bank of America가 캘리포니아 프레즈노에서 **BankAmericard**를 발행 — 현재 Visa 네트워크의 출발점. 1970년 은행 컨소시엄(National BankAmericard Inc.)으로 소유권이 이관됐고, 1976년 국제 확장을 위해 **Visa**로 개명했다.[^h1] |
+| 2007.10 | 미국·해외 지역 법인들을 **Visa Inc.** 하나로 통합(reorganization). 이때 미국 금융기관 보유분을 Class B, 미국 외 금융기관 보유분을 Class C로 나누고, 인터체인지 소송 손실을 Class A 주주로부터 격리하는 **U.S. retrospective responsibility plan(소송에스크로)**을 설계했다 — 지금도 에스크로 예치 때마다 Class B 전환비율이 하향 조정된다.[^h2] |
+| 2008.03 | NYSE 상장(티커 V). 공모가 $44, 조달액 **$17.9B**로 당시 미국 사상 최대 IPO. 첫날 종가 $56.50.[^h3] |
+| 2016.06 | **Visa Europe 인수 완료** — 클로징 시점 현금 €122억($139억) + 우선주 €53억($61억), 3주년에 €10억 추가 지급 조건(발표 시점 총 대가 최대 €212억). 협회 형태로 남아 있던 유럽 사업을 본체에 통합해 국제 매출 비중이 구조적으로 커졌다.[^h4] |
+| 2026.05 | **Class B-1/B-2 교환공개매수(exchange offer) 결제 완료** — 참여 주주는 보유분을 Class B-3·Class C(+ 단주 현금)로 교환. 2007년 이후 20년 가까이 묶여 있던 은행 보유 지분의 유동화가 시작됐고, 그만큼 Class A 환산 주식수 희석 경로가 바뀌었다.[^h5] |
+
+[^h1]: Visa 공식 연혁 및 [FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm) Item 1.
+[^h2]: [FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm) — retrospective responsibility plan 및 Class B 전환비율 조정 메커니즘 설명.
+[^h3]: [Visa IR — Visa Inc. Prices Initial Public Offering (2008-03)](https://investor.visa.com/news/news-details/2008/Visa-Inc-Prices-Initial-Public-Offering/default.aspx).
+[^h4]: [Visa IR — Visa Inc. Completes Acquisition of Visa Europe (2016-06)](https://investor.visa.com/news/news-details/2016/Visa-Inc-Completes-Acquisition-of-Visa-Europe/default.aspx).
+[^h5]: [FY2026 Q3 실적발표 8-K](https://www.sec.gov/Archives/edgar/data/1403161/000140316126000103/q32026earningsrelease.htm) — "On May 12, 2026, Visa settled its previously announced exchange offer for class B-1 and class B-2 common stock."
 
 ---
 
-*작성일: 2026-08-16*
+*작성일: 2026-09-02*
