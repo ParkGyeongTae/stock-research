@@ -1,13 +1,11 @@
 nav:
   - 금융 정보·분석 서비스: financial_information_services
   - 반도체 설계 자동화 (EDA): electronic_design_automation
-  - 반도체 테스트 장비 (ATE): automated_test_equipment
   - 디지털 자산 금융: digital_asset_finance
   - 카드 결제 네트워크: payment_networks
   - 커뮤니케이션 서비스: communication_services
   - 양자컴퓨팅: quantum_computing
   - 산업가스: industrial_gases
-  - 사이버보안: cybersecurity
   - 원자력 부품·연료 제조: nuclear_components_manufacturing
   - 천연가스: natural_gas
   - 필수소비재: consumer_staples
