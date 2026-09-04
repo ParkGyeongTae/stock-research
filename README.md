@@ -20,6 +20,7 @@
 - [`docs/authoring/skill-authoring-guide.md`](./docs/authoring/skill-authoring-guide.md) — `.claude/skills/` 스킬 작성 규칙 (Anthropic 공식 [Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) 한국어 정리)
 - [`docs/authoring/claude-code-guide.md`](./docs/authoring/claude-code-guide.md) — Claude Code 활용 규칙 (Anthropic 공식 [Best practices for Claude Code](https://code.claude.com/docs/en/best-practices) 한국어 정리)
 - [`docs/authoring/codex-guide.md`](./docs/authoring/codex-guide.md) — Codex 활용법 참고 (OpenAI 공식 [Best practices](https://learn.chatgpt.com/guides/best-practices) 한국어 정리)
+- [`docs/authoring/prompts-chat.md`](./docs/authoring/prompts-chat.md) — 최대 프롬프트 모음 레포 [prompts.chat](https://prompts.chat) 분석 (수록 프롬프트 2,162개 직접 집계)
 
 에이전트 지침만 저장소 루트에 남습니다 — 세션 시작 시 루트에서 읽히는 파일이기 때문입니다.
 

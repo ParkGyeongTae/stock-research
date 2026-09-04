@@ -4,3 +4,4 @@ nav:
   - 스킬 작성 가이드: skill-authoring-guide.md
   - Claude Code 활용 가이드: claude-code-guide.md
   - Codex 활용 가이드: codex-guide.md
+  - 프롬프트 모음 레포 읽는 법: prompts-chat.md
