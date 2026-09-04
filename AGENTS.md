@@ -1,6 +1,6 @@
 # AGENTS.md
 
-이 문서는 이 저장소에서 작업하는 AI 에이전트를 위한 **역할·행동 지침**입니다. 폴더 구조·명명 규칙·회사 폴더 파일별 역할·문서 작성 규칙은 [`authoring-guide.md`](./authoring-guide.md), 용어 정의는 [`docs/glossary.md`](./docs/glossary.md)가 마스터입니다 — 이 문서는 그 내용을 다시 옮기지 않고 참조만 하며, **어긋나면 그쪽이 항상 우선**입니다.
+이 문서는 이 저장소에서 작업하는 AI 에이전트를 위한 **역할·행동 지침**입니다. 폴더 구조·명명 규칙·회사 폴더 파일별 역할·문서 작성 규칙은 [`authoring-guide.md`](./docs/authoring/authoring-guide.md), 용어 정의는 [`docs/glossary.md`](./docs/glossary.md)가 마스터입니다 — 이 문서는 그 내용을 다시 옮기지 않고 참조만 하며, **어긋나면 그쪽이 항상 우선**입니다.
 
 > `CLAUDE.md`는 이 파일의 **심볼릭 링크**입니다. 지침을 고칠 땐 `AGENTS.md` 하나만 고치고, `CLAUDE.md`를 별도 파일로 만들지 마세요 — 링크가 끊기면서 지침이 둘로 갈라집니다.
 
@@ -18,7 +18,7 @@
 
 ### 초안을 받으면 먼저 훑는 것
 
-**먼저 [`authoring-guide.md`](./authoring-guide.md) "숫자를 다룰 때 반드시 지키는 것" 1~5번(할인율과 현금흐름의 짝 / GAAP·Non-GAAP 구분 / 부채총계 vs 이자부 차입금 / 평균·중앙값에 추정치(E) 혼입 / 주식분할 소급조정) 위반 여부부터 확인한다.** 그 위에 리뷰 시점에만 드러나는 것 둘을 추가로 본다:
+**먼저 [`authoring-guide.md`](./docs/authoring/authoring-guide.md) "숫자를 다룰 때 반드시 지키는 것" 1~5번(할인율과 현금흐름의 짝 / GAAP·Non-GAAP 구분 / 부채총계 vs 이자부 차입금 / 평균·중앙값에 추정치(E) 혼입 / 주식분할 소급조정) 위반 여부부터 확인한다.** 그 위에 리뷰 시점에만 드러나는 것 둘을 추가로 본다:
 
 1. **1단계 DCF의 결론이 다른 방법론과 크게 어긋날 때** — "모델의 한계"라고 각주만 달고 종합 평균에는 그대로 넣는 처리는 넘기지 말 것. 한계가 결론을 좌우할 정도면 가중치를 낮추거나 빼는 게 맞다.
 2. **자본구조 차이** — 순부채가 큰 회사와 순현금이 두꺼운 회사를 PER만으로 비교했는지(EV 기준을 함께 봐야 함).
@@ -45,7 +45,7 @@ Bull Case에도 같은 잣대를 적용하되, 이 저장소는 낙관 편향이
 - **투자 권유가 아니다.** 이 저장소는 주인이 실제 투자 판단에 참고하는 개인 리서치 아카이브다. "사라/팔아라" 같은 단정 대신 근거와 불확실성(가정이 바뀌면 결론도 바뀜)을 함께 제시한다.
 - **문서는 부분 수정하지 말고 다시 만든다.** 회사·섹터·거시지표 문서를 "개선/업데이트/최신화"해 달라는 요청도 해당 파일(회사는 폴더 전체)을 지우고 현재 템플릿으로 새로 만드는 방식으로 처리한다 — 부분 수정하면 눈에 띄는 절만 고치고 옛 구조가 남는다. 지우기 전에 **웹에서 다시 못 구하는 것**(뉴스 로그, 회사 고유 `!!! warning`, 섹터가 합의한 사업 고유 지표, 방법론 채택 사유)만 추려 옮긴다. 지운 내용은 git 히스토리에 남는다.
 - **틀린 걸 발견하면 조용히 고치지 않는다.** 기존 문서의 계산 오류나 정의 혼동을 찾으면, 고치기 전에 **무엇이 왜 틀렸고 결론이 어떻게 달라지는지** 먼저 말한다.
-- **용어를 새로 정의하지 않는다.** 이미 [`glossary.md`](./docs/glossary.md)·`docs/concepts/`·`docs/sectors/<sector>/00_glossary.md`에 있는 용어는 그 정의를 따르고, 못 보던 개념이 필요하면 회사 문서가 아니라 그쪽을 먼저 갱신한다. **두 개 이상의 섹터가 쓰는 용어만 글로서리에 올리고, 한 섹터 전용이면 그 섹터의 `00_glossary.md`에 둔다** — 판정 기준은 [`authoring-guide.md`](./authoring-guide.md) "섹터 전용 용어"가 마스터다.
+- **용어를 새로 정의하지 않는다.** 이미 [`glossary.md`](./docs/glossary.md)·`docs/concepts/`·`docs/sectors/<sector>/00_glossary.md`에 있는 용어는 그 정의를 따르고, 못 보던 개념이 필요하면 회사 문서가 아니라 그쪽을 먼저 갱신한다. **두 개 이상의 섹터가 쓰는 용어만 글로서리에 올리고, 한 섹터 전용이면 그 섹터의 `00_glossary.md`에 둔다** — 판정 기준은 [`authoring-guide.md`](./docs/authoring/authoring-guide.md) "섹터 전용 용어"가 마스터다.
 
 ### 커밋·브랜치·푸시 정책
 
@@ -80,8 +80,9 @@ Bull Case에도 같은 잣대를 적용하되, 이 저장소는 낙관 편향이
 
 ## 참고 문서
 
-- [문서 작성 가이드](./authoring-guide.md) — **폴더 구조·명명 규칙·회사 폴더 파일별 역할·작성 규칙·신규 추가 절차의 마스터**
-- [차트 생성 가이드](./chart-generation-guide.md) — 기술적 분석·macro 차트 생성 스크립트 사용법·재현 파라미터의 마스터
+- [문서 작성 가이드](./docs/authoring/authoring-guide.md) — **폴더 구조·명명 규칙·회사 폴더 파일별 역할·작성 규칙·신규 추가 절차의 마스터**
+- [차트 생성 가이드](./docs/authoring/chart-generation-guide.md) — 기술적 분석·macro 차트 생성 스크립트 사용법·재현 파라미터의 마스터
 - [작업 스킬 모음](./.claude/skills/) — 문서를 만들거나 다시 만드는 절차를 코드화한 스킬(`create-company-doc`·`create-macro-doc`). **신규 작성·개선 요청을 받으면 매번 절차를 새로 구성하지 말고 먼저 해당하는 스킬이 있는지 확인할 것**
-- 스킬 문서 자체를 고칠 땐 Anthropic [Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)를 따른다 — `SKILL.md`는 절차만 담아 500줄 안쪽으로 두고, 규칙의 근거·실측 서사·조건부로만 쓰는 명령은 같은 폴더 `reference/`로 내려 필요할 때만 읽게 한다
+- [스킬 작성 가이드](./docs/authoring/skill-authoring-guide.md) — **스킬 문서(`SKILL.md`·`reference/`) 자체를 만들거나 고칠 때의 마스터.** Anthropic [Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)를 한국어로 정리한 것이라 **원문과 갈리면 원문이 우선**이다. 그중 이 저장소에서 특히 지키는 것: `SKILL.md`는 절차만 담아 500줄 안쪽으로 두고, 규칙의 근거·실측 서사·조건부로만 쓰는 명령은 같은 폴더 `reference/`로 내려 필요할 때만 읽게 한다. 스킬 이름은 행위형(`create-company-doc`)으로 통일하고, `description`에는 발동시키고 싶은 표현("개선해줘"·"최신화해줘" 등)을 실제로 적어 둔다 — 스킬 선택은 `description`만 보고 이뤄진다
+- [Claude Code 활용 가이드](./docs/authoring/claude-code-guide.md) — 환경 설정·프롬프트·세션 관리·자동화. Anthropic [Best practices for Claude Code](https://code.claude.com/docs/en/best-practices)의 한국어 정리이며 **원문이 우선**이다. 이 저장소의 검증 루프(`mkdocs build` 경고 · `> ⚠️` grep · 인용처 추적)를 작업 지시에 붙이는 법이 마지막 절에 있다
 - [용어집](./docs/glossary.md) · [개념 정리](./docs/concepts/) · [회사/섹터 템플릿](./docs/.template/) · [사이트 첫 페이지](./docs/index.md)

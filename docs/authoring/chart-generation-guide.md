@@ -1,6 +1,6 @@
 # 차트 생성 가이드
 
-이 문서는 `scripts/gen_technical_chart.py`·`scripts/gen_index_overlay_chart.py`로 캔들 차트·비교 차트를 생성할 때 지키는 규칙을 모아둡니다 — 회사 문서의 `09_technical_daily.md`·`10_technical_weekly.md`, `docs/macro/`의 거시지표 문서 모두 여기 규칙을 따릅니다. 폴더 구조·파일별 역할의 마스터는 [`authoring-guide.md`](./authoring-guide.md)이고, 이 문서는 그중 차트 생성이라는 한 가지 절차만 떼어내 다룹니다 — 같은 이유로 `docs/` 밖 저장소 루트에 둡니다.
+이 문서는 `scripts/gen_technical_chart.py`·`scripts/gen_index_overlay_chart.py`로 캔들 차트·비교 차트를 생성할 때 지키는 규칙을 모아둡니다 — 회사 문서의 `09_technical_daily.md`·`10_technical_weekly.md`, `docs/macro/`의 거시지표 문서 모두 여기 규칙을 따릅니다. 폴더 구조·파일별 역할의 마스터는 [문서 작성 가이드](./authoring-guide.md)이고, 이 문서는 그중 차트 생성이라는 한 가지 절차만 떼어내 다룹니다 — 같은 이유로 `docs/authoring/`에 나란히 둡니다.
 
 ---
 
@@ -47,7 +47,7 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
   --adj-note "환율 원자료(조정 없음)"
 ```
 
-이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`) 중 맞는 곳에 두세요 — 실제 예시는 [`foreign_exchange/usd_krw.md`](./docs/macro/foreign_exchange/usd_krw.md)·[`rates/treasury_10y.md`](./docs/macro/rates/treasury_10y.md)를 참고하세요.
+이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`) 중 맞는 곳에 두세요 — 실제 예시는 [`foreign_exchange/usd_krw.md`](../macro/foreign_exchange/usd_krw.md)·[`rates/treasury_10y.md`](../macro/rates/treasury_10y.md)를 참고하세요.
 
 ## macro 문서의 산문은 시점에 종속되지 않게 씁니다
 

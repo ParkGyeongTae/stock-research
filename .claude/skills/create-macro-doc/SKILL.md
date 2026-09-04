@@ -31,8 +31,8 @@ description: 거시지표 참고 문서(`docs/macro/**`)를 만들거나 다시 
 
 - **카테고리**: `docs/macro/{foreign_exchange,rates,bonds,equities,metals,energy,cryptocurrency}/` 중 성격이 맞는 곳. 일곱 개 어디에도 안 맞는 새 자산군이면 폴더를 만들고 `docs/macro/.pages`에 추가한다.
 - **파일명**: snake_case, 티커가 아니라 사람이 읽는 이름(`usd_krw.md`, `treasury_10y.md`).
-- **재생성이면 `chart-generation-guide.md` "macro 문서 재현 파라미터" 표에서 그 문서 행을 가져온다** — 티커·옵션·조정 각주의 단일 출처다. 표에 행이 없는 구세대 문서면 이번에 추가한다.
-- **신규면 Yahoo Finance 티커를 WebSearch로 확인한다**(추측 금지 — `KRW=X`·`GC=F`·`^TNX`처럼 비직관적 표기가 많다). 주가가 아닌 시계열은 `--symbol`·`--symbol-pos`·`--unit-label`·`--adj-note`가 필요하며 문법은 `chart-generation-guide.md` "주가가 아닌 시계열에 쓰기"가 마스터다. 같은 카테고리의 기존 행을 패턴으로 삼으면 빠르다.
+- **재생성이면 `docs/authoring/chart-generation-guide.md` "macro 문서 재현 파라미터" 표에서 그 문서 행을 가져온다** — 티커·옵션·조정 각주의 단일 출처다. 표에 행이 없는 구세대 문서면 이번에 추가한다.
+- **신규면 Yahoo Finance 티커를 WebSearch로 확인한다**(추측 금지 — `KRW=X`·`GC=F`·`^TNX`처럼 비직관적 표기가 많다). 주가가 아닌 시계열은 `--symbol`·`--symbol-pos`·`--unit-label`·`--adj-note`가 필요하며 문법은 `docs/authoring/chart-generation-guide.md` "주가가 아닌 시계열에 쓰기"가 마스터다. 같은 카테고리의 기존 행을 패턴으로 삼으면 빠르다.
 
 ## 2. 파일 삭제 후 차트 생성
 
@@ -51,13 +51,13 @@ uv run python scripts/gen_technical_chart.py "<TICKER>" --name "<한글명>" --i
 - **제목 + intro 블록쿼트 1문장** — 이 지표가 무엇의 프록시인지, 관련 문서와의 관계만. 커버리지 연관성 경고·투자 판단 면책·스크립트 공유 각주 **셋은 넣지 않는다**(전 문서에서 제거된 보일러플레이트).
 - **`## 1. 차트 — 최근 5년 주봉`** — 2단계에서 받은 파일 내용을 **스크립트로** 그대로 삽입한다.
 - **`## 2. 해석 참고 — 상승/하락이 의미하는 것`** — 스크립트가 만들지 않는다. 사람이 쓴다. "**상승**: …", "**하락**: …" 두 불릿 + 해석이 갈리거나 다른 요인이 섞이는 경우의 한계를 짚는 세 번째 불릿. 교과서적인 경제적 해석만 적고 지금 시점의 전망·투자 판단은 적지 않는다.
-- **intro와 `2. 해석`에는 시점 종속 서술을 넣지 않는다** — 수치·날짜·순위·기간은 차트에만 둔다. 사람이 쓴 산문은 재생성해도 고칠 필요가 없어야 한다. 금지 표현 목록과 조건부 서술 예시는 `chart-generation-guide.md` "macro 문서의 산문은 시점에 종속되지 않게 씁니다"가 마스터.
-- **`## 갱신 방법`·`## 관련 문서`·`## 참고 자료`·지지/저항 표·방법론 절은 넣지 않는다.** 전부 골격에서 걷어낸 것들이다 — 지지/저항 레벨은 차트 SVG 안에 점선으로 이미 있고, 재생성 커맨드는 `chart-generation-guide.md`의 재현 파라미터 표가, 문서 간 이동은 `.pages` 내비게이션이 대신한다. **구세대 문서를 재생성할 때 이 절들이 남아 있어도 되살리지 않는다.** 다른 자산을 꼭 가리켜야 하면 intro 블록쿼트에서 한 번만 링크한다.
+- **intro와 `2. 해석`에는 시점 종속 서술을 넣지 않는다** — 수치·날짜·순위·기간은 차트에만 둔다. 사람이 쓴 산문은 재생성해도 고칠 필요가 없어야 한다. 금지 표현 목록과 조건부 서술 예시는 `docs/authoring/chart-generation-guide.md` "macro 문서의 산문은 시점에 종속되지 않게 씁니다"가 마스터.
+- **`## 갱신 방법`·`## 관련 문서`·`## 참고 자료`·지지/저항 표·방법론 절은 넣지 않는다.** 전부 골격에서 걷어낸 것들이다 — 지지/저항 레벨은 차트 SVG 안에 점선으로 이미 있고, 재생성 커맨드는 `docs/authoring/chart-generation-guide.md`의 재현 파라미터 표가, 문서 간 이동은 `.pages` 내비게이션이 대신한다. **구세대 문서를 재생성할 때 이 절들이 남아 있어도 되살리지 않는다.** 다른 자산을 꼭 가리켜야 하면 intro 블록쿼트에서 한 번만 링크한다.
 - **최하단 `*작성일: YYYY-MM-DD*`** — 오늘 날짜는 `# currentDate` → `date +%Y-%m-%d` → 확인 불가 시 사용자에게 확인.
 
 ## 4. 재현 파라미터 표·`.pages` 등록
 
-- 신규면 `chart-generation-guide.md` "macro 문서 재현 파라미터" 표에 행을 추가한다. 조정 각주가 기존 코드(FUT/IDX/FX/ETF/YLD/DISC 등)와 같은 문구면 그 코드를 재사용하고, 다르면 새 코드를 만들어 범례에도 추가한다.
+- 신규면 `docs/authoring/chart-generation-guide.md` "macro 문서 재현 파라미터" 표에 행을 추가한다. 조정 각주가 기존 코드(FUT/IDX/FX/ETF/YLD/DISC 등)와 같은 문구면 그 코드를 재사용하고, 다르면 새 코드를 만들어 범례에도 추가한다.
 - 해당 카테고리의 `.pages`(예: `docs/macro/foreign_exchange/.pages`) `nav:`에 파일명을 추가한다. 빠뜨리면 경고 없이 내비게이션에서 사라진다. 재생성이면 이미 등록돼 있다.
 
 ## 5. 마무리 검증
@@ -78,4 +78,4 @@ uv run python scripts/gen_technical_chart.py "<TICKER>" --name "<한글명>" --i
 
 ## 참고
 
-폴더 구조·역할은 `authoring-guide.md`, 생성 커맨드 문법과 재현 파라미터는 `chart-generation-guide.md`가 마스터다. 여러 자산을 겹쳐 비교하는 `comparison.md` 문서는 `gen_index_overlay_chart.py`를 쓰며, 파라미터는 같은 가이드의 "여러 자산을 겹쳐 비교하는 문서" 표에 있다.
+폴더 구조·역할은 `docs/authoring/authoring-guide.md`, 생성 커맨드 문법과 재현 파라미터는 `docs/authoring/chart-generation-guide.md`가 마스터다. 여러 자산을 겹쳐 비교하는 `comparison.md` 문서는 `gen_index_overlay_chart.py`를 쓰며, 파라미터는 같은 가이드의 "여러 자산을 겹쳐 비교하는 문서" 표에 있다.

@@ -1,6 +1,6 @@
 ---
 name: create-company-doc
-description: 회사 문서 폴더(`docs/sectors/<sector>/<company>/` 01~11)를 만들거나 다시 만든다. "새로 만들어줘"·"커버리지 시작하자" 같은 신규 요청뿐 아니라 "개선해줘"·"업데이트해줘"·"최신화해줘"처럼 이미 있는 회사 폴더를 손보는 요청에도 이 스킬을 쓴다 — 이 저장소는 부분 수정 대신 폴더를 통째로 지우고 다시 만들기 때문이다. 섹터·폴더명 판단, SEC XBRL로 GAAP 수치 확보, 밸류에이션 방법론 적용 여부, Bear Case 3요소, 마무리 검증까지 `AGENTS.md`·`authoring-guide.md`의 규칙대로 한 세션에서 끝낸다.
+description: 회사 문서 폴더(`docs/sectors/<sector>/<company>/` 01~11)를 만들거나 다시 만든다. "새로 만들어줘"·"커버리지 시작하자" 같은 신규 요청뿐 아니라 "개선해줘"·"업데이트해줘"·"최신화해줘"처럼 이미 있는 회사 폴더를 손보는 요청에도 이 스킬을 쓴다 — 이 저장소는 부분 수정 대신 폴더를 통째로 지우고 다시 만들기 때문이다. 섹터·폴더명 판단, SEC XBRL로 GAAP 수치 확보, 밸류에이션 방법론 적용 여부, Bear Case 3요소, 마무리 검증까지 `AGENTS.md`·`docs/authoring/authoring-guide.md`의 규칙대로 한 세션에서 끝낸다.
 ---
 
 # 회사 문서 작성 (신규 · 재생성 공통)
@@ -143,7 +143,7 @@ Bear Case에 **트리거 / 하방 밸류에이션 / 확인·기각 신호** 셋�
 
 ### 5-1. 차트 (`09`·`10`)
 
-SVG·레벨 표·방법론 수치를 손으로 만들지 않는다 — 커맨드 마스터는 `chart-generation-guide.md` "기술적 분석 차트 생성". 일봉·주봉을 한 콜에 내고 산출물은 반드시 파일로 받는다:
+SVG·레벨 표·방법론 수치를 손으로 만들지 않는다 — 커맨드 마스터는 `docs/authoring/chart-generation-guide.md` "기술적 분석 차트 생성". 일봉·주봉을 한 콜에 내고 산출물은 반드시 파일로 받는다:
 
 ```bash
 W=.work/<company>
@@ -170,7 +170,7 @@ echo "@@@ 종가 정합 @@@"; grep -rn "<종가값>" --include='*.md' docs/secto
 uv run mkdocs build 2>&1 | grep -i "unrecognized relative link" | head
 ```
 
-- **`> ⚠️` 지침 블록이 하나도 남지 않았는지** — 위 `grep`이 비어야 한다. `!!! …`·`??? …`는 독자용이니 실제 내용으로 채워 남긴다(마스터: `authoring-guide.md`의 **표기법이 곧 "발행 여부"를 뜻한다** 항목)
+- **`> ⚠️` 지침 블록이 하나도 남지 않았는지** — 위 `grep`이 비어야 한다. `!!! …`·`??? …`는 독자용이니 실제 내용으로 채워 남긴다(마스터: `docs/authoring/authoring-guide.md`의 **표기법이 곧 "발행 여부"를 뜻한다** 항목)
 - `carryover.md`에 추려둔 항목이 새 문서에 실제로 반영됐는지
 - `04_metrics.md`를 인용한 문서(`05`·`06`·`07`·`11`, 종가가 겹치면 `09`·`10`)가 서로 일치하는지 — grep으로 실제 검색할 것
 - `*작성일*` — 오늘 날짜는 `# currentDate` → `date +%Y-%m-%d` → 확인 불가 시 사용자에게 확인
@@ -191,4 +191,4 @@ uv run mkdocs build 2>&1 | grep -i "unrecognized relative link" | head
 
 ## 참고
 
-폴더 구조·파일별 역할의 마스터는 `authoring-guide.md`, 검증·리뷰 기준은 `AGENTS.md`다 — 이 스킬은 그 규칙을 작성 흐름 순서로 적용할 뿐 새 기준을 만들지 않는다. 차트 스크립트는 `chart-generation-guide.md`, 재무 수치 스크립트는 `scripts/fetch_sec_facts.py`의 docstring이 마스터.
+폴더 구조·파일별 역할의 마스터는 `docs/authoring/authoring-guide.md`, 검증·리뷰 기준은 `AGENTS.md`다 — 이 스킬은 그 규칙을 작성 흐름 순서로 적용할 뿐 새 기준을 만들지 않는다. 차트 스크립트는 `docs/authoring/chart-generation-guide.md`, 재무 수치 스크립트는 `scripts/fetch_sec_facts.py`의 docstring이 마스터.
