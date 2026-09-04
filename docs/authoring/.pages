@@ -1,5 +1,4 @@
 nav:
-  - 생성형 AI 입문: genai-for-beginners.md
   - Claude Code 활용 가이드: claude-code-guide.md
   - Codex 활용 가이드: codex-guide.md
   - 스킬 작성 가이드: skill-authoring-guide.md
