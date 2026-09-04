@@ -1,6 +1,6 @@
 # Claude Code 활용 가이드
 
-이 문서는 Anthropic의 [Best practices for Claude Code](https://code.claude.com/docs/en/best-practices)를 한국어로 정리한 것입니다. 스킬 하나를 잘 쓰는 법이 아니라 **Claude Code라는 도구 자체를 잘 쓰는 법** — 환경 설정, 프롬프트 쓰는 법, 세션 관리, 자동화 — 을 다룹니다. 스킬 파일(`SKILL.md`) 작성법은 [스킬 작성 가이드](./skill-authoring-guide.md)가 마스터입니다.
+이 문서는 Anthropic의 [Best practices for Claude Code](https://code.claude.com/docs/en/best-practices)를 한국어로 정리한 것입니다. 스킬 하나를 잘 쓰는 법이 아니라 **Claude Code라는 도구 자체를 잘 쓰는 법** — 환경 설정, 프롬프트 쓰는 법, 세션 관리, 자동화 — 을 다룹니다. 스킬 파일 작성법은 [스킬 작성 가이드](./skill-authoring-guide.md)가 마스터입니다.
 
 ---
 
