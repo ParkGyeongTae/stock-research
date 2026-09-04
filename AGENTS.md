@@ -85,7 +85,3 @@ Bull Case에도 같은 잣대를 적용하되, 이 저장소는 낙관 편향이
 - [작업 스킬 모음](./.claude/skills/) — 문서를 만들거나 다시 만드는 절차를 코드화한 스킬(`create-company-doc`·`create-macro-doc`). **신규 작성·개선 요청을 받으면 매번 절차를 새로 구성하지 말고 먼저 해당하는 스킬이 있는지 확인할 것**
 - 스킬 문서 자체를 고칠 땐 Anthropic [Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)를 따른다 — `SKILL.md`는 절차만 담아 500줄 안쪽으로 두고, 규칙의 근거·실측 서사·조건부로만 쓰는 명령은 같은 폴더 `reference/`로 내려 필요할 때만 읽게 한다
 - [용어집](./docs/glossary.md) · [개념 정리](./docs/concepts/) · [회사/섹터 템플릿](./docs/.template/) · [사이트 첫 페이지](./docs/index.md)
-
----
-
-*작성일: 2026-09-04*
