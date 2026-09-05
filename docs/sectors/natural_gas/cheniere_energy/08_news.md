@@ -1,6 +1,6 @@
 # 최근 뉴스 / 이슈
 
-> 2026년 3월 카타르 라스라판 피격이라는 외부 공급 충격과, CCL Stage 3 트레인의 순차 완공이라는 내부 물량 증가가 겹치면서 연간 가이던스가 두 차례 상향된 흐름이 이어지고 있다.
+> CCL Stage 3 7기 트레인이 2026년 8월 전부 완공되며 **내부 물량 증가가 확정 국면에 들어선** 동시에, 카타르 라스라판 피격에서 시작된 외부 공급 충격이 호르무즈 해협 봉쇄로 확대되며 **국제 LNG 스프레드가 3년 반 만의 고점**에 있다 — 구조적 요인과 순환적 요인이 같은 방향으로 겹친 상태다.
 
 !!! note "이 문서의 성격"
     발생 순으로 쌓는 **시점성 로그**다(최신이 위). 여기서는 투자 결론을 내리지 않는다 — 판단에 영향을 주는 항목은 [밸류에이션 / 적정주가](./06_valuation.md)·[투자 판단](./07_investment.md)을 직접 갱신하고, 여기에는 반영했다는 표시만 남긴다.
@@ -11,6 +11,8 @@
 
 | 날짜 | 이슈 | 내용 | 관련 문서 | 출처 |
 |------|------|------|-----------|------|
+| **2026-08~09** | **호르무즈 해협 봉쇄 확대 — 세계 LNG 공급 6% 감소, TTF 3년 반 최고** | 3월 라스라판 피격 이후 이어지던 카타르 불가항력이 8월 들어 확대됐다. 8월 초 한 달 사이 두 번째 LNG 운반선이 호르무즈 해협에서 피격됐고, QatarEnergy의 불가항력은 **9월 중순까지 연장**됐다(7월 초 기준 7기 트레인 중 4기만 가동). 해협이 사실상 막히면서 **세계 LNG 공급이 전년 대비 6% 이상 감소**했고, 유럽 TTF는 9월 초 **€72/MWh를 넘겨 3년 반 만의 최고치**를 기록했다(2주간 +20% 이상). 유럽 저장률이 전년보다 낮은 상태로 난방 시즌에 진입한다는 점이 가격을 떠받치고 있다.<br>같은 기간 LNG 주가는 8월 21일 $277.51에서 **9월 2일 사상 최고 종가 $295.86**을 찍고 9월 4일 $292.00로 마감했다 — **개별 기업 이슈가 아니라 LNG 섹터 전체의 공급 충격이 다시 확대된 것**이다 | → 핵심 지표 A.2·D절, 밸류에이션 / 적정주가 3. 향후 3개년 — 적정주가 전망, 투자 판단 3. 리스크 (약점 / Bear Case) 리스크 1에 반영 | [Euronews](https://www.euronews.com/2026/08/03/second-tanker-with-qatari-lng-struck-in-hormuz-within-a-month-as-force-majeure-widens) · [CNBC](https://www.cnbc.com/2026/07/01/qatarenergy-extend-force-majeure-september-italys-edison-iran-war-.html) · [TradingEconomics — EU Natural Gas](https://tradingeconomics.com/commodity/eu-natural-gas) · [stockanalysis](https://stockanalysis.com/stocks/lng/) |
+| **2026-08-31** | **CCL Stage 3 프로젝트 전체 실질 완공 · 누적 5,000번째 카고** | 8월 28일 Bechtel이 CCL Stage 3의 **7번(마지막) 트레인**의 관리·보관·통제권을 인도하면서 프로젝트 전체가 실질 완공됐다. 이로써 가동 중 액화 능력이 **약 56 mtpa**(프로젝트 착수 전 대비 20% 초과 증가)가 됐고, 건설 중 물량은 **약 5 mtpa**(CCL Midscale Trains 8 & 9)만 남았다. 8월 29일에는 사빈패스에서 누적 **5,000번째 카고**(선박 *Yari LNG*, 아시아행)를 선적했다 — 첫 카고(2016년 2월) 이후 10년, 누적 공급 3억 4천만 톤 초과 | → 핵심 지표 C절·D절, 개요 2. 산업 / 시장 내 위치, 역사 / 주요 이벤트 연혁, 재무 / 실적 1. 성장성, 투자 판단 1. 투자 포인트 강점 2에 반영 | [Cheniere IR](https://lngir.cheniere.com/news-events/press-releases/detail/345/cheniere-announces-substantial-completion-of-ccl-stage-3) |
 | 2026-08-06 | **2026년 2분기 실적 · 가이던스 재상향** | 매출 $5,732M, Consolidated Adjusted EBITDA $1,804M(+27.4% YoY), Cheniere Distributable Cash Flow $1,170M. FY2026 Adjusted EBITDA 가이던스를 $7.25~7.75B → **$7.90~8.40B**로, DCF 가이던스를 $4.75~5.25B → **$5.30~5.80B**로 상향. 2026년 생산 전망도 52~54 mtpa → **53~54 mtpa**로 하단 상향 | → 핵심 지표 A·B절, 밸류에이션 / 적정주가 3. 향후 3개년 — 적정주가 전망에 반영 | [8-K Ex-99.1](https://www.sec.gov/Archives/edgar/data/3570/000000357026000030/cei20262ndqtrerex991.htm) |
 | 2026-07-28 | 분기배당 선언 | 2026년 2분기분 주당 **$0.555**, 8월 18일 지급. 2025년 3분기 인상 이후 4개 분기째 동일 수준 유지 | → 핵심 지표 A.4 현금흐름·주주환원 지표에 반영 | [8-K Ex-99.1](https://www.sec.gov/Archives/edgar/data/3570/000000357026000025/cei2026ex991dividendjuly.htm) |
 | 2026-07-14 | 신규 독립이사 선임 | McKesson 前 CFO **Britt Vitalone**을 이사로 선임, 감사·보상위원회 배치. 2026년 5월 의장·CEO 겸직 전환 이후의 이사회 보강 | → CEO / 경영진 6. 지분 구조 / 거버넌스에 반영 | [8-K Ex-99.1](https://www.sec.gov/Archives/edgar/data/3570/000000357026000023/ceiex991-ceipressreleasevi.htm) |
@@ -31,4 +33,4 @@
 
 ---
 
-*작성일: 2026-08-24*
+*작성일: 2026-09-05*
