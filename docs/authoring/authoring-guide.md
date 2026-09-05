@@ -178,7 +178,7 @@ A·B절의 GAAP 수치는 공시를 눈으로 옮겨 적지 말고 `scripts/fetc
 rm -rf docs/sectors/<sector>/<company-name>
 cp -r docs/authoring/template/company docs/sectors/<sector>/<company-name>
 
-# 2. 파일 내용 채우기 — 전부 필수, 삭제하지 않는다. 01~10을 먼저 채우고 11은 가장 마지막
+# 2. 파일 내용 채우기 — 전부 필수, 삭제하지 않는다. 01~10을 먼저 채우고 00은 가장 마지막
 ```
 
 **섹터 폴더에는 개요 문서를 두지 않는다.** 산업 밸류체인·시장 규모·구조적 리스크는 각 회사 `01_overview.md`의 "산업 / 시장 내 위치"에서 **그 회사 관점으로만** 다룬다. 섹터 폴더에 둘 수 있는 것은 회사 폴더와, 필요한 경우 정의만 담는 `00_glossary.md`뿐이다(위 "섹터 전용 용어" 참고).
