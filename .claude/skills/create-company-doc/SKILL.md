@@ -49,7 +49,7 @@ grep -l '^> ⚠️' docs/sectors/<sector>/<company>/*.md 2>/dev/null | sed 's#.*
 ```bash
 mkdir -p .work/<company>
 rm -rf docs/sectors/<sector>/<company>
-cp -r docs/.template/company docs/sectors/<sector>/<company>
+cp -r docs/authoring/template/company docs/sectors/<sector>/<company>
 ```
 
 사용자가 섹터를 지정하지 않았으면 `ls docs/sectors/`로 목록을 확인해 제안한 뒤 진행한다. 폴더명은 소문자 스네이크케이스(섹터 `electronic_design_automation`, 회사 `synopsys`). 복합기업은 매출 비중이 아니라 **"이 저장소에서 그 회사를 보는 이유"가 되는 사업**으로 섹터를 정한다. 섹터 폴더를 새로 만들면 `docs/sectors/.pages`에 등록한다(빠뜨리면 경고 없이 내비게이션에서 사라진다).

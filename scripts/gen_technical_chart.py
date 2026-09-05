@@ -2,7 +2,7 @@
 """09_technical_daily.md(일봉·1년)·10_technical_weekly.md(주봉·5년) 용
 캔들차트(SVG)·지지/저항 레벨 생성기.
 
-`docs/.template/company/09_technical_daily.md`·`10_technical_weekly.md`가
+`docs/authoring/template/company/09_technical_daily.md`·`10_technical_weekly.md`가
 요구하는 기계적 산출물(캔들 SVG 블록, §2 레벨 표, §4 방법론 수치)을 만든다.
 서술·판단은 만들지 않는다.
 
