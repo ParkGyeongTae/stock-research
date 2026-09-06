@@ -45,7 +45,7 @@
 
 **할인율을 하나로 정하지 않은 이유.** CAPM으로 자기자본비용을 구하려 5년 주봉 수익률로 베타를 직접 계산하면 **0.38**(3년 기준 0.14)이 나온다. 그런데 같은 기간 이 종목의 연환산 변동성은 **30.9%**다. 시장(S&P 500)과 상관이 낮을 뿐 위험 자체가 낮은 것이 아니라, 국제 LNG 가격·지정학이라는 시장과 무관한 요인이 주가를 움직인다는 뜻이다. 이 베타를 그대로 쓰면 무위험이자율 4.67%([미국 10년물 국채금리](../../../macro/rates/treasury_10y.md) 현재값, 2026-08-24 종가) 기준 자기자본비용이 6.6%로 계산되는데, 30% 변동성 자산의 요구수익률로는 명백히 낮다 — **CAPM이 작동하지 않는 사례**다. 따라서 자기자본비용을 8~11% 범위로 두고, 시가 기준 자본구조(자기자본 $77,398M = 시가총액 $60,298M + NCI 시가 $17,100M, 차입금 $24,043M → E 76.3% / D 23.7%)와 세후 타인자본비용(최근 발행금리 5.35~6.05%, 실효세율 18% 적용)을 결합해 **WACC 7.3~9.5%**를 얻었다. 기본값 8.5%는 그 범위의 중앙이며, 4-A에서 7.5~10.5%로 흔들어본다.
 
-> 무위험이자율 4.67%(2026-08-24)는 같은 섹터의 [EQT](../eqt/06_valuation.md)·[Expand Energy](../expand_energy/06_valuation.md)와 같은 macro 문서·같은 기준일을 쓴 것이다. [Kinder Morgan](../kinder_morgan/06_valuation.md)·[Williams](../williams_companies/06_valuation.md)는 4.74%(2026-08-21)로 0.07%p 높은데, 그 문서들이 더 이른 시점에 작성됐기 때문이며 결론을 바꿀 크기가 아니다.
+> 무위험이자율 4.67%(2026-08-24)는 같은 섹터의 [EQT](../eqt/06_valuation.md)·[Expand Energy](../expand_energy/06_valuation.md)와 같은 macro 문서·같은 기준일을 쓴 것이다. [Kinder Morgan](../kinder_morgan/06_valuation.md)도 같은 4.67%(2026-08-24)를 쓴다. [Williams](../williams_companies/06_valuation.md)만 4.71%(2026-08-21)로 0.04%p 높은데, 그 문서가 더 이른 시점에 작성됐기 때문이며 결론을 바꿀 크기가 아니다.
 
 **동종업계 평균 배수를 목표로 쓰지 않은 이유.** 순수 LNG 수출 상장사는 사실상 Venture Global(VG)뿐인데, VG는 상당 물량을 시운전 단계 스팟으로 팔아 국제 가격 노출도가 Cheniere보다 훨씬 크다(2026년 Consolidated Adjusted EBITDA 가이던스 $8.7~9.1B를 "미판매 카고 액화수수료 $12.50~13.50/MMBtu 가정"으로 명시할 정도다). 사업 구조가 다른 한 회사의 배수를 목표로 옮기면 오차가 그대로 들어온다. 같은 섹터의 [Williams](../williams_companies/06_valuation.md)·[Kinder Morgan](../kinder_morgan/06_valuation.md)(미드스트림)과 [EQT](../eqt/06_valuation.md)·[Expand Energy](../expand_energy/06_valuation.md)(업스트림)는 밸류체인 위치 자체가 달라 더 부적합하다. 그래서 **Cheniere 자신의 3개년 배수 밴드**를 기준으로 삼았다.
 
@@ -185,4 +185,4 @@ FY2027(E) 기준(Adjusted EBITDA $8,500M, 발행주식수 195.0백만 주, 순�
 
 ---
 
-*작성일: 2026-09-05*
+*작성일: 2026-09-06*
