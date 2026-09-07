@@ -1,6 +1,6 @@
 # 역사 / 주요 이벤트
 
-> 1986년 GE 연구소에서 분사한 논리합성 도구 회사로 출발해, 30여 년간 EDA 1위를 지키다 2024~2025년 두 건의 거래(소프트웨어 보안 사업 매각, Ansys 인수)로 "칩 설계 소프트웨어 회사"에서 "실리콘부터 시스템까지의 엔지니어링 소프트웨어 회사"로 정체성을 다시 정의했다.
+> 1986년 창업 이래 인수로 커 온 회사지만, **최근 3년의 두 결정(Software Integrity 매각, Ansys 인수)이 재무제표의 계보를 두 번 끊었다.** 과거 수치를 인용할 때는 이 두 시점을 반드시 확인해야 한다.
 
 ---
 
@@ -8,14 +8,12 @@
 
 | 시점 (연도.월) | 내용 |
 |----------------|------|
-| 1986.12 | **설립** — Aart de Geus가 General Electric의 논리합성 연구 프로젝트를 분사시켜 노스캐롤라이나에서 Optimal Solutions로 창업, 이후 Synopsys로 개명하고 캘리포니아로 본사 이전. 논리합성(logic synthesis) 자동화라는 단일 제품으로 EDA 시장에 진입 |
-| 1992.02 | **NASDAQ 상장** — 이후 인수를 통한 제품군 확장의 재원이 되는 주식 통화(currency)를 확보. 1990~2000년대에 걸쳐 검증(Verilog 시뮬레이션)·물리설계·설계 IP로 영역을 넓히며 단일 제품 회사에서 풀라인 EDA 벤더로 전환 |
-| 2024.01 | **창업자 CEO 체제 종료** — Sassine Ghazi가 CEO 취임, 공동창업자 Aart de Geus는 Executive Chair로 이동. 창업 후 38년 만의 승계이며, 직후 진행된 Ansys 인수·Software Integrity 매각이라는 두 건의 구조 재편이 새 경영진 체제에서 결정·집행됐다([CEO / 경영진](./03_ceo.md)) |
-| 2024.09 | **Software Integrity(소프트웨어 보안) 사업부 매각 완료** — Clearlake Capital·Francisco Partners에 매각(→ Black Duck Software). EDA 본업 밖의 사업을 정리해 Ansys 인수 재원과 경영 집중도를 확보한 거래다. 회계상으로는 이 사업이 **중단영업으로 재분류되면서 과거 전 기간 매출·이익이 소급 재작성**됐고, 그래서 재작성 전후 수치를 섞으면 성장률이 어긋난다([핵심 지표](./04_metrics.md) 상단 경고) |
-| 2025.07 | **Ansys 인수 완료(약 349억 달러)** — 현금+주식교환 방식. 회사 역사상 최대 거래로, 매출 규모를 한 단계 끌어올린 동시에 **자기자본이 $8,993M → $28,327M, 이자부 차입금이 $684.5M → $14,293M으로 뛰며 자본구조가 단절적으로 바뀌었다.** 이 시점을 기준으로 BPS·PBR·순부채·이자보상배율은 이전 기간과 같은 잣대로 비교할 수 없다([재무 / 실적](./05_financials.md) 3. 재무 건전성) |
-
-Sources: [Synopsys 회사 소개](https://www.synopsys.com/company.html) · [Synopsys Completes Acquisition of Ansys (2025-07-17)](https://www.prnewswire.com/news-releases/synopsys-completes-acquisition-of-ansys-302507582.html) · [Reasons Synopsys is selling its app security business — TechTarget](https://www.techtarget.com/searchsecurity/opinion/Reasons-Synopsys-is-selling-its-app-security-business)
+| **1986 / 1992.02** | Aart de Geus 등이 General Electric 연구팀을 기반으로 창업. 1992년 나스닥 상장 — 논리 합성(logic synthesis) 상용화를 발판으로 EDA 3사 구도의 한 축이 됐다. |
+| **2024.01** | **Sassine Ghazi 사장 → CEO 취임**(Aart de Geus는 이사회 의장으로 이동). 38년 만의 창업자 CEO 교체이며, 이후 "핵심 사업 집중 + 대형 인수"라는 자본배분 방향이 뚜렷해진다. ([회사 발표](https://news.synopsys.com/)) |
+| **2024.09.30** | **Software Integrity(소프트웨어 보안) 사업부 매각**(→ Black Duck). 이 매각으로 회사는 그 사업을 **중단영업으로 재분류하고 과거 전 기간을 계속영업 기준으로 소급 재작성**했다 — 매출은 FY2023 $5,843M → **$5,318M**으로, Non-GAAP EPS는 $11.19 → **$10.54**로 바뀌었다. **재작성 전 값을 쓰는 자료와 섞으면 성장률이 통째로 어긋난다.** |
+| **2025.07.17** | **Ansys 인수 완료 — 총 대가 $34,858.5M**(현금 취득분 제외 시 $33,926.7M). 주식교환이 포함돼 자기자본이 FY2024 $8,990.7M → FY2025 $28,327.6M으로 **3배 이상** 늘었고, 인수금융으로 이자부 차입금이 $684.5M → $14,293.4M으로 **20배** 늘었다. **BPS·PBR·순부채·EV·이자보상배율은 이 시점 전후를 같은 잣대로 비교할 수 없다.** ([10-Q 2026-07-31 주석](https://www.sec.gov/Archives/edgar/data/883241/000088324126000025/snps-20260731.htm)) |
+| **2026 상반기** | **Optical Solutions Group · PowerArtist RTL · Processor IP Solutions 3개 사업 매각**(9개월 누적 처분대가 $440.0M). 그 차익이 FY2026 Q3 기타수익 $459.7M에 반영돼 **그 분기 GAAP EPS $2.84의 대부분을 만들었다** — 사업 수익성 회복으로 읽으면 안 된다. 같은 기간 **자사주매입도 $300.0M으로 재개**됐다(FY2024·FY2025는 0). |
 
 ---
 
-*작성일: 2026-08-28*
+*작성일: 2026-09-08*
