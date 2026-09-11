@@ -65,6 +65,14 @@ function navFor(directory) {
 
 const navigation = navFor(docsDir)
 
+function collapseSidebarGroups(items) {
+  return items.map((item) => item.items
+    ? { ...item, collapsed: true, items: collapseSidebarGroups(item.items) }
+    : item)
+}
+
+const sidebar = collapseSidebarGroups(navigation)
+
 export default {
   lang: 'ko-KR',
   title: '주식 리서치 노트',
@@ -74,7 +82,7 @@ export default {
   lastUpdated: true,
   themeConfig: {
     nav: navigation,
-    sidebar: navigation,
+    sidebar,
     search: { provider: 'local' },
     socialLinks: [{ icon: 'github', link: 'https://github.com/ParkGyeongTae/stock-research' }],
     footer: {
