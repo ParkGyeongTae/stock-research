@@ -1,8 +1,9 @@
 # 미국 국채금리 3종 비교 (수익률곡선)
 
-!!! note ""
-    미국 13주물·10년물·30년물 국채금리를 한 차트에 겹쳐, 시간에 따라 수익률곡선이 어떻게 움직였는지(가팔라졌는지·평평해졌는지·역전됐는지) 보기 위한 참고 자료다. [통화 4종 비교](../foreign_exchange/comparison.md)와 달리 **지수화하지 않는다** — 세 지표가 이미 같은 단위(%)이고, 단기물 금리는 제로금리 국면에서 0%에 가까워질 수 있어 그런 값을 기준(100)으로 나누면 지수가 크게 왜곡된다. 원값을 그대로 겹쳐서 실제 금리 수준과 만기별 스프레드를 보여준다. 개별 지표의 지지선·저항선과 상세 해석은 [미국 13주물 국채금리](./treasury_13w.md)·[미국 10년물 국채금리](./treasury_10y.md)·[미국 30년물 국채금리](./treasury_30y.md) 각 문서를 따로 참고할 것 — 이 문서는 그 셋을 대체하지 않는다.
+::: info
+미국 13주물·10년물·30년물 국채금리를 한 차트에 겹쳐, 시간에 따라 수익률곡선이 어떻게 움직였는지(가팔라졌는지·평평해졌는지·역전됐는지) 보기 위한 참고 자료다. [통화 4종 비교](../foreign_exchange/comparison.md)와 달리 **지수화하지 않는다** — 세 지표가 이미 같은 단위(%)이고, 단기물 금리는 제로금리 국면에서 0%에 가까워질 수 있어 그런 값을 기준(100)으로 나누면 지수가 크게 왜곡된다. 원값을 그대로 겹쳐서 실제 금리 수준과 만기별 스프레드를 보여준다. 개별 지표의 지지선·저항선과 상세 해석은 [미국 13주물 국채금리](./treasury_13w.md)·[미국 10년물 국채금리](./treasury_10y.md)·[미국 30년물 국채금리](./treasury_30y.md) 각 문서를 따로 참고할 것 — 이 문서는 그 셋을 대체하지 않는다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년, 원값(%) 그대로 겹침
@@ -13,9 +14,9 @@
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-irx:#2a78d6; --s-tnx:#eb6834; --s-tyx:#1baf7a;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .idx-overlay-irx-tnx-tyx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-irx:#3987e5; --s-tnx:#d95926; --s-tyx:#199e70; }
+  .dark .idx-overlay-irx-tnx-tyx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-irx:#3987e5; --s-tnx:#d95926; --s-tyx:#199e70; }
 }
-[data-md-color-scheme="slate"] .idx-overlay-irx-tnx-tyx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-irx:#3987e5; --s-tnx:#d95926; --s-tyx:#199e70; }
+.dark .idx-overlay-irx-tnx-tyx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-irx:#3987e5; --s-tnx:#d95926; --s-tyx:#199e70; }
 .idx-overlay-irx-tnx-tyx svg { width:100%; height:auto; display:block; }
 .idx-overlay-irx-tnx-tyx text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .idx-overlay-irx-tnx-tyx .title { fill: var(--ink); font-weight:600; }
@@ -80,4 +81,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

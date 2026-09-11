@@ -1,10 +1,11 @@
 # 에너지 3종 비교 (지수화)
 
-!!! note ""
-    WTI 원유·천연가스·우라늄은 전부 "에너지 연료"로 묶이지만 수요·공급 구조가 서로 다르다 — 원유는 세계 경기·OPEC+ 감산에, 천연가스는 계절 난방·발전 수요와 미국 국내 공급에, 우라늄은 원자력발전 정책·전력 수요(데이터센터 전력 수요를 포함한)와 소수 국가에 집중된 공급망에 좌우된다. 셋을 시작일 기준 100으로 지수화해 겹치면 이 차이가 실제로 얼마나 큰지 확인할 수 있다.
+::: info
+WTI 원유·천연가스·우라늄은 전부 "에너지 연료"로 묶이지만 수요·공급 구조가 서로 다르다 — 원유는 세계 경기·OPEC+ 감산에, 천연가스는 계절 난방·발전 수요와 미국 국내 공급에, 우라늄은 원자력발전 정책·전력 수요(데이터센터 전력 수요를 포함한)와 소수 국가에 집중된 공급망에 좌우된다. 셋을 시작일 기준 100으로 지수화해 겹치면 이 차이가 실제로 얼마나 큰지 확인할 수 있다.
 
-    ⚠️ **세 지표의 성격이 완전히 같지 않다** — WTI 원유(`CL=F`)·천연가스(`NG=F`)는 실제 원자재 선물 가격이지만, 우라늄(`SRUUF`)은 실물을 보관하는 신탁의 지분 가격이라 순자산가치(NAV) 대비 프리미엄/디스카운트가 낄 수 있다. 개별 지표의 지지선·저항선과 상세 해석은 [WTI 원유](./oil_wti.md)·[천연가스](./natural_gas.md)·[우라늄 실물 신탁 (SRUUF)](./uranium.md) 각 문서를 따로 참고할 것 — 이 문서는 그 셋을 대체하지 않는다.
+⚠️ **세 지표의 성격이 완전히 같지 않다** — WTI 원유(`CL=F`)·천연가스(`NG=F`)는 실제 원자재 선물 가격이지만, 우라늄(`SRUUF`)은 실물을 보관하는 신탁의 지분 가격이라 순자산가치(NAV) 대비 프리미엄/디스카운트가 낄 수 있다. 개별 지표의 지지선·저항선과 상세 해석은 [WTI 원유](./oil_wti.md)·[천연가스](./natural_gas.md)·[우라늄 실물 신탁 (SRUUF)](./uranium.md) 각 문서를 따로 참고할 것 — 이 문서는 그 셋을 대체하지 않는다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년, 시작일=100 지수화
@@ -15,9 +16,9 @@
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-clf:#2a78d6; --s-ngf:#eb6834; --s-sruuf:#1baf7a;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .idx-overlay-clf-ngf-sruuf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-clf:#3987e5; --s-ngf:#d95926; --s-sruuf:#199e70; }
+  .dark .idx-overlay-clf-ngf-sruuf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-clf:#3987e5; --s-ngf:#d95926; --s-sruuf:#199e70; }
 }
-[data-md-color-scheme="slate"] .idx-overlay-clf-ngf-sruuf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-clf:#3987e5; --s-ngf:#d95926; --s-sruuf:#199e70; }
+.dark .idx-overlay-clf-ngf-sruuf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-clf:#3987e5; --s-ngf:#d95926; --s-sruuf:#199e70; }
 .idx-overlay-clf-ngf-sruuf svg { width:100%; height:auto; display:block; }
 .idx-overlay-clf-ngf-sruuf text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .idx-overlay-clf-ngf-sruuf .title { fill: var(--ink); font-weight:600; }
@@ -89,4 +90,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

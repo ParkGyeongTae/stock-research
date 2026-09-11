@@ -1,10 +1,11 @@
 # 우라늄 실물 신탁 (SRUUF)
 
-!!! note ""
-    최근 5년간 Sprott Physical Uranium Trust(SRUUF) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 우라늄은 별도의 공개 선물시장이 없어(대부분 장기 계약 기반의 비공개 시장에서 거래) 금·구리처럼 원자재 선물 가격을 바로 쓸 수 없다. 대신 이 신탁은 채굴기업 주식이 아니라 **실물 우라늄(U3O8)을 직접 매입해 보관**하는 폐쇄형 신탁이라, 채굴기업 ETF(예: URA)보다 실제 우라늄 가격에 더 가깝게 움직인다.
+::: info
+최근 5년간 Sprott Physical Uranium Trust(SRUUF) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 우라늄은 별도의 공개 선물시장이 없어(대부분 장기 계약 기반의 비공개 시장에서 거래) 금·구리처럼 원자재 선물 가격을 바로 쓸 수 없다. 대신 이 신탁은 채굴기업 주식이 아니라 **실물 우라늄(U3O8)을 직접 매입해 보관**하는 폐쇄형 신탁이라, 채굴기업 ETF(예: URA)보다 실제 우라늄 가격에 더 가깝게 움직인다.
 
-    ⚠️ **정확한 우라늄 현물가가 아니다** — 이 신탁의 시장가는 보유한 우라늄의 순자산가치(NAV)와 정확히 일치하지 않고, 수급에 따라 NAV 대비 **프리미엄(더 비싸게)** 또는 **디스카운트(더 싸게)** 거래될 수 있다. 정밀한 우라늄 현물가가 필요하면 UxC·TradeTech 같은 원출처를 따로 확인한다.
+⚠️ **정확한 우라늄 현물가가 아니다** — 이 신탁의 시장가는 보유한 우라늄의 순자산가치(NAV)와 정확히 일치하지 않고, 수급에 따라 NAV 대비 **프리미엄(더 비싸게)** 또는 **디스카운트(더 싸게)** 거래될 수 있다. 정밀한 우라늄 현물가가 필요하면 UxC·TradeTech 같은 원출처를 따로 확인한다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .sruuf-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .sruuf-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .sruuf-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .sruuf-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .sruuf-chart svg { width:100%; height:auto; display:block; }
 .sruuf-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .sruuf-chart .title { fill: var(--ink); font-weight:600; }
@@ -627,4 +628,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

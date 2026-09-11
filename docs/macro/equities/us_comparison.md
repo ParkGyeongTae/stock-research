@@ -1,8 +1,9 @@
 # 미국 4대 지수 비교 (지수화)
 
-!!! note ""
-    S&P 500·나스닥종합지수·다우존스산업지수·러셀2000은 계산 방식(시가총액 가중 vs 주가 가중)과 담는 종목(대형주 vs 중소형주, 성장주 비중)이 서로 다르다. 넷을 시작일 기준 100으로 지수화해 겹치면 "시장의 상승세가 전체에 고르게 퍼져 있는지, 아니면 소수 대형주·성장주에만 쏠려 있는지"를 한눈에 확인할 수 있다. 개별 지표의 지지선·저항선과 상세 해석은 [S&P 500](./sp500.md)·[나스닥종합지수](./nasdaq.md)·[다우존스산업지수](./dow.md)·[러셀2000](./russell2000.md) 각 문서를 따로 참고할 것 — 이 문서는 그 넷을 대체하지 않는다.
+::: info
+S&P 500·나스닥종합지수·다우존스산업지수·러셀2000은 계산 방식(시가총액 가중 vs 주가 가중)과 담는 종목(대형주 vs 중소형주, 성장주 비중)이 서로 다르다. 넷을 시작일 기준 100으로 지수화해 겹치면 "시장의 상승세가 전체에 고르게 퍼져 있는지, 아니면 소수 대형주·성장주에만 쏠려 있는지"를 한눈에 확인할 수 있다. 개별 지표의 지지선·저항선과 상세 해석은 [S&P 500](./sp500.md)·[나스닥종합지수](./nasdaq.md)·[다우존스산업지수](./dow.md)·[러셀2000](./russell2000.md) 각 문서를 따로 참고할 것 — 이 문서는 그 넷을 대체하지 않는다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년, 시작일=100 지수화
@@ -13,9 +14,9 @@
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-gspc:#2a78d6; --s-ixic:#eb6834; --s-dji:#1baf7a; --s-rut:#eda100;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .idx-overlay-gspc-ixic-dji-rut { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gspc:#3987e5; --s-ixic:#d95926; --s-dji:#199e70; --s-rut:#c98500; }
+  .dark .idx-overlay-gspc-ixic-dji-rut { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gspc:#3987e5; --s-ixic:#d95926; --s-dji:#199e70; --s-rut:#c98500; }
 }
-[data-md-color-scheme="slate"] .idx-overlay-gspc-ixic-dji-rut { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gspc:#3987e5; --s-ixic:#d95926; --s-dji:#199e70; --s-rut:#c98500; }
+.dark .idx-overlay-gspc-ixic-dji-rut { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gspc:#3987e5; --s-ixic:#d95926; --s-dji:#199e70; --s-rut:#c98500; }
 .idx-overlay-gspc-ixic-dji-rut svg { width:100%; height:auto; display:block; }
 .idx-overlay-gspc-ixic-dji-rut text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .idx-overlay-gspc-ixic-dji-rut .title { fill: var(--ink); font-weight:600; }
@@ -90,4 +91,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

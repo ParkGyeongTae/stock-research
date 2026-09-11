@@ -1,10 +1,11 @@
 # 20년+ 장기국채 ETF (TLT)
 
-!!! note ""
-    최근 5년간 iShares 20년+ 미국 장기국채 ETF(`TLT`)의 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 30년물 국채금리와 같은 장기 구간을 다루지만, 30년물 국채금리는 실제로 거래되지 않는 수익률 지수인 반면 이 ETF는 **실제로 사고팔 수 있는 펀드**라서 유동성·거래량 신호도 함께 볼 수 있다.
+::: info
+최근 5년간 iShares 20년+ 미국 장기국채 ETF(`TLT`)의 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 30년물 국채금리와 같은 장기 구간을 다루지만, 30년물 국채금리는 실제로 거래되지 않는 수익률 지수인 반면 이 ETF는 **실제로 사고팔 수 있는 펀드**라서 유동성·거래량 신호도 함께 볼 수 있다.
 
-    **가격과 금리(수익률)는 반대로 움직인다** — 국채 가격이 오르면(=이 차트가 올라가면) 금리는 내려간 것이고, 가격이 내리면 금리는 오른 것이다. 그래서 이 차트는 30년물 국채금리 차트와 정반대 모양으로 움직이는 게 정상이다.
+**가격과 금리(수익률)는 반대로 움직인다** — 국채 가격이 오르면(=이 차트가 올라가면) 금리는 내려간 것이고, 가격이 내리면 금리는 오른 것이다. 그래서 이 차트는 30년물 국채금리 차트와 정반대 모양으로 움직이는 게 정상이다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .tlt-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .tlt-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .tlt-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .tlt-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .tlt-chart svg { width:100%; height:auto; display:block; }
 .tlt-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .tlt-chart .title { fill: var(--ink); font-weight:600; }
@@ -622,4 +623,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

@@ -1,8 +1,9 @@
 # 통화 4종 비교 (지수화)
 
-!!! note ""
-    달러인덱스(DXY)·유로/달러·엔/달러·원/달러는 표시하는 단위와 자릿수가 서로 다르다(달러인덱스는 지수, 유로/달러는 1유로당 달러, 엔/달러는 1달러당 엔, 원/달러는 1달러당 원). 그래서 각 문서를 따로 보면 "어느 통화가 상대적으로 더 크게 움직였는지" 비교하기 어렵다. 이 문서는 5년 전 특정 시점을 100으로 맞춰(지수화) 네 지표를 한 차트에 겹쳐, 상대적인 변화 폭을 비교하기 위한 참고 자료다. 개별 지표의 지지선·저항선과 상세 해석은 [달러인덱스](./dxy.md)·[유로/달러 환율](./eur_usd.md)·[엔/달러 환율](./jpy_usd.md)·[원/달러 환율](./usd_krw.md) 각 문서를 따로 참고할 것 — 이 문서는 그 넷을 대체하지 않는다.
+::: info
+달러인덱스(DXY)·유로/달러·엔/달러·원/달러는 표시하는 단위와 자릿수가 서로 다르다(달러인덱스는 지수, 유로/달러는 1유로당 달러, 엔/달러는 1달러당 엔, 원/달러는 1달러당 원). 그래서 각 문서를 따로 보면 "어느 통화가 상대적으로 더 크게 움직였는지" 비교하기 어렵다. 이 문서는 5년 전 특정 시점을 100으로 맞춰(지수화) 네 지표를 한 차트에 겹쳐, 상대적인 변화 폭을 비교하기 위한 참고 자료다. 개별 지표의 지지선·저항선과 상세 해석은 [달러인덱스](./dxy.md)·[유로/달러 환율](./eur_usd.md)·[엔/달러 환율](./jpy_usd.md)·[원/달러 환율](./usd_krw.md) 각 문서를 따로 참고할 것 — 이 문서는 그 넷을 대체하지 않는다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년, 시작일=100 지수화
@@ -13,9 +14,9 @@
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-dxynyb:#2a78d6; --s-eurusdx:#eb6834; --s-jpyx:#1baf7a; --s-krwx:#eda100;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .idx-overlay-dxynyb-eurusdx-jpyx-krwx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-dxynyb:#3987e5; --s-eurusdx:#d95926; --s-jpyx:#199e70; --s-krwx:#c98500; }
+  .dark .idx-overlay-dxynyb-eurusdx-jpyx-krwx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-dxynyb:#3987e5; --s-eurusdx:#d95926; --s-jpyx:#199e70; --s-krwx:#c98500; }
 }
-[data-md-color-scheme="slate"] .idx-overlay-dxynyb-eurusdx-jpyx-krwx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-dxynyb:#3987e5; --s-eurusdx:#d95926; --s-jpyx:#199e70; --s-krwx:#c98500; }
+.dark .idx-overlay-dxynyb-eurusdx-jpyx-krwx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-dxynyb:#3987e5; --s-eurusdx:#d95926; --s-jpyx:#199e70; --s-krwx:#c98500; }
 .idx-overlay-dxynyb-eurusdx-jpyx-krwx svg { width:100%; height:auto; display:block; }
 .idx-overlay-dxynyb-eurusdx-jpyx-krwx text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .idx-overlay-dxynyb-eurusdx-jpyx-krwx .title { fill: var(--ink); font-weight:600; }
@@ -89,4 +90,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

@@ -2,10 +2,11 @@
 
 > 최근 5년 주봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. 1년 단위 흐름은 [기술적 분석 — 일봉·1년](./09_technical_daily.md)를 참고. **과거 가격 패턴에 대한 객관적 서술이며 매수/매도 신호나 목표가 예측이 아니다** — 적정주가 판단은 [밸류에이션 / 적정주가](./06_valuation.md), 투자 결론은 [투자 판단](./07_investment.md)에 있다.
 
-??? note "이 차트의 데이터 출처와 대조 결과"
-    - **출처**: Yahoo Finance 주봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표(SEC XBRL)와는 계보가 다르다.
-    - **대조 결과**: **2026-09-04 종가 $119.02는 [핵심 지표](./04_metrics.md) A.2·[밸류에이션 / 적정주가](./06_valuation.md)·[기술적 분석 (일봉)](./09_technical_daily.md)와 모두 일치한다.**
+::: details 이 차트의 데이터 출처와 대조 결과
+- **출처**: Yahoo Finance 주봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표(SEC XBRL)와는 계보가 다르다.
+- **대조 결과**: **2026-09-04 종가 $119.02는 [핵심 지표](./04_metrics.md) A.2·[밸류에이션 / 적정주가](./06_valuation.md)·[기술적 분석 (일봉)](./09_technical_daily.md)와 모두 일치한다.**
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉 (2021-09-06 ~ 2026-09-04)
@@ -17,9 +18,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .nrg-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .nrg-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .nrg-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .nrg-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .nrg-chart svg { width:100%; height:auto; display:block; }
 .nrg-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .nrg-chart .title { fill: var(--ink); font-weight:600; }
@@ -616,9 +617,10 @@
 
 각 레벨은 "전후 4주 내 최고/최저인 스윙 포인트"를 가격 기준 ±2.5% 이내로 묶은 클러스터다. 터치 횟수는 그 클러스터에 포함된 스윙 포인트 개수(강도 근사치)이며, 미래 지지/저항을 보장하지 않는다(4. 방법론 · 한계 참고).
 
-!!! warning "유효 클러스터가 3개뿐이고, 그중 둘은 현재가의 4분의 1 수준이다"
-    5년 창 안에서 터치 2회 이상 조건을 만족한 클러스터는 R1·S1·S2 셋뿐이다. **레벨을 3개씩 채우려고 `--force-level`로 추가하지 않았다.** 게다가 S1($36)·S2($31)는 2021~2023년의 가격대라 현재가($119.02)와 연속성이 없다 — 아래 3절 참고.
+::: warning 유효 클러스터가 3개뿐이고, 그중 둘은 현재가의 4분의 1 수준이다
+5년 창 안에서 터치 2회 이상 조건을 만족한 클러스터는 R1·S1·S2 셋뿐이다. **레벨을 3개씩 채우려고 `--force-level`로 추가하지 않았다.** 게다가 S1($36)·S2($31)는 2021~2023년의 가격대라 현재가($119.02)와 연속성이 없다 — 아래 3절 참고.
 
+:::
 | 레벨 | 가격 | 터치 횟수 | 비고 |
 |------|------|-----------|------|
 | R1 | $176 | 2 | 2025-08-04·2026-04-13 — **5년 최고($189.96) 바로 아래 구간.** 8개월 간격으로 두 번 닿았고 뚫지 못했다 |
@@ -654,4 +656,4 @@
 
 ---
 
-*작성일: 2026-09-07*
+*작성일: 2026-09-11*

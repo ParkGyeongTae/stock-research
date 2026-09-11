@@ -1,8 +1,9 @@
 # 러셀2000
 
-!!! note ""
-    최근 5년간 러셀2000 지수(미국 중소형주 2,000종목, `^RUT`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. S&P 500·나스닥종합지수·필라델피아 반도체지수는 모두 대형주 위주 지수인 반면, 러셀2000은 **미국 국내 경기에 더 민감하게 반응하는 중소형주**를 담고 있어서 다른 신호를 준다 — 대형주 지수는 오르는데 러셀2000만 약하다면, 시장 상승세가 소수의 대형주에만 쏠려 있다는 신호로 읽히곤 한다.
+::: info
+최근 5년간 러셀2000 지수(미국 중소형주 2,000종목, `^RUT`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. S&P 500·나스닥종합지수·필라델피아 반도체지수는 모두 대형주 위주 지수인 반면, 러셀2000은 **미국 국내 경기에 더 민감하게 반응하는 중소형주**를 담고 있어서 다른 신호를 준다 — 대형주 지수는 오르는데 러셀2000만 약하다면, 시장 상승세가 소수의 대형주에만 쏠려 있다는 신호로 읽히곤 한다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .rut-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .rut-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .rut-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .rut-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .rut-chart svg { width:100%; height:auto; display:block; }
 .rut-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .rut-chart .title { fill: var(--ink); font-weight:600; }
@@ -620,4 +621,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

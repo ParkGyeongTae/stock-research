@@ -1,8 +1,9 @@
 # 채권 3종 비교 (지수화)
 
-!!! note ""
-    20년+ 장기국채 ETF(TLT)·물가연동국채 ETF(TIP)·하이일드 회사채 ETF(HYG)는 각각 다른 위험 요인에 노출된 채권이다 — TLT는 금리(듀레이션) 리스크, TIP은 그 금리 리스크에서 기대인플레이션만큼을 상쇄한 실질금리 리스크, HYG는 신용(경기) 리스크다. 셋을 시작일 기준 100으로 지수화해 겹치면 채권시장이 흔들릴 때 그게 금리 때문인지, 인플레이션 기대 때문인지, 신용(경기) 우려 때문인지 구분하는 데 도움이 된다. 개별 지표의 지지선·저항선과 상세 해석은 [20년+ 장기국채 ETF (TLT)](./tlt.md)·[물가연동국채 ETF (TIP)](./tip.md)·[하이일드 회사채 ETF (HYG)](./hyg.md) 각 문서를 따로 참고할 것 — 이 문서는 그 셋을 대체하지 않는다.
+::: info
+20년+ 장기국채 ETF(TLT)·물가연동국채 ETF(TIP)·하이일드 회사채 ETF(HYG)는 각각 다른 위험 요인에 노출된 채권이다 — TLT는 금리(듀레이션) 리스크, TIP은 그 금리 리스크에서 기대인플레이션만큼을 상쇄한 실질금리 리스크, HYG는 신용(경기) 리스크다. 셋을 시작일 기준 100으로 지수화해 겹치면 채권시장이 흔들릴 때 그게 금리 때문인지, 인플레이션 기대 때문인지, 신용(경기) 우려 때문인지 구분하는 데 도움이 된다. 개별 지표의 지지선·저항선과 상세 해석은 [20년+ 장기국채 ETF (TLT)](./tlt.md)·[물가연동국채 ETF (TIP)](./tip.md)·[하이일드 회사채 ETF (HYG)](./hyg.md) 각 문서를 따로 참고할 것 — 이 문서는 그 셋을 대체하지 않는다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년, 시작일=100 지수화
@@ -13,9 +14,9 @@
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-tlt:#2a78d6; --s-tip:#eb6834; --s-hyg:#1baf7a;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .idx-overlay-tlt-tip-hyg { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-tlt:#3987e5; --s-tip:#d95926; --s-hyg:#199e70; }
+  .dark .idx-overlay-tlt-tip-hyg { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-tlt:#3987e5; --s-tip:#d95926; --s-hyg:#199e70; }
 }
-[data-md-color-scheme="slate"] .idx-overlay-tlt-tip-hyg { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-tlt:#3987e5; --s-tip:#d95926; --s-hyg:#199e70; }
+.dark .idx-overlay-tlt-tip-hyg { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-tlt:#3987e5; --s-tip:#d95926; --s-hyg:#199e70; }
 .idx-overlay-tlt-tip-hyg svg { width:100%; height:auto; display:block; }
 .idx-overlay-tlt-tip-hyg text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .idx-overlay-tlt-tip-hyg .title { fill: var(--ink); font-weight:600; }
@@ -88,4 +89,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

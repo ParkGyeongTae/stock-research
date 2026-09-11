@@ -1,8 +1,9 @@
 # 금속 3종 비교 (지수화)
 
-!!! note ""
-    금·은·구리는 같은 "금속"이라도 가격을 움직이는 힘이 다르다 — 금은 순수 안전자산 성격이 강하고, 구리는 산업 수요(경기 사이클)를 보여주는 "Dr. Copper"이며, 은은 그 둘의 성격이 섞여 있다. 셋을 시작일 기준 100으로 지수화해 겹치면, 금속 가격의 움직임이 안전자산 수요(경기 불안·인플레이션 헤지) 때문인지 산업 수요(경기 확장) 때문인지 가늠하는 데 도움이 된다. 개별 지표의 지지선·저항선과 상세 해석은 [금](./gold.md)·[은](./silver.md)·[구리](./copper.md) 각 문서를 따로 참고할 것 — 이 문서는 그 셋을 대체하지 않는다.
+::: info
+금·은·구리는 같은 "금속"이라도 가격을 움직이는 힘이 다르다 — 금은 순수 안전자산 성격이 강하고, 구리는 산업 수요(경기 사이클)를 보여주는 "Dr. Copper"이며, 은은 그 둘의 성격이 섞여 있다. 셋을 시작일 기준 100으로 지수화해 겹치면, 금속 가격의 움직임이 안전자산 수요(경기 불안·인플레이션 헤지) 때문인지 산업 수요(경기 확장) 때문인지 가늠하는 데 도움이 된다. 개별 지표의 지지선·저항선과 상세 해석은 [금](./gold.md)·[은](./silver.md)·[구리](./copper.md) 각 문서를 따로 참고할 것 — 이 문서는 그 셋을 대체하지 않는다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년, 시작일=100 지수화
@@ -13,9 +14,9 @@
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-gcf:#2a78d6; --s-sif:#eb6834; --s-hgf:#1baf7a;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .idx-overlay-gcf-sif-hgf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gcf:#3987e5; --s-sif:#d95926; --s-hgf:#199e70; }
+  .dark .idx-overlay-gcf-sif-hgf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gcf:#3987e5; --s-sif:#d95926; --s-hgf:#199e70; }
 }
-[data-md-color-scheme="slate"] .idx-overlay-gcf-sif-hgf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gcf:#3987e5; --s-sif:#d95926; --s-hgf:#199e70; }
+.dark .idx-overlay-gcf-sif-hgf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gcf:#3987e5; --s-sif:#d95926; --s-hgf:#199e70; }
 .idx-overlay-gcf-sif-hgf svg { width:100%; height:auto; display:block; }
 .idx-overlay-gcf-sif-hgf text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .idx-overlay-gcf-sif-hgf .title { fill: var(--ink); font-weight:600; }
@@ -86,4 +87,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

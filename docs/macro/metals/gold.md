@@ -1,8 +1,9 @@
 # 금
 
-!!! note ""
-    최근 5년간 금 선물(연속월물, `GC=F`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 금값은 투자자들이 안전자산을 얼마나 찾는지, 실질금리(명목금리에서 기대인플레이션을 뺀 값, 즉 실제 손에 쥐는 이자 수익률)가 어떻게 움직이는지, 물가가 얼마나 오를 것으로 예상되는지를 보여주는 대표적인 참고 지표다.
+::: info
+최근 5년간 금 선물(연속월물, `GC=F`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 금값은 투자자들이 안전자산을 얼마나 찾는지, 실질금리(명목금리에서 기대인플레이션을 뺀 값, 즉 실제 손에 쥐는 이자 수익률)가 어떻게 움직이는지, 물가가 얼마나 오를 것으로 예상되는지를 보여주는 대표적인 참고 지표다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .gc-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .gc-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .gc-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .gc-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .gc-f-chart svg { width:100%; height:auto; display:block; }
 .gc-f-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .gc-f-chart .title { fill: var(--ink); font-weight:600; }
@@ -613,4 +614,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

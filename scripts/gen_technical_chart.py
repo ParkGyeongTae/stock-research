@@ -334,9 +334,9 @@ def render_svg(
     )
     a(
         f"@media (prefers-color-scheme: dark) {{\n"
-        f'  body:not([data-md-color-scheme="default"]) .{cls} {{ {dark} }}\n}}'
+        f'  .dark .{cls} {{ {dark} }}\n}}'
     )
-    a(f'[data-md-color-scheme="slate"] .{cls} {{ {dark} }}')
+    a(f'.dark .{cls} {{ {dark} }}')
     a(f".{cls} svg {{ width:100%; height:auto; display:block; }}")
     a(f'.{cls} text {{ font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }}')
     a(f".{cls} .title {{ fill: var(--ink); font-weight:600; }}")

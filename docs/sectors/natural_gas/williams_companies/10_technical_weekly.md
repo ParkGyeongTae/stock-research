@@ -2,11 +2,12 @@
 
 > 최근 5년 주봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. 1년 내 단기 구조는 [기술적 분석 — 일봉·1년](./09_technical_daily.md)를 참고. **과거 가격 패턴에 대한 객관적 서술이며 매수/매도 신호나 목표가 예측이 아니다** — 적정주가 판단은 [밸류에이션 / 적정주가](./06_valuation.md), 투자 결론은 [투자 판단](./07_investment.md)에 있다.
 
-??? note "이 차트의 데이터 출처와 대조 결과"
-    - **출처**: Yahoo Finance 주봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다.
-    - **대조 결과**: **2026-09-04 종가 $74.15는 [핵심 지표](./04_metrics.md) A.2와 [밸류에이션 / 적정주가](./06_valuation.md)에 인용된 값과 일치**한다. 회계연도 말 종가(FY2023 $34.83 / FY2024 $54.12 / FY2025 $60.11)도 같은 원자료에서 나왔다.
-    - **주의**: **원주가**(배당 미반영)다. 5년간 배당이 20회 있었으므로 총수익률은 아래 가격 흐름보다 훨씬 높다 — 이 차트로 장기 보유 성과를 판단하지 말 것.
+::: details 이 차트의 데이터 출처와 대조 결과
+- **출처**: Yahoo Finance 주봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다.
+- **대조 결과**: **2026-09-04 종가 $74.15는 [핵심 지표](./04_metrics.md) A.2와 [밸류에이션 / 적정주가](./06_valuation.md)에 인용된 값과 일치**한다. 회계연도 말 종가(FY2023 $34.83 / FY2024 $54.12 / FY2025 $60.11)도 같은 원자료에서 나왔다.
+- **주의**: **원주가**(배당 미반영)다. 5년간 배당이 20회 있었으므로 총수익률은 아래 가격 흐름보다 훨씬 높다 — 이 차트로 장기 보유 성과를 판단하지 말 것.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉 (2021-09-06 ~ 2026-09-04)
@@ -18,9 +19,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .wmb-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .wmb-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .wmb-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .wmb-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .wmb-chart svg { width:100%; height:auto; display:block; }
 .wmb-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .wmb-chart .title { fill: var(--ink); font-weight:600; }
@@ -648,4 +649,4 @@
 
 ---
 
-*작성일: 2026-09-06*
+*작성일: 2026-09-11*

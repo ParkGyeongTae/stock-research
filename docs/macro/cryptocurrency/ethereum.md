@@ -1,10 +1,11 @@
 # 이더리움 (ETH/USD)
 
-!!! note ""
-    최근 5년간 이더리움 대 달러(ETH/USD, `ETH-USD`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 이더리움은 비트코인과 달리 스마트 컨트랙트를 실행하는 범용 블록체인 플랫폼이라, 가격이 단순한 투기·저장 수요뿐 아니라 디파이(DeFi)·NFT 같은 온체인 활동 수요, 지분증명(PoS) 스테이킹 수익률과도 함께 움직인다. 가상자산 거래소·보관(커스터디) 서비스, 이더리움을 보유하거나 스테이킹 인프라를 제공하는 회사들의 실적·평가손익은 이 가격에 그대로 연동되는 경우가 많다.
+::: info
+최근 5년간 이더리움 대 달러(ETH/USD, `ETH-USD`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 이더리움은 비트코인과 달리 스마트 컨트랙트를 실행하는 범용 블록체인 플랫폼이라, 가격이 단순한 투기·저장 수요뿐 아니라 디파이(DeFi)·NFT 같은 온체인 활동 수요, 지분증명(PoS) 스테이킹 수익률과도 함께 움직인다. 가상자산 거래소·보관(커스터디) 서비스, 이더리움을 보유하거나 스테이킹 인프라를 제공하는 회사들의 실적·평가손익은 이 가격에 그대로 연동되는 경우가 많다.
 
-    ⚠️ 이더리움도 비트코인처럼 **주식과 달리 1년 365일, 하루 24시간 거래**된다. 그래서 이 차트의 "한 주의 마지막 거래일"이 주식시장처럼 금요일이 아니라 주말이 될 수 있고, 거래량을 세는 단위도 주식과 다르다.
+⚠️ 이더리움도 비트코인처럼 **주식과 달리 1년 365일, 하루 24시간 거래**된다. 그래서 이 차트의 "한 주의 마지막 거래일"이 주식시장처럼 금요일이 아니라 주말이 될 수 있고, 거래량을 세는 단위도 주식과 다르다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .eth-usd-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .eth-usd-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .eth-usd-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .eth-usd-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .eth-usd-chart svg { width:100%; height:auto; display:block; }
 .eth-usd-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .eth-usd-chart .title { fill: var(--ink); font-weight:600; }
@@ -628,4 +629,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

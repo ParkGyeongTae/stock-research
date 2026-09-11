@@ -1,8 +1,9 @@
 # 닛케이225
 
-!!! note ""
-    최근 5년간 닛케이225 지수(일본, `^N225`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 엔/달러 환율 문서와 함께 보면 일본 증시와 엔화가 지금 어떤 상태인지 종합적으로 확인할 수 있다 — 엔화가 약세일 때는 일본 수출기업의 실적 기대가 좋아져서 닛케이지수도 함께 강세를 보이는 경우가 많다.
+::: info
+최근 5년간 닛케이225 지수(일본, `^N225`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 엔/달러 환율 문서와 함께 보면 일본 증시와 엔화가 지금 어떤 상태인지 종합적으로 확인할 수 있다 — 엔화가 약세일 때는 일본 수출기업의 실적 기대가 좋아져서 닛케이지수도 함께 강세를 보이는 경우가 많다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .n225-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .n225-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .n225-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .n225-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .n225-chart svg { width:100%; height:auto; display:block; }
 .n225-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .n225-chart .title { fill: var(--ink); font-weight:600; }
@@ -614,4 +615,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

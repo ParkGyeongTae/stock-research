@@ -1,8 +1,9 @@
 # 항셍지수
 
-!!! note ""
-    최근 5년간 항셍지수(홍콩거래소, `^HSI`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 이 지수에는 중국 본토의 규제·경기 상황과 홍콩 금융시장의 자금 사정이 함께 반영된다. 그래서 중화권 투자심리를 살펴볼 때 닛케이225 같은 다른 아시아 지수와 함께 시장 배경 참고 자료로 쓴다.
+::: info
+최근 5년간 항셍지수(홍콩거래소, `^HSI`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 이 지수에는 중국 본토의 규제·경기 상황과 홍콩 금융시장의 자금 사정이 함께 반영된다. 그래서 중화권 투자심리를 살펴볼 때 닛케이225 같은 다른 아시아 지수와 함께 시장 배경 참고 자료로 쓴다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .hsi-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .hsi-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .hsi-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .hsi-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .hsi-chart svg { width:100%; height:auto; display:block; }
 .hsi-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .hsi-chart .title { fill: var(--ink); font-weight:600; }
@@ -626,4 +627,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

@@ -1,4 +1,6 @@
 site/
+node_modules/
+docs/.vitepress/dist/
 .venv/
 
 # Claude Code 로컬 설정

@@ -33,7 +33,7 @@ uv run python scripts/gen_technical_chart.py SNPS --interval 1wk --emit dates
 
 `--close-on`으로 뽑은 종가는 `04_metrics.md`·`06_valuation.md`의 값과 대조해 문서 상단에 결과를 남기세요.
 
-`--emit chart` 출력(`<div class="<ticker>-chart">…</div>`)은 클래스명·범례·다크모드 CSS가 한 벌로 들어 있으니 **한 글자도 바꾸지 마세요**(옮길 땐 위 ⚠️대로 파일에서 파일로). 특히 다크모드 CSS는 세 규칙이 한 세트입니다 — (1) 기본(라이트) 값, (2) `@media (prefers-color-scheme: dark)` 안에 `body:not([data-md-color-scheme="default"])` 가드를 건 다크 값, (3) `[data-md-color-scheme="slate"]` 다크 값. (2)의 가드를 지우면 **OS가 다크인 사용자가 사이트에서 라이트 모드를 골랐을 때 페이지는 밝은데 차트만 어둡게** 남습니다(MkDocs Material이 이때 body에 `data-md-color-scheme="default"`를 붙입니다).
+`--emit chart` 출력(`<div class="<ticker>-chart">…</div>`)은 클래스명·범례·다크모드 CSS가 한 벌로 들어 있으니 **한 글자도 바꾸지 마세요**(옮길 땐 위 ⚠️대로 파일에서 파일로). VitePress의 다크 모드에서는 `.dark` 선택자를 사용합니다.
 
 `--levels` 기본값은 3이지만 **억지로 3개를 채우지 마세요** — 유효한 클러스터가 2개면 2개만 씁니다. 개수를 바꿨거나 터치 2회 미만인 레벨을 `--force-level`로 넣었다면 그 사유를 각 문서 4. 방법론 · 한계와 표 비고에 남깁니다.
 
@@ -168,4 +168,4 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 ---
 
-*작성일: 2026-09-02*
+*작성일: 2026-09-11*

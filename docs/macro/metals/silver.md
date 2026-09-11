@@ -1,8 +1,9 @@
 # 은
 
-!!! note ""
-    최근 5년간 은 선물(연속월물, `SI=F`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 은은 금과 같은 귀금속이지만, 전자제품이나 태양광 패널 등에 쓰이는 **산업용 수요 비중이 금보다 훨씬 커서** "안전자산"과 "산업 원자재"의 성격이 섞여 있고, 그만큼 가격도 금보다 더 크게 움직인다.
+::: info
+최근 5년간 은 선물(연속월물, `SI=F`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 은은 금과 같은 귀금속이지만, 전자제품이나 태양광 패널 등에 쓰이는 **산업용 수요 비중이 금보다 훨씬 커서** "안전자산"과 "산업 원자재"의 성격이 섞여 있고, 그만큼 가격도 금보다 더 크게 움직인다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .si-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .si-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .si-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .si-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .si-f-chart svg { width:100%; height:auto; display:block; }
 .si-f-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .si-f-chart .title { fill: var(--ink); font-weight:600; }
@@ -617,4 +618,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

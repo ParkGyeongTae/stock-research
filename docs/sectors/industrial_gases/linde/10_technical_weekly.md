@@ -2,10 +2,11 @@
 
 > 최근 5년 주봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. [기술적 분석 — 일봉·1년](./09_technical_daily.md)이 단기 구간을 본다면 이 문서는 여러 사이클에 걸친 구조적 레벨을 본다. **과거 가격 패턴에 대한 객관적 서술이며 매수/매도 신호나 목표가 예측이 아니다** — 적정주가 판단은 [밸류에이션 / 적정주가](./06_valuation.md), 투자 결론은 [투자 판단](./07_investment.md)에 있다.
 
-??? note "이 차트의 데이터 출처와 대조 결과"
-    - **출처**: Yahoo Finance 주봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다(주봉은 핵심 지표가 다루는 범위 밖이다).
-    - **대조 결과**: 마지막 종가 **$489.51(2026-08-28)**은 핵심 지표 A.2·밸류에이션 / 적정주가가 기준으로 쓰는 값과 **정확히 일치**한다. 5년 최고 $548.20도 동일하다. 같은 날짜 기준으로 일봉 차트는 하루 이른 08-27 봉에서 끝나므로 그쪽 "현재가"와는 0.86% 차이가 난다.
+::: details 이 차트의 데이터 출처와 대조 결과
+- **출처**: Yahoo Finance 주봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다(주봉은 핵심 지표가 다루는 범위 밖이다).
+- **대조 결과**: 마지막 종가 **$489.51(2026-08-28)**은 핵심 지표 A.2·밸류에이션 / 적정주가가 기준으로 쓰는 값과 **정확히 일치**한다. 5년 최고 $548.20도 동일하다. 같은 날짜 기준으로 일봉 차트는 하루 이른 08-27 봉에서 끝나므로 그쪽 "현재가"와는 0.86% 차이가 난다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉 (2021-08-30 ~ 2026-08-28)
@@ -17,9 +18,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .lin-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .lin-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .lin-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .lin-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .lin-chart svg { width:100%; height:auto; display:block; }
 .lin-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .lin-chart .title { fill: var(--ink); font-weight:600; }
@@ -655,4 +656,4 @@
 
 ---
 
-*작성일: 2026-08-31*
+*작성일: 2026-09-11*

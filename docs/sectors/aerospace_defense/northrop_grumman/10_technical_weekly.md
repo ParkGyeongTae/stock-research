@@ -2,10 +2,11 @@
 
 > 최근 5년 주봉으로 다년 구조를 보는 참고 자료. 최근 1년의 세부 흐름은 [기술적 분석 — 일봉·1년](./09_technical_daily.md)을 참고. **과거 가격 패턴에 대한 객관적 서술이며 매수/매도 신호나 목표가 예측이 아니다** — 적정주가 판단은 [밸류에이션 / 적정주가](./06_valuation.md), 투자 결론은 [투자 판단](./07_investment.md)에 있다.
 
-??? note "이 차트의 데이터 출처와 대조 결과"
-    - **출처**: Yahoo Finance 주봉 OHLCV. 일봉 문서와 같은 계보이며, [핵심 지표](./04_metrics.md)의 재무 원자료와는 계보가 다르다.
-    - **대조 결과**: **2026-09-03 종가 $528.24**는 일봉 문서·[밸류에이션 / 적정주가](./06_valuation.md)와 **일치**한다. 원주가(배당 미반영) 기준이라 [핵심 지표](./04_metrics.md) A.2의 회계연도 말 종가(FY2023 $468.14 / FY2024 $469.29 / FY2025 $570.21)와도 같은 계열이다.
+::: details 이 차트의 데이터 출처와 대조 결과
+- **출처**: Yahoo Finance 주봉 OHLCV. 일봉 문서와 같은 계보이며, [핵심 지표](./04_metrics.md)의 재무 원자료와는 계보가 다르다.
+- **대조 결과**: **2026-09-03 종가 $528.24**는 일봉 문서·[밸류에이션 / 적정주가](./06_valuation.md)와 **일치**한다. 원주가(배당 미반영) 기준이라 [핵심 지표](./04_metrics.md) A.2의 회계연도 말 종가(FY2023 $468.14 / FY2024 $469.29 / FY2025 $570.21)와도 같은 계열이다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉 (2021-08-30 ~ 2026-09-03)
@@ -17,9 +18,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .noc-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .noc-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .noc-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .noc-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .noc-chart svg { width:100%; height:auto; display:block; }
 .noc-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .noc-chart .title { fill: var(--ink); font-weight:600; }
@@ -646,4 +647,4 @@
 
 ---
 
-*작성일: 2026-09-04*
+*작성일: 2026-09-11*

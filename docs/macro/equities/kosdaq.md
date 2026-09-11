@@ -1,8 +1,9 @@
 # 코스닥
 
-!!! note ""
-    최근 5년간 코스닥 지수(한국거래소 코스닥시장, 중소형·성장주 중심, `^KQ11`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 코스피가 대형주 위주라면, 코스닥은 미국의 러셀2000처럼 중소형·성장주 성격이 강해서 국내 경기나 투자자들의 위험선호 변화에 더 민감하게 반응하는 편이다.
+::: info
+최근 5년간 코스닥 지수(한국거래소 코스닥시장, 중소형·성장주 중심, `^KQ11`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 코스피가 대형주 위주라면, 코스닥은 미국의 러셀2000처럼 중소형·성장주 성격이 강해서 국내 경기나 투자자들의 위험선호 변화에 더 민감하게 반응하는 편이다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .kq11-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .kq11-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .kq11-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .kq11-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .kq11-chart svg { width:100%; height:auto; display:block; }
 .kq11-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .kq11-chart .title { fill: var(--ink); font-weight:600; }
@@ -627,4 +628,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

@@ -1,10 +1,11 @@
 # 달러인덱스 (DXY)
 
-!!! note ""
-    최근 5년간 달러인덱스(주요 6개 통화 대비 달러 가치를 가중평균한 지수, 유로 비중이 가장 큼, `DX-Y.NYB`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 달러 자체가 전반적으로 강한지 약한지를 보여주는 지수로, 해외 매출 비중이 큰 회사의 환율 민감도와 직결된다.
+::: info
+최근 5년간 달러인덱스(주요 6개 통화 대비 달러 가치를 가중평균한 지수, 유로 비중이 가장 큼, `DX-Y.NYB`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 달러 자체가 전반적으로 강한지 약한지를 보여주는 지수로, 해외 매출 비중이 큰 회사의 환율 민감도와 직결된다.
 
-    **원/달러 환율과의 차이**: 원/달러 환율에는 원화만의 고유한 사정(한국은행의 통화정책, 한국의 무역수지 등)까지 함께 반영된다. 반면 이 지표는 **달러 자체의 강약만** 본다. 어떤 회사의 실적 변동이 "달러가 전반적으로 강해져서"인지 "원화만 특이하게 움직여서"인지 구분하는 데 참고할 수 있다.
+**원/달러 환율과의 차이**: 원/달러 환율에는 원화만의 고유한 사정(한국은행의 통화정책, 한국의 무역수지 등)까지 함께 반영된다. 반면 이 지표는 **달러 자체의 강약만** 본다. 어떤 회사의 실적 변동이 "달러가 전반적으로 강해져서"인지 "원화만 특이하게 움직여서"인지 구분하는 데 참고할 수 있다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .dx-y-nyb-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .dx-y-nyb-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .dx-y-nyb-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .dx-y-nyb-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .dx-y-nyb-chart svg { width:100%; height:auto; display:block; }
 .dx-y-nyb-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .dx-y-nyb-chart .title { fill: var(--ink); font-weight:600; }
@@ -619,4 +620,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

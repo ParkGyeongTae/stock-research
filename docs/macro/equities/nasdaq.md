@@ -1,10 +1,11 @@
 # 나스닥종합지수
 
-!!! note ""
-    최근 5년간 나스닥종합지수(`^IXIC`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 특정 회사나 업종 하나에 좌우되지 않는 **시장 전체를 보여주는 벤치마크(비교 기준)**다. S&P 500보다 기술·성장주 비중이 높아서, 기술·성장주 성격이 강한 종목과 비교할 때 더 적합하다.
+::: info
+최근 5년간 나스닥종합지수(`^IXIC`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 특정 회사나 업종 하나에 좌우되지 않는 **시장 전체를 보여주는 벤치마크(비교 기준)**다. S&P 500보다 기술·성장주 비중이 높아서, 기술·성장주 성격이 강한 종목과 비교할 때 더 적합하다.
 
-    **어떻게 쓰나**: 어떤 회사의 주가가 나스닥지수보다 유독 더 오르거나 내렸다면, 그 회사만의 특별한 이유(실적 등 펀더멘털) 때문인지, 아니면 성장주 전체의 밸류에이션 분위기(금리 변화에 대한 민감도) 때문인지 구분하는 첫 단서가 된다.
+**어떻게 쓰나**: 어떤 회사의 주가가 나스닥지수보다 유독 더 오르거나 내렸다면, 그 회사만의 특별한 이유(실적 등 펀더멘털) 때문인지, 아니면 성장주 전체의 밸류에이션 분위기(금리 변화에 대한 민감도) 때문인지 구분하는 첫 단서가 된다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .ixic-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .ixic-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .ixic-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .ixic-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .ixic-chart svg { width:100%; height:auto; display:block; }
 .ixic-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .ixic-chart .title { fill: var(--ink); font-weight:600; }
@@ -622,4 +623,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

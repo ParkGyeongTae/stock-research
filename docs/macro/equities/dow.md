@@ -1,8 +1,9 @@
 # 다우존스산업지수
 
-!!! note ""
-    최근 5년간 다우존스산업지수(미국 우량주 30종목, `^DJI`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 이 지수는 회사 규모(시가총액)가 아니라 **주가 자체**를 기준으로 비중을 매기는 방식이라, 시가총액 기준인 S&P 500·나스닥종합지수와 계산 방법 자체가 다르다. 담긴 종목이 30개로 적고 전통 산업재·금융 회사 비중이 커서, 성장주 중심인 나스닥과 다르게 움직일 때가 있다.
+::: info
+최근 5년간 다우존스산업지수(미국 우량주 30종목, `^DJI`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 이 지수는 회사 규모(시가총액)가 아니라 **주가 자체**를 기준으로 비중을 매기는 방식이라, 시가총액 기준인 S&P 500·나스닥종합지수와 계산 방법 자체가 다르다. 담긴 종목이 30개로 적고 전통 산업재·금융 회사 비중이 커서, 성장주 중심인 나스닥과 다르게 움직일 때가 있다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .dji-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .dji-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .dji-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .dji-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .dji-chart svg { width:100%; height:auto; display:block; }
 .dji-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .dji-chart .title { fill: var(--ink); font-weight:600; }
@@ -616,4 +617,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

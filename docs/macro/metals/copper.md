@@ -1,8 +1,9 @@
 # 구리
 
-!!! note ""
-    최근 5년간 구리 선물(연속월물, `HG=F`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 구리는 건설·전력망·전기차 등 거의 모든 산업에서 쓰여서, 가격만 봐도 경기가 좋아지는지 나빠지는지 미리 짐작할 수 있다고 해서 "Dr. Copper(구리 박사)"라는 별명이 붙었다. 원유 같은 다른 원자재는 보통 기업 원가나 물가에 미치는 영향으로 해석하지만, 구리는 그보다 **산업 수요, 즉 경기 사이클을 보여주는 신호**로 더 자주 쓰인다.
+::: info
+최근 5년간 구리 선물(연속월물, `HG=F`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 구리는 건설·전력망·전기차 등 거의 모든 산업에서 쓰여서, 가격만 봐도 경기가 좋아지는지 나빠지는지 미리 짐작할 수 있다고 해서 "Dr. Copper(구리 박사)"라는 별명이 붙었다. 원유 같은 다른 원자재는 보통 기업 원가나 물가에 미치는 영향으로 해석하지만, 구리는 그보다 **산업 수요, 즉 경기 사이클을 보여주는 신호**로 더 자주 쓰인다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .hg-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .hg-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .hg-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .hg-f-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .hg-f-chart svg { width:100%; height:auto; display:block; }
 .hg-f-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .hg-f-chart .title { fill: var(--ink); font-weight:600; }
@@ -621,4 +622,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

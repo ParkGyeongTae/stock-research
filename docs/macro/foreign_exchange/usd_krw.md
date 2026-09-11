@@ -1,8 +1,9 @@
 # 원/달러 환율 (USD/KRW)
 
-!!! note ""
-    최근 5년간 원/달러 환율(1달러가 몇 원인지, `KRW=X`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 해외 매출 비중이 큰 회사가 환율 변화에 얼마나 민감한지, 또는 상수통화(constant currency, 환율 변동 효과를 뺀 성장률) 기준 성장률과 실제 보고된 성장률이 왜 차이 나는지를 설명할 때 자주 쓰이는 지표다.
+::: info
+최근 5년간 원/달러 환율(1달러가 몇 원인지, `KRW=X`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 해외 매출 비중이 큰 회사가 환율 변화에 얼마나 민감한지, 또는 상수통화(constant currency, 환율 변동 효과를 뺀 성장률) 기준 성장률과 실제 보고된 성장률이 왜 차이 나는지를 설명할 때 자주 쓰이는 지표다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .krw-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .krw-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .krw-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .krw-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .krw-x-chart svg { width:100%; height:auto; display:block; }
 .krw-x-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .krw-x-chart .title { fill: var(--ink); font-weight:600; }
@@ -622,4 +623,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

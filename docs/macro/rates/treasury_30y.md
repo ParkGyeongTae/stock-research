@@ -1,10 +1,11 @@
 # 미국 30년물 국채금리
 
-!!! note ""
-    최근 5년간 미국 30년물 국채 수익률(`^TYX`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 13주물 국채금리·10년물 국채금리와 함께 보면 **수익률곡선에서 가장 만기가 긴 구간**까지 채워서 볼 수 있다.
+::: info
+최근 5년간 미국 30년물 국채 수익률(`^TYX`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 13주물 국채금리·10년물 국채금리와 함께 보면 **수익률곡선에서 가장 만기가 긴 구간**까지 채워서 볼 수 있다.
 
-    **왜 따로 다루나**: 30년물은 가장 먼 미래의 성장·물가 기대와 기간 프리미엄(만기가 길어질수록 투자자가 추가로 요구하는 보상)을 반영한다. 그래서 단기물과 달리 연준의 당장 정책보다는 장기적인 재정건전성이나 인플레이션 기대에 더 민감하게 움직이는 편이다.
+**왜 따로 다루나**: 30년물은 가장 먼 미래의 성장·물가 기대와 기간 프리미엄(만기가 길어질수록 투자자가 추가로 요구하는 보상)을 반영한다. 그래서 단기물과 달리 연준의 당장 정책보다는 장기적인 재정건전성이나 인플레이션 기대에 더 민감하게 움직이는 편이다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .tyx-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .tyx-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .tyx-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .tyx-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .tyx-chart svg { width:100%; height:auto; display:block; }
 .tyx-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .tyx-chart .title { fill: var(--ink); font-weight:600; }
@@ -618,4 +619,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

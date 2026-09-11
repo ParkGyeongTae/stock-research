@@ -2,10 +2,11 @@
 
 > 최근 1년 일봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. 다년 구조는 [기술적 분석 — 주봉·5년](./10_technical_weekly.md)를 참고. **과거 가격 패턴에 대한 객관적 서술이며 매수/매도 신호나 목표가 예측이 아니다** — 적정주가 판단은 [밸류에이션 / 적정주가](./06_valuation.md), 투자 결론은 [투자 판단](./07_investment.md)에 있다.
 
-??? note "이 차트의 데이터 출처와 대조 결과"
-    - **출처**: Yahoo Finance 일봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다(일봉은 핵심 지표가 다루는 범위 밖이다).
-    - **대조 결과**: **2026-08-27 종가 $89.06은 [핵심 지표 A.2](./04_metrics.md)·[밸류에이션 / 적정주가](./06_valuation.md)에 인용된 값과 일치**한다. 다만 같은 스크립트의 주봉 산출물은 한 거래일 뒤인 **2026-08-28 종가 $89.66**을 최신으로 잡는다 — 일봉 원자료에 2026-08-28이 아직 들어오지 않은 탓이며, 이 저장소의 회사 문서는 모두 일봉 기준(2026-08-27 $89.06)으로 통일했다.
+::: details 이 차트의 데이터 출처와 대조 결과
+- **출처**: Yahoo Finance 일봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다(일봉은 핵심 지표가 다루는 범위 밖이다).
+- **대조 결과**: **2026-08-27 종가 $89.06은 [핵심 지표 A.2](./04_metrics.md)·[밸류에이션 / 적정주가](./06_valuation.md)에 인용된 값과 일치**한다. 다만 같은 스크립트의 주봉 산출물은 한 거래일 뒤인 **2026-08-28 종가 $89.66**을 최신으로 잡는다 — 일봉 원자료에 2026-08-28이 아직 들어오지 않은 탓이며, 이 저장소의 회사 문서는 모두 일봉 기준(2026-08-27 $89.06)으로 통일했다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 1년 일봉 (2025-08-29 ~ 2026-08-27)
@@ -17,9 +18,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .ko-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .ko-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .ko-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .ko-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .ko-chart svg { width:100%; height:auto; display:block; }
 .ko-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .ko-chart .title { fill: var(--ink); font-weight:600; }
@@ -631,4 +632,4 @@
 
 ---
 
-*작성일: 2026-08-30*
+*작성일: 2026-09-11*

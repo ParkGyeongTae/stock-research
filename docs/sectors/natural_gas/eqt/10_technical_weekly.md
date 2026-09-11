@@ -2,11 +2,12 @@
 
 > 최근 5년 주봉으로 다년 가격 구조를 본다. 최근 1년의 세부 흐름은 [기술적 분석 — 일봉·1년](./09_technical_daily.md)에 있다. **과거 가격 패턴에 대한 객관적 서술이며 매수/매도 신호나 목표가 예측이 아니다** — 적정주가 판단은 [밸류에이션 / 적정주가](./06_valuation.md), 투자 결론은 [투자 판단](./07_investment.md)에 있다.
 
-??? note "이 차트의 데이터 출처와 대조 결과"
-    - **출처**: Yahoo Finance 주봉 OHLCV(주 마지막 거래일 기준). [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다.
-    - **대조 결과**: 마지막 종가 **$55.17(2026-09-04)**는 [일봉 문서](./09_technical_daily.md)·[핵심 지표](./04_metrics.md) A.2가 쓰는 **$55.61(2026-09-03)와 1거래일 차이**다. 수집 시점(2026-09-05)에 주봉 시리즈만 하루 더 반영돼 있었기 때문이며, 두 값의 차이는 0.8%다. **밸류에이션·핵심 지표가 쓰는 기준 종가는 일봉 기준 $55.61로 통일했고, 이 문서의 레벨 표만 주봉 원값을 그대로 둔다.**
-    - **주봉 구간에는 2024.07 Equitrans Midstream 재인수(발행주식수 +42%)가 들어 있다.** 분할이 아니므로 과거 주가는 소급 조정되지 않으며, 그 이전과 이후의 주가를 "같은 회사의 같은 지분"으로 비교하면 안 된다([핵심 지표](./04_metrics.md) 상단 주의사항).
+::: details 이 차트의 데이터 출처와 대조 결과
+- **출처**: Yahoo Finance 주봉 OHLCV(주 마지막 거래일 기준). [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다.
+- **대조 결과**: 마지막 종가 **$55.17(2026-09-04)**는 [일봉 문서](./09_technical_daily.md)·[핵심 지표](./04_metrics.md) A.2가 쓰는 **$55.61(2026-09-03)와 1거래일 차이**다. 수집 시점(2026-09-05)에 주봉 시리즈만 하루 더 반영돼 있었기 때문이며, 두 값의 차이는 0.8%다. **밸류에이션·핵심 지표가 쓰는 기준 종가는 일봉 기준 $55.61로 통일했고, 이 문서의 레벨 표만 주봉 원값을 그대로 둔다.**
+- **주봉 구간에는 2024.07 Equitrans Midstream 재인수(발행주식수 +42%)가 들어 있다.** 분할이 아니므로 과거 주가는 소급 조정되지 않으며, 그 이전과 이후의 주가를 "같은 회사의 같은 지분"으로 비교하면 안 된다([핵심 지표](./04_metrics.md) 상단 주의사항).
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉 (2021-09-06 ~ 2026-09-04)
@@ -18,9 +19,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .eqt-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .eqt-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .eqt-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .eqt-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .eqt-chart svg { width:100%; height:auto; display:block; }
 .eqt-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .eqt-chart .title { fill: var(--ink); font-weight:600; }
@@ -656,4 +657,4 @@
 
 ---
 
-*작성일: 2026-09-05*
+*작성일: 2026-09-11*

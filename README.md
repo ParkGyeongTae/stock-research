@@ -1,6 +1,6 @@
 # 주식 리서치 노트
 
-개인 투자자가 **실제 투자 판단**을 위해 작성·갱신하는 주식 리서치 아카이브입니다. [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)로 빌드해 GitHub Pages로 배포합니다.
+개인 투자자가 **실제 투자 판단**을 위해 작성·갱신하는 주식 리서치 아카이브입니다. [VitePress](https://vitepress.dev/)로 빌드해 GitHub Pages로 배포합니다.
 
 **🔗 사이트: https://parkgyeongtae.github.io/stock-research/**
 
@@ -32,7 +32,7 @@
 의존성 관리에는 [uv](https://docs.astral.sh/uv/)를 씁니다.
 
 ```bash
-uv sync
-uv run mkdocs serve   # http://127.0.0.1:8000 에서 미리보기
-uv run mkdocs build   # 배포와 동일하게 정적 사이트 빌드 (site/)
+npm install
+npm run dev           # http://localhost:5173/stock-research/ 에서 미리보기
+npm run build         # 배포와 동일하게 정적 사이트 빌드 (docs/.vitepress/dist/)
 ```

@@ -2,10 +2,11 @@
 
 > 최근 1년 일봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. 다년 구조는 [기술적 분석 — 주봉·5년](./10_technical_weekly.md)를 참고. **과거 가격 패턴에 대한 객관적 서술이며 매수/매도 신호나 목표가 예측이 아니다** — 적정주가 판단은 [밸류에이션 / 적정주가](./06_valuation.md), 투자 결론은 [투자 판단](./07_investment.md)에 있다.
 
-??? note "이 차트의 데이터 출처와 대조 결과"
-    - **출처**: Yahoo Finance 일봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다(일봉은 핵심 지표가 다루는 범위 밖이다).
-    - **대조 결과**: **한 거래일 차이가 있다.** 이 차트의 마지막 봉은 2026-08-27 종가 $340.65인 반면, [핵심 지표](./04_metrics.md)·[밸류에이션 / 적정주가](./06_valuation.md)가 쓰는 기준 종가는 **2026-08-28의 $346.59**다. 수집 시점(2026-08-30)에 일봉 피드가 2026-08-28 봉을 아직 반영하지 않았기 때문이며, 같은 스크립트의 주봉 산출물과 시장 시세는 2026-08-28 $346.59로 일치한다. 배당·분할 조정 차이가 아니라 **데이터 반영 시차**이므로, 아래 레벨 표의 "현재가"는 차트와 같은 2026-08-27 종가를 그대로 두고 다른 문서는 2026-08-28 종가를 쓴다(차이 1.7%).
+::: details 이 차트의 데이터 출처와 대조 결과
+- **출처**: Yahoo Finance 일봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다(일봉은 핵심 지표가 다루는 범위 밖이다).
+- **대조 결과**: **한 거래일 차이가 있다.** 이 차트의 마지막 봉은 2026-08-27 종가 $340.65인 반면, [핵심 지표](./04_metrics.md)·[밸류에이션 / 적정주가](./06_valuation.md)가 쓰는 기준 종가는 **2026-08-28의 $346.59**다. 수집 시점(2026-08-30)에 일봉 피드가 2026-08-28 봉을 아직 반영하지 않았기 때문이며, 같은 스크립트의 주봉 산출물과 시장 시세는 2026-08-28 $346.59로 일치한다. 배당·분할 조정 차이가 아니라 **데이터 반영 시차**이므로, 아래 레벨 표의 "현재가"는 차트와 같은 2026-08-27 종가를 그대로 두고 다른 문서는 2026-08-28 종가를 쓴다(차이 1.7%).
 
+:::
 ---
 
 ## 1. 차트 — 최근 1년 일봉 (2025-08-29 ~ 2026-08-27)
@@ -17,9 +18,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .googl-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .googl-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .googl-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .googl-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .googl-chart svg { width:100%; height:auto; display:block; }
 .googl-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .googl-chart .title { fill: var(--ink); font-weight:600; }
@@ -637,4 +638,4 @@
 
 ---
 
-*작성일: 2026-08-30*
+*작성일: 2026-09-11*

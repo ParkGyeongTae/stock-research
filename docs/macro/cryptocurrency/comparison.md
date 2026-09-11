@@ -1,8 +1,9 @@
 # 디지털자산 2종 비교 (지수화)
 
-!!! note ""
-    비트코인과 이더리움은 둘 다 "대표 디지털자산"으로 묶이지만 성격이 다르다 — 비트코인은 고정 발행 스케줄을 가진 저장가치(store of value) 자산에 가깝고, 이더리움은 디파이·NFT 같은 온체인 활동을 실행하는 플랫폼 자산이다. 둘을 시작일 기준 100으로 지수화해 겹치면 디지털자산 시장 안에서 자금이 어느 쪽으로 쏠리는지 가늠할 수 있다. 개별 지표의 지지선·저항선과 상세 해석은 [비트코인](./bitcoin.md)·[이더리움](./ethereum.md) 각 문서를 따로 참고할 것 — 이 문서는 그 둘을 대체하지 않는다.
+::: info
+비트코인과 이더리움은 둘 다 "대표 디지털자산"으로 묶이지만 성격이 다르다 — 비트코인은 고정 발행 스케줄을 가진 저장가치(store of value) 자산에 가깝고, 이더리움은 디파이·NFT 같은 온체인 활동을 실행하는 플랫폼 자산이다. 둘을 시작일 기준 100으로 지수화해 겹치면 디지털자산 시장 안에서 자금이 어느 쪽으로 쏠리는지 가늠할 수 있다. 개별 지표의 지지선·저항선과 상세 해석은 [비트코인](./bitcoin.md)·[이더리움](./ethereum.md) 각 문서를 따로 참고할 것 — 이 문서는 그 둘을 대체하지 않는다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년, 시작일=100 지수화
@@ -13,9 +14,9 @@
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-btcusd:#2a78d6; --s-ethusd:#eb6834;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .idx-overlay-btcusd-ethusd { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-btcusd:#3987e5; --s-ethusd:#d95926; }
+  .dark .idx-overlay-btcusd-ethusd { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-btcusd:#3987e5; --s-ethusd:#d95926; }
 }
-[data-md-color-scheme="slate"] .idx-overlay-btcusd-ethusd { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-btcusd:#3987e5; --s-ethusd:#d95926; }
+.dark .idx-overlay-btcusd-ethusd { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-btcusd:#3987e5; --s-ethusd:#d95926; }
 .idx-overlay-btcusd-ethusd svg { width:100%; height:auto; display:block; }
 .idx-overlay-btcusd-ethusd text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .idx-overlay-btcusd-ethusd .title { fill: var(--ink); font-weight:600; }
@@ -84,4 +85,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

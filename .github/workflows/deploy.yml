@@ -1,4 +1,4 @@
-name: Deploy MkDocs to GitHub Pages
+name: Deploy VitePress to GitHub Pages
 
 on:
   push:
@@ -21,19 +21,16 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # setup-uv는 v8부터 이동형 major 태그(v8/v9/v10)를 발행하지 않아 정확한 버전으로 고정한다.
-      # 갱신 시 https://github.com/astral-sh/setup-uv/releases 에서 최신 태그를 직접 확인할 것.
-      - uses: astral-sh/setup-uv@v10.0.1
+      - uses: actions/setup-node@v4
         with:
-          enable-cache: true
-
-      - run: uv sync
-
-      - run: uv run mkdocs build
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
 
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: site
+          path: docs/.vitepress/dist
 
   deploy:
     needs: build

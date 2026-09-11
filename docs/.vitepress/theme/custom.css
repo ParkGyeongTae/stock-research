@@ -1,0 +1,20 @@
+:root {
+  --vp-c-brand-1: #3949ab;
+  --vp-c-brand-2: #303f9f;
+  --vp-c-brand-3: #283593;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+.vp-doc th,
+.vp-doc td {
+  white-space: normal;
+}
+
+.vp-doc svg {
+  max-width: 100%;
+  height: auto;
+}

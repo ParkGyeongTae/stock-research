@@ -1,10 +1,11 @@
 # 하이일드 회사채 ETF (HYG)
 
-!!! note ""
-    최근 5년간 iShares 하이일드 회사채 ETF(`HYG`)의 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 이 ETF는 신용등급이 낮은(투기등급) 회사채를 담고 있다. 가격이 내려가면(=수익률은 올라가면) **신용스프레드가 벌어지고 있다**는, 즉 시장이 신용등급 낮은 기업들의 자금조달 위험을 더 크게 보고 있다는 신호로 흔히 읽힌다.
+::: info
+최근 5년간 iShares 하이일드 회사채 ETF(`HYG`)의 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 이 ETF는 신용등급이 낮은(투기등급) 회사채를 담고 있다. 가격이 내려가면(=수익률은 올라가면) **신용스프레드가 벌어지고 있다**는, 즉 시장이 신용등급 낮은 기업들의 자금조달 위험을 더 크게 보고 있다는 신호로 흔히 읽힌다.
 
-    ⚠️ **정확한 신용스프레드 수치는 아니다** — 이 문서가 보여주는 것은 ETF의 **가격**일 뿐, FRED의 ICE BofA 하이일드 스프레드(`BAMLH0A0HYM2`) 같은 실제 신용스프레드 지표가 아니다. 가격 방향이 대체로 스프레드와 반대로 움직이는 참고용 지표(프록시)일 뿐이니, 정밀한 스프레드 수치가 필요하면 원출처를 따로 확인한다.
+⚠️ **정확한 신용스프레드 수치는 아니다** — 이 문서가 보여주는 것은 ETF의 **가격**일 뿐, FRED의 ICE BofA 하이일드 스프레드(`BAMLH0A0HYM2`) 같은 실제 신용스프레드 지표가 아니다. 가격 방향이 대체로 스프레드와 반대로 움직이는 참고용 지표(프록시)일 뿐이니, 정밀한 스프레드 수치가 필요하면 원출처를 따로 확인한다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .hyg-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .hyg-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .hyg-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .hyg-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .hyg-chart svg { width:100%; height:auto; display:block; }
 .hyg-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .hyg-chart .title { fill: var(--ink); font-weight:600; }
@@ -628,4 +629,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

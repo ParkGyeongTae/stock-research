@@ -1,10 +1,11 @@
 # 필라델피아 반도체지수 (SOX)
 
-!!! note ""
-    최근 5년간 필라델피아 반도체지수(`^SOX`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 시장 전체를 대표하는 지표가 아니라, 반도체를 설계·제조하거나 관련 장비를 만드는 회사들로만 구성된 **업종(섹터) 지수**다.
+::: info
+최근 5년간 필라델피아 반도체지수(`^SOX`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 시장 전체를 대표하는 지표가 아니라, 반도체를 설계·제조하거나 관련 장비를 만드는 회사들로만 구성된 **업종(섹터) 지수**다.
 
-    **어떻게 쓰나**: 어떤 회사의 주가가 SOX 지수보다 유독 더 오르거나 내렸다면, 그 회사만의 특별한 이유(펀더멘털) 때문인지 반도체 업황 전체(사이클)의 문제인지 구분하는 첫 단서가 된다. 그 회사의 기술적 차트와 SOX 차트를 같은 기간으로 나란히 놓고 비교해 보는 방법을 권한다.
+**어떻게 쓰나**: 어떤 회사의 주가가 SOX 지수보다 유독 더 오르거나 내렸다면, 그 회사만의 특별한 이유(펀더멘털) 때문인지 반도체 업황 전체(사이클)의 문제인지 구분하는 첫 단서가 된다. 그 회사의 기술적 차트와 SOX 차트를 같은 기간으로 나란히 놓고 비교해 보는 방법을 권한다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .sox-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .sox-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .sox-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .sox-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .sox-chart svg { width:100%; height:auto; display:block; }
 .sox-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .sox-chart .title { fill: var(--ink); font-weight:600; }
@@ -620,4 +621,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

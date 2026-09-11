@@ -1,8 +1,9 @@
 # VIX 변동성지수
 
-!!! note ""
-    최근 5년간 CBOE 변동성지수(S&P 500 옵션의 내재변동성을 바탕으로 계산, `^VIX`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 개별 종목의 밸류에이션이 아니라 **시장 전체가 지금 얼마나 위험을 감수하려 하는지**를 보여주는 지표다 — 수치가 높을수록 옵션시장이 앞으로의 가격 변동(흔히 "공포심리"라 부른다)을 크게 예상하고 있다는 뜻이다.
+::: info
+최근 5년간 CBOE 변동성지수(S&P 500 옵션의 내재변동성을 바탕으로 계산, `^VIX`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 개별 종목의 밸류에이션이 아니라 **시장 전체가 지금 얼마나 위험을 감수하려 하는지**를 보여주는 지표다 — 수치가 높을수록 옵션시장이 앞으로의 가격 변동(흔히 "공포심리"라 부른다)을 크게 예상하고 있다는 뜻이다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .vix-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .vix-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .vix-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .vix-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .vix-chart svg { width:100%; height:auto; display:block; }
 .vix-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .vix-chart .title { fill: var(--ink); font-weight:600; }
@@ -622,4 +623,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

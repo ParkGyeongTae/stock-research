@@ -1,8 +1,9 @@
 # 코스피·코스닥 비교 (지수화)
 
-!!! note ""
-    코스피(대형주 위주)와 코스닥(중소형·성장주 위주)을 시작일 기준 100으로 지수화해 겹치면, 국내 자금이 대형주와 중소형주 중 어느 쪽으로 쏠렸는지 한눈에 확인할 수 있다. 개별 지표의 지지선·저항선과 상세 해석은 [코스피](./kospi.md)·[코스닥](./kosdaq.md) 각 문서를 따로 참고할 것 — 이 문서는 그 둘을 대체하지 않는다.
+::: info
+코스피(대형주 위주)와 코스닥(중소형·성장주 위주)을 시작일 기준 100으로 지수화해 겹치면, 국내 자금이 대형주와 중소형주 중 어느 쪽으로 쏠렸는지 한눈에 확인할 수 있다. 개별 지표의 지지선·저항선과 상세 해석은 [코스피](./kospi.md)·[코스닥](./kosdaq.md) 각 문서를 따로 참고할 것 — 이 문서는 그 둘을 대체하지 않는다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년, 시작일=100 지수화
@@ -13,9 +14,9 @@
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-ks11:#2a78d6; --s-kq11:#eb6834;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .idx-overlay-ks11-kq11 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-ks11:#3987e5; --s-kq11:#d95926; }
+  .dark .idx-overlay-ks11-kq11 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-ks11:#3987e5; --s-kq11:#d95926; }
 }
-[data-md-color-scheme="slate"] .idx-overlay-ks11-kq11 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-ks11:#3987e5; --s-kq11:#d95926; }
+.dark .idx-overlay-ks11-kq11 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-ks11:#3987e5; --s-kq11:#d95926; }
 .idx-overlay-ks11-kq11 svg { width:100%; height:auto; display:block; }
 .idx-overlay-ks11-kq11 text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .idx-overlay-ks11-kq11 .title { fill: var(--ink); font-weight:600; }
@@ -86,4 +87,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

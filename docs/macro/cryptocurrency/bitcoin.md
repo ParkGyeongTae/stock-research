@@ -1,10 +1,11 @@
 # 비트코인 (BTC/USD)
 
-!!! note ""
-    최근 5년간 비트코인 대 달러(BTC/USD, `BTC-USD`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 비트코인 가격은 디지털 자산 시장에 돈이 얼마나 몰리는지, 투자자들이 위험을 얼마나 감수하려 하는지를 보여주는 지표다. 가상자산 거래소나 보관(커스터디) 서비스, 비트코인을 직접 보유한 회사들의 실적·평가손익은 이 가격에 그대로 연동되는 경우가 많다.
+::: info
+최근 5년간 비트코인 대 달러(BTC/USD, `BTC-USD`) 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. 비트코인 가격은 디지털 자산 시장에 돈이 얼마나 몰리는지, 투자자들이 위험을 얼마나 감수하려 하는지를 보여주는 지표다. 가상자산 거래소나 보관(커스터디) 서비스, 비트코인을 직접 보유한 회사들의 실적·평가손익은 이 가격에 그대로 연동되는 경우가 많다.
 
-    ⚠️ 비트코인은 **주식과 달리 1년 365일, 하루 24시간 거래**된다. 그래서 이 차트의 "한 주의 마지막 거래일"이 주식시장처럼 금요일이 아니라 주말(예: 일요일 UTC 자정)이 될 수 있고, 거래량을 세는 단위도 주식과 다르다.
+⚠️ 비트코인은 **주식과 달리 1년 365일, 하루 24시간 거래**된다. 그래서 이 차트의 "한 주의 마지막 거래일"이 주식시장처럼 금요일이 아니라 주말(예: 일요일 UTC 자정)이 될 수 있고, 거래량을 세는 단위도 주식과 다르다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .btc-usd-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .btc-usd-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .btc-usd-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .btc-usd-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .btc-usd-chart svg { width:100%; height:auto; display:block; }
 .btc-usd-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .btc-usd-chart .title { fill: var(--ink); font-weight:600; }
@@ -623,4 +624,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

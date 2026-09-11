@@ -2,14 +2,16 @@
 
 > 최근 5년 주봉 가격 흐름을 지지선·저항선과 함께 정리한 참고 자료. 최근 1년의 세부 흐름은 [기술적 분석 — 일봉·1년](./09_technical_daily.md)를 참고. **과거 가격 패턴에 대한 객관적 서술이며 매수/매도 신호나 목표가 예측이 아니다** — 적정주가 판단은 [밸류에이션 / 적정주가](./06_valuation.md), 투자 결론은 [투자 판단](./07_investment.md)에 있다.
 
-!!! warning "이 차트의 5년 구간에는 서로 다른 두 회사가 들어 있다"
-    구간 시작(2021-09)은 **Chesapeake Energy**가 파산에서 벗어난 직후이고, 2024-10-01 Southwestern Energy 합병 이후는 **Expand Energy**다. 합병은 주식교환이라 주당 가격의 연속성은 유지되지만, **발행주식수가 130.8 → 232.7백만 주로 78% 늘고 생산량이 두 배가 된 뒤의 $100과 그 전의 $100은 같은 것을 뜻하지 않는다.** 아래 R1($106)·S3($80)처럼 터치가 전부 Chesapeake 시절인 레벨은 특히 주의해서 읽어야 한다.
+::: warning 이 차트의 5년 구간에는 서로 다른 두 회사가 들어 있다
+구간 시작(2021-09)은 **Chesapeake Energy**가 파산에서 벗어난 직후이고, 2024-10-01 Southwestern Energy 합병 이후는 **Expand Energy**다. 합병은 주식교환이라 주당 가격의 연속성은 유지되지만, **발행주식수가 130.8 → 232.7백만 주로 78% 늘고 생산량이 두 배가 된 뒤의 $100과 그 전의 $100은 같은 것을 뜻하지 않는다.** 아래 R1($106)·S3($80)처럼 터치가 전부 Chesapeake 시절인 레벨은 특히 주의해서 읽어야 한다.
 
-??? note "이 차트의 데이터 출처와 대조 결과"
-    - **출처**: Yahoo Finance 주봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다.
-    - **대조 결과**: **2026-09-04 종가 $97.91은 [핵심 지표](./04_metrics.md) A.2 및 [밸류에이션 / 적정주가](./06_valuation.md)에 인용된 값과 일치한다.**
-    - **주의**: **원주가**(배당 미반영)이며 기간 내 분기배당이 20회 있었다.
+:::
+::: details 이 차트의 데이터 출처와 대조 결과
+- **출처**: Yahoo Finance 주봉 OHLCV. 이 차트용으로 따로 수집한 값이라 [핵심 지표](./04_metrics.md)의 원자료 표와는 계보가 다르다.
+- **대조 결과**: **2026-09-04 종가 $97.91은 [핵심 지표](./04_metrics.md) A.2 및 [밸류에이션 / 적정주가](./06_valuation.md)에 인용된 값과 일치한다.**
+- **주의**: **원주가**(배당 미반영)이며 기간 내 분기배당이 20회 있었다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉 (2021-09-06 ~ 2026-09-04)
@@ -21,9 +23,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .exe-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .exe-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .exe-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .exe-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .exe-chart svg { width:100%; height:auto; display:block; }
 .exe-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .exe-chart .title { fill: var(--ink); font-weight:600; }
@@ -664,4 +666,4 @@
 
 ---
 
-*작성일: 2026-09-05*
+*작성일: 2026-09-11*

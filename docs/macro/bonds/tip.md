@@ -1,10 +1,11 @@
 # 물가연동국채 ETF (TIP)
 
-!!! note ""
-    최근 5년간 iShares 물가연동국채(TIPS) ETF(`TIP`)의 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. TIPS는 원금이 소비자물가지수(CPI)에 맞춰 자동으로 조정되는 국채다. TLT(명목 장기국채, 물가에 연동되지 않는 일반 국채) 대비 이 ETF가 상대적으로 강한지 약한지를 보면, 시장이 앞으로의 물가 상승(기대인플레이션)을 어느 방향으로 예상하는지 대략 가늠할 수 있다.
+::: info
+최근 5년간 iShares 물가연동국채(TIPS) ETF(`TIP`)의 주간 가격을 지지선·저항선과 함께 정리한 참고 자료다. TIPS는 원금이 소비자물가지수(CPI)에 맞춰 자동으로 조정되는 국채다. TLT(명목 장기국채, 물가에 연동되지 않는 일반 국채) 대비 이 ETF가 상대적으로 강한지 약한지를 보면, 시장이 앞으로의 물가 상승(기대인플레이션)을 어느 방향으로 예상하는지 대략 가늠할 수 있다.
 
-    ⚠️ **정밀한 기대인플레이션(breakeven inflation, BEI) 수치는 아니다** — 실제 BEI는 만기가 같은 명목채와 물가연동채의 수익률을 서로 빼서 계산하는데(예: FRED `T10YIE`), 이 문서는 그런 계산을 하지 않는다. 이 문서는 TLT와 비교했을 때 방향이 어느 쪽인지 대략적으로만 참고하는 용도로 쓴다.
+⚠️ **정밀한 기대인플레이션(breakeven inflation, BEI) 수치는 아니다** — 실제 BEI는 만기가 같은 명목채와 물가연동채의 수익률을 서로 빼서 계산하는데(예: FRED `T10YIE`), 이 문서는 그런 계산을 하지 않는다. 이 문서는 TLT와 비교했을 때 방향이 어느 쪽인지 대략적으로만 참고하는 용도로 쓴다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -16,9 +17,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .tip-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .tip-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .tip-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .tip-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .tip-chart svg { width:100%; height:auto; display:block; }
 .tip-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .tip-chart .title { fill: var(--ink); font-weight:600; }
@@ -618,4 +619,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

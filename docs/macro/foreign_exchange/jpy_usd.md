@@ -1,8 +1,9 @@
 # 엔/달러 환율 (USD/JPY)
 
-!!! note ""
-    최근 5년간 엔/달러 환율(1달러가 몇 엔인지, `JPY=X`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 엔화는 투자자들이 위기 때 몰리는 대표적인 **안전자산 통화**이면서, 동시에 **캐리트레이드**(금리가 낮은 통화를 빌려서 금리가 높은 자산에 투자하는 거래)에서 돈을 빌리는 데 가장 많이 쓰이는 통화이기도 하다. 그래서 이 환율이 급격히 움직이면(특히 엔화가 갑자기 강해지는 "엔 급등" = 캐리트레이드 청산), 위험자산 전반이 함께 흔들리는 경우가 있다.
+::: info
+최근 5년간 엔/달러 환율(1달러가 몇 엔인지, `JPY=X`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 엔화는 투자자들이 위기 때 몰리는 대표적인 **안전자산 통화**이면서, 동시에 **캐리트레이드**(금리가 낮은 통화를 빌려서 금리가 높은 자산에 투자하는 거래)에서 돈을 빌리는 데 가장 많이 쓰이는 통화이기도 하다. 그래서 이 환율이 급격히 움직이면(특히 엔화가 갑자기 강해지는 "엔 급등" = 캐리트레이드 청산), 위험자산 전반이 함께 흔들리는 경우가 있다.
 
+:::
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -14,9 +15,9 @@
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-md-color-scheme="default"]) .jpy-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .jpy-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
-[data-md-color-scheme="slate"] .jpy-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+.dark .jpy-x-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .jpy-x-chart svg { width:100%; height:auto; display:block; }
 .jpy-x-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
 .jpy-x-chart .title { fill: var(--ink); font-weight:600; }
@@ -618,4 +619,4 @@
 
 ---
 
-*작성일: 2026-08-29*
+*작성일: 2026-09-11*

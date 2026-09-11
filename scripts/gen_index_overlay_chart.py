@@ -208,11 +208,11 @@ def render_svg(
     )
     a(
         f"@media (prefers-color-scheme: dark) {{\n"
-        f'  body:not([data-md-color-scheme="default"]) .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; '
+        f'  .dark .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; '
         f"--axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; {dark_vars}; }}\n}}"
     )
     a(
-        f'[data-md-color-scheme="slate"] .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; '
+        f'.dark .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; '
         f'--ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; {dark_vars}; }}'
     )
     a(f".{cls} svg {{ width:100%; height:auto; display:block; }}")
