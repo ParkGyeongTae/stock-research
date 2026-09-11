@@ -46,24 +46,24 @@ function navFor(directory) {
   const entries = parsePages(directory)
   if (!entries) return autoNavFor(directory)
 
-  return entries.map(({ label, target }) => {
+  return entries.flatMap(({ label, target }) => {
     if (target === '...') {
       const explicitTargets = new Set(entries.filter((entry) => entry.target !== '...').map((entry) => entry.target))
-      return { items: autoNavFor(directory, explicitTargets) }
+      return autoNavFor(directory, explicitTargets)
     }
     const absolute = path.join(directory, target)
     if (target.endsWith('.md')) {
-      return {
+      return [{
         text: label || pageTitle(absolute),
         link: `/${path.relative(docsDir, absolute).replaceAll(path.sep, '/').replace(/\.md$/, '')}`,
-      }
+      }]
     }
 
     const children = navFor(absolute)
-    return {
+    return [{
       text: label || path.basename(target),
       ...(children.length ? { items: children } : { link: `/${path.relative(docsDir, absolute).replaceAll(path.sep, '/')}/` }),
-    }
+    }]
   })
 }
 
