@@ -39,12 +39,7 @@ grep -l '^> ⚠️' docs/sectors/<sector>/<company>/*.md 2>/dev/null | sed 's#.*
 
 ## 1. 폴더 준비
 
-**재생성이면 지우기 전에 옮길 것부터 추린다.** 웹에서 다시 못 구하는 것만 `.work/<company>/carryover.md`에 저장하고(읽기는 한 콜로 묶는다), 그 외는 전부 새로 조사한다.
-
-- `08_news.md` 로그 — 발생 시점과 그때의 판단
-- `04_metrics.md`의 `!!! warning` — 이 회사 고유의 오독 위험(분할 소급조정, 일회성 손익, 짧은 상장 이력)
-- `04_metrics.md` C절 지표 목록과 정의 — 섹터 단위 합의값이라 임의로 바꾸면 동종사 비교가 깨진다
-- `06_valuation.md`의 방법론 채택·제외 사유와 가중치 근거
+**재생성이면 지우기 전에 옮길 것부터 추린다.** 무엇을 옮기는지는 `docs/authoring/authoring-guide.md` "재생성"이 마스터다(뉴스 로그, 회사 고유 `::: warning`, C절 지표 목록과 정의, 방법론 채택·제외 사유). 그 항목만 `.work/<company>/carryover.md`에 저장하고(읽기는 한 콜로 묶는다), 나머지는 전부 새로 조사한다.
 
 ```bash
 mkdir -p .work/<company>
@@ -52,7 +47,7 @@ rm -rf docs/sectors/<sector>/<company>
 cp -r docs/authoring/template/company docs/sectors/<sector>/<company>
 ```
 
-사용자가 섹터를 지정하지 않았으면 `ls docs/sectors/`로 목록을 확인해 제안한 뒤 진행한다. 폴더명은 소문자 스네이크케이스(섹터 `electronic_design_automation`, 회사 `synopsys`). 복합기업은 매출 비중이 아니라 **"이 저장소에서 그 회사를 보는 이유"가 되는 사업**으로 섹터를 정한다. 섹터 폴더를 새로 만들면 `docs/sectors/.pages`에 등록한다(빠뜨리면 경고 없이 내비게이션에서 사라진다).
+사용자가 섹터를 지정하지 않았으면 `ls docs/sectors/`로 목록을 확인해 제안한 뒤 진행한다. 폴더명은 소문자 스네이크케이스(섹터 `electronic_design_automation`, 회사 `synopsys`). 복합기업은 매출 비중이 아니라 **"이 저장소에서 그 회사를 보는 이유"가 되는 사업**으로 섹터를 정한다. 섹터 폴더를 새로 만들면 `docs/sectors/.pages`에 등록한다(규칙은 `docs/authoring/authoring-guide.md` "`.pages` 등록 규칙").
 
 **섹터 폴더에 산업 분석·개요 문서를 두지 않는다** — 산업 분석은 각 회사 `01_overview.md`의 "산업 / 시장 내 위치"에서 그 회사 관점으로만 다룬다. 예외는 섹터 전용 용어를 모으는 `00_glossary.md`뿐이고, 여긴 정의만 담고 분석·전망은 담지 않는다.
 
@@ -69,10 +64,10 @@ uv run python scripts/fetch_sec_facts.py <TICKER> --emit all -o .work/<company>/
 sed -n '1,80p' .work/<company>/facts_sec.md    # 표는 80줄 안쪽이라 한 번에 읽어도 된다
 ```
 
-- 셀별 원공시(form·제출일·accession)가 필요하면 `--emit sources`. 소급 수정값에 `*`, 파생값(Q4 = FY − Q1·Q2·Q3, 이자부 차입금 합계)에 `ᵈ`가 붙는다 — **파생값을 인용할 땐 문서에도 파생임을 밝힌다.**
-- **지배주주 귀속 vs 연결(NCI 포함)**, **부채총계 vs 이자부 차입금**이 각각 별도 행으로 나온다. 이 저장소가 반복해서 틀리던 지점이므로 행을 합치지 않는다.
-- 여기 나오는 값은 전부 GAAP이다. Adjusted EBITDA·Adjusted EPS 같은 Non-GAAP은 8-K Ex-99 실적발표에서 따로 확인하고 라벨을 붙인다.
-- `—`는 "값이 없음"이 아니라 "그 태그로 태깅하지 않음"이다. 결론을 좌우하는 항목이 비면 그때만 공시 원문을 본다.
+**출력 표기(`*` 소급 수정, `ᵈ` 파생)와 한계, 별도 행으로 나오는 이유는 그 스크립트의 docstring이 마스터다** — 처음 쓰거나 값이 이상하면 docstring을 먼저 읽는다. 이 단계에서 지킬 것만 적는다:
+
+- **파생값(`ᵈ`)을 인용할 땐 문서에도 파생임을 밝힌다.** 별도 행으로 나온 값(지배주주 귀속 vs 연결, 부채총계 vs 이자부 차입금)은 합치지 않는다.
+- 여기 나오는 값은 전부 GAAP이다. Non-GAAP은 8-K Ex-99에서 따로 확인하고 라벨을 붙인다.
 - 스크립트가 못 주는 것(종가·시가총액·베타·컨센서스·가이던스·사업 고유 지표)은 **3단계 정성 조사와 같은 턴에 묶어** 검색한다.
 
 ### 2-2. 표를 채운다
@@ -135,7 +130,7 @@ sed -n '/^## D\. 판단 메모/,$p' $D/04_metrics.md
 
 ### 4-3. `07_investment.md`
 
-Bear Case에 **트리거 / 하방 밸류에이션 / 확인·기각 신호** 셋이 모두 있어야 한다. 이 저장소는 낙관 편향이 기본값이라 여기를 더 엄격히 채운다. 종합 적정주가는 `06`에서 인용하고 여기서 새로 계산하지 않는다.
+Bear Case에 **트리거 / 하방 밸류에이션 / 확인·기각 신호** 셋이 모두 있어야 한다 — 판정 기준은 `AGENTS.md` "Bear Case가 '부실'한지 판정하는 기준"이 마스터다. 이 저장소는 낙관 편향이 기본값이라 여기를 더 엄격히 채운다. 종합 적정주가는 `06`에서 인용하고 여기서 새로 계산하지 않는다.
 
 ---
 
@@ -169,17 +164,15 @@ uv run python scripts/gen_technical_chart.py <TICKER> --name "<이름>" --interv
 D=docs/sectors/<sector>/<company>
 grep -rn "> ⚠️" $D/ ; echo "@@@ 작성일 @@@"; grep -rn "작성일" $D/*.md
 echo "@@@ 종가 정합 @@@"; grep -rn "<종가값>" --include='*.md' docs/sectors/<sector>/
-uv run mkdocs build 2>&1 | grep -i "unrecognized relative link" | head
+npm run build 2>&1 | grep -i "dead link\|not found" | head
 ```
 
-- **`> ⚠️` 지침 블록이 하나도 남지 않았는지** — 위 `grep`이 비어야 한다. `!!! …`·`??? …`는 독자용이니 실제 내용으로 채워 남긴다(마스터: `docs/authoring/authoring-guide.md`의 **표기법이 곧 "발행 여부"를 뜻한다** 항목)
-- `carryover.md`에 추려둔 항목이 새 문서에 실제로 반영됐는지
-- `04_metrics.md`를 인용한 문서(`05`·`06`·`07`·`00`, 종가가 겹치면 `09`·`10`)가 서로 일치하는지 — grep으로 실제 검색할 것
-- `*작성일*` — 오늘 날짜는 `# currentDate` → `date +%Y-%m-%d` → 확인 불가 시 사용자에게 확인
-- 신규 섹터면 `docs/sectors/.pages`, 이번에 `00_glossary.md`를 만들었으면 그 섹터 폴더의 `.pages`
-- 확인 못 한 값이 확정치처럼 남아 있지 않은지 — (E)·출처 각주·"확인 필요"가 남아 있어야 한다
+**공통 항목 여섯 개는 `AGENTS.md` "작업을 마치기 전에"가 마스터다**(인용처 추적 · `*작성일*` · `.pages` · 빌드 경고 · `> ⚠️` 잔존 · 미확인 값 표기). 위 명령이 그 여섯 개를 한 번에 훑는 것이고, 회사 폴더에서만 추가로 볼 것은 둘이다:
 
-`.work/<company>/`는 지워도 된다(gitignore 대상이라 저장소에 남지 않는다). 보고할 때는 확인한 것과 확인하지 못한 것을 구분해서 말한다.
+- `carryover.md`에 추려둔 항목이 새 문서에 실제로 반영됐는지
+- 이번에 `00_glossary.md`를 만들었으면 그 섹터 폴더에 `.pages`도 함께 뒀는지
+
+`.work/<company>/`는 지워도 된다(gitignore 대상이라 저장소에 남지 않는다).
 
 ---
 

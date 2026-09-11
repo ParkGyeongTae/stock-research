@@ -2,6 +2,8 @@
 
 이 문서는 `docs/` 안에서 리서치 문서를 **쓰고 관리할 때** 지키는 규칙을 모아둡니다 — 폴더 구조·명명 규칙, 회사 폴더 파일별 역할(00~10 번호 체계), 작성 규칙, 신규 추가 절차, 로컬 확인까지 여기서 다룹니다. 주 독자는 `docs/`를 쓰고 관리하는 사람(Claude Code 등 에이전트)이지만, **저장소 주인이 "이 문서들이 어떤 규칙으로 만들어졌는지"를 사이트에서 읽을 수 있도록** 절차서도 `docs/authoring/`에 두고 함께 발행합니다 — 사이트 첫 페이지는 [`index.md`](../index.md)입니다.
 
+**어떤 규칙이 어느 파일에 사는지**는 [`AGENTS.md`](https://github.com/ParkGyeongTae/stock-research/blob/main/AGENTS.md)의 "단일 출처 지도"가 정리합니다. 이 문서가 다루지 않는 것(에이전트의 역할·리뷰 기준·마무리 검증, 차트 커맨드, 용어 정의)은 그 표를 따라가면 됩니다. **같은 규칙을 두 문서에 적지 않습니다** — 옮겨 적으면 한쪽만 낡습니다.
+
 ---
 
 ## 📁 폴더 구조·명명 규칙
@@ -191,11 +193,7 @@ cp -r docs/authoring/template/company docs/sectors/<sector>/<company-name>
 
 ### 로컬에서 확인하기
 
-```bash
-npm install            # 최초 1회
-npm run dev           # http://localhost:5173/stock-research/ 에서 미리보기
-npm run build         # 배포와 동일하게 빌드 — 경고 메시지를 반드시 확인
-```
+설치·실행 명령은 저장소 [`README.md`](https://github.com/ParkGyeongTae/stock-research/blob/main/README.md) "로컬에서 실행"에 있다 — 여기 옮겨 적지 않는다. 문서를 고친 뒤에는 `npm run build`의 **출력**을 본다.
 
 `build` 출력의 깨진 링크 경고는 **깨진 문서 간 링크**를 뜻한다. 깨진 링크가 있어도 빌드는 성공하고 GitHub Actions 배포도 그대로 통과할 수 있으므로, 문서를 추가·이동한 뒤에는 경고가 늘지 않았는지 직접 봐야 한다. nav 순서는 VitePress 설정이 `.pages` 파일과 파일명 숫자 접두사를 읽어 결정한다.
 
