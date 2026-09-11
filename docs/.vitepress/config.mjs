@@ -20,17 +20,18 @@ function pageTitle(file) {
   return match?.[1]?.replace(/[`*_]/g, '') || path.basename(file, '.md')
 }
 
-function autoNavFor(directory) {
+function autoNavFor(directory, excludedTargets = new Set()) {
   return fs.readdirSync(directory, { withFileTypes: true })
-    .filter((entry) => !entry.name.startsWith('.') && (entry.isDirectory() || entry.name.endsWith('.md')))
+    .filter((entry) => !entry.name.startsWith('.') && !excludedTargets.has(entry.name) && (entry.isDirectory() || entry.name.endsWith('.md')))
     .sort((a, b) => a.name.localeCompare(b.name, 'en'))
     .map((entry) => {
       const absolute = path.join(directory, entry.name)
       if (entry.isDirectory()) {
         const report = path.join(absolute, '00_final_report.md')
+        const overview = path.join(absolute, '01_overview.md')
         const children = autoNavFor(absolute)
         return {
-          text: fs.existsSync(report) ? pageTitle(report) : entry.name,
+          text: fs.existsSync(overview) ? pageTitle(overview) : (fs.existsSync(report) ? pageTitle(report) : entry.name),
           ...(children.length ? { items: children } : {}),
         }
       }
@@ -43,10 +44,13 @@ function autoNavFor(directory) {
 
 function navFor(directory) {
   const entries = parsePages(directory)
-  if (!entries) return []
+  if (!entries) return autoNavFor(directory)
 
   return entries.map(({ label, target }) => {
-    if (target === '...') return { items: autoNavFor(directory) }
+    if (target === '...') {
+      const explicitTargets = new Set(entries.filter((entry) => entry.target !== '...').map((entry) => entry.target))
+      return { items: autoNavFor(directory, explicitTargets) }
+    }
     const absolute = path.join(directory, target)
     if (target.endsWith('.md')) {
       return {
