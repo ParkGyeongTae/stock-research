@@ -18,3 +18,20 @@
   max-width: 100%;
   height: auto;
 }
+
+/* 거시지표 SVG 차트가 사이트 다크 모드에서도 검정색으로 뭉개지지 않도록 합니다. */
+.dark .vp-doc [class$='-chart'],
+.dark .vp-doc [class^='idx-overlay-'] {
+  --bg: #20252b !important;
+  --grid: #3b424a !important;
+  --axis: #68727d !important;
+  --ink: #f2f4f7 !important;
+  --ink2: #c7ced6 !important;
+  --muted: #aab3bd !important;
+  --base: #aab3bd !important;
+  --up: #35c98a !important;
+  --down: #ff7b7b !important;
+  --support: #6aa7f7 !important;
+  --resistance: #ff916b !important;
+  --ref: #aab3bd !important;
+}
