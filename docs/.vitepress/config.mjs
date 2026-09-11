@@ -77,13 +77,29 @@ function collapseSidebarGroups(items) {
 
 const sidebar = collapseSidebarGroups(navigation)
 
+const siteUrl = 'https://parkgyeongtae.github.io'
+const siteBase = '/stock-research/'
+
 export default {
   lang: 'ko-KR',
   title: '주식 리서치 노트',
   description: '미국 상장 기업/섹터 투자 리서치 정리',
-  base: '/stock-research/',
+  base: siteBase,
   cleanUrls: true,
   lastUpdated: true,
+  sitemap: {
+    hostname: `${siteUrl}${siteBase}`,
+  },
+  transformHead({ pageData }) {
+    const pagePath = pageData.relativePath
+      .replace(/(^|\/)index\.md$/, '$1')
+      .replace(/\.md$/, '')
+    const canonicalPath = pagePath ? `${siteBase}${pagePath}` : siteBase
+
+    return [
+      ['link', { rel: 'canonical', href: `${siteUrl}${canonicalPath}` }],
+    ]
+  },
   themeConfig: {
     nav: navigation,
     sidebar,
