@@ -100,7 +100,14 @@ export default {
       ['link', { rel: 'canonical', href: `${siteUrl}${canonicalPath}` }],
     ]
   },
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: `${siteBase}stock-research-icon.png` }],
+  ],
   themeConfig: {
+    logo: {
+      src: '/stock-research-icon.png',
+      alt: '주식 리서치 노트 로고',
+    },
     nav: navigation,
     sidebar,
     search: { provider: 'local' },
