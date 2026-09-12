@@ -1,23 +1,23 @@
 # 최근 뉴스 / 이슈
 
-> 2025년 상반기 규제 리스크 해소(SEC 소송 취하)·주류금융 편입(S&P500)이라는 구조적 호재가 몰린 뒤, 2025년 말~2026년에는 신사업 확장(예측시장·주식거래)과 조직 재편(대규모 감원)이 이어졌고, 2026년 8월 중순에는 비트코인 랠리·토큰화 규제 순풍을 계기로 주가가 큰 폭 반등했다.
+> 실적은 3개 분기 연속 역성장인데, 뉴스 흐름은 규제(CLARITY Act)와 사업 확장(토큰화 주식·파생)에 쏠려 있다 — **주가를 움직이는 것이 실적이 아니라 제도·신사업 기대**라는 점이 이 로그의 공통점이다.
 
-> ⚠️ 이 문서는 **시점성 메모(로그)**다. 발생 순으로 아래 표에 쌓아두고 투자 결론은 내리지 않는다. 판단에 영향을 주는 항목은 [밸류에이션 / 적정주가](./06_valuation.md)·[투자 판단](./07_investment.md)에 이미 반영했다(각 로그 항목의 "관련 문서" 참고).
+::: info 이 문서의 성격
+발생 순으로 쌓는 **시점성 로그**다(최신이 위). 여기서는 투자 결론을 내리지 않는다 — 판단에 영향을 주는 항목은 [밸류에이션 / 적정주가](./06_valuation.md)·[투자 판단](./07_investment.md)을 직접 갱신하고, 여기에는 반영했다는 표시만 남긴다.
 
+:::
 ---
 
 ## 로그
 
-| 날짜 | 이슈 | 내용 | 관련 문서 | 출처 |
-|------|------|------|-----------|------|
-| 2026-08-19~21 | 주가 3거래일 연속 급등 (누적 약 +21%) | 비트코인 랠리, 아부다비 토큰화 허브 규제 승인·SEC의 디지털증권 거래 혁신면제(innovation exemption) 등 토큰화·규제 순풍, 2026 Q2 실적(점유율 10.3%·Adjusted EBITDA 14분기 연속 흑자) 재조명이 겹쳐 $153.90(2026-08-13) → $186.49(2026-08-21)로 급등 | 개요, 핵심 지표, 밸류에이션 / 적정주가, 투자 판단 | [stockanalysis.com](https://stockanalysis.com/stocks/coin/), [Coinbase Share Price Gained 10% to Hit $190 — CryptoTimes](https://www.cryptotimes.io/2026/08/21/coinbase-share-price-gained-10-to-hit-190-is-200-next/) |
-| 2026-07-30 | 2026년 2분기 실적 발표 | 순매출 약 $1,154.3M, GAAP 순손실 약 $359.5M. 글로벌 크립토 거래량 점유율 10.3%로 3개 분기 연속 사상 최고치 기록. 매출은 3개 분기 연속 YoY 역성장(2025 Q4·2026 Q1·Q2) | 개요, 핵심 지표, 재무 / 실적 | [Q2'26 Earnings Presentation — SEC EDGAR](https://www.sec.gov/Archives/edgar/data/1679788/000167978826000087/q226earningsdeck_sec.htm); [Coinbase Hits Record 10.3% Market Share Despite $359M Loss — news.bitcoin.com](https://news.bitcoin.com/crypto-news/coinbase-record-market-share-q2-2026-loss/) |
-| 2026-05-05 | 인력 14% 감원, "AI-네이티브" 조직 전환 | 전체 인력 약 700명 감원, 관리 계층을 CEO 직속 5단계로 단순화. 2분기 중 $50~60M 규모 구조조정비용(대부분 현금 퇴직위로금) 반영 | 역사 / 주요 이벤트, CEO / 경영진 | [Coinbase cuts headcount by 14% citing AI acceleration — CNBC](https://www.cnbc.com/2026/05/05/coinbase-cuts-headcount-by-14percent-citing-ai-acceleration-the-shares-are-gaining.html) |
-| 2026-04-22 | Kalshi, 크립토 파생상품(퍼페추얼 선물) 진출 발표 | 예측시장 파트너였던 Kalshi가 미국 내 크립토 퍼페추얼 선물 서비스 출시를 발표 — Coinbase의 파생상품 사업과 직접 경쟁 구도 형성 가능성 | 투자 판단 2. 경쟁 해자 (Moat)·3. 리스크 (약점 / Bear Case) | [Kalshi Enters Crypto Trading, Targeting Coinbase — Yellow.com](https://yellow.com/news/kalshi-crypto-perpetual-futures-coinbase-competition) |
-| 2026-01-27~02-02 | Kalshi 제휴 예측시장 미국 전역(50개 주) 출시 | Coinbase 앱 내에서 Kalshi 기반 예측시장을 미국 전역 고객에게 제공 시작 — 거래소 본업 외 신규 수익원 확장 시도 | 개요, 투자 판단 1. 투자 포인트 (강점 / Bull Case) | [Coinbase (COIN) and Kalshi team for prediction market — CoinDesk](https://www.coindesk.com/markets/2026/01/27/coinbase-rolls-out-prediction-market-to-u-s-customers); [Coinbase Launches Prediction Markets Nationwide — Genfinity](https://genfinity.io/2026/02/02/coinbase-prediction-markets-launch-kalshi/) |
-| 2025-12-17 | 주식 거래·토큰화 주식(Stock Tokens) 서비스 발표 | 크립토 거래소를 넘어 전통 주식·토큰화 주식 거래 서비스로 사업 영역 확장 발표 — Robinhood의 토큰화 주식 전략과 직접 경쟁 구도 | 개요 3. 산업 / 시장 내 위치, 투자 판단 1. 투자 포인트 (강점 / Bull Case)·3. 리스크 (약점 / Bear Case) | [Coinbase announces stock trading and new Kalshi-based prediction markets — Fortune](https://fortune.com/2025/12/17/coinbase-announces-stock-trading-and-new-kalshi-based-prediction-markets/) |
-| 2025-02-27~2025-07-18 | SEC 소송 취하·Deribit 인수·데이터 유출·S&P500 편입·Circle IPO·GENIUS Act | → 역사 / 주요 이벤트·투자 판단 1. 투자 포인트 (강점 / Bull Case)·3. 리스크 (약점 / Bear Case)에 이미 반영(4분기 이상 지난 항목이라 로그에서 압축) | 역사 / 주요 이벤트, 투자 판단 | 역사 / 주요 이벤트 연혁 표 참고 |
+| 날짜 | 이슈 | 내용 | 출처 |
+|------|------|------|------|
+| 2026-09-15 (예정) | **CLARITY Act 상원 클로처 표결** | 디지털자산 시장 구조 법안. 통과에 60표 필요(공화당 53석)이며 Armstrong CEO는 통과를 낙관하나 예측시장은 2026년 내 통과 가능성을 낮게 본다. 2026-09-04 전국보안관협회가 반대를 철회. **작성 시점 기준 아직 표결 전이다.** → [개요](./01_overview.md) 2. 산업 / 시장 내 위치·[투자 판단](./07_investment.md) 1. 투자 포인트 (강점 / Bull Case)에 반영 | [Blockonomi](https://blockonomi.com/clarity-act-senate-vote-set-for-september-15-as-coinbase-pushes-tokenized-stocks) |
+| 2026-09 (초) | **토큰화 주식·24/7 파생 확장** | 아부다비를 거점으로 비미국 고객 대상 토큰화 주식 출시 예고(엔비디아·구글 등 실물 주식 상환·배당 수취 가능). 자회사 Deribit은 24/7 주식·상품 퍼페추얼 계약을 출시. → [개요](./01_overview.md) 2. 산업 / 시장 내 위치에 반영 | [Yahoo Finance](https://finance.yahoo.com/markets/crypto/articles/coinbase-links-clarity-act-passage-082524521.html) |
+| 2026-09-08 | **Base App, "Coinbase Wallet"으로 명칭 환원** | 2025년 Base App으로 리브랜딩했던 지갑 서비스를 다시 Coinbase Wallet으로 되돌림 — 브랜드 통합 조정으로, 손익에 미치는 영향은 확인되지 않았다 | [Robinhood 종목 뉴스](https://robinhood.com/us/en/stocks/COIN/) |
+| 2026-07-30 | **2026년 2분기 실적 발표** | 총매출 $1,220.1M(YoY -18.51%, 3개 분기 연속 역성장), 영업손실 -$113.5M, GAAP 순손실 -$359.5M, Adjusted EBITDA $207.8M. **크립토 거래대금 시장점유율 10.3%로 3개 분기 연속 사상 최고**, 고객 예치자산 $245.9B. → [핵심 지표](./04_metrics.md)·[재무 / 실적](./05_financials.md)에 반영 | [Q2'26 실적자료 (SEC 8-K)](https://www.sec.gov/Archives/edgar/data/1679788/000167978826000087/q226earningsdeck_sec.htm) |
+| 2026-05-05 | **인력 14% 감원, "AI-네이티브" 조직 전환** | 약 700명 감원, 관리 계층을 CEO 직속 5단계로 단순화. 2분기 중 $50~60M 구조조정비용(대부분 현금 퇴직위로금) 반영 — **비용 절감 효과는 아직 손익에 나타나지 않았다**. → [CEO / 경영진](./03_ceo.md) 2. 경영 스타일 / 전략 방향·[재무 / 실적](./05_financials.md) 2. 수익성에 반영 | [CNBC](https://www.cnbc.com/2026/05/05/coinbase-cuts-headcount-by-14percent-citing-ai-acceleration-the-shares-are-gaining.html) |
 
 ---
 
-*작성일: 2026-08-23*
+*작성일: 2026-09-13*
