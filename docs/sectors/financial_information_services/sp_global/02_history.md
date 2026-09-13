@@ -1,6 +1,6 @@
 # 역사 / 주요 이벤트
 
-> 160년 넘게 이어진 신용평가·금융정보 사업에 2022년 IHS Markit 인수합병으로 데이터·에너지 정보 사업을 더한 뒤, 2025~2026년 사이 비핵심 사업(OSTTRA, Mobility)을 잇달아 정리하며 신용등급·지수·데이터·에너지 4개 핵심 사업으로 재편하는 과정에 있다.
+> 출판사에서 출발해 신용평가·지수 브랜드를 손에 넣은 뒤, 2016년 사명 변경 이후로는 **대형 M&A로 데이터 사업을 붙이고 비핵심 사업을 떼어내는** 포트폴리오 재편을 반복해 지금의 4개 부문 구조에 이르렀다.
 
 ---
 
@@ -8,24 +8,14 @@
 
 | 시점 (연도.월) | 내용 |
 |----------------|------|
-| 1860 | Henry Varnum Poor가 미국 철도·운하 회사의 재무 통계를 발행하는 사업(History of Railroads and Canals in the United States)을 시작 — S&P Global이 스스로 밝히는 창립 기원 |
-| 1906 | Luther Lee Blake가 Standard Statistics Bureau 설립 |
-| 1941 | Poor's Publishing과 Standard Statistics가 합병해 **Standard & Poor's** 탄생 |
-| 1966 | McGraw-Hill이 Standard & Poor's를 인수 — 이후 McGraw-Hill(이후 McGraw Hill Financial)의 금융정보 사업부로 운영 |
-| 2011.08 | S&P Ratings가 미국 국가신용등급을 AAA에서 AA+로 하향 — 신용평가사의 영향력과 논란을 동시에 보여준 상징적 사건 |
-| 2013 | Douglas L. Peterson이 President & CEO로 취임 (2011년 신용평가 부문 President로 합류 후 승진) |
-| **2016** | **McGraw Hill Financial이 S&P Global로 사명 변경** — 금융정보·데이터 기업으로서의 정체성을 명확히 함 |
-| 2020.11 | IHS Markit과 약 $44B 규모의 전액 주식교환 합병 발표 |
-| **2022.02.28** | **IHS Markit과의 합병 완료** — 에너지·자동차(Mobility)·데이터 분석 사업이 편입되며 사업 구조가 크게 확장 |
-| 2022.11 | SEC와 2017년 RMBS(주택저당증권) 등급 관련 기록보관 의무 위반 조사를 $2.5M 벌금으로 합의 |
-| 2024.06 | Douglas Peterson CEO 퇴임(2024-11-01자) 및 Martina Cheung 후임 선임 발표(리더십 승계) |
-| **2024.11.01** | **Martina L. Cheung이 President & CEO로 취임** — S&P Global Ratings·Market Intelligence 부문장을 거친 내부 승진 |
-| 2025.04 | CME Group과의 50:50 합작사 OSTTRA(2021년 설립, 장외파생상품 포스트트레이드 처리)를 KKR에 $3.1B에 매각하는 계약 체결 |
-| 2025 중 | Commodity Insights 사업부문을 **Energy**로 명칭 변경(Platts·CERA 2개 비즈니스 라인 체계로 재편) |
-| 2025.10.10 | OSTTRA 매각 완료 |
-| **2026.07.01** | **자동차 정보 사업부(Mobility)를 별도 상장사 Mobility Global Inc.(NYSE: MBGL)로 분사 완료** — S&P Global 주주에게 보유 주식 1주당 Mobility Global 1주 배정. 분사 이후 S&P Global은 Ratings·Indices·Energy·Market Intelligence 4개 핵심 사업에 집중 |
-| 2026.07.28 | 분사 후 첫 분기(2분기) 실적 발표 — 매출은 컨센서스 상회했으나 2026 회계연도 조정 EPS 가이던스를 하향해 주가 약 −5% 하락 |
+| 1966 | McGraw-Hill이 Standard & Poor's를 인수. 출판사가 신용평가·지수 브랜드를 갖게 된 시점으로, 오늘날 Ratings·Indices 두 부문의 기원 |
+| 2012.05 | S&P Dow Jones Indices 합작사 설립 — CME Group과 공동 보유 구조로 다우존스 지수군을 통합. 오늘날 Indices 부문 매출과, 연결 실적에서 비지배지분이 크게 빠져나가는 구조가 여기서 비롯됐다 |
+| 2016.04 | 사명을 McGraw Hill Financial에서 **S&P Global**로 변경하고 교육 사업(McGraw-Hill Education) 매각을 마무리 — 출판사에서 금융 정보 기업으로 정체성을 확정 |
+| 2022.02 | **IHS Markit 인수 완료**(주식교환 방식, 약 $44B 규모). 자기자본이 단절적으로 급증하고 영업권·무형자산이 총자산의 86% 수준으로 올라, 이후 PBR·GAAP 이익의 해석 방식이 완전히 달라졌다. 매년 $1.0~1.1B의 인수 무형자산 상각이 GAAP 이익을 눌러 Non-GAAP과의 격차를 만드는 원인이기도 하다 |
+| 2025.10 ~ 2026.07 | **사업 단순화** — 2025-10 CME Group과 50:50 보유하던 장외파생 포스트트레이드 합작사 OSTTRA를 KKR에 $3.1B에 매각 완료, 2026-07-01 자동차 정보 사업부 Mobility를 **Mobility Global(NYSE: MBGL)**로 분사(주주에게 1:1 배정). 5개 부문이 4개로 줄었고, 과거 재무제표가 연속영업기준으로 소급 재작성됐다 |
+
+출처: [S&P Global — Our History](https://www.spglobal.com/en/who-we-are/our-history), [S&P Global and CME Group Complete Sale of OSTTRA to KKR (2025-10-10)](https://www.prnewswire.com/news-releases/sp-global-and-cme-group-complete-sale-of-osttra-to-kkr-302580731.html), [S&P Global Completes Separation of Mobility Global (2026-07-01)](https://investor.spglobal.com/news-releases/news-details/2026/SP-GLOBAL-INC--COMPLETES-SEPARATION-OF-MOBILITY-GLOBAL-INC-/default.aspx), [Pro Forma and Recast Financial Results 8-K Ex.99.1 (2026-07-06)](https://www.sec.gov/Archives/edgar/data/64040/000110465926080571/tm2619099d2_ex99-1.htm)
 
 ---
 
-*작성일: 2026-08-23*
+*작성일: 2026-09-13*
