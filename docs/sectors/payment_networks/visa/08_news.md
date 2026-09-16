@@ -1,6 +1,6 @@
 # 최근 뉴스 / 이슈
 
-> 인터체인지 MDL 화해의 법원 절차, 스테이블코인·AI 에이전트 결제로의 사업 확장, 그리고 Class B 주식 구조 정리 — 이 셋이 최근 흐름의 축이다.
+> 2026년의 뉴스 흐름은 둘로 갈린다 — **①스테이블코인·AI 결제를 자기 망 안으로 끌어들이는 시도**가 실적 수치로 처음 드러났고, **②인터체인지 소송 화해**가 예비승인을 거쳐 이행 단계로 넘어가는 중이다.
 
 ::: info 이 문서의 성격
 발생 순으로 쌓는 **시점성 로그**다(최신이 위). 여기서는 투자 결론을 내리지 않는다 — 판단에 영향을 주는 항목은 [밸류에이션 / 적정주가](./06_valuation.md)·[투자 판단](./07_investment.md)을 직접 갱신하고, 여기에는 반영했다는 표시만 남긴다.
@@ -12,12 +12,14 @@
 
 | 날짜 | 이슈 | 내용 | 출처 |
 |------|------|------|------|
-| 2026-08-26~28 | 한국 금융사와 스테이블코인·AI 결제 협력 | Dunamu(두나무)와 스테이블코인 결제·AI 기반 금융서비스 협력, Shinhan Financial Group과 정산 인프라 협력을 같은 주에 발표 → [개요](./01_overview.md) 2. 산업 / 시장 내 위치의 "대체 결제수단 흡수" 서술에 반영 | 2차 출처(암호자산 전문 매체) — 1차 IR 보도자료 미확인, **확인 필요** |
-| 2026-07-28 | FY2026 Q3 실적 발표 및 연간 가이던스 상향 | 순매출 $11.6B(+14%), GAAP EPS $2.97(+10%)·Non-GAAP EPS $3.32(+11%). FY2026 순매출 성장률 "low end of low teens", Non-GAAP EPS 성장률 "low end of mid-teens"로 상향. 구조조정비 $563M 계상 → [핵심 지표](./04_metrics.md) A·B절, [밸류에이션 / 적정주가](./06_valuation.md) 3. 향후 3개년 — 적정주가 전망에 반영 | [8-K, SEC EDGAR](https://www.sec.gov/Archives/edgar/data/1403161/000140316126000103/q32026earningsrelease.htm) |
-| 2026-06 | 인터체인지 MDL 화해 예비승인 + 소송에스크로 $250M 추가 예치 | 신용 인터체인지 5년간 10bp 인하·일반 소비자카드 1.25% 상한(8년)·가맹점의 고비용 카드 거부권을 담은 개정 화해안이 예비승인. **최종승인은 미확정**(2026-04 일부 가맹점이 향후 청구 포기 조항 무효를 주장하며 약식판결 신청). 6/24 에스크로 $250M 예치로 Class B-1 전환비율 1.5475 → 1.5445 하향 → [투자 판단](./07_investment.md) 3. 리스크 1, [CEO / 경영진](./03_ceo.md) 4. 보상 · 지분 구조에 반영 | [8-K(2026-06-26)](https://www.sec.gov/Archives/edgar/data/1403161/000140316126000086/v-20260624.htm), [Visa — MDL Settlement Statement](https://corporate.visa.com/en/sites/visa-perspectives/company-news/visa-statement-mdl-settlement.html) |
-| 2026-06-10 | Visa Payments Forum — AI·스테이블코인·토큰 신제품 발표 | AI 에이전트의 가맹점 사이트 처리 능력을 평가하는 Agent Score, 참여 에이전트·가맹점을 검증하는 Agentic Directory, OpenAI와의 에이전틱 커머스 결제 협업. 스테이블코인 정산은 2026-03 기준 연환산 약 $70억 → [개요](./01_overview.md) 1. 사업 모델, [CEO / 경영진](./03_ceo.md) 2. 경영 스타일 / 전략 방향에 반영 | [Visa Investor News](https://investor.visa.com/news/news-details/2026/Visa-Announces-New-AI-Stablecoin-and-Token-Innovations-to-Power-Intelligent-Programmable-Commerce-at-Visa-Payments-Forum/default.aspx) |
-| 2026-05-12 | Class B-1·B-2 교환공개매수 결제 완료 | 참여 주주가 보유 Class B-1/B-2를 Class B-3·Class C(+단주 현금)로 교환. Class B 잔량 125 → 63백만 주, Class C 9 → 18백만 주 → [역사 / 주요 이벤트](./02_history.md) 연혁, [핵심 지표](./04_metrics.md) A.2 각주에 반영 | [FY2026 Q3 8-K](https://www.sec.gov/Archives/edgar/data/1403161/000140316126000103/q32026earningsrelease.htm) "Other Notable Items" |
+| 2026-09-08 | **스테이블코인 정산 연환산 $200억 돌파 + 온체인 크레딧 출시** | 스테이블코인 정산이 **연환산 $200억 런레이트**를 넘어 전년 대비 15배 이상 증가. 스테이블코인 연동 카드 프로그램 **160개 이상**이 Visa 망에서 운영되고 그 프로그램들의 결제금액은 **+200% YoY**. 함께 VisaNet 정산 데이터를 온체인 대출과 연결해 카드 프로그램에 운전자본을 공급하는 구조를 발표(파트너 Credit Coop은 2023년 이후 $25억 정산 볼륨을 무연체로 조달) → [회사 개요 1. 사업 모델](./01_overview.md)·[CEO / 경영진 2. 경영 스타일](./03_ceo.md)에 반영. **매출 기여는 아직 미미해 밸류에이션에는 미반영** | 회사 발표 / 업계 매체 |
+| 2026-08-26~28 | 한국 금융사와 스테이블코인·AI 결제 협력 | Dunamu(두나무)와 스테이블코인 결제·AI 기반 금융서비스 협력, Shinhan Financial Group과 정산 인프라 협력을 같은 주에 발표 → [회사 개요 2. 산업 / 시장 내 위치](./01_overview.md)에 반영 | 2차 출처(암호자산 전문 매체) — 1차 IR 보도자료 미확인, **확인 필요** |
+| 2026-07-28 | **FY2026 Q3 실적 발표 및 연간 가이던스 상향** | 순매출 $11.6B(+14%), GAAP EPS $2.97(+10%)·Non-GAAP EPS $3.32(+11%), 처리 건수 71.7십억 건(+10%), 결제금액 +10%(고정환율). FY2026 순매출 성장률 "low end of low teens", Non-GAAP EPS 성장률 "low end of mid-teens"로 상향. 구조조정비 $563M 계상 → [핵심 지표 A·B·C절](./04_metrics.md)과 [밸류에이션 / 적정주가](./06_valuation.md)에 반영 | [FY2026 Q3 8-K](https://www.sec.gov/Archives/edgar/data/1403161/000140316126000103/q32026earningsrelease.htm) |
+| 2026-06 | **인터체인지 MDL 화해 예비승인 + 소송에스크로 $250M 추가 예치** | 신용 인터체인지 5년간 10bp 인하·일반 소비자카드 1.25% 상한(8년)·가맹점의 고비용 카드 거부권을 담은 개정 화해안이 예비승인. **최종승인은 미확정**(일부 가맹점이 향후 청구 포기 조항 무효를 주장하며 약식판결 신청). 6/24 에스크로 $250M 예치로 Class B-1 전환비율 1.5475 → 1.5445 하향 → [투자 판단 3. 리스크](./07_investment.md)에 반영 | 법원 명령 / 8-K |
+| 2026-06-10 | Visa Payments Forum — AI·스테이블코인·토큰 신제품 발표 | AI 에이전트의 가맹점 사이트 처리 능력을 평가하는 Agent Score, 참여 에이전트·가맹점을 검증하는 Agentic Directory, OpenAI와의 에이전틱 커머스 결제 협업 → [회사 개요 1. 사업 모델](./01_overview.md)·[CEO / 경영진 2. 경영 스타일](./03_ceo.md)에 반영 | 회사 보도자료 |
+
+> **다음 이벤트**: FY2026은 2026-09-30에 종료되며 **연간 확정 실적은 2026년 10월 발표** 예정이다. 이 폴더의 FY2026 EPS 추정치(E)와 그에 기반한 괴리율이 그때 갱신된다.
 
 ---
 
-*작성일: 2026-09-11*
+*작성일: 2026-09-17*
