@@ -70,7 +70,7 @@ Bull Case에도 같은 잣대를 적용하되, 이 저장소는 낙관 편향이
 ### 출력·언어
 
 - 대화 응답과 문서 갱신은 모두 **한국어**. 회사명·표준 지표명(EBITDA·NRR·CFO 등)·1차 공시 인용문·코드는 원문 그대로.
-- 스타일 관행: **`docs/index.md`·`docs/glossary.md`·`docs/concepts/`·`docs/macro/`는 존댓말**, **`AGENTS.md` 본문은 반말**(주인이 애널리스트에게 지시하는 톤). 기존 문서를 갱신할 땐 그 문서의 톤을 따른다.
+- 스타일 관행은 **누구에게 하는 말인가**로 갈린다. **독자에게 설명하는 문서는 존댓말** — `docs/index.md`·`docs/glossary.md`·`docs/concepts/`·`README.md`. **애널리스트가 쓴 리서치 서술은 반말**(`해석한다`체) — `docs/sectors/**`·`docs/macro/**`. 단 **용어 문서는 경로와 무관하게 존댓말**이다 — `docs/sectors/<sector>/00_glossary.md`도 `glossary.md`·`concepts/`와 같은 부류이므로 여기 따른다. 지침 문서(`AGENTS.md` 본문은 반말, `docs/authoring/`은 존댓말 우세)는 각 파일의 기존 톤을 따른다. 기존 문서를 갱신할 땐 언제나 그 문서의 톤을 따른다.
 
 ### 오늘 날짜 확인
 
