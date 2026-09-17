@@ -72,14 +72,14 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
 
 ## macro 문서 재현 파라미터
 
-`docs/macro/`의 단일 자산 문서(아래 표 28개)는 **1. 차트와 2. 해석만** 둔다 — 지지/저항 표·방법론 절은 2026-08-20에, 문서 하단의 관련 문서·참고 자료 목록은 2026-08-27에 걷어냈다. 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓴다:
+`docs/macro/`의 단일 자산 문서(아래 표 25개)는 **1. 차트와 2. 해석만** 둔다 — 지지/저항 표·방법론 절은 2026-08-20에, 문서 하단의 관련 문서·참고 자료 목록은 2026-08-27에 걷어냈다. 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓴다:
 
 ```bash
 uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --interval 1wk \
   <옵션> --decimals 2 --emit chart
 ```
 
-`--decimals 2`는 28개 문서 전부에 붙인다 — 기본 자동 규칙(20 이상이면 정수, 미만이면 소수 2자리)을 그대로 두면 지수·금 같은 큰 값에서 소수점이 사라져 기존 문서와 표시가 달라진다.
+`--decimals 2`는 25개 문서 전부에 붙인다 — 기본 자동 규칙(20 이상이면 정수, 미만이면 소수 2자리)을 그대로 두면 지수·금 같은 큰 값에서 소수점이 사라져 기존 문서와 표시가 달라진다.
 
 ⚠️ **`--close-on`·`--adj-note`는 `--emit chart`에서 아무 효과가 없다** — 둘 다 `--emit all`/`--emit facts`가 만드는 방법론·데이터 블록에만 반영되는데, macro 문서는 그 절을 두지 않아 차트만 뽑기 때문이다. 그래서 재현 커맨드에서 뺐다. 아래 각주 코드표는 커맨드에 넣는 플래그가 아니라 **각 시리즈의 원자료 성격을 기록해 둔 것**이다(문서 상단 인용문에 반영할 때 참고).
 
@@ -107,7 +107,6 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/energy/oil_wti.md` | `CL=F` | WTI 원유 | `--unit-label "USD/배럴"` | FUT |
 | `macro/energy/natural_gas.md` | `NG=F` | 천연가스 | `--unit-label "USD/MMBtu"` | FUT |
 | `macro/energy/uranium.md` | `SRUUF` | Sprott Physical Uranium Trust | (기본값) | URTN |
-| `macro/equities/dow.md` | `^DJI` | 다우존스산업지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/hang_seng.md` | `^HSI` | 항셍지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/kosdaq.md` | `^KQ11` | 코스닥 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/kospi.md` | `^KS11` | 코스피 | `--symbol "" --unit-label "지수"` | IDX |
@@ -118,7 +117,6 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/equities/sp500.md` | `^GSPC` | S&P 500 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/vix.md` | `^VIX` | VIX 변동성지수 | `--symbol "" --unit-label "pt"` | VIXN |
 | `macro/foreign_exchange/dxy.md` | `DX-Y.NYB` | 달러인덱스 | `--symbol "" --unit-label "지수"` | DXYN |
-| `macro/foreign_exchange/eur_usd.md` | `EURUSD=X` | 유로/달러 환율 | `--unit-label "USD/EUR"` | FX |
 | `macro/foreign_exchange/jpy_usd.md` | `JPY=X` | 엔/달러 환율 | `--symbol "엔" --symbol-pos suffix --unit-label "엔"` | FX |
 | `macro/foreign_exchange/usd_krw.md` | `KRW=X` | 원/달러 환율 | `--symbol "원" --symbol-pos suffix --unit-label "원"` | FX |
 | `macro/rates/treasury_13w.md` | `^IRX` | 미 국채 13주물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | DISC |
@@ -126,7 +124,6 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/rates/treasury_30y.md` | `^TYX` | 미 국채 30년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
 | `macro/bonds/hyg.md` | `HYG` | 하이일드 회사채 ETF | (기본값) | ETF |
 | `macro/bonds/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
-| `macro/bonds/tip.md` | `TIP` | 물가연동국채 ETF | (기본값) | ETF |
 | `macro/cryptocurrency/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
 | `macro/cryptocurrency/ethereum.md` | `ETH-USD` | 이더리움 | (기본값) | ETHN |
 
