@@ -99,7 +99,6 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | DXYN | 달러인덱스 원자료(조정 없음) |
 | BTCN | BTC/USD 원자료(조정 없음, 24시간 시장이라 주 마지막 거래일 기준 종가) |
 | ETHN | ETH/USD 원자료(조정 없음, 24시간 시장이라 주 마지막 거래일 기준 종가) |
-| URTN | 실물 우라늄 신탁 원자료(조정 없음) — 순자산가치(NAV) 대비 프리미엄/디스카운트로 거래될 수 있음 |
 
 | 문서 | 티커 | --name | 옵션 | 각주 |
 |------|------|--------|------|------|
@@ -108,7 +107,6 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/metals/copper.md` | `HG=F` | 구리 | `--unit-label "USD/파운드"` | FUT |
 | `macro/energy/oil_wti.md` | `CL=F` | WTI 원유 | `--unit-label "USD/배럴"` | FUT |
 | `macro/energy/natural_gas.md` | `NG=F` | 천연가스 | `--unit-label "USD/MMBtu"` | FUT |
-| `macro/energy/uranium.md` | `SRUUF` | Sprott Physical Uranium Trust | (기본값) | URTN |
 | `macro/equities/hang_seng.md` | `^HSI` | 항셍지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/kospi.md` | `^KS11` | 코스피 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/nasdaq.md` | `^IXIC` | 나스닥종합지수 | `--symbol "" --unit-label "지수"` | IDX |
@@ -194,7 +192,7 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 |------|------|---------|---------------------------|
 | `macro/foreign_exchange/comparison.md` | index | 통화 3종 비교 | `DX-Y.NYB:달러인덱스 (DXY):1` · `JPY=X:엔/달러 환율:2` · `KRW=X:원/달러 환율:3` |
 | `macro/metals/comparison.md` | index | 금속 3종 비교 | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
-| `macro/energy/comparison.md` | index | 에너지 3종 비교 | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` · `SRUUF:우라늄 실물 신탁 (SRUUF):3` |
+| `macro/energy/comparison.md` | index | 에너지 2종 비교 | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` |
 | `macro/equities/us_comparison.md` | index | 미국 3대 지수 비교 | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^RUT:러셀2000:3` |
 | `macro/cryptocurrency/comparison.md` | index | 디지털자산 2종 비교 | `BTC-USD:비트코인:1` · `ETH-USD:이더리움:2` |
 
