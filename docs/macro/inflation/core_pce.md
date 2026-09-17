@@ -8,13 +8,9 @@
 
 ## 1. 차트 — 최근 5년 월간
 
-<div class="fred-pcepilfe">
 <style>
 .fred-pcepilfe {
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --rec:#898781; --s-pcepilfe:#1baf7a;
-}
-@media (prefers-color-scheme: dark) {
-  .dark .fred-pcepilfe { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-pcepilfe:#199e70; }
 }
 .dark .fred-pcepilfe { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-pcepilfe:#199e70; }
 .fred-pcepilfe svg { width:100%; height:auto; display:block; }
@@ -23,6 +19,8 @@
 .fred-pcepilfe .grid { stroke: var(--grid); stroke-width:1; }
 .fred-pcepilfe .axis { stroke: var(--axis); stroke-width:1; }
 </style>
+
+<div class="fred-pcepilfe">
 <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Core PCE, 최근 5년 월간, 단위 % 선 차트">
 <rect x="0" y="0" width="1200" height="700" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">미국 근원 개인소비지출 물가 상승률 (Core PCE, 전년동월비) (최근 5년 월간)</text>

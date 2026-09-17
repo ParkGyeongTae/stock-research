@@ -8,13 +8,9 @@
 
 ## 1. 차트 — 최근 5년 일간
 
-<div class="fred-dgs10">
 <style>
 .fred-dgs10 {
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --rec:#898781; --s-dgs10:#eb6834;
-}
-@media (prefers-color-scheme: dark) {
-  .dark .fred-dgs10 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-dgs10:#d95926; }
 }
 .dark .fred-dgs10 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-dgs10:#d95926; }
 .fred-dgs10 svg { width:100%; height:auto; display:block; }
@@ -23,6 +19,8 @@
 .fred-dgs10 .grid { stroke: var(--grid); stroke-width:1; }
 .fred-dgs10 .axis { stroke: var(--axis); stroke-width:1; }
 </style>
+
+<div class="fred-dgs10">
 <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="미국 10년물 국채금리, 최근 5년 일간, 단위 % 선 차트">
 <rect x="0" y="0" width="1200" height="700" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">미국 10년물 국채금리 (상수만기) (최근 5년 일간)</text>

@@ -8,13 +8,9 @@
 
 ## 1. 차트 — 최근 5년 월간
 
-<div class="fred-gacdfsa066msfrbphi-gacdisa066msfrbny-bac">
 <style>
 .fred-gacdfsa066msfrbphi-gacdisa066msfrbny-bac {
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --rec:#898781; --s-gacdfsa066msfrbphi:#2a78d6; --s-gacdisa066msfrbny:#eb6834; --s-bactsamfrbdal:#1baf7a;
-}
-@media (prefers-color-scheme: dark) {
-  .dark .fred-gacdfsa066msfrbphi-gacdisa066msfrbny-bac { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-gacdfsa066msfrbphi:#3987e5; --s-gacdisa066msfrbny:#d95926; --s-bactsamfrbdal:#199e70; }
 }
 .dark .fred-gacdfsa066msfrbphi-gacdisa066msfrbny-bac { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-gacdfsa066msfrbphi:#3987e5; --s-gacdisa066msfrbny:#d95926; --s-bactsamfrbdal:#199e70; }
 .fred-gacdfsa066msfrbphi-gacdisa066msfrbny-bac svg { width:100%; height:auto; display:block; }
@@ -23,6 +19,8 @@
 .fred-gacdfsa066msfrbphi-gacdisa066msfrbny-bac .grid { stroke: var(--grid); stroke-width:1; }
 .fred-gacdfsa066msfrbphi-gacdisa066msfrbny-bac .axis { stroke: var(--axis); stroke-width:1; }
 </style>
+
+<div class="fred-gacdfsa066msfrbphi-gacdisa066msfrbny-bac">
 <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="필라델피아 연은·뉴욕 연은 (Empire State)·댈러스 연은, 최근 5년 월간, 단위  선 차트">
 <rect x="0" y="0" width="1200" height="700" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">지역 연은 제조업 서베이 3종 (현재 업황 확산지수) (최근 5년 월간)</text>

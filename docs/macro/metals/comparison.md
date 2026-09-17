@@ -8,13 +8,9 @@
 
 ## 1. 차트 — 최근 5년, 시작일=100 지수화
 
-<div class="idx-overlay-gcf-sif-hgf">
 <style>
 .idx-overlay-gcf-sif-hgf {
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-gcf:#2a78d6; --s-sif:#eb6834; --s-hgf:#1baf7a;
-}
-@media (prefers-color-scheme: dark) {
-  .dark .idx-overlay-gcf-sif-hgf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gcf:#3987e5; --s-sif:#d95926; --s-hgf:#199e70; }
 }
 .dark .idx-overlay-gcf-sif-hgf { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-gcf:#3987e5; --s-sif:#d95926; --s-hgf:#199e70; }
 .idx-overlay-gcf-sif-hgf svg { width:100%; height:auto; display:block; }
@@ -23,6 +19,8 @@
 .idx-overlay-gcf-sif-hgf .grid { stroke: var(--grid); stroke-width:1; }
 .idx-overlay-gcf-sif-hgf .axis { stroke: var(--axis); stroke-width:1; }
 </style>
+
+<div class="idx-overlay-gcf-sif-hgf">
 <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="금·은·구리, 2021-09-06 기준 100 지수화, 최근 5년 주간 비교선 차트">
 <rect x="0" y="0" width="1200" height="700" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">금속 3종 비교 — 2021-09-06 = 100 지수화 (최근 5년 주간)</text>

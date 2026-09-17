@@ -199,17 +199,11 @@ def render_svg(
     light_vars = "; ".join(f"--s-{slug(s.ticker)}:{PALETTE[s.slot][0]}" for s in series_list)
     dark_vars = "; ".join(f"--s-{slug(s.ticker)}:{PALETTE[s.slot][1]}" for s in series_list)
 
-    a(f'<div class="{cls}">')
     a("<style>")
     a(
         f".{cls} {{\n"
         "  --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; "
         f"--muted:#898781; --base:#898781; {light_vars};\n}}"
-    )
-    a(
-        f"@media (prefers-color-scheme: dark) {{\n"
-        f'  .dark .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; '
-        f"--axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; {dark_vars}; }}\n}}"
     )
     a(
         f'.dark .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; '
@@ -221,6 +215,8 @@ def render_svg(
     a(f".{cls} .grid {{ stroke: var(--grid); stroke-width:1; }}")
     a(f".{cls} .axis {{ stroke: var(--axis); stroke-width:1; }}")
     a("</style>")
+    a("")
+    a(f'<div class="{cls}">')
     names = "·".join(xml_escape(s.label) for s in series_list)
     title_x = xml_escape(title)
     mode_desc = f"{common_start} 기준 100 지수화" if mode == "index" else "원값(지수화 없음)"

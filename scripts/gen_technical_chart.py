@@ -318,7 +318,6 @@ def render_svg(
     L: list[str] = []
     a = L.append
 
-    a(f'<div class="{cls}">')
     a("<style>")
     a(
         f".{cls} {{\n"
@@ -332,10 +331,6 @@ def render_svg(
         "--muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; "
         "--resistance:#d95926; --ref:#898781;"
     )
-    a(
-        f"@media (prefers-color-scheme: dark) {{\n"
-        f'  .dark .{cls} {{ {dark} }}\n}}'
-    )
     a(f'.dark .{cls} {{ {dark} }}')
     a(f".{cls} svg {{ width:100%; height:auto; display:block; }}")
     a(f'.{cls} text {{ font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }}')
@@ -343,6 +338,8 @@ def render_svg(
     a(f".{cls} .grid {{ stroke: var(--grid); stroke-width:1; }}")
     a(f".{cls} .axis {{ stroke: var(--axis); stroke-width:1; }}")
     a("</style>")
+    a("")
+    a(f'<div class="{cls}">')
     a(
         f'<svg viewBox="0 0 {VB_W} {VB_H}" xmlns="http://www.w3.org/2000/svg" role="img" '
         f'aria-label="{name}({ticker}) {period_label} {bar_desc} 캔들차트, 지지선과 저항선 포함">'

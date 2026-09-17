@@ -8,13 +8,9 @@
 
 ## 1. 차트 — 최근 5년, 시작일=100 지수화
 
-<div class="idx-overlay-dxynyb-jpyx-krwx">
 <style>
 .idx-overlay-dxynyb-jpyx-krwx {
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --s-dxynyb:#2a78d6; --s-jpyx:#eb6834; --s-krwx:#1baf7a;
-}
-@media (prefers-color-scheme: dark) {
-  .dark .idx-overlay-dxynyb-jpyx-krwx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-dxynyb:#3987e5; --s-jpyx:#d95926; --s-krwx:#199e70; }
 }
 .dark .idx-overlay-dxynyb-jpyx-krwx { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --s-dxynyb:#3987e5; --s-jpyx:#d95926; --s-krwx:#199e70; }
 .idx-overlay-dxynyb-jpyx-krwx svg { width:100%; height:auto; display:block; }
@@ -23,6 +19,8 @@
 .idx-overlay-dxynyb-jpyx-krwx .grid { stroke: var(--grid); stroke-width:1; }
 .idx-overlay-dxynyb-jpyx-krwx .axis { stroke: var(--axis); stroke-width:1; }
 </style>
+
+<div class="idx-overlay-dxynyb-jpyx-krwx">
 <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="달러인덱스 (DXY)·엔/달러 환율·원/달러 환율, 2021-09-13 기준 100 지수화, 최근 5년 주간 비교선 차트">
 <rect x="0" y="0" width="1200" height="700" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">통화 3종 비교 — 2021-09-13 = 100 지수화 (최근 5년 주간)</text>

@@ -270,17 +270,11 @@ def render_svg(
     light = "; ".join(f"--s-{slug(s.sid)}:{PALETTE[s.slot][0]}" for s in series_list)
     dark = "; ".join(f"--s-{slug(s.sid)}:{PALETTE[s.slot][1]}" for s in series_list)
 
-    a(f'<div class="{cls}">')
     a("<style>")
     a(
         f".{cls} {{\n"
         "  --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; "
         f"--muted:#898781; --base:#898781; --rec:#898781; {light};\n}}"
-    )
-    a(
-        f"@media (prefers-color-scheme: dark) {{\n"
-        f'  .dark .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; '
-        f"--ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; {dark}; }}\n}}"
     )
     a(
         f'.dark .{cls} {{ --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; '
@@ -292,6 +286,8 @@ def render_svg(
     a(f".{cls} .grid {{ stroke: var(--grid); stroke-width:1; }}")
     a(f".{cls} .axis {{ stroke: var(--axis); stroke-width:1; }}")
     a("</style>")
+    a("")
+    a(f'<div class="{cls}">')
 
     names = "·".join(xml_escape(s.label) for s in series_list)
     kind = "막대" if chart_type == "bar" else "선"

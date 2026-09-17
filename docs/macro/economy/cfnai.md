@@ -8,13 +8,9 @@
 
 ## 1. 차트 — 최근 5년 월간
 
-<div class="fred-cfnai">
 <style>
 .fred-cfnai {
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --rec:#898781; --s-cfnai:#2a78d6;
-}
-@media (prefers-color-scheme: dark) {
-  .dark .fred-cfnai { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-cfnai:#3987e5; }
 }
 .dark .fred-cfnai { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-cfnai:#3987e5; }
 .fred-cfnai svg { width:100%; height:auto; display:block; }
@@ -23,6 +19,8 @@
 .fred-cfnai .grid { stroke: var(--grid); stroke-width:1; }
 .fred-cfnai .axis { stroke: var(--axis); stroke-width:1; }
 </style>
+
+<div class="fred-cfnai">
 <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="시카고 연은 국가활동지수, 최근 5년 월간, 단위  선 차트">
 <rect x="0" y="0" width="1200" height="700" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">시카고 연은 국가활동지수 (CFNAI) (최근 5년 월간)</text>

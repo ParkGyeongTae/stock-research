@@ -11,14 +11,10 @@
 
 ## 1. 차트 — 최근 1년 일봉 (2025-09-12 ~ 2026-09-11)
 
-<div class="crcl-chart">
 <style>
 .crcl-chart {
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
   --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
-}
-@media (prefers-color-scheme: dark) {
-  .dark .crcl-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 }
 .dark .crcl-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
 .crcl-chart svg { width:100%; height:auto; display:block; }
@@ -27,6 +23,8 @@
 .crcl-chart .grid { stroke: var(--grid); stroke-width:1; }
 .crcl-chart .axis { stroke: var(--axis); stroke-width:1; }
 </style>
+
+<div class="crcl-chart">
 <svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circle(CRCL) 최근 1년 일봉 캔들차트, 지지선과 저항선 포함">
 <rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">Circle (CRCL) — 최근 1년 일봉</text>

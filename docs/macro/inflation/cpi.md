@@ -8,13 +8,9 @@
 
 ## 1. 차트 — 최근 5년 월간
 
-<div class="fred-cpiaucsl">
 <style>
 .fred-cpiaucsl {
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --rec:#898781; --s-cpiaucsl:#2a78d6;
-}
-@media (prefers-color-scheme: dark) {
-  .dark .fred-cpiaucsl { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-cpiaucsl:#3987e5; }
 }
 .dark .fred-cpiaucsl { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-cpiaucsl:#3987e5; }
 .fred-cpiaucsl svg { width:100%; height:auto; display:block; }
@@ -23,6 +19,8 @@
 .fred-cpiaucsl .grid { stroke: var(--grid); stroke-width:1; }
 .fred-cpiaucsl .axis { stroke: var(--axis); stroke-width:1; }
 </style>
+
+<div class="fred-cpiaucsl">
 <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CPI, 최근 5년 월간, 단위 % 선 차트">
 <rect x="0" y="0" width="1200" height="700" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">미국 소비자물가 상승률 (CPI, 전년동월비) (최근 5년 월간)</text>

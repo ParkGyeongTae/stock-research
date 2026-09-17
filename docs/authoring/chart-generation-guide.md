@@ -33,7 +33,11 @@ uv run python scripts/gen_technical_chart.py SNPS --interval 1wk --emit dates
 
 `--close-on`으로 뽑은 종가는 `04_metrics.md`·`06_valuation.md`의 값과 대조해 문서 상단에 결과를 남기세요.
 
-`--emit chart` 출력(`<div class="<ticker>-chart">…</div>`)은 클래스명·범례·다크모드 CSS가 한 벌로 들어 있으니 **한 글자도 바꾸지 마세요**(옮길 땐 위 ⚠️대로 파일에서 파일로). VitePress의 다크 모드에서는 `.dark` 선택자를 사용합니다.
+`--emit chart` 출력(`<style>…</style>` 블록 + `<div class="<ticker>-chart">…</div>`)은 클래스명·범례·다크모드 CSS가 한 벌로 들어 있으니 **한 글자도 바꾸지 마세요**(옮길 땐 위 ⚠️대로 파일에서 파일로). VitePress의 다크 모드에서는 `.dark` 선택자를 사용합니다.
+
+::: warning `<style>` 블록은 반드시 문서 최상위에 둡니다
+`<style>`을 `<div>` 안으로 옮기지 마세요. VitePress는 **최상위** `<style>`만 SFC 스타일 블록으로 추출해 `<head>`에 싣고, `<div>` 안에 중첩된 `<style>`은 Vue 템플릿 컴파일러가 통째로 버립니다. 그러면 SSR로 받은 첫 HTML에만 CSS가 살아 있고, 사이트 안에서 링크를 눌러 이동(SPA 전환)했을 때는 CSS 변수가 정의되지 않아 `fill="var(--bg)"`가 무효값으로 떨어져 **차트 전체가 검게** 보입니다(새로고침하면 정상으로 보이는 탓에 놓치기 쉽습니다).
+:::
 
 `--levels` 기본값은 3이지만 **억지로 3개를 채우지 마세요** — 유효한 클러스터가 2개면 2개만 씁니다. 개수를 바꿨거나 터치 2회 미만인 레벨을 `--force-level`로 넣었다면 그 사유를 각 문서 4. 방법론 · 한계와 표 비고에 남깁니다.
 

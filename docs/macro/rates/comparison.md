@@ -8,13 +8,9 @@
 
 ## 1. 차트 — 최근 5년 일간, 원값(%) 그대로 겹침
 
-<div class="fred-dgs2-dgs10-dgs30">
 <style>
 .fred-dgs2-dgs10-dgs30 {
   --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --rec:#898781; --s-dgs2:#2a78d6; --s-dgs10:#eb6834; --s-dgs30:#1baf7a;
-}
-@media (prefers-color-scheme: dark) {
-  .dark .fred-dgs2-dgs10-dgs30 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-dgs2:#3987e5; --s-dgs10:#d95926; --s-dgs30:#199e70; }
 }
 .dark .fred-dgs2-dgs10-dgs30 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-dgs2:#3987e5; --s-dgs10:#d95926; --s-dgs30:#199e70; }
 .fred-dgs2-dgs10-dgs30 svg { width:100%; height:auto; display:block; }
@@ -23,6 +19,8 @@
 .fred-dgs2-dgs10-dgs30 .grid { stroke: var(--grid); stroke-width:1; }
 .fred-dgs2-dgs10-dgs30 .axis { stroke: var(--axis); stroke-width:1; }
 </style>
+
+<div class="fred-dgs2-dgs10-dgs30">
 <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="미국 2년물 국채금리·미국 10년물 국채금리·미국 30년물 국채금리, 최근 5년 일간, 단위 % 선 차트">
 <rect x="0" y="0" width="1200" height="700" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">미국 국채금리 3종 비교 (상수만기) (최근 5년 일간)</text>
