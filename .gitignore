@@ -10,3 +10,6 @@ __pycache__/
 
 # 단계 간 인수인계 작업 파일 (create-company-doc 2단계 산출물)
 .work/
+
+# 로컬 환경변수 (.env.template은 커밋 대상)
+.env
