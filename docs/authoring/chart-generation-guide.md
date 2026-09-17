@@ -155,7 +155,7 @@ uv run python scripts/gen_fred_chart.py \
 | `macro/inflation/cpi.md` | `CPIAUCSL:CPI:1:pc1` | 미국 소비자물가 상승률 (CPI, 전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
 | `macro/inflation/core_cpi.md` | `CPILFESL:Core CPI:2:pc1` | 미국 근원 소비자물가 상승률 (Core CPI, 전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
 | `macro/inflation/core_pce.md` | `PCEPILFE:Core PCE:3:pc1` | 미국 근원 개인소비지출 물가 상승률 (Core PCE, 전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
-| `macro/inflation/comparison.md` | `CPIAUCSL:CPI:1:pc1` · `CPILFESL:Core CPI:2:pc1` · `PCEPILFE:Core PCE:3:pc1` | 미국 물가지표 3종 비교 (전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
+| `macro/inflation/comparison.md` | `CPIAUCSL:CPI:1:pc1` · `CPILFESL:Core CPI:2:pc1` · `PCEPILFE:Core PCE:3:pc1` | 미국 물가지표 3종 비교 (전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession --emit all` |
 | `macro/rates/treasury_2y.md` | `DGS2:미국 2년물 국채금리:1` | 미국 2년물 국채금리 (상수만기) | `--start 2021-09-01 --unit-label "%" --decimals 2 --recession` |
 | `macro/rates/treasury_10y.md` | `DGS10:미국 10년물 국채금리:2` | 미국 10년물 국채금리 (상수만기) | `--start 2021-09-01 --unit-label "%" --decimals 2 --recession` |
 | `macro/rates/treasury_30y.md` | `DGS30:미국 30년물 국채금리:3` | 미국 30년물 국채금리 (상수만기) | `--start 2021-09-01 --unit-label "%" --decimals 2 --recession` |

@@ -1,9 +1,9 @@
 # 코스피
 
 ::: info
-최근 5년간 코스피 지수(한국거래소 유가증권시장, `^KS11`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 원/달러 환율 문서와 함께 보면 원화 가치와 한국 증시가 지금 어떤 국면인지 종합적으로 파악하는 데 도움이 된다.
-
+한국거래소 유가증권시장 전 종목을 시가총액 비중으로 묶은 지수다. 수출 대기업 비중이 크고 외국인 자금 비중이 높아, 한국 증시의 국면은 [원/달러 환율](../foreign_exchange/usd_krw.md)과 함께 볼 때 더 또렷하게 읽힌다.
 :::
+
 ---
 
 ## 1. 차트 — 최근 5년 주봉
@@ -25,7 +25,7 @@
 <svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="코스피(^KS11) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
 <rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
 <text x="60" y="26" class="title" font-size="18">코스피 (^KS11) — 최근 5년 주봉</text>
-<text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-09-13 ~ 2026-09-11 · 마지막 종가 6,865.14 (2026-09-11) · 단위 지수</text>
+<text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-09-13 ~ 2026-09-14 · 마지막 종가 6,717.97 (2026-09-14) · 단위 지수</text>
 <line x1="60" y1="618.7" x2="1052" y2="618.7" class="grid"/>
 <text x="52" y="622.7" font-size="11" text-anchor="end" fill="var(--muted)">2,000.00</text>
 <line x1="60" y1="545.6" x2="1052" y2="545.6" class="grid"/>
@@ -62,8 +62,8 @@
 <text x="913.8" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
 <line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
 <line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
-<line x1="61.9" y1="533.4" x2="61.9" y2="537.6" stroke="var(--up)" class="wick"/>
-<rect x="60.72" y="535.3" width="2.35" height="1.7" fill="var(--up)"/>
+<line x1="61.9" y1="535.2" x2="61.9" y2="537.4" stroke="var(--up)" class="wick"/>
+<rect x="60.72" y="535.3" width="2.35" height="1.0" fill="var(--up)"/>
 <line x1="65.7" y1="534.9" x2="65.7" y2="537.7" stroke="var(--up)" class="wick"/>
 <rect x="64.51" y="536.5" width="2.35" height="1.0" fill="var(--up)"/>
 <line x1="69.5" y1="534.9" x2="69.5" y2="544.5" stroke="var(--down)" class="wick"/>
@@ -582,10 +582,10 @@
 <rect x="1037.57" y="262.0" width="2.35" height="6.7" fill="var(--down)"/>
 <line x1="1042.5" y1="263.7" x2="1042.5" y2="294.3" stroke="var(--up)" class="wick"/>
 <rect x="1041.36" y="276.2" width="2.35" height="5.4" fill="var(--up)"/>
-<line x1="1046.3" y1="240.8" x2="1046.3" y2="263.0" stroke="var(--up)" class="wick"/>
-<rect x="1045.15" y="250.8" width="2.35" height="9.0" fill="var(--up)"/>
-<line x1="1050.1" y1="260.9" x2="1050.1" y2="267.7" stroke="var(--up)" class="wick"/>
-<rect x="1048.93" y="263.2" width="2.35" height="4.6" fill="var(--up)"/>
+<line x1="1046.3" y1="240.8" x2="1046.3" y2="267.7" stroke="var(--down)" class="wick"/>
+<rect x="1045.15" y="259.8" width="2.35" height="1.0" fill="var(--down)"/>
+<line x1="1050.1" y1="269.8" x2="1050.1" y2="283.8" stroke="var(--up)" class="wick"/>
+<rect x="1048.93" y="273.9" width="2.35" height="1.9" fill="var(--up)"/>
 <line x1="60" y1="575.8" x2="1052" y2="575.8" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
 <text x="1058" y="569.8" font-size="11.5" fill="var(--support)" font-weight="600">2,586.63 S1</text>
 <text x="1058" y="581.8" font-size="9.5" fill="var(--muted)">터치 5회</text>
@@ -595,8 +595,8 @@
 <line x1="60" y1="592.1" x2="1052" y2="592.1" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
 <text x="1058" y="586.1" font-size="11.5" fill="var(--support)" font-weight="600">2,364.42 S3</text>
 <text x="1058" y="598.1" font-size="9.5" fill="var(--muted)">터치 3회</text>
-<circle cx="1052.0" cy="263.2" r="3" fill="var(--ink)"/>
-<text x="1046.0" y="255.2" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 6,865.14 (2026-09-11)</text>
+<circle cx="1052.0" cy="273.9" r="3" fill="var(--ink)"/>
+<text x="1046.0" y="265.9" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 6,717.97 (2026-09-14)</text>
 <rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
 <text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
 <rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
@@ -610,13 +610,15 @@
 
 ---
 
-## 2. 해석
+## 2. 해석 참고 — 상승/하락이 의미하는 것
 
-- **상승**: 한국 대형·수출기업의 실적 기대가 좋아졌거나, 외국인 투자자의 자금이 들어오고 있다는 신호로 흔히 해석한다.
-- **하락**: 수출 경기가 둔화될 것이라는 우려나, 외국인 자금이 빠져나가고 있다는 신호로 흔히 해석한다.
-- 원/달러 환율과 반대로 움직이는 경우가 많다(원화가 강해지면 외국인 자금이 더 들어오기 쉬워지기 때문이다) — 두 문서를 함께 보면 지금 국면을 더 잘 가늠할 수 있다.
-- **왜 외국인 자금 흐름에 유독 민감한가**: 코스피에는 시가총액은 크지만 실제로 시장에서 거래 가능한 물량(유동주식)이 적은 대형주가 많고, 반도체 등 특정 업종에 쏠려 있다. MSCI·FTSE 같은 글로벌 지수에서 한국의 비중을 조정하는 이벤트가 있을 때마다, 그 지수를 따라가는 자금(패시브 자금)이 한꺼번에 크게 사고팔면서 지수를 흔드는 경우도 잦다.
+- **한 줄로**: 한국 수출 대기업의 실적 기대와 외국인 자금 흐름이 함께 실리는 지수다.
+- **오르면**: 수출기업의 실적 기대가 좋아졌거나 외국인 자금이 들어오고 있다는 신호로 흔히 해석한다.
+- **내리면**: 수출 경기 둔화 우려나 외국인 자금 이탈 신호로 흔히 해석한다.
+- **환율과 반대로 움직이는 경우가 많다**: 원화가 강해지면 외국인이 환차손 걱정을 덜어 자금을 넣기 쉬워지고, 원화가 약해지면 그 반대다. 다만 항상 성립하는 관계는 아니라 두 문서를 함께 보고 어느 쪽이 주도했는지 가른다.
+- **왜 외국인 수급에 유독 흔들리나**: 시가총액은 크지만 실제로 시장에 도는 물량(유동주식)이 적은 대형주가 많고 업종 쏠림도 크다. MSCI·FTSE 같은 글로벌 지수에서 한국 비중이 조정되면 그 지수를 따라가는 패시브 자금이 한꺼번에 사고팔며 지수를 흔든다.
+- **원자료의 성격**: 지수 원자료 그대로이며 배당 재투자가 반영되지 않는다 — 지수 상승률은 총수익률이 아니다.
 
 ---
 
-*작성일: 2026-09-11*
+*작성일: 2026-09-18*
