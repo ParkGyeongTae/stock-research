@@ -47,7 +47,7 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
   --adj-note "환율 원자료(조정 없음)"
 ```
 
-이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`) 중 맞는 곳에 두세요 — 실제 예시는 [`foreign_exchange/usd_krw.md`](../macro/foreign_exchange/usd_krw.md)·[`rates/treasury_10y.md`](../macro/rates/treasury_10y.md)를 참고하세요.
+이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`) 중 맞는 곳에 두세요 — 실제 예시는 [`foreign_exchange/usd_krw.md`](../macro/foreign_exchange/usd_krw.md)·[`bonds/tlt.md`](../macro/bonds/tlt.md)를 참고하세요.
 
 ## macro 문서의 산문은 시점에 종속되지 않게 씁니다
 
@@ -65,21 +65,21 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
 | "최근", "최근 몇 년", "지금", "이 5년 동안", "지난 5년간" | 재생성하면 가리키는 시점이 달라진다 |
 | intro 인용문 안의 시세·수준 (`달러인덱스 ~99` 등) | 스크립트가 갱신하지 않아 곧 틀린 값이 된다 |
 | 특정 종목·기업명을 예시로 든 구성 비중 설명 ("엔비디아 같은 대형 회원사") | 지수 구성과 비중 순위는 바뀐다 |
-| 5년 창(window) 안에서만 성립하는 근거 ("13주물이 2021년 한때 0%였으므로") | 창이 밀리면 근거가 사라진다 |
+| 5년 창(window) 안에서만 성립하는 근거 ("2년물 금리가 2021년 한때 0%대였으므로") | 창이 밀리면 근거가 사라진다 |
 | 이번 회차에만 맞는 각주 ("WTI는 직전 주 종가를 쓴다") | 다음 회차엔 다른 지표가 그렇게 된다 → 조건으로 일반화한다 |
 
 과거에 확정된 사건(비트코인 반감기 규칙, 이더리움 The Merge, 미국 현물 ETF 승인 등)은 시점이 지나도 사실이 바뀌지 않으므로 연도와 함께 적어도 됩니다 — 금지되는 것은 "그 뒤로 계속 ~해지고 있다" 같은 **진행형 서술**입니다.
 
 ## macro 문서 재현 파라미터
 
-`docs/macro/`의 단일 자산 문서(아래 표 25개)는 **1. 차트와 2. 해석만** 둔다 — 지지/저항 표·방법론 절은 2026-08-20에, 문서 하단의 관련 문서·참고 자료 목록은 2026-08-27에 걷어냈다. 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓴다:
+`docs/macro/`의 단일 자산 문서(아래 표 22개)는 **1. 차트와 2. 해석만** 둔다 — 지지/저항 표·방법론 절은 2026-08-20에, 문서 하단의 관련 문서·참고 자료 목록은 2026-08-27에 걷어냈다. 그래서 각 문서 안에 재생성 커맨드를 반복해서 남기지 않는다. 아래 표가 전체의 티커·옵션에 대한 단일 출처다. 재생성할 땐 표의 값을 그대로 쓴다:
 
 ```bash
 uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --interval 1wk \
   <옵션> --decimals 2 --emit chart
 ```
 
-`--decimals 2`는 25개 문서 전부에 붙인다 — 기본 자동 규칙(20 이상이면 정수, 미만이면 소수 2자리)을 그대로 두면 지수·금 같은 큰 값에서 소수점이 사라져 기존 문서와 표시가 달라진다.
+`--decimals 2`는 22개 문서 전부에 붙인다 — 기본 자동 규칙(20 이상이면 정수, 미만이면 소수 2자리)을 그대로 두면 지수·금 같은 큰 값에서 소수점이 사라져 기존 문서와 표시가 달라진다.
 
 ⚠️ **`--close-on`·`--adj-note`는 `--emit chart`에서 아무 효과가 없다** — 둘 다 `--emit all`/`--emit facts`가 만드는 방법론·데이터 블록에만 반영되는데, macro 문서는 그 절을 두지 않아 차트만 뽑기 때문이다. 그래서 재현 커맨드에서 뺐다. 아래 각주 코드표는 커맨드에 넣는 플래그가 아니라 **각 시리즈의 원자료 성격을 기록해 둔 것**이다(문서 상단 인용문에 반영할 때 참고).
 
@@ -91,8 +91,6 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | IDX | 지수 원자료(조정 없음) |
 | FX | 환율 원자료(조정 없음) |
 | ETF | ETF 원자료(가격 기준, 분배금 재투자 미반영 — 총수익률 아님) |
-| YLD | 국채 수익률 원자료(조정 없음) |
-| DISC | 13주 국채 할인율 원자료(조정 없음) |
 | VIXN | VIX 지수 원자료(조정 없음) |
 | DXYN | 달러인덱스 원자료(조정 없음) |
 | BTCN | BTC/USD 원자료(조정 없음, 24시간 시장이라 주 마지막 거래일 기준 종가) |
@@ -119,9 +117,6 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/foreign_exchange/dxy.md` | `DX-Y.NYB` | 달러인덱스 | `--symbol "" --unit-label "지수"` | DXYN |
 | `macro/foreign_exchange/jpy_usd.md` | `JPY=X` | 엔/달러 환율 | `--symbol "엔" --symbol-pos suffix --unit-label "엔"` | FX |
 | `macro/foreign_exchange/usd_krw.md` | `KRW=X` | 원/달러 환율 | `--symbol "원" --symbol-pos suffix --unit-label "원"` | FX |
-| `macro/rates/treasury_13w.md` | `^IRX` | 미 국채 13주물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | DISC |
-| `macro/rates/treasury_10y.md` | `^TNX` | 미 국채 10년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
-| `macro/rates/treasury_30y.md` | `^TYX` | 미 국채 30년물 금리 | `--symbol "%" --symbol-pos suffix --unit-label "%"` | YLD |
 | `macro/bonds/hyg.md` | `HYG` | 하이일드 회사채 ETF | (기본값) | ETF |
 | `macro/bonds/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
 | `macro/cryptocurrency/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
@@ -131,7 +126,7 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 
 ## 경제지표(FRED) 문서 재현 파라미터
 
-`docs/macro/economy/`·`docs/macro/inflation/`의 문서는 위 두 스크립트가 아니라 `scripts/gen_fred_chart.py`를 쓴다. **가격이 아니라 경제지표**라 캔들도 지지/저항도 성립하지 않기 때문이다 — 한 기간에 값이 하나뿐이라 시가·고가·저가가 없고, 되돌림이 일어나는 호가 레벨이라는 개념도 없다. 대신 기준선(`--ref-line`)과 NBER 침체 음영(`--recession`)을 쓴다. 골격은 나머지 macro 문서와 같다(**1. 차트 · 2. 해석**만, 재생성 커맨드는 문서에 남기지 않음).
+`docs/macro/economy/`·`docs/macro/inflation/`·`docs/macro/rates/`의 문서는 위 두 스크립트가 아니라 `scripts/gen_fred_chart.py`를 쓴다. **가격이 아니라 경제지표**라 캔들도 지지/저항도 성립하지 않기 때문이다 — 한 기간에 값이 하나뿐이라 시가·고가·저가가 없고, 되돌림이 일어나는 호가 레벨이라는 개념도 없다. 대신 기준선(`--ref-line`)과 NBER 침체 음영(`--recession`)을 쓴다. 골격은 나머지 macro 문서와 같다(**1. 차트 · 2. 해석**만, 재생성 커맨드는 문서에 남기지 않음).
 
 ```bash
 uv run python scripts/gen_fred_chart.py \
@@ -149,7 +144,7 @@ uv run python scripts/gen_fred_chart.py \
 | `pc1` | 전년동월비 % | 물가지수 — 원값은 "1982-84=100" 같은 지수라 그대로 그리면 우상향 직선만 나온다 |
 | `chg` | 전기대비 증감(원단위) | 고용자수처럼 누적 레벨로 발표되는 지표 |
 
-**시작일**: 월간·주간 문서는 `2021-09-01`, 분기 문서(GDP)는 `2021-07-01` — 둘 다 최근 5년이며, 나머지 macro 문서의 "최근 5년" 관행과 맞춘 것이다. 5년으로 자르면 2020년 코로나 침체의 극단값(GDP 연율 ±30%대, 고용 −2,000만 명대)이 빠져 나머지 구간이 눌리지 않는다.
+**시작일**: 일간·주간·월간 문서는 `2021-09-01`, 분기 문서(GDP)는 `2021-07-01` — 둘 다 최근 5년이며, 나머지 macro 문서의 "최근 5년" 관행과 맞춘 것이다. 5년으로 자르면 2020년 코로나 침체의 극단값(GDP 연율 ±30%대, 고용 −2,000만 명대)이 빠져 나머지 구간이 눌리지 않는다.
 
 | 문서 | 시리즈(ID:라벨:슬롯[:변환]) | --title | 옵션 |
 |------|------------------------------|---------|------|
@@ -163,6 +158,10 @@ uv run python scripts/gen_fred_chart.py \
 | `macro/inflation/core_cpi.md` | `CPILFESL:Core CPI:2:pc1` | 미국 근원 소비자물가 상승률 (Core CPI, 전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
 | `macro/inflation/core_pce.md` | `PCEPILFE:Core PCE:3:pc1` | 미국 근원 개인소비지출 물가 상승률 (Core PCE, 전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
 | `macro/inflation/comparison.md` | `CPIAUCSL:CPI:1:pc1` · `CPILFESL:Core CPI:2:pc1` · `PCEPILFE:Core PCE:3:pc1` | 미국 물가지표 3종 비교 (전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
+| `macro/rates/treasury_2y.md` | `DGS2:미국 2년물 국채금리:1` | 미국 2년물 국채금리 (상수만기) | `--start 2021-09-01 --unit-label "%" --decimals 2 --recession` |
+| `macro/rates/treasury_10y.md` | `DGS10:미국 10년물 국채금리:2` | 미국 10년물 국채금리 (상수만기) | `--start 2021-09-01 --unit-label "%" --decimals 2 --recession` |
+| `macro/rates/treasury_30y.md` | `DGS30:미국 30년물 국채금리:3` | 미국 30년물 국채금리 (상수만기) | `--start 2021-09-01 --unit-label "%" --decimals 2 --recession` |
+| `macro/rates/comparison.md` | `DGS2:미국 2년물 국채금리:1` · `DGS10:미국 10년물 국채금리:2` · `DGS30:미국 30년물 국채금리:3` | 미국 국채금리 3종 비교 (상수만기) | `--start 2021-09-01 --unit-label "%" --decimals 2 --recession --emit all` |
 
 색상슬롯은 위 8색 팔레트와 같은 순번이다. 비교 문서(`inflation/comparison.md`)에서 각 지표의 슬롯을 **단독 문서와 동일하게** 유지한다 — 같은 지표가 문서마다 다른 색으로 나오면 나란히 놓고 볼 때 헷갈린다.
 
@@ -173,7 +172,7 @@ uv run python scripts/gen_fred_chart.py \
 단일 자산이 아니라 여러 자산을 "상대적으로 어느 쪽이 더 크게 움직였는지" 비교하려면 `gen_technical_chart.py`가 아니라 `gen_index_overlay_chart.py`를 쓴다. 지지/저항 레벨은 다루지 않고 1. 차트(차트+요약 표)·2. 해석만 둔다 — 단일 자산 문서와 같은 규칙이다. **모드는 자산 단위로 정한다:**
 
 - `--mode index`(기본): 환율·지수처럼 **단위 자체가 서로 다른** 자산. 공통 시작일을 100으로 맞춰 상대 변화율로 겹친다.
-- `--mode raw`: 국채금리처럼 **이미 같은 단위(%)인** 자산. 지수화하면 안 된다 — 기준값이 0에 가까운 시리즈가 하나라도 있으면(예: 2021년 ZIRP 시기 13주물 금리 0.04%) 지수가 수천으로 튀어 왜곡된다. 원값을 그대로 겹치면 스프레드·역전 같은 실제 정보까지 보여줘 오히려 더 유용하다.
+- `--mode raw`: **이미 같은 단위(%)인** 자산. 지수화하면 안 된다 — 기준값이 0에 가까운 시리즈가 하나라도 있으면(제로금리 국면의 단기금리처럼) 지수가 수천으로 튀어 왜곡된다. 원값을 그대로 겹치면 스프레드 같은 실제 정보까지 보여줘 오히려 더 유용하다. **현재 이 모드를 쓰는 문서는 없다** — 유일한 사용처였던 국채금리 비교가 FRED(`gen_fred_chart.py`, 여러 `--series`를 원값으로 겹침)로 옮겨갔기 때문이다.
 
 ```bash
 # index 모드
@@ -189,12 +188,11 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 색상슬롯은 `docs/macro/`가 이미 쓰는 검증된 8색 팔레트 순번(1=파랑 2=주황 3=아쿠아 4=노랑 5=마젠타 6=초록 7=보라 8=빨강)이다 — 새 배색을 만들지 않고 그 순서를 재사용한다.
 
-`--title`은 아래 표의 값을 그대로 쓰고, `--period-label`은 8개 문서 모두 `"최근 5년 주간"`이다. 스크립트가 제목 뒤에 기준일·지수화 여부를 자동으로 붙이므로 제목에 그 정보를 직접 적지 않는다.
+`--title`은 아래 표의 값을 그대로 쓰고, `--period-label`은 7개 문서 모두 `"최근 5년 주간"`이다. 스크립트가 제목 뒤에 기준일·지수화 여부를 자동으로 붙이므로 제목에 그 정보를 직접 적지 않는다.
 
 | 문서 | 모드 | --title | 시리즈(티커:라벨:색상슬롯) |
 |------|------|---------|---------------------------|
 | `macro/foreign_exchange/comparison.md` | index | 통화 3종 비교 | `DX-Y.NYB:달러인덱스 (DXY):1` · `JPY=X:엔/달러 환율:2` · `KRW=X:원/달러 환율:3` |
-| `macro/rates/comparison.md` | raw (`--unit-label "%"`) | 미국 국채금리 3종 비교 | `^IRX:미국 13주물 국채금리:1` · `^TNX:미국 10년물 국채금리:2` · `^TYX:미국 30년물 국채금리:3` |
 | `macro/bonds/comparison.md` | index | 채권 2종 비교 | `TLT:20년+ 장기국채 ETF (TLT):1` · `HYG:하이일드 회사채 ETF (HYG):2` |
 | `macro/metals/comparison.md` | index | 금속 3종 비교 | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
 | `macro/energy/comparison.md` | index | 에너지 3종 비교 | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` · `SRUUF:우라늄 실물 신탁 (SRUUF):3` |
@@ -204,4 +202,4 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 ---
 
-*작성일: 2026-09-17*
+*작성일: 2026-09-18*

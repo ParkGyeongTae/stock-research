@@ -1,616 +1,337 @@
 # 미국 30년물 국채금리
 
 ::: info
-최근 5년간 미국 30년물 국채 수익률(`^TYX`)의 주간 흐름을 지지선·저항선과 함께 정리한 참고 자료다. 13주물 국채금리·10년물 국채금리와 함께 보면 **수익률곡선에서 가장 만기가 긴 구간**까지 채워서 볼 수 있다.
-
-**왜 따로 다루나**: 30년물은 가장 먼 미래의 성장·물가 기대와 기간 프리미엄(만기가 길어질수록 투자자가 추가로 요구하는 보상)을 반영한다. 그래서 단기물과 달리 연준의 당장 정책보다는 장기적인 재정건전성이나 인플레이션 기대에 더 민감하게 움직이는 편이다.
+만기 30년 미 국채의 상수만기(constant maturity) 수익률이다(FRED `DGS30`). [2년물](./treasury_2y.md)·[10년물](./treasury_10y.md)과 함께 보면 수익률곡선에서 가장 만기가 긴 구간까지 채워서 볼 수 있다.
 
 :::
 ---
 
-## 1. 차트 — 최근 5년 주봉
+## 1. 차트 — 최근 5년 일간
 
-<div class="tyx-chart">
+<div class="fred-dgs30">
 <style>
-.tyx-chart {
-  --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
-  --up:#0ca30c; --down:#d03b3b; --support:#2a78d6; --resistance:#eb6834; --ref:#898781;
+.fred-dgs30 {
+  --bg:#fcfcfb; --grid:#e1e0d9; --axis:#c3c2b7; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --base:#898781; --rec:#898781; --s-dgs30:#1baf7a;
 }
 @media (prefers-color-scheme: dark) {
-  .dark .tyx-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
+  .dark .fred-dgs30 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-dgs30:#199e70; }
 }
-.dark .tyx-chart { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --up:#0ca30c; --down:#e66767; --support:#3987e5; --resistance:#d95926; --ref:#898781; }
-.tyx-chart svg { width:100%; height:auto; display:block; }
-.tyx-chart text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
-.tyx-chart .title { fill: var(--ink); font-weight:600; }
-.tyx-chart .grid { stroke: var(--grid); stroke-width:1; }
-.tyx-chart .axis { stroke: var(--axis); stroke-width:1; }
+.dark .fred-dgs30 { --bg:#1a1a19; --grid:#2c2c2a; --axis:#383835; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --base:#898781; --rec:#c3c2b7; --s-dgs30:#199e70; }
+.fred-dgs30 svg { width:100%; height:auto; display:block; }
+.fred-dgs30 text { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; }
+.fred-dgs30 .title { fill: var(--ink); font-weight:600; }
+.fred-dgs30 .grid { stroke: var(--grid); stroke-width:1; }
+.fred-dgs30 .axis { stroke: var(--axis); stroke-width:1; }
 </style>
-<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="미 국채 30년물 금리(^TYX) 최근 5년 주봉 캔들차트, 지지선과 저항선 포함">
-<rect x="0" y="0" width="1200" height="680" fill="var(--bg)"/>
-<text x="60" y="26" class="title" font-size="18">미 국채 30년물 금리 (^TYX) — 최근 5년 주봉</text>
-<text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-09-06 ~ 2026-09-10 · 마지막 종가 5.36% (2026-09-10) · 단위 %</text>
-<line x1="60" y1="561.1" x2="1052" y2="561.1" class="grid"/>
-<text x="52" y="565.1" font-size="11" text-anchor="end" fill="var(--muted)">2.00</text>
-<line x1="60" y1="488.9" x2="1052" y2="488.9" class="grid"/>
-<text x="52" y="492.9" font-size="11" text-anchor="end" fill="var(--muted)">2.50</text>
-<line x1="60" y1="416.8" x2="1052" y2="416.8" class="grid"/>
-<text x="52" y="420.8" font-size="11" text-anchor="end" fill="var(--muted)">3.00</text>
-<line x1="60" y1="344.6" x2="1052" y2="344.6" class="grid"/>
-<text x="52" y="348.6" font-size="11" text-anchor="end" fill="var(--muted)">3.50</text>
-<line x1="60" y1="272.5" x2="1052" y2="272.5" class="grid"/>
-<text x="52" y="276.5" font-size="11" text-anchor="end" fill="var(--muted)">4.00</text>
-<line x1="60" y1="200.3" x2="1052" y2="200.3" class="grid"/>
-<text x="52" y="204.3" font-size="11" text-anchor="end" fill="var(--muted)">4.50</text>
-<line x1="60" y1="128.2" x2="1052" y2="128.2" class="grid"/>
-<text x="52" y="132.2" font-size="11" text-anchor="end" fill="var(--muted)">5.00</text>
-<line x1="60" y1="56.0" x2="1052" y2="56.0" class="grid"/>
-<text x="52" y="60.0" font-size="11" text-anchor="end" fill="var(--muted)">5.50</text>
-<line x1="61.9" y1="56.0" x2="61.9" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="61.9" y1="626.0" x2="61.9" y2="631.0" class="axis"/>
-<text x="61.9" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2021</text>
-<line x1="126.0" y1="56.0" x2="126.0" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="126.0" y1="626.0" x2="126.0" y2="631.0" class="axis"/>
-<text x="126.0" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2022</text>
-<line x1="322.1" y1="56.0" x2="322.1" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="322.1" y1="626.0" x2="322.1" y2="631.0" class="axis"/>
-<text x="322.1" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2023</text>
-<line x1="518.3" y1="56.0" x2="518.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="518.3" y1="626.0" x2="518.3" y2="631.0" class="axis"/>
-<text x="518.3" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2024</text>
-<line x1="718.2" y1="56.0" x2="718.2" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="718.2" y1="626.0" x2="718.2" y2="631.0" class="axis"/>
-<text x="718.2" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
-<line x1="914.3" y1="56.0" x2="914.3" y2="626.0" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
-<line x1="914.3" y1="626.0" x2="914.3" y2="631.0" class="axis"/>
-<text x="914.3" y="644.0" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
-<line x1="60" y1="626.0" x2="1052" y2="626.0" class="axis"/>
-<line x1="60" y1="56.0" x2="60" y2="626.0" class="axis"/>
-<line x1="61.9" y1="568.9" x2="61.9" y2="574.2" stroke="var(--up)" class="wick"/>
-<rect x="60.72" y="570.6" width="2.34" height="2.5" fill="var(--up)"/>
-<line x1="65.7" y1="569.3" x2="65.7" y2="586.6" stroke="var(--down)" class="wick"/>
-<rect x="64.49" y="572.6" width="2.34" height="1.6" fill="var(--down)"/>
-<line x1="69.4" y1="562.2" x2="69.4" y2="585.6" stroke="var(--up)" class="wick"/>
-<rect x="68.26" y="562.8" width="2.34" height="20.8" fill="var(--up)"/>
-<line x1="73.2" y1="546.2" x2="73.2" y2="562.9" stroke="var(--up)" class="wick"/>
-<rect x="72.03" y="552.7" width="2.34" height="6.1" fill="var(--up)"/>
-<line x1="77.0" y1="535.5" x2="77.0" y2="556.2" stroke="var(--up)" class="wick"/>
-<rect x="75.80" y="537.7" width="2.34" height="14.4" fill="var(--up)"/>
-<line x1="80.7" y1="537.1" x2="80.7" y2="558.9" stroke="var(--down)" class="wick"/>
-<rect x="79.58" y="537.1" width="2.34" height="16.6" fill="var(--down)"/>
-<line x1="84.5" y1="539.4" x2="84.5" y2="559.8" stroke="var(--up)" class="wick"/>
-<rect x="83.35" y="547.9" width="2.34" height="8.2" fill="var(--up)"/>
-<line x1="88.3" y1="543.5" x2="88.3" y2="572.0" stroke="var(--down)" class="wick"/>
-<rect x="87.12" y="546.5" width="2.34" height="22.9" fill="var(--down)"/>
-<line x1="92.1" y1="557.5" x2="92.1" y2="578.2" stroke="var(--down)" class="wick"/>
-<rect x="90.89" y="564.5" width="2.34" height="13.0" fill="var(--down)"/>
-<line x1="95.8" y1="563.5" x2="95.8" y2="590.6" stroke="var(--up)" class="wick"/>
-<rect x="94.66" y="567.6" width="2.34" height="6.9" fill="var(--up)"/>
-<line x1="99.6" y1="554.0" x2="99.6" y2="575.3" stroke="var(--down)" class="wick"/>
-<rect x="98.44" y="570.9" width="2.34" height="3.6" fill="var(--down)"/>
-<line x1="103.4" y1="555.9" x2="103.4" y2="586.6" stroke="var(--down)" class="wick"/>
-<rect x="102.21" y="569.7" width="2.34" height="16.3" fill="var(--down)"/>
-<line x1="107.1" y1="574.1" x2="107.1" y2="607.5" stroke="var(--down)" class="wick"/>
-<rect x="105.98" y="576.8" width="2.34" height="30.7" fill="var(--down)"/>
-<line x1="110.9" y1="576.4" x2="110.9" y2="605.7" stroke="var(--up)" class="wick"/>
-<rect x="109.75" y="577.8" width="2.34" height="24.0" fill="var(--up)"/>
-<line x1="114.7" y1="574.8" x2="114.7" y2="589.8" stroke="var(--down)" class="wick"/>
-<rect x="113.52" y="581.7" width="2.34" height="5.6" fill="var(--down)"/>
-<line x1="118.5" y1="571.6" x2="118.5" y2="588.8" stroke="var(--up)" class="wick"/>
-<rect x="117.29" y="574.8" width="2.34" height="13.4" fill="var(--up)"/>
-<line x1="122.2" y1="565.2" x2="122.2" y2="582.1" stroke="var(--up)" class="wick"/>
-<rect x="121.07" y="574.8" width="2.34" height="1.6" fill="var(--up)"/>
-<line x1="126.0" y1="539.4" x2="126.0" y2="573.0" stroke="var(--up)" class="wick"/>
-<rect x="124.84" y="544.0" width="2.34" height="28.9" fill="var(--up)"/>
-<line x1="129.8" y1="539.3" x2="129.8" y2="554.3" stroke="var(--down)" class="wick"/>
-<rect x="128.61" y="543.2" width="2.34" height="1.4" fill="var(--down)"/>
-<line x1="133.6" y1="533.4" x2="133.6" y2="553.6" stroke="var(--down)" class="wick"/>
-<rect x="132.38" y="540.0" width="2.34" height="11.8" fill="var(--down)"/>
-<line x1="137.3" y1="536.0" x2="137.3" y2="555.3" stroke="var(--up)" class="wick"/>
-<rect x="136.15" y="549.1" width="2.34" height="4.2" fill="var(--up)"/>
-<line x1="141.1" y1="526.9" x2="141.1" y2="552.3" stroke="var(--up)" class="wick"/>
-<rect x="139.93" y="527.4" width="2.34" height="18.0" fill="var(--up)"/>
-<line x1="144.9" y1="510.1" x2="144.9" y2="530.5" stroke="var(--up)" class="wick"/>
-<rect x="143.70" y="524.0" width="2.34" height="4.9" fill="var(--up)"/>
-<line x1="148.6" y1="505.2" x2="148.6" y2="526.6" stroke="var(--down)" class="wick"/>
-<rect x="147.47" y="523.3" width="2.34" height="1.6" fill="var(--down)"/>
-<line x1="152.4" y1="516.0" x2="152.4" y2="537.1" stroke="var(--up)" class="wick"/>
-<rect x="151.24" y="518.3" width="2.34" height="5.3" fill="var(--up)"/>
-<line x1="156.2" y1="522.4" x2="156.2" y2="551.0" stroke="var(--down)" class="wick"/>
-<rect x="155.01" y="525.9" width="2.34" height="13.4" fill="var(--down)"/>
-<line x1="160.0" y1="501.2" x2="160.0" y2="542.0" stroke="var(--up)" class="wick"/>
-<rect x="158.79" y="508.5" width="2.34" height="25.7" fill="var(--up)"/>
-<line x1="163.7" y1="483.0" x2="163.7" y2="501.9" stroke="var(--down)" class="wick"/>
-<rect x="162.56" y="499.6" width="2.34" height="1.2" fill="var(--down)"/>
-<line x1="167.5" y1="468.1" x2="167.5" y2="494.5" stroke="var(--up)" class="wick"/>
-<rect x="166.33" y="474.0" width="2.34" height="20.2" fill="var(--up)"/>
-<line x1="171.3" y1="476.8" x2="171.3" y2="501.2" stroke="var(--down)" class="wick"/>
-<rect x="170.10" y="478.8" width="2.34" height="21.1" fill="var(--down)"/>
-<line x1="175.0" y1="451.4" x2="175.0" y2="497.7" stroke="var(--up)" class="wick"/>
-<rect x="173.87" y="453.4" width="2.34" height="38.8" fill="var(--up)"/>
-<line x1="178.8" y1="427.0" x2="178.8" y2="452.7" stroke="var(--up)" class="wick"/>
-<rect x="177.64" y="428.4" width="2.34" height="18.5" fill="var(--up)"/>
-<line x1="182.6" y1="414.2" x2="182.6" y2="436.2" stroke="var(--down)" class="wick"/>
-<rect x="181.42" y="423.7" width="2.34" height="1.2" fill="var(--down)"/>
-<line x1="186.4" y1="418.2" x2="186.4" y2="442.3" stroke="var(--up)" class="wick"/>
-<rect x="185.19" y="424.4" width="2.34" height="6.1" fill="var(--up)"/>
-<line x1="190.1" y1="384.6" x2="190.1" y2="421.4" stroke="var(--up)" class="wick"/>
-<rect x="188.96" y="384.9" width="2.34" height="32.9" fill="var(--up)"/>
-<line x1="193.9" y1="376.8" x2="193.9" y2="420.5" stroke="var(--down)" class="wick"/>
-<rect x="192.73" y="377.2" width="2.34" height="26.1" fill="var(--down)"/>
-<line x1="197.7" y1="387.6" x2="197.7" y2="420.4" stroke="var(--down)" class="wick"/>
-<rect x="196.50" y="402.2" width="2.34" height="15.2" fill="var(--down)"/>
-<line x1="201.4" y1="406.4" x2="201.4" y2="427.7" stroke="var(--down)" class="wick"/>
-<rect x="200.28" y="412.0" width="2.34" height="8.8" fill="var(--down)"/>
-<line x1="205.2" y1="394.0" x2="205.2" y2="413.0" stroke="var(--up)" class="wick"/>
-<rect x="204.05" y="400.3" width="2.34" height="12.7" fill="var(--up)"/>
-<line x1="209.0" y1="382.4" x2="209.0" y2="402.6" stroke="var(--up)" class="wick"/>
-<rect x="207.82" y="388.5" width="2.34" height="9.5" fill="var(--up)"/>
-<line x1="212.8" y1="348.6" x2="212.8" y2="381.3" stroke="var(--up)" class="wick"/>
-<rect x="211.59" y="374.3" width="2.34" height="1.0" fill="var(--up)"/>
-<line x1="216.5" y1="359.8" x2="216.5" y2="395.5" stroke="var(--down)" class="wick"/>
-<rect x="215.36" y="365.5" width="2.34" height="14.1" fill="var(--down)"/>
-<line x1="220.3" y1="364.4" x2="220.3" y2="412.7" stroke="var(--down)" class="wick"/>
-<rect x="219.13" y="372.0" width="2.34" height="28.0" fill="var(--down)"/>
-<line x1="224.1" y1="376.6" x2="224.1" y2="417.5" stroke="var(--up)" class="wick"/>
-<rect x="222.91" y="377.9" width="2.34" height="24.5" fill="var(--up)"/>
-<line x1="227.8" y1="383.4" x2="227.8" y2="407.8" stroke="var(--down)" class="wick"/>
-<rect x="226.68" y="384.0" width="2.34" height="19.2" fill="var(--down)"/>
-<line x1="231.6" y1="386.7" x2="231.6" y2="423.7" stroke="var(--down)" class="wick"/>
-<rect x="230.45" y="398.9" width="2.34" height="18.2" fill="var(--down)"/>
-<line x1="235.4" y1="403.2" x2="235.4" y2="423.7" stroke="var(--down)" class="wick"/>
-<rect x="234.22" y="409.5" width="2.34" height="11.0" fill="var(--down)"/>
-<line x1="239.2" y1="401.5" x2="239.2" y2="437.7" stroke="var(--up)" class="wick"/>
-<rect x="237.99" y="407.4" width="2.34" height="6.1" fill="var(--up)"/>
-<line x1="242.9" y1="389.5" x2="242.9" y2="425.0" stroke="var(--up)" class="wick"/>
-<rect x="241.77" y="399.7" width="2.34" height="13.0" fill="var(--up)"/>
-<line x1="246.7" y1="382.7" x2="246.7" y2="409.1" stroke="var(--up)" class="wick"/>
-<rect x="245.54" y="384.3" width="2.34" height="20.3" fill="var(--up)"/>
-<line x1="250.5" y1="369.1" x2="250.5" y2="390.2" stroke="var(--down)" class="wick"/>
-<rect x="249.31" y="384.6" width="2.34" height="2.6" fill="var(--down)"/>
-<line x1="254.3" y1="357.3" x2="254.3" y2="387.3" stroke="var(--up)" class="wick"/>
-<rect x="253.08" y="367.1" width="2.34" height="15.0" fill="var(--up)"/>
-<line x1="258.0" y1="345.9" x2="258.0" y2="364.2" stroke="var(--up)" class="wick"/>
-<rect x="256.85" y="351.0" width="2.34" height="8.9" fill="var(--up)"/>
-<line x1="261.8" y1="334.2" x2="261.8" y2="357.2" stroke="var(--up)" class="wick"/>
-<rect x="260.63" y="341.9" width="2.34" height="14.9" fill="var(--up)"/>
-<line x1="265.6" y1="319.1" x2="265.6" y2="346.5" stroke="var(--up)" class="wick"/>
-<rect x="264.40" y="328.4" width="2.34" height="7.2" fill="var(--up)"/>
-<line x1="269.3" y1="294.5" x2="269.3" y2="328.4" stroke="var(--up)" class="wick"/>
-<rect x="268.17" y="306.4" width="2.34" height="13.4" fill="var(--up)"/>
-<line x1="273.1" y1="290.2" x2="273.1" y2="324.5" stroke="var(--up)" class="wick"/>
-<rect x="271.94" y="295.4" width="2.34" height="21.2" fill="var(--up)"/>
-<line x1="276.9" y1="270.7" x2="276.9" y2="294.7" stroke="var(--up)" class="wick"/>
-<rect x="275.71" y="275.6" width="2.34" height="18.8" fill="var(--up)"/>
-<line x1="280.7" y1="217.2" x2="280.7" y2="283.1" stroke="var(--up)" class="wick"/>
-<rect x="279.48" y="228.4" width="2.34" height="51.8" fill="var(--up)"/>
-<line x1="284.4" y1="211.1" x2="284.4" y2="263.8" stroke="var(--down)" class="wick"/>
-<rect x="283.26" y="227.1" width="2.34" height="26.7" fill="var(--down)"/>
-<line x1="288.2" y1="233.9" x2="288.2" y2="264.7" stroke="var(--up)" class="wick"/>
-<rect x="287.03" y="237.0" width="2.34" height="16.7" fill="var(--up)"/>
-<line x1="292.0" y1="224.3" x2="292.0" y2="264.1" stroke="var(--down)" class="wick"/>
-<rect x="290.80" y="241.1" width="2.34" height="22.9" fill="var(--down)"/>
-<line x1="295.7" y1="259.9" x2="295.7" y2="293.1" stroke="var(--down)" class="wick"/>
-<rect x="294.57" y="261.9" width="2.34" height="21.1" fill="var(--down)"/>
-<line x1="299.5" y1="284.7" x2="299.5" y2="310.4" stroke="var(--down)" class="wick"/>
-<rect x="298.34" y="286.6" width="2.34" height="21.8" fill="var(--down)"/>
-<line x1="303.3" y1="294.5" x2="303.3" y2="336.2" stroke="var(--down)" class="wick"/>
-<rect x="302.12" y="313.1" width="2.34" height="22.5" fill="var(--down)"/>
-<line x1="307.1" y1="323.0" x2="307.1" y2="357.2" stroke="var(--down)" class="wick"/>
-<rect x="305.89" y="335.5" width="2.34" height="2.0" fill="var(--down)"/>
-<line x1="310.8" y1="330.5" x2="310.8" y2="351.2" stroke="var(--up)" class="wick"/>
-<rect x="309.66" y="339.8" width="2.34" height="2.6" fill="var(--up)"/>
-<line x1="314.6" y1="297.1" x2="314.6" y2="328.3" stroke="var(--up)" class="wick"/>
-<rect x="313.43" y="297.4" width="2.34" height="28.7" fill="var(--up)"/>
-<line x1="318.4" y1="273.9" x2="318.4" y2="291.4" stroke="var(--up)" class="wick"/>
-<rect x="317.20" y="276.1" width="2.34" height="15.3" fill="var(--up)"/>
-<line x1="322.1" y1="285.2" x2="322.1" y2="319.1" stroke="var(--down)" class="wick"/>
-<rect x="320.98" y="292.4" width="2.34" height="24.5" fill="var(--down)"/>
-<line x1="325.9" y1="304.9" x2="325.9" y2="336.2" stroke="var(--down)" class="wick"/>
-<rect x="324.75" y="312.3" width="2.34" height="14.6" fill="var(--down)"/>
-<line x1="329.7" y1="316.3" x2="329.7" y2="341.4" stroke="var(--down)" class="wick"/>
-<rect x="328.52" y="317.8" width="2.34" height="4.3" fill="var(--down)"/>
-<line x1="333.5" y1="313.1" x2="333.5" y2="332.8" stroke="var(--down)" class="wick"/>
-<rect x="332.29" y="318.5" width="2.34" height="6.9" fill="var(--down)"/>
-<line x1="337.2" y1="318.1" x2="337.2" y2="344.9" stroke="var(--down)" class="wick"/>
-<rect x="336.06" y="321.5" width="2.34" height="4.6" fill="var(--down)"/>
-<line x1="341.0" y1="296.0" x2="341.0" y2="326.0" stroke="var(--up)" class="wick"/>
-<rect x="339.83" y="297.4" width="2.34" height="24.4" fill="var(--up)"/>
-<line x1="344.8" y1="279.4" x2="344.8" y2="312.1" stroke="var(--up)" class="wick"/>
-<rect x="343.61" y="288.6" width="2.34" height="11.5" fill="var(--up)"/>
-<line x1="348.5" y1="275.2" x2="348.5" y2="293.5" stroke="var(--up)" class="wick"/>
-<rect x="347.38" y="281.4" width="2.34" height="1.0" fill="var(--up)"/>
-<line x1="352.3" y1="265.7" x2="352.3" y2="289.2" stroke="var(--down)" class="wick"/>
-<rect x="351.15" y="277.2" width="2.34" height="11.5" fill="var(--down)"/>
-<line x1="356.1" y1="282.3" x2="356.1" y2="318.6" stroke="var(--down)" class="wick"/>
-<rect x="354.92" y="296.8" width="2.34" height="18.9" fill="var(--down)"/>
-<line x1="359.9" y1="301.7" x2="359.9" y2="340.9" stroke="var(--up)" class="wick"/>
-<rect x="358.69" y="330.5" width="2.34" height="2.3" fill="var(--up)"/>
-<line x1="363.6" y1="305.6" x2="363.6" y2="328.3" stroke="var(--up)" class="wick"/>
-<rect x="362.47" y="323.8" width="2.34" height="2.9" fill="var(--up)"/>
-<line x1="367.4" y1="299.2" x2="367.4" y2="317.5" stroke="var(--down)" class="wick"/>
-<rect x="366.24" y="314.7" width="2.34" height="2.6" fill="var(--down)"/>
-<line x1="371.2" y1="315.6" x2="371.2" y2="340.7" stroke="var(--down)" class="wick"/>
-<rect x="370.01" y="316.3" width="2.34" height="22.5" fill="var(--down)"/>
-<line x1="375.0" y1="308.0" x2="375.0" y2="334.5" stroke="var(--up)" class="wick"/>
-<rect x="373.78" y="310.1" width="2.34" height="22.4" fill="var(--up)"/>
-<line x1="378.7" y1="296.6" x2="378.7" y2="312.3" stroke="var(--up)" class="wick"/>
-<rect x="377.55" y="304.5" width="2.34" height="2.0" fill="var(--up)"/>
-<line x1="382.5" y1="305.9" x2="382.5" y2="325.8" stroke="var(--down)" class="wick"/>
-<rect x="381.33" y="308.0" width="2.34" height="11.0" fill="var(--down)"/>
-<line x1="386.3" y1="298.3" x2="386.3" y2="321.1" stroke="var(--up)" class="wick"/>
-<rect x="385.10" y="306.8" width="2.34" height="3.2" fill="var(--up)"/>
-<line x1="390.0" y1="293.4" x2="390.0" y2="313.3" stroke="var(--down)" class="wick"/>
-<rect x="388.87" y="300.9" width="2.34" height="3.8" fill="var(--down)"/>
-<line x1="393.8" y1="278.2" x2="393.8" y2="301.3" stroke="var(--up)" class="wick"/>
-<rect x="392.64" y="280.0" width="2.34" height="18.2" fill="var(--up)"/>
-<line x1="397.6" y1="271.2" x2="397.6" y2="284.1" stroke="var(--up)" class="wick"/>
-<rect x="396.41" y="276.9" width="2.34" height="3.0" fill="var(--up)"/>
-<line x1="401.4" y1="281.4" x2="401.4" y2="301.0" stroke="var(--down)" class="wick"/>
-<rect x="400.18" y="287.9" width="2.34" height="1.6" fill="var(--down)"/>
-<line x1="405.1" y1="275.3" x2="405.1" y2="292.4" stroke="var(--down)" class="wick"/>
-<rect x="403.96" y="281.3" width="2.34" height="7.5" fill="var(--down)"/>
-<line x1="408.9" y1="280.4" x2="408.9" y2="301.0" stroke="var(--down)" class="wick"/>
-<rect x="407.73" y="291.5" width="2.34" height="1.9" fill="var(--down)"/>
-<line x1="412.7" y1="289.8" x2="412.7" y2="303.2" stroke="var(--down)" class="wick"/>
-<rect x="411.50" y="296.1" width="2.34" height="2.2" fill="var(--down)"/>
-<line x1="416.4" y1="283.0" x2="416.4" y2="305.8" stroke="var(--up)" class="wick"/>
-<rect x="415.27" y="293.4" width="2.34" height="9.5" fill="var(--up)"/>
-<line x1="420.2" y1="263.7" x2="420.2" y2="299.6" stroke="var(--up)" class="wick"/>
-<rect x="419.04" y="267.5" width="2.34" height="22.4" fill="var(--up)"/>
-<line x1="424.0" y1="260.2" x2="424.0" y2="289.9" stroke="var(--down)" class="wick"/>
-<rect x="422.82" y="264.5" width="2.34" height="19.0" fill="var(--down)"/>
-<line x1="427.8" y1="280.0" x2="427.8" y2="295.8" stroke="var(--up)" class="wick"/>
-<rect x="426.59" y="285.9" width="2.34" height="1.3" fill="var(--up)"/>
-<line x1="431.5" y1="262.5" x2="431.5" y2="289.9" stroke="var(--up)" class="wick"/>
-<rect x="430.36" y="268.1" width="2.34" height="21.1" fill="var(--up)"/>
-<line x1="435.3" y1="225.4" x2="435.3" y2="274.0" stroke="var(--up)" class="wick"/>
-<rect x="434.13" y="241.6" width="2.34" height="27.6" fill="var(--up)"/>
-<line x1="439.1" y1="230.5" x2="439.1" y2="251.5" stroke="var(--up)" class="wick"/>
-<rect x="437.90" y="233.2" width="2.34" height="1.0" fill="var(--up)"/>
-<line x1="442.8" y1="211.0" x2="442.8" y2="237.8" stroke="var(--up)" class="wick"/>
-<rect x="441.67" y="217.8" width="2.34" height="15.6" fill="var(--up)"/>
-<line x1="446.6" y1="204.1" x2="446.6" y2="234.2" stroke="var(--down)" class="wick"/>
-<rect x="445.45" y="209.7" width="2.34" height="20.3" fill="var(--down)"/>
-<line x1="450.4" y1="227.3" x2="450.4" y2="246.5" stroke="var(--up)" class="wick"/>
-<rect x="449.22" y="231.3" width="2.34" height="2.6" fill="var(--up)"/>
-<line x1="454.2" y1="216.9" x2="454.2" y2="229.2" stroke="var(--down)" class="wick"/>
-<rect x="452.99" y="223.7" width="2.34" height="1.0" fill="var(--down)"/>
-<line x1="457.9" y1="211.6" x2="457.9" y2="225.3" stroke="var(--up)" class="wick"/>
-<rect x="456.76" y="213.1" width="2.34" height="5.3" fill="var(--up)"/>
-<line x1="461.7" y1="190.2" x2="461.7" y2="217.2" stroke="var(--up)" class="wick"/>
-<rect x="460.53" y="197.3" width="2.34" height="15.6" fill="var(--up)"/>
-<line x1="465.5" y1="155.9" x2="465.5" y2="185.9" stroke="var(--up)" class="wick"/>
-<rect x="464.31" y="169.9" width="2.34" height="14.7" fill="var(--up)"/>
-<line x1="469.2" y1="120.5" x2="469.2" y2="166.0" stroke="var(--up)" class="wick"/>
-<rect x="468.08" y="136.7" width="2.34" height="27.6" fill="var(--up)"/>
-<line x1="473.0" y1="133.2" x2="473.0" y2="173.6" stroke="var(--down)" class="wick"/>
-<rect x="471.85" y="133.2" width="2.34" height="26.7" fill="var(--down)"/>
-<line x1="476.8" y1="107.4" x2="476.8" y2="152.8" stroke="var(--up)" class="wick"/>
-<rect x="475.62" y="115.3" width="2.34" height="33.6" fill="var(--up)"/>
-<line x1="480.6" y1="106.2" x2="480.6" y2="133.5" stroke="var(--down)" class="wick"/>
-<rect x="479.39" y="106.2" width="2.34" height="18.6" fill="var(--down)"/>
-<line x1="484.3" y1="114.4" x2="484.3" y2="175.2" stroke="var(--down)" class="wick"/>
-<rect x="483.17" y="119.6" width="2.34" height="44.3" fill="var(--down)"/>
-<line x1="488.1" y1="151.7" x2="488.1" y2="181.1" stroke="var(--down)" class="wick"/>
-<rect x="486.94" y="158.2" width="2.34" height="8.5" fill="var(--down)"/>
-<line x1="491.9" y1="155.9" x2="491.9" y2="189.8" stroke="var(--down)" class="wick"/>
-<rect x="490.71" y="163.7" width="2.34" height="22.7" fill="var(--down)"/>
-<line x1="495.7" y1="180.5" x2="495.7" y2="197.7" stroke="var(--down)" class="wick"/>
-<rect x="494.48" y="182.1" width="2.34" height="3.3" fill="var(--down)"/>
-<line x1="499.4" y1="186.0" x2="499.4" y2="215.0" stroke="var(--down)" class="wick"/>
-<rect x="498.25" y="186.3" width="2.34" height="25.8" fill="var(--down)"/>
-<line x1="503.2" y1="206.2" x2="503.2" y2="242.0" stroke="var(--down)" class="wick"/>
-<rect x="502.02" y="212.6" width="2.34" height="13.0" fill="var(--down)"/>
-<line x1="507.0" y1="218.5" x2="507.0" y2="271.6" stroke="var(--down)" class="wick"/>
-<rect x="505.80" y="221.7" width="2.34" height="46.9" fill="var(--down)"/>
-<line x1="510.7" y1="260.2" x2="510.7" y2="275.8" stroke="var(--up)" class="wick"/>
-<rect x="509.57" y="264.7" width="2.34" height="3.9" fill="var(--up)"/>
-<line x1="514.5" y1="263.9" x2="514.5" y2="280.7" stroke="var(--down)" class="wick"/>
-<rect x="513.34" y="263.9" width="2.34" height="5.8" fill="var(--down)"/>
-<line x1="518.3" y1="238.8" x2="518.3" y2="265.7" stroke="var(--up)" class="wick"/>
-<rect x="517.11" y="243.6" width="2.34" height="12.1" fill="var(--up)"/>
-<line x1="522.1" y1="236.7" x2="522.1" y2="251.7" stroke="var(--down)" class="wick"/>
-<rect x="520.88" y="240.4" width="2.34" height="3.6" fill="var(--down)"/>
-<line x1="525.8" y1="214.3" x2="525.8" y2="239.1" stroke="var(--up)" class="wick"/>
-<rect x="524.66" y="221.5" width="2.34" height="17.2" fill="var(--up)"/>
-<line x1="529.6" y1="211.1" x2="529.6" y2="230.9" stroke="var(--up)" class="wick"/>
-<rect x="528.43" y="216.2" width="2.34" height="11.4" fill="var(--up)"/>
-<line x1="533.4" y1="220.1" x2="533.4" y2="262.9" stroke="var(--down)" class="wick"/>
-<rect x="532.20" y="222.4" width="2.34" height="17.3" fill="var(--down)"/>
-<line x1="537.1" y1="216.8" x2="537.1" y2="231.8" stroke="var(--up)" class="wick"/>
-<rect x="535.97" y="217.5" width="2.34" height="12.1" fill="var(--up)"/>
-<line x1="540.9" y1="202.3" x2="540.9" y2="221.9" stroke="var(--up)" class="wick"/>
-<rect x="539.74" y="207.8" width="2.34" height="13.1" fill="var(--up)"/>
-<line x1="544.7" y1="199.6" x2="544.7" y2="219.1" stroke="var(--down)" class="wick"/>
-<rect x="543.52" y="207.2" width="2.34" height="10.4" fill="var(--down)"/>
-<line x1="548.5" y1="208.1" x2="548.5" y2="225.4" stroke="var(--down)" class="wick"/>
-<rect x="547.29" y="219.9" width="2.34" height="5.5" fill="var(--down)"/>
-<line x1="552.2" y1="217.5" x2="552.2" y2="245.0" stroke="var(--down)" class="wick"/>
-<rect x="551.06" y="219.6" width="2.34" height="15.0" fill="var(--down)"/>
-<line x1="556.0" y1="207.5" x2="556.0" y2="237.5" stroke="var(--up)" class="wick"/>
-<rect x="554.83" y="210.7" width="2.34" height="26.0" fill="var(--up)"/>
-<line x1="559.8" y1="201.7" x2="559.8" y2="219.6" stroke="var(--down)" class="wick"/>
-<rect x="558.60" y="208.5" width="2.34" height="7.4" fill="var(--down)"/>
-<line x1="563.5" y1="209.7" x2="563.5" y2="225.3" stroke="var(--down)" class="wick"/>
-<rect x="562.37" y="214.2" width="2.34" height="7.9" fill="var(--down)"/>
-<line x1="567.3" y1="190.2" x2="567.3" y2="215.9" stroke="var(--up)" class="wick"/>
-<rect x="566.15" y="195.7" width="2.34" height="20.2" fill="var(--up)"/>
-<line x1="571.1" y1="173.6" x2="571.1" y2="202.9" stroke="var(--up)" class="wick"/>
-<rect x="569.92" y="185.6" width="2.34" height="1.0" fill="var(--up)"/>
-<line x1="574.9" y1="156.3" x2="574.9" y2="175.1" stroke="var(--up)" class="wick"/>
-<rect x="573.69" y="169.9" width="2.34" height="4.5" fill="var(--up)"/>
-<line x1="578.6" y1="150.4" x2="578.6" y2="172.7" stroke="var(--up)" class="wick"/>
-<rect x="577.46" y="159.8" width="2.34" height="5.1" fill="var(--up)"/>
-<line x1="582.4" y1="158.2" x2="582.4" y2="180.8" stroke="var(--down)" class="wick"/>
-<rect x="581.23" y="165.5" width="2.34" height="11.5" fill="var(--down)"/>
-<line x1="586.2" y1="174.9" x2="586.2" y2="190.3" stroke="var(--up)" class="wick"/>
-<rect x="585.01" y="179.2" width="2.34" height="1.0" fill="var(--up)"/>
-<line x1="589.9" y1="175.8" x2="589.9" y2="205.1" stroke="var(--down)" class="wick"/>
-<rect x="588.78" y="181.1" width="2.34" height="10.5" fill="var(--down)"/>
-<line x1="593.7" y1="185.3" x2="593.7" y2="198.9" stroke="var(--up)" class="wick"/>
-<rect x="592.55" y="189.8" width="2.34" height="1.7" fill="var(--up)"/>
-<line x1="597.5" y1="163.4" x2="597.5" y2="190.8" stroke="var(--up)" class="wick"/>
-<rect x="596.32" y="178.4" width="2.34" height="12.0" fill="var(--up)"/>
-<line x1="601.3" y1="183.1" x2="601.3" y2="210.7" stroke="var(--down)" class="wick"/>
-<rect x="600.09" y="183.1" width="2.34" height="10.2" fill="var(--down)"/>
-<line x1="605.0" y1="185.0" x2="605.0" y2="224.5" stroke="var(--down)" class="wick"/>
-<rect x="603.86" y="188.8" width="2.34" height="33.0" fill="var(--down)"/>
-<line x1="608.8" y1="209.8" x2="608.8" y2="221.8" stroke="var(--down)" class="wick"/>
-<rect x="607.64" y="213.9" width="2.34" height="1.2" fill="var(--down)"/>
-<line x1="612.6" y1="198.0" x2="612.6" y2="223.0" stroke="var(--up)" class="wick"/>
-<rect x="611.41" y="200.0" width="2.34" height="12.4" fill="var(--up)"/>
-<line x1="616.3" y1="177.9" x2="616.3" y2="205.4" stroke="var(--down)" class="wick"/>
-<rect x="615.18" y="188.5" width="2.34" height="16.5" fill="var(--down)"/>
-<line x1="620.1" y1="197.7" x2="620.1" y2="218.2" stroke="var(--down)" class="wick"/>
-<rect x="618.95" y="200.6" width="2.34" height="13.9" fill="var(--down)"/>
-<line x1="623.9" y1="204.2" x2="623.9" y2="220.7" stroke="var(--down)" class="wick"/>
-<rect x="622.72" y="204.6" width="2.34" height="2.9" fill="var(--down)"/>
-<line x1="627.7" y1="192.8" x2="627.7" y2="212.7" stroke="var(--up)" class="wick"/>
-<rect x="626.50" y="206.7" width="2.34" height="4.5" fill="var(--up)"/>
-<line x1="631.4" y1="209.1" x2="631.4" y2="257.3" stroke="var(--down)" class="wick"/>
-<rect x="630.27" y="212.6" width="2.34" height="44.2" fill="var(--down)"/>
-<line x1="635.2" y1="227.1" x2="635.2" y2="272.6" stroke="var(--up)" class="wick"/>
-<rect x="634.04" y="240.0" width="2.34" height="27.4" fill="var(--up)"/>
-<line x1="639.0" y1="236.8" x2="639.0" y2="257.4" stroke="var(--down)" class="wick"/>
-<rect x="637.81" y="240.0" width="2.34" height="11.0" fill="var(--down)"/>
-<line x1="642.8" y1="250.7" x2="642.8" y2="266.7" stroke="var(--down)" class="wick"/>
-<rect x="641.58" y="256.4" width="2.34" height="1.3" fill="var(--down)"/>
-<line x1="646.5" y1="243.2" x2="646.5" y2="262.2" stroke="var(--up)" class="wick"/>
-<rect x="645.36" y="244.2" width="2.34" height="13.6" fill="var(--up)"/>
-<line x1="650.3" y1="242.7" x2="650.3" y2="278.9" stroke="var(--down)" class="wick"/>
-<rect x="649.13" y="244.2" width="2.34" height="25.4" fill="var(--down)"/>
-<line x1="654.1" y1="265.1" x2="654.1" y2="282.6" stroke="var(--down)" class="wick"/>
-<rect x="652.90" y="265.1" width="2.34" height="10.7" fill="var(--down)"/>
-<line x1="657.8" y1="259.5" x2="657.8" y2="286.0" stroke="var(--up)" class="wick"/>
-<rect x="656.67" y="262.2" width="2.34" height="15.2" fill="var(--up)"/>
-<line x1="661.6" y1="248.5" x2="661.6" y2="262.1" stroke="var(--down)" class="wick"/>
-<rect x="660.44" y="257.2" width="2.34" height="1.2" fill="var(--down)"/>
-<line x1="665.4" y1="232.9" x2="665.4" y2="267.5" stroke="var(--up)" class="wick"/>
-<rect x="664.21" y="233.9" width="2.34" height="19.2" fill="var(--up)"/>
-<line x1="669.2" y1="211.8" x2="669.2" y2="232.6" stroke="var(--up)" class="wick"/>
-<rect x="667.99" y="217.2" width="2.34" height="15.4" fill="var(--up)"/>
-<line x1="672.9" y1="213.0" x2="672.9" y2="232.5" stroke="var(--down)" class="wick"/>
-<rect x="671.76" y="213.4" width="2.34" height="4.2" fill="var(--down)"/>
-<line x1="676.7" y1="195.1" x2="676.7" y2="209.8" stroke="var(--up)" class="wick"/>
-<rect x="675.53" y="200.4" width="2.34" height="7.5" fill="var(--up)"/>
-<line x1="680.5" y1="188.3" x2="680.5" y2="210.3" stroke="var(--up)" class="wick"/>
-<rect x="679.30" y="191.9" width="2.34" height="6.9" fill="var(--up)"/>
-<line x1="684.2" y1="176.3" x2="684.2" y2="208.4" stroke="var(--up)" class="wick"/>
-<rect x="683.07" y="203.6" width="2.34" height="1.0" fill="var(--up)"/>
-<line x1="688.0" y1="177.8" x2="688.0" y2="203.9" stroke="var(--up)" class="wick"/>
-<rect x="686.85" y="185.7" width="2.34" height="18.2" fill="var(--up)"/>
-<line x1="691.8" y1="174.8" x2="691.8" y2="195.7" stroke="var(--down)" class="wick"/>
-<rect x="690.62" y="175.6" width="2.34" height="11.0" fill="var(--down)"/>
-<line x1="695.6" y1="197.7" x2="695.6" y2="220.4" stroke="var(--down)" class="wick"/>
-<rect x="694.39" y="199.3" width="2.34" height="20.3" fill="var(--down)"/>
-<line x1="699.3" y1="207.4" x2="699.3" y2="228.7" stroke="var(--down)" class="wick"/>
-<rect x="698.16" y="217.6" width="2.34" height="7.1" fill="var(--down)"/>
-<line x1="703.1" y1="183.3" x2="703.1" y2="221.8" stroke="var(--up)" class="wick"/>
-<rect x="701.93" y="183.7" width="2.34" height="35.6" fill="var(--up)"/>
-<line x1="706.9" y1="160.6" x2="706.9" y2="190.8" stroke="var(--up)" class="wick"/>
-<rect x="705.71" y="169.1" width="2.34" height="19.3" fill="var(--up)"/>
-<line x1="710.6" y1="154.3" x2="710.6" y2="167.3" stroke="var(--up)" class="wick"/>
-<rect x="709.48" y="155.4" width="2.34" height="9.2" fill="var(--up)"/>
-<line x1="714.4" y1="154.4" x2="714.4" y2="166.4" stroke="var(--up)" class="wick"/>
-<rect x="713.25" y="155.0" width="2.34" height="4.9" fill="var(--up)"/>
-<line x1="718.2" y1="127.6" x2="718.2" y2="157.2" stroke="var(--up)" class="wick"/>
-<rect x="717.02" y="133.2" width="2.34" height="23.1" fill="var(--up)"/>
-<line x1="722.0" y1="127.4" x2="722.0" y2="156.7" stroke="var(--down)" class="wick"/>
-<rect x="720.79" y="135.8" width="2.34" height="14.7" fill="var(--down)"/>
-<line x1="725.7" y1="143.7" x2="725.7" y2="160.8" stroke="var(--up)" class="wick"/>
-<rect x="724.56" y="150.1" width="2.34" height="6.5" fill="var(--up)"/>
-<line x1="729.5" y1="154.1" x2="729.5" y2="166.5" stroke="var(--up)" class="wick"/>
-<rect x="728.34" y="155.1" width="2.34" height="6.2" fill="var(--up)"/>
-<line x1="733.3" y1="152.4" x2="733.3" y2="182.7" stroke="var(--down)" class="wick"/>
-<rect x="732.11" y="166.4" width="2.34" height="6.5" fill="var(--down)"/>
-<line x1="737.0" y1="147.9" x2="737.0" y2="176.6" stroke="var(--down)" class="wick"/>
-<rect x="735.88" y="170.9" width="2.34" height="1.6" fill="var(--down)"/>
-<line x1="740.8" y1="157.3" x2="740.8" y2="178.5" stroke="var(--down)" class="wick"/>
-<rect x="739.65" y="166.1" width="2.34" height="9.8" fill="var(--down)"/>
-<line x1="744.6" y1="171.3" x2="744.6" y2="199.6" stroke="var(--down)" class="wick"/>
-<rect x="743.42" y="173.3" width="2.34" height="24.7" fill="var(--down)"/>
-<line x1="748.4" y1="181.0" x2="748.4" y2="209.4" stroke="var(--up)" class="wick"/>
-<rect x="747.20" y="183.6" width="2.34" height="11.7" fill="var(--up)"/>
-<line x1="752.1" y1="175.6" x2="752.1" y2="198.3" stroke="var(--up)" class="wick"/>
-<rect x="750.97" y="183.7" width="2.34" height="11.0" fill="var(--up)"/>
-<line x1="755.9" y1="179.8" x2="755.9" y2="201.7" stroke="var(--up)" class="wick"/>
-<rect x="754.74" y="186.5" width="2.34" height="1.6" fill="var(--up)"/>
-<line x1="759.7" y1="165.1" x2="759.7" y2="182.4" stroke="var(--down)" class="wick"/>
-<rect x="758.51" y="180.2" width="2.34" height="1.0" fill="var(--down)"/>
-<line x1="763.5" y1="182.0" x2="763.5" y2="223.2" stroke="var(--down)" class="wick"/>
-<rect x="762.28" y="188.8" width="2.34" height="27.7" fill="var(--down)"/>
-<line x1="767.2" y1="129.6" x2="767.2" y2="209.7" stroke="var(--up)" class="wick"/>
-<rect x="766.06" y="145.9" width="2.34" height="63.3" fill="var(--up)"/>
-<line x1="771.0" y1="147.8" x2="771.0" y2="166.2" stroke="var(--down)" class="wick"/>
-<rect x="769.83" y="150.2" width="2.34" height="5.5" fill="var(--down)"/>
-<line x1="774.8" y1="140.4" x2="774.8" y2="169.9" stroke="var(--down)" class="wick"/>
-<rect x="773.60" y="144.3" width="2.34" height="21.6" fill="var(--down)"/>
-<line x1="778.5" y1="156.6" x2="778.5" y2="185.4" stroke="var(--up)" class="wick"/>
-<rect x="777.37" y="157.7" width="2.34" height="7.9" fill="var(--up)"/>
-<line x1="782.3" y1="146.5" x2="782.3" y2="162.9" stroke="var(--up)" class="wick"/>
-<rect x="781.14" y="152.3" width="2.34" height="5.3" fill="var(--up)"/>
-<line x1="786.1" y1="128.2" x2="786.1" y2="149.7" stroke="var(--up)" class="wick"/>
-<rect x="784.91" y="142.7" width="2.34" height="1.0" fill="var(--up)"/>
-<line x1="789.9" y1="106.1" x2="789.9" y2="137.7" stroke="var(--up)" class="wick"/>
-<rect x="788.69" y="123.7" width="2.34" height="1.7" fill="var(--up)"/>
-<line x1="793.6" y1="126.9" x2="793.6" y2="142.3" stroke="var(--down)" class="wick"/>
-<rect x="792.46" y="131.3" width="2.34" height="7.1" fill="var(--down)"/>
-<line x1="797.4" y1="127.9" x2="797.4" y2="152.1" stroke="var(--down)" class="wick"/>
-<rect x="796.23" y="131.9" width="2.34" height="1.6" fill="var(--down)"/>
-<line x1="801.2" y1="129.5" x2="801.2" y2="153.1" stroke="var(--down)" class="wick"/>
-<rect x="800.00" y="132.5" width="2.34" height="7.9" fill="var(--down)"/>
-<line x1="804.9" y1="134.5" x2="804.9" y2="149.8" stroke="var(--down)" class="wick"/>
-<rect x="803.77" y="137.7" width="2.34" height="6.5" fill="var(--down)"/>
-<line x1="808.7" y1="139.4" x2="808.7" y2="158.5" stroke="var(--down)" class="wick"/>
-<rect x="807.55" y="145.3" width="2.34" height="5.2" fill="var(--down)"/>
-<line x1="812.5" y1="144.0" x2="812.5" y2="164.7" stroke="var(--up)" class="wick"/>
-<rect x="811.32" y="148.1" width="2.34" height="7.6" fill="var(--up)"/>
-<line x1="816.3" y1="131.9" x2="816.3" y2="148.5" stroke="var(--up)" class="wick"/>
-<rect x="815.09" y="134.4" width="2.34" height="8.9" fill="var(--up)"/>
-<line x1="820.0" y1="117.0" x2="820.0" y2="137.8" stroke="var(--up)" class="wick"/>
-<rect x="818.86" y="128.0" width="2.34" height="2.6" fill="var(--up)"/>
-<line x1="823.8" y1="129.6" x2="823.8" y2="143.7" stroke="var(--down)" class="wick"/>
-<rect x="822.63" y="137.4" width="2.34" height="1.0" fill="var(--down)"/>
-<line x1="827.6" y1="133.1" x2="827.6" y2="156.9" stroke="var(--down)" class="wick"/>
-<rect x="826.40" y="135.9" width="2.34" height="20.1" fill="var(--down)"/>
-<line x1="831.3" y1="146.5" x2="831.3" y2="161.9" stroke="var(--up)" class="wick"/>
-<rect x="830.18" y="149.1" width="2.34" height="3.9" fill="var(--up)"/>
-<line x1="835.1" y1="137.7" x2="835.1" y2="158.0" stroke="var(--up)" class="wick"/>
-<rect x="833.95" y="138.8" width="2.34" height="13.6" fill="var(--up)"/>
-<line x1="838.9" y1="134.8" x2="838.9" y2="147.9" stroke="var(--down)" class="wick"/>
-<rect x="837.72" y="143.4" width="2.34" height="1.4" fill="var(--down)"/>
-<line x1="842.7" y1="133.9" x2="842.7" y2="146.8" stroke="var(--up)" class="wick"/>
-<rect x="841.49" y="140.1" width="2.34" height="2.0" fill="var(--up)"/>
-<line x1="846.4" y1="128.4" x2="846.4" y2="161.6" stroke="var(--down)" class="wick"/>
-<rect x="845.26" y="130.0" width="2.34" height="30.6" fill="var(--down)"/>
-<line x1="850.2" y1="161.6" x2="850.2" y2="180.4" stroke="var(--down)" class="wick"/>
-<rect x="849.04" y="163.7" width="2.34" height="10.8" fill="var(--down)"/>
-<line x1="854.0" y1="162.6" x2="854.0" y2="185.0" stroke="var(--up)" class="wick"/>
-<rect x="852.81" y="163.4" width="2.34" height="10.8" fill="var(--up)"/>
-<line x1="857.7" y1="159.2" x2="857.7" y2="169.0" stroke="var(--up)" class="wick"/>
-<rect x="856.58" y="161.9" width="2.34" height="1.6" fill="var(--up)"/>
-<line x1="861.5" y1="166.1" x2="861.5" y2="174.9" stroke="var(--down)" class="wick"/>
-<rect x="860.35" y="168.6" width="2.34" height="1.0" fill="var(--down)"/>
-<line x1="865.3" y1="162.4" x2="865.3" y2="182.1" stroke="var(--down)" class="wick"/>
-<rect x="864.12" y="163.2" width="2.34" height="17.7" fill="var(--down)"/>
-<line x1="869.1" y1="179.1" x2="869.1" y2="188.8" stroke="var(--down)" class="wick"/>
-<rect x="867.90" y="181.4" width="2.34" height="4.0" fill="var(--down)"/>
-<line x1="872.8" y1="183.1" x2="872.8" y2="196.3" stroke="var(--down)" class="wick"/>
-<rect x="871.67" y="186.5" width="2.34" height="1.6" fill="var(--down)"/>
-<line x1="876.6" y1="175.6" x2="876.6" y2="195.1" stroke="var(--up)" class="wick"/>
-<rect x="875.44" y="175.8" width="2.34" height="9.2" fill="var(--up)"/>
-<line x1="880.4" y1="165.1" x2="880.4" y2="176.9" stroke="var(--up)" class="wick"/>
-<rect x="879.21" y="171.4" width="2.34" height="2.0" fill="var(--up)"/>
-<line x1="884.2" y1="164.1" x2="884.2" y2="178.9" stroke="var(--up)" class="wick"/>
-<rect x="882.98" y="164.7" width="2.34" height="1.7" fill="var(--up)"/>
-<line x1="887.9" y1="160.3" x2="887.9" y2="171.6" stroke="var(--down)" class="wick"/>
-<rect x="886.75" y="165.2" width="2.34" height="4.0" fill="var(--down)"/>
-<line x1="891.7" y1="171.9" x2="891.7" y2="180.7" stroke="var(--down)" class="wick"/>
-<rect x="890.53" y="172.7" width="2.34" height="3.8" fill="var(--down)"/>
-<line x1="895.5" y1="157.0" x2="895.5" y2="170.6" stroke="var(--up)" class="wick"/>
-<rect x="894.30" y="158.2" width="2.34" height="12.4" fill="var(--up)"/>
-<line x1="899.2" y1="147.3" x2="899.2" y2="164.4" stroke="var(--up)" class="wick"/>
-<rect x="898.07" y="148.6" width="2.34" height="9.5" fill="var(--up)"/>
-<line x1="903.0" y1="146.8" x2="903.0" y2="158.9" stroke="var(--down)" class="wick"/>
-<rect x="901.84" y="152.0" width="2.34" height="1.0" fill="var(--down)"/>
-<line x1="906.8" y1="147.8" x2="906.8" y2="159.8" stroke="var(--down)" class="wick"/>
-<rect x="905.61" y="150.8" width="2.34" height="3.3" fill="var(--down)"/>
-<line x1="910.6" y1="146.2" x2="910.6" y2="157.9" stroke="var(--up)" class="wick"/>
-<rect x="909.39" y="147.8" width="2.34" height="9.4" fill="var(--up)"/>
-<line x1="914.3" y1="144.5" x2="914.3" y2="156.0" stroke="var(--down)" class="wick"/>
-<rect x="913.16" y="146.3" width="2.34" height="7.9" fill="var(--down)"/>
-<line x1="918.1" y1="148.2" x2="918.1" y2="161.1" stroke="var(--down)" class="wick"/>
-<rect x="916.93" y="148.5" width="2.34" height="2.7" fill="var(--down)"/>
-<line x1="921.9" y1="135.8" x2="921.9" y2="154.3" stroke="var(--down)" class="wick"/>
-<rect x="920.70" y="140.6" width="2.34" height="11.7" fill="var(--down)"/>
-<line x1="925.6" y1="143.3" x2="925.6" y2="158.2" stroke="var(--up)" class="wick"/>
-<rect x="924.47" y="146.6" width="2.34" height="9.5" fill="var(--up)"/>
-<line x1="929.4" y1="138.5" x2="929.4" y2="149.9" stroke="var(--down)" class="wick"/>
-<rect x="928.25" y="146.8" width="2.34" height="2.3" fill="var(--down)"/>
-<line x1="933.2" y1="144.0" x2="933.2" y2="172.7" stroke="var(--down)" class="wick"/>
-<rect x="932.02" y="144.2" width="2.34" height="27.6" fill="var(--down)"/>
-<line x1="937.0" y1="163.7" x2="937.0" y2="176.6" stroke="var(--up)" class="wick"/>
-<rect x="935.79" y="167.8" width="2.34" height="7.6" fill="var(--up)"/>
-<line x1="940.7" y1="167.8" x2="940.7" y2="182.0" stroke="var(--down)" class="wick"/>
-<rect x="939.56" y="167.8" width="2.34" height="13.3" fill="var(--down)"/>
-<line x1="944.5" y1="156.9" x2="944.5" y2="177.6" stroke="var(--up)" class="wick"/>
-<rect x="943.33" y="163.5" width="2.34" height="13.9" fill="var(--up)"/>
-<line x1="948.3" y1="140.3" x2="948.3" y2="167.3" stroke="var(--up)" class="wick"/>
-<rect x="947.10" y="141.4" width="2.34" height="17.0" fill="var(--up)"/>
-<line x1="952.0" y1="133.6" x2="952.0" y2="152.8" stroke="var(--up)" class="wick"/>
-<rect x="950.88" y="133.9" width="2.34" height="11.8" fill="var(--up)"/>
-<line x1="955.8" y1="128.3" x2="955.8" y2="144.6" stroke="var(--up)" class="wick"/>
-<rect x="954.65" y="130.7" width="2.34" height="7.4" fill="var(--up)"/>
-<line x1="959.6" y1="136.5" x2="959.6" y2="145.9" stroke="var(--down)" class="wick"/>
-<rect x="958.42" y="138.8" width="2.34" height="5.2" fill="var(--down)"/>
-<line x1="963.4" y1="135.8" x2="963.4" y2="151.8" stroke="var(--down)" class="wick"/>
-<rect x="962.19" y="139.6" width="2.34" height="1.0" fill="var(--down)"/>
-<line x1="967.1" y1="136.2" x2="967.1" y2="148.2" stroke="var(--down)" class="wick"/>
-<rect x="965.96" y="136.5" width="2.34" height="8.2" fill="var(--down)"/>
-<line x1="970.9" y1="136.2" x2="970.9" y2="145.9" stroke="var(--up)" class="wick"/>
-<rect x="969.74" y="140.3" width="2.34" height="3.0" fill="var(--up)"/>
-<line x1="974.7" y1="128.7" x2="974.7" y2="140.0" stroke="var(--up)" class="wick"/>
-<rect x="973.51" y="133.1" width="2.34" height="6.5" fill="var(--up)"/>
-<line x1="978.4" y1="123.1" x2="978.4" y2="140.1" stroke="var(--down)" class="wick"/>
-<rect x="977.28" y="130.7" width="2.34" height="5.1" fill="var(--down)"/>
-<line x1="982.2" y1="109.2" x2="982.2" y2="134.4" stroke="var(--up)" class="wick"/>
-<rect x="981.05" y="109.7" width="2.34" height="23.2" fill="var(--up)"/>
-<line x1="986.0" y1="99.7" x2="986.0" y2="120.1" stroke="var(--down)" class="wick"/>
-<rect x="984.82" y="109.5" width="2.34" height="9.4" fill="var(--down)"/>
-<line x1="989.8" y1="120.5" x2="989.8" y2="132.9" stroke="var(--down)" class="wick"/>
-<rect x="988.59" y="126.7" width="2.34" height="2.5" fill="var(--down)"/>
-<line x1="993.5" y1="124.3" x2="993.5" y2="135.8" stroke="var(--up)" class="wick"/>
-<rect x="992.37" y="128.3" width="2.34" height="2.6" fill="var(--up)"/>
-<line x1="997.3" y1="122.5" x2="997.3" y2="135.9" stroke="var(--down)" class="wick"/>
-<rect x="996.14" y="127.0" width="2.34" height="4.8" fill="var(--down)"/>
-<line x1="1001.1" y1="131.8" x2="1001.1" y2="148.4" stroke="var(--down)" class="wick"/>
-<rect x="999.91" y="134.5" width="2.34" height="7.9" fill="var(--down)"/>
-<line x1="1004.9" y1="134.5" x2="1004.9" y2="153.7" stroke="var(--down)" class="wick"/>
-<rect x="1003.68" y="138.0" width="2.34" height="9.8" fill="var(--down)"/>
-<line x1="1008.6" y1="128.6" x2="1008.6" y2="149.7" stroke="var(--up)" class="wick"/>
-<rect x="1007.45" y="130.3" width="2.34" height="17.7" fill="var(--up)"/>
-<line x1="1012.4" y1="114.9" x2="1012.4" y2="132.3" stroke="var(--up)" class="wick"/>
-<rect x="1011.23" y="117.9" width="2.34" height="13.7" fill="var(--up)"/>
-<line x1="1016.2" y1="109.4" x2="1016.2" y2="121.7" stroke="var(--down)" class="wick"/>
-<rect x="1015.00" y="115.9" width="2.34" height="3.0" fill="var(--down)"/>
-<line x1="1019.9" y1="100.3" x2="1019.9" y2="116.5" stroke="var(--up)" class="wick"/>
-<rect x="1018.77" y="104.8" width="2.34" height="11.1" fill="var(--up)"/>
-<line x1="1023.7" y1="87.6" x2="1023.7" y2="115.9" stroke="var(--up)" class="wick"/>
-<rect x="1022.54" y="88.5" width="2.34" height="21.2" fill="var(--up)"/>
-<line x1="1027.5" y1="93.1" x2="1027.5" y2="105.5" stroke="var(--down)" class="wick"/>
-<rect x="1026.31" y="97.0" width="2.34" height="1.0" fill="var(--down)"/>
-<line x1="1031.3" y1="88.8" x2="1031.3" y2="102.0" stroke="var(--up)" class="wick"/>
-<rect x="1030.09" y="89.9" width="2.34" height="8.5" fill="var(--up)"/>
-<line x1="1035.0" y1="81.1" x2="1035.0" y2="101.7" stroke="var(--up)" class="wick"/>
-<rect x="1033.86" y="88.3" width="2.34" height="1.0" fill="var(--up)"/>
-<line x1="1038.8" y1="92.5" x2="1038.8" y2="105.8" stroke="var(--down)" class="wick"/>
-<rect x="1037.63" y="93.1" width="2.34" height="5.3" fill="var(--down)"/>
-<line x1="1042.6" y1="88.2" x2="1042.6" y2="96.4" stroke="var(--up)" class="wick"/>
-<rect x="1041.40" y="92.7" width="2.34" height="2.9" fill="var(--up)"/>
-<line x1="1046.3" y1="75.3" x2="1046.3" y2="97.0" stroke="var(--up)" class="wick"/>
-<rect x="1045.17" y="76.1" width="2.34" height="15.9" fill="var(--up)"/>
-<line x1="1050.1" y1="75.3" x2="1050.1" y2="81.8" stroke="var(--up)" class="wick"/>
-<rect x="1048.94" y="76.1" width="2.34" height="5.3" fill="var(--up)"/>
-<line x1="60" y1="160.1" x2="1052" y2="160.1" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="154.1" font-size="11.5" fill="var(--support)" font-weight="600">4.78% S1</text>
-<text x="1058" y="166.1" font-size="9.5" fill="var(--muted)">터치 3회</text>
-<line x1="60" y1="189.1" x2="1052" y2="189.1" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="183.1" font-size="11.5" fill="var(--support)" font-weight="600">4.58% S2</text>
-<text x="1058" y="195.1" font-size="9.5" fill="var(--muted)">터치 2회</text>
-<line x1="60" y1="225.5" x2="1052" y2="225.5" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="1058" y="219.5" font-size="11.5" fill="var(--support)" font-weight="600">4.33% S3</text>
-<text x="1058" y="231.5" font-size="9.5" fill="var(--muted)">터치 3회</text>
-<circle cx="1052.0" cy="76.1" r="3" fill="var(--ink)"/>
-<text x="1046.0" y="68.1" font-size="11.5" text-anchor="end" fill="var(--ink)" font-weight="700" paint-order="stroke" stroke="var(--bg)" stroke-width="3">현재 5.36% (2026-09-10)</text>
-<rect x="60" y="651" width="10" height="10" fill="var(--up)"/>
-<text x="74" y="660" font-size="11" fill="var(--ink2)">상승(양봉)</text>
-<rect x="150" y="651" width="10" height="10" fill="var(--down)"/>
-<text x="164" y="660" font-size="11" fill="var(--ink2)">하락(음봉)</text>
-<line x1="240" y1="656" x2="258" y2="656" stroke="var(--support)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="264" y="660" font-size="11" fill="var(--ink2)">지지선(Support)</text>
-<line x1="390" y1="656" x2="408" y2="656" stroke="var(--resistance)" stroke-width="1.4" stroke-dasharray="6,4"/>
-<text x="414" y="660" font-size="11" fill="var(--ink2)">저항선(Resistance)</text>
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="미국 30년물 국채금리, 최근 5년 일간, 단위 % 선 차트">
+<rect x="0" y="0" width="1200" height="700" fill="var(--bg)"/>
+<text x="60" y="26" class="title" font-size="18">미국 30년물 국채금리 (상수만기) (최근 5년 일간)</text>
+<text x="60" y="44" font-size="12.5" fill="var(--ink2)">2021-09-01 ~ 2026-09-15 · 단위: % · 출처: FRED DGS30</text>
+<line x1="60" y1="523.0" x2="1052" y2="523.0" class="grid"/>
+<text x="52" y="527.0" font-size="11" text-anchor="end" fill="var(--muted)">2.00</text>
+<line x1="60" y1="395.5" x2="1052" y2="395.5" class="grid"/>
+<text x="52" y="399.5" font-size="11" text-anchor="end" fill="var(--muted)">3.00</text>
+<line x1="60" y1="268.1" x2="1052" y2="268.1" class="grid"/>
+<text x="52" y="272.1" font-size="11" text-anchor="end" fill="var(--muted)">4.00</text>
+<line x1="60" y1="140.7" x2="1052" y2="140.7" class="grid"/>
+<text x="52" y="144.7" font-size="11" text-anchor="end" fill="var(--muted)">5.00</text>
+<line x1="125.8" y1="56" x2="125.8" y2="600" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="125.8" y1="600" x2="125.8" y2="605" class="axis"/>
+<text x="125.8" y="618" font-size="10.5" text-anchor="middle" fill="var(--muted)">2022</text>
+<line x1="322.6" y1="56" x2="322.6" y2="600" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="322.6" y1="600" x2="322.6" y2="605" class="axis"/>
+<text x="322.6" y="618" font-size="10.5" text-anchor="middle" fill="var(--muted)">2023</text>
+<line x1="519.3" y1="56" x2="519.3" y2="600" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="519.3" y1="600" x2="519.3" y2="605" class="axis"/>
+<text x="519.3" y="618" font-size="10.5" text-anchor="middle" fill="var(--muted)">2024</text>
+<line x1="716.7" y1="56" x2="716.7" y2="600" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="716.7" y1="600" x2="716.7" y2="605" class="axis"/>
+<text x="716.7" y="618" font-size="10.5" text-anchor="middle" fill="var(--muted)">2025</text>
+<line x1="913.4" y1="56" x2="913.4" y2="600" stroke="var(--axis)" stroke-width="1" stroke-dasharray="2,4" opacity="0.5"/>
+<line x1="913.4" y1="600" x2="913.4" y2="605" class="axis"/>
+<text x="913.4" y="618" font-size="10.5" text-anchor="middle" fill="var(--muted)">2026</text>
+<line x1="60" y1="600" x2="1052" y2="600" class="axis"/>
+<line x1="60" y1="56" x2="60" y2="600" class="axis"/>
+<polyline points="60.0,533.2 60.5,535.7 61.1,530.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="63.2,524.3 63.8,529.3 64.3,535.7 64.9,530.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="66.5,534.4 67.0,542.1 67.5,539.5 68.1,538.3 68.6,534.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="70.2,542.1 70.8,540.8 71.3,543.4 71.9,533.2 72.4,524.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="74.0,524.3 74.6,514.1 75.1,511.5 75.6,512.8 76.2,517.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="77.8,516.6 78.3,510.2 78.9,512.8 79.4,506.4 79.9,502.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="82.1,510.2 82.6,516.6 83.2,520.4 83.7,516.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="85.3,521.7 85.9,511.5 86.4,507.7 87.0,506.4 87.5,512.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="89.1,511.5 89.7,516.6 90.2,529.3 90.7,528.1 91.3,531.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="92.9,525.5 93.4,528.1 94.0,523.0 94.5,528.1 95.0,539.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="96.7,537.0 97.2,544.6 97.7,533.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="98.8" cy="529.3" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="100.4,521.7 101.0,520.4 101.5,523.0 102.1,526.8 102.6,534.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="104.2,525.5 104.7,520.4 105.3,528.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="106.4" cy="544.6" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="108.0,539.5 108.5,551.0 109.1,552.3 109.6,553.6 110.1,562.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="111.8,554.8 112.3,548.5 112.8,539.5 113.4,539.5 113.9,538.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="115.5,547.2 116.1,545.9 116.6,540.8 117.1,539.5 117.7,545.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="119.3,542.1 119.8,537.0 120.4,540.8 120.9,534.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="123.1,538.3 123.6,535.7 124.2,528.1 124.7,531.9 125.2,535.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="126.9,521.7 127.4,514.1 127.9,511.5 128.5,511.5 129.0,509.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="130.6,509.0 131.2,512.8 131.7,512.8 132.2,516.6 132.8,507.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="134.9,500.0 135.5,505.1 136.0,505.1 136.6,514.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="138.2,510.2 138.7,507.7 139.3,502.6 139.8,511.5 140.3,514.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="141.9,509.0 142.5,507.7 143.0,509.0 143.6,505.1 144.1,493.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="145.7,494.9 146.3,491.1 146.8,491.1 147.3,484.7 147.9,492.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="149.5,486.0 150.0,475.8 150.6,479.6 151.1,483.5 151.7,492.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="153.8,492.4 154.3,486.0 154.9,487.3 155.4,486.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="157.0,501.3 157.6,509.0 158.1,492.4 158.7,492.4 159.2,502.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="160.8,498.8 161.4,492.4 161.9,486.0 162.4,474.6 163.0,477.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="164.6,463.1 165.1,460.5 165.7,464.4 166.2,459.3 166.7,469.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="168.4,452.9 168.9,446.5 169.4,456.7 170.0,458.0 170.5,446.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="172.1,450.3 172.7,455.4 173.2,461.8 173.8,466.9 174.3,466.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="175.9,461.8 176.5,450.3 177.0,442.7 177.5,435.0 178.1,426.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="179.7,415.9 180.2,418.5 180.8,419.8 181.3,405.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="183.5,401.9 184.0,394.3 184.5,408.3 185.1,403.2 185.6,401.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="187.2,410.8 187.8,413.4 188.3,407.0 188.9,405.7 189.4,400.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="191.0,386.6 191.5,391.7 192.1,394.3 192.6,376.4 193.2,366.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="194.8,371.3 195.3,380.2 195.9,389.2 196.4,395.5 196.9,382.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="198.6,384.1 199.1,373.9 199.6,386.6 200.2,389.2 200.7,396.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="202.3,385.3 202.9,398.1 203.4,399.4 203.9,396.8 204.5,399.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="206.6,386.6 207.2,384.1 207.7,384.1 208.3,381.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="209.9,371.3 210.4,379.0 211.0,372.6 211.5,372.6 212.0,370.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="213.7,342.0 214.2,338.2 214.7,345.8 215.3,350.9 215.8,357.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="218.0,345.8 218.5,363.7 219.0,368.8 219.6,362.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="221.2,356.0 221.7,357.3 222.3,367.5 222.8,377.7 223.4,381.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="225.5,389.2 226.1,377.7 226.6,370.1 227.1,361.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="228.7,372.6 229.3,379.0 229.8,385.3 230.4,381.5 230.9,382.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="232.5,377.7 233.1,373.9 233.6,373.9 234.1,385.3 234.7,395.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="236.3,390.4 236.8,391.7 237.4,391.7 237.9,393.0 238.5,395.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="240.1,405.7 240.6,395.5 241.1,400.6 241.7,399.4 242.2,387.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="243.8,395.5 244.4,394.3 244.9,390.4 245.5,376.4 246.0,380.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="247.6,382.8 248.2,381.5 248.7,376.4 249.2,377.7 249.8,367.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="251.4,365.0 251.9,362.4 252.5,354.8 253.0,363.7 253.5,368.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="255.2,363.7 255.7,366.2 256.2,361.1 256.8,348.4 257.3,350.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="259.5,333.1 260.0,342.0 260.6,338.2 261.1,335.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="262.7,328.0 263.3,330.5 263.8,335.6 264.3,334.4 264.9,329.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="266.5,329.3 267.0,320.4 267.6,331.8 268.1,312.7 268.6,317.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="270.3,303.8 270.8,284.7 271.3,306.3 271.9,305.1 272.4,294.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="274.0,302.5 274.6,306.3 275.1,296.1 275.7,292.3 276.2,285.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="278.3,278.3 278.9,280.8 279.4,271.9 280.0,269.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="281.6,263.0 282.1,263.0 282.7,249.0 283.2,237.5 283.7,226.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="285.4,217.1 285.9,235.0 286.4,243.9 287.0,252.8 287.5,249.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="289.1,240.1 289.7,250.3 290.2,249.0 290.7,245.2 291.3,233.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="292.9,224.8 293.4,232.4 294.0,228.6 294.5,264.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="296.7,259.2 297.2,270.7 297.8,287.2 298.3,282.1 298.8,278.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="300.5,279.6 301.0,289.8 301.5,301.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="302.6" cy="301.2" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="304.2,301.2 304.8,292.3 305.3,293.6 305.8,314.0 306.4,324.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="308.0,316.5 308.5,329.3 309.1,342.0 309.6,339.5 310.2,324.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="311.8,322.9 312.3,328.0 312.9,329.3 313.4,334.4 313.9,328.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="315.5,316.5 316.1,301.2 316.6,301.2 317.2,302.5 317.7,291.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="319.9,277.0 320.4,270.7 320.9,278.3 321.5,271.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="323.6,283.4 324.2,292.3 324.7,296.1 325.3,310.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="326.9,311.4 327.4,301.2 327.9,310.2 328.5,324.2 329.0,317.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="331.2,314.0 331.7,326.7 332.3,322.9 332.8,311.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="334.4,307.6 335.0,316.5 335.5,316.5 336.0,316.5 336.6,314.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="338.2,311.4 338.7,312.7 339.3,325.5 339.8,325.5 340.3,315.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="342.0,310.2 342.5,303.8 343.0,306.3 343.6,300.0 344.1,289.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="345.7,294.9 346.3,292.3 346.8,287.2 347.4,278.3 347.9,283.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="350.1,270.7 350.6,275.8 351.1,283.4 351.7,277.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="353.3,277.0 353.8,277.0 354.4,271.9 354.9,264.3 355.4,280.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="357.1,278.3 357.6,283.4 358.1,283.4 358.7,283.4 359.2,306.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="360.8,306.3 361.4,297.4 361.9,306.3 362.5,305.1 363.0,319.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="364.6,312.7 365.1,302.5 365.7,308.9 366.2,311.4 366.8,314.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="368.4,297.4 368.9,297.4 369.5,296.1 370.0,301.2 370.5,310.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="372.2,314.0 372.7,319.1 373.2,324.2 373.8,326.7 374.3,317.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="375.9,316.5 376.5,316.5 377.0,314.0 377.5,307.6 378.1,301.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="379.7,292.3 380.2,294.9 380.8,294.9 381.3,300.0 381.9,296.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="383.5,302.5 384.0,312.7 384.6,306.3 385.1,298.7 385.6,310.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="387.3,288.5 387.8,303.8 388.3,306.3 388.9,302.5 389.4,298.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="391.0,288.5 391.6,287.2 392.1,293.6 392.6,302.5 393.2,296.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="394.8,288.5 395.3,284.7 395.9,283.4 396.4,279.6 397.0,274.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="398.6,271.9 399.1,273.2 399.7,271.9 400.2,266.8 400.7,273.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="402.9,280.8 403.4,287.2 404.0,288.5 404.5,283.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="406.1,282.1 406.7,284.7 407.2,274.5 407.7,282.1 408.3,282.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="409.9,284.7 410.4,275.8 411.0,280.8 411.5,287.2 412.1,285.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="414.2,289.8 414.7,292.3 415.3,283.4 415.8,291.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="417.4,289.8 418.0,288.5 418.5,292.3 419.1,278.3 419.6,287.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="421.2" cy="284.7" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="422.3,274.5 422.8,266.8 423.4,261.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="425.0,261.7 425.5,264.3 426.1,273.2 426.6,280.8 427.1,277.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="428.8,275.8 429.3,279.6 429.8,288.5 430.4,279.6 430.9,279.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="432.5,278.3 433.1,274.5 433.6,275.8 434.2,260.5 434.7,264.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="436.3,265.6 436.9,254.1 437.4,246.4 437.9,227.3 438.5,241.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="440.1,233.7 440.6,242.6 441.2,245.2 441.7,237.5 442.2,233.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="443.9,231.1 444.4,227.3 444.9,219.7 445.5,215.9 446.0,219.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="447.6,210.8 448.2,214.6 448.7,233.7 449.3,229.9 449.8,229.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="451.4,231.1 451.9,238.8 452.5,238.8 453.0,242.6 453.6,231.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="455.7,219.7 456.3,221.0 456.8,222.2 457.3,226.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="459.0,221.0 459.5,223.5 460.0,224.8 460.6,218.4 461.1,214.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="462.7,217.1 463.3,213.3 463.8,217.1 464.3,196.7 464.9,200.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="466.5,182.7 467.0,178.9 467.6,175.1 468.1,177.6 468.7,175.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="470.3,164.9 470.8,147.0 471.4,157.2 471.9,154.7 472.4,147.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="474.6,159.8 475.1,175.1 475.7,158.5 476.2,168.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="477.8,157.2 478.4,148.3 478.9,140.7 479.4,126.7 480.0,129.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="481.6,139.4 482.1,145.8 482.7,129.2 483.2,139.4 483.8,136.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="485.4,135.6 485.9,135.6 486.5,145.8 487.0,163.6 487.5,170.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="489.1,161.1 489.7,172.5 490.2,186.5 490.8,170.0 491.3,175.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="492.9,172.5 493.5,190.4 494.0,181.4 494.5,187.8 495.1,192.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="496.7,195.5 497.2,195.5 497.8,198.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="498.9" cy="191.6" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="500.5,200.6 501.0,201.8 501.5,212.0 502.1,199.3 502.6,217.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="504.2,213.3 504.8,229.9 505.3,240.1 505.9,236.2 506.4,228.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="508.0,227.3 508.6,229.9 509.1,243.9 509.6,264.3 510.2,268.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="511.8,261.7 512.3,264.3 512.9,270.7 513.4,264.3 513.9,261.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="516.1,263.0 516.6,274.5 517.2,270.7 517.7,264.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="519.9,257.9 520.4,261.7 521.0,251.5 521.5,241.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="523.1,246.4 523.7,245.2 524.2,242.6 524.7,245.2 525.3,242.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="527.4,229.9 528.0,228.6 528.5,221.0 529.0,222.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="530.7,227.3 531.2,219.7 531.7,215.9 532.3,219.7 532.8,219.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="534.4,228.6 535.0,232.4 535.5,240.1 536.1,255.4 536.6,240.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="538.2,223.5 538.7,231.1 539.3,228.6 539.8,222.2 540.4,221.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="542.0,221.0 542.5,209.5 543.1,210.8 543.6,214.6 544.1,210.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="546.3,212.0 546.8,205.7 547.4,208.2 547.9,221.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="549.5,217.1 550.1,212.0 550.6,217.1 551.1,219.7 551.7,226.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="553.3,222.2 553.8,233.7 554.4,237.5 554.9,236.2 555.5,235.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="557.1,235.0 557.6,228.6 558.2,223.5 558.7,212.0 559.2,213.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="560.9,209.5 561.4,212.0 561.9,210.8 562.5,212.0 563.0,218.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="564.6,214.6 565.2,217.1 565.7,222.2 566.2,224.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="568.4,208.2 568.9,203.1 569.5,203.1 570.0,208.2 570.6,199.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="572.2,198.0 572.7,204.4 573.3,186.5 573.8,185.3 574.3,190.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="575.9,173.8 576.5,170.0 577.0,177.6 577.6,173.8 578.1,176.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="579.7,176.4 580.3,175.1 580.8,168.7 581.3,163.6 581.9,168.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="583.5,172.5 584.0,167.4 584.6,173.8 585.1,176.4 585.7,184.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="587.3,186.5 587.8,190.4 588.3,186.5 588.9,191.6 589.4,186.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="591.0,187.8 591.6,192.9 592.1,201.8 592.7,201.8 593.2,196.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="594.8,194.2 595.4,198.0 595.9,198.0 596.4,194.2 597.0,195.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="599.1,184.0 599.7,173.8 600.2,180.2 600.7,185.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="602.4,198.0 602.9,206.9 603.4,212.0 604.0,213.3 604.5,198.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="606.1,192.9 606.7,200.6 607.2,208.2 607.8,217.1 608.3,224.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="609.9,217.1 610.5,222.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="611.5,218.4 612.1,218.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="613.7,219.7 614.2,222.2 614.8,210.8 615.3,213.3 615.8,203.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="617.5,186.5 618.0,191.6 618.5,200.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="619.6" cy="208.2" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="621.2,209.5 621.8,205.7 622.3,208.2 622.9,215.9 623.4,218.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="625.0,209.5 625.5,219.7 626.1,221.0 626.6,215.9 627.2,210.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="628.8,206.9 629.3,206.9 629.9,199.3 630.4,204.4 630.9,210.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="632.6,214.6 633.1,217.1 633.6,223.5 634.2,233.7 634.7,254.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="636.3,260.5 636.9,245.2 637.4,235.0 637.9,232.4 638.5,238.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="640.1,243.9 640.6,247.7 641.2,252.8 641.7,245.2 642.3,249.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="643.9,254.1 644.4,259.2 645.0,260.5 645.5,251.5 646.0,255.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="647.7,254.1 648.2,251.5 648.7,251.5 649.3,249.0 649.8,242.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="652.0,251.5 652.5,260.5 653.0,265.6 653.6,264.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="655.2,268.1 655.7,271.9 656.3,273.2 656.8,268.1 657.4,270.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="659.0,275.8 659.5,273.2 660.1,264.3 660.6,260.5 661.1,259.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="662.7,256.6 663.3,256.6 663.8,250.3 664.4,252.8 664.9,255.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="666.5,250.3 667.1,257.9 667.6,250.3 668.1,245.2 668.7,235.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="670.3,229.9 670.8,227.3 671.4,224.8 671.9,219.7 672.5,218.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="674.6,227.3 675.1,229.9 675.7,218.4 676.2,219.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="677.8,205.7 678.4,205.7 678.9,203.1 679.5,208.2 680.0,203.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="681.6,200.6 682.2,201.8 682.7,205.7 683.2,208.2 683.8,195.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="685.4,204.4 685.9,212.0 686.5,191.6 687.0,201.8 687.5,208.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="689.7,194.2 690.2,187.8 690.8,194.2 691.3,191.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="692.9,190.4 693.5,195.5 694.0,192.9 694.6,190.4 695.1,191.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="696.7,210.8 697.3,206.9 697.8,212.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="698.9" cy="222.2" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="700.5,222.2 701.0,217.1 701.6,223.5 702.1,226.1 702.6,224.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="704.3,218.4 704.8,215.9 705.3,206.9 705.9,198.0 706.4,190.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="708.0,191.6 708.6,192.9 709.1,185.3 709.7,173.8 710.2,176.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="711.8,168.7 712.3,171.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="713.4,171.3 714.0,163.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="715.6,170.0 716.1,168.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="717.2,167.4 717.7,163.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="719.4,159.8 719.9,152.1 720.4,152.1 721.0,150.9 721.5,145.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="723.1,144.5 723.7,143.2 724.2,156.0 724.7,161.1 725.3,161.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="727.4,166.2 728.0,163.6 728.5,157.2 729.1,159.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="730.7,171.3 731.2,168.7 731.8,167.4 732.3,171.3 732.8,162.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="734.5,170.0 735.0,172.5 735.5,186.5 736.1,185.3 736.6,180.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="738.2,177.6 738.8,172.5 739.3,162.3 739.8,176.4 740.4,180.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="742.5,170.0 743.1,171.3 743.6,173.8 744.2,182.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="745.8,184.0 746.3,198.0 746.9,203.1 747.4,196.7 747.9,203.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="749.5,210.8 750.1,200.6 750.6,195.5 751.2,194.2 751.7,189.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="753.3,199.3 753.9,192.9 754.4,187.8 754.9,192.9 755.5,189.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="757.1,191.6 757.6,194.2 758.2,196.7 758.7,198.0 759.3,192.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="760.9,184.0 761.4,185.3 761.9,180.2 762.5,175.1 763.0,186.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="764.6,192.9 765.2,201.8 765.7,199.3 766.3,205.7 766.8,215.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="768.4,194.2 769.0,177.6 769.5,176.4 770.0,158.5 770.6,159.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="772.2,166.2 772.7,167.4 773.3,173.8 773.8,166.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="776.0,152.1 776.5,156.0 777.0,162.3 777.6,170.0 778.1,173.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="779.7,180.2 780.3,186.5 780.8,184.0 781.4,173.8 781.9,167.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="783.5,162.3 784.1,164.9 784.6,170.0 785.1,162.3 785.7,162.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="787.3,154.7 787.8,148.3 788.4,144.5 788.9,152.1 789.4,154.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="791.1,150.9 791.6,145.8 792.1,130.5 792.7,134.3 793.2,135.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="795.4,148.3 795.9,144.5 796.5,150.9 797.0,150.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="798.6,141.9 799.1,143.2 799.7,154.7 800.2,156.0 800.8,144.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="802.4,147.0 802.9,149.6 803.5,152.1 804.0,161.1 804.5,153.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="806.2,145.8 806.7,156.0 807.2,156.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="808.3" cy="154.7" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="809.9,157.2 810.5,162.3 811.0,162.3 811.5,164.9 812.1,159.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="813.7,168.7 814.2,168.7 814.8,163.6 815.3,158.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="817.5,150.9 818.0,148.3 818.6,157.2 819.1,158.5 819.6,145.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="821.3,144.5 821.8,139.4 822.3,139.4 822.9,139.4 823.4,140.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="825.0,148.3 825.6,153.4 826.1,147.0 826.6,145.8 827.2,150.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="828.8,145.8 829.3,158.5 829.9,154.7 830.4,154.7 831.0,164.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="832.6,166.2 833.1,168.7 833.7,164.9 834.2,164.9 834.7,159.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="836.3,161.1 836.9,156.0 837.4,162.3 838.0,156.0 838.5,150.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="840.1,148.3 840.7,153.4 841.2,154.7 841.7,150.9 842.3,156.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="843.9,154.7 844.4,153.4 845.0,152.1 845.5,156.0 846.1,150.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="848.2,144.5 848.7,153.4 849.3,158.5 849.8,168.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="851.4,180.2 852.0,176.4 852.5,180.2 853.1,185.3 853.6,181.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="855.2,184.0 855.8,185.3 856.3,184.0 856.8,176.4 857.4,172.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="859.0,170.0 859.5,175.1 860.1,171.3 860.6,172.5 861.1,170.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="862.8,177.6 863.3,175.1 863.8,176.4 864.4,180.2 864.9,177.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="866.5,171.3 867.1,175.1 867.6,176.4 868.2,176.4 868.7,187.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="870.9,189.1 871.4,186.5 871.9,194.2 872.5,191.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="874.1,194.2 874.6,198.0 875.2,199.3 875.7,194.2 876.2,192.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="877.9,195.5 878.4,198.0 878.9,190.4 879.5,185.3 880.0,182.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="881.6,180.2 882.2,182.7 882.7,173.8 883.3,180.2 883.8,178.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="885.4" cy="177.6" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="886.5,182.7 887.0,178.9 887.6,173.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="889.2,175.1 889.7,173.8 890.3,172.5 890.8,175.1 891.3,177.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="893.0,181.4 893.5,182.7 894.0,186.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="895.1" cy="182.7" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="896.7,173.8 897.3,173.8 897.8,175.1 898.3,171.3 898.9,167.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="900.5,164.9 901.0,166.2 901.6,168.7 902.1,167.4 902.7,159.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="904.3,161.1 904.8,163.6 905.4,162.3 905.9,166.2 906.4,163.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="908.1,161.1 908.6,162.3 909.1,167.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="910.2" cy="164.9" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="911.8,166.2 912.4,164.9 912.9,161.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<circle cx="914.0" cy="158.5" r="2.4" fill="var(--s-dgs30)"/>
+<polyline points="915.6,159.8 916.1,158.5 916.7,163.6 917.2,159.8 917.8,163.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="919.4,162.3 919.9,162.3 920.5,167.4 921.0,167.4 921.5,162.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="923.7,152.1 924.2,157.2 924.8,161.1 925.3,163.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="926.9,166.2 927.5,162.3 928.0,159.8 928.5,159.8 929.1,157.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="930.7,153.4 931.2,153.4 931.8,152.1 932.3,159.8 932.9,159.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="934.5,159.8 935.0,168.7 935.5,163.6 936.1,176.4 936.6,180.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="938.8,181.4 939.3,177.6 939.9,178.9 940.4,176.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="942.0,178.9 942.6,178.9 943.1,178.9 943.6,182.7 944.2,186.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="945.8,178.9 946.3,178.9 946.9,176.4 947.4,173.8 947.9,170.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="949.6,176.4 950.1,168.7 950.6,158.5 951.2,156.0 951.7,153.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="953.3,158.5 953.9,159.8 954.4,156.0 955.0,162.3 955.5,145.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="957.1,152.1 957.7,148.3 958.2,154.7 958.7,149.6 959.3,143.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="960.9,152.1 961.4,156.0 962.0,152.1 962.5,156.0 963.0,152.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="964.7,154.7 965.2,153.4 965.7,154.7 966.3,153.4 966.8,152.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="968.4,153.4 969.0,157.2 969.5,154.7 970.1,149.6 970.6,156.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="972.2,156.0 972.7,154.7 973.3,153.4 973.8,150.9 974.4,152.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="976.0,148.3 976.5,148.3 977.1,143.2 977.6,143.2 978.1,144.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="979.8,138.1 980.3,143.2 980.8,148.3 981.4,144.5 981.9,147.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="983.5,143.2 984.1,136.8 984.6,136.8 985.1,138.1 985.7,125.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="987.3,122.8 987.8,117.7 988.4,126.7 988.9,127.9 989.5,131.7" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="991.6,136.8 992.2,139.4 992.7,143.2 993.2,141.9" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="994.9,141.9 995.4,144.5 995.9,141.9 996.5,144.5 997.0,139.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="998.6,136.8 999.2,139.4 999.7,136.8 1000.2,147.0 1000.8,144.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1002.4,144.5 1002.9,149.6 1003.5,149.6 1004.0,153.4" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1006.2,147.0 1006.7,148.3 1007.3,158.5 1007.8,158.5 1008.3,157.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1009.9,158.5 1010.5,152.1 1011.0,144.5 1011.6,143.2" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1013.7,141.9 1014.3,134.3 1014.8,133.0 1015.3,134.3 1015.9,133.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1017.5,127.9 1018.0,130.5 1018.6,130.5 1019.1,129.2 1019.7,133.0" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1021.3,126.7 1021.8,124.1 1022.3,121.6 1022.9,119.0 1023.4,120.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1025.0,125.4 1025.6,129.2 1026.1,115.2 1026.7,113.9 1027.2,106.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1028.8,111.4 1029.4,117.7 1029.9,119.0 1030.4,112.6 1031.0,116.5" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1032.6,108.8 1033.1,110.1 1033.7,110.1 1034.2,113.9 1034.7,108.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1036.4,101.2 1036.9,105.0 1037.4,116.5 1038.0,111.4 1038.5,106.3" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1040.1,111.4 1040.7,119.0 1041.2,117.7 1041.8,116.5 1042.3,112.6" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1043.9,108.8 1044.5,106.3 1045.0,106.3 1045.5,108.8 1046.1,110.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1048.2,108.8 1048.8,105.0 1049.3,93.5 1049.8,96.1" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<polyline points="1051.5,97.3 1052.0,94.8" fill="none" stroke="var(--s-dgs30)" stroke-width="2"/>
+<text x="1058" y="98.8" font-size="11.5" font-weight="700" fill="var(--s-dgs30)" paint-order="stroke" stroke="var(--bg)" stroke-width="3">미국 30년물 국채금리 5.36%</text>
 </svg>
 </div>
 
@@ -618,11 +339,11 @@
 
 ## 2. 해석
 
-- **상승**: 장기적인 재정건전성 우려, 장기 인플레이션 기대 확대 신호로 흔히 해석한다 — 단기물보다 당장의 연준 정책보다는 먼 미래에 대한 기대에 더 민감하다.
-- **하락**: 장기 성장·인플레이션 기대 둔화, 안전자산 수요 확대 신호로 흔히 해석한다.
+- **상승**: 장기 재정건전성 우려나 장기 인플레이션 기대가 커졌다는 신호로 흔히 해석한다 — 단기물과 달리 당장의 연준 결정보다 먼 미래에 대한 기대에 더 민감하다.
+- **하락**: 장기 성장·인플레이션 기대가 둔화되거나 안전자산 수요가 커졌다는 신호로 흔히 해석한다.
 - **왜 이런 신호로 읽히나**: 30년물 수익률은 "앞으로 30년간 평균 단기금리가 어떻게 움직일지에 대한 기대"보다 **기간 프리미엄**(만기가 길어질수록 투자자가 추가로 요구하는 보상) 비중이 더 크다. 그래서 당장의 통화정책보다는 장기 국채 발행량(재정 전망), 장기 성장·인플레이션 기대에 더 민감하게 움직인다. 연기금·보험사처럼 오랫동안 갚아야 할 부채를 가진 기관들이 구조적으로 사들이는 수요도 가격에 영향을 준다.
-- 밸류에이션(DCF 무위험이자율)의 표준 근거로는 쓰지 않는다 — 표준은 10년물이다. 이 문서는 수익률곡선의 모양을 보기 위한 보조 자료다.
+- **밸류에이션 할인율의 표준 근거로는 쓰지 않는다** — 표준은 [10년물](./treasury_10y.md)이다. 이 문서는 수익률곡선의 모양을 보기 위한 보조 자료다.
 
 ---
 
-*작성일: 2026-09-11*
+*작성일: 2026-09-18*
