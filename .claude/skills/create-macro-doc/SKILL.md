@@ -29,7 +29,7 @@ description: 거시지표 참고 문서(`docs/macro/**`)를 만들거나 다시 
 
 ## 1. 카테고리·파일명·파라미터 확정
 
-- **카테고리**: `docs/macro/{economy,inflation,foreign_exchange,rates,bonds,equities,metals,energy,cryptocurrency}/` 중 성격이 맞는 곳. 아홉 개 어디에도 안 맞는 새 자산군이면 폴더를 만들고 `docs/macro/.pages`에 추가한다.
+- **카테고리**: `docs/macro/{economy,inflation,foreign_exchange,rates,equities,metals,energy,cryptocurrency}/` 중 성격이 맞는 곳. 여덟 개 어디에도 안 맞는 새 자산군이면 폴더를 만들고 `docs/macro/.pages`에 추가한다.
 - **어느 스크립트를 쓸지는 "가격이냐 경제지표냐"로 갈린다** — 뒤 단계가 통째로 달라지므로 여기서 먼저 정한다.
   - **가격**(환율·금리·ETF·지수·원자재): `gen_technical_chart.py`로 캔들 + 지지/저항. 아래 2~4단계를 그대로 따른다.
   - **경제지표**(`economy/`·`inflation/`의 CPI·실업률·GDP 등): `gen_fred_chart.py`로 FRED 선/막대 차트. 한 기간에 값이 하나뿐이라 캔들이 성립하지 않고, 되돌림이 일어나는 호가 레벨이 없어 지지/저항도 의미가 없다. 커맨드와 문서별 파라미터는 `docs/authoring/chart-generation-guide.md` "경제지표(FRED) 문서 재현 파라미터"가 마스터다. **`FRED_API_KEY`가 필요하다**(저장소 루트 `.env`, 키 이름은 `.env.template` 참고).

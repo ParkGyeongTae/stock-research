@@ -47,7 +47,7 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
   --adj-note "환율 원자료(조정 없음)"
 ```
 
-이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`) 중 맞는 곳에 두세요 — 실제 예시는 [`foreign_exchange/usd_krw.md`](../macro/foreign_exchange/usd_krw.md)·[`bonds/tlt.md`](../macro/bonds/tlt.md)를 참고하세요.
+이렇게 만든 문서는 특정 회사·섹터에 종속되지 않으므로 회사 폴더가 아니라 `docs/macro/`에 둡니다. 새 지표를 만들 땐 [`authoring-guide.md`](./authoring-guide.md) "📁 폴더 구조·명명 규칙"에 정리된 성격별 서브폴더(`economy/`·`inflation/`·`foreign_exchange/`·`rates/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`) 중 맞는 곳에 두세요 — 실제 예시는 [`foreign_exchange/usd_krw.md`](../macro/foreign_exchange/usd_krw.md)·[`rates/treasury_10y.md`](../macro/rates/treasury_10y.md)를 참고하세요.
 
 ## macro 문서의 산문은 시점에 종속되지 않게 씁니다
 
@@ -55,8 +55,8 @@ uv run python scripts/gen_technical_chart.py "KRW=X" --interval 1wk \
 
 `## 2. 해석`은 "이번 구간에 무슨 일이 있었나"가 아니라 **"이 표를 어떻게 읽는가"**를 씁니다. 각 자산의 구조적 성격(듀레이션, 주가 가중, 산업 수요 vs 안전자산 등)은 바뀌지 않으므로 그대로 두되, 결과는 조건부로 서술합니다:
 
-- ❌ `TLT가 -45.1%로 가장 크게 빠졌다 — 5년간 이어진 연준의 긴축이 반영된 결과다`
-- ✅ `TLT는 듀레이션이 셋 중 가장 크다. TLT의 순변화 절대값이 나머지 둘보다 크게 벌어져 있으면 그 구간을 명목금리가 주도했다는 뜻이다`
+- ❌ `은이 +52.3%로 가장 크게 올랐다 — 산업 수요 회복이 반영된 결과다`
+- ✅ `은은 셋 중 산업 수요 비중이 크다. 은의 순변화가 금보다 크게 벌어져 있으면 그 구간을 안전자산 선호가 아니라 산업 수요(경기)가 주도했다는 뜻이다`
 
 같은 이유로 아래 표현을 쓰지 않습니다:
 
@@ -106,19 +106,15 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 | `macro/energy/natural_gas.md` | `NG=F` | 천연가스 | `--unit-label "USD/MMBtu"` | FUT |
 | `macro/energy/uranium.md` | `SRUUF` | Sprott Physical Uranium Trust | (기본값) | URTN |
 | `macro/equities/hang_seng.md` | `^HSI` | 항셍지수 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/kosdaq.md` | `^KQ11` | 코스닥 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/kospi.md` | `^KS11` | 코스피 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/nasdaq.md` | `^IXIC` | 나스닥종합지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/nikkei225.md` | `^N225` | 닛케이225 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/russell2000.md` | `^RUT` | 러셀2000 | `--symbol "" --unit-label "지수"` | IDX |
-| `macro/equities/sox.md` | `^SOX` | 필라델피아 반도체지수 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/sp500.md` | `^GSPC` | S&P 500 | `--symbol "" --unit-label "지수"` | IDX |
 | `macro/equities/vix.md` | `^VIX` | VIX 변동성지수 | `--symbol "" --unit-label "pt"` | VIXN |
 | `macro/foreign_exchange/dxy.md` | `DX-Y.NYB` | 달러인덱스 | `--symbol "" --unit-label "지수"` | DXYN |
 | `macro/foreign_exchange/jpy_usd.md` | `JPY=X` | 엔/달러 환율 | `--symbol "엔" --symbol-pos suffix --unit-label "엔"` | FX |
 | `macro/foreign_exchange/usd_krw.md` | `KRW=X` | 원/달러 환율 | `--symbol "원" --symbol-pos suffix --unit-label "원"` | FX |
-| `macro/bonds/hyg.md` | `HYG` | 하이일드 회사채 ETF | (기본값) | ETF |
-| `macro/bonds/tlt.md` | `TLT` | 20년+ 장기국채 ETF | (기본값) | ETF |
 | `macro/cryptocurrency/bitcoin.md` | `BTC-USD` | 비트코인 | (기본값) | BTCN |
 | `macro/cryptocurrency/ethereum.md` | `ETH-USD` | 이더리움 | (기본값) | ETHN |
 
@@ -188,16 +184,14 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 색상슬롯은 `docs/macro/`가 이미 쓰는 검증된 8색 팔레트 순번(1=파랑 2=주황 3=아쿠아 4=노랑 5=마젠타 6=초록 7=보라 8=빨강)이다 — 새 배색을 만들지 않고 그 순서를 재사용한다.
 
-`--title`은 아래 표의 값을 그대로 쓰고, `--period-label`은 7개 문서 모두 `"최근 5년 주간"`이다. 스크립트가 제목 뒤에 기준일·지수화 여부를 자동으로 붙이므로 제목에 그 정보를 직접 적지 않는다.
+`--title`은 아래 표의 값을 그대로 쓰고, `--period-label`은 5개 문서 모두 `"최근 5년 주간"`이다. 스크립트가 제목 뒤에 기준일·지수화 여부를 자동으로 붙이므로 제목에 그 정보를 직접 적지 않는다.
 
 | 문서 | 모드 | --title | 시리즈(티커:라벨:색상슬롯) |
 |------|------|---------|---------------------------|
 | `macro/foreign_exchange/comparison.md` | index | 통화 3종 비교 | `DX-Y.NYB:달러인덱스 (DXY):1` · `JPY=X:엔/달러 환율:2` · `KRW=X:원/달러 환율:3` |
-| `macro/bonds/comparison.md` | index | 채권 2종 비교 | `TLT:20년+ 장기국채 ETF (TLT):1` · `HYG:하이일드 회사채 ETF (HYG):2` |
 | `macro/metals/comparison.md` | index | 금속 3종 비교 | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
 | `macro/energy/comparison.md` | index | 에너지 3종 비교 | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` · `SRUUF:우라늄 실물 신탁 (SRUUF):3` |
 | `macro/equities/us_comparison.md` | index | 미국 3대 지수 비교 | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^RUT:러셀2000:3` |
-| `macro/equities/kr_comparison.md` | index | 코스피·코스닥 비교 | `^KS11:코스피:1` · `^KQ11:코스닥:2` |
 | `macro/cryptocurrency/comparison.md` | index | 디지털자산 2종 비교 | `BTC-USD:비트코인:1` · `ETH-USD:이더리움:2` |
 
 ---

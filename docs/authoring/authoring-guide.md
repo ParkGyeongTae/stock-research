@@ -21,7 +21,7 @@ stock-research/
     ├── index.md           # 사이트 첫 페이지 — 소개·커버리지 범위만 담은 환영 페이지
     ├── glossary.md        # PER/PBR/DCF/WACC 등 문서 전반에서 쓰는 용어 정리 (빠른 참조용)
     ├── concepts/          # glossary.md 용어를 예시로 풀어 쓴 학습용 문서 (공부용)
-    ├── macro/             # 여러 회사 문서가 공통으로 인용하는 거시지표 차트 — 통화·금리·채권·주가지수·금속·에너지·디지털자산 서브폴더로 나뉨
+    ├── macro/             # 여러 회사 문서가 공통으로 인용하는 거시지표 차트 — 경기·물가·통화·금리·주가지수·금속·에너지·디지털자산 서브폴더로 나뉨
     ├── authoring/         # 이 저장소를 굴리는 규칙과 AI 활용 참고 자료 (5편, 읽는 순서대로 .pages에 배열)
     │   └── template/company/   # 새 회사 추가 시 복사해서 쓰는 템플릿 11종 — 사이트에도 "회사 문서 템플릿"으로 발행됨
     └── sectors/           # 모든 섹터/회사 리서치 콘텐츠가 이 아래에 모임
@@ -36,7 +36,7 @@ stock-research/
 - **`AGENTS.md`만 저장소 루트에 남는다** — 에이전트가 세션 시작 시 루트에서 찾는 파일이고 `CLAUDE.md`가 그 심볼릭 링크라, 옮기면 지침 로딩이 끊긴다. 발행 문서에서 `AGENTS.md`를 가리킬 땐 상대 경로 대신 GitHub 절대 URL을 쓴다 — `docs/` 밖이라 상대 링크는 빌드 경고와 함께 깨진 채로 배포된다.
 - **용어 정의는 쓰이는 범위에 따라 자리가 갈린다** — 여러 섹터에 두루 쓰이면 `glossary.md`, 한 섹터 안에서만 쓰면 그 섹터의 `00_glossary.md`다. `docs/` 직속 참고 문서는 "특정 회사·섹터에 종속되지 않는다"가 입주 기준이라, 섹터 전용 용어가 글로서리에 쌓이면 그 기준이 깨지고 다른 14개 섹터를 쓰는 사람이 매번 그 분량을 지나가게 된다. 자세한 판정 기준은 아래 "섹터 전용 용어" 참고.
 - `docs/` 직속 참고 문서끼리도 성격이 갈린다: **`glossary.md`·`concepts/`는 읽는 문서**, **`macro/`는 여러 회사 문서가 공통으로 인용하는 거시지표 차트**(개별 회사·섹터의 밸류에이션 판단은 담지 않음), **`authoring/`은 이 저장소를 굴리는 절차서**(복사해서 쓰는 스캐폴딩인 `template/`도 그 아래에 둔다)다 — `sectors/`와 같은 층에 있는 이유는 모두 "특정 회사·섹터에 종속되지 않는다"는 기준을 만족하기 때문이다.
-- `macro/` 하위는 성격별 서브폴더(`foreign_exchange/`·`rates/`·`bonds/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`)로 나뉜다. **`rates/`는 실제 거래되는 자산이 아닌 순수 금리·수익률(%), `bonds/`는 실제 거래되는 채권 ETF 가격($)**으로 갈린다. 각 문서는 `09_technical_daily.md`·`10_technical_weekly.md`와 같은 스크립트로 생성 — 작성법은 [`chart-generation-guide.md`](./chart-generation-guide.md) "주가가 아닌 시계열에 쓰기" 참고.
+- `macro/` 하위는 성격별 서브폴더(`economy/`·`inflation/`·`foreign_exchange/`·`rates/`·`equities/`·`metals/`·`energy/`·`cryptocurrency/`)로 나뉜다. **`economy/`·`inflation/`·`rates/`는 실제 거래되는 자산이 아닌 경제지표·금리·수익률, 나머지는 거래되는 자산의 가격**으로 갈린다. 각 문서는 `09_technical_daily.md`·`10_technical_weekly.md`와 같은 스크립트로 생성 — 작성법은 [`chart-generation-guide.md`](./chart-generation-guide.md) "주가가 아닌 시계열에 쓰기" 참고.
 - 섹터 폴더명은 **풀어 쓴 소문자 스네이크케이스**(예: `electronic_design_automation`), 회사 폴더명은 **회사명 소문자 스네이크케이스**(예: `synopsys`) — 약어보다 명확한 전체 표기 우선.
 - 복합기업은 "관심 이유"가 되는 사업 기준 섹터에 배치 (예: Siemens → `sectors/electronic_design_automation/`).
 - **`.pages` 등록 규칙 (경고 없이 조용히 실패하므로 주의):**
@@ -199,4 +199,4 @@ cp -r docs/authoring/template/company docs/sectors/<sector>/<company-name>
 
 ---
 
-*작성일: 2026-09-11*
+*작성일: 2026-09-18*
