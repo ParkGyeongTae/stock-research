@@ -1,4 +1,6 @@
 nav:
+  - 경기: economy
+  - 물가: inflation
   - 통화: foreign_exchange
   - 금리: rates
   - 채권: bonds
