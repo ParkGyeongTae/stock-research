@@ -154,15 +154,15 @@ uv run python scripts/gen_index_overlay_chart.py --mode raw --unit-label "%" \
 
 | 문서 | 모드 | --title | 시리즈(티커:라벨:색상슬롯) |
 |------|------|---------|---------------------------|
-| `macro/foreign_exchange/comparison.md` | index | 통화 4종 비교 | `DX-Y.NYB:달러인덱스 (DXY):1` · `EURUSD=X:유로/달러 환율:2` · `JPY=X:엔/달러 환율:3` · `KRW=X:원/달러 환율:4` |
+| `macro/foreign_exchange/comparison.md` | index | 통화 3종 비교 | `DX-Y.NYB:달러인덱스 (DXY):1` · `JPY=X:엔/달러 환율:2` · `KRW=X:원/달러 환율:3` |
 | `macro/rates/comparison.md` | raw (`--unit-label "%"`) | 미국 국채금리 3종 비교 | `^IRX:미국 13주물 국채금리:1` · `^TNX:미국 10년물 국채금리:2` · `^TYX:미국 30년물 국채금리:3` |
-| `macro/bonds/comparison.md` | index | 채권 3종 비교 | `TLT:20년+ 장기국채 ETF (TLT):1` · `TIP:물가연동국채 ETF (TIP):2` · `HYG:하이일드 회사채 ETF (HYG):3` |
+| `macro/bonds/comparison.md` | index | 채권 2종 비교 | `TLT:20년+ 장기국채 ETF (TLT):1` · `HYG:하이일드 회사채 ETF (HYG):2` |
 | `macro/metals/comparison.md` | index | 금속 3종 비교 | `GC=F:금:1` · `SI=F:은:2` · `HG=F:구리:3` |
 | `macro/energy/comparison.md` | index | 에너지 3종 비교 | `CL=F:WTI 원유:1` · `NG=F:천연가스:2` · `SRUUF:우라늄 실물 신탁 (SRUUF):3` |
-| `macro/equities/us_comparison.md` | index | 미국 4대 지수 비교 | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^DJI:다우존스산업지수:3` · `^RUT:러셀2000:4` |
+| `macro/equities/us_comparison.md` | index | 미국 3대 지수 비교 | `^GSPC:S&P 500:1` · `^IXIC:나스닥종합지수:2` · `^RUT:러셀2000:3` |
 | `macro/equities/kr_comparison.md` | index | 코스피·코스닥 비교 | `^KS11:코스피:1` · `^KQ11:코스닥:2` |
 | `macro/cryptocurrency/comparison.md` | index | 디지털자산 2종 비교 | `BTC-USD:비트코인:1` · `ETH-USD:이더리움:2` |
 
 ---
 
-*작성일: 2026-09-11*
+*작성일: 2026-09-17*
