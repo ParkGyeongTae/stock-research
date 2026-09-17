@@ -129,6 +129,45 @@ uv run python scripts/gen_technical_chart.py "<티커>" --name "<이름>" --inte
 
 새 macro 문서를 추가하면 이 표에 행을 하나 추가한다 — 개별 문서에는 재생성 커맨드를 남기지 않는다.
 
+## 경제지표(FRED) 문서 재현 파라미터
+
+`docs/macro/economy/`·`docs/macro/inflation/`의 문서는 위 두 스크립트가 아니라 `scripts/gen_fred_chart.py`를 쓴다. **가격이 아니라 경제지표**라 캔들도 지지/저항도 성립하지 않기 때문이다 — 한 기간에 값이 하나뿐이라 시가·고가·저가가 없고, 되돌림이 일어나는 호가 레벨이라는 개념도 없다. 대신 기준선(`--ref-line`)과 NBER 침체 음영(`--recession`)을 쓴다. 골격은 나머지 macro 문서와 같다(**1. 차트 · 2. 해석**만, 재생성 커맨드는 문서에 남기지 않음).
+
+```bash
+uv run python scripts/gen_fred_chart.py \
+  --series "<시리즈ID>:<라벨>:<색상슬롯>[:<변환>]" --title "<제목>" \
+  --start <시작일> <옵션> --recession --emit chart
+```
+
+`FRED_API_KEY`가 필요하다 — 저장소 루트 `.env`에 두면 스크립트가 알아서 읽는다(`.env.template` 참고). 변환 코드·개정(revision)·결측 처리 등 스크립트 자체의 한계는 `scripts/gen_fred_chart.py` docstring이 마스터다.
+
+**변환(units) 코드** — 직접 계산하지 않고 FRED가 서버에서 처리한다:
+
+| 코드 | 뜻 | 쓰는 곳 |
+|------|-----|---------|
+| `lin` | 원값 (기본) | 실업률·확산지수처럼 이미 비율/지수인 지표 |
+| `pc1` | 전년동월비 % | 물가지수 — 원값은 "1982-84=100" 같은 지수라 그대로 그리면 우상향 직선만 나온다 |
+| `chg` | 전기대비 증감(원단위) | 고용자수처럼 누적 레벨로 발표되는 지표 |
+
+**시작일**: 월간·주간 문서는 `2021-09-01`, 분기 문서(GDP)는 `2021-07-01` — 둘 다 최근 5년이며, 나머지 macro 문서의 "최근 5년" 관행과 맞춘 것이다. 5년으로 자르면 2020년 코로나 침체의 극단값(GDP 연율 ±30%대, 고용 −2,000만 명대)이 빠져 나머지 구간이 눌리지 않는다.
+
+| 문서 | 시리즈(ID:라벨:슬롯[:변환]) | --title | 옵션 |
+|------|------------------------------|---------|------|
+| `macro/economy/gdp_growth.md` | `A191RL1Q225SBEA:실질 GDP 성장률:1` | 미국 실질 GDP 성장률 (전기대비 연율) | `--chart-type bar --start 2021-07-01 --unit-label "%" --decimals 1 --ref-line "0" --recession` |
+| `macro/economy/unemployment.md` | `UNRATE:실업률:1` | 미국 실업률 (U-3) | `--start 2021-09-01 --unit-label "%" --decimals 1 --recession` |
+| `macro/economy/nonfarm_payrolls.md` | `PAYEMS:비농업부문 고용 증감:1:chg` | 미국 비농업부문 고용 증감 (전월대비) | `--chart-type bar --start 2021-09-01 --unit-label "천 명" --decimals 0 --ref-line "0" --recession` |
+| `macro/economy/initial_claims.md` | `ICSA:신규 실업수당 청구:1` | 미국 신규 실업수당 청구건수 (주간, 계절조정) | `--start 2021-09-01 --unit-label "건" --decimals 0 --recession` |
+| `macro/economy/cfnai.md` | `CFNAI:시카고 연은 국가활동지수:1` | 시카고 연은 국가활동지수 (CFNAI) | `--start 2021-09-01 --unit-label "" --decimals 2 --ref-line "0:0 = 과거 추세 성장" --recession` |
+| `macro/economy/regional_fed_surveys.md` | `GACDFSA066MSFRBPHI:필라델피아 연은:1` · `GACDISA066MSFRBNY:뉴욕 연은 (Empire State):2` · `BACTSAMFRBDAL:댈러스 연은:3` | 지역 연은 제조업 서베이 3종 (현재 업황 확산지수) | `--start 2021-09-01 --unit-label "" --decimals 1 --ref-line "0:0 = 확장/수축 경계" --recession` |
+| `macro/inflation/cpi.md` | `CPIAUCSL:CPI:1:pc1` | 미국 소비자물가 상승률 (CPI, 전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
+| `macro/inflation/core_cpi.md` | `CPILFESL:Core CPI:2:pc1` | 미국 근원 소비자물가 상승률 (Core CPI, 전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
+| `macro/inflation/core_pce.md` | `PCEPILFE:Core PCE:3:pc1` | 미국 근원 개인소비지출 물가 상승률 (Core PCE, 전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
+| `macro/inflation/comparison.md` | `CPIAUCSL:CPI:1:pc1` · `CPILFESL:Core CPI:2:pc1` · `PCEPILFE:Core PCE:3:pc1` | 미국 물가지표 3종 비교 (전년동월비) | `--start 2021-09-01 --unit-label "%" --decimals 1 --ref-line "2:연준 물가목표 2%" --recession` |
+
+색상슬롯은 위 8색 팔레트와 같은 순번이다. 비교 문서(`inflation/comparison.md`)에서 각 지표의 슬롯을 **단독 문서와 동일하게** 유지한다 — 같은 지표가 문서마다 다른 색으로 나오면 나란히 놓고 볼 때 헷갈린다.
+
+⚠️ **ISM 제조업·서비스업 PMI는 이 표에 없다.** FRED에서 받을 수 없어서다 — ISM이 재배포 라이선스를 회수해 `NAPM` 계열 시리즈가 전부 폐지됐고, FRED 전체 검색에서 "PMI"는 0건이다(2026-09-17 확인). 같은 성격의 공개 대체 지표로 `macro/economy/regional_fed_surveys.md`를 두었으나 **제조업만 커버하고 눈금 기준도 다르다**(ISM은 50, 지역 연은 확산지수는 0이 경계). 서비스업 PMI에 해당하는 공개 대체 지표는 아직 없다.
+
 ## 여러 자산을 겹쳐 비교하는 문서
 
 단일 자산이 아니라 여러 자산을 "상대적으로 어느 쪽이 더 크게 움직였는지" 비교하려면 `gen_technical_chart.py`가 아니라 `gen_index_overlay_chart.py`를 쓴다. 지지/저항 레벨은 다루지 않고 1. 차트(차트+요약 표)·2. 해석만 둔다 — 단일 자산 문서와 같은 규칙이다. **모드는 자산 단위로 정한다:**

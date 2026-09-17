@@ -103,6 +103,7 @@ Bull Case에도 같은 잣대를 적용하되, 이 저장소는 낙관 편향이
 | 폴더 구조·명명 규칙·회사 파일별 역할·작성 규칙(`::: warning`·`*작성일*`·링크 표기)·`.pages` 등록·재생성 절차와 옮길 항목 | [`authoring-guide.md`](./docs/authoring/authoring-guide.md) | 링크 |
 | 차트 스크립트 커맨드·옵션·문서별 재현 파라미터 | [`chart-generation-guide.md`](./docs/authoring/chart-generation-guide.md) | 링크 |
 | SEC 재무 수치 추출 사용법·태그 정의·한계 | `scripts/fetch_sec_facts.py` docstring | 링크 |
+| FRED 경제지표 추출 사용법·변환(units) 코드·개정/결측 한계 | `scripts/gen_fred_chart.py` docstring | 링크 |
 | 용어 정의 | [`glossary.md`](./docs/glossary.md)(2개 섹터 이상) · `<sector>/00_glossary.md`(섹터 전용) · [`concepts/`](./docs/concepts/)(예시·근거) | 링크 |
 | 문서를 만드는 **작업 순서**(단계·도구 호출 묶기) | [`.claude/skills/`](./.claude/skills/) | — |
 | 스킬 문서 자체를 쓰는 법 | [`skill-authoring-guide.md`](./docs/authoring/skill-authoring-guide.md) | 링크 |

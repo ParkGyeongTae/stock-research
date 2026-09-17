@@ -29,10 +29,14 @@ description: 거시지표 참고 문서(`docs/macro/**`)를 만들거나 다시 
 
 ## 1. 카테고리·파일명·파라미터 확정
 
-- **카테고리**: `docs/macro/{foreign_exchange,rates,bonds,equities,metals,energy,cryptocurrency}/` 중 성격이 맞는 곳. 일곱 개 어디에도 안 맞는 새 자산군이면 폴더를 만들고 `docs/macro/.pages`에 추가한다.
+- **카테고리**: `docs/macro/{economy,inflation,foreign_exchange,rates,bonds,equities,metals,energy,cryptocurrency}/` 중 성격이 맞는 곳. 아홉 개 어디에도 안 맞는 새 자산군이면 폴더를 만들고 `docs/macro/.pages`에 추가한다.
+- **어느 스크립트를 쓸지는 "가격이냐 경제지표냐"로 갈린다** — 뒤 단계가 통째로 달라지므로 여기서 먼저 정한다.
+  - **가격**(환율·금리·ETF·지수·원자재): `gen_technical_chart.py`로 캔들 + 지지/저항. 아래 2~4단계를 그대로 따른다.
+  - **경제지표**(`economy/`·`inflation/`의 CPI·실업률·GDP 등): `gen_fred_chart.py`로 FRED 선/막대 차트. 한 기간에 값이 하나뿐이라 캔들이 성립하지 않고, 되돌림이 일어나는 호가 레벨이 없어 지지/저항도 의미가 없다. 커맨드와 문서별 파라미터는 `docs/authoring/chart-generation-guide.md` "경제지표(FRED) 문서 재현 파라미터"가 마스터다. **`FRED_API_KEY`가 필요하다**(저장소 루트 `.env`, 키 이름은 `.env.template` 참고).
 - **파일명**: snake_case, 티커가 아니라 사람이 읽는 이름(`usd_krw.md`, `treasury_10y.md`).
 - **재생성이면 `docs/authoring/chart-generation-guide.md` "macro 문서 재현 파라미터" 표에서 그 문서 행을 가져온다** — 티커·옵션·조정 각주의 단일 출처다. 표에 행이 없는 구세대 문서면 이번에 추가한다.
-- **신규면 Yahoo Finance 티커를 WebSearch로 확인한다**(추측 금지 — `KRW=X`·`GC=F`·`^TNX`처럼 비직관적 표기가 많다). 주가가 아닌 시계열은 `--symbol`·`--symbol-pos`·`--unit-label`·`--adj-note`가 필요하며 문법은 `docs/authoring/chart-generation-guide.md` "주가가 아닌 시계열에 쓰기"가 마스터다. 같은 카테고리의 기존 행을 패턴으로 삼으면 빠르다.
+- **신규 경제지표면 FRED 시리즈 ID를 실제 API 호출로 확인한다**(추측 금지). 시리즈가 존재하는지, 주기·단위가 무엇인지, 어떤 변환(`lin`·`pc1`·`chg`)이 필요한지까지 확인한 뒤 표에 적는다 — 물가지수를 `lin`으로 그리면 우상향 직선만 나온다. **없을 수도 있다**: ISM PMI 계열은 라이선스 회수로 FRED에 아예 없어서 지역 연은 서베이로 대체했다(같은 가이드의 경고 참고). 없는 지표를 기억으로 지어내지 말고 대체재를 찾아 사용자에게 확인한다.
+- **신규 가격 문서면 Yahoo Finance 티커를 WebSearch로 확인한다**(추측 금지 — `KRW=X`·`GC=F`·`^TNX`처럼 비직관적 표기가 많다). 주가가 아닌 시계열은 `--symbol`·`--symbol-pos`·`--unit-label`·`--adj-note`가 필요하며 문법은 `docs/authoring/chart-generation-guide.md` "주가가 아닌 시계열에 쓰기"가 마스터다. 같은 카테고리의 기존 행을 패턴으로 삼으면 빠르다.
 
 ## 2. 파일 삭제 후 차트 생성
 
