@@ -22,7 +22,7 @@ function pageTitle(file) {
 
 function autoNavFor(directory, excludedTargets = new Set()) {
   return fs.readdirSync(directory, { withFileTypes: true })
-    .filter((entry) => !entry.name.startsWith('.') && !excludedTargets.has(entry.name) && (entry.isDirectory() || entry.name.endsWith('.md')))
+    .filter((entry) => !entry.name.startsWith('.') && entry.name !== 'public' && !excludedTargets.has(entry.name) && (entry.isDirectory() || entry.name.endsWith('.md')))
     .sort((a, b) => a.name.localeCompare(b.name, 'en'))
     .map((entry) => {
       const absolute = path.join(directory, entry.name)
