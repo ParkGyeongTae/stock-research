@@ -14,8 +14,8 @@
 | 2011.12 | **WPX Energy 분사** — E&P(탐사·생산) 사업을 Williams 3주당 WPX 1주 비율로 분리 배당해 완전 분사. 이 시점부터 Williams는 상품가격을 직접 지는 사업을 버리고 **수수료 기반 인프라 회사**로 성격이 확정됐다([Oil & Gas Journal](https://www.ogj.com/general-interest/companies/article/17273230/williams-completes-spinoff-of-ep-business)) |
 | 2016.06 ~ 2023.— | **Energy Transfer와의 $377억 합병 파기와 소송 승소** — 2016년 합병이 무산된 뒤 델라웨어 형평법원이 2021년 12월 Williams 손을 들어 위약금 $410M + 이자 지급을 명령했고, 2023년 델라웨어 대법원이 이를 확정했다. **FY2023 GAAP 순이익에 잡힌 $534M의 소송 판결 이익이 이 사건의 결과**이며, 그해 GAAP PER(13.4x)이 이상치가 된 이유다([핵심 지표](./04_metrics.md) A.1 각주 ²) |
 
-> 2023년 이후의 인수·전환(MountainWest·Gulf Coast Storage·DJ 분지 인수, Power Innovation 진출, CEO 교체, Momentum Midstream 인수)은 아직 "지금의 회사를 만든 전환점"으로 확정하기에 이르므로 [최근 뉴스 / 이슈](./08_news.md) 로그와 [CEO / 경영진](./03_ceo.md)에서 다룬다.
+> 2023년 이후의 인수·전환(MountainWest·Gulf Coast Storage·DJ 분지 인수, Power Innovation 진출, CEO 교체, Momentum Midstream 인수)은 아직 "지금의 회사를 만든 전환점"으로 확정하기에 이르므로 [최근 뉴스 / 이슈](./08_news.md) 로그와 [CEO / 경영진](./03_ceo.md)에서 다룬다. 다만 **2026-09-03 Momentum 인수($5.5B)는 순부채·주식수·부문 구성을 한꺼번에 바꾸는 규모**라, 2026 Q3 실적으로 그 영향이 확인되면 이 표에 올릴지 다시 판단한다.
 
 ---
 
-*작성일: 2026-09-06*
+*작성일: 2026-09-18*
