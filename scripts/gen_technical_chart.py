@@ -34,6 +34,15 @@ INTERVAL_PARAMS로만 갈라지므로, 두 문서 간 비교 가능성도 이 �
 마지막 값을 확정 종가로 다른 문서에 옮겨 적지 않는다 — 대조가 필요하면 주가 마감이
 끝난 날짜를 --close-on으로 지정해 그 값을 쓴다.
 
+한계 — "신고가/신저가 구간"은 스윙 포인트 기준이다: §2 표의 현재가 행은 한쪽에
+레벨이 없을 때 그 이유를 둘로 갈라 쓴다. ① 그 방향에 **스윙 포인트 자체가 없으면**
+"신고가/신저가 구간", ② 스윙 포인트는 있는데 터치 하한(min_touches)에 못 미쳐
+클러스터가 안 만들어졌으면 "검출된 레벨 없음 — 신고가·신저가가 아니다"이며 가장 먼
+스윙 포인트의 가격과 현재가 대비 거리를 함께 찍는다. 후자를 신고가로 오독하면
+"5년 최고가의 3분의 1 가격인데 신고가"라는 서술이 나온다(2026-09 이전 판본의 버그).
+판정에 기간 최고·최저(장중 고가/저가)를 쓰지 않는 이유는, 장중 고가가 거의 항상
+마지막 종가보다 위라 진짜 신고가까지 ②로 분류되기 때문이다.
+
 의존성 없음(표준 라이브러리만). 원자료는 저장소에 커밋하지 않는다.
 """
 
@@ -465,7 +474,11 @@ def render_svg(
 
 # ── 마크다운 산출물 ──────────────────────────────────────────────────────
 def render_table(
-    bars: list[Bar], levels: list[Level], refs: list[tuple[float, str]], params: dict
+    bars: list[Bar],
+    levels: list[Level],
+    refs: list[tuple[float, str]],
+    min_touches: int,
+    params: dict,
 ) -> str:
     last = bars[-1]
     rows = ["| 레벨 | 가격 | 터치 횟수 | 비고 |", "|------|------|-----------|------|"]
@@ -474,14 +487,44 @@ def render_table(
     for lv in res:
         note = "강제 포함(사유 기입)" if lv.forced else "<어느 시기의 스윙 고점대인지>"
         rows.append(f"| {lv.name} | {sym_wrap(money(lv.price, params.get('decimals')), params)} | {lv.touches} | {note} |")
+    # "레벨이 안 잡힌 것"과 "실제로 신고가·신저가인 것"은 다르다. pick_levels()는
+    # 터치 하한(min_touches)에 못 미치는 클러스터를 버리므로, 위쪽에 스윙 고점이
+    # 얼마든지 있어도 res가 빌 수 있다. 판정은 기간 최고·최저(장중 고가/저가)가
+    # 아니라 **레벨의 재료인 스윙 포인트**와 대조해야 한다 — 장중 고가는 거의 항상
+    # 마지막 종가보다 위라, 그것과 비교하면 진짜 신고가까지 "신고가 아님"이 된다.
+    hi_sw, lo_sw = find_swings(bars, params["swing_window"])
+    above = [p for p, _ in hi_sw if p > last.c]
+    below = [p for p, _ in lo_sw if p < last.c]
+    dec = params.get("decimals")
+
+    def _missed(px: float, side: str) -> str:
+        return (
+            f"검출된 {side} 레벨 없음 — 스윙 포인트는 있으나 터치 {min_touches}회 이상으로 "
+            f"묶인 클러스터가 없다(가장 먼 쪽 {sym_wrap(money(px, dec), params)}, "
+            f"현재가 대비 {abs(px - last.c) / last.c * 100:.0f}%). §4에 표본 한계를 남길 것"
+        )
+
     if res and sup:
         where = f"{res[-1].name}과 {sup[0].name} 사이"
-    elif sup:  # 기간 내 위쪽 스윙 고점 클러스터가 없음 = 신고가 구간
-        where = f"기간 내 상단 저항 없음(신고가 구간) — 가장 가까운 지지는 {sup[0].name}"
+    elif sup:
+        where = (
+            f"기간 내 상단 스윙 고점 없음(신고가 구간) — 가장 가까운 지지는 {sup[0].name}"
+            if not above
+            else f"위쪽에 {_missed(max(above), '저항')}. 가장 가까운 지지는 {sup[0].name}"
+        )
     elif res:
-        where = f"기간 내 하단 지지 없음(신저가 구간) — 가장 가까운 저항은 {res[-1].name}"
+        where = (
+            f"기간 내 하단 스윙 저점 없음(신저가 구간) — 가장 가까운 저항은 {res[-1].name}"
+            if not below
+            else f"아래쪽에 {_missed(min(below), '지지')}. 가장 가까운 저항은 {res[-1].name}"
+        )
+    elif above or below:
+        where = (
+            f"위아래 모두 검출된 레벨 없음 — 스윙 포인트는 있으나 터치 {min_touches}회 "
+            "이상으로 묶인 클러스터가 하나도 없다. §4에 표본 한계를 남길 것"
+        )
     else:
-        where = "유효한 클러스터 없음 — §4에 표본 부족 사유 기입"
+        where = "유효한 스윙 포인트 없음 — §4에 표본 부족 사유 기입"
     cur = sym_wrap(f"{last.c:,.2f}", params)
     rows.append(f"| **현재가** | **{cur}** ({last.d} 종가) | — | {where} |")
     for lv in sup:
@@ -617,7 +660,7 @@ def main() -> None:
     if args.emit in ("all", "chart"):
         parts.append(render_svg(bars, g, levels, args.ticker, name, events, refs, params))
     if args.emit in ("all", "table"):
-        parts.append(render_table(bars, levels, refs, params))
+        parts.append(render_table(bars, levels, refs, min_touches, params))
     if args.emit in ("all", "facts"):
         parts.append(render_facts(bars, g, meta, min_touches, args.close_on, params))
     if args.emit == "dates":
