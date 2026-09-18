@@ -101,7 +101,8 @@ export default {
     ]
   },
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: `${siteBase}stock-research-icon.png` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${siteBase}favicon-32.png` }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${siteBase}apple-touch-icon.png` }],
   ],
   themeConfig: {
     logo: {
