@@ -27,7 +27,7 @@ Vistra는 **전기를 만드는 쪽(Generation)과 파는 쪽(Retail)을 한 회
 | **West (서부 발전)** | 캘리포니아 중심 가스·배터리(Moss Landing 등) | 4.1% | FY2025 |
 | Corporate & Other | 본사 비용 등 | −1.2% | FY2025 |
 
-> **비중을 매출이 아니라 Ongoing Operations Adjusted EBITDA로 잡았다.** 소매 부문은 전기를 사서 되파는 구조라 매출이 크지만 마진이 얇고, 발전 부문은 부문 간 내부거래(발전→소매)가 매출에서 상계돼 실제 이익 기여를 매출 비중이 크게 왜곡한다. 같은 이유로 [Kinder Morgan](../kinder_morgan/01_overview.md)·[Williams](../williams_companies/01_overview.md)도 매출이 아니라 부문 이익 기준으로 사업 구성을 본다([천연가스 섹터 용어 — 3. 미드스트림](../00_glossary.md)의 Segment EBDA 항목). 원자료는 [핵심 지표](./04_metrics.md) A.1이며, FY2025 부문별 값은 Retail $1,622M · Texas $1,834M · East $2,282M · West $244M · Corporate −$70M(합계 $5,912M)이다.
+> **비중을 매출이 아니라 Ongoing Operations Adjusted EBITDA로 잡았다.** 소매 부문은 전기를 사서 되파는 구조라 매출이 크지만 마진이 얇고, 발전 부문은 부문 간 내부거래(발전→소매)가 매출에서 상계돼 실제 이익 기여를 매출 비중이 크게 왜곡한다. 같은 이유로 [Kinder Morgan](../kinder_morgan/01_overview.md)·[Williams](../williams_companies/01_overview.md)도 매출이 아니라 부문 이익 기준으로 사업 구성을 본다([천연가스 섹터 용어 — 2. 미드스트림](../00_glossary.md)의 Segment EBDA 항목). 원자료는 [핵심 지표](./04_metrics.md) A.1이며, FY2025 부문별 값은 Retail $1,622M · Texas $1,834M · East $2,282M · West $244M · Corporate −$70M(합계 $5,912M)이다.
 
 **설비 구성(2025-12-31 기준, 약 43,454 MW)**: 가스 복합화력 22,167 MW · 가스 첨두발전 4,822 MW · 석탄·아역청탄 8,743 MW · 원자력 약 6,448 MW · 태양광 650 MW · 배터리 624 MW. **가스가 62%, 원자력이 15%**이며 석탄(20%)은 순차 폐쇄 예정이다.
 
