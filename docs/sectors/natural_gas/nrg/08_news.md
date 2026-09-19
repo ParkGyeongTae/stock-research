@@ -1,6 +1,6 @@
 # 최근 뉴스 / 이슈
 
-> **인수를 끝내고, CEO를 바꾸고, 첫 데이터센터 계약을 따낸 해다.** 세 사건 모두 2026년 상반기에 몰려 있고 방향은 같다 — 규모를 키운 뒤 그것을 장기 계약 현금흐름으로 바꾸는 중이다. 주가는 그 사이 52주 최고 대비 −37% 내렸다.
+> **회사가 낸 뉴스는 전부 좋았고, 주가는 그 사이 52주 최저로 내려갔다.** 인수를 끝내고 CEO를 바꾸고 첫 데이터센터 계약을 따낸 해인데, 시장이 반응한 것은 그 셋이 아니라 **ERCOT 2027년 선도 전력가격과 금리**다 — 2026년 들어 이 회사 주가를 움직인 변수는 실적이 아니라 가격 곡선이었다.
 
 ::: info 이 문서의 성격
 발생 순으로 쌓는 **시점성 로그**다(최신이 위). 여기서는 투자 결론을 내리지 않는다 — 판단에 영향을 주는 항목은 [밸류에이션 / 적정주가](./06_valuation.md)·[투자 판단](./07_investment.md)을 직접 갱신하고, 여기에는 반영했다는 표시만 남긴다.
@@ -12,12 +12,14 @@
 
 | 날짜 | 이슈 | 내용 | 출처 |
 |------|------|------|------|
-| 2026-08-04 | **1.2 GW 데이터센터 "BYOP" 계약 체결** | 익명 글로벌 하이퍼스케일러와 텍사스 신규 CCGT 1.2 GW 공급 계약. **최소 15년·투자적격 상대방·총 투자비 약 $3.2B·2029년 말 가동 목표, 2.4 GW까지 확장 옵션.** 회사는 자유현금흐름의 95%가 데이터센터 가동률과 무관한 용량 요금으로 뒷받침된다고 설명 → [핵심 지표](./04_metrics.md) C절 (5)번 지표와 [투자 판단](./07_investment.md) 2. Bull Case에 반영 | [8-K Ex-99.1 (2026-08-04)](https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm) · [Utility Dive](https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/) |
-| 2026-08-04 | **2026년 2분기 실적 · 가이던스 재확인** | Adjusted EBITDA $1,217M(+34% YoY)·GAAP 순이익 $506M·**Adjusted EPS $1.49(전년 $1.73 대비 −14%)**·FCFbG $1,025M. 2026년 가이던스(EBITDA $5,325~5,825M · EPS $7.90~9.90 · FCFbG $2,800~3,300M) 전부 재확인. 415 MW T.H. Wharton 상업운전 개시(10년 만의 첫 신규 건설 자산) → [핵심 지표](./04_metrics.md) A·B절과 [재무 / 실적](./05_financials.md) 1. 성장성에 반영 | [8-K Ex-99.1 (2026-08-04)](https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm) |
-| 2026-08-04 | **버지니아 RGGI 재가입 → 2026년 약 $70M 추가 비용** | 버지니아주가 지역온실가스이니셔티브(RGGI)에 재가입하면서 LS Power에서 인수한 1.2 GW 발전설비에 배출권 비용이 발생. 회사는 이 비용이 **인수 당시 언더라이팅에 반영되지 않았다**고 밝혔다 → [투자 판단](./07_investment.md) 3. 리스크에 반영 | 2026 Q2 실적발표 컨퍼런스콜 · [Utility Dive](https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/) |
-| 2026-04-30 | **CEO 교체 — Robert J. Gaudette 취임** | 25년차 내부 승진자가 CEO 취임, 전임 Lawrence Coben은 물러나 잔여 기간 자문역. **같은 날 Antonio Carrillo가 이사회 의장에 취임해 CEO·의장 겸직이 해소**됐다. 계획된 승계 → [CEO / 경영진](./03_ceo.md) 전면 반영 | [8-K Ex-99.1 (2026-01-07)](https://www.sec.gov/Archives/edgar/data/1013871/000110465926001602/tm261967d1_ex99-1.htm) |
-| 2026-01-29 | **LS Power 발전 13 GW · CPower 인수 완료** | 설비용량이 약 13 GW → **약 25.8 GW로 두 배**. 인수 배수는 2026년 예상 EV/EBITDA 기준 7.5배. 이자부 차입금이 FY2024 $10.8B → 2026 Q2 $23.3B로 뛰며 **Net Debt/Adjusted EBITDA가 회사 목표(2.50~2.75배)를 크게 벗어난 4.14배**가 됐다 → [핵심 지표](./04_metrics.md) 경고 블록 ①·C절과 [재무 / 실적](./05_financials.md) 3. 재무 건전성에 반영 | [NRG IR (2026-01-29)](https://investors.nrg.com/news-releases/news-release-details/nrg-energy-completes-acquisition-13-gw-power-generation-and-ci) |
+| 2026-09-18 | **52주 최저가 부근까지 하락 — ERCOT 선도가격·금리 동반 압박** | 2026-09-18 종가 $103.66으로 **52주 최저 $103.49에서 0.2% 위.** 9월 한 달 −11%, 52주 최고 $189.96 대비 −45.4%. 실적·가이던스 변경은 없었고, 시장이 반응한 것은 ① **ERCOT 2027년 선도 전력가격이 2025-10-31 대비 의미 있게 낮아진 것**과 ② 미국 10년물 국채금리가 5%대로 올라 유틸리티 전반이 압박받은 것이다 → [밸류에이션 / 적정주가](./06_valuation.md) 4-C. EV/EBITDA 민감도와 [투자 판단](./07_investment.md) 3. 리스크(약점 / Bear Case)에 반영 | [미국 10년물 국채금리](../../../macro/rates/treasury_10y.md) · [GuruFocus](https://www.gurufocus.com/news/9080353/nrg-energy-inc-nrg-shares-fall-44-what-gf-score-of-80-tells-investors) |
+| 2026-08-03 | **1.2 GW 데이터센터 "BYOP" 계약 체결** | 익명 글로벌 하이퍼스케일러(투자적격 등급)와 텍사스 신규 CCGT 1.2 GW 공급 계약. **최소 15년·2029년 말 가동 목표.** 회사는 자유현금흐름의 대부분이 데이터센터 가동률과 무관한 용량 요금으로 뒷받침된다고 설명 → [핵심 지표](./04_metrics.md) C절 (5)번 지표와 [투자 판단](./07_investment.md) 2. 강점 / Bull Case에 반영 | [8-K Ex-99.1 (2026-08-03)](https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm) · [Utility Dive](https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/) |
+| 2026-08-03 | **2026년 2분기 실적 · 가이던스 재확인** | Adjusted EBITDA $1,217M(+34% YoY)·GAAP 순이익 $506M·**Adjusted EPS $1.49(전년 $1.73 대비 −13.9%)**. 2026년 가이던스(EBITDA $5,325~5,825M · EPS $7.90~9.90 · FCFbG $2,800~3,300M) 전부 재확인. **상반기 Adjusted EPS는 $2.98로 전년 $4.41 대비 −32.4%**라 하반기에 상반기의 두 배를 내야 중간값에 닿는다 → [핵심 지표](./04_metrics.md) A·B절과 [재무 / 실적](./05_financials.md) 1. 성장성에 반영 | [8-K Ex-99.1 (2026-08-03)](https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm) |
+| 2026-05-26 | **T.H. Wharton 415 MW 상업운전 개시** | 텍사스 신규 가스 발전 415 MW 가동. **10년 만의 첫 자체 건설 자산**이며, 이후 GE Vernova·Kiewit과 묶어둔 5.4 GW 파이프라인의 첫 실물 증거다(파이프라인 자체는 설비·EPC 확보일 뿐 고객 계약이 아님) → [핵심 지표](./04_metrics.md) C절 각주 17과 [CEO / 경영진](./03_ceo.md) 2. 경영 스타일에 반영 | [8-K Ex-99.1 (2026-08-03)](https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm) |
+| 2026-04-30 | **CEO 교체 — Robert J. Gaudette 취임** | 내부 승진자가 CEO 취임, 전임 Lawrence Coben은 2027-01-04까지 자문역. **같은 날 Antonio Carrillo가 이사회 의장에 취임해 CEO·의장 겸직이 해소**됐다. 계획된 승계 → [CEO / 경영진](./03_ceo.md) 전면 반영 | [8-K (2026-04-30)](https://www.sec.gov/Archives/edgar/data/1013871/000110465926053755/tm2612875d1_8k.htm) |
+
+> **로그에서 빠진 항목 하나**: 2026-01-29 종결된 LS Power 13 GW 인수는 이 로그의 6번째 항목이었으나, [역사 / 주요 이벤트](./02_history.md)·[핵심 지표](./04_metrics.md) 경고 블록 ①·C절·[재무 / 실적](./05_financials.md) 3. 재무 건전성에 모두 반영이 끝나 로그에서 삭제했다.
 
 ---
 
-*작성일: 2026-09-11*
+*작성일: 2026-09-19*

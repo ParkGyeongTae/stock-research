@@ -53,9 +53,7 @@
 | SBC 차감 여부 | **해당 없음(DCF 미적용)** | SBC는 매출의 0.68~0.94%로 어느 배수에도 유의미한 영향이 없다([핵심 지표](./04_metrics.md) A.1) | — |
 | **방법론별 가중치 (종합 시)** | **PER 40% / EV/EBITDA 35% / DDM 15% / PBR 10%** | 균등가중이 아니다. PER은 이익이 안정적이고 외부 컨센서스로 교차검증되므로 최상위, EV/EBITDA는 **이 회사 고유의 레버리지 변화를 유일하게 반영**하므로 두 번째, DDM은 전제는 맞지만 계산이 취약해 15%, PBR은 회계적 왜곡으로 최소 | — |
 
-::: warning 무위험이자율을 바꿨다 — 섹터 내 다른 문서와 일시적으로 어긋난다
-이 문서와 [Kinder Morgan](../kinder_morgan/06_valuation.md)에 이어 [EQT](../eqt/06_valuation.md)·[Expand Energy](../expand_energy/06_valuation.md)도 2026-09-19 재작성되면서 Rf가 **5.01%(2026-09-16)**로 맞춰졌고, 이제 [NRG](../nrg/06_valuation.md)·[Vistra](../vistra/06_valuation.md) 두 문서만 **4.67%(2026-08-24)** 기준이다. 따라서 **이 문서의 Ke 8.11%를 그 문서들의 Ke와 나란히 놓고 위험 서열을 비교하면 안 된다** — 34bp만큼 이 문서 쪽이 구조적으로 높게 나온다.
-:::
+> **무위험이자율은 이제 섹터 전체가 같다.** 이 문서가 Rf를 **4.67%(2026-08-24) → 5.01%(2026-09-16)**로 고친 뒤 [Kinder Morgan](../kinder_morgan/06_valuation.md)·[EQT](../eqt/06_valuation.md)·[Expand Energy](../expand_energy/06_valuation.md)에 이어 **2026-09-19 [NRG](../nrg/06_valuation.md)·[Vistra](../vistra/06_valuation.md)까지 재작성되면서 natural_gas 섹터 6개 문서가 전부 5.01%를 쓴다.** 직전 판에 있던 "일시적으로 어긋난다"는 경고는 그 조건이 해소돼 삭제했다 — **이제 섹터 내 Ke를 나란히 놓고 위험 서열을 비교할 수 있다.**
 
 > **섹터 가정 대조** — 같은 미드스트림 그룹인 [Kinder Morgan](../kinder_morgan/06_valuation.md)과 나란히 놓으면(두 문서만은 같은 기준일·같은 Rf를 써서 **서로 직접 비교할 수 있다**):
 >
@@ -196,4 +194,4 @@ D₁ = $2.21(FY2027 DPS) 기준.
 
 ---
 
-*작성일: 2026-09-18*
+*작성일: 2026-09-19*
