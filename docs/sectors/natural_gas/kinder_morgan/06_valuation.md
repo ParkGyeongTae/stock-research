@@ -47,7 +47,7 @@
 | **방법론별 가중치 (종합 시)** | **PER 50% / DCF 35% / PBR 15%** | 균등가중이 아니다. PER을 최상위에 둔 것은 이익이 안정적이고 외부 컨센서스로 교차검증이 가능하기 때문이고, DCF는 백로그 실현이라는 **이 회사 고유의 성장 경로를 유일하게 반영**하므로 두 번째, PBR은 영업권 왜곡으로 최소. **DDM은 0%** | — |
 
 ::: warning 무위험이자율을 바꿨다 — 섹터 내 다른 문서와 일시적으로 어긋난다
-이 문서와 [Williams](../williams_companies/06_valuation.md)는 Rf를 **5.01%(2026-09-16)**로 갱신했지만, 같은 섹터의 [Cheniere](../cheniere_energy/06_valuation.md)·[EQT](../eqt/06_valuation.md)·[Expand Energy](../expand_energy/06_valuation.md)·[NRG](../nrg/06_valuation.md)·[Vistra](../vistra/06_valuation.md)는 아직 **4.67%(2026-08-24)** 기준이다. 따라서 **이 문서의 Ke 7.76%를 그 문서들의 Ke와 나란히 놓고 위험 서열을 비교하면 안 된다** — 34bp만큼 이 문서 쪽이 구조적으로 높게 나온다. 같은 기준으로 비교하려면 저 문서들이 갱신될 때까지 기다리거나, 저쪽 Ke에 +0.34%p를 더해 어림잡아야 한다.
+이 문서와 [Williams](../williams_companies/06_valuation.md)에 이어 [EQT](../eqt/06_valuation.md)·[Expand Energy](../expand_energy/06_valuation.md)도 2026-09-19 재작성되면서 Rf가 **5.01%(2026-09-16)**로 맞춰졌고, 이제 [NRG](../nrg/06_valuation.md)·[Vistra](../vistra/06_valuation.md) 두 문서만 **4.67%(2026-08-24)** 기준이다. 따라서 **이 문서의 Ke 7.76%를 그 문서들의 Ke와 나란히 놓고 위험 서열을 비교하면 안 된다** — 34bp만큼 이 문서 쪽이 구조적으로 높게 나온다. 같은 기준으로 비교하려면 저 문서들이 갱신될 때까지 기다리거나, 저쪽 Ke에 +0.34%p를 더해 어림잡아야 한다.
 :::
 
 > **동종사와의 대조**: 같은 섹터 [Williams](../williams_companies/06_valuation.md)의 Ke는 **8.11%**로 KMI(7.76%)보다 0.35%p 높다. 무위험이자율은 5.01%(2026-09-16)로 같고, **차이는 전적으로 베타(0.62 vs 0.55, 둘 다 stockanalysis 5년·2026-09-18 조회)에서 나온다** — 두 회사 모두 계약 기반 미드스트림이라 사업 위험이 비슷하고, 0.35%p는 그 유사성과 모순되지 않는 폭이다. 이 두 문서만은 같은 기준일·같은 Rf를 쓰므로 **서로는 직접 비교할 수 있다.**

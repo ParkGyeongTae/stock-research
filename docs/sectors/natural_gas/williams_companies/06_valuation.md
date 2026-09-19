@@ -26,7 +26,7 @@
   - 외부 컨센서스로 교차검증이 가능한 유일한 방법론이라는 점에서도 최상위 가중치를 준다.
 - [x] **EV/EBITDA 방식 — 적정주가 = (목표 EV/EBITDA × Adjusted EBITDA − 순부채) ÷ 주식수** — 종합 가중치 **35%**
   - **PER만으로 보면 이 회사의 자본구조 변화가 통째로 숨는다.** 순부채가 FY2023 $23,563M → 2026-06-30 $30,115M로 3년 새 28% 늘었고, Momentum 인수로 또 한 단계 올랐다. 시가총액의 34%가 순부채인 회사를 이익 배수 하나로만 재는 것은 이 저장소가 반복해서 경계해온 실수다(저장소 지침의 "자본구조 차이" 항목).
-  - 같은 섹터 [Cheniere](../cheniere_energy/06_valuation.md)가 EV/EBITDA를 최상위 가중치로 쓰는 것과 같은 이유이며, 회사·채권자·경영진 보상이 공통으로 참조하는 지표(Debt-to-Adjusted EBITDA)와 분모가 같다는 실무적 이점도 있다.
+  - 회사·채권자·경영진 보상이 공통으로 참조하는 지표(Debt-to-Adjusted EBITDA)와 분모가 같다는 실무적 이점도 있다.
   - **금리 상승 국면에서 이 방법론의 상대적 중요도가 올라간다** — 순부채가 EV에서 그대로 차감되므로, 차입으로 성장하는 이 회사의 부담이 PER보다 정직하게 반영된다.
 - [x] **DDM (배당할인모형)** — 종합 가중치 **15%** (신뢰도 **Low**)
   - Williams는 52년 연속 배당했고 AFFO 기준 배당커버리지가 3개년 내내 2.3배를 밑돈 적이 없다([핵심 지표](./04_metrics.md) A.4) — 배당이 안정적 현금흐름에서 나오는 성숙 인프라 기업이라 모형의 **전제 자체는 이 회사에 잘 맞는다.**
@@ -54,7 +54,7 @@
 | **방법론별 가중치 (종합 시)** | **PER 40% / EV/EBITDA 35% / DDM 15% / PBR 10%** | 균등가중이 아니다. PER은 이익이 안정적이고 외부 컨센서스로 교차검증되므로 최상위, EV/EBITDA는 **이 회사 고유의 레버리지 변화를 유일하게 반영**하므로 두 번째, DDM은 전제는 맞지만 계산이 취약해 15%, PBR은 회계적 왜곡으로 최소 | — |
 
 ::: warning 무위험이자율을 바꿨다 — 섹터 내 다른 문서와 일시적으로 어긋난다
-이 문서와 [Kinder Morgan](../kinder_morgan/06_valuation.md)은 Rf를 **5.01%(2026-09-16)**로 갱신했지만, 같은 섹터의 [Cheniere](../cheniere_energy/06_valuation.md)·[EQT](../eqt/06_valuation.md)·[Expand Energy](../expand_energy/06_valuation.md)·[NRG](../nrg/06_valuation.md)·[Vistra](../vistra/06_valuation.md)는 아직 **4.67%(2026-08-24)** 기준이다. 따라서 **이 문서의 Ke 8.11%를 그 문서들의 Ke와 나란히 놓고 위험 서열을 비교하면 안 된다** — 34bp만큼 이 문서 쪽이 구조적으로 높게 나온다.
+이 문서와 [Kinder Morgan](../kinder_morgan/06_valuation.md)에 이어 [EQT](../eqt/06_valuation.md)·[Expand Energy](../expand_energy/06_valuation.md)도 2026-09-19 재작성되면서 Rf가 **5.01%(2026-09-16)**로 맞춰졌고, 이제 [NRG](../nrg/06_valuation.md)·[Vistra](../vistra/06_valuation.md) 두 문서만 **4.67%(2026-08-24)** 기준이다. 따라서 **이 문서의 Ke 8.11%를 그 문서들의 Ke와 나란히 놓고 위험 서열을 비교하면 안 된다** — 34bp만큼 이 문서 쪽이 구조적으로 높게 나온다.
 :::
 
 > **섹터 가정 대조** — 같은 미드스트림 그룹인 [Kinder Morgan](../kinder_morgan/06_valuation.md)과 나란히 놓으면(두 문서만은 같은 기준일·같은 Rf를 써서 **서로 직접 비교할 수 있다**):

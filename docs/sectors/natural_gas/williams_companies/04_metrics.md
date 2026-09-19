@@ -168,7 +168,7 @@
 
 ## C. 사업 고유 지표
 
-**이 섹터의 표준 지표(미드스트림 그룹)**: 같은 `natural_gas` 섹터라도 밸류체인 위치에 따라 봐야 할 지표가 다르다 — [EQT](../eqt/04_metrics.md)·[Expand Energy](../expand_energy/04_metrics.md)(업스트림 E&P)는 생산량·실현가격·매장량을, [Cheniere](../cheniere_energy/04_metrics.md)(LNG 액화·수출)는 액화 능력·수출 물량을 쓴다. Williams는 이 섹터의 **첫 미드스트림 회사**로서 아래 세 지표를 표준으로 정했고, [Kinder Morgan](../kinder_morgan/04_metrics.md)이 이를 따르면서 자사 고유의 백로그 지표 하나를 추가했다.
+**이 섹터의 표준 지표(미드스트림 그룹)**: 같은 `natural_gas` 섹터라도 밸류체인 위치에 따라 봐야 할 지표가 다르다 — [EQT](../eqt/04_metrics.md)·[Expand Energy](../expand_energy/04_metrics.md)(업스트림 E&P)는 생산량·실현가격·매장량을 쓴다. Williams는 이 섹터의 **첫 미드스트림 회사**로서 아래 세 지표를 표준으로 정했고, [Kinder Morgan](../kinder_morgan/04_metrics.md)이 이를 따르면서 자사 고유의 백로그 지표 하나를 추가했다.
 
 1. **계약 수송용량 (Contracted transmission capacity)** — 회사 공시, 파이프라인 고객과 체결한 장기 수송 계약 용량 총합, Bcf/d, 잔고(연말 시점)
 2. **Debt-to-Adjusted EBITDA (레버리지, 회사 자체 정의)** — 순부채(현금 및 일부 조정 차감) ÷ 최근 4개 분기 Adjusted EBITDA, 배, 잔고(분기말 시점) — 이 저장소의 "부채비율"(총부채÷자기자본)과는 전혀 다른 정의이므로 혼동 금지

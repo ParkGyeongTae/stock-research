@@ -14,7 +14,7 @@
 ::: details 이 표를 읽는 기준 — 통화 · 회계연도 · 회계기준 · (E) 표기
 - **통화**: 모두 USD. 총액은 백만 달러(M), 주당 수치(EPS·주가·BPS·DPS)는 달러.
 - **수치 출처**: SEC XBRL companyfacts(조회일 2026-09-18), FY2024·FY2025 실적발표 8-K Ex-99.1, Q1 2025~Q2 2026 분기 실적발표 8-K Ex-99.1, FY2025 10-K. 행마다 GAAP·Non-GAAP을 명시했다.
-- **회계연도(FY)**: 12월 결산으로 캘린더 연도와 같다. FY-3=FY2023, FY-2=FY2024, FY-1=FY2025, 올해=**TTM(2025 Q3~2026 Q2, 4개 분기 합산)**. 회사가 FY2026 예산을 제시하지만(D. 판단 메모 참고) 확정치처럼 표에 채우지 않기 위해, 같은 섹터의 [EQT](../eqt/04_metrics.md)·[Cheniere](../cheniere_energy/04_metrics.md)와 동일하게 최근 4개 분기 실적을 썼다.
+- **회계연도(FY)**: 12월 결산으로 캘린더 연도와 같다. FY-3=FY2023, FY-2=FY2024, FY-1=FY2025, 올해=**TTM(2025 Q3~2026 Q2, 4개 분기 합산)**. 회사가 FY2026 예산을 제시하지만(D. 판단 메모 참고) 확정치처럼 표에 채우지 않기 위해, 같은 섹터의 [EQT](../eqt/04_metrics.md)·[Expand Energy](../expand_energy/04_metrics.md)와 동일하게 최근 4개 분기 실적을 썼다.
 - **(E) 표기**: 확인하지 못한 값에는 (E)와 출처 각주를 붙인다. 이 표의 A·B절에는 (E) 값이 없다 — 전부 공시 확정치이거나 그로부터 계산한 파생값(ᵈ)이다.
 - **기준 종가**: "현재" 열은 **2026-09-17 종가 $31.31**이다([기술적 분석 — 일봉](./09_technical_daily.md)·[주봉](./10_technical_weekly.md)과 같은 기준일).
 
@@ -150,7 +150,7 @@ KMI가 실적발표에서 공시하는 "Free Cash Flow"도 정확히 같은 정�
 
 ## C. 사업 고유 지표
 
-**이 섹터의 표준 지표(미드스트림 그룹)**: 같은 `natural_gas` 섹터라도 밸류체인 위치에 따라 봐야 할 지표가 다르다 — [EQT](../eqt/04_metrics.md)·[Expand Energy](../expand_energy/04_metrics.md)(업스트림 E&P)는 생산량·실현가격·매장량을, [Cheniere](../cheniere_energy/04_metrics.md)(LNG 액화·수출)는 액화 능력·수출 물량을 쓴다. KMI는 미드스트림 첫 회사인 [Williams Companies](../williams_companies/04_metrics.md)가 정한 세 지표 — (1) 수송용량/물량, (2) Debt-to-Adjusted EBITDA, (3) 가장 안정적인 규제 파이프라인 부문의 이익 비중 — 을 따르고, KMI 고유의 성장 가시성 지표로 **프로젝트 백로그**를 하나 추가했다(총 4개, 상한 5개 이내).
+**이 섹터의 표준 지표(미드스트림 그룹)**: 같은 `natural_gas` 섹터라도 밸류체인 위치에 따라 봐야 할 지표가 다르다 — [EQT](../eqt/04_metrics.md)·[Expand Energy](../expand_energy/04_metrics.md)(업스트림 E&P)는 생산량·실현가격·매장량을 쓴다. KMI는 미드스트림 첫 회사인 [Williams Companies](../williams_companies/04_metrics.md)가 정한 세 지표 — (1) 수송용량/물량, (2) Debt-to-Adjusted EBITDA, (3) 가장 안정적인 규제 파이프라인 부문의 이익 비중 — 을 따르고, KMI 고유의 성장 가시성 지표로 **프로젝트 백로그**를 하나 추가했다(총 4개, 상한 5개 이내).
 
 ::: warning (1)번 지표는 Williams와 정의가 다르다 — 나란히 비교하지 말 것
 Williams는 고객과 체결한 **계약 수송용량(contracted transmission capacity, Bcf/d)**을 공시하는 반면, KMI는 계약 용량을 별도 공시하지 않고 **실제로 흘러간 수송 물량(transport volumes, BBtu/d)**만 공시한다. 앞은 "팔아둔 용량"(잔고), 뒤는 "실제 사용량"(유량)이라 성격 자체가 다르다 — 계약 용량이 같아도 실제 물량은 날씨·수요에 따라 달라진다. 두 회사의 숫자를 그대로 비교하면 안 되고, **각 회사 안에서의 추세**로만 읽는다.

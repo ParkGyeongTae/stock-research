@@ -151,7 +151,7 @@ Vistra는 이 차이가 특히 크다. 전력·가스 헤지를 대량으로 걸
 
 ## C. 사업 고유 지표
 
-**이 섹터의 표준 지표(발전·소매전력 IPP 그룹)**: 같은 `natural_gas` 섹터라도 밸류체인 위치에 따라 봐야 할 지표가 다르다 — [EQT](../eqt/04_metrics.md)·[Expand Energy](../expand_energy/04_metrics.md)(업스트림 E&P)는 생산량·실현가격·매장량을, [Cheniere](../cheniere_energy/04_metrics.md)(LNG 액화·수출)는 액화 능력·수출 물량을, [Williams](../williams_companies/04_metrics.md)·[Kinder Morgan](../kinder_morgan/04_metrics.md)(미드스트림)은 수송용량·레버리지를 쓴다. **가스를 태워 전기를 파는 IPP는 네 번째 하위 그룹**이며 Vistra가 이 저장소의 첫 회사이므로 여기서 표준을 정한다. 이후 이 그룹에 추가되는 회사([NRG Energy](../nrg/04_metrics.md)가 같은 5개를 따른다)는 아래를 그대로 쓴다.
+**이 섹터의 표준 지표(발전·소매전력 IPP 그룹)**: 같은 `natural_gas` 섹터라도 밸류체인 위치에 따라 봐야 할 지표가 다르다 — [EQT](../eqt/04_metrics.md)·[Expand Energy](../expand_energy/04_metrics.md)(업스트림 E&P)는 생산량·실현가격·매장량을, [Williams](../williams_companies/04_metrics.md)·[Kinder Morgan](../kinder_morgan/04_metrics.md)(미드스트림)은 수송용량·레버리지를 쓴다. **가스를 태워 전기를 파는 IPP는 네 번째 하위 그룹**이며 Vistra가 이 저장소의 첫 회사이므로 여기서 표준을 정한다. 이후 이 그룹에 추가되는 회사([NRG Energy](../nrg/04_metrics.md)가 같은 5개를 따른다)는 아래를 그대로 쓴다.
 
 1. **발전 설비용량 (Generation capacity, MW)** — 10-K 기준 연말 시점 보유 발전설비 총량, 잔고
 2. **소매·홈서비스 고객 수 (백만 명)** — 회사 공시 retail customers(전기·가스 소매 + 스마트홈 구독 포함 여부를 병기), 잔고

@@ -16,7 +16,7 @@
 | 기간 | 직책 / 회사 | 내용 |
 |------|-------------|------|
 | ~2016 | NiSource / Columbia Pipeline Group — NiSource Midstream COO, Pennant Midstream 사장 | 미드스트림 운영·개발 커리어의 출발점 |
-| 2016~2017 | Cheniere Energy — SVP & President, Pipeline and Midstream | **LNG 수출 사업자에서 파이프라인·미드스트림을 총괄** — 지금 Williams가 걸프코스트 LNG 배후 인프라에 집중하는 배경을 설명하는 이력이다([Cheniere 문서](../cheniere_energy/01_overview.md)) |
+| 2016~2017 | Cheniere Energy — SVP & President, Pipeline and Midstream | **LNG 수출 사업자에서 파이프라인·미드스트림을 총괄** — 지금 Williams가 걸프코스트 LNG 배후 인프라에 집중하는 배경을 설명하는 이력이다 |
 | 2017~2022 | Williams — SVP, Corporate Strategic Development | 입사 직후부터 **전략·사업개발(=M&A) 담당.** 이 기간 다수의 인수를 주도했다 |
 | 2023.01~2025.06 | Williams — EVP, Corporate Strategic Development | 전략·사업개발에 더해 투자분석, New Energy Ventures, 상품 마케팅, 업스트림, 대외커뮤니케이션까지 관장 — CEO 승계를 염두에 둔 범위 확대로 읽힌다 |
 | 2025.07~ | Williams — President & CEO | 취임 후 Power Innovation 확대(Blackstone JV), Momentum Midstream 인수를 연달아 성사 |

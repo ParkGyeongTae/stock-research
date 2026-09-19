@@ -13,7 +13,7 @@ for f in $S/*/04_metrics.md; do c=$(basename $(dirname $f)); [ "$c" = "<company>
 done
 ```
 
-**같은 섹터라도 밸류체인 위치가 다르면 지표도 다르다.** `natural_gas`의 Cheniere(LNG 수출)는 EQT(업스트림 E&P)와 다른 지표를 쓰고 그 사유를 C절 머리에 적어 뒀다. 무조건 베끼지 말고 **밸류체인 위치가 같은 회사**를 따른다.
+**같은 섹터라도 밸류체인 위치가 다르면 지표도 다르다.** `natural_gas`의 Williams·Kinder Morgan(미드스트림)은 EQT·Expand Energy(업스트림 E&P)와 다른 지표를 쓰고 그 사유를 C절 머리에 적어 뒀다. 무조건 베끼지 말고 **밸류체인 위치가 같은 회사**를 따른다.
 
 ## 밸류에이션 가정 (SKILL.md 4-1)
 

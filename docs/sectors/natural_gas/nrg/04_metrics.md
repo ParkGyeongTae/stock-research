@@ -157,7 +157,7 @@ NRG는 여기에 더해 **소매 전기 판매와 헤지 포지션에서 나오�
 
 ## C. 사업 고유 지표
 
-**이 섹터의 표준 지표(발전·소매전력 IPP 그룹)**: 같은 `natural_gas` 섹터라도 밸류체인 위치에 따라 봐야 할 지표가 다르다 — [EQT](../eqt/04_metrics.md)·[Expand Energy](../expand_energy/04_metrics.md)(업스트림 E&P)는 생산량·실현가격·매장량을, [Cheniere](../cheniere_energy/04_metrics.md)(LNG 액화·수출)는 액화 능력·수출 물량을, [Williams](../williams_companies/04_metrics.md)·[Kinder Morgan](../kinder_morgan/04_metrics.md)(미드스트림)은 수송용량·레버리지를 쓴다. NRG는 이 섹터의 **네 번째 하위 그룹(가스 발전·소매전력 IPP)**에 속하며, 첫 회사인 [Vistra](../vistra/04_metrics.md)가 정한 5개 지표를 정의·유형까지 그대로 따른다.
+**이 섹터의 표준 지표(발전·소매전력 IPP 그룹)**: 같은 `natural_gas` 섹터라도 밸류체인 위치에 따라 봐야 할 지표가 다르다 — [EQT](../eqt/04_metrics.md)·[Expand Energy](../expand_energy/04_metrics.md)(업스트림 E&P)는 생산량·실현가격·매장량을, [Williams](../williams_companies/04_metrics.md)·[Kinder Morgan](../kinder_morgan/04_metrics.md)(미드스트림)은 수송용량·레버리지를 쓴다. NRG는 이 섹터의 **네 번째 하위 그룹(가스 발전·소매전력 IPP)**에 속하며, 첫 회사인 [Vistra](../vistra/04_metrics.md)가 정한 5개 지표를 정의·유형까지 그대로 따른다.
 
 ::: warning (3)번은 Vistra와 나란히 비교하지 말 것 — 세그먼트 구조가 다르다
 [Vistra](../vistra/04_metrics.md)는 **Retail(소매)을 별도 부문으로 분리**해 공시하지만, NRG는 소매 전기·가스 판매를 Texas·East 같은 **지역 부문 안에 발전과 함께 묶어** 공시한다. 게다가 NRG의 Adjusted EBITDA에는 발전설비가 0 MW인 **Vivint Smart Home 부문**이 FY2025 기준 $1,092M(전체의 27%) 들어 있다. 그래서 NRG의 "설비용량당 Adjusted EBITDA"는 분자에 발전과 무관한 이익이 섞여 **구조적으로 Vistra보다 높게 나온다**(FY2025 $314.4 vs $136.1). 두 회사의 수치를 놓고 "누가 더 효율적"이라 판단하지 말고, **각 회사 안에서의 추세로만 읽을 것.**
