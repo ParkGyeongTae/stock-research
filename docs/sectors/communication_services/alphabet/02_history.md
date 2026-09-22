@@ -14,10 +14,10 @@
 | 2015.10 | **지주회사 Alphabet으로 전환하고 순다르 피차이가 Google CEO 취임**. 검색·광고(Google)와 장기 투자(Other Bets)를 법인 단위로 분리해 손익을 따로 보게 만들었다. 2019.12 페이지·브린이 경영 일선에서 물러나며 피차이가 Alphabet CEO까지 겸임 |
 | 2026.03~06 | **Wiz 인수 완료($320억, 전액 현금 — 사상 최대)**에 이어 **6월 사상 첫 대규모 외부 자본 조달**: 보통주·의무전환우선주로 순 $49.6B, 선순위 무담보채로 순 $20.3B. 같은 기간 자사주매입은 $0으로 중단됐다. 28년간 자기 현금으로만 성장한 회사가 AI 인프라 투자를 위해 자본구조를 바꾼 시점 |
 
-> 2024년 4월 창사 첫 배당 개시(분기 $0.20)도 자본배분 정책의 전환이었으나, FY2025 배당성향 7.6%·배당수익률 0.27%로 기업가치를 설명하는 규모가 아니어서 위 5개에는 넣지 않았다 — 배당 추이는 [핵심 지표 A.4. 현금흐름·주주환원 지표](./04_metrics.md)에서 다룬다. 최근 사건은 [최근 뉴스 / 이슈](./08_news.md)가 담당한다.
+> 2024년 4월 창사 첫 배당 개시(분기 $0.20)도 자본배분 정책의 전환이었으나, FY2025 배당성향 9.1%(정상화 EPS 기준)·배당수익률 0.27%로 기업가치를 설명하는 규모가 아니어서 위 5개에는 넣지 않았다 — 배당 추이는 [핵심 지표 A.4. 현금흐름·주주환원 지표](./04_metrics.md)에서 다룬다. 최근 사건은 [최근 뉴스 / 이슈](./08_news.md)가 담당한다.
 >
-> 출처: [Alphabet 회사 연혁](https://about.google/intl/en/our-story/) · [Wiz 인수 완료](https://www.clearygottlieb.com/news-and-insights/news-listing/google-completes-32-billion-acquisition-of-wiz) · [2026 Q2 실적발표(8-K Ex-99.1)](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm)
+> 출처: [Alphabet 회사 연혁](https://about.google/intl/en/our-story/) · [Wiz 인수 완료](https://www.clearygottlieb.com/news-and-insights/news-listing/google-completes-32-billion-acquisition-of-wiz) · [2026 Q2 실적발표(8-K Ex-99.1)](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm) · [우선주 발행(424B5)](https://www.sec.gov/Archives/edgar/data/0001652044/000119312526257690/d159942d424b5.htm)
 
 ---
 
-*작성일: 2026-09-12*
+*작성일: 2026-09-23*
